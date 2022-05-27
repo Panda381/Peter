@@ -7,9 +7,9 @@ author's email: Panda38@seznam.cz
 alternative email: hardyplotter2@gmail.com
 
 
+Author's homepage of the program Peter: https://www.breatharian.eu/Petr/en
 Peter's official website (no longer maintained): http://www.gemtree.com and http://www.gemtree.cz
-Author's homepage of the program Peter: https://www.breatharian.eu/Petr
-Programs and games created in Peter: https://www.breatharian.eu/Petr/program
+Programs and games created in Peter: https://www.breatharian.eu/Petr/en/program
 community server: https://www.itnetwork.cz/pro-deti/petr
 GitHub: https://github.com/Panda381/Peter
 
