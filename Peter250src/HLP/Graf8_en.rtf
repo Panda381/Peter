@@ -1,0 +1,355 @@
+{\rtf1 \ansi \deff0
+
+@{\footnote ------- definice fontù --------- }
+
+{\fonttbl 
+{\f0 \fswiss MS San Serif CE;}
+}
+
+@{\footnote ------- definice barev --------- }
+
+{\colortbl
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red192\green192\blue192;
+\red128\green128\blue128;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+
+@{\footnote Použití barev:
+	0 - èerná
+	1 - tmavì èervená
+	2 - tmavì zelená
+	3 - hnìdá
+	4 - tmavì modrá
+	5 - tmavì fialová
+	6 - tmavì modrozelená
+	7 - šedá
+	8 - tmavì šedá
+	9 - èervená
+	10 - zelená
+	11 - žlutá
+	12 - modrá
+	13 - fialová
+	14 - modrozelená
+	15 - bílá
+}
+
+#{\footnote 20915}
+${\footnote Textures}
++{\footnote 1}
+K{\footnote Textures;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Textures\par
+\pard \plain \cf0 \fs20
+{\uldb 3D Graphics}{\v 20788}\par
+\par
+\par
+{\uldb \{bmc IDF20916.bmp\}\tab stage}{\v 20916}\par
+{\uldb \{bmc IDF20830.bmp\}\tab texture}{\v 20830}\par
+{\uldb \{bmc IDF20891.bmp\}\tab smoothing of textures}{\v 20891}\par
+{\uldb \{bmc IDF21032.bmp\}\tab texture from file}{\v 21032}\par
+{\uldb \{bmc IDF20900.bmp\}\tab object texture magnification filter}{\v 20900}\par
+{\uldb \{bmc IDF20899.bmp\}\tab object texture minification filter}{\v 20899}\par
+{\uldb \{bmc IDF20901.bmp\}\tab faraway object texture filter}{\v 20901}\par
+{\uldb \{bmc IDF20929.bmp\}\tab number of faraway textures}{\v 20929}\par
+{\uldb \{bmc IDF20925.bmp\}\tab blurring of faraway textures}{\v 20925}\par
+{\uldb \{bmc IDF20831.bmp\}\tab texture mapping}{\v 20831}\par
+{\uldb \{bmc IDF20923.bmp\}\tab horizontal addressing mode}{\v 20923}\par
+{\uldb \{bmc IDF20924.bmp\}\tab vertical addressing mode}{\v 20924}\par
+{\uldb \{bmc IDF20917.bmp\}\tab color operation}{\v 20917}\par
+{\uldb \{bmc IDF20918.bmp\}\tab first color argument}{\v 20918}\par
+{\uldb \{bmc IDF20919.bmp\}\tab second color argument }{\v 20919}\par
+{\uldb \{bmc IDF20920.bmp\}\tab alpha operation}{\v 20920}\par
+{\uldb \{bmc IDF20921.bmp\}\tab first alpha argument}{\v 20921}\par
+{\uldb \{bmc IDF20922.bmp\}\tab second alpha argument }{\v 20922}\par
+{\uldb \{bmc IDF20927.bmp\}\tab color of texture factor}{\v 20927}\par
+\page
+
+#{\footnote 20916}
+${\footnote Stage}
++{\footnote 1}
+K{\footnote Stage;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20916.bmp\} Stage\par
+\pard \plain \cf0 \fs20
+{\uldb Textures}{\v 20915}\par
+\par
+When covering the object surface with a texture the operation to be performed between texture and object surface can be specified. Several operations and textures can be set. The active operation stage to be set is specified by the \b \i stage \i0 \b0 element. The stage number can be 0 through 7. By reading the \b \i stage \i0 \b0 element the maximum number of stages supported by the driver can be identified. The OpenGL and DirectX 3 and 5 drivers support 1 operation stage only: either the modulate operation or the non-modulated color/texture selection. The stage number in other drivers depends on the videocard possibilities, for many videocards being only 2 operation stages available.\par
+\page
+
+#{\footnote 20830}
+${\footnote Texture}
++{\footnote 1}
+K{\footnote Texture;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20830.bmp\} Texture\par
+\pard \plain \cf0 \fs20
+{\uldb Textures}{\v 20915}\par
+{\uldb Texture from File}{\v 21032}\par
+\par
+The object surface may be covered by a {\uldb color}{\v 20826} or by a texture. Essentially, a texture is a normal {\udlb picture}{\v 20246} that can be created in Peter application's {\uldb graphic editor}{\v Editing an Item and a Picture}. A texture for an {\uldb active operation stage}{\v 20916} of an {\uldb active object}{\v 20810} can be set by the \b \i texture \i0 \b0 element. For default operation stage 0 the modulate {\uldb operation}{\v 20917} is preset as a default (the texture being modulated by the object's basic color). The only thing needed to display a texture is setting the object texture, no other transactions are necessary.\par
+\par
+With most videocards (typically, if {\uldb faraway textures}{\v 20895} are supported by the videocard) it is necessary that the texture dimensions be a power of 2, i.e. 1, 2, 4, 8, 16, ... In exceptional cases a square size of a texture is required. The maximum dimensions of a texture may be limited by the videocard utilized. As a rule it is recommended a texture to be sized 256x256 pixels (i.e. 8x8 steps) maximum. All rules quoted hold for a texture after {\uldb smoothing}{\v 20891} (i.e. after size diminishing). If a texture does not comply with the above rules, it will be adjusted automatically. The size conversion may be a time consuming operation, therefore it is recommended to use a texture not requiring any adjustment.\par
+\par
+A texture will be adjusted and read into the videomemory during its first usage. When a greater number of textures is used than can be read into the videomemory, the textures are unloaded from the videomemory to be read later when necessary. The operation of repeated reading lowers the graphics operation speed considerably. Therefore it is recommended to use a texture being sized as small as possible, to follow the {\uldb capacity of the videomemory}{\v 20913}, and, if the videomemory capacity is too low, to use a lower resolution texture rather than to unload textures at every frame and then to read them into the videomemory again. When rather vast texture changes are carried out (like a scene change during a game), there is the opportunity to unload textures from the videomemory by switching off the {\uldb 3D window}{\v 20789} (setting the size to 0) followed by switching it on again.\par
+\page
+
+#{\footnote 20891}
+${\footnote Smoothing of Textures}
++{\footnote 1}
+K{\footnote Smoothing of Textures;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20891.bmp\} Smoothing of Textures\par
+\pard \plain \cf0 \fs20
+{\uldb Textures}{\v 20915}\par
+\par
+An object {\uldb texture}{\v 20830} is a picture created in the Peter application's {\uldb graphic editor}{\v Editing an Item and a Picture} or imported into the editor from the {\uldb picture library}{\v 20246}. The Peter application's pictures use a limited number of colors. To reach a broader color range they use the {\uldb dithering method}{\v Dithering}. With textures the dithering may act in a disturbing way, unless the textures for 3D objects are smoothed by means of the \b \i smoothing of textures \i0 \b0 element. The degree of texture smoothing is to be set before the first picture application as a texture. (The setting is common for all textures using the same picture). The setting can assume values of 1 and greater. For value 1 (default setting) no smoothing takes place.\par
+\par
+The smoothing degree represents the degree picture minification (with conversion to TrueColor). The value of 2 represents a minification to one half, which is generally a fully sufficient smoothing degree for the dithering. The smoothing degree need not be represented by an integer only. The texture size rules (power of 2) make themselves felt after the smoothing has been completed. Therefore, for a smoothing degree of 1.5, for instance, the dimensions should be a 1.5 multiple of the final dimensions that should be a power of 2. It is recommended to prepare the picture in advance in a twofold magnification before reading the picture out of the library. By reading it into the Peter application, the picture is imported with the dithering. By setting the smoothing degree to 2 the picture, when used as a texture, will be minified to the original size with the original quality of colors.\par
+\page
+
+#{\footnote 21032}
+${\footnote Texture from File}
++{\footnote 1}
+K{\footnote Texture from File;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF21032.bmp\} Texture from File\par
+\pard \plain \cf0 \fs20
+{\uldb Textures}{\v 20915}\par
+\par
+The \b \i texture from file \i0 \b0 command serves to load {\uldb texture}{\v 20830} of an {\uldb active operation stage}{\v 20916} of an {\uldb active object}{\v 20810} from {\uldb file for reading}{\v 20448} from {\uldb read pointer}{\v 20481}. If texture in the file is in 24-bit or 32-bit format, then it will be used for purposes of 3D graphics in full color mode without using {\uldb smoothing of textures}{\v 20891}.
+\page
+
+#{\footnote 20929}
+${\footnote Number of Faraway Textures}
++{\footnote 1}
+K{\footnote Number of Faraway Textures;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20929.bmp\} Number of Faraway Textures\par
+\pard \plain \cf0 \fs20
+{\uldb Textures}{\v 20915}\par
+\par
+Faraway object textures are {\uldb filtered}{\v 20901} using a technique called \b mipmap\b0 . Mipmaps are textures created by successive minification of the original texture. Each stage of the minified texture has half dimensions with regard to the foregoing stage up to the lowest stage sized 1x1. In cases where individual texture parts are used separately (e.g. parts for a figure's face, trunk, arm or leg), the melting of individual texture parts into one another, taking place at a rather high minification, can be objectionable. In such a case the maximum texture-minification stage-number can be limited by the \b \i number of faraway textures \i0 \b0 element. This element asserts itself for a texture of an {\uldb active operation stage}{\v 20916} of an {\uldb active object}{\v 20810}. First it is necessary to set the texture for an active operation stage of an active object, and only then to determine the maximum stage number of texture minification. The setting is common for every usage of this particular texture.\par
+\par
+The default setting of the element is \b 0\b0 , which means that the number of texture stages will not be limited. By setting to \b 1 \b0 or greater the number of textures will be limited to the value specified (including the basic stage of the non-minified texture). In the {\uldb terrain from sheet}{\v 20883} object the texture stage number is, as a default setting, limited to 4. For the OpenGL interface the number of stages cannot be specified.\par
+\page
+
+#{\footnote 20925}
+${\footnote Blurring of Faraway Textures}
++{\footnote 1}
+K{\footnote Blurring of Faraway Textures;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20925.bmp\} Blurring of Faraway Textures\par
+\pard \plain \cf0 \fs20
+{\uldb Textures}{\v 20915}\par
+\par
+The \b \i blurring of faraway textures \i0 \b0 element provides the possibility of specifying the {\uldb faraway texture filtration}{\v 20901} method. This element is a numeric value asserting itself in an {\uldb active operation stage}{\v 20916} of an {\uldb active object}{\v 20810}. The element contains a level deciding when a particular minified texture stage ({\uldb mipmap}{\v 20929}) should be used.\par
+\par
+The default value is \b 0\b0 . After setting a number greater than 0 (including decimal number) smaller textures will be used, resulting in greater blurring of faraway textures. After setting a number smaller than 0 (negative number) larger textures will be used, resulting in greater sharpness of faraway textures. The faraway texture blurring can be set for DirectX 5 through DirectX 8 interfaces only.\par
+\page
+
+#{\footnote 20831}
+#{\footnote 20841}
+#{\footnote 20832}
+#{\footnote 20833}
+#{\footnote 20834}
+#{\footnote 20835}
+#{\footnote 20836}
+#{\footnote 20837}
+#{\footnote 20838}
+#{\footnote 20842}
+#{\footnote 20843}
+#{\footnote 20844}
+#{\footnote 20845}
+${\footnote Texture Mapping}
++{\footnote 1}
+K{\footnote Texture Mapping;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20831.bmp\} Texture Mapping\par
+\pard \plain \cf0 \fs20
+{\uldb Textures}{\v 20915}\par
+\par
+\{bmc IDF20831.bmp\} \b \i texture mapping \i0 \b0 \par
+\tab \{bmc IDF20841.bmp\} \b \i method \i0 \b0 (0=addresses, 1=vertices, 2=faces)\par
+\tab \{bmc IDF20832.bmp\} \b \i projection type \i0 \b0 (0=flat, 1=cylinder, 2=sphere, 3=chrome, 4=lens)\par
+\tab \{bmc IDF20833.bmp\} \b \i X coordinate of projection center \i0 \b0 \par
+\tab \{bmc IDF20834.bmp\} \b \i Y coordinate of projection center \i0 \b0 \par
+\tab \{bmc IDF20835.bmp\} \b \i Z coordinate of projection center \i0 \b0 \par
+\tab \{bmc IDF20838.bmp\} \b \i rotation of projection around Z-axis \i0 \b0 \par
+\tab \{bmc IDF20836.bmp\} \b \i rotation of projection around X-axis \i0 \b0 \par
+\tab \{bmc IDF20837.bmp\} \b \i rotation of projection around Y-axis \i0 \b0 \par
+\tab \{bmc IDF20842.bmp\} \b \i horizontal origin of texture \i0 \b0 \par
+\tab \{bmc IDF20843.bmp\} \b \i vertical origin of texture \i0 \b0 \par
+\tab \{bmc IDF20844.bmp\} \b \i horizontal decrease grade of texture \i0 \b0 \par
+\tab \{bmc IDF20845.bmp\} \b \i vertical decrease grade of texture \i0 \b0 \par
+\par
+By means of the \b \i texture mapping \i0 \b0 command one can determine in which way a texture is laid on an object. This command cannot substitute the precise manual texture positioning, but in many cases it can provide a sufficient means for fast automatic texture mapping. This command is useful for an {\uldb active operation stage}{\v 20916} of an {\uldb active object}{\v 20810}.\par
+\par
+The \b \i method \i0 \b0 parameter determines by which method a texture will be mapped on the object. The default setting is \b 0 \b0 - texture address mapping. When mapping addresses, each vertex will receive the horizontal and vertical coordinate (typically ranging between 0 and 1) of a certain place in the texture. Using this method it is not necessary for the texture to be present in the object during the mapping operation. Each operation stage can possess its own address mapping. If some stage does not contain any texture address mapping, then the mapping result from the foregoing stage will be used. Each {\uldb newly created object}{\v 20903} contains a default texture mapping for stage 0.\par
+\par
+Another two methods are: \b 1 \b0 - object vertex mapping, and \b 2 \b0 - object face mapping. These two methods set each vertex or face of an object to the color that is found in the corresponding texture location. Therefore, in the moment of mapping the texture must be set for the object's active stage, the picture of which will be used for the color mapping. When mapping vertices, a color is assigned to a particular object vertex. The color grades continuously between the vertices (A precondition is the {\uldb object smooth shading}{\v 20898} being switched on). When mapping faces, all vertices of individual faces are set to the same color. There are sharp transitions between individual faces. After the vertices or object faces being mapped the object texture that has been used is unloaded automatically, and the mode of object {\uldb internal colors}{\v 20826} is set. Object vertex and face mapping may be a suitable replacement for using several textures and light maps. After the colors have been mapped the object can use another texture in a common way. For the DirectX 3 though Direct 6 interfaces the vertex and face colors can be used only when the {\uldb object lighting}{\v 20897} is switched off.\par
+\par
+When mapping a texture, the texture coordinates are calculated in a similar way as if the texture were projected onto the object vertices. The kind of projecting is defined by the \b \i projection type \i0 \b0 parameter. The default projection type is \b 0 \b0 - flat projection. During flat projection the texture is projected as a flat area. In the default setting the texture is projected in the Z axis direction. The horizontal and vertical coordinate of a point lying in the texture is at the same time the X and Y coordinate, the projection being independent of the Z coordinate. The second projection type is \b 1 \b0 - cylindrical projection. In this projection the object is enwrapped by a cylindrical surface, the Y axis being the projection cylinder axis as the default setting. The texture's vertical coordinate is at the same time the Y coordinate, the horizontal coordinate is linearly dependent on the horizontal angle of the projecting beam. The projection does not depend on the distance from the projection axis (The Y axis as a default setting). The third projection type is \b 2 \b0 - spherical projection. In this projection the object is enwrapped by a spherical surface. The coordinate system origin is the projection center as the default setting. The projection is independent of the distance from the projection center. Especial cases are \b 3 \b0 and \b 4 \b0 projections, chrome and lens projections. These projections are automatic generated projections simulating reflection of environment on the object.\par
+\par
+The \b \i X-Y-Z coordinate of projection center \i0 \b0 parameters enable to change the projection center. In the default configuration the projection center is identical with the coordinate system origin.\par
+\par
+The \b \i rotation of projection around Z-X-Y axis \i0 \b0 parameters enable to turn the projection direction. The projection rotation sequence corresponds to the parameter sequence: Rotation around the Z axis, X axis, and finally around the Y axis. For example, during the flat projection the texture is projected in the Z axis direction (default camera view). When mapping a {\uldb terrain}{\v 20874}, the projection must be rotated to view "from above", therefore the rotation around the X axis must be set to {\uldb 1/2 pi}{\v 20115} (i.e. 90 degrees).\par
+\par
+The \b \i origin of texture \i0 \b0 parameters make it possible to shift a texture in horizontal and vertical direction. These parameters determine which texture point should be considered to be the origin (The texture coordinates are 0 till 1). The default values are 0.5; during a mapping on the {\uldb wall}{\v 20802}, the wall's beginning and end will coincide with the texture's beginning and end.\par
+\par
+The \b \i decrease grade of texture \i0 \b0 parameters determine how many times a texture will be minified in the horizontal and vertical direction, the default setting being 1. For example, at a "decrease grade of texture" parameter of 2 the texture will be projected twice in the horizontal and vertical direction on a wall having a unity size.\par
+\par
+\b \i Note: \i0 \b0 In using the "addresses" mapping method the {\uldb texture repetition}{\v 20923} mode is switched on automatically, if the clamp mode is set.\par
+\page
+
+#{\footnote 20923}
+${\footnote Horizontal Addressing Mode}
++{\footnote 1}
+K{\footnote Horizontal Addressing Mode;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20923.bmp\} Horizontal Addressing Mode\par
+\pard \plain \cf0 \fs20
+{\uldb Textures}{\v 20915}, {\uldb Vertical Addressing Mode}{\v 20924}\par
+\par
+The \b \i horizontal addressing mode \i0 \b0 element serves to determine in which way a texture of an {\uldb active operation stage}{\v 20916} of an {\uldb active object}{\v 20810} will be repeated horizontally, if it will not cover the object's whole surface. Following values are valid:\par
+\par
+\b \i 1 \i0 \b0 \tab texture is repeated (default setting)\par
+\b \i 2 \i0 \b0 \tab texture is repeated and mirrored\par
+\b \i 3 \i0 \b0 \tab texture is clamped\par
+\par
+When repeating a texture the texture address integral part is ignored. So, for example, addresses 1.2 - 1.5 will display the same texture portion as addresses 0.2 - 0.5.\par
+\par
+When repeating a texture with mirror inversion, the texture address integral part is ignored like with a normal texture repetition. The difference consist in the fact that every odd texture (a texture having an odd integer part) is mirror-flipped.\par
+\par
+In the texture cropping mode the texture coordinates being out of range 0 till 1 are limited to the interval 0 till 1. Addresses that are out of valid range use colors of texture borderline pixels.\par
+\par
+The OpenGL interface does not support the texture repetition with mirror inversion; a regular texture repetition is used instead. The DirectX 3 interface does not make it possible to set the texture addressing separately for the horizontal and vertical direction; horizontal addressing is used for both directions.\par
+\page
+
+#{\footnote 20924}
+${\footnote Vertical Addressing Mode}
++{\footnote 1}
+K{\footnote Vertical Addressing Mode;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20924.bmp\} Vertical Addressing Mode\par
+\pard \plain \cf0 \fs20
+{\uldb Textures}{\v 20915}, {\uldb Horizontal Addressing Mode}{\v 20923}\par
+\par
+The \b \i vertical addressing mode \i0 \b0 element serves to determine in which way a texture of an {\uldb active operation stage}{\v 20916} of an {\uldb active object}{\v 20810} will be repeated vertically, if it will not cover the object's whole surface. Following values are valid:\par
+\par
+\b \i 1 \i0 \b0 \tab texture is repeated (default setting)\par
+\b \i 2 \i0 \b0 \tab texture is repeated and mirrored\par
+\b \i 3 \i0 \b0 \tab texture is clamped\par
+\par
+When repeating a texture the texture address integral part is ignored. So, for example, addresses 1.2 - 1.5 will display the same texture portion as addresses 0.2 - 0.5.\par
+\par
+When repeating a texture with mirror inversion, the texture address integral part is ignored like with a normal texture repetition. The difference consist in the fact that every odd texture (a texture having an odd integer part) is mirror-flipped.\par
+\par
+In the texture cropping mode the texture coordinates being out of range 0 till 1 are limited to the interval 0 till 1. Addresses that are out of valid range use colors of texture borderline pixels.\par
+\par
+The OpenGL interface does not support the texture repetition with mirror inversion; a regular texture repetition is used instead. The DirectX 3 interface does not make it possible to set the texture addressing separately for the horizontal and vertical direction; horizontal addressing is used for both directions.\par
+\page
+
+#{\footnote 20917}
+${\footnote Color Operation}
++{\footnote 1}
+K{\footnote Color Operation;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20917.bmp\} Color Operation\par
+\pard \plain \cf0 \fs20
+{\uldb Textures}{\v 20915}, {\uldb Alpha Operation}{\v 20920}\par
+\par
+When covering an object's surface with a texture the operation can be determined that will be executed between the texture and the object surface. The maximum number of operations and textures that can be set is 8. The active operation stage to be set is determined by the {\uldb stage}{\v 20916} element. It will assert itself for an {\uldb active object}{\v 20810}. The stage number permissible can be detected by reading the \b \i stage \i0 \b0 element.\par
+\par
+The \b \i color operation \i0 \b0 element defines the operation to be performed with the color components. Similarly the operation with the alpha channel can be defined by means of the {\uldb alpha operation}{\v 20920} element. The color operation can assume following values:\par
+\par
+\b \i 1 \i0 \b0 \tab the operation stage and all following stages are switched off\par
+\b \i 2 \i0 \b0 \tab the operation output is the {\uldb first color argument}{\v 20918}\par
+\b \i 3 \i0 \b0 \tab the operation output is the {\uldb second color argument}{\v 20919}\par
+\b \i 4 \i0 \b0 \tab modulation, \i \b output = arg1 * arg2\i0 \par
+\b \i 5 \i0 \b0 \tab modulation 2x, \i \b output = arg1 * arg2 * 2\b0 \i0 \par
+\b \i 6 \i0 \b0 \tab modulation 4x, \i \b output = arg1 * arg2 * 4\b0 \i0 \par
+\b \i 7 \i0 \b0 \tab add, \i \b output = arg1 + arg2\b0 \i0 \par
+\b \i 8 \i0 \b0 \tab add signed, \i \b output = arg1 + arg2 - 0.5\b0 \i0 \par
+\b \i 9 \i0 \b0 \tab add signed 2x, \i \b output = (arg1 + arg2 - 0.5) * 2\b0 \i0 \par
+\b \i 10 \i0 \b0 \tab subtract, \i \b output = arg1 - arg2\b0 \i0 \par
+\b \i 11 \i0 \b0 \tab add smoothed, \i \b output = arg1+arg2 - arg1*arg2\b0 \i0 \par
+\b \i 12 \i0 \b0 \tab blend, alpha from color, \i \b output = arg1*(alpha) + arg2*(1-alpha)\b0 \i0 \par
+\b \i 13 \i0 \b0 \tab blend, alpha from texture, \i \b output = arg1*(alpha) + arg2*(1-alpha)\b0 \i0 \par
+\b \i 14 \i0 \b0 \tab blend, alpha from {\uldb factor}{\v 20927}, \i \b output = arg1*(alpha) + arg2*(1-alpha)\b0 \i0 \par
+\b \i 15 \i0 \b0 \tab blend, premultiplied alpha from texture, \i \b output = arg1 + arg2*(1-alpha)\b0 \i0 \par
+\b \i 16 \i0 \b0 \tab blend, alpha from result, \i \b output = arg1*(alpha) + arg2*(1-alpha)\b0 \i0 \par
+\b \i 17 \i0 \b0 \tab premodulate, modulate with next texture stage\par
+\b \i 18 \i0 \b0 \tab modulate alpha from arg1, \i \b output = arg1 + alpha1*arg2\b0 \i0 \par
+\b \i 19 \i0 \b0 \tab modulate with add alpha from arg1, \i \b output = arg1*arg2 + alpha1\b0 \i0 \par
+\b \i 20 \i0 \b0 \tab modulate invert alpha from arg1, \i \b output = arg1 + (1-alpha1)*arg2\b0 \i0 \par
+\b \i 21 \i0 \b0 \tab modulate with add invert alpha from arg1, \i \b output = (1-arg1)*arg2 + alpha1\b0 \i0 \par
+\par
+For stage 0 the modulation operation (code 4) is set as a default setting, the other stages being switched off (code 1).\par
+\par
+Not all operations are supported by every interface and videocard. The OpenGL interface enables to carry out the argument choice and modulation operations (operations 1 through 4) only, the argument can be the object color or texture. The alpha channel operations are ignored. The DirectX 5 interface supports, besides operations quoted for the OpenGL, the addition (7) operation. Operations 5, 6, 8 and 9 are replaced by operations 4 and 7. A full support of operations exists only for the DirectX 6 through DirectX 8, depending on whether the operations are supported by the videocard. If the desired operation is not supported by the videocard, then a better option can be the use of a software driver that supports most of the operations.\par
+\page
+
+#{\footnote 20918}
+${\footnote First Color Argument}
++{\footnote 1}
+K{\footnote First Color Argument;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20918.bmp\} First Color Argument\par
+\pard \plain \cf0 \fs20
+{\uldb Textures}{\v 20915}, {\uldb Second Color Argument}{\v 20919}\par
+\par
+The \i \b first color argument \b0 \i0 element defines the first argument for the {\uldb color operation}{\v 20917} of the {\uldb active operation stage}{\v 20916} of an {\uldb active object}{\v 20810}. This argument can assume the following values:\par
+\par
+\b \i 0 \i0 \b0 \tab basic (diffuse) {\uldb color}{\v 20826} of object\par
+\b \i 1 \i0 \b0 \tab result of previous operation stage\par
+\b \i 2 \i0 \b0 \tab texture\par
+\b \i 3 \i0 \b0 \tab {\uldb texture factor}{\v 20927}\par
+\b \i 4 \i0 \b0 \tab specular color (only DirectX 7 and 8)\par
+\par
+Modification factors (they are added to the argument code):\par
+\par
+\b \i 16 \i0 \b0 \tab complement, the value (1-arg) will be used\par
+\b \i 32 \i0 \b0 \tab replicate the alpha information to all color channels\par
+\par
+The default value of the first color argument is 2 (a texture) in all stages.\par
+\page
+
+#{\footnote 20919}
+${\footnote Second Color Argument}
++{\footnote 1}
+K{\footnote Second Color Argument;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20919.bmp\} Second Color Argument\par
+\pard \plain \cf0 \fs20
+{\uldb Textures}{\v 20915}, {\uldb First Color Argument}{\v 20918}\par
+\par
+The \i \b second color argument \b0 \i0 element defines the second argument for the {\uldb color operation}{\v 20917} of the {\uldb active operation stage}{\v 20916} of an {\uldb active object}{\v 20810}. This argument can assume the following values:\par
+\par
+\b \i 0 \i0 \b0 \tab basic (diffuse) {\uldb color}{\v 20826} of object\par
+\b \i 1 \i0 \b0 \tab result of previous operation stage\par
+\b \i 2 \i0 \b0 \tab texture\par
+\b \i 3 \i0 \b0 \tab {\uldb texture factor}{\v 20927}\par
+\b \i 4 \i0 \b0 \tab specular color (only DirectX 7 and 8)\par
+\par
+Modification factors (they are added to the argument code):\par
+\par
+\b \i 16 \i0 \b0 \tab complement, the value (1-arg) will be used\par
+\b \i 32 \i0 \b0 \tab replicate the alpha information to all color channels\par
+\par
+The default value of the second color argument is 1 (result of previous operation stage) in all stages.\par
+\page
+
+}

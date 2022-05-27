@@ -1,0 +1,350 @@
+{\rtf1 \ansi \deff0
+
+@{\footnote ------- definice fontù --------- }
+
+{\fonttbl 
+{\f0 \fswiss MS San Serif;}
+}
+
+@{\footnote ------- definice barev --------- }
+
+{\colortbl
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red192\green192\blue192;
+\red128\green128\blue128;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+
+@{\footnote Použití barev:
+	0 - èerná
+	1 - tmavì èervená
+	2 - tmavì zelená
+	3 - hnìdá
+	4 - tmavì modrá
+	5 - tmavì fialová
+	6 - tmavì modrozelená
+	7 - šedá
+	8 - tmavì šedá
+	9 - èervená
+	10 - zelená
+	11 - žlutá
+	12 - modrá
+	13 - fialová
+	14 - modrozelená
+	15 - bílá
+}
+
+#{\footnote 20648}
+#{\footnote 20961}
+#{\footnote 20962}
+#{\footnote 20963}
+#{\footnote 20964}
+#{\footnote 20965}
+#{\footnote 20966}
+#{\footnote 20967}
+#{\footnote 20968}
+#{\footnote 20969}
+#{\footnote 20970}
+#{\footnote 20971}
+#{\footnote 20972}
+#{\footnote 20973}
+#{\footnote 20974}
+#{\footnote 20975}
+${\footnote Communication}
++{\footnote 1}
+K{\footnote Communication;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Communication\par
+\pard \plain \cf0 \fs20
+{\uldb Structural Elements of a Program}{\v Structural Elements of a Program}\par
+\par
+{\uldb \{bmc IDF20752.bmp\}\tab communication port}{\v 20752}\par
+{\uldb \{bmc IDF20649.bmp\}\tab net support DirectPlay}{\v 20649} \par
+{\uldb \{bmc IDF21035.bmp\}\tab UDP packets}{\v 21035} \par
+\page
+
+#{\footnote 20752}
+#{\footnote 20753}
+#{\footnote 20754}
+#{\footnote 20755}
+#{\footnote 20756}
+#{\footnote 20757}
+#{\footnote 20758}
+#{\footnote 20759}
+#{\footnote 20760}
+#{\footnote 20761}
+#{\footnote 20762}
+#{\footnote 20763}
+#{\footnote 20764}
+${\footnote Communication Port}
++{\footnote 1}
+K{\footnote Communication Port;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Communication Port\par
+\pard \plain \cf0 \fs20
+{\uldb Communication}{\v 20648}\par
+\par
+\{bmc IDF20753.bmp\}\tab \b \i open port \i0 \b0 (-1=error)\par
+\par
+The \b \i open port \i0 \b0 element opens the port carrying the entered name and sets this port active. As the element parameter the name of the port or the name of the communication device is entered. For serial ports these are the COM1, COM2 etc. names. The element returns the identification number serving to select the active port. Several ports may be opened at a time. By means of the identification number the active port may be selected that we want to work with, without the transfer through the other ports being interrupted. When an opening error occurs (wrong port name, or the port is used by another program), the element will return -1, otherwise a number >= 0 is returned.\par
+\par
+\{bmc IDF20754.bmp\}\tab \b \i close port\i0 \b0 \par
+\par
+The \b \i close port \i0 \b0 command closes the port, the identification number of which is specified as an element parameter. After closing a port this port may be used by other programs. After finishing a program all ports are closed automatically.\par
+\par
+\{bmc IDF20755.bmp\}\tab \b \i active port\i0 \b0 \par
+\par
+The \b \i active port \i0 \b0 command determines the active port, with which further operations will be carried out. As a parameter the identification number is entered that has been returned when opening the port. The identification number is an internal pointer in the open port table only. By changing the active port the performance of any of the ports is not influenced.\par
+\par
+\{bmc IDF20758.bmp\}\tab \b \i baud rate\i0 \b0 \par
+\par
+The \b \i baud rate \i0 \b0 element defines the transfer rate of a serial port in Baud. For a standard COM port following transfer rate values are permitted:\par
+\par
+\tab 110 Baud \par
+\tab 150 Baud \par
+\tab 300 Baud \par
+\tab 600 Baud \par
+\tab 1200 Baud \par
+\tab 2400 Baud \par
+\tab 4800 Baud \par
+\tab 9600 Baud \par
+\tab 14400 Baud \par
+\tab 19200 Baud \par
+\tab 28800 Baud \par
+\tab 38400 Baud \par
+\tab 56000 Baud (only some types of COM) \par
+\tab 57600 Baud \par
+\tab 115200 Baud \par
+\tab 128000 Baud (only some types of COM) \par
+\tab 256000 Baud (only some types of COM) \par
+\par
+\{bmc IDF20759.bmp\}\tab \b \i 2 stop bits\i0 \b0 \par
+\par
+The \b \i 2 stop bits \i0 \b0 element is a logic flag defining, whether the transfer protocol will use 2 stop bits (or 1.5 bits for the character length of 5 bits). When the flag is reset, 1 stop bit will be used.\par
+\par
+\{bmc IDF20760.bmp\}\tab \b \i number of bits \i0 \b0 (5 to 8) \par
+\par
+The \b \i number of bits \i0 \b0 element defines the number of bits for one character. Permitted values are 5, 6, 7 and 8 bits. For characters 5 or 6 bits long the characters received (if received as a text; this is not valid for receiving as a number) are transferred to printable characters by adding the value of 64 (i.e. the 0 character is changed to "@", the 1 character is changed to "A" etc.). When sending, the redundant bits will be ignored. So, for example, the bit number being 5, the "A" character will change to 1.\par
+\par
+\{bmc IDF20761.bmp\}\tab \b \i parity \i0 \b0 (0=none, 1=odd, 2=even, 3=mark, 4=space)\par
+\par
+The \b \i parity \i0 \b0 element defines the way of checking the data transferred by the supplementary parity bit. If a character is transferred in a wrong way (incorrect parity), it is replaced by the highest valid character (for 8 bits the number 255, for 7 bits the number 127, for 6 bits the number 63, for 5 bits the number 31). Following values are permitted:\par
+\par
+\tab 0 = none parity \par
+\tab 1 = odd parity \par
+\tab 2 = even parity \par
+\tab 3 = mark parity \par
+\tab 4 = space parity \par
+\par
+\{bmc IDF20762.bmp\}\tab \b \i character was received\i0 \b0 \par
+\par
+The \b \i character was received \i0 \b0 element is a logic flag indicating, whether the received character is ready.\par
+\par
+\{bmc IDF20763.bmp\}\tab \b \i sending is allowed \i0 \b0 (CTS, RTS) \par
+\par
+The \b \i sending is allowed \i0 \b0 element is a flag indicating the value of control signals for the send request. The data transfer is not influenced by this signal. It depends on the program, how this signal will be utilized. By writing the logic value into this element the state of the control signal RTS is influenced (normally used as a request for the counterpart to send). By reading the element the state of the control signal CTS may be detected (used as the counterpart request input to send).\par
+\par
+\{bmc IDF20764.bmp\}\tab \b \i receiving is allowed \i0 \b0 (DSR, DTR) \par
+\par
+The \b \i receiving is allowed \i0 \b0 element is a flag indicating the value of control signals for the receive request. The data transfer is not influenced by this signal. It depends on the program, how this signal will be utilized. By writing the logic value into this element the state of the control signal DTR is influenced (normally used as a counterpart information about its own readiness or as a validity confirmation of data sent to the counterpart). By reading the element the state of the control signal DSR may be detected (used as the counterpart readiness confirmation input or as a validity confirmation of data sent by the counterpart).\par
+\par
+\{bmc IDF20756.bmp\}\tab \b \i number\i0 \b0 \par
+\par
+The \b \i number \i0 \b0 element is a numeric value serving to send and receive a character in form of a numeric code. By entering a number into the element the character will be sent to the counterpart. During sending the character the program is stopped, but for maximum 0.1 seconds. The character numeric value may range between 0 and the maximum value, according to the number of bits per character (255 for 8 bits, 127 for 7 bits, 63 for 6 bits, 31 for 5 bits). Values outside this range are rounded into a proper range by the modulo operation. By reading the element value the character is received. The reception takes place on the background while the program is running. By means of the \b \i character was received \i0 \b0 element it can be tested, whether the character received is ready. When the character is not ready, the element will be waiting for the character reception, but for maximum 0.1 seconds. If no character has been received, the element will return 0. If the character checking by means of parity is switched on, and if a transfer error occurs, a character corresponding to the last valid character (255 for 8 bits, 127 for 7 bits, 63 for 6 bits, 31 for 5 bits) will be returned.\par
+\par
+\{bmc IDF20757.bmp\}\tab \b \i character (text)\i0 \b0 \par
+\par
+The \b \i character (text) \i0 \b0 element is a text variable serving to send and receive a character (or, as the case may be, a text). By entering a character (or even a longer text) into this element the character (text) will be sent to the counterpart. During sending the character the program is stopped, but for maximum 0.1 seconds for each character. The character numeric value may range between 1 and the maximum value, according to the number of bits per character (255 for 8 bits, 127 for 7 bits, 63 for 6 bits, 31 for 5 bits). Values outside this range are rounded into a proper range by the modulo operation. By reading the element value one character (not the text) is received. For 5 and 6 bits the characters are transferred to displayable characters by adding 64 to the character code (i.e. the characters "@", "A", etc.). The reception takes place on the background while the program is running. By means of the \b \i character was received \i0 \b0 element it can be tested, whether the character received is ready. When the character is not ready, the element will be waiting for the character reception, but for maximum 0.1 seconds. If no character has been received, the element will return an empty text (the same way as when receiving a 0 code character, when 7 or 8 bits are concerned). If the character checking by means of parity is switched on, and if a transfer error occurs, a character corresponding to the last valid character (255 for 8 bits, 127 for 7 bits and 6 bits, 63 for 5 bits) will be returned.\par
+\par
+\page
+
+#{\footnote 20649}
+#{\footnote 20650}
+#{\footnote 20651}
+#{\footnote 20652}
+#{\footnote 20653}
+#{\footnote 20654}
+#{\footnote 20655}
+#{\footnote 20656}
+#{\footnote 20657}
+#{\footnote 20658}
+#{\footnote 20659}
+#{\footnote 20660}
+#{\footnote 20661}
+#{\footnote 20662}
+#{\footnote 20663}
+#{\footnote 20664}
+#{\footnote 20665}
+#{\footnote 20666}
+#{\footnote 20667}
+#{\footnote 20668}
+#{\footnote 20669}
+#{\footnote 20670}
+#{\footnote 20671}
+#{\footnote 20672}
+#{\footnote 20673}
+#{\footnote 20674}
+#{\footnote 20675}
+#{\footnote 20676}
+#{\footnote 20677}
+#{\footnote 20678}
+#{\footnote 20679}
+#{\footnote 20680}
+#{\footnote 20681}
+#{\footnote 20682}
+${\footnote Net Support DirectPlay}
++{\footnote 1}
+K{\footnote Net Support DirectPlay;DirectPlay;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Net Support DirectPlay\par
+\pard \plain \cf0 \fs20
+{\uldb Communication}{\v 20648}\par
+\par
+The DirectPlay net support enables to transfer information via net connection by programs in real time. DirectPlay may be utilized when running games with several computers connected in a local or a public net, as for example Internet. Beside for games, DirectPlay has a great significance in many other spheres requiring program communications in various computers carried out in real time. A typical example are examining and tutorial programs in classrooms. A precondition for running the DirectPlay net support is the installation of DirectX drivers of 5.0 or higher version. In the Windows 98 system these drivers are already included in the system's basic equipment.\par
+\par
+\i The use of the DirectPlay net support consists in the following steps:\i0 \par
+1. \i \b Connection selection\b0 \i0 . The connection determines the connection type of computers as to the hardware (serial cable, modem, local IPX net, public TCP net). In addition, in some connection types the address of the computer is decisive that has created the game and that will be controlling computer of the game.\par
+2. \i \b Game selection\b0 \i0 . Several independent games can be run on the selected connection. It is possible to be connected to an already running game or to create a new game. The controlling computer (which has created the game) can set specified game parameters.\par
+3. \i \b Player creation\b0 \i0 . To be connected to a game, it is necessary to create a player. After the player has been created, it is possible to communicate with the other players taking part in the game, and to transfer the game data.\par
+4. \i \b Game data transfer\b0 \i0 . During playing the game each player will send game information, concerning, for example, the player motion etc., to the other game participants (players).\par
+\par
+\{bmc IDF20650.bmp\}\tab \b \i list of connections\i0 \b0 \par
+\par The \b \i list of connections \i0 \b0 element returns a multiline text list of names of possible computer connections. An empty list indicates that no DirectX service of 5.0 version as a minimum is installed.\par
+\par
+\{bmc IDF20651.bmp\}\tab \b \i active connection\i0 \b0 \par
+\par
+The \b \i active connection \i0 \b0 element makes it possible to set or to find out an active connection selected. When setting the connection one of the connection list lines is entered as a parameter. If the corresponding connection is not found in the list, then abbreviated comparison is performed by searching key strings in the connection names: "\b IPX\b0 ", "\b TCP\b0 ", "\b MODEM\b0 " and "\b SERIAL\b0 ". The key strings can thus be used, when selecting the connection by a program, as abbreviations. If an empty text is entered, the active connection is discontinued and, at same time, the running game is interrupted. Returning an empty text means that the connection selected is not supported by the computer (no modem is installed, for example).\par
+\par
+\{bmc IDF20681.bmp\}\tab \b \i IP address of this computer\i0 \b0 \par
+\par
+The \b \i IP address of this computer \i0 \b0 element returns the IP address of the computer in the text form, for example: "123.56.210.234". The IP address is an address that the computer will receive as assigned by the controlling server after being connected to the Internet. A typical procedure when playing a game through the Internet net is as follows: One of the players creates the game (the connection selected is TCP/IP), locates the IP address in the game window (this can be different in several Internet connection), communicates this address by phone or better by E-mail to the other players. The players select game connections and enter the address communicated as the controlling computer address.\par
+\par
+\{bmc IDF20652.bmp\}\tab \b \i list of games\i0 \b0 \par
+\par
+The \b \i list of games \i0 \b0 element returns a multiline list of games that are running on the selected connection. In addressed connections, such as the Internet TCP, before looking up the game list the address of the computer is requested by the system on which the running games are supposed to be looked up. In the local nets the running games can be looked up on all computers by leaving out the computer address entry. The game is being updated continuously according to the games found. The list of games may be emptied by switching the active connection off (by setting the connection name to an empty text) and by opening the connection again. The searching will start from the beginning with the new address entered. Care is taken for the individual games listed to bear unique names. If two games bearing the same name are created, then the game names are numbered to characterize a game by its name unambiguously.\par
+\par
+In the list of games only those games are visible that are created by the same program. To distinguish identical programs the identification is used which is derived from the {\uldb main function}{\v Global Variables and Functions} name of the program created in the Peter tool environment. A condition necessary for connection programs to the same game is thus setting the same name of the program main function.\par
+\par
+\{bmc IDF20653.bmp\}\tab \b \i active game\i0 \b0 \par
+\par
+The \b \i active game \i0 \b0 element is a text variable serving to create a new game or to connect to a game already running. The connection to the game selected is accomplished by selecting the game name from the list of games and setting the game active. By entering a game name not existing in the list a new game will be created. To distinguish, whether a new game will be created or if a connection to an existing game will be implemented, the fact, whether the game entered appears in the game list, is critical. Before connecting a game the list of games is normally loaded and one is waiting until the game required appears in the list. However, when creating a new game the list would not be loaded not to contain any game (The list can be emptied by closing and opening the active connection anew). If a game cannot be set active (if, for example, the maximum number of players has been reached), the element will return an empty text. An active game will be abandoned by setting this element to an empty text.\par
+\par
+\{bmc IDF20673.bmp\}\tab \b \i host (control computer)\i0 \b0 \par
+\par
+The \b \i host (control computer) \i0 \b0 element is a logic flag indicating, if the computer in question is a control computer that has created the game and that the game is being run on. If the control computer leaves the game, then the game control will be taken over by another computer. The game take over is indicated by setting the above flag.\par
+\par
+\{bmc IDF20674.bmp\}\tab \b \i maximum of players \i0 \b0 (0 = unlimited)\par
+\par
+The \b \i maximum of players \i0 \b0 element is a numeric variable indicating the maximum number of players who can join the game. The value of 0 indicates an unlimited number of players (default value). This element can be changed by the control computer only. With the aid of this element the participation of further players in a game just running may be inhibited. After the game has been commenced the control computer will set the maximum number of players to the actual number of players participating in the game.\par
+\par
+\{bmc IDF20656.bmp\} ... \{bmc IDF20663.bmp\} \tab \b \i numeric game parameter 1 to 8 \i0 \b0 (-16384 to +16383)\par
+\par
+The \b \i numeric game parameter 1 to 8 \i0 \b0 elements are integral number variables ranging between -16384 and +16383, which can be utilized for setting the game parameters. The game parameters can be changed by the control computer only, other computers being allowed to read the variables only.\par
+\par
+\{bmc IDF20664.bmp\} ... \{bmc IDF20671.bmp\} \tab \b \i game flag 1 to 8\i0 \b0 \par
+\par
+The \b \i game flag 1 to 8 \i0 \b0 elements are logic variables serving to set the game parameters. The game parameters can be changed by the control computer only, other computers being allowed to read the variables only.\par
+\par
+\{bmc IDF20654.bmp\}\tab \b \i list of players\i0 \b0 \par
+\par
+The \b \i list of players \i0 \b0 element returns a multiline list of players, who are involved in a selected game. Each player is assigned a constant ordinal number in the list. If a player abandons the game, his position in the sequence will remain empty (empty line in the list) until the position is assigned to another new player. Therefore the number of players taking part in the game may be lower than the number of lines of the players' list. The players' names are unambiguous. Should identical names occur, they will be numbered.\par
+\par
+\{bmc IDF20655.bmp\}\tab \b \i active player\i0 \b0 \par
+\par
+The \b \i active player \i0 \b0 element is a text variable serving to create a player after joining or creating the game. A player is created by entering his name. In case of a successful creation of a player the player will appear in the list of players, and this element will return the player's name. In case of entering an already existing name this name will get numbered. Returning an empty text indicates an unsuccessful creation of a player (the maximum number of players has been reached). By entering another name of a player after the player's having been created this player will be renamed. By entering an empty text the player will be excluded from the game. (Beware of entering an empty text by the user; the player could be deleted unintentionally).\par
+\par
+\{bmc IDF20675.bmp\}\tab \b \i active player number \i0 \b0 (-1 = none)\par
+\par
+The \b \i active player number \i0 \b0 element returns a numeric data representing the player's ordinal number in the players' list (numbered starting with 0). If the player is not created, the value of -1 will be returned.\par
+\par
+\{bmc IDF20677.bmp\}\tab \b \i data block send/receive \i0 \b0 (-1 = to all/none)\par
+\par
+The \b \i data block send/receive \i0 \b0 element serves to transfer the game data between players. The data reception is implemented by reading the numeric value of this element. If no data is received, the value of -1 will be returned. If a data is received, the number of that player will be returned who has sent the data. From this instant data is prepared in the buffer of the data received that can be read by means of data elements (see below) till exhaustion of the data or till reception of another data block. Before sending a data block the data is first stored in the output data buffer by means of the data elements. By quoting an element for sending a data block as a command having the target player number set the data is sent from the output buffer to the player selected. By entering the value of -1 in place of the target player number the data are sent out to all players of the game the same way as if no value were entered.\par
+\par
+\{bmc IDF20678.bmp\}\tab \b \i number \i0 \b0 \par
+\par
+The \b \i number \i0 \b0 element serves to send and to receive a number between players taking part in the game. On entering the number this number is stored in the output buffer till sending it away. On reading the number this number is loaded from the input buffer. If there is no data more in the input buffer, the value of 0 will be returned.\par
+\par
+\{bmc IDF20682.bmp\}\tab \b \i integer number 0 to 255 (byte)\i0 \b0 \par
+\par
+The \b \i integer number 0 to 255 (byte) \i0 \b0 serves to send and to receive an integer value ranging between 0 and 255 between players participating in the game. This number, occupying 1 byte (1 character) only, is suitable as to the low demand of the transfer capacity unlike a normal number, occupying 8 bytes. On entering the number it is stored in the output buffer till sending it away. On reading the number this number is loaded from the input buffer. If there is no data more in the input buffer, the value of 0 will be returned.\par
+\par
+\{bmc IDF20679.bmp\}\tab \b \i text\i0 \b0 \par
+\par
+The \b \i text \i0 \b0 element is used to send and to receive a text between the players participating in the game. On entering the text it is stored in the output buffer till sending it away. On reading the text this text is loaded from the input buffer. If there is no data more in the input buffer, an empty text will be returned.\par
+\par
+\par
+\{bmc IDF20680.bmp\}\tab \b \i flag\i0 \b0 \par
+\par
+The \b \i flag \i0 \b0 element serves to send and to receive a logic flag between the players participating in the game. On entering the flag it is stored in the output buffer till sending it away. On reading the flag this flag is loaded from the input buffer. If there is no data more in the input buffer, a reset flag (the value of NO) will be returned.\par
+\par
+\par
+\i \b Notes to the data transfer organization:\b0 \i0 \par
+During the game a delay of the information transferred has to be provided for. This delay can reach units till hundreds of milliseconds. It can even occur that some pieces of information will not come in the same succession as they have been sent, or that they may even get lost. This matter of fact requires that the program might show some resistance against generating transfer errors. One of the applied methods of the game control is leaving the entire control activities to one of the computers (this is, as a rule, the control computer that has created the game). This deciding computer receives control information from the users of all other computers, makes decisions about activities to be carried out during the game, and then it sends commands to be executed by the other computers. The advantage of this central control mode is the unambiguous course of the game, the disadvantage is a lower game speed and higher demands for the data transfer between the computers. In addition, there is a problem consisting in the control hand over, if the control computer quits the game. Another possibility is to leave the decisions to each computer. Each computer thus informs the other computers about activities which were carried out as well as about all events concerning the particular computer. The matters in question may be for example the information about movements of own figures in the game, decisions about the hits received from the adversary, and the information about changes of the own score or about the figures' energy. The other computers carry out the inevitably transactions only, such as for example the figures' movement animation. The format of the data to be transferred is determined by the programmer himself during the program creation. A typical use is the data transfer in form of data groups. At the beginning of each group there is a number ranging between 1 and 255, representing the command code. The command is followed by command parameters according the own decision. The number 0 command represents the data end. This value being received automatically if there is no further data in the input buffer.\par
+
+\page
+
+#{\footnote 21035}
+#{\footnote 21036}
+#{\footnote 21037}
+#{\footnote 21038}
+#{\footnote 21039}
+#{\footnote 21040}
+#{\footnote 21041}
+#{\footnote 21042}
+${\footnote UDP packets}
++{\footnote 1}
+K{\footnote UDP packets;UDP;}
+\pard \plain \brdrb \cf12 \fs24 \b
+UDP packets\par
+\pard \plain \cf0 \fs20
+{\uldb Communication}{\v 20648}\par
+\par
+Using UDP packets you can transfer data between computers over net connection (local net or Internet). UDP protocol is based on packet transfers without confirmation of connection. Thanks to it data transfer is fast, but without data lossless. If you send some data, you cannot rely on it that data will be really delivered to receiver. UDP protocol is suitable e.g. for fast communication between games.\par
+\par
+With data transfer using UDP protocol sending side sets IP address of receiver, to which data sending will proceed, and port, on which receiver will listen. Port is any number in range 1 to 65535. Data can be sent to more receivers at once (broadcast). Sended data (data packets) can be in format of text message or binary data. Size of one UDP packet is limited. Minimum guaranteed size is 512 bytes but till 1500 bytes are usually supported. Receiver sets receiving IP address, on which he will listen (in case that there are more net cards on PC) and receiving port.\par
+\par
+\{bmc IDF21036.bmp\}\tab \b \i sending IP address\i0 \b0 \par
+\par
+The \b \i sending IP address \i0 \b0 element determines IP address, on which packets will be sent to. IP address is a text in form e.g. 192.168.1.20, then 4 groups of digits (every one in range of 0 to 255) separated with dots. Every group can be in decimal form (if it begins with a 1 to 9 digit), in octal form (beginning with a 0 digit) or in hexadecimal format (beginning with 0x characters). Value 255 presents broadcast transmission, without determining of given part of IP address. E.g. 255.255.255.255 is a sending to all recipients, 129.168.1.255 sends a packet to all PCs inside local net. Using reading an element returns current sending IP address. Sending address has default value of 127.0.0.1, which is loopback IP adresa of the computer, used to communicate between programs on one computer. Current IP address of the computer can be obtained with {\uldb IP address of this computer}{\v 20681} element.\par
+\par
+\{bmc IDF21037.bmp\}\tab \b \i sending port (-1=close sending)\i0 \b0 \par
+\par
+The \b \i sending port \i0 \b0 element sets port, on which recipient of packets will be listening. Sending port is a number in range 1 to 65535. Its default value is 5000. With writing a value of -1 the setting of sending port will not be changed, but currently open UDP channel will be closed. By reading of this element currently set value of sending port will be returned.\par
+\par
+\{bmc IDF21038.bmp\}\tab \b \i size of receiving buffer\i0 \b0 \par
+\par
+When receiving UDP packet a size of data is limited to maximal value, which is determined by the \b \i size of receiving buffer \i0 \b0 element. Default value of receiving buffer is 512 bytes. A buffer can have size in range of 1 to 16384 bytes. Upper limit is determined by net interface. Packet size of 1500 bytes is usually supported. With reading of the element one can get current size of receiving buffer.\par
+\par
+\{bmc IDF21039.bmp\}\tab \b \i received/receiving IP address\i0 \b0 \par
+\par
+The \b \i received/receiving IP address \i0 \b0 element sets IP address (as text) on which receiver of UDP packets will listen. Setting IP address is necessary in case, if one of more net interfaces (installed on PC) need to be selected. In opposite case default setting can be left, that is 0.0.0.0 address in meaning that receiving will go through whichever net interface. By reading the element an IP address of sender of last received UDP packet will be returned. Value of 255.255.255.255 will be returned before receiving of a first packet.\par
+\par
+\{bmc IDF21040.bmp\}\tab \b \i received/receiving port (-1=close receiving)\i0 \b0 \par
+\par
+The \b \i receiving port \i0 \b0 element sets port, on which receiver of UDP packets will listen. Receiving port is a number in range 1 to 65535. Its default value is 5000. With writing a value of -1 the setting of receiving port will not be changed, but currently open UDP channel will be closed. By reading of this element a port of sender of last received UDP packet will be returned. Value of 0 will be returned before receiving of a first packet.\par
+\par
+\{bmc IDF21041.bmp\}\tab \b \i binary packet\i0 \b0 \par
+\par
+The \b \i binary packet \i0 \b0 serves to data transfer in binary form. Before packet sending data to send should be prepared in memory block, \b \i reading pointer \i0 \b0 should be set to begin of data. Then packet will be send using the \b \i binary packet \i0 \b0 element with data size entered as parameter. With reading of the element a receving of packet will proceed, element returns size of readed data (0 if nothing received). Receiving proceeds into memory block, to which the \b \i writing pointer \i0 \b0 is set. Memory block must have size minimal the same, as is set with \b \i size of receiving buffer \i0 \b0 element.\par
+\par
+\{bmc IDF21042.bmp\}\tab \b \i text packet \i0 \b0 \par
+\par
+The \b \i text packet \i0 \b0 serves to data transfer in text form. To send data use the element as command with text to send entered as parameter. With reading of element a packet receiving proceeds, received data will be returned as text. If nothing received, empty text will be returned. Size of received text is limited to \b \i size of receiving buffer \i0 \b0 value.\par
+\par
+
+\page
+
+}

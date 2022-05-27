@@ -1,0 +1,481 @@
+{\rtf1 \ansi \deff0
+
+@{\footnote ------- definice fontù --------- }
+
+{\fonttbl 
+{\f0 \fswiss MS San Serif;}
+}
+
+@{\footnote ------- definice barev --------- }
+
+{\colortbl
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red192\green192\blue192;
+\red128\green128\blue128;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+
+@{\footnote Použití barev:
+	0 - èerná
+	1 - tmavì èervená
+	2 - tmavì zelená
+	3 - hnìdá
+	4 - tmavì modrá
+	5 - tmavì fialová
+	6 - tmavì modrozelená
+	7 - šedá
+	8 - tmavì šedá
+	9 - èervená
+	10 - zelená
+	11 - žlutá
+	12 - modrá
+	13 - fialová
+	14 - modrozelená
+	15 - bílá
+}
+
+#{\footnote 20517}
+#{\footnote 20518}
+#{\footnote 20520}
+#{\footnote 20521}
+#{\footnote 20522}
+${\footnote Confirmation Dialog}
++{\footnote 1}
+K{\footnote Confirmation Dialog;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20517.bmp\} Confirmation Dialog\par
+\pard \plain \cf0 \fs20
+{\uldb Dialogs}{\v 20516}\par
+\par
+\{bmc IDF20517.bmp\} \b \i confirmation dialog \i0 \b0 \par
+\tab \{bmc IDF20519.bmp\} \b \i caption \i0 \b0 \par
+\tab \{bmc IDF20518.bmp\} \b \i text \i0 \b0 \par
+\tab \{bmc IDF20520.bmp\} \b \i icon \i0 \b0 \par
+\tab \{bmc IDF20521.bmp\} \b \i buttons \i0 \b0 \par
+\tab \{bmc IDF20522.bmp\} \b \i default button \i0 \b0 \par
+\par
+The \b \i confirmation dialog \i0 \b0 serves to select further operation by the user, e.g. for displaying a message.\par
+\par
+As the first parameter the text is entered which will be displayed in the dialog window caption (upper bar).\par
+\par
+The second parameter is the text which will be displayed in the dialog window. The text may include several lines, the window dimensions will be adapted to the line number and length. A multi-line text can be defined either by textual linking of single-line text constants and of the next line constants, or a multi-line text can be created in the text variable.\par
+\par
+By means of the third parameter the icon to be displayed can be selected. This icon is selected by specifying the numeric value in the range from 0 to 4:\par
+\tab 0 = none\par
+\tab 1 = error message\par
+\tab 2 = question\par
+\tab 3 = warning\par
+\tab 4 = information\par
+\par
+By means of the fourth parameter the set of the buttons to be displayed is selected, specifying the numeric value between 0 and 5:\par
+\tab 0 = OK\par
+\tab 1 = OK / Cancel\par
+\tab 2 = Abort / Retry / Ignore\par
+\tab 3 = Yes / No / Cancel\par
+\tab 4 = Yes / No\par
+\tab 5 = Retry / Cancel\par
+\par
+The last parameter is again a numeric one. It indicates, which button will be preset as a default one. The value is specified in the range between 1 and 3.\par
+\par
+After selecting some of the button the confirmation dialog window will return a numeric value according to the button selected:\par
+\tab 1 = OK\par
+\tab 2 = Cancel\par
+\tab 3 = Abort\par
+\tab 4 = Retry\par
+\tab 5 = Ignore\par
+\tab 6 = Yes\par
+\tab 7 = No\par
+\par
+If the return of a selected button value is not required, then the confirmation dialog may be also used as a command.\par
+\page
+
+#{\footnote 20524}
+#{\footnote 20525}
+#{\footnote 20526}
+#{\footnote 20527}
+#{\footnote 20528}
+${\footnote Enter Text Dialog}
++{\footnote 1}
+K{\footnote Enter Text Dialog;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20524.bmp\} Enter Text Dialog\par
+\pard \plain \cf0 \fs20
+{\uldb Dialogs}{\v 20516}\par
+\par
+\{bmc IDF20524.bmp\} \b \i enter text \i0 \b0 \par
+\tab \{bmc IDF20519.bmp\} \b \i caption \i0 \b0 \par
+\tab \{bmc IDF20525.bmp\} \b \i 1st line of message \i0 \b0 \par
+\tab \{bmc IDF20526.bmp\} \b \i 2nd line of message \i0 \b0 \par
+\tab \{bmc IDF20527.bmp\} \b \i 3rd line of message \i0 \b0 \par
+\tab \{bmc IDF20528.bmp\} \b \i prepared text to enter \i0 \b0 \par
+\par
+This dialog is used for entering the text by the user. In the dialog parameter 3 text lines of a prompt can be specified which will be displayed as a prompt for the user. By setting the parameter \b \i prepared text to enter \i0 \b0 the text can be preset, which will be displayed in the window editing line. The dialog returns the text entered by the user. In case the text entering is interrupted, an empty text will be returned.\par
+\par
+\page
+
+#{\footnote 20715}
+#{\footnote 20716}
+#{\footnote 20719}
+#{\footnote 20720}
+#{\footnote 20721}
+${\footnote Enter File to Open and Save}
++{\footnote 1}
+K{\footnote Enter File to Open and Save;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20715.bmp\} \{bmc IDF20716.bmp\} Enter File to Open and Save\par
+\pard \plain \cf0 \fs20
+{\uldb Dialogs}{\v 20516}\par
+\par
+\{bmc IDF20715.bmp\} \b \i enter file to open \i0 \b0 \par
+\tab \{bmc IDF20519.bmp\} \b \i caption \i0 \b0 \par
+\tab \{bmc IDF20721.bmp\} \b \i files type name \i0 \b0 \par
+\tab \{bmc IDF20719.bmp\} \b \i file mask \i0 \b0 \par
+\tab \{bmc IDF20720.bmp\} \b \i prepared file name \i0 \b0 \par
+\par
+\{bmc IDF20716.bmp\} \b \i enter file to save \i0 \b0 \par
+\tab \{bmc IDF20519.bmp\} \b \i caption \i0 \b0 \par
+\tab \{bmc IDF20721.bmp\} \b \i files type name \i0 \b0 \par
+\tab \{bmc IDF20719.bmp\} \b \i file mask \i0 \b0 \par
+\tab \{bmc IDF20720.bmp\} \b \i prepared file name \i0 \b0 \par
+\par
+The \b \i enter file to open \i0 \b0 and \b \i enter file to save \b0 \i0 dialogs enable to select a file to be opened or saved. The \b \i caption \i0 \b0 text parameter specifies the window title. If the title is not specified, a default title pursuant to the Windows system will be used. The \b \i files type name \i0 \b0 text parameter defines the descriptive text that will appear in the dialog in the file type names list. For several file types several lines of file type names can be entered.\par
+\par
+The \b \i file mask \i0 \b0 text parameter defines the files to appear in the dialog. In the file mask definition the asterisk convention for designating files is used: the question mark \b ? \b0 replaces one arbitrary character, the asterisk \b * \b0 replaces an arbitrary character group. More masks can be entered, too, individual masks being separated by the semicolon character \b ;\b0 . For example, the \b *.doc;*.txt \b0 entry will display all text files of the DOC and TXT types. By entering the masks in multiple lines more file types can be defined. In the dialog this will be displayed as multiple lines in the file list.\par
+\par
+The \b \i prepared file name \i0 \b0 text parameter determines the file folder, type and name, which will appear in the window. If nothing is entered, the current folder, no file name, and the first extension in the file mask list will be used.\par
+\par
+The file being selected, the dialog will return the name of the selected file including the path as a text. On interrupting the dialog an empty text will be returned.\par
+\page
+
+#{\footnote 20608}
+#{\footnote 20596}
+#{\footnote 20597}
+#{\footnote 20598}
+#{\footnote 20599}
+#{\footnote 20601}
+#{\footnote 20602}
+#{\footnote 20600}
+#{\footnote 20630}
+#{\footnote 20612}
+#{\footnote 20604}
+#{\footnote 20686}
+#{\footnote 20700}
+#{\footnote 20740}
+#{\footnote 20741}
+#{\footnote 20742}
+#{\footnote 20777}
+#{\footnote 20941}
+${\footnote Functions Common for All Dialog Elements}
++{\footnote 1}
+K{\footnote Functions Common for All Dialog Elements;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20608.bmp\} Functions Common for All Dialog Elements\par
+\pard \plain \cf0 \fs20
+{\uldb Dialogs}{\v 20516}\par
+\par
+\{bmc IDF20596.bmp\}\tab \b \i horizontal coordinate \i0 \b0 \par
+\{bmc IDF20597.bmp\}\tab \b \i vertical coordinate \i0 \b0 \par
+\{bmc IDF20598.bmp\}\tab \b \i width \i0 \b0 \par
+\{bmc IDF20599.bmp\}\tab \b \i height \i0 \b0 \par
+\{bmc IDF20601.bmp\}\tab \b \i visible \i0 \b0 \par
+\{bmc IDF20602.bmp\}\tab \b \i disable \i0 \b0 \par
+\{bmc IDF20600.bmp\}\tab \b \i text \i0 \b0 \par
+\{bmc IDF20630.bmp\}\tab \b \i icon \i0 \b0 \par
+\{bmc IDF20700.bmp\}\tab \b \i picture \i0 \b0 \par
+\{bmc IDF20604.bmp\}\tab \b \i button press or element change \i0 \b0 \par
+\{bmc IDF20612.bmp\}\tab \b \i input focus \i0 \b0 \par
+\{bmc IDF20686.bmp\}\tab \b \i button for Esc key \i0 \b0 (-1 = none)\par
+\{bmc IDF20741.bmp\}\tab \b \i internal width \i0 \b0 \par
+\{bmc IDF20742.bmp\}\tab \b \i internal height \i0 \b0 \par
+\{bmc IDF20740.bmp\}\tab \b \i test mouse in element \i0 \b0 \par
+\{bmc IDF20777.bmp\}\tab \b \i actual position \i0 \b0 \par
+\{bmc IDF20941.bmp\}\tab \b \i actual position 2 \i0 \b0 \par
+{\uldb \{bmc IDF20712.bmp\}\tab font of element}{\v 20712} \par
+\par
+All operations are related to a window or to an element, which is selected by the {\uldb element identification number}{\v 20593}. The \b \i visible \i0 \b0 and \b \i disable \i0 \b0 logic variables can either be set to a required state, or, by entering them without parameters the state can be switched over to an opposite value. The \b \i icon \i0 \b0 element is a variable of the item type. It asserts itself when the icon button, the icon dialog element and the dialog window are used. The \b \i picture \i0 \b0 element is a variable of picture type, it asserts itself only in using the picture dialog element. The \b \i input focus \i0 \b0 element specifies the dialog element identification number, to which the input focus is set, i.e. which will be controlled by the user.\par
+\par
+The \b \i width \i0 \b0 and \b \i height \i0 \b0 elements specify the outer dimensions of an element or a window. For the Windows desktop (identification number -1) they specify the display resolution. The \b \i internal width \i0 \b0 and \b \i internal height \i0 \b0 elements specify the inner (client's) element or window dimensions. For the Windows desktop (identification number -1) they specify the Windows desktop dimensions (without the border bars).\par
+\par
+The \b \i button press or element change \i0 \b0 element is a logic flag that is dependent on the element type. The flag can be read only; after reading it its value is set to false.\par
+\tab \i button \i0 \tab \tab - button has been pressed\par
+\tab \i switch \i0 \tab \tab - switch has been switched over\par
+\tab \i text edit \i0 \tab \tab - text has been changed\par
+\tab \i text and icon \i0 \tab - element has been clicked on\par
+\tab \i list \i0 \tab \tab \tab - selected item has been changed\par
+\tab \i dialog window \i0 \tab - some of the window elements has set the press flag\par
+\par
+The \b \i button for Esc key \i0 \b0 element is a numeric variable representing the identification number of button that will be activated by pressing Esc. Thus it is possible to service the dialog window or the whole program closure by pressing Esc. The value of -1 indicates that the Esc key will not be accepted by any button.\par
+\par
+The \b \i test mouse in element \i0 \b0 element tests, whether the mouse cursor is situated above the dialog window element. As a net parameter the element or window identification number is specified. The element returns a logic flag indicating, whether the mouse cursor is situated above the element.\par
+\par
+The \b \i actual position \i0 \b0 element serves to find out or to set an additional numeric parameter of the dialog element:\par
+\tab \i trackbar \i0 \tab \tab - trackbar position (0 to 1)\par
+\tab \i progressbar \i0 \tab \tab - pointer position (0 to 1)\par
+\tab \i listbox \i0 \tab \tab - selected entry (0 and more, -1=none)\par
+\tab \i table \i0 \tab \tab - selected row (0 and more, -1=none)\par
+\tab \i edit line \i0 \tab \tab - caret position (0 and more)\par
+\tab \i edit field, RichEdit \i0 \tab - row with the caret (0 and more)\par
+\par
+The \b \i actual position 2 \i0 \b0 element serves to find out or to set second additional numeric parameter of the dialog element:\par
+\tab \i edit field, RichEdit \i0 \tab - position with the caret (0 and more)\par
+\tab \i table \i0 \tab \tab - selected column (0 and more, -1=none)\par
+\par
+
+\page
+
+
+#{\footnote 20620}
+#{\footnote 20621}
+#{\footnote 20702}
+#{\footnote 20703}
+#{\footnote 20704}
+#{\footnote 20705}
+#{\footnote 20706}
+#{\footnote 20707}
+#{\footnote 20708}
+#{\footnote 20710}
+#{\footnote 20711}
+#{\footnote 20712}
+${\footnote Font of Element}
++{\footnote 1}
+K{\footnote Font of Element;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20712.bmp\} Font of Element\par
+\pard \plain \cf0 \fs20
+{\uldb Functions Common for All Dialog Elements}{\v 20608}\par
+\par
+\{bmc IDF20620.bmp\}\tab \b \i bold \i0 \b0 \par
+\{bmc IDF20703.bmp\}\tab \b \i italic \i0 \b0 \par
+\{bmc IDF20704.bmp\}\tab \b \i underline \i0 \b0 \par
+\{bmc IDF20705.bmp\}\tab \b \i strike out \i0 \b0 \par
+\{bmc IDF20621.bmp\}\tab \b \i fixed pitch \i0 \b0 \par
+\{bmc IDF20706.bmp\}\tab \b \i serifs \i0 \b0 \par
+\{bmc IDF20702.bmp\}\tab \b \i height of characters \i0 \b0 (0 = usual)\par
+\{bmc IDF20707.bmp\}\tab \b \i relative width of characters \i0 \b0 (0 = usual, 1 = basic)\par
+\{bmc IDF20708.bmp\}\tab \b \i text slope angle \i0 \b0 (0 = usual)\par
+\{bmc IDF20710.bmp\}\tab \b \i character color \i0 \b0 \par
+\{bmc IDF20711.bmp\}\tab \b \i background color \i0 \b0 \par
+\par
+All operations are related to that window or element that is selected by the {\uldb element identification number}{\v 20593}. The \b \i bold\i0 \b0 , \b \i italic\i0 \b0 , \b \i underline\i0 \b0 , \b \i strike out\i0 \b0 , \b \i fixed pitch \i0 \b0 and \b \i serifs \i0 \b0 logic variables can either be set to the state required, or, by entering them without parameters, the state can be switched to the inverse value. By switching on both switches, the \b \i fixed pitch\i0 \b0 , and the \b \i serifs \i0 \b0 switch at a time the {\uldb user font}{\v 20744} will be used.\par
+\par
+On entering the text slope angle the text is regularly rotated around the left upper text corner (in case of a multiline text the lines will rotate individually). If, for example, the text is rotated 1/4 revolution (i.e. 90 degrees), the rows would be aligned to cover one another, thus turning invisible. A text thus rotated can be displayed by means of a multiline text form. In front of the text to be displayed several empty lines must be inserted. These lines shift the text down making the rotated text visible. On the contrary, on rotating the text down it is suitable to use a text element justified to the right or centered, for the left text portion to get indented from the left window border, thus staying visible. A more suitable solution for displaying rotated texts is, however, a program aided drawing onto the program graphic sheet, taking it as a picture and after that displaying it in a dialog window as a picture dialog element.\par
+\par
+The elements for setting the \b \i character color \i0 \b0 and the \b \i background color \i0 \b0 cannot be utilized when working with normal buttons. It is recommended to use only Windows system basic colors (i.e. pastel colors) as colors to enter. In the 256 color display graphic mode only 20 Windows basic colors will be utilized to display the colors selected.\par
+\page
+
+#{\footnote 20052}
+#{\footnote 20595}
+#{\footnote 20629}
+#{\footnote 20242}
+#{\footnote 20243}
+#{\footnote 20749}
+#{\footnote 20770}
+#{\footnote 20771}
+#{\footnote 20772}
+#{\footnote 20773}
+${\footnote Windows}
++{\footnote 1}
+K{\footnote Windows;Dialog Windows;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20052.bmp\} Windows\par
+\pard \plain \cf0 \fs20
+{\uldb Dialogs}{\v 20516}\par
+\par
+\{bmc IDF20595.bmp\} \tab \b \i create window \i0 \b0 \par
+\{bmc IDF20629.bmp\} \tab \b \i create window without closing possibility \i0 \b0 \par
+\par
+The \b \i create window \i0 \b0 and \b \i create window without closing possibility \i0 \b0 elements serve to create a new dialog window. These elements will return the window identification number, by means of which window references will be done later (e.g. on deleting a window). At the same time the new window is set as an active element, with the aid of which following operations will be executed. If no new window is established, then the dialog elements will be created in the basic window, which will automatically switch off the graphic mode after creating the first element. The newly created window is settable as invisible. It is advisable to first create the window dialog elements, to set their position and dimensions, to switch on their visibility, and finally to switch on the window visibility.\par
+\par
+\{bmc IDF20242.bmp\} \tab \b \i window has border \i0 \b0 \par
+\{bmc IDF20243.bmp\} \tab \b \i window has caption \i0 \b0 \par
+\par
+The \b \i window has border \i0 \b0 element determines, whether a frame will be displayed around a window or an element, selected by the {\uldb element identification number}{\v 20593}. The \b \i window has caption \i0 \b0 element determines, whether a caption will be displayed on the window upper border. For dialog elements a thickened inner frame will be used instead of the caption. If the window's or element's caption is on, but their frame is off, a thin frame will be used.\par
+\par
+\{bmc IDF20749.bmp\} \tab \b \i always on top \i0 \b0 \par
+\par
+The \b \i always on top \i0 \b0 element decides, whether the window that is selected by the {\uldb element identification number}{\v 20593} will always be displayed at the top, overlapping all other windows, even if it is not active (it has no input focus).\par
+\par
+\{bmc IDF20770.bmp\} \tab \b \i window is resizable \i0 \b0 \par
+\par
+The \b \i window is resizable \i0 \b0 element enables the window to be resizable. It is a logic variable, which can both be read and entered. Only the main program window is resizable as default.\par
+\par
+\{bmc IDF20771.bmp\} \tab \b \i window may be closed \i0 \b0 \par
+\par
+The \b \i window may be closed \i0 \b0 allows to disable the window to be closed by the user (by clicking on the cross in the right upper corner of the window or by the Alt+F4 key pressing). The element is a logic variable. By setting it to YES the window may be closed (default state). By resetting it to NO the closing is disabled. If the user tries to close the window, the YES flag is returned by reading of this element and the program can carry out operations needed, as prompting to save the file and only after that program termination. The flag of close request is automatically reset by reading of it.\par
+\par
+\{bmc IDF20772.bmp\} \tab \b \i window is maximized \i0 \b0 \par
+\{bmc IDF20773.bmp\} \tab \b \i window is minimized \i0 \b0 \par
+\par
+The \b \i window is maximized \i0 \b0 and \b \i window is minimized \i0 \b0 elements are logic variables designated for both reading and writing. They determine the maximized/minimized state of the window.\par
+\par
+With combination of the \b \i window has border\i0 \b0 , \b \i window has caption \i0 \b0 and \b \i window is resizable \i0 \b0 elements eight different states can be set:\par
+\pard \tx1000 \tx2000 \tx3000 \tx3500 \tx4500 \tx5500 \tx6500 \tx7500 \par
+\i Dialog Window:\i0 \par
+\b Border\tab Caption\tab Resize\tab -->\tab Border\tab Caption\tab Resize\tab Minim.\tab Maxim.\b0 \par
+no\tab no\tab no\tab \tab no\tab no\tab no\tab no\tab no\par
+YES\tab no\tab no\tab \tab 3D\tab no\tab no\tab no\tab no\par
+no\tab YES\tab no\tab \tab thin\tab YES\tab no\tab no\tab no\par
+YES\tab YES\tab no\tab \tab 3D\tab YES\tab no\tab YES\tab no\par
+no\tab no\tab YES\tab \tab no\tab no\tab no\tab no\tab no\par
+YES\tab no\tab YES\tab \tab 3D\tab no\tab YES\tab no\tab no\par
+no\tab YES\tab YES\tab \tab thin\tab YES\tab no\tab YES\tab YES\par
+YES\tab YES\tab YES\tab \tab 3D\tab YES\tab YES\tab YES\tab YES\par
+\par
+\i Dialog Element:\i0 \par
+\b Border\tab Caption\tab Resize\tab -->\tab Border\b0 \par
+no\tab no\tab no\tab \tab none\par
+YES\tab no\tab no\tab \tab 3D lowered\par
+no\tab YES\tab no\tab \tab thin 3D lowered\par
+YES\tab YES\tab no\tab \tab 3D raised and lowered\par
+no\tab no\tab YES\tab \tab thin line\par
+YES\tab no\tab YES\tab \tab thin line and 3D lowered\par
+no\tab YES\tab YES\tab \tab 3D raised\par
+YES\tab YES\tab YES\tab \tab 3D double lowered\par
+\pard \par
+\page
+
+#{\footnote 20610}
+#{\footnote 20603}
+#{\footnote 20613}
+#{\footnote 20614}
+#{\footnote 20942}
+#{\footnote 20605}
+#{\footnote 20627}
+#{\footnote 20622}
+#{\footnote 20607}
+#{\footnote 20615}
+#{\footnote 20611}
+#{\footnote 20628}
+#{\footnote 20775}
+#{\footnote 20776}
+#{\footnote 20947}
+#{\footnote 20948}
+${\footnote Buttons}
++{\footnote 1}
+K{\footnote Dialog Buttons;Buttons;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20610.bmp\} Buttons\par
+\pard \plain \cf0 \fs20
+{\uldb Dialogs}{\v 20516}\par
+\par
+\{bmc IDF20603.bmp\}\tab \b \i create button \i0 \b0 \par
+\{bmc IDF20613.bmp\}\tab \b \i create default button \i0 \b0 \par
+\{bmc IDF20614.bmp\}\tab \b \i create icon button \i0 \b0 \par
+\{bmc IDF20942.bmp\}\tab \b \i create switch button \i0 \b0 \par
+\{bmc IDF20605.bmp\}\tab \b \i create check box \i0 \b0 \par
+\{bmc IDF20627.bmp\}\tab \b \i create 3-state checkbox \i0 \b0 \par
+\{bmc IDF20622.bmp\}\tab \b \i create switch - group beginning \i0 \b0 \par
+\{bmc IDF20607.bmp\}\tab \b \i create switch \i0 \b0 \par
+\{bmc IDF20615.bmp\}\tab \b \i create frame \i0 \b0 \par
+\{bmc IDF20611.bmp\}\tab \b \i switch on/off \i0 \b0 \par
+\{bmc IDF20628.bmp\}\tab \b \i switch in undefined state \i0 \b0 \par
+\{bmc IDF20775.bmp\}\tab \b \i create horizontal trackbar \i0 \b0 \par
+\{bmc IDF20776.bmp\}\tab \b \i create vertical trackbar \i0 \b0 \par
+\{bmc IDF20947.bmp\}\tab \b \i create horizontal scrollbar \i0 \b0 \par
+\{bmc IDF20948.bmp\}\tab \b \i create vertical scrollbar \i0 \b0 \par
+\par
+The \b \i create... \i0 \b0 program elements create a dialog element the visibility of which is switched off, return the {\uldb element identification number}{\v 20593} and set it as a selected element for the subsequent operations.\par
+\par
+The icon button can be used as a 3-state button, the states have to be switched over by means of a program.\par
+\par
+In the group of dependent switches the \b \i switch - group beginning \i0 \b0 must be created as the first job; the other switches of the group are to be created as a normal \b \i switch\i0 \b0 .\par
+\par
+The \b \i create horizontal trackbar \i0 \b0 and \b \i create vertical trackbar \i0 \b0 elements create trackbar (potentiometer) control elements. The value of the trackbar can both be read and entered by the {\uldb actual position}{\v 20777} element in the range from 0 to 1.\par
+\par
+The \b \i create horizontal scrollbar \i0 \b0 and \b \i create vertical scrollbar \i0 \b0 elements create scrollbar control elements. The position of the scrollbar can both be read and entered by the {\uldb actual position}{\v 20777} element in the range from 0 to 1. The length of the scrollbar (length of the page) can both be read and entered by the {\uldb actual position 2}{\v 20941} element in the range from 0 to 1.\par
+\page
+
+#{\footnote 20592}
+#{\footnote 20606}
+#{\footnote 20609}
+#{\footnote 20617}
+#{\footnote 20631}
+#{\footnote 20685}
+#{\footnote 20699}
+#{\footnote 20701}
+#{\footnote 20709}
+#{\footnote 20769}
+#{\footnote 20774}
+${\footnote Texts and Pictures}
++{\footnote 1}
+K{\footnote Dialog Texts and Pictures;Texts and Pictures;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20592.bmp\} Texts and Pictures\par
+\pard \plain \cf0 \fs20
+{\uldb Dialogs}{\v 20516}\par
+\par
+\{bmc IDF20606.bmp\}\tab \b \i create edit line \i0 \b0 \par
+\{bmc IDF20609.bmp\}\tab \b \i create edit field \i0 \b0 \par
+\{bmc IDF20769.bmp\}\tab \b \i create edit field without wrap \i0 \b0 \par
+\{bmc IDF20701.bmp\}\tab \b \i create RichEdit editor \i0 \b0 \par
+\{bmc IDF20617.bmp\}\tab \b \i create text \i0 \b0 \par
+\{bmc IDF20685.bmp\}\tab \b \i create centered text \i0 \b0 \par
+\{bmc IDF20709.bmp\}\tab \b \i create right aligned text \i0 \b0 \par
+\{bmc IDF20631.bmp\}\tab \b \i create icon \i0 \b0 \par
+\{bmc IDF20699.bmp\}\tab \b \i create picture \i0 \b0 \par
+\{bmc IDF20774.bmp\}\tab \b \i create progressbar \i0 \b0 \par
+\par
+The \b \i create... \i0 \b0 program elements create a dialog element the visibility of which is switched off, return the {\uldb element identification number}{\v 20593} and set it as a selected element for the subsequent operations.\par
+\par
+The \b \i edit field without wrap \i0 \b0 differs from the usual edit field by the facts that it doesn't wrap long rows according to the window, it supports text searching with the Ctrl+F/F3 keys and text length is not limited.\par
+\par
+The \b \i RichEdit editor \i0 \b0 element is an editing field supporting a text having changeable color and changeable font size or style. A text in the RichEdit form can be created by the text editor WordPad, which is a part of the Windows operation system, or the Word editor. The text has to be stored in the RichEdit format (RTF file extension) in the Peter application TEXT text library. A file can be loaded into the program from the library like a normal text file. In the Peter application editor a file is displayed together with the RichEdit format control codes. Following a program entry into the RichEdit element the text will be displayed in the proper form. The RichEdit element supports text searching with the Ctrl+F/F3 keys.\par
+\par
+The \b \i create picture \i0 \b0 element creates a picture in the dialog window. Unlike the icon, which uses only the basic set of the Windows colors (20 colors) in the screen graphic mode of 256 colors, a picture enables to display all colors in the full range. On displaying a picture the dimensions of the picture window element are determinative; the real picture dimensions will be adapted to them.\par
+\par
+The \b \i create progressbar \i0 \b0 element creates an indicator of an operation progress. The value of the progressbar can both be read and entered by the {\uldb actual position}{\v 20777} element in the range from 0 to 1. The progressbar can be horizontally oriented only.\par
+\par
+\page
+
+#{\footnote 20623}
+#{\footnote 20616}
+#{\footnote 20626}
+#{\footnote 20618}
+#{\footnote 20619}
+#{\footnote 20624}
+#{\footnote 20625}
+#{\footnote 20943}
+#{\footnote 20944}
+#{\footnote 20946}
+#{\footnote 21012}
+${\footnote Listboxes}
++{\footnote 1}
+K{\footnote Listboxes;Dialog Listboxes;Tabs;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20623.bmp\} Listboxes\par
+\pard \plain \cf0 \fs20
+{\uldb Dialogs}{\v 20516}\par
+\par
+\{bmc IDF20616.bmp\}\tab \b \i create listbox \i0 \b0 \par
+\{bmc IDF20626.bmp\}\tab \b \i create listbox with edit \i0 \b0 \par
+\{bmc IDF20618.bmp\}\tab \b \i create drop-down listbox \i0 \b0 \par
+\{bmc IDF20619.bmp\}\tab \b \i create drop-down listbox with edit \i0 \b0 \par
+\{bmc IDF21012.bmp\}\tab \b \i create tabs \i0 \b0 \par
+\{bmc IDF20624.bmp\}\tab \b \i add text entry to listbox \i0 \b0 \par
+\{bmc IDF20625.bmp\}\tab \b \i empty of listbox, table \i0 \b0 \par
+\{bmc IDF20943.bmp\}\tab \b \i create table \i0 \b0 \par
+\{bmc IDF20944.bmp\}\tab \b \i width of table column \i0 \b0 \par
+\{bmc IDF20946.bmp\}\tab \b \i align of table column \i0 \b0 (0=left, 1=right, 2=center)\par
+\par
+The \b \i create... \i0 \b0 program elements create a dialog element the visibility of which is switched off, return the {\uldb element identification number}{\v 20593} and set it as a selected element for the subsequent operations.\par
+\par
+The {\uldb text}{\v 20600} program element sets or returns the text of selected entry of the listbox, text of the list's editing field, or text of the table cell. Current row of the listbox or table can be selected by the {\uldb actual position}{\v 20777} element. A cell on the table row can be selected by the {\uldb actual position 2}{\v 20941} element.\par
+\par
+The \b \i create tabs \i0 \b0 element creates tabs dialog element. Single tabs can be added or deleted similarly as listbox entries. Selected tab can be found out or adjusted with the {\uldb actual position}{\v 20777} element and according to the number of selected tab update content of the window (create or delete appropriate dialog elements in the window).\par 
+\par
+As parameter of the \b \i create table \i0 \b0 element a multiline text list defining table columns can be entered. Texts of individual rows are used as titles of the table head. If all rows of the list are empty then the table will have no head. Width of the selected table column can be set or found out by the \b \i width of table column \i0 \b0 element. Column selection is done by the {\uldb actual position 2}{\v 20941} element. If a valid table column is selected (its value is not -1) when changing selected row by the {\uldb actual position}{\v 20777} element then position of the table cursor is updated, too. By the \b \i align of table column \i0 \b0 element align of the table column can be changed: 0=left (default), 1=right, 2=center. This proves also in the table head except column 0, head of which is always aligned to the left.\par
+\page
+
+}

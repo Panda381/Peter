@@ -1,0 +1,525 @@
+{\rtf1 \ansi \deff0
+
+@{\footnote ------- definice fontù --------- }
+
+{\fonttbl 
+{\f0 \fswiss MS San Serif CE;}
+}
+
+@{\footnote ------- definice barev --------- }
+
+{\colortbl
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red192\green192\blue192;
+\red128\green128\blue128;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+
+@{\footnote Pouití barev:
+	0 - èerná
+	1 - tmavì èervená
+	2 - tmavì zelená
+	3 - hnìdá
+	4 - tmavì modrá
+	5 - tmavì fialová
+	6 - tmavì modrozelená
+	7 - šedá
+	8 - tmavì šedá
+	9 - èervená
+	10 - zelená
+	11 - lutá
+	12 - modrá
+	13 - fialová
+	14 - modrozelená
+	15 - bílá
+}
+
+#{\footnote 20516}
+#{\footnote 20519}
+#{\footnote 20295}
+#{\footnote 20294}
+#{\footnote 20594}
+#{\footnote 20593}
+#{\footnote 20717}
+#{\footnote 20718}
+#{\footnote 20795}
+${\footnote Dialogy}
++{\footnote 1}
+K{\footnote dialogy;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20516.bmp\} Dialogy\par
+\pard \plain \cf0 \fs20
+{\uldb Ovládání}{\v 20121}\par
+\par
+\{bmc IDF20295.bmp\} \tab \b \i nadpis okna \i0 \b0 \par
+\{bmc IDF20294.bmp\} \tab \b \i informaèní text \i0 \b0 \par
+\par
+Prvky \b \i nadpis okna \i0 \b0 a \b \i informaèní text \i0 \b0 jsou textové promìnné pøedstavující text zobrazenı na horním a spodním okraji okna. Promìnné lze jak èíst, tak do nich zapisovat. Stavovı øádek na spodním okraji okna je zobrazen pouze v pøípadì, e informaèní text není prázdnı. Je-li potøeba zobrazit stavovı øádek bez textu, je nutno zobrazit znak mezery.\par
+\par
+{\uldb \{bmc IDF20517.bmp\}\tab potvrzovací dialog}{\v 20517} \par
+{\uldb \{bmc IDF20524.bmp\}\tab dialog zadání textu}{\v 20524} \par
+{\uldb \{bmc IDF20715.bmp\}\tab zadání souboru k otevøení}{\v 20715} \par
+{\uldb \{bmc IDF20716.bmp\}\tab zadání souboru k uloení}{\v 20716} \par
+\par
+\{bmc IDF20594.bmp\} \tab \b \i zrušení prvku nebo okna \i0 \b0 \par
+\par
+Pøíkaz \b \i zrušení prvku nebo okna \i0 \b0 slouí ke zrušení dialogového prvku nebo okna. Jako parametr pøíkazu se zadává identifikaèní èíslo prvku nebo okna.\par
+\par
+\{bmc IDF20593.bmp\} \tab \b \i identifikaèní èíslo prvku \i0 \b0 \par
+\par
+Programovı prvek \b \i identifikaèní èíslo prvku \i0 \b0 je èíselná promìnná udávající, s kterım dialogovım prvkem nebo oknem bude provádìna manipulace (rozmìry atd.). Promìnná je po vytvoøení dialogového okna/prvku automaticky nastavena na novì vytvoøené okno/prvek. Jako identifikaèní èíslo se pouívá èíslo navrácené operací vytvoøení okna/prvku. Zvláštním pøípadem je èíslo \b 0\b0 , které je identifikaèním èíslem hlavního okna programu. Lze nastavovat vlastnosti hlavního okna programu, okno však nelze zrušit. Druhım zvláštním pøípadem je èíslo \b -1 \b0 identifikující základní plochu Windows. Toto èíslo slouí pouze ke zjištìní velikosti uivatelské plochy Windows (bez okrajovıch lišt, prvky \b \i vnitøní šíøka \i0 \b0 a \b \i vnitøní vıška\i0 \b0 ) a ke zjištìní rozmìrù obrazovky (prvky \b \i šíøka \i0 \b0 a \b \i vıška\i0 \b0 ), ádné jiné operace se základní plochou nelze provádìt.\par
+\par
+\{bmc IDF20795.bmp\} \tab \b \i grafické pozadí \i0 \b0 \par
+\par
+Prvek \b \i grafické pozadí \i0 \b0 je logickı pøepínaè. Je-li zapnutı, zobrazí se namísto jednobarevného podkladu hlavního okna v dialogovém módu grafická plocha programu. Tak lze kombinovat grafiku aplikace Petr s dialogovımi prvky.\par
+\par
+{\uldb \{bmc IDF20608.bmp\}\tab spoleèné funkce pro všechny dialogové prvky}{\v 20608} \par
+{\uldb \{bmc IDF20052.bmp\}\tab okna}{\v 20052} \par
+{\uldb \{bmc IDF20610.bmp\}\tab tlaèítka}{\v 20610} \par
+{\uldb \{bmc IDF20592.bmp\}\tab texty a obrázky}{\v 20592} \par
+{\uldb \{bmc IDF20623.bmp\}\tab seznamy}{\v 20623} \par
+\page
+
+#{\footnote 20517}
+#{\footnote 20518}
+#{\footnote 20520}
+#{\footnote 20521}
+#{\footnote 20522}
+${\footnote Potvrzovací dialog}
++{\footnote 1}
+K{\footnote potvrzovací dialog;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20517.bmp\} Potvrzovací dialog\par
+\pard \plain \cf0 \fs20
+{\uldb Dialogy}{\v 20516}\par
+\par
+\{bmc IDF20517.bmp\} \b \i potvrzovací dialog \i0 \b0 \par
+\tab \{bmc IDF20519.bmp\} \b \i nadpis \i0 \b0 \par
+\tab \{bmc IDF20518.bmp\} \b \i text \i0 \b0 \par
+\tab \{bmc IDF20520.bmp\} \b \i ikona \i0 \b0 \par
+\tab \{bmc IDF20521.bmp\} \b \i tlaèítka \i0 \b0 \par
+\tab \{bmc IDF20522.bmp\} \b \i implicitní tlaèítko \i0 \b0 \par
+\par
+\b \i Potvrzovací dialog \i0 \b0 slouí k volbì další operace uivatelem popø. k zobrazení hlášení.\par
+\par
+Jako první parametr se zadává text, kterı bude zobrazen v titulku dialogového okna (horní øádek).\par
+\par
+Druhım parametrem je text, kterı bude zobrazen v dialogovém oknì. Text mùe bıt víceøádkovı, rozmìry okna se pøizpùsobí poètu a délce øádkù. Víceøádkovı text lze zadat buï textovım slouèením jednoøádkovıch textovıch konstant a konstant pro další øádek, nebo lze víceøádkovı text vytvoøit v textové promìnné.\par
+\par
+Tøetím parametrem lze zvolit zobrazenou ikonu. Ikona se volí zadáním èíselné hodnoty v rozsahu 0 a 4:\par
+\tab 0 = bez ikony\par
+\tab 1 = hlášení chyby\par
+\tab 2 = dotaz\par
+\tab 3 = varování\par
+\tab 4 = informace\par
+\par
+Ètvrtım parametrem se volí sada zobrazenıch tlaèítek, zadává se èíselná hodnota 0 a 5:\par
+\tab 0 = OK\par
+\tab 1 = OK / Storno\par
+\tab 2 = Pøerušit / Znovu / Ignorovat\par
+\tab 3 = Ano / Ne / Storno\par
+\tab 4 = Ano / Ne\par
+\tab 5 = Znovu / Storno\par
+\par
+Poslední parametr je opìt èíselnı a udává, které z tlaèítek bude pøednastaveno jako vybrané (implicitní). Zadává se hodnota v rozsahu 1 a 3.\par
+\par
+Po volbì nìkterého z tlaèítek navrací potvrzovací dialogové okno èíselnou hodnotu podle zvoleného tlaèítka:\par
+\tab 1 = OK\par
+\tab 2 = Storno\par
+\tab 3 = Pøerušit\par
+\tab 4 = Znovu\par
+\tab 5 = Ignorovat\par
+\tab 6 = Ano\par
+\tab 7 = Ne\par
+\par
+Není-li poadováno navrácení hodnoty zvoleného tlaèítka, lze potvrzovací dialog pouít i jako pøíkaz.\par
+\page
+
+#{\footnote 20524}
+#{\footnote 20525}
+#{\footnote 20526}
+#{\footnote 20527}
+#{\footnote 20528}
+${\footnote Dialog zadání textu}
++{\footnote 1}
+K{\footnote dialog zadání textu;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20524.bmp\} Dialog zadání textu\par
+\pard \plain \cf0 \fs20
+{\uldb Dialogy}{\v 20516}\par
+\par
+\{bmc IDF20524.bmp\} \b \i zadání textu \i0 \b0 \par
+\tab \{bmc IDF20519.bmp\} \b \i nadpis \i0 \b0 \par
+\tab \{bmc IDF20525.bmp\} \b \i 1. øádek vızvy \i0 \b0 \par
+\tab \{bmc IDF20526.bmp\} \b \i 2. øádek vızvy \i0 \b0 \par
+\tab \{bmc IDF20527.bmp\} \b \i 3. øádek vızvy \i0 \b0 \par
+\tab \{bmc IDF20528.bmp\} \b \i pøednastavenı text k zadání \i0 \b0 \par
+\par
+\b \i Dialog zadání textu \i0 \b0 slouí k zadání textu uivatelem. V parametrech dialogu lze zadat 3 textové \b \i øádky vızvy\i0 \b0 , které se zobrazí v oknì jako vızva pro uivatele. Nastavením parametru \b \i pøednastavenı text k zadání \i0 \b0 lze pøednastavit text, kterı bude zobrazen v editaèním øádku okna. Dialog navrací text zadanı uivatelem. V pøípadì pøerušení zadání bude navrácen prázdnı text.\par
+\par
+\page
+
+#{\footnote 20715}
+#{\footnote 20716}
+#{\footnote 20719}
+#{\footnote 20720}
+#{\footnote 20721}
+${\footnote Zadání souboru k otevøení a uloení}
++{\footnote 1}
+K{\footnote zadání souboru k otevøení a uloení;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20715.bmp\} \{bmc IDF20716.bmp\} Zadání souboru k otevøení a uloení\par
+\pard \plain \cf0 \fs20
+{\uldb Dialogy}{\v 20516}\par
+\par
+\{bmc IDF20715.bmp\} \b \i zadání souboru k otevøení \i0 \b0 \par
+\tab \{bmc IDF20519.bmp\} \b \i nadpis \i0 \b0 \par
+\tab \{bmc IDF20721.bmp\} \b \i název typu souborù \i0 \b0 \par
+\tab \{bmc IDF20719.bmp\} \b \i maska souborù \i0 \b0 \par
+\tab \{bmc IDF20720.bmp\} \b \i pøednastavené jméno souboru \i0 \b0 \par
+\par
+\{bmc IDF20716.bmp\} \b \i zadání souboru k uloení \i0 \b0 \par
+\tab \{bmc IDF20519.bmp\} \b \i nadpis \i0 \b0 \par
+\tab \{bmc IDF20721.bmp\} \b \i název typu souborù \i0 \b0 \par
+\tab \{bmc IDF20719.bmp\} \b \i maska souborù \i0 \b0 \par
+\tab \{bmc IDF20720.bmp\} \b \i pøednastavené jméno souboru \i0 \b0 \par
+\par
+Dialogy \b \i zadání souboru k otevøení \i0 \b0 a \b \i zadání souboru k uloení \i0 \b0 umoòují volbu souboru k otevøení èi uloení. Textovı parametr \b \i nadpis \i0 \b0 urèuje nadpis okna. Bez zadání se pouije implicitní nadpis podle systému Windows. Textovı parametr \b \i název typu souborù \i0 \b0 urèuje popisnı text, kterı se objeví v dialogu v seznamu názvù typù souborù. Pro více typù souborù je moné uvést více øádkù názvù typù souborù.\par
+\par
+Textovı parametr \b \i maska souborù \i0 \b0 definuje soubory, které se v dialogu objeví. V definici masky souborù se pouívá hvìzdièková konvence pro oznaèování souborù - znak otazníku \b ? \b0 nahrazuje libovolnı jeden znak, znak hvìzdièky \b * \b0 nahrazuje libovolnou skupinu znakù. Je moné uvést více masek, jednotlivé masky se oddìlují znakem støedníku \b ;\b0 . Napø. zápis \b *.doc;*.txt \b0 zobrazí všechny textové soubory typu DOC a TXT. Uvedením masek ve více øádcích je moné definovat více typù souborù - v dialogu se zobrazí jako více øádkù v seznamu souborù.\par
+\par
+Textovı parametr \b \i pøednastavené jméno souboru \i0 \b0 urèuje adresáø, typ a jméno souboru, které se objeví v oknì. Bez zadání bude pouit aktuální adresáø, ádné jméno souboru a první pøípona v seznamu masek souborù.\par
+\par
+Po volbì souboru navrátí dialog jako text jméno zvoleného souboru vèetnì cesty. Pøi pøerušení dialogu bude navrácen prázdnı text.\par
+\page
+
+#{\footnote 20608}
+#{\footnote 20596}
+#{\footnote 20597}
+#{\footnote 20598}
+#{\footnote 20599}
+#{\footnote 20601}
+#{\footnote 20602}
+#{\footnote 20600}
+#{\footnote 20630}
+#{\footnote 20612}
+#{\footnote 20604}
+#{\footnote 20686}
+#{\footnote 20700}
+#{\footnote 20740}
+#{\footnote 20741}
+#{\footnote 20742}
+#{\footnote 20777}
+#{\footnote 20941}
+${\footnote Spoleèné funkce pro všechny dialogové prvky}
++{\footnote 1}
+K{\footnote spoleèné funkce pro všechny dialogové prvky;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20608.bmp\} Spoleèné funkce pro všechny dialogové prvky\par
+\pard \plain \cf0 \fs20
+{\uldb Dialogy}{\v 20516}\par
+\par
+\{bmc IDF20596.bmp\}\tab \b \i horizontální souøadnice \i0 \b0 \par
+\{bmc IDF20597.bmp\}\tab \b \i vertikální souøadnice \i0 \b0 \par
+\{bmc IDF20598.bmp\}\tab \b \i šíøka \i0 \b0 \par
+\{bmc IDF20599.bmp\}\tab \b \i vıška \i0 \b0 \par
+\{bmc IDF20601.bmp\}\tab \b \i viditelnost \i0 \b0 \par
+\{bmc IDF20602.bmp\}\tab \b \i zákaz \i0 \b0 \par
+\{bmc IDF20600.bmp\}\tab \b \i text \i0 \b0 \par
+\{bmc IDF20630.bmp\}\tab \b \i ikona \i0 \b0 \par
+\{bmc IDF20700.bmp\}\tab \b \i obrázek \i0 \b0 \par
+\{bmc IDF20604.bmp\}\tab \b \i stisk tlaèítka nebo zmìna prvku \i0 \b0 \par
+\{bmc IDF20612.bmp\}\tab \b \i vstupní zamìøení \i0 \b0 (fokus)\par
+\{bmc IDF20686.bmp\}\tab \b \i tlaèítko pro klávesu Esc \i0 \b0 (-1 = není)\par
+\{bmc IDF20741.bmp\}\tab \b \i vnitøní šíøka \i0 \b0 \par
+\{bmc IDF20742.bmp\}\tab \b \i vnitøní vıška \i0 \b0 \par
+\{bmc IDF20740.bmp\}\tab \b \i test myši v prvku \i0 \b0 \par
+\{bmc IDF20777.bmp\}\tab \b \i aktuální pozice \i0 \b0 \par
+\{bmc IDF20941.bmp\}\tab \b \i aktuální pozice 2 \i0 \b0 \par
+{\uldb \{bmc IDF20712.bmp\}\tab písmo prvku}{\v 20712} \par
+\par
+Všechny operace se vztahují k oknu èi prvku, kterı je vybrán {\uldb identifikaèním èíslem prvku}{\v 20593}. Logické promìnné \b \i viditelnost \i0 \b0 a \b \i zákaz \i0 \b0 lze buï nastavovat na poadovanı stav nebo uvedením bez parametrù stav pøepnout na opaènou hodnotu. Prvek \b \i ikona \i0 \b0 je promìnná typu pøedmìt, uplatòuje se u ikonového tlaèítka, dialogového prvku ikony a u dialogového okna. Prvek \b \i obrázek \i0 \b0 je promìnná typu obrázek, uplatòuje se pouze u dialogového prvku obrázku. Prvek \b \i vstupní zamìøení \i0 \b0 udává identifikaèní èíslo dialogového prvku, na kterı je nastaveno vstupní zamìøení, tj. kterı bude ovládán uivatelem.\par
+\par
+Prvky \b \i šíøka \i0 \b0 a \b \i vıška \i0 \b0 udávají vnìjší rozmìry prvku nebo okna. Pro plochu Windows (identifikaèní èíslo -1) udávají rozlišení displeje. Prvky \b \i vnitøní šíøka \i0 \b0 a \b \i vnitøní vıška \i0 \b0 udávají vnitøní (klientské) rozmìry prvku nebo okna. Pro plochu Windows (identifikaèní èíslo -1) udávají rozmìr pracovní plochy Windows (bez okrajovıch lišt).\par
+\par
+Prvek \b \i stisk tlaèítka nebo zmìna prvku \i0 \b0 je logickı pøíznak závislı na typu prvku. Pøíznak lze pouze èíst, pøeètením se jeho hodnota nastaví na neplatnou.\par
+\tab \i tlaèítko \i0 \tab \tab - tlaèítko stisknuto\par
+\tab \i pøepínaè \i0 \tab \tab - pøepínaè pøepnut\par
+\tab \i editace textu \i0 \tab - text byl zmìnìn\par
+\tab \i text a ikona \i0 \tab - na prvek bylo kliknuto\par
+\tab \i seznam \i0 \tab \tab - byla zmìnìna vybraná poloka\par
+\tab \i dialogové okno \i0 \tab - nìkterı z prvkù v oknì nastavil pøíznak stisku\par
+\par
+Prvek \b \i tlaèítko pro klávesu Esc \i0 \b0 je èíselná promìnná pøedstavující identifikaèní èíslo tlaèítka, které bude aktivováno stiskem klávesy Esc. Tak je moné obslouit uzavøení dialogového okna nebo celého programu stiskem klávesy Esc. Hodnota -1 udává, e klávesu Esc nepøijme ádné tlaèítko.\par
+\par
+Prvek \b \i test myši v prvku \i0 \b0 testuje, zda se kurzor myši nachází nad prvkem dialogového okna. Jako parametr prvku se zadává identifikaèní èíslo prvku nebo okna. Prvek navrací logickı pøíznak udávající, zda se kurzor myši nachází nad prvkem.\par
+\par
+Prvek \b \i aktuální pozice \i0 \b0 slouí ke zjištìní nebo nastavení doplòujícího èíselného parametru dialogového prvku:\par
+\tab \i jezdec \i0 \tab \tab \tab - poloha jezdce (0 a 1)\par
+\tab \i indikátor prùbìhu \i0 \tab \tab - poloha ukazatele (0 a 1)\par
+\tab \i seznam \i0 \tab \tab \tab - vybraná poloka (0 a více, -1=ádná)\par
+\tab \i tabulka \i0 \tab \tab \tab - vybranı øádek (0 a více, -1=ádnı)\par
+\tab \i editaèní øádek \i0 \tab \tab - pozice s kurzorem (0 a více)\par
+\tab \i editaèní pole, RichEdit \i0 \tab - øádek s kurzorem (0 a více)\par
+\par
+Prvek \b \i aktuální pozice 2 \i0 \b0 slouí ke zjištìní nebo nastavení druhého doplòujícího èíselného parametru dialogového prvku:\par
+\tab \i editaèní pole, RichEdit \i0 \tab - pozice s kurzorem (0 a více)\par
+\tab \i tabulka \i0 \tab \tab \tab - vybranı sloupec (0 a více, -1=ádnı)\par
+\page
+
+
+#{\footnote 20620}
+#{\footnote 20621}
+#{\footnote 20702}
+#{\footnote 20703}
+#{\footnote 20704}
+#{\footnote 20705}
+#{\footnote 20706}
+#{\footnote 20707}
+#{\footnote 20708}
+#{\footnote 20710}
+#{\footnote 20711}
+#{\footnote 20712}
+${\footnote Písmo prvku}
++{\footnote 1}
+K{\footnote písmo prvku;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20712.bmp\} Písmo prvku\par
+\pard \plain \cf0 \fs20
+{\uldb Spoleèné funkce pro všechny dialogové prvky}{\v 20608}\par
+\par
+\{bmc IDF20620.bmp\}\tab \b \i zvıraznìné písmo \i0 \b0 \par
+\{bmc IDF20703.bmp\}\tab \b \i šikmé písmo \i0 \b0 \par
+\{bmc IDF20704.bmp\}\tab \b \i podtrené písmo \i0 \b0 \par
+\{bmc IDF20705.bmp\}\tab \b \i pøeškrtnuté písmo \i0 \b0 \par
+\{bmc IDF20621.bmp\}\tab \b \i písmo s pevnou rozteèí \i0 \b0 \par
+\{bmc IDF20706.bmp\}\tab \b \i písmo s patièkami \i0 \b0 \par
+\{bmc IDF20702.bmp\}\tab \b \i vıška znakù \i0 \b0 (0 = bìná)\par
+\{bmc IDF20707.bmp\}\tab \b \i relativní šíøka znakù \i0 \b0 (0 = bìná, 1 = základní)\par
+\{bmc IDF20708.bmp\}\tab \b \i úhel sklonu textu \i0 \b0 (0 = bìnı)\par
+\{bmc IDF20710.bmp\}\tab \b \i barva písma \i0 \b0 \par
+\{bmc IDF20711.bmp\}\tab \b \i barva pozadí \i0 \b0 \par
+\par
+Všechny operace se vztahují k oknu èi prvku, kterı je vybrán {\uldb identifikaèním èíslem prvku}{\v 20593}. Logické promìnné \b \i zvıraznìné písmo\i0 \b0 , \b \i šikmé písmo\i0 \b0 , \b \i podtrené písmo\i0 \b0 , \b \i pøeškrtnuté písmo\i0 \b0 , \b \i písmo s pevnou rozteèí \i0 \b0 a \b \i písmo s patièkami \i0 \b0 lze buï nastavovat na poadovanı stav nebo uvedením bez parametrù stav pøepnout na opaènou hodnotu. Zapnutím obou pøepínaèù \b \i písmo s pevnou rozteèí \i0 \b0 i \b \i písmo s patièkami \i0 \b0 souèasnì se pouije {\uldb uivatelské písmo}{\v 20744}.\par
+\par
+Pøi zadání úhlu sklonu textu platí pravidlo, e text se otáèí kolem levého horního rohu textu (u víceøádkového textu se otáèí jednotlivé øádky samostatnì). Napø. pøi otoèení o 1/4 otáèky (tj. 90 stupòù) by se text otoèil celı nahoru a pøestal by bıt viditelnı. Text takto otoèenı je moné zobrazit pomocí víceøádkového textu. Pøed text k zobrazení je potøeba vloit nìkolik prázdnıch øádkù, ty zajistí odsunutí textu smìrem dolù a tím také zviditelnìní otoèeného textu. Naopak pøi otoèení textu smìrem dolù je vhodné pouít textovı prvek se zarovnáním vpravo èi na støed, aby levá èást textu byla odsazena od levého okraje okna a tím zùstala viditelná. Vhodnìjším øešením pro zobrazení otoèenıch textù však je programové vykreslení do grafické plochy programu, sejmutí jako obrázek a poté zobrazení v dialogovém oknì jako dialogovı prvek obrázku.\par
+\par
+Prvky pro nastavení \b \i barvy písma \i0 \b0 a \b \i barvy pozadí \i0 \b0 se neuplatní u bìnıch tlaèítek. Jako zadané barvy se doporuèuje pouívat pouze základní barvy systému Windows (pastelové barvy). V grafickém reimu displeje 256 barev bude k zobrazení zvolenıch barev pouito pouze 20 základních barev Windows.\par
+\page
+
+#{\footnote 20052}
+#{\footnote 20595}
+#{\footnote 20629}
+#{\footnote 20242}
+#{\footnote 20243}
+#{\footnote 20749}
+#{\footnote 20770}
+#{\footnote 20771}
+#{\footnote 20772}
+#{\footnote 20773}
+${\footnote Okna}
++{\footnote 1}
+K{\footnote dialogová okna;okna;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20052.bmp\} Okna\par
+\pard \plain \cf0 \fs20
+{\uldb Dialogy}{\v 20516}\par
+\par
+\{bmc IDF20595.bmp\} \tab \b \i vytvoøení okna \i0 \b0 \par
+\{bmc IDF20629.bmp\} \tab \b \i vytvoøení okna bez monosti uzavøení \i0 \b0 \par
+\par
+Prvky \b \i vytvoøení okna \i0 \b0 a \b \i vytvoøení okna bez monosti uzavøení \i0 \b0 slouí k vytvoøení nového dialogového okna. Prvky navrátí identifikaèní èíslo okna, pomocí kterého se budou provádìt pozdìji odkazy na okno (napø. pøi jeho rušení). Souèasnì je nové okno nastaveno jako aktivní prvek, s kterım budou provádìny následující operace. Bez vytvoøení nového okna budou dialogové prvky vytváøeny v základním oknì, které po vytvoøení prvního prvku automaticky vypne grafickı reim. Novì vytvoøené okno je nastavené jako neviditelné. Doporuèuje se nejdøíve vytvoøit dialogové prvky okna, nastavit jejich pozice a rozmìry, zapnout jejich viditelnost a a nakonec zapnout viditelnost okna.\par
+\par
+\{bmc IDF20242.bmp\} \tab \b \i okno má okraj \i0 \b0 \par
+\{bmc IDF20243.bmp\} \tab \b \i okno má titulek \i0 \b0 \par
+\par
+Prvek \b \i okno má okraj \i0 \b0 urèuje, zda se kolem okna nebo prvku, kterı je vybrán {\uldb identifikaèním èíslem prvku}{\v 20593}, zobrazí rámeèek. Prvek \b \i okno má titulek \i0 \b0 urèuje, zda se na horním okraji okna zobrazí titulek. Pro dialogové prvky se namísto titulku pouije zesílenı vnitøní rámeèek. Má-li okno nebo prvek zapnutı titulek ale vypnutı rámeèek, pouije se tenkı rámeèek.\par
+\par
+\{bmc IDF20749.bmp\} \tab \b \i vdy nahoøe \i0 \b0 \par
+\par
+Prvek \b \i vdy nahoøe \i0 \b0 urèuje, zda se okno, které je vybráno {\uldb identifikaèním èíslem prvku}{\v 20593}, bude zobrazovat vdy nahoøe, pøes všechna ostatní okna a to i v pøípadì, kdy není aktivní (nemá vstupní zamìøení).\par
+\par
+\{bmc IDF20770.bmp\} \tab \b \i mìnitelná velikost okna \i0 \b0 \par
+\par
+Prvek \b \i mìnitelná velikost okna \i0 \b0 povoluje zmìnu velikosti okna. Je to logická promìnná, kterou lze èíst i nastavovat. Implicitnì je mìnitelná velikost pouze hlavního okna programu.\par
+\par
+\{bmc IDF20771.bmp\} \tab \b \i moné uzavøení okna \i0 \b0 \par
+\par
+Prvek \b \i moné uzavøení okna \i0 \b0 umoòuje zakázat uzavøení okna uivatelem (kliknutím na køíek v pravém horním rohu okna nebo stiskem kláves Alt+F4). Prvek je logická promìnná. Nastavením na hodnotu ANO je vypnutí okna povoleno (implicitní stav), nastavením na NE je zakázáno. Pokouší-li se uivatel okno uzavøít, je pøi ètení tohoto prvku navrácen pøíznak ANO a program mùe provést potøebné úkony, jako je dotaz k uloení souboru a potom a ukonèení programu. Ètením se pøíznak poadavku o ukonèení automaticky vynuluje.\par
+\par
+\{bmc IDF20772.bmp\} \tab \b \i okno maximalizováno \i0 \b0 \par
+\{bmc IDF20773.bmp\} \tab \b \i okno minimalizováno \i0 \b0 \par
+\par
+Prvky \b \i okno maximalizováno \i0 \b0 a \b \i okno minimalizováno \i0 \b0 jsou logické promìnné urèené ke ètení i zápisu, udávající stavy okna maximalizováno/minimalizováno.\par
+\par
+Vzájemnımi kombinacemi prvkù \b \i okno má okraj\i0 \b0 , \b \i okno má titulek \i0 \b0 a \b \i mìnitelná velikost okna \i0 \b0 lze nastavit 8 rùznıch stavù okna nebo prvku podle následujících tabulek:\par
+\pard \tx1000 \tx2000 \tx3000 \tx3500 \tx4500 \tx5500 \tx6500 \tx7500 \par
+\i Dialogové okno:\i0 \par
+\b okraj\tab titulek\tab velikost\tab -->\tab okraj\tab titulek\tab velikost\tab minim.\tab maxim.\b0 \par
+ne\tab ne\tab ne\tab \tab ne\tab ne\tab ne\tab ne\tab ne\par
+ANO\tab ne\tab ne\tab \tab 3D\tab ne\tab ne\tab ne\tab ne\par
+ne\tab ANO\tab ne\tab \tab tenkı\tab ANO\tab ne\tab ne\tab ne\par
+ANO\tab ANO\tab ne\tab \tab 3D\tab ANO\tab ne\tab ANO\tab ne\par
+ne\tab ne\tab ANO\tab \tab ne\tab ne\tab ne\tab ne\tab ne\par
+ANO\tab ne\tab ANO\tab \tab 3D\tab ne\tab ANO\tab ne\tab ne\par
+ne\tab ANO\tab ANO\tab \tab tenkı\tab ANO\tab ne\tab ANO\tab ANO\par
+ANO\tab ANO\tab ANO\tab \tab 3D\tab ANO\tab ANO\tab ANO\tab ANO\par
+\par
+\i Dialogovı prvek:\i0 \par
+\b okraj\tab titulek\tab velikost\tab -->\tab okraj\b0 \par
+ne\tab ne\tab ne\tab \tab ádnı\par
+ANO\tab ne\tab ne\tab \tab 3D sníenı\par
+ne\tab ANO\tab ne\tab \tab tenkı 3D sníenı\par
+ANO\tab ANO\tab ne\tab \tab 3D zvıšenı a sníenı\par
+ne\tab ne\tab ANO\tab \tab tenká èára\par
+ANO\tab ne\tab ANO\tab \tab tenká èára a 3D sníenı\par
+ne\tab ANO\tab ANO\tab \tab 3D zvıšenı\par
+ANO\tab ANO\tab ANO\tab \tab 3D sníenı dvojitı\par
+\pard \par
+\page
+
+#{\footnote 20610}
+#{\footnote 20603}
+#{\footnote 20613}
+#{\footnote 20614}
+#{\footnote 20942}
+#{\footnote 20605}
+#{\footnote 20627}
+#{\footnote 20622}
+#{\footnote 20607}
+#{\footnote 20615}
+#{\footnote 20611}
+#{\footnote 20628}
+#{\footnote 20775}
+#{\footnote 20776}
+#{\footnote 20947}
+#{\footnote 20948}
+${\footnote Tlaèítka}
++{\footnote 1}
+K{\footnote dialogová tlaèítka;tlaèítka;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20610.bmp\} Tlaèítka\par
+\pard \plain \cf0 \fs20
+{\uldb Dialogy}{\v 20516}\par
+\par
+\{bmc IDF20603.bmp\}\tab \b \i vytvoøení tlaèítka \i0 \b0 \par
+\{bmc IDF20613.bmp\}\tab \b \i vytvoøení implicitního tlaèítka \i0 \b0 \par
+\{bmc IDF20614.bmp\}\tab \b \i vytvoøení ikonového tlaèítka \i0 \b0 \par
+\{bmc IDF20942.bmp\}\tab \b \i vytvoøení tlaèítkového pøepínaèe \i0 \b0 \par
+\{bmc IDF20605.bmp\}\tab \b \i vytvoøení zaškrtávacího boxu \i0 \b0 \par
+\{bmc IDF20627.bmp\}\tab \b \i vytvoøení 3-stavového boxu \i0 \b0 \par
+\{bmc IDF20622.bmp\}\tab \b \i vytvoøení pøepínaèe - zaèátek skupiny \i0 \b0 \par
+\{bmc IDF20607.bmp\}\tab \b \i vytvoøení pøepínaèe \i0 \b0 \par
+\{bmc IDF20615.bmp\}\tab \b \i vytvoøení rámeèku \i0 \b0 \par
+\{bmc IDF20611.bmp\}\tab \b \i pøepínaè zapnut \i0 \b0 \par
+\{bmc IDF20628.bmp\}\tab \b \i pøepínaè v neurèitém stavu \i0 \b0 \par
+\{bmc IDF20775.bmp\}\tab \b \i vytvoøení horizontálního jezdce \i0 \b0 \par
+\{bmc IDF20776.bmp\}\tab \b \i vytvoøení vertikálního jezdce \i0 \b0 \par
+\{bmc IDF20947.bmp\}\tab \b \i vytvoøení horizontálního posuvníku \i0 \b0 \par
+\{bmc IDF20948.bmp\}\tab \b \i vytvoøení vertikálního posuvníku \i0 \b0 \par
+\par
+Programové prvky \b \i vytvoøení... \i0 \b0 vytvoøí dialogovı prvek s vypnutou viditelností, navrátí {\uldb identifikaèní èíslo prvku}{\v 20593} a nastaví jej jako vybranı prvek pro následující operace.\par
+\par
+Ikonové tlaèítko lze vyuít jako 3-stavové, stavy je nutno pøepínat programovì.\par
+\par
+U skupiny závislıch pøepínaèù je nutno jako první vytvoøit \b \i pøepínaè - zaèátek skupiny \i0 \b0 a ostatní pøepínaèe skupiny vytvoøit jako bìnı \b \i pøepínaè\i0 \b0 .\par
+\par
+Prvky \b \i vytvoøení horizontálního jezdce \i0 \b0 a \b \i vytvoøení vertikálního jezdce \i0 \b0 vytvoøí ovládací prvky jezdce (potenciometry, táhla). Hodnotu jezdce v rozsahu 0 a 1 lze èíst a nastavovat prvkem {\uldb aktuální pozice}{\v 20777}.\par
+\par
+Prvky \b \i vytvoøení horizontálního posuvníku \i0 \b0 a \b \i vytvoøení vertikálního posuvníku \i0 \b0 vytvoøí ovládací prvky posuvníku. Polohu posuvníku v rozsahu 0 a 1 lze èíst a nastavovat prvkem {\uldb aktuální pozice}{\v 20777}. Délku posuvníku (délka stránky) v rozsahu 0 a 1 lze èíst a nastavovat prvkem {\uldb aktuální pozice 2}{\v 20941}.\par
+\page
+
+#{\footnote 20592}
+#{\footnote 20606}
+#{\footnote 20609}
+#{\footnote 20617}
+#{\footnote 20631}
+#{\footnote 20685}
+#{\footnote 20699}
+#{\footnote 20701}
+#{\footnote 20709}
+#{\footnote 20769}
+#{\footnote 20774}
+${\footnote Texty a obrázky}
++{\footnote 1}
+K{\footnote dialogové texty a obrázky;texty a obrázky;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20592.bmp\} Texty a obrázky\par
+\pard \plain \cf0 \fs20
+{\uldb Dialogy}{\v 20516}\par
+\par
+\{bmc IDF20606.bmp\}\tab \b \i vytvoøení editaèního øádku \i0 \b0 \par
+\{bmc IDF20609.bmp\}\tab \b \i vytvoøení editaèního pole \i0 \b0 \par
+\{bmc IDF20769.bmp\}\tab \b \i vytvoøení editaèního pole bez zalamování \i0 \b0 \par
+\{bmc IDF20701.bmp\}\tab \b \i vytvoøení editoru RichEdit \i0 \b0 \par
+\{bmc IDF20617.bmp\}\tab \b \i vytvoøení textu \i0 \b0 \par
+\{bmc IDF20685.bmp\}\tab \b \i vytvoøení textu vystøedìného \i0 \b0 \par
+\{bmc IDF20709.bmp\}\tab \b \i vytvoøení textu zarovnaného vpravo \i0 \b0 \par
+\{bmc IDF20631.bmp\}\tab \b \i vytvoøení ikony \i0 \b0 \par
+\{bmc IDF20699.bmp\}\tab \b \i vytvoøení obrázku \i0 \b0 \par
+\{bmc IDF20774.bmp\}\tab \b \i vytvoøení indikátoru prùbìhu \i0 \b0 \par
+\par
+Programové prvky \b \i vytvoøení... \i0 \b0 vytvoøí dialogovı prvek s vypnutou viditelností, navrátí {\uldb identifikaèní èíslo prvku}{\v 20593} a nastaví jej jako vybranı prvek pro následující operace.\par
+\par
+\b \i Editaèní pole bez zalamování \i0 \b0 se liší od bìného editaèního pole tím, e nezalamuje dlouhé øádky podle okna, podporuje hledání textu Ctrl+F/F3 a délka textu není omezena.\par
+\par
+Prvek \b \i editor RichEdit \i0 \b0 je editaèní pole podporující text s promìnlivou barvou, velikostí èi typem písma. Text ve formátu RichEdit lze vytvoøit textovım editorem WordPad, kterı je souèástí operaèního systému Windows, pøíp. editorem Word. Text je potøeba uloit ve formátu RichEdit (pøípona jména souboru RTF) do knihovny textù TEXT aplikace Petr. Z knihovny lze soubor naèíst do programu jako bìnı textovı soubor. V editoru aplikace Petr se soubor zobrazuje spolu s øídicími kódy formátu RichEdit, programovım zápisem do prvku RichEdit se text zobrazí ve správném tvaru. Prvek RichEdit podporuje vyhledávání textu klávesami Ctrl+F/F3.\par
+\par
+Prvek \b \i vytvoøení obrázku \i0 \b0 vytvoøí v dialogovém oknì obrázek. Na rozdíl od ikony, která v grafickém reimu obrazovky 256 barev pouívá pouze základní sadu barev Windows (20 barev), umoòuje obrázek zobrazení všech barev v plném rozsahu. Pøi zobrazení obrázku jsou urèující rozmìry prvku okna obrázku, skuteèné rozmìry obrázku jim budou pøizpùsobeny.\par
+\par
+Prvek \b \i vytvoøení indikátoru prùbìhu \i0 \b0 vytvoøí indikátor prùbìhu operace. Hodnotu indikátoru v rozsahu 0 a 1 lze èíst a nastavovat prvkem {\uldb aktuální pozice}{\v 20777}. Indikátor mùe mít pouze horizontální orientaci.\par
+\par
+\page
+
+#{\footnote 20623}
+#{\footnote 20616}
+#{\footnote 20626}
+#{\footnote 20618}
+#{\footnote 20619}
+#{\footnote 20624}
+#{\footnote 20625}
+#{\footnote 20943}
+#{\footnote 20944}
+#{\footnote 20946}
+#{\footnote 21012}
+${\footnote Seznamy}
++{\footnote 1}
+K{\footnote dialogové seznamy;seznamy;záloky;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20623.bmp\} Seznamy\par
+\pard \plain \cf0 \fs20
+{\uldb Dialogy}{\v 20516}\par
+\par
+\{bmc IDF20616.bmp\}\tab \b \i vytvoøení seznamu \i0 \b0 \par
+\{bmc IDF20626.bmp\}\tab \b \i vytvoøení seznamu s editací \i0 \b0 \par
+\{bmc IDF20618.bmp\}\tab \b \i vytvoøení rozbalovacího seznamu \i0 \b0 \par
+\{bmc IDF20619.bmp\}\tab \b \i vytvoøení rozbalovacího seznamu s editací \i0 \b0 \par
+\{bmc IDF21012.bmp\}\tab \b \i vytvoøení záloek \i0 \b0 \par
+\{bmc IDF20624.bmp\}\tab \b \i pøidání textové poloky do seznamu \i0 \b0 \par
+\{bmc IDF20625.bmp\}\tab \b \i vyprázdnìní seznamu, tabulky \i0 \b0 \par
+\{bmc IDF20943.bmp\}\tab \b \i vytvoøení tabulky \i0 \b0 \par
+\{bmc IDF20944.bmp\}\tab \b \i šíøka sloupce tabulky \i0 \b0 \par
+\{bmc IDF20946.bmp\}\tab \b \i zarovnání sloupce tabulky \i0 \b0 (0=vlevo, 1=vpravo, 2=støed)\par
+\par
+Programové prvky \b \i vytvoøení... \i0 \b0 vytvoøí dialogovı prvek s vypnutou viditelností, navrátí {\uldb identifikaèní èíslo prvku}{\v 20593} a nastaví jej jako vybranı prvek pro následující operace.\par
+\par
+Programovı prvek {\uldb text}{\v 20600} nastaví nebo navrátí text vybrané poloky v seznamu, text v editaèním poli seznamu nebo text buòky tabulky. Volba aktivního øádku seznamu nebo tabulky se provádí prvkem {\uldb aktuální pozice}{\v 20777}. Buòku na øádku tabulky lze vybrat prvkem {\uldb aktuální pozice 2}{\v 20941}.\par
+\par
+Prvek \b \i vytvoøení záloek \i0 \b0 vytvoøí dialogovı prvek záloek. Jednotlivé záloky lze pøidávat a rušit stejnım zpùsobem jako poloky seznamu. Vybranou záloku lze zjišovat èi nastavovat pomocí prvku {\uldb aktuální pozice}{\v 20777} a podle èísla vybrané záloky aktualizovat obsah okna (vytváøet èi rušit pøíslušné dialogové prvky v oknì).\par 
+\par
+Parametrem prvku \b \i vytvoøení tabulky \i0 \b0 je víceøádkovı textovı seznam definující sloupce tabulky. Texty jednotlivıch øádkù jsou pouity jako nadpisy v záhlaví tabulky. Jsou-li všechny øádky seznamu prázdné, nebude mít tabulka záhlaví. Prvkem \b \i šíøka sloupce tabulky \i0 \b0 lze nastavovat a zjišovat šíøku zvoleného sloupce tabulky. Volba sloupce se provádí prvkem {\uldb aktuální pozice 2}{\v 20941}. Je-li zvolen platnı sloupec tabulky (není nastavena hodnota -1), je pøi zmìnì vybraného øádku prvkem {\uldb aktuální pozice}{\v 20777} aktualizována i pozice kurzoru tabulky. Prvkem \b \i zarovnání sloupce tabulky \i0 \b0 je moné mìnit zarovnání textu ve sloupci tabulky: 0=vlevo (implicitnì), 1=vpravo, 2=støed. Zarovnání se projeví i pro záhlaví tabulky kromì sloupce 0, jeho záhlaví je vdy zarovnáno vlevo.\par
+\page
+
+}

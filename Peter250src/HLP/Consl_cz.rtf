@@ -1,0 +1,85 @@
+{\rtf1 \ansi \deff0
+
+@{\footnote ------- definice fontù --------- }
+
+{\fonttbl 
+{\f0 \fswiss MS San Serif CE;}
+}
+
+@{\footnote ------- definice barev --------- }
+
+{\colortbl
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red192\green192\blue192;
+\red128\green128\blue128;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+
+@{\footnote Použití barev:
+	0 - èerná
+	1 - tmavì èervená
+	2 - tmavì zelená
+	3 - hnìdá
+	4 - tmavì modrá
+	5 - tmavì fialová
+	6 - tmavì modrozelená
+	7 - šedá
+	8 - tmavì šedá
+	9 - èervená
+	10 - zelená
+	11 - žlutá
+	12 - modrá
+	13 - fialová
+	14 - modrozelená
+	15 - bílá
+}
+
+#{\footnote 20569}
+#{\footnote 20576}
+#{\footnote 20577}
+#{\footnote 20579}
+#{\footnote 20578}
+${\footnote Konzola}
++{\footnote 1}
+K{\footnote konzola;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Konzola\par
+\pard \plain \cf0 \fs20
+{\uldb Stavební prvky programu}{\v Stavební prvky programu}\par
+\par
+Konzola je systémové rozhraní urèené ke komunikaci s uživatelem pomocí pøíkazového øádku. Výhodou konzoly je, že umožòuje programu vypisovat posloupnost údajù, kterou lze pøesmìrovat napø. do souboru. Stejnì tak lze pøesmìrovat vstup od uživatele ze souboru. Konzola mùže být spoleèná pro více programù. Její hlavní využití je pøi dávkovém spouštìní více programù (pomocí souboru BAT).\par
+\par
+\i \b Dùležitá poznámka: \b0 V režimu konzoly není funkèní obsluha klávesnice, myši a grafické výstupy. Povel pro èekání na stisk klávesy se neprovede a program pokraèuje dále. Všechny vstupy od uživatele je nutno provádìt pomocí konzolového vstupu textu.\i0 \par
+\par
+\{bmc IDF20576.bmp\}\tab \b \i režim konzoly \i0 \b0 \par
+\par
+Pøíkaz \b \i režim konzoly \i0 \b0 zapne režim konzoly. Tento pøíkaz se doporuèuje uvést úplnì na zaèátku {\uldb hlavní funkce}{\v Spoleèné promìnné a funkce}, nesmí pøed ním být žádné prvky, ani komentáø. V tom pøípadì pøekladaè pøeloží program jako konzolovou aplikaci. Tím bude zajištìno, že systém pøi spouštìní programu použije pro program již existující konzolové okno (napø. okno pøíkazového øádku) a bude èekat na dokonèení programu. Nebude-li pøíkaz použit na zaèátku hlavní funkce, vytvoøí se pro program nové konzolové okno a pøi spouštìní pomocí dávkového souboru BAT systém nebude èekat na dokonèení programu, ale bude pokraèovat spouštìním dalšího programu.\par
+\par
+Opakovaným použitím pøíkazu režimu konzoly je možné vypínat a zapínat režim konzoly. Pøepnutí se projeví tak, že konzolové okno zùstane trvale zobrazeno a bude se zapínat a vypínat hlavní grafické okno programu. Vypínání režimu konzoly se ovšem nedoporuèuje používat. Ztrácí se tím hlavní pøednosti konzolového režimu a použití je problematické (v celoobrazovkovém režimu nutno po pøepnutí aktivovat ruènì nové aktivní okno). Pokud je potøeba v programovém oknì provést výpis informací uživateli je výhodnìjší k tomu využít {\uldb editaèní dialogové okno}{\v 20609}.\par
+\par
+\{bmc IDF20577.bmp\}\tab \b \i výstup textu na konzolu \i0 \b0 \par
+\par
+Pøíkaz \b \i výstup textu na konzolu \i0 \b0 zpùsobí výpis textu, zadaného jako parametr, na konzolu. Tento výstup je možné pøi volání z pøíkazového øádku (nebo dávkového souboru BAT) pøesmìrovat do souboru nebo na jiné zaøízení. Výstup textu probíhá do jednoho øádku. Je-li potøeba ukonèit øádek a pokraèovat na dalším øádku, je to možné textovou konstantou pro {\uldb další øádek}{\v 20523}.\par
+\par
+\{bmc IDF20579.bmp\}\tab \b \i chybový výstup textu na konzolu \i0 \b0 \par
+\par
+Pøíkaz \b \i chybový výstup textu na konzolu \i0 \b0 zpùsobí výpis textu, zadaného jako parametr, na konzolu podobnì jako pøedešlý pøíkaz s tím rozdílem, že text slouží jako chybové hlášení a nelze pøesmìrovat do souboru. Výstup textu probíhá do jednoho øádku. Je-li potøeba ukonèit øádek a pokraèovat na dalším øádku, je to možné textovou konstantou pro {\uldb další øádek}{\v 20523}.\par
+\par
+\{bmc IDF20578.bmp\}\tab \b \i vstup textu z konzoly \i0 \b0 \par
+\par
+Funkce \b \i vstup textu z konzoly \i0 \b0 naète od uživatele text a navrátí jej jako textová data. Zadávaný text je nutno ukonèit pomocí klávesy Enter. Kód klávesy Enter nebude do textu zahrnut. Vstup textu z konzoly lze pøi volání z pøíkazového øádku (nebo dávkového souboru BAT) pøesmìrovat ze souboru.\par
+\page
+
+}

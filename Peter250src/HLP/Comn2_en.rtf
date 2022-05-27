@@ -1,0 +1,291 @@
+{\rtf1 \ansi \deff0
+
+@{\footnote ------- definice fontù --------- }
+
+{\fonttbl 
+{\f0 \fswiss MS San Serif;}
+}
+
+@{\footnote ------- definice barev --------- }
+
+{\colortbl
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red192\green192\blue192;
+\red128\green128\blue128;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+
+@{\footnote Použití barev:
+	0 - èerná
+	1 - tmavì èervená
+	2 - tmavì zelená
+	3 - hnìdá
+	4 - tmavì modrá
+	5 - tmavì fialová
+	6 - tmavì modrozelená
+	7 - šedá
+	8 - tmavì šedá
+	9 - èervená
+	10 - zelená
+	11 - žlutá
+	12 - modrá
+	13 - fialová
+	14 - modrozelená
+	15 - bílá
+}
+
+#{\footnote 20976}
+#{\footnote 20977}
+#{\footnote 20978}
+#{\footnote 20979}
+#{\footnote 20980}
+#{\footnote 20981}
+#{\footnote 20982}
+#{\footnote 20983}
+#{\footnote 20984}
+#{\footnote 20985}
+#{\footnote 20986}
+#{\footnote 20987}
+#{\footnote 20988}
+#{\footnote 20989}
+#{\footnote 20990}
+#{\footnote 20991}
+#{\footnote 20992}
+#{\footnote 20993}
+#{\footnote 20994}
+#{\footnote 20995}
+#{\footnote 20996}
+#{\footnote 20997}
+#{\footnote 20998}
+#{\footnote 20999}
+#{\footnote 21000}
+#{\footnote 21001}
+#{\footnote 21002}
+#{\footnote 21003}
+#{\footnote 21004}
+#{\footnote 21005}
+#{\footnote 21006}
+#{\footnote 21007}
+#{\footnote 21008}
+#{\footnote 21009}
+#{\footnote 21010}
+#{\footnote 21011}
+#{\footnote 21024}
+#{\footnote 21025}
+#{\footnote 21026}
+#{\footnote 21027}
+#{\footnote 21028}
+#{\footnote 21029}
+#{\footnote 21030}
+#{\footnote 21031}
+#{\footnote 21033}
+${\footnote DLL Libraries}
++{\footnote 1}
+K{\footnote DLL Libraries;}
+\pard \plain \brdrb \cf12 \fs24 \b
+DLL Libraries\par
+\pard \plain \cf0 \fs20
+{\uldb Program Control}{\v 20057}\par
+\par
+This group of functions is designated only for programmers who well know Windows API realm. It facilitates adding of such functions and properties which the Peter programming system does not support itself. With help of functions for DLL it is possible to make use of all functions of the Windows operating system and alike functions of additional DLL libraries. The functions are not somehow checked by the Peter system (like e.g. validity of memory pointers) and therefore the program crash or serious damage of data can occurs when it is incorrectly used. Detailed descriptions of the \b Windows API SDK \b0 system functions you can obtain on the Microsoft Internet pages (www.microsoft.com) in the developers section.\par
+\par
+\{bmc IDF20977.bmp\} \b \i load library \i0 \b0 \par
+\par
+A parameter of the function is DLL library filename (include file extension). This function assures loading of the library into memory and returns numeric identifier of the library. If the library is not found then zero value is returned. The \b LoadLibrary \b0 system function is used to load library. The number which it returns corresponds to the handle of loaded module.\par
+\par
+\{bmc IDF20978.bmp\} \b \i free library \i0 \b0 \par
+\par
+The function frees library (whose identification number is entered as function parameter) from memory. Entering zero as invalid number is allowed. The \b FreeLibrary \b0 system function is used to free library. The entered number corresponds to the handle of module.\par
+\par
+\{bmc IDF20979.bmp\} \b \i import function \i0 \b0 \par
+\tab \{bmc IDF20980.bmp\} \b \i library identifier \i0 \b0 \par
+\tab \{bmc IDF20981.bmp\} \b \i function name \i0 \b0 \par
+\tab \{bmc IDF20982.bmp\} \b \i number of parameters \i0 \b0 \par
+\tab \{bmc IDF21011.bmp\} \b \i calling convention C \i0 \b0 \par
+\par
+The \b \i import function \i0 \b0 element is used to find a function in the library. The \b GetProcAddress \b0 system function is used. As first parameter an identification number of module loaded in memory is entered (entering zero as invalid number is allowed). The second parameter is name of the function (text). If such function is not found, then second attempt is performed - an "A" letter is added to the name of function (variant with 8-bit text parameters). The third parameter is count of parameters of the function (number of parameters between 0 to 65K is checked). Without entering it a zero number of parameters is assumed. By the term "one parameter" you can understand one entry in the stack with 4-byte size (that is doubleword). Last parameter is flag determining that the function is called with the C convention. That means all parameters are released from the stack after returning from the function. This calling convention is used for instance in the \b printf \b0 function and in further functions using variable number of parameters. All other functions use Pascal calling convention. That means called function provides releasing parameters from the stack (default setting). If the function is found a memory block with below described structure is returned. This block must be deleted by the function for freeing memory block before the program is closed. If the function is not found a zero number is returned. All parameters of functions are automatically cleared when creating the memory block of function.\par
+\par
+\{bmc IDF20983.bmp\} \b \i execute function \i0 \b0 \par
+\par
+The \b \i execute function \i0 \b0 element assures calling and executing of the function of DLL library. As element parameter an address of memory block is entered which is returned by the previous element \b \i import function\i0 \b0 . It is usual memory block which can be created, modified or deleted by the operations for memory block service. For instance you can prepare several memory blocks for miscellaneous ways of calling of one function. Memory block for function calling has following structure:\par
+\par
+(4 bytes) addres of the called function\par
+(2 bytes) N number of parameters of the function (1 parameter is 4-byte entry in the stack)\par
+(2 bytes) ancillary flags: if the \b bit 0 \b0 is set then C calling convention is used (parameters are deleted from the stack after returning from the function) otherwise Pascal calling convention is used (called function provides releasing parameters from the stack)\par
+(N * 4 bytes) N parameters of function, the first parameter is on the lowest address of the stack when calling function\par
+\par
+Parameters of the function must be set before calling function. By default all parameters are initialized to zero when importing function. Setting of the parameters is performed by following operations for manipulation with memory blocks. The first parameter is located on offset 8 from the beginning of the memory block. Every parameter is 4-byte number (doubleword). Attention on handing on text parameter - this parameter is pointer on ASCIIZ text in preponderance functions, not directly text itself. Element for executing function can be used either as command or as a function returning numeric parameter.\par
+\par
+\{bmc IDF20984.bmp\} \b \i create memory block \i0 \b0 \par
+\par
+Required size of memory block is entered as parameter of the element. Element returns address of the memory block. The memory block must be deleted with the following function for freeing memory block when the program is closed. Memory blocks up to size 4 KB are served by internal efficient service of the Peter system which guarantees quick creating, modifying or deleting blocks. For memory blocks with size above 4 KB the \b HeapAlloc \b0 system function is used and blocks are rounded to 256-byte boundaries.\par
+\par
+\{bmc IDF20985.bmp\} \b \i free memory blok \i0 \b0 \par
+\par
+This element ensures deleting of memory block, address of which is entered as a parameter. Entering invalid address 0 is allowed.\par
+\par
+\{bmc IDF20986.bmp\} \b \i change size of memory block \i0 \b0 \par
+\tab \{bmc IDF20987.bmp\} \b \i address of memory block \i0 \b0 \par
+\tab \{bmc IDF20988.bmp\} \b \i new size \i0 \b0 \par
+\par
+The function ensures change size of the memory block. The first parameter is address of the memory block, size of which has to be changed. By entering zero value a new memory block will be created. The second parameter is new size of the memory block. By entering zero value this memory block will be deleted. The function returns address of new memory block. Thanks to internal optimization the memory block need not to be changed (the same address is returned). If size of the memory block does not suit then this function creates new block with required size and copies content of old block into it.\par
+\par
+\{bmc IDF20989.bmp\} \b \i read pointer \i0 \b0 \par
+\{bmc IDF20990.bmp\} \b \i write pointer \i0 \b0 \par
+\par
+The \b \i read pointer \i0 \b0 and \b \i write pointer \i0 \b0 elements serve for setting addresses in memory, from/to where will be stored data using following elements for data reading/writing. By reading value of one of the following element a shift of the reading pointer occurs. By writing value into element a shift of the writing pointer occurs. The read/write pointers are not ever checked for validity. By incorrect manipulation undesirable modification of system/program memory can arrive.\par
+\par
+\{bmc IDF20991.bmp\} \b \i data copy \i0 \b0 \par
+\par
+The \b \i data copy \i0 \b0 element ensures copy of data block from address appointed by read pointer to address appointed by write pointer. Size of data is determined by parameter of the element. Read pointer and write pointer are shifted by the entered data size after operation.\par
+\par
+\{bmc IDF20992.bmp\} \b \i data comparison \i0 \b0 \par
+\par
+The \b \i data comparison \i0 \b0 element ensures comparison of data blocks appointed by read and write pointers. Size of data is determined by parameter of the element. If a difference between data is found then the element returns size of remaining data and read and write pointers stay adjusted to the different data. If data are the same then the element returns zero and read and write pointers point after end of data.\par
+\par
+\{bmc IDF20993.bmp\} \b \i byte with sign (char) \i0 \b0 (shift pointer by 1)\par
+\{bmc IDF20994.bmp\} \b \i byte without sign (BYTE) \i0 \b0 (shift pointer by 1)\par
+\{bmc IDF20995.bmp\} \b \i word with sign (short) \i0 \b0 (shift pointer by 2)\par
+\{bmc IDF20996.bmp\} \b \i word without sign (WORD) \i0 \b0 (shift pointer by 2)\par
+\{bmc IDF20997.bmp\} \b \i 3-byte with sign \i0 \b0 (shift pointer by 3)\par
+\{bmc IDF20998.bmp\} \b \i 3-byte without sign \i0 \b0 (shift pointer by 3)\par
+\{bmc IDF20999.bmp\} \b \i doubleword with sign (long) \i0 \b0 (shift pointer by 4)\par
+\{bmc IDF21000.bmp\} \b \i doubleword without sign (DWORD) \i0 \b0 (shift pointer by 4)\par
+\{bmc IDF21001.bmp\} \b \i decimal number 4 bytes (float) \i0 \b0 (shift pointer by 4)\par
+\{bmc IDF21002.bmp\} \b \i decimal number 8 bytes (double) \i0 \b0 (shift pointer by 8)\par
+\{bmc IDF21003.bmp\} \b \i logical value (BOOL) \i0 \b0 (shift pointer by 4)\par
+\{bmc IDF21004.bmp\} \b \i text terminated by null ASCIIZ \i0 \b0 (shift pointer by N+1)\par
+\{bmc IDF21005.bmp\} \b \i pointer to text terminated by null ASCIIZ \i0 \b0 (shift pointer by 4)\par
+\{bmc IDF21006.bmp\} \b \i text with fixed length \i0 \b0 (shift pointer by N, shorter text is enlarged with spaces)\par
+\{bmc IDF21007.bmp\} \b \i length N of text with fixed length \i0 \b0 (it need to be set before using of previous element)\par
+\par
+With the help of elements for data access a program can read/write from/to the memory. By reading element a value is loaded from memory, address of which is determined by the read pointer. The read pointer is shifted by size of the element. By setting value of element the value is saved to memory, address of which is determined by the write pointer. The write pointer is shifted by size of the element. 8-bit characters are used at text elements. If text in UNICODE code is required than conversion of the text is needed using the \b MultiByteToWideChar \b0 and \b WideCharToMultiByte \b0 system functions. In mostly Windows functions a pointer to the text terminated by zero is handed on as a parameter (\b LPCTSTR \b0 type of parameter) instead of text itself. If the element for setting pointer to text terminated by null is used then content of used variable has not be modified until calling of the DLL function, otherwise the pointer can become invalid (only pointer to content of the text variable is handed on).\par
+\par
+\{bmc IDF21008.bmp\} \b \i read data from file \i0 \b0 \par
+\{bmc IDF21009.bmp\} \b \i write data to file \i0 \b0 \par
+\par
+The \b \i read data from file \i0 \b0 and \b \i write data to file \i0 \b0 elements ensure reading/writing data from/to the file. Size of data to read/write is entered as a parameter of the element. Memory pointers for reading and writing point data in memory, {\uldb file pointers}{\v 20465} point data in the file.\par
+\par
+\{bmc IDF21010.bmp\} \b \i identifier of window element \i0 \b0 \par
+\par
+This element converts {\uldb identification number}{\v 20593} of the window element of the Peter system to the identification number of the Windows (HWND). A zero is returned for invalid element.\par
+\par
+\{bmc IDF21024.bmp\} \b \i create 3D object from memory blocks \i0 \b0 \par
+\tab \{bmc IDF21025.bmp\} \b \i number of vertices \i0 \b0 \par
+\tab \{bmc IDF21026.bmp\} \b \i vertices \i0 \b0 \par
+\tab \{bmc IDF21027.bmp\} \b \i normals (0=auto) \i0 \b0 \par
+\tab \{bmc IDF21028.bmp\} \b \i texture mapping (0=none) \i0 \b0 \par
+\tab \{bmc IDF21029.bmp\} \b \i colors (0=none) \i0 \b0 \par
+\tab \{bmc IDF21030.bmp\} \b \i number of faces \i0 \b0 \par
+\tab \{bmc IDF21031.bmp\} \b \i faces \i0 \b0 \par
+\par
+This element serves for fast and efficient creation of 3D object of the {\uldb 3D graphics}{\v 20788} e.g. with calculation. The element returns the {\uldb identification number}{\v 20810} of the created object.\par
+\par
+As the first parameter the number of object vertices is given. The second parameter is address of memory block which contains coordinates of the individual vertices. Each vertex is determined by 3 real 4-byte numbers representing X, Y and Z coordinate of the vertex.\par
+\par
+The third parameter is address of memory block which contains normals. This parameter can be unused or zero can be used. In such case normals of the object will be generated automatically with {\uldb angle for smoothing}{\v 20934} 0.5. If normals are used, their count must correspond to count of vertices. Normals are entered with the same way as vertices (3 real 4-byte numbers).\par
+\par
+The fourth parameter is address of memory block which contains definition of texture mapping. A pair of real 4-byte numbers representing horizontal and vertical coordinates of the point in texture is entered for every vertex of the object. Left upper corner of the texture has coordinate (0,0), right lower corner has coordinate (1,1). The parameter can be omitted or zero can be used if texture mapping is not needed.\par
+\par
+The fifth parameter is address of memory block which contains definition of colors of individual vertices of the object. Color for every vertex is entered as 4 real 4-byte numbers representing color components RGBA in order red, green, blue and alpha component. Every component has range 0 (=black) to 1 (=full brightness), zero value for alpha component represents transparency and 1 value represents full visibility. Number of colors must correspond to number of vertices of the object. Zero can be adduced instead of the address or parameter can be omited if color definition is not required, then uniform color will be used for whole object.\par
+\par
+The sixth parameter states number of triangle faces from which the object is assembled. The seventh parameter is address of memory block which contains definition of faces of the object. Every face is a triangle with 3 vertices. Single face is determined with three 4-byte integers without sign representing index of the vertex. One vertex can be shared with more faces.\par
+\par
+\{bmc IDF21033.bmp\} \b \i memory block from 3D object \i0 \b0 \par
+\par
+The element makes accessible definition of 3D object of the {\uldb 3D graphics}{\v 20788} in purpose to export the object or to create modified version of the object. The {\uldb identification number}{\v 20810} of the object is used as parameter of the element.\par
+\par
+The element returns address of memory block which contains definition of the object. This memory block has size 32 bytes and contains eight 4-byte integer entries without sign. Meaning of the entries corresponds description of previous element \b \i create 3D object from memory blocks\i0 \b0 .\par
+\par
+\i offset 0: \i0 \tab parameters, now reserved and set to zero\par
+\i offset 4: \i0 \tab number of vertices of the object\par
+\i offset 8: \i0 \tab address of memory block containing coordinates of vertices\par
+\i offset 12: \i0 \tab address of memory block containing normals\par
+\i offset 16: \i0 \tab address of memory block containing texture mapping (0=none)\par
+\i offset 20: \i0 \tab address of memory block containing color of vertices (0=none)\par
+\i offset 24: \i0 \tab number of faces of the object\par
+\i offset 28: \i0 \tab address of memory block containing definition of faces\par
+\par
+\b Important: \b0 Returned memory block containing definition of the object and individual data memory blocks alike are newly created and therefore they need to be deleted after completion of work with the data.\par
+\par
+\page
+
+#{\footnote 21013}
+#{\footnote 21014}
+#{\footnote 21015}
+#{\footnote 21016}
+#{\footnote 21017}
+#{\footnote 21018}
+#{\footnote 21019}
+#{\footnote 21020}
+#{\footnote 21021}
+#{\footnote 21022}
+#{\footnote 21023}
+${\footnote Configuration}
++{\footnote 1}
+K{\footnote Configuration;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Configuration\par
+\pard \plain \cf0 \fs20
+{\uldb Program Control}{\v 20057}\par
+\par
+This group of elements serves for saving program configuration in configuration INI file or in Windows registers. Configuration INI file allows storing program settings in separate configuration file (INI filename extension  typically). Such files can exist more than one and thus can be easily run one program in more variants, e.g. for more users (used configuration file is determined by initial folder when running a program). Conversely Windows registers enable storing program parameters independently on place from which it is run, without necessity of creating separate configuration file.\par
+\par
+\{bmc IDF21014.bmp\} \b \i configuration file \i0 \b0 \par
+\par
+The \b \i configuration file \i0 \b0 element determines INI filename which is used to store program configuration. As default a filename derived from program name is used, to which INI file extension is added and whose path leads into initial folder when program is started. If path is not adduced then this file is placed in Windows folder preferentially (not in current folder).\par
+\par
+\{bmc IDF21015.bmp\} \b \i parameter section \i0 \b0 \par
+\par
+Single parameters are split into named sections in the configuration file. \b Main \b0 is preset as a default section name. If a section name is set to the empty text then element for reading text parameter returns multiline list of all sections in the configuration file.\par
+\par
+\{bmc IDF21016.bmp\} \b \i parameter name \i0 \b0 \par
+\par
+The \b \i parameter name \i0 \b0 element determines name on single parameter which will be read or into which will be written. \b Config \b0 is preset as a default parameter name. If a parameter name is set to the empty text then element for reading text parameter returns multiline list of all parameters in section determined by previous element of parameter section. If a parameter name is empty when writing into text or numerical parameter then deleting the whole of the parameter section occurs.\par
+\par
+\{bmc IDF21017.bmp\} \b \i read/write text parameter \i0 \b0 \par
+\{bmc IDF21018.bmp\} \b \i read/write integer parameter \i0 \b0 \par
+\par
+The elements allow read or write into parameter with appointed name in appointed section. By reading elements a preset data can be appended as a parameter of the element which will be returned in a case when requested parameter will not be found. If the elements are used as a command without joined parameters then deleting of the appropriate parameter occurs. If empty text is set as a parameter name when reading text parameter then multiline list of names of all parameters in given section is returned. If empty text is set as a section name when reading text parameter then mulitline list of names of all sections is returned. If empty name of parameter is set when writing into text of numeric parameter then deleting of the whole section of parameters occurs.\par
+\par
+\{bmc IDF21019.bmp\} \b \i key group \i0 \b0 \par
+\par
+The \b \i key group \i0 \b0 element determines group of key in the Windows registers, in which following operation with registers will be performed. Following numbers of register key groups are allowed:\par
+\par
+0 = HKEY_CLASSES_ROOT\par
+1 = HKEY_CURRENT_USER\par
+2 = HKEY_LOCAL_MACHINE\par
+3 = HKEY_USERS\par
+4 = HKEY_PERFORMANCE_DATA\par
+5 = HKEY_CURRENT_CONFIG\par
+6 = HKEY_DYN_DATA\par
+\par
+\b 1 \b0 = HKEY_CURRENT_USER group of keys is preset as a default. This group of keys is determined to keep configuration parameters for current user. Other commonly used key group is \b 2 \b0 = HKEY_LOCAL_MACHINE which serves to keep configuration parameters independently on the current user. Remaining groups of keys should not be ordinarily used by the program.\par
+\par
+\{bmc IDF21020.bmp\} \b \i key name \i0 \b0 \par
+\par
+The \b \i key name \i0 \b0 element determines access path to the used key, that is group of program parameters. This path has form as a usual path to a folder on the disk without initial and ending back slash character \b \\\b0 . A path \b Software\\ \b0 with added program name (without file extension) is used as a default. To display structure of Windows registers one can use system program \b RegEdit \b0 (it can be found in the Windows folder).\par
+\par
+\{bmc IDF21021.bmp\} \b \i entry name \i0 \b0 \par
+\par
+Every key can contain one or more data entries (or other keys, too). \b Config \b0 is set as a default entry name.\par
+\par
+\{bmc IDF21022.bmp\} \b \i read/write text entry \i0 \b0 \par
+\{bmc IDF21023.bmp\} \b \i read/write integer entry \i0 \b0 \par
+\par
+The elements allow read or write into entry with appointed name in appointed key. By reading elements a preset data can be appended as a parameter of the element which will be returned in a case when requested entry will not be found. If the elements are used as a command without joined parameters then deleting of the appropriate entry occurs.\par
+\page
+
+}

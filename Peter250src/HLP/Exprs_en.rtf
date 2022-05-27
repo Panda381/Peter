@@ -1,0 +1,373 @@
+{\rtf1 \ansi \deff0
+
+@{\footnote ------- definice fontù --------- }
+
+{\fonttbl 
+{\f0 \fswiss MS San Serif;}
+}
+
+@{\footnote ------- definice barev --------- }
+
+{\colortbl
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red192\green192\blue192;
+\red128\green128\blue128;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+
+@{\footnote Použití barev:
+	0 - èerná
+	1 - tmavì èervená
+	2 - tmavì zelená
+	3 - hnìdá
+	4 - tmavì modrá
+	5 - tmavì fialová
+	6 - tmavì modrozelená
+	7 - šedá
+	8 - tmavì šedá
+	9 - èervená
+	10 - zelená
+	11 - žlutá
+	12 - modrá
+	13 - fialová
+	14 - modrozelená
+	15 - bílá
+}
+
+#{\footnote 20084}
+#{\footnote 20635}
+#{\footnote 20098}
+#{\footnote 20633}
+#{\footnote 20105}
+#{\footnote 20634}
+${\footnote Calculations}
++{\footnote 1}
+K{\footnote Calculations;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Calculations\par
+\pard \plain \cf0 \fs20
+{\uldb Structural Elements of a Program}{\v Structural Elements of a Program}\par
+\par
+{\uldb \{bmc IDF20016.bmp\}\tab numeric constant}{\v 20016} \par
+{\uldb \{bmc IDF20085.bmp\}\tab arithmetic operations}{\v 20085} \par
+{\uldb \{bmc IDF20086.bmp\}\tab functions}{\v 20086} \par
+{\uldb \{bmc IDF20087.bmp\}\tab comparisons}{\v 20087} \par
+{\uldb \{bmc IDF20088.bmp\}\tab logic operations}{\v 20088} \par
+{\uldb \{bmc IDF20732.bmp\}\tab bit operations}{\v 20732} \par
+{\uldb \{bmc IDF20112.bmp\}\tab angle, direction}{\v 20112} \par
+\{bmc IDF20635.bmp\}\tab \b \i numeric constant -1 \i0 \b0 \par
+\{bmc IDF20098.bmp\}\tab \b \i pi (circular constant) \i0 \b0 \par
+\{bmc IDF20633.bmp\}\tab \b \i 2*pi (= 360 degrees angle) \i0 \b0 \par
+\{bmc IDF20105.bmp\}\tab \b \i Euler constant \i0 \b0 \par
+\{bmc IDF20634.bmp\}\tab \b \i distance of 1 graphic pixel (= 1/32) \i0 \b0 \par
+\page
+
+#{\footnote 20016}
+#{\footnote 20017}
+#{\footnote 20018}
+#{\footnote 20019}
+#{\footnote 20020}
+#{\footnote 20021}
+#{\footnote 20022}
+#{\footnote 20023}
+#{\footnote 20024}
+#{\footnote 20025}
+#{\footnote 20026}
+#{\footnote 20027}
+#{\footnote 20010}
+#{\footnote 20028}
+${\footnote Numeric Constant}
++{\footnote 1}
+K{\footnote Numeric Constant;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20016.bmp\} Numeric Constant\par
+\pard \plain \cf0 \fs20
+{\uldb Calculations}{\v 20084}\par
+\par
+\{bmc IDF20016.bmp\} \b \i numeric constant \i0 \b0 \par
+\tab \{bmc IDF20017.bmp\} \b \i digit 0 \i0 \b0 \par
+\tab \{bmc IDF20018.bmp\} \b \i digit 1 \i0 \b0 \par
+\tab \{bmc IDF20019.bmp\} \b \i digit 2 \i0 \b0 \par
+\tab \{bmc IDF20020.bmp\} \b \i digit 3 \i0 \b0 \par
+\tab \{bmc IDF20021.bmp\} \b \i digit 4 \i0 \b0 \par
+\tab \{bmc IDF20022.bmp\} \b \i digit 5 \i0 \b0 \par
+\tab \{bmc IDF20023.bmp\} \b \i digit 6 \i0 \b0 \par
+\tab \{bmc IDF20024.bmp\} \b \i digit 7 \i0 \b0 \par
+\tab \{bmc IDF20025.bmp\} \b \i digit 8 \i0 \b0 \par
+\tab \{bmc IDF20026.bmp\} \b \i digit 9 \i0 \b0 \par
+\tab \{bmc IDF20027.bmp\} \b \i decimal point \i0 \b0 \par
+\tab \{bmc IDF20010.bmp\} \b \i negative sign \i0 \b0 \par
+\tab \{bmc IDF20028.bmp\} \b \i exponent \i0 \b0 \par
+\par
+A numeric constant can be used any time a numeric term is expected. A numeric constant can be specified in two ways. The first possibility is to assemble the number out of the elements of digits 0 to 9, decimal point, sign and exponent. A number is entered the same way as in a normal text entry with the difference that the entry takes place by assembling the elements from above downwards. The mantissa part of the number can contain up to 15 digits, its exponent ranging between -308 and +308.\par
+\par
+Another possibility is to enter the numeric expression directly into the describing text of the numeric constant description. In order that this entry mode might be exerted, the constant must not contain any element of the above entry manner. Behind the number entry any text can be stated.\par
+\par
+A number can be entered in the hexadecimal form by inserting the \b $ \b0 (dollar) character in front of the number. Thus e.g. the entry \b $1F \b0 corresponds the number \b 31\b0 . Similarly, by inserting the \b % \b0 (the percent character) a number can be entered in the binary form. Thus e.g. the entry \b %1001 \b0 corresponds the number \b 9\b0 .\par
+\par
+Elements of the digits 0 till 9 can be used in the program independently as numeric constants.\par
+\page
+
+#{\footnote 20085}
+#{\footnote 20039}
+#{\footnote 20040}
+#{\footnote 20041}
+#{\footnote 20042}
+#{\footnote 20089}
+#{\footnote 20111}
+${\footnote Arithmetic Operations}
++{\footnote 1}
+K{\footnote Arithmetic Operations;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20085.bmp\} Arithmetic Operations\par
+\pard \plain \cf0 \fs20
+{\uldb Calculations}{\v 20084}\par
+\par
+\{bmc IDF20039.bmp\} \b \i add \i0 \b0 \par
+\{bmc IDF20040.bmp\} \b \i subtract \i0 \b0 \par
+\{bmc IDF20041.bmp\} \b \i multiply \i0 \b0 \par
+\{bmc IDF20042.bmp\} \b \i divide \i0 \b0 \par
+\{bmc IDF20089.bmp\} \b \i modulo \i0 \b0 \par
+\{bmc IDF20111.bmp\} \b \i power \i0 \b0 \par
+\par
+The arithmetic operations provide the possibility to calculate numeric terms. As operator parameters one or several numeric terms can be given. Operations with operands are carried out gradually from above downwards, the result of a calculation carried out with two operands being used as the first operand for the next calculation. Entering one operand only has a special significance. For one operand only, the difference operator will return the operand's negative value, the quotient operator will return the operand's reciprocal.\par
+\par
+The modulo operator calculates the rest after dividing the first (positive) operand by the other one. As an example, the term \i 8 mod 3 \i0 will return the value of \i 2 \i0 as the calculation result (= 8 - 3 - 3). For negative numbers supplement of the operand will be used; the term \i -8 mod 3 \i0 will return \i 1 \i0 (= 3 - (8 mod 3) = -8 + 3 + 3 + 3). This operation proves as cutting the number into the interval 0 to second_operand and can be used as e.g. an angle normalization.\par
+\page
+
+#{\footnote 20086}
+#{\footnote 20104}
+#{\footnote 20424}
+#{\footnote 20102}
+#{\footnote 20101}
+#{\footnote 20099}
+#{\footnote 20100}
+#{\footnote 20090}
+#{\footnote 20091}
+#{\footnote 20092}
+#{\footnote 20093}
+#{\footnote 20094}
+#{\footnote 20095}
+#{\footnote 20096}
+#{\footnote 20097}
+#{\footnote 20106}
+#{\footnote 20107}
+#{\footnote 20108}
+#{\footnote 20109}
+#{\footnote 20110}
+#{\footnote 20103}
+#{\footnote 20683}
+#{\footnote 20684}
+#{\footnote 20886}
+#{\footnote 20887}
+#{\footnote 20888}
+#{\footnote 20889}
+${\footnote Functions}
++{\footnote 1}
+K{\footnote Functions;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20086.bmp\} Functions\par
+\pard \plain \cf0 \fs20
+{\uldb Calculations}{\v 20084}\par
+\par
+\{bmc IDF20104.bmp\} \b \i random number (0 <= x < 1) \i0 \b0 \par
+\par
+The random number returns the value of 0 till the number entered. Without specifying the range, the random number returns 0 till 1. The interval of possible random number values includes zero, but it does not include the terminal value. For example, for the implicit interval 0 till 1 the resulting random number can reach the value of 0, but it can never reach the value of 1, the number being always close below the value of 1 as the maximum.\par
+\par
+\{bmc IDF20424.bmp\} \b \i square power \i0 \b0 \par
+\{bmc IDF20102.bmp\} \b \i square root \i0 \b0 \par
+\{bmc IDF20101.bmp\} \b \i absolute value \i0 \b0 \par
+\{bmc IDF20099.bmp\} \b \i integer part \i0 \b0 \par
+\{bmc IDF20100.bmp\} \b \i fractional part \i0 \b0 \par
+\{bmc IDF20683.bmp\} \b \i increment \i0 \b0 (adds 1)\par
+\{bmc IDF20684.bmp\} \b \i decrement \i0 \b0 (subtracts 1)\par
+\par
+The function of splitting the number in the integer and the fractional part does not depend on the sign, int(-x) = -int(x).\par
+\par
+\{bmc IDF20090.bmp\} \b \i sine \i0 \b0 \par
+\{bmc IDF20091.bmp\} \b \i cosine \i0 \b0 \par
+\{bmc IDF20092.bmp\} \b \i tangent \i0 \b0 \par
+\{bmc IDF20093.bmp\} \b \i cotangent \i0 \b0 \par
+\{bmc IDF20094.bmp\} \b \i arcsine \i0 \b0 \par
+\{bmc IDF20095.bmp\} \b \i arccosine \i0 \b0 \par
+\{bmc IDF20096.bmp\} \b \i arctangent \i0 \b0 \par
+\{bmc IDF20097.bmp\} \b \i arccotangent \i0 \b0 \par
+\{bmc IDF20106.bmp\} \b \i convert degrees to radians \i0 \b0 \par
+\{bmc IDF20107.bmp\} \b \i convert radians to degrees \i0 \b0 \par
+\par
+The goniometric functions calculations are carried out in radian. If a calculation in degree is required, the function converting degrees and radians may be used.\par
+\par
+\{bmc IDF20108.bmp\} \b \i decadic logarithm \i0 \b0 \par
+\{bmc IDF20109.bmp\} \b \i natural logarithm \i0 \b0 \par
+\{bmc IDF20110.bmp\} \b \i natural exponential function \i0 \b0 \par
+\{bmc IDF20103.bmp\} \b \i factorial \i0 \b0 \par
+\par
+The factorial calculation is carried out for an argument that is rounded up to the nearest integer value. The valid factorial argument ranges between -170 and +170. For negative argument values the calculation result for an odd number is negative, for an even number positive (odd or even number of multiplication operations).\par
+\par
+\{bmc IDF20886.bmp\} \b \i distance of point \i0 \b0 \par
+\tab \{bmc IDF20888.bmp\} \b \i X coordinate of point \i0 \b0 \par
+\tab \{bmc IDF20889.bmp\} \b \i Y coordinate of point \i0 \b0 \par
+\par
+The \b \i distance of point \i0 \b0 function serves to calculate a point’s distance from the coordinate system origin or mutual distances of two points. As parameters the point’s coordinates or the two points‘ coordinate differences are specified.\par
+\par
+\{bmc IDF20887.bmp\} \b \i angle of point \i0 \b0 \par
+\tab \{bmc IDF20888.bmp\} \b \i X coordinate of point \i0 \b0 \par
+\tab \{bmc IDF20889.bmp\} \b \i Y coordinate of point \i0 \b0 \par
+\par
+The \b \i angle of point \i0 \b0 function serves to calculate the point angle from the X-axis of the coordinate system or to calculate the angle of the direction defined by two points. As parameters the point’s coordinates or the two points‘ coordinate differences are specified.\par
+\page
+
+#{\footnote 20087}
+#{\footnote 20029}
+#{\footnote 20030}
+#{\footnote 20033}
+#{\footnote 20034}
+#{\footnote 20031}
+#{\footnote 20032}
+${\footnote Comparisons}
++{\footnote 1}
+K{\footnote Comparisons;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20087.bmp\} Comparisons\par
+\pard \plain \cf0 \fs20
+{\uldb Calculations}{\v 20084}\par
+\par
+\{bmc IDF20029.bmp\} \b \i is equal to \i0 \b0 \par
+\{bmc IDF20030.bmp\} \b \i is not equal to \i0 \b0 \par
+\{bmc IDF20033.bmp\} \b \i is greater than \i0 \b0 \par
+\{bmc IDF20034.bmp\} \b \i is less than \i0 \b0 \par
+\{bmc IDF20031.bmp\} \b \i is greater or equal to \i0 \b0 \par
+\{bmc IDF20032.bmp\} \b \i is less or equal to \i0 \b0 \par
+\par
+The comparison operators are used for comparing numeric terms. As operator parameters one or more numeric terms can be stated, the operator output being a logic value. The operand comparing takes place gradually from the top downwards, each time between two contiguous operands. The comparison operation is satisfied, if the comparison between all comparing operands is satisfied. A special case occurs if only one operand is stated. In this case the operand is compared to zero, i.e. as if the second operand would be a term the value of which is 0.\par
+\page
+
+#{\footnote 20088}
+#{\footnote 20065}
+#{\footnote 20066}
+#{\footnote 20035}
+#{\footnote 20036}
+#{\footnote 20037}
+#{\footnote 20038}
+${\footnote Logic Operations}
++{\footnote 1}
+K{\footnote Logic Operations;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20088.bmp\} Logic Operations\par
+\pard \plain \cf0 \fs20
+{\uldb Calculations}{\v 20084}\par
+\par
+\{bmc IDF20065.bmp\} \b \i yes \i0 \b0 \par
+\{bmc IDF20066.bmp\} \b \i no \i0 \b0 \par
+\par
+The \b \i yes \i0 \b0 and \b \i no \i0 \b0 elements are logic constants. They represent the flags of validity or non-validity of a logic term.\par
+\par
+\{bmc IDF20035.bmp\} \b \i and \i0 \b0 \par
+\par
+The \b \i and \i0 \b0 logic operator returns the validity flag, if all logic terms entered as parameters are true (two or more terms can be entered). If some of the terms is false, the result of the logic operation, too, is false.\par
+\par
+\{bmc IDF20036.bmp\} \b \i or \i0 \b0 \par
+\par
+The \b \i or \i0 \b0 logic operator returns the validity flag, if at least one of the logic term entered as parameter is true (two or more terms can be entered). If all terms are false, the logic operation result, too, is false.\par
+\par
+\{bmc IDF20037.bmp\} \b \i either or (exclusive or) \i0 \b0 \par
+\par
+The \b \i either or \i0 \b0 logic operator returns the validity flag, if just one of two logic terms is true. If both terms are false, or, on the contrary, both are true, the logic operation result is false. Two or more parameters can be entered as operator parameters. The terms are evaluated from the top downwards, the result of a two-operand operation is used as the operand for the next operation. As a consequence, the logic operation result will be true, if an odd number of operands are true. For an even number of true operands the result will be false.\par
+\par
+\{bmc IDF20038.bmp\} \b \i is not valid that \i0 \b0 \par
+\par
+The \b \i is not valid that \i0 \b0 logic operator is a logic negation. As a parameter one logic term is entered; the logic operation result will be the negation of the logic term validity.\par
+\par
+\par
+\i \b Note: \b0 The "and" and "or" logic operators utilize the so called accelerated evaluation. If the logic operation result is during evaluation of the logic terms evident, no further terms are evaluated. Normally this will not manifest itself in any way except for the cases, when a function returning a logic value is incorporated in the logic terms, because this function need not be executed. Experienced programmers, however, use this fact to inhibit the function execution, if some of the previous functions has returned a false operation result.\i0 \par
+\page
+
+#{\footnote 20732}
+#{\footnote 20733}
+#{\footnote 20734}
+#{\footnote 20735}
+#{\footnote 20736}
+#{\footnote 20737}
+#{\footnote 20738}
+#{\footnote 20739}
+${\footnote Bit Operations}
++{\footnote 1}
+K{\footnote Bit Operations;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20732.bmp\} Bit Operations\par
+\pard \plain \cf0 \fs20
+{\uldb Calculations}{\v 20084}\par
+\par
+The bit operations are operations executed with number having a size of a "double-word" without any sign (an integer ranging between 0 and 4294967295) on the level of individual number bits (i.e. 32 bits on the whole for one number).\par
+\par
+\{bmc IDF20733.bmp\} \b \i AND bit product \i0 \b0 \par
+\par
+Individual bits of the AND operation result are set to the value of \b 1\b0 , if the corresponding bits of all operands are set to the value of \b 1\b0 , otherwise the bit is set to zero (value of \b 0\b0 ).\par
+\par
+\{bmc IDF20734.bmp\} \b \i OR bit sum \i0 \b0 \par
+\par
+Individual bits of the OR operation result are set to the value of \b 1\b0 , if the corresponding bit of at least one operand is set to the value of \b 1\b0 , otherwise the bit is set to zero (value of \b 0\b0 ).\par
+\par
+\{bmc IDF20735.bmp\} \b \i XOR bit inversion \i0 \b0 \par
+\par
+Individual bits of the XOR operation result are set to the value of \b 1\b0 , if the corresponding bit of an odd number of operands are set to the value of \b 1\b0 , otherwise the bit is set to zero (value of \b 0\b0 ). To say it in other words: Bit \b 1 \b0 of each operand changes (flips, negates) the bit of the operation result, whereas bit \b 0 \b0 does not influence the operation result.\par
+\par
+\{bmc IDF20736.bmp\} \b \i NOT bit complement \i0 \b0 \par
+\par
+Individual bits of the NOT operation result are set to the value of \b 1\b0 , if the corresponding bit of the operand is not set to \b 1\b0 , otherwise the bit is set to zero (value of \b 0\b0 ). To say it in other words: The value of each bit will change (be negated).\par
+\par
+\{bmc IDF20737.bmp\} \b \i maximum bit number (doubleword) \i0 \b0 \par
+\par
+The value of the maximal bit number is 4294967295 (hexadecimal $FFFFFFFF).\par
+\par
+\{bmc IDF20738.bmp\} \b \i bit rotate left \i0 \b0 \par
+\par
+The bit rotation to the left brings about a shift of all operand bits one position towards higher bits accompanied with a carry of the most significant bit to the least significant one. For 2147483647 (i.e. $7FFFFFFF) and less the bit-rotate-left operation corresponds to the operation of doubling the number.\par
+\par
+\{bmc IDF20739.bmp\} \b \i bit rotate right \i0 \b0 \par
+\par
+The bit rotation to the right brings about a shift of all operand bits one position towards lower bits accompanied with a carry of the least significant bit to the most significant one. For even numbers the bit-rotate-right operation corresponds to the operation of dividing by two.\par
+\page
+
+#{\footnote 20112}
+#{\footnote 20113}
+#{\footnote 20114}
+#{\footnote 20115}
+#{\footnote 20116}
+#{\footnote 20117}
+#{\footnote 20118}
+#{\footnote 20119}
+#{\footnote 20120}
+${\footnote Angle, Direction}
++{\footnote 1}
+K{\footnote Angle, Direction;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20112.bmp\} Angle, Direction\par
+\pard \plain \cf0 \fs20
+{\uldb Calculations}{\v 20084}\par
+\par
+\{bmc IDF20113.bmp\} \b \i right (0 pi, that is 0 degrees) \i0 \b0 \par
+\{bmc IDF20114.bmp\} \b \i right up (1/4 pi, that is 45 degrees) \i0 \b0 \par
+\{bmc IDF20115.bmp\} \b \i up (1/2 pi, that is 90 degrees) \i0 \b0 \par
+\{bmc IDF20116.bmp\} \b \i left up (3/4 pi, that is 135 degrees) \i0 \b0 \par
+\{bmc IDF20117.bmp\} \b \i left (1 pi, that is 180 degrees) \i0 \b0 \par
+\{bmc IDF20118.bmp\} \b \i left down (1 1/4 pi, that is 225 degrees) \i0 \b0 \par
+\{bmc IDF20119.bmp\} \b \i down (1 1/2 pi, that is 270 degrees) \i0 \b0 \par
+\{bmc IDF20120.bmp\} \b \i right down (1 3/4 pi, that is 315 degrees) \i0 \b0 \par
+\par
+The angle elements are numeric constants representing the angle (direction) expressed in radian (the perigon, 360 degrees is 2*pi, i.e. approximately 6.28). The angle elements can be used e.g. as a goniometric function parameter or a parameter for setting the sprite direction (e.g. of Peter or Lucy).\par
+\page
+
+}

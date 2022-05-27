@@ -1,0 +1,331 @@
+{\rtf1 \ansi \deff0
+
+@{\footnote ------- definice fontù --------- }
+
+{\fonttbl 
+{\f0 \fswiss MS San Serif CE;}
+}
+
+@{\footnote ------- definice barev --------- }
+
+{\colortbl
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red192\green192\blue192;
+\red128\green128\blue128;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+
+@{\footnote Použití barev:
+	0 - èerná
+	1 - tmavì èervená
+	2 - tmavì zelená
+	3 - hnìdá
+	4 - tmavì modrá
+	5 - tmavì fialová
+	6 - tmavì modrozelená
+	7 - šedá
+	8 - tmavì šedá
+	9 - èervená
+	10 - zelená
+	11 - žlutá
+	12 - modrá
+	13 - fialová
+	14 - modrozelená
+	15 - bílá
+}
+
+#{\footnote 20815}
+${\footnote Transformations}
++{\footnote 1}
+K{\footnote Transformations;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Transformations\par
+\pard \plain \cf0 \fs20
+{\uldb 3D Graphics}{\v 20788}\par
+\par
+The 3D coordinate system uses the following coordinate axis orientation: The X axis points to the right, the Y upward, and the Z axis from the viewer (forward). Such a coordinate system is called left-handed, and is defined as follows: The left hand is positioned so that the left hand fingers are pointed in the X axis direction (to the right), and the bent fingertips are pointed in the Y axis direction (up). Then the thumb will be pointed in the Z axis direction (from the viewer). Similarly, the left hand rule can be applied to the direction of rotation around the axes: The left hand thumb points in the axis direction, the bent fingers show the positive direction of rotation.\par
+\par
+Transformations assert themselves for an {\uldb active object}{\v 20810} and are related to the object's {\uldb parent}{\v 20813}. If the object is not connected to another object, the transformations are related to a scene. A transformation goes out of the object's zero starting position. Therefore the matter in question is not a change compared to the previous position, but instead this concerns the actual object coordinates. A transformation is carried out in the following succession: scale change - rotation - translation. With rotations their succession can be determined. As a default setting the rotation is carried out in the X - Y - Z succession.\par
+\par
+{\uldb \{bmc IDF20816.bmp\}\tab scale in X direction}{\v 20816}\par
+{\uldb \{bmc IDF20817.bmp\}\tab scale in Y direction}{\v 20817}\par
+{\uldb \{bmc IDF20818.bmp\}\tab scale in Z direction}{\v 20818}\par
+{\uldb \{bmc IDF20819.bmp\}\tab rotation around X-axis}{\v 20819}\par
+{\uldb \{bmc IDF20820.bmp\}\tab rotation around Y-axis}{\v 20820}\par
+{\uldb \{bmc IDF20821.bmp\}\tab rotation around Z-axis}{\v 20821}\par
+{\uldb \{bmc IDF20822.bmp\}\tab translation in X direction}{\v 20822}\par
+{\uldb \{bmc IDF20823.bmp\}\tab translation in Y direction}{\v 20823}\par
+{\uldb \{bmc IDF20824.bmp\}\tab translation in Z direction}{\v 20824}\par
+{\uldb \{bmc IDF20880.bmp\}\tab order of rotations}{\v 20880}\par
+\page
+
+#{\footnote 20816}
+${\footnote Scale in X Direction}
++{\footnote 1}
+K{\footnote Scale in X Direction;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20816.bmp\} Scale in X Direction\par
+\pard \plain \cf0 \fs20
+{\uldb Transformations}{\v 20815}\par
+\par
+The \b \i scale in X direction \i0 \b0 element is a numeric variable defining an {\uldb active object's}{\v 20810} magnification scale in the X axis direction (left - right direction). After an object is created, the X scale starting value = 1. By setting the element to a number greater than 1 the object will get magnified in the X direction, by setting the element to a number smaller than 1 the object will get minified. The zero setting makes the object "flat". By entering a negative scale the object will get "inverted" (including the face orientation inversion). The change of scale is performed before rotation and translation transformations are intended to be done. \par
+\page
+
+#{\footnote 20817}
+${\footnote Scale in Y Direction}
++{\footnote 1}
+K{\footnote Scale in Y Direction;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20817.bmp\} Scale in Y Direction\par
+\pard \plain \cf0 \fs20
+{\uldb Transformations}{\v 20815}\par
+\par
+The \b \i scale in Y direction \i0 \b0 element is a numeric variable defining an {\uldb active object's}{\v 20810} magnification scale in the Y axis direction (up - down direction). After an object is created, the Y scale starting value = 1. By setting the element to a number greater than 1 the object will get magnified in the Y direction, by setting the element to a number smaller than 1 the object will get minified. The zero setting makes the object "flat". By entering a negative scale the object will get "inverted" (including the face orientation inversion). The change of scale is performed before rotation and translation transformations are intended to be done. \par
+\page
+
+#{\footnote 20818}
+${\footnote Scale in Z Direction}
++{\footnote 1}
+K{\footnote Scale in Z Direction;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20818.bmp\} Scale in Z Direction\par
+\pard \plain \cf0 \fs20
+{\uldb Transformations}{\v 20815}\par
+\par
+The \b \i scale in Z direction \i0 \b0 element is a numeric variable defining an {\uldb active object's}{\v 20810} magnification scale in the Z axis direction (forward - backward direction). After an object is created, the Z scale starting value = 1. By setting the element to a number greater than 1 the object will get magnified in the Z direction, by setting the element to a number smaller than 1 the object will get minified. The zero setting makes the object "flat". By entering a negative scale the object will get "inverted" (including the face orientation inversion). The change of scale is performed before rotation and translation transformations are intended to be done. \par
+\page
+
+#{\footnote 20819}
+${\footnote Rotation around X-Axis}
++{\footnote 1}
+K{\footnote Rotation around X-Axis;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20819.bmp\} Rotation around X-Axis\par
+\pard \plain \cf0 \fs20
+{\uldb Transformations}{\v 20815}\par
+\par
+The \b \i rotation around X-axis \i0 \b0 element is a numeric variable defining an {\uldb active object}{\v 20810} rotation around the X axis. The X axis is the axis pointing from the coordinate system origin to the right. The direction of rotation around the X axis is defined by the left hand rule: The left hand thumb point in the X axis direction (i.e. from the left to the right), the bent fingers indicate the direction of positive rotation. As a consequence, a positive value of the direction of rotation around the X axis will cause the object's top side to move from the viewer and the object's bottom side to the viewer. This is also depicted in the icon picture of the X rotation. The rotation value is adjusted to range in the 0 through 2*pi interval. By reading the variable one will always get a value from this interval. A rotation is carried out after a scale transformation and before a translation transformation. The rotation succession related to the individual axes can be determined by the {\uldb order of rotations}{\v 20880} element.\par
+\page
+
+#{\footnote 20820}
+${\footnote Rotation around Y-Axis}
++{\footnote 1}
+K{\footnote Rotation around Y-Axis;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20820.bmp\} Rotation around Y-Axis\par
+\pard \plain \cf0 \fs20
+{\uldb Transformations}{\v 20815}\par
+\par
+The \b \i rotation around Y-axis \i0 \b0 element is a numeric variable defining an {\uldb active object}{\v 20810} rotation around the Y axis. The Y axis is the axis pointing from the coordinate system origin upwards. The direction of rotation around the Y axis is defined by the left hand rule: The left hand thumb point in the Y axis direction (i.e. from below upwards), the bent fingers indicate the direction of positive rotation. As a consequence, a positive value of the direction of rotation around the Y axis will cause the object's left side to move from the viewer and the object's right side to the viewer. This is also depicted in the icon picture of the Y rotation. The rotation value is adjusted to range in the 0 through 2*pi interval. By reading the variable one will always get a value from this interval. A rotation is carried out after a scale transformation and before a translation transformation. The rotation succession related to the individual axes can be determined by the {\uldb order of rotations}{\v 20880} element.\par
+\page
+
+#{\footnote 20821}
+${\footnote Rotation around Z-Axis}
++{\footnote 1}
+K{\footnote Rotation around Z-Axis;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20821.bmp\} Rotation around Z-Axis\par
+\pard \plain \cf0 \fs20
+{\uldb Transformations}{\v 20815}\par
+\par
+The \b \i rotation around Z-axis \i0 \b0 element is a numeric variable defining an {\uldb active object}{\v 20810} rotation around the Z axis. The Z axis is the axis pointing from the coordinate system origin forward (from the viewer). The direction of rotation around the Z axis is defined by the left hand rule: The left hand thumb point in the Z axis direction (i.e. forward form the viewer), the bent fingers indicate the direction of positive rotation. As a consequence, a positive value of the direction of rotation around the Z axis will cause the object's top side to move to the left and the object's bottom side to the right. This is also depicted in the icon picture of the Z rotation. The rotation value is adjusted to range in the 0 through 2*pi interval. By reading the variable one will always get a value from this interval. A rotation is carried out after a scale transformation and before a translation transformation. The rotation succession related to the individual axes can be determined by the {\uldb order of rotations}{\v 20880} element.\par
+\page
+
+#{\footnote 20822}
+${\footnote Translation in X Direction}
++{\footnote 1}
+K{\footnote Translation in X Direction;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20822.bmp\} Translation in X Direction\par
+\pard \plain \cf0 \fs20
+{\uldb Transformations}{\v 20815}\par
+\par
+The \b \i translation in X direction \i0 \b0 element is a numeric value defining the distance of an {\uldb active object}{\v 20810} from the coordinate system origin in the X axis direction (left - right direction). A positive value causes the object to shift right, a negative value causes the object to shift left from the coordinate origin. The object's translation is carried out after the scale and rotation transformations.\par
+\page
+
+#{\footnote 20823}
+${\footnote Translation in Y Direction}
++{\footnote 1}
+K{\footnote Translation in Y Direction;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20823.bmp\} Translation in Y Direction\par
+\pard \plain \cf0 \fs20
+{\uldb Transformations}{\v 20815}\par
+\par
+The \b \i translation in Y direction \i0 \b0 element is a numeric value defining the distance of an {\uldb active object}{\v 20810} from the coordinate system origin in the Y axis direction (down - up direction). A positive value causes the object to shift up, a negative value causes the object to shift down from the coordinate origin. The object's translation is carried out after the scale and rotation transformations.\par
+\page
+
+#{\footnote 20824}
+${\footnote Translation in Z Direction}
++{\footnote 1}
+K{\footnote Translation in Z Direction;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20824.bmp\} Translation in Z Direction\par
+\pard \plain \cf0 \fs20
+{\uldb Transformations}{\v 20815}\par
+\par
+The \b \i translation in Z direction \i0 \b0 element is a numeric value defining the distance of an {\uldb active object}{\v 20810} from the coordinate system origin in the Z axis direction (forward - backward direction). A positive value causes the object to shift forward (from the viewer), a negative value causes the object to shift backward (to the viewer) from the coordinate origin. The object's translation is carried out after the scale and rotation transformations.\par
+\page
+
+#{\footnote 20880}
+${\footnote Order of Rotations}
++{\footnote 1}
+K{\footnote Order of Rotations;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20880.bmp\} Order of Rotations\par
+\pard \plain \cf0 \fs20
+{\uldb Transformations}{\v 20815}\par
+\par
+To ease the object manipulations with an {\uldb active object}{\v 20810} the possibility is provided to specify, in which succession the rotations around the {\uldb X}{\v 20819}, {\uldb Y}{\v 20820}, or {\uldb Z}{\v 20821} axis should be performed. The order of rotations is specified by a number according to the following table:\par
+\par
+\b 0 \b0 \tab X-Y-Z (default setting)\par
+\b 1 \b0 \tab X-Z-Y\par
+\b 2 \b0 \tab Y-X-Z\par
+\b 3 \b0 \tab Y-Z-X\par
+\b 4 \b0 \tab Z-X-Y\par
+\b 5 \b0 \tab Z-Y-X\par
+\par
+\page
+
+#{\footnote 20825}
+${\footnote Surface}
++{\footnote 1}
+K{\footnote Surface;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Surface\par
+\pard \plain \cf0 \fs20
+{\uldb 3D Graphics}{\v 20788}\par
+\par
+\par
+{\uldb \{bmc IDF20826.bmp\}\tab color}{\v 20826}\par
+{\uldb \{bmc IDF20884.bmp\}\tab reflection of ambient light}{\v 20884}\par
+{\uldb \{bmc IDF20827.bmp\}\tab emissive color}{\v 20827}\par
+{\uldb \{bmc IDF20828.bmp\}\tab dimnes}{\v 20828}\par
+{\uldb \{bmc IDF20829.bmp\}\tab reflectance color}{\v 20829}\par
+{\uldb \{bmc IDF20840.bmp\}\tab contours}{\v 20840}\par
+{\uldb \{bmc IDF20839.bmp\}\tab transparency}{\v 20839}\par
+\page
+
+#{\footnote 20826}
+${\footnote Color}
++{\footnote 1}
+K{\footnote Color;Diffuse Color;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20826.bmp\} Color\par
+\pard \plain \cf0 \fs20
+{\uldb Surface}{\v 20825}\par
+\par
+The \b \i color \i0 \b0 element serves to set the color of an {\uldb active object}{\v 20810}. This concerns a diffuse color, thus a color reflected from the object surface; the remaining portion of the light spectrum being absorbed by the object. The color element is a numeric variable. The color's format is the same as that of the colors used in graphics applications of the Peter application: \b \i color = red + green*256 + blue*256*256 + (255-alpha)*256*256*256 \i0 \b0 (Individual color components are integers the values of which range between 0 and 255, and the alpha channel value lies in the range 0=transparency till 255=normal color), therefore it is possible to use the {\uldb color constant}{\v 20301} and the {\uldb compound color components to color}{\v 20417} elements to set the color. The advantage of the "compound color components to color" element consists in enabling to use the full range of color setting (The element is not bound by the Peter application's colors). In addition to that the element facilitates the alpha channel value setting. The alpha channel enables to carry out special {\uldb transparency}{\v 20839} operations, e.g. it enables to change the object transparency continuously (transparency code 54).\par
+\par
+By setting the object color to \b -1 \b0 the internal object color will be used instead of the color specified. Colors for the object's particular vertices or faces can be defined internally, either by the {\uldb texture mapping}{\v 20831} command or by {\uldb reading the object in from a file}{\v 20809}. For the interfaces DirectX 3 through Direct 6 the vertex or face colors are used only when the {\uldb object lighting}{\v 20897} is off.\par
+\par
+By setting the object color to \b -2 \b0 the material inherited from a parent, i.e. from the object to which this object is {\uldb connected}{\v 20813}, will be used instead of the object material (and color) specified. When, in addition, the object does not possess any intrinsic texture, then a texture inherited from the parent will be used, too. Material and texture can be inherited from the scene (object index 0). The default setting is white color without texture.\par
+\page
+
+#{\footnote 20884}
+${\footnote Reflection of Ambient Light}
++{\footnote 1}
+K{\footnote Reflection of Ambient Light;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20884.bmp\} Reflection of Ambient Light\par
+\pard \plain \cf0 \fs20
+{\uldb Surface}{\v 20825}\par
+\par
+The \b \i reflection of ambient light \i0 \b0 element serves to set a color determining in which way {\uldb ambient light}{\v 20893} is reflected by an {\uldb active object}{\v 20810}. By setting this value to \b -1 \b0 the color of the reflected ambient light will be set in the same manner as the object's {\uldb diffuse color}{\v 20826}. This is the default setting, which assumes that the ambient light is set to white light having low brightness ($404040 default). If the ambient light is to be controlled in each object separately, then this can be done by setting the ambient light to full brightness and by setting the reflected ambient light color for each object separately. To set the reflected ambient light color, the {\uldb color constant}{\v 20301} or {\uldb compound color components to color}{\v 20417} elements may be used. Another option for the object's basic lighting control is setting the object's {\uldb emissive color}{\v 20827}.\par
+\page
+
+#{\footnote 20827}
+${\footnote Emissive Color}
++{\footnote 1}
+K{\footnote Emissive Color;Emission;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20827.bmp\} Emissive Color\par
+\pard \plain \cf0 \fs20
+{\uldb Surface}{\v 20825}\par
+\par
+The \b \i emissive color \i0 \b0 element serves to set the intrinsic emission of an active object. The emission is an additional object color component, which is added to the resulting total color of the object. It is independent of the environment lighting. The emissive color of an object can be set by the {\uldb color constant}{\v 20301} or {\uldb compound color components to color}{\v 20417} elements. The emission of an object does not provide any lighting of neighboring objects, being an additional object color component only. Another option for the basic lighting of an object is {\uldb ambient light}{\v 20893}.\par
+\page
+
+#{\footnote 20828}
+${\footnote Dimness}
++{\footnote 1}
+K{\footnote Dimness;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20828.bmp\} Dimness\par
+\pard \plain \cf0 \fs20
+{\uldb Surface}{\v 20825}\par
+\par
+To enhance the realistic appearance of objects, reflection from environment lighting can be created on the object surface. The \b \i dimness \i0 \b0 element serves to set the value of reflection of an {\uldb active object}{\v 20810}. The reflection values may range between 0 and 128. By setting the dimness to 0 and by setting the {\uldb reflectance color}{\v 20829} to black color the reflection will be switched off. Dimness value 5 is used for a metallic surface. With increasing dimness degree the amount of reflection is diminishing. Dimness having a value of about 50 is used for a plastic surface.\par
+\page
+
+#{\footnote 20829}
+${\footnote Reflectance Color}
++{\footnote 1}
+K{\footnote Reflectance Color;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20829.bmp\} Reflectance Color\par
+\pard \plain \cf0 \fs20
+{\uldb Surface}{\v 20825}\par
+\par
+To enhance the realistic appearance of objects, reflection from environment lighting can be created on the object surface. The \b \i reflectance color \i0 \b0 element serves to set the color and the reflection intensity of an {\uldb active object}{\v 20810}. The reflectance depends on the environment lights and the viewing angle. The reflectance color can be set by the {\uldb color constant}{\v 20301} or {\uldb compound color components to color}{\v 20417} elements. The amount of reflection is determined by the {\uldb dimness}{\v 20828} element. By setting the dimness to 0 and by setting the reflectance color to black the reflection will be switched off.\par
+\page
+
+#{\footnote 20840}
+${\footnote Contours}
++{\footnote 1}
+K{\footnote Contours;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20840.bmp\} Contours\par
+\pard \plain \cf0 \fs20
+{\uldb Surface}{\v 20825}\par
+\par
+By the \b \i contours \i0 \b0 element the object surface display versus {\uldb alpha component}{\v 20417} can be controlled in an {\uldb active object}{\v 20810}. As the element's parameter a numeric parameter ranging between \b 0 \b0 and \b 1 \b0 is specified. Only those object surface portions are displayed the alpha component of which has a higher value than that of the parameter specified. The default setting of the contours is \b 0\b0 , displaying the whole object. After setting to \b 1 \b0 no object portion is displayed. Usualy the contours element is set to approximately \b 0.5\b0 . The contours are especially significant in connection with {\uldb textures}{\v 20830}. Most frequently they are utilized with {\uldb 2D objects}{\v 20873} as well as with {\uldb static 2D objects}{\v 20908}. When drawing a texture, the object's surroundings are filled out with {\uldb transparent color}{\v Editing an Item and a Picture}. This transparent color is black, its alpha component being 0. The alpha component of the other colors is 1. Thus it is secured that the texture portion having a transparent color will be suppressed (its alpha component being lower than the threshold level specified by the contours element). Only that picture portion having normal colors will be displayed. A texture can be smoothed by the {\uldb smoothing of textures}{\v 20891} element. Such a texture contains also other alpha component values than 0 and 1. (This takes place on the contour transitions or on localities where color points and transparency points alternate).\par
+\page
+
+#{\footnote 20839}
+${\footnote Transparency}
++{\footnote 1}
+K{\footnote Transparency;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20839.bmp\} Transparency\par
+\pard \plain \cf0 \fs20
+{\uldb Surface}{\v 20825}\par
+\par
+In an {\uldb active object}{\v 20810} the \b \i transparency \i0 \b0 element controls the way in which the object surface color is combined with the background color. When drawing an object the resulting color components (including alpha) of each point to be drawn are calculated according the following formula: \b resulting_component = source_component*source_coefficient + destination_component*destination_coefficient\b0 . The transparency is represented by a 2 digit numeric code. The digit on the units' position determines the operation code for the source color, the digit on the tens' position determines the operation code for the destination color. The most frequently used combinations are:\par
+\par
+\b 1 \b0 \tab Ordinary (default) mode: The object overlaps the background completely.\par
+\b 11 \b0 \tab Mode for fire and projectiles: The object color is added to the background color.\par
+\b 20 \b0 \tab Mode for glass: The object color is multiplied by the background color (modulation).\par
+\b 54 \b0 \tab Mode for transparent overlap: The transparency can continuously be controlled by the object's alpha component.\par
+\par
+\b \i Operation codes (resulting_code = source_code + destination_code*10): \i0 \b0 \par
+\par
+\b 0 \b0 \tab coefficient = 0 (component will not assert itself)\par
+\b 1 \b0 \tab coefficient = 1 (component will assert itself fully)\par
+\b 2 \b0 \tab coefficient = source_component (component modulated by source color)\par
+\b 3 \b0 \tab coefficient = (1-source_component) (component modulated by source color complement)\par
+\b 4 \b0 \tab coefficient = source_alpha (component modulated by source alpha)\par
+\b 5 \b0 \tab coefficient = (1-source_alpha) (component modulated by source alpha complement)\par
+\b 6 \b0 \tab coefficient = destination_component (component modulated by destination color)\par
+\b 7 \b0 \tab coefficient = (1-destination_component) (component modulated by destination color complement)\par
+\b 8 \b0 \tab coefficient = destination_alpha (component modulated by destination alpha)\par
+\b 9 \b0 \tab coefficient = (1-destination_alpha) (component modulated by destination alpha complement)\par
+\par When setting the \b \i transparency \i0 \b0 element a default object {\uldb render group}{\v 20930} will be set : opaque objects (resulting color does not depend on the destination color) have default group equal \b 4\b0 , transparent objects have group \b 10\b0 , {\uldb 2D pictures}{\v 20914} have group \b 14\b0 .\par
+\par
+\i Notes: \i0 The target alpha component (8 and 9) need not always be supported. (This depends on the actual videomode and the videocard type). With OpenGL interface and the older DirectX versions, the source component coefficient (2 and 3) for the source component operation, and the destination component coefficient (6 and 7) for the destination component operation are not supported.\par
+\page
+
+
+}

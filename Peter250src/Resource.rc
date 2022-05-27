@@ -1,0 +1,816 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Czech resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CSY)
+#ifdef _WIN32
+LANGUAGE LANG_CZECH, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDN_MAINFRAME           ICON    DISCARDABLE     "RES\\Peter.ico"
+IDN_MAINFRAME2          ICON    DISCARDABLE     "Res\\Lucka.ico"
+IDN_MAINFRAME3          ICON    DISCARDABLE     "Res\\Petr 2.ico"
+IDN_MAINFRAME4          ICON    DISCARDABLE     "Res\\Lucka 2.ico"
+IDN_MAINFRAME5          ICON    DISCARDABLE     "Res\\Petr 3.ico"
+IDN_MAINFRAME6          ICON    DISCARDABLE     "Res\\Lucka 3.ico"
+IDI_MAINFRAME7          ICON    DISCARDABLE     "res\\Peter4.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDN_TOOLBAR             BITMAP  DISCARDABLE     "Res\\ToolBar.bmp"
+IDN_DEF_ICON            BITMAP  DISCARDABLE     "Res\\Icon.bmp"
+IDN_MAINFRAME           BITMAP  DISCARDABLE     "Res\\MainFram.bmp"
+IDN_STATE_ICON          BITMAP  DISCARDABLE     "Res\\State.bmp"
+IDN_MAPSWC              BITMAP  DISCARDABLE     "Res\\MapSwc.bmp"
+IDN_MAPSWCNUM           BITMAP  DISCARDABLE     "Res\\MapSwcNm.bmp"
+IDN_SPRITE_ICON         BITMAP  DISCARDABLE     "Res\\Sprite.bmp"
+IDN_SELECT              BITMAP  DISCARDABLE     "Res\\Select.bmp"
+IDN_DOTAZ               BITMAP  DISCARDABLE     "Res\\Dotaz.bmp"
+IDN_MODI                BITMAP  DISCARDABLE     "Res\\Modi.bmp"
+IDN_STDFONTY            BITMAP  DISCARDABLE     "res\\stdfonty.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDN_SELECT_NEW DIALOG DISCARDABLE  0, 0, 234, 87
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDN_SELECT_EDIT,7,39,214,12,ES_AUTOHSCROLL | WS_GROUP
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_GROUP | WS_TABSTOP,
+                    59,66,50,14
+    CONTROL         "",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,125,66,50,
+                    14
+    LTEXT           "-",IDN_SELECT_NEW1,61,16,160,8
+    CONTROL         348,IDC_STATIC,"Static",SS_BITMAP | WS_GROUP,26,10,21,20
+END
+
+IDN_SELECT_EXIST DIALOG DISCARDABLE  0, 0, 239, 87
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDN_SELECT_EDIT,7,39,219,12,ES_AUTOHSCROLL | WS_GROUP
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_GROUP | WS_TABSTOP,
+                    61,66,50,14
+    CONTROL         "",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,127,66,50,
+                    14
+    LTEXT           "-",IDN_SELECT_EXIST1,61,12,165,8
+    LTEXT           "-",IDN_JINE_JMENO,61,23,165,8
+    CONTROL         349,IDC_STATIC,"Static",SS_BITMAP | WS_GROUP,26,10,21,20
+END
+
+IDN_SELECT_CREATE DIALOG DISCARDABLE  0, 0, 229, 87
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDN_SELECT_EDIT,7,39,215,12,ES_AUTOHSCROLL | WS_GROUP
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_GROUP | WS_TABSTOP,
+                    56,66,50,14
+    CONTROL         "",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,122,66,50,
+                    14
+    LTEXT           "-",IDN_SELECT_CREATE1,61,12,164,8
+    LTEXT           "-",IDN_JINE_JMENO,61,23,164,8
+    CONTROL         349,IDC_STATIC,"Static",SS_BITMAP | WS_GROUP,26,10,21,20
+END
+
+IDN_SELECT_DIR DIALOG DISCARDABLE  0, 0, 253, 87
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDN_SELECT_EDIT,9,39,234,12,ES_AUTOHSCROLL | WS_GROUP
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_GROUP | WS_TABSTOP,
+                    68,66,50,14
+    CONTROL         "",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,134,66,50,
+                    14
+    LTEXT           "-",IDN_SELECT_DIR1,61,16,182,8
+    CONTROL         348,IDC_STATIC,"Static",SS_BITMAP | WS_GROUP,26,10,21,20
+END
+
+IDN_SELECT_DEL DIALOG DISCARDABLE  0, 0, 307, 90
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_GROUP | WS_TABSTOP,
+                    95,69,50,14
+    CONTROL         "",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,161,69,50,
+                    14
+    LTEXT           "-",IDN_SELECT_DEL1,52,19,246,8,SS_NOPREFIX
+    LTEXT           "-",IDN_SELECT_DEL2,52,39,246,8
+    CONTROL         348,IDC_STATIC,"Static",SS_BITMAP | WS_GROUP,15,23,21,20
+END
+
+IDN_ABOUTBOX DIALOG DISCARDABLE  0, 0, 244, 130
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "-"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_GROUP | WS_TABSTOP,
+                    97,106,50,14
+    LTEXT           "-",IDC_VERZE,71,7,164,8,SS_NOPREFIX
+    LTEXT           "-",IDC_COPYNAME,71,24,164,8
+    EDITTEXT        IDC_WWW,71,57,164,12,ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_WWW2,71,69,164,12,ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_WWW3,71,81,164,12,ES_READONLY | NOT WS_BORDER
+    ICON            IDI_MAINFRAME7,IDC_STATIC,13,13,21,20,SS_REALSIZEIMAGE
+    LTEXT           "Gemtree Software, s.r.o.",IDC_COMPANY,71,36,164,8
+END
+
+IDN_FIND_DIALOG DIALOG DISCARDABLE  0, 0, 220, 77
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDN_FIND_EDIT,7,32,207,14,ES_AUTOHSCROLL
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,52,56,50,14
+    CONTROL         "",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,118,56,50,
+                    14
+    LTEXT           "-",IDN_FINDTEXT,64,13,150,8
+    CONTROL         348,IDN_DOTAZ,"Static",SS_BITMAP,25,7,21,20
+END
+
+IDN_PICDIMEN DIALOG DISCARDABLE  0, 0, 166, 138
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "-",IDN_ROZMERY,21,61,122,47,WS_DISABLED | WS_GROUP
+    EDITTEXT        IDC_SIRKA,71,13,68,14,ES_AUTOHSCROLL | WS_GROUP
+    EDITTEXT        IDC_VYSKA,71,38,68,14,ES_AUTOHSCROLL | WS_GROUP
+    RADIOBUTTON     "-",IDC_KROK,33,75,102,10,BS_NOTIFY | WS_GROUP | 
+                    WS_TABSTOP
+    RADIOBUTTON     "-",IDC_BOD,33,91,104,10,BS_NOTIFY
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_GROUP | WS_TABSTOP,
+                    25,117,50,14
+    CONTROL         "",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,91,117,50,
+                    14
+    LTEXT           "-",IDN_SIRKA,25,16,39,8
+    LTEXT           "-",IDN_VYSKA,25,40,39,8
+END
+
+IDN_PICBLOK DIALOG DISCARDABLE  0, 0, 302, 295
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDCANCEL,"Button",BS_OWNERDRAW | WS_GROUP | 
+                    WS_TABSTOP,126,274,50,14
+    GROUPBOX        "-",IDN_PREVRACENI,5,5,290,35,WS_DISABLED | WS_GROUP
+    GROUPBOX        "-",IDN_OTOCENI,5,45,290,140,WS_DISABLED
+    GROUPBOX        "-",IDN_ZVETSENI,5,190,290,35,WS_DISABLED
+    GROUPBOX        "-",IDN_BARVY,5,230,290,35,WS_DISABLED
+    CONTROL         "",IDN_YFLIP,"Button",BS_OWNERDRAW | WS_GROUP | 
+                    WS_TABSTOP,28,16,22,18
+    CONTROL         "",IDN_XFLIP,"Button",BS_OWNERDRAW,158,16,22,18
+    CONTROL         "",IDN_LROT,"Button",BS_OWNERDRAW | WS_GROUP | 
+                    WS_TABSTOP,28,56,22,18
+    CONTROL         "",IDN_LROT67,"Button",BS_OWNERDRAW,28,76,22,18
+    CONTROL         "",IDN_LROT60,"Button",BS_OWNERDRAW,28,96,22,18
+    CONTROL         "",IDN_LROT45,"Button",BS_OWNERDRAW,28,116,22,18
+    CONTROL         "",IDN_LROT30,"Button",BS_OWNERDRAW,28,136,22,18
+    CONTROL         "",IDN_LROT22,"Button",BS_OWNERDRAW,28,156,22,18
+    CONTROL         "",IDN_RROT,"Button",BS_OWNERDRAW,158,56,22,18
+    CONTROL         "",IDN_RROT67,"Button",BS_OWNERDRAW,158,76,22,18
+    CONTROL         "",IDN_RROT60,"Button",BS_OWNERDRAW,158,96,22,18
+    CONTROL         "",IDN_RROT45,"Button",BS_OWNERDRAW,158,116,22,18
+    CONTROL         "",IDN_RROT30,"Button",BS_OWNERDRAW,158,136,22,18
+    CONTROL         "",IDN_RROT22,"Button",BS_OWNERDRAW,158,156,22,18
+    CONTROL         "",IDN_MUL2,"Button",BS_OWNERDRAW | WS_GROUP | 
+                    WS_TABSTOP,28,201,22,18
+    CONTROL         "",IDN_DIV2,"Button",BS_OWNERDRAW,121,201,22,18
+    CONTROL         "",IDN_MULDIV,"Button",BS_OWNERDRAW,204,201,22,18
+    CONTROL         "",IDN_XCOL,"Button",BS_OWNERDRAW | WS_GROUP | 
+                    WS_TABSTOP,28,241,22,18
+    CONTROL         "",IDN_SCOL,"Button",BS_OWNERDRAW,158,241,22,18
+    LTEXT           "-",IDN_YFLIP_TXT,55,21,90,8
+    LTEXT           "-",IDN_XFLIP_TXT,185,21,100,8
+    LTEXT           "-",IDN_LROT_TXT,55,61,94,8
+    LTEXT           "-",IDN_LROT67_TXT,55,81,93,8
+    LTEXT           "-",IDN_LROT60_TXT,55,101,97,8
+    LTEXT           "-",IDN_LROT45_TXT,55,121,96,8
+    LTEXT           "-",IDN_LROT30_TXT,55,141,96,8
+    LTEXT           "-",IDN_LROT22_TXT,55,161,97,8
+    LTEXT           "-",IDN_RROT_TXT,185,61,100,8
+    LTEXT           "-",IDN_RROT67_TXT,185,81,101,8
+    LTEXT           "-",IDN_RROT60_TXT,185,101,101,8
+    LTEXT           "-",IDN_RROT45_TXT,185,121,101,8
+    LTEXT           "-",IDN_RROT30_TXT,185,141,100,8
+    LTEXT           "-",IDN_RROT22_TXT,185,161,102,8
+    LTEXT           "-",IDN_MUL2_TXT,55,207,58,8
+    LTEXT           "-",IDN_DIV2_TXT,149,207,49,8
+    LTEXT           "-",IDN_MULDIV_TXT,232,207,57,8
+    LTEXT           "-",IDN_XCOL_TXT,55,246,98,8
+    LTEXT           "-",IDN_SCOL_TXT,185,246,101,8
+END
+
+IDN_MAPDIMEN DIALOG DISCARDABLE  0, 0, 166, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_SIRKA,71,13,68,14,ES_AUTOHSCROLL | ES_NUMBER | 
+                    WS_GROUP
+    EDITTEXT        IDC_VYSKA,71,38,68,14,ES_AUTOHSCROLL | ES_NUMBER | 
+                    WS_GROUP
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_GROUP | WS_TABSTOP,
+                    25,74,50,14
+    CONTROL         "",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,91,74,50,
+                    14
+    LTEXT           "-",IDN_SIRKA,25,16,35,8
+    LTEXT           "-",IDN_VYSKA,25,40,36,8
+END
+
+IDN_SPRITEDIMEN DIALOG DISCARDABLE  0, 0, 286, 258
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "-",IDN_ANIMACE,6,5,273,80,WS_DISABLED | WS_GROUP
+    GROUPBOX        "-",IDN_POCET_OBRAZKU,6,90,273,80,WS_DISABLED | WS_GROUP
+    GROUPBOX        "-",IDN_ROZMER_OBRAZKU,6,175,273,55,WS_DISABLED | 
+                    WS_GROUP
+    EDITTEXT        IDC_DELAY,145,15,68,14,ES_AUTOHSCROLL | ES_NUMBER | 
+                    WS_GROUP
+    EDITTEXT        IDC_STEP,145,40,68,14,ES_AUTOHSCROLL | WS_GROUP
+    EDITTEXT        IDC_LEVEL,145,65,68,14,ES_AUTOHSCROLL | WS_GROUP
+    EDITTEXT        IDC_KLID,145,100,68,14,ES_AUTOHSCROLL | ES_NUMBER | 
+                    WS_GROUP
+    EDITTEXT        IDC_POHYB,145,125,68,14,ES_AUTOHSCROLL | ES_NUMBER | 
+                    WS_GROUP
+    EDITTEXT        IDC_SMER,145,150,68,14,ES_AUTOHSCROLL | ES_NUMBER | 
+                    WS_GROUP
+    EDITTEXT        IDC_WIDTH,145,185,68,14,ES_AUTOHSCROLL | WS_GROUP
+    EDITTEXT        IDC_HEIGHT,145,210,68,14,ES_AUTOHSCROLL | WS_GROUP
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_GROUP | WS_TABSTOP,
+                    85,237,50,14
+    CONTROL         "",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,151,237,
+                    50,14
+    RTEXT           "-",IDN_PRODLEVA_MEZI_FAZEMI,13,18,123,8
+    RTEXT           "-",IDN_FAZI_NA_KROK,14,42,122,8
+    RTEXT           "-",IDN_HLADINA_K_ZOBRAZENI,14,68,122,8
+    RTEXT           "-",IDN_FAZI_PRO_KLID,13,103,123,8
+    RTEXT           "-",IDN_FAZI_PRO_POHYB,13,127,123,8
+    RTEXT           "-",IDN_SMERU,13,153,123,8
+    RTEXT           "-",IDN_SIRKA_OBRAZKU,13,188,123,8
+    RTEXT           "-",IDN_VYSKA_OBRAZKU,13,212,123,8
+    CTEXT           "-",IDN_MILISEKUND,218,17,53,8
+    CTEXT           "-",IDN_KROKU,224,188,45,8
+    CTEXT           "-",IDN_BODU,224,212,45,8
+END
+
+IDN_SPRITETEST DIALOG DISCARDABLE  0, 0, 96, 74
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDCANCEL,"Button",BS_OWNERDRAW | WS_GROUP | 
+                    WS_TABSTOP,19,48,50,14
+END
+
+IDN_WRITEERR DIALOG DISCARDABLE  0, 0, 277, 111
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_GROUP | WS_TABSTOP,
+                    113,90,50,14
+    LTEXT           "-",IDN_WRITEERR1,53,10,217,8
+    LTEXT           "-",IDN_WRITEERR2,53,26,217,8
+    LTEXT           "-",IDN_WRITEERR3,53,36,217,8
+    LTEXT           "-",IDN_WRITEERR4,53,55,217,8
+    LTEXT           "-",IDN_WRITEERR5,53,67,217,8
+    CONTROL         349,IDC_STATIC,"Static",SS_BITMAP | WS_GROUP,18,37,21,20
+END
+
+IDN_SELECT_COLOR DIALOG DISCARDABLE  0, 0, 408, 181
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,179,163,
+                    50,14
+END
+
+IDN_SELECT_NEWCOPY DIALOG DISCARDABLE  0, 0, 251, 87
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDN_SELECT_EDIT,9,39,230,12,ES_AUTOHSCROLL | WS_GROUP
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_GROUP | WS_TABSTOP,
+                    67,66,50,14
+    CONTROL         "",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,133,66,50,
+                    14
+    LTEXT           "-",IDN_SELECT_NEWCOPY1,61,16,178,8
+    CONTROL         348,IDC_STATIC,"Static",SS_BITMAP | WS_GROUP,26,10,21,20
+END
+
+IDN_SELECT_DIREXIST DIALOG DISCARDABLE  0, 0, 244, 87
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDN_SELECT_EDIT,9,39,223,12,ES_AUTOHSCROLL | WS_GROUP
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_GROUP | WS_TABSTOP,
+                    64,66,50,14
+    CONTROL         "",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,130,66,50,
+                    14
+    LTEXT           "-",IDN_SELECT_DIREXIST1,61,12,171,8
+    LTEXT           "-",IDN_JINE_JMENO,61,23,171,8
+    CONTROL         349,IDC_STATIC,"Static",SS_BITMAP | WS_GROUP,26,10,21,20
+END
+
+IDN_SELECT_DIRCREATE DIALOG DISCARDABLE  0, 0, 237, 87
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDN_SELECT_EDIT,7,39,221,12,ES_AUTOHSCROLL | WS_GROUP
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_GROUP | WS_TABSTOP,
+                    60,66,50,14
+    CONTROL         "",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,126,66,50,
+                    14
+    LTEXT           "-",IDN_SELECT_DIRCREATE1,62,12,166,8
+    LTEXT           "-",IDN_JINE_JMENO,62,23,166,8
+    CONTROL         349,IDC_STATIC,"Static",SS_BITMAP | WS_GROUP,26,10,21,20
+END
+
+IDN_SELECT_DELDIR DIALOG DISCARDABLE  0, 0, 298, 74
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_GROUP | WS_TABSTOP,
+                    91,53,50,14
+    CONTROL         "",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,157,53,50,
+                    14
+    LTEXT           "-",IDN_SELECT_DELDIR1,58,23,233,8,SS_NOPREFIX
+    CONTROL         348,-1,"Static",SS_BITMAP | WS_GROUP,19,18,21,20
+END
+
+IDN_SELECT_DELERROR DIALOG DISCARDABLE  0, 0, 347, 79
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_GROUP | WS_TABSTOP,
+                    148,58,50,14
+    LTEXT           "-",IDN_SELECT_DELERROR1,52,28,281,8,SS_NOPREFIX
+    CONTROL         349,-1,"Static",SS_BITMAP | WS_GROUP,15,23,21,20
+END
+
+IDN_SELECT_DELDIRERROR DIALOG DISCARDABLE  0, 0, 278, 66
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_GROUP | WS_TABSTOP,
+                    114,45,50,14
+    LTEXT           "-",IDN_SELECT_DELDIRERROR1,54,21,212,8,SS_NOPREFIX
+    CONTROL         349,-1,"Static",SS_BITMAP | WS_GROUP,17,18,21,20
+END
+
+IDN_OPENERR DIALOG DISCARDABLE  0, 0, 289, 79
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_GROUP | WS_TABSTOP,
+                    119,58,50,14
+    LTEXT           "-",IDN_OPENERR1,63,10,220,8
+    LTEXT           "-",IDN_OPENERR2,63,26,220,8
+    LTEXT           "-",IDN_OPENERR3,63,36,220,8
+    CONTROL         349,IDC_STATIC,"Static",SS_BITMAP | WS_GROUP,18,22,21,20
+END
+
+IDN_READERR DIALOG DISCARDABLE  0, 0, 308, 79
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_GROUP | WS_TABSTOP,
+                    129,58,50,14
+    LTEXT           "-",IDN_READERR1,63,10,241,8
+    LTEXT           "-",IDN_READERR2,63,26,241,8
+    LTEXT           "-",IDN_READERR3,63,36,241,8
+    CONTROL         349,IDC_STATIC,"Static",SS_BITMAP | WS_GROUP,18,22,21,20
+END
+
+IDN_PICRESIZE DIALOG DISCARDABLE  0, 0, 301, 215
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "-",IDN_NOVE_ROZMERY,7,44,286,88,WS_DISABLED | WS_GROUP
+    CONTROL         "-",IDN_PICRESIZE_STEP,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,20,66,86,10
+    CONTROL         "-",IDN_PICRESIZE_POINT,"Button",BS_AUTORADIOBUTTON,20,
+                    88,86,10
+    CONTROL         "-",IDN_PICRESIZE_PROC,"Button",BS_AUTORADIOBUTTON,20,
+                    110,86,10
+    EDITTEXT        IDN_PICRESIZE_STEPX,109,64,83,14,ES_AUTOHSCROLL | 
+                    WS_GROUP
+    EDITTEXT        IDN_PICRESIZE_STEPY,200,64,83,14,ES_AUTOHSCROLL | 
+                    WS_GROUP
+    EDITTEXT        IDN_PICRESIZE_POINTX,109,86,83,14,ES_AUTOHSCROLL | 
+                    WS_GROUP
+    EDITTEXT        IDN_PICRESIZE_POINTY,200,86,83,14,ES_AUTOHSCROLL | 
+                    WS_GROUP
+    EDITTEXT        IDN_PICRESIZE_PROCX,109,108,83,14,ES_AUTOHSCROLL | 
+                    WS_GROUP
+    EDITTEXT        IDN_PICRESIZE_PROCY,200,108,83,14,ES_AUTOHSCROLL | 
+                    WS_GROUP
+    CONTROL         "-",IDN_PICRESIZE_PROP,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,24,143,276,10
+    CONTROL         "-",IDN_PICRESIZE_INT,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,24,157,276,10
+    CONTROL         "-",IDN_PICRESIZE_DITH,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,24,171,276,10
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_GROUP | WS_TABSTOP,
+                    92,194,50,14
+    CONTROL         "",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,158,194,
+                    50,14
+    CTEXT           "-",IDN_SIRKA2,109,52,83,8
+    CTEXT           "-",IDN_VYSKA2,200,52,83,8
+    RTEXT           "-",IDN_SOUCASNE_ROZMERY,25,19,92,8
+    RTEXT           "32768 x 32768",IDN_PICRESIZE_DIMSTEP,126,12,69,8
+    RTEXT           "32768 x 32768",IDN_PICRESIZE_DIMPOINT,127,27,68,8
+    LTEXT           "-",IDN_KROKU,202,12,68,8
+    LTEXT           "-",IDN_BODU,202,27,67,8
+END
+
+IDN_SETUP DIALOGEX 0, 0, 373, 242
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "",IDN_SETUP_RAM1,7,83,138,64,WS_DISABLED
+    GROUPBOX        "",IDN_SETUP_RAM2,7,151,138,63,WS_DISABLED
+    EDITTEXT        IDN_SETUP_VZOR2,7,14,359,51,ES_AUTOHSCROLL | WS_GROUP,
+                    WS_EX_DLGMODALFRAME
+    CONTROL         "-",IDN_SETUP_STD,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,17,71,125,10
+    CONTROL         "-",IDN_SETUP_BOLD,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,17,94,122,10
+    CONTROL         "-",IDN_SETUP_ITALIC,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,17,107,122,10
+    CONTROL         "-",IDN_SETUP_UNDERLINE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,17,120,121,10
+    CONTROL         "-",IDN_SETUP_STRIKEOUT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,17,133,122,10
+    CONTROL         "-",IDN_SETUP_NORMAL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,17,160,122,10
+    CONTROL         "-",IDN_SETUP_SERIF,"Button",BS_AUTORADIOBUTTON,17,173,
+                    120,10
+    CONTROL         "-",IDN_SETUP_COURIER,"Button",BS_AUTORADIOBUTTON,17,186,
+                    121,10
+    CONTROL         "-",IDN_SETUP_USER,"Button",BS_AUTORADIOBUTTON,17,199,94,
+                    10
+    LISTBOX         IDN_SETUP_TYP2,156,86,130,127,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_GROUP | 
+                    WS_TABSTOP
+    COMBOBOX        IDN_SETUP_HEIGHT2,288,86,37,127,CBS_SIMPLE | 
+                    CBS_AUTOHSCROLL | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_GROUP | WS_TABSTOP
+    COMBOBOX        IDN_SETUP_WIDTH2,327,86,37,127,CBS_SIMPLE | 
+                    CBS_AUTOHSCROLL | CBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_GROUP | WS_TABSTOP
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_GROUP | WS_TABSTOP,
+                    128,221,50,14
+    CONTROL         "",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,194,221,
+                    50,14
+    LTEXT           "-",IDN_SETUP_VZOR,7,4,359,8
+    CTEXT           "-",IDN_SETUP_WIDTH,327,73,37,8
+    CTEXT           "-",IDN_SETUP_TYP,154,73,132,8
+    CTEXT           "-",IDN_SETUP_HEIGHT,288,73,37,8
+    RTEXT           "-------------->",IDC_STATIC,117,201,36,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDN_SELECT_NEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 221
+        TOPMARGIN, 7
+    END
+
+    IDN_SELECT_EXIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 226
+        TOPMARGIN, 7
+    END
+
+    IDN_SELECT_CREATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 214
+        TOPMARGIN, 7
+    END
+
+    IDN_SELECT_DIR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+
+    IDN_SELECT_DEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 298
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 78
+    END
+
+    IDN_ABOUTBOX, DIALOG
+    BEGIN
+        RIGHTMARGIN, 235
+        BOTTOMMARGIN, 120
+    END
+
+    IDN_FIND_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 183
+        BOTTOMMARGIN, 76
+    END
+
+    IDN_SPRITEDIMEN, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 279
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 251
+    END
+
+    IDN_SPRITETEST, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 89
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+
+    IDN_WRITEERR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 270
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDN_SELECT_COLOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 401
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 174
+    END
+
+    IDN_SELECT_NEWCOPY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+    END
+
+    IDN_SELECT_DIREXIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+    END
+
+    IDN_SELECT_DIRCREATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+    END
+
+    IDN_SELECT_DELDIR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 291
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+
+    IDN_SELECT_DELERROR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 333
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 67
+    END
+
+    IDN_SELECT_DELDIRERROR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 266
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 54
+    END
+
+    IDN_OPENERR, DIALOG
+    BEGIN
+        RIGHTMARGIN, 283
+    END
+
+    IDN_READERR, DIALOG
+    BEGIN
+        RIGHTMARGIN, 304
+    END
+
+    IDN_PICRESIZE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 300
+    END
+
+    IDN_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 366
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 235
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// LOADER
+//
+
+IDN_LOADER              LOADER  DISCARDABLE     "Loader\\Release\\Peter.exe"
+IDN_LOADERM             LOADER  DISCARDABLE     "Loader0\\Release\\Peter.exe"
+IDN_PALIMP              LOADER  DISCARDABLE     "PalImp.dat"
+IDN_LOADERS             LOADER  DISCARDABLE     "Loader\\ReleaseM\\Peter.exe"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_SPRAY               CURSOR  DISCARDABLE     "RES\\Spray.cur"
+IDC_SPLITV              CURSOR  DISCARDABLE     "RES\\SplitV.cur"
+IDC_SPLITH              CURSOR  DISCARDABLE     "RES\\SplitH.cur"
+IDC_SELECTMOVE          CURSOR  DISCARDABLE     "RES\\SelMove.cur"
+IDC_SELECT              CURSOR  DISCARDABLE     "RES\\Select.cur"
+IDC_RUKA                CURSOR  DISCARDABLE     "RES\\Ruka.cur"
+IDC_ROUND               CURSOR  DISCARDABLE     "RES\\Round.cur"
+IDC_RECT                CURSOR  DISCARDABLE     "RES\\Rect.cur"
+IDC_PEN                 CURSOR  DISCARDABLE     "RES\\Pen.cur"
+IDC_PAINT               CURSOR  DISCARDABLE     "RES\\Paint.cur"
+IDC_NODRAG              CURSOR  DISCARDABLE     "RES\\NoDrag.cur"
+IDC_MOVE                CURSOR  DISCARDABLE     "RES\\Move.cur"
+IDC_LINE                CURSOR  DISCARDABLE     "RES\\Line.cur"
+IDC_KAPATKO             CURSOR  DISCARDABLE     "RES\\Kapatko.cur"
+IDC_FILL                CURSOR  DISCARDABLE     "RES\\Fill.cur"
+IDC_ELIP                CURSOR  DISCARDABLE     "RES\\Elip.cur"
+IDC_DELETE              CURSOR  DISCARDABLE     "RES\\Delete.cur"
+IDC_COPY                CURSOR  DISCARDABLE     "RES\\Copy.cur"
+IDC_CIL                 CURSOR  DISCARDABLE     "RES\\Cil.cur"
+IDC_FILLELIP            CURSOR  DISCARDABLE     "RES\\FillElip.cur"
+IDC_FILLRECT            CURSOR  DISCARDABLE     "RES\\FillRect.cur"
+IDC_FILLROUND           CURSOR  DISCARDABLE     "RES\\FillRoun.cur"
+IDC_KOULE               CURSOR  DISCARDABLE     "RES\\Koule.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDN_MAINFRAME ACCELERATORS DISCARDABLE 
+BEGIN
+    "A",            IDN_ALL,                VIRTKEY, CONTROL, NOINVERT
+    "C",            IDN_COPY,               VIRTKEY, CONTROL, NOINVERT
+    "F",            IDN_FIND,               VIRTKEY, CONTROL, NOINVERT
+    "N",            IDN_NEW,                VIRTKEY, CONTROL, NOINVERT
+    "O",            IDN_OPEN,               VIRTKEY, CONTROL, NOINVERT
+    "P",            IDN_PATH,               VIRTKEY, CONTROL, NOINVERT
+    "S",            IDN_SAVE,               VIRTKEY, CONTROL, NOINVERT
+    "S",            IDN_SAVEN,              VIRTKEY, CONTROL, ALT, NOINVERT
+    "S",            IDN_SAVE_AS,            VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "V",            IDN_PASTE,              VIRTKEY, CONTROL, NOINVERT
+    VK_ADD,         IDN_IN,                 VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      IDN_CLEAR,              VIRTKEY, NOINVERT
+    VK_DOWN,        IDN_HIST_NEXT,          VIRTKEY, CONTROL, NOINVERT
+    VK_F1,          IDN_HELP,               VIRTKEY, NOINVERT
+    VK_F3,          IDN_FIND_NEXT,          VIRTKEY, NOINVERT
+    VK_F3,          IDN_FIND_PREV,          VIRTKEY, SHIFT, NOINVERT
+    VK_F4,          IDN_EXIT,               VIRTKEY, ALT, NOINVERT
+    VK_F5,          IDN_START,              VIRTKEY, NOINVERT
+    VK_F9,          IDN_JAZYKPRE,           VIRTKEY, CONTROL, NOINVERT
+    VK_SUBTRACT,    IDN_OUT,                VIRTKEY, CONTROL, NOINVERT
+    VK_UP,          IDN_HIST_PREV,          VIRTKEY, CONTROL, NOINVERT
+    "X",            IDN_CUT,                VIRTKEY, CONTROL, NOINVERT
+    "Y",            IDN_REDO,               VIRTKEY, CONTROL, NOINVERT
+    "Z",            IDN_UNDO,               VIRTKEY, CONTROL, NOINVERT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,5,0,0
+ PRODUCTVERSION 2,5,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040504b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "GemTree Software\0"
+            VALUE "FileDescription", "Peter\0"
+            VALUE "FileVersion", "2, 5, 0, 0\0"
+            VALUE "InternalName", "Peter\0"
+            VALUE "LegalCopyright", "Copyright © GemTree Software 2012, Copyright © Miroslav Nemecek 2012\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Peter.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Peter\0"
+            VALUE "ProductVersion", "2, 5, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x405, 1200
+    END
+END
+
+#endif    // !_MAC
+
+#endif    // Czech resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

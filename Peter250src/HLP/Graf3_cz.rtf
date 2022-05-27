@@ -1,0 +1,306 @@
+{\rtf1 \ansi \deff0
+
+@{\footnote ------- definice fontù --------- }
+
+{\fonttbl 
+{\f0 \fswiss MS San Serif CE;}
+}
+
+@{\footnote ------- definice barev --------- }
+
+{\colortbl
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red192\green192\blue192;
+\red128\green128\blue128;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+
+@{\footnote Použití barev:
+	0 - èerná
+	1 - tmavì èervená
+	2 - tmavì zelená
+	3 - hnìdá
+	4 - tmavì modrá
+	5 - tmavì fialová
+	6 - tmavì modrozelená
+	7 - šedá
+	8 - tmavì šedá
+	9 - èervená
+	10 - zelená
+	11 - žlutá
+	12 - modrá
+	13 - fialová
+	14 - modrozelená
+	15 - bílá
+}
+
+#{\footnote 20814}
+#{\footnote 20869}
+#{\footnote 20870}
+#{\footnote 20871}
+
+#{\footnote 20788}
+${\footnote 3D grafika}
++{\footnote 1}
+K{\footnote 3D grafika;}
+\pard \plain \brdrb \cf12 \fs24 \b
+3D grafika\par
+\pard \plain \cf0 \fs20
+{\uldb Grafika}{\v 20302}\par
+\par
+\par
+{\uldb \{bmc IDF20794.bmp\}\tab videomód}{\v 20794}\par
+{\uldb \{bmc IDF20789.bmp\}\tab okno 3D grafiky}{\v 20789}\par
+{\uldb \{bmc IDF20810.bmp\}\tab aktivní objekt}{\v 20810}\par
+{\uldb \{bmc IDF20911.bmp\}\tab uplynulý èas}{\v 20911}\par
+{\uldb \{bmc IDF20796.bmp\}\tab nastavení}{\v 20796}\par
+{\uldb \{bmc IDF20857.bmp\}\tab scéna}{\v 20857}\par
+{\uldb \{bmc IDF20903.bmp\}\tab vytvoøit}{\v 20903}\par
+{\uldb \{bmc IDF20801.bmp\}\tab objekty}{\v 20801}\par
+{\uldb \{bmc IDF20815.bmp\}\tab transformace}{\v 20815}\par
+{\uldb \{bmc IDF20825.bmp\}\tab povrch}{\v 20825}\par
+{\uldb \{bmc IDF20915.bmp\}\tab textury}{\v 20915}\par
+{\uldb \{bmc IDF20846.bmp\}\tab osvìtlení}{\v 20846}\par
+\page
+
+#{\footnote 20794}
+${\footnote Videomód}
++{\footnote 1}
+K{\footnote videomód;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20794.bmp\} Videomód\par
+\pard \plain \cf0 \fs20
+{\uldb 3D grafika}{\v 20788}\par
+\par
+Prvek \b \i videomód \i0 \b0 slouží ke zjištìní a nastavení videomódu pro {\uldb celoobrazovkový režim}{\v 20638} programu. Prvek pøi ètení navrátí víceøádkový textový seznam videomódù. Každý øádek seznamu obsahuje jeden videomód ve tvaru: šíøka*výška/bitù. Èíselné parametry "šíøka" a "výška" pøedstavují horizontální a vertikální rozlišení displeje, udáno v grafických bodech. Údaje rozmìrù videomódu lze pøevést na rozmìry používané aplikací Petr vydìlením èíselnou hodnotou \b 32\b0 . Parametr "bitù" je poèet bitù na jeden grafický bod. Parametr mùže mít hodnotu 8, 16, 24 nebo 32. Pøíklad: 640*480/8 je minimální videomód podporovaný systémem Windows (v rozmìrech Petra je to 20 políèek horizontálnì a 15 políèek vertikálnì). Poèet bitù \b 8 \b0 udává, že videomód používá 256 barev (2^8=256). Seznam videomódù je tøídìn podle horizontálního rozlišení, podle vertikálního rozlišení a nakonec podle poètu bitù. Jeden z øádkù seznamu je doplnìn na konci znakem "<". Tento znak oznaèuje aktuálnì nastavený videomód.\par
+\par
+Zápisem jednoho z øádkù do prvku se provede nastavení požadovaného videomódu a aktivace celoobrazovkového režimu. Požadovaný videomód je nastaven zápisem textu ve stejném tvaru, jako jsou jednotlivé øádky seznamu videomódù: šíøka*výška/bitù. Namísto oddìlovacího znaku "\b *\b0 " je možné použít znak "\b x\b0 " (malé písmeno x). Namísto znaku "\b /\b0 " je možné použít znak "\b \\\b0 ". Kterýkoliv z èíselných parametrù mùže být vynechán nebo nahrazen 0, v tom pøípadì bude použita implicitní hodnota. Nastavení videomódu s parametry "0*0/0" má stejný význam jako použití pøíkazu {\uldb celoobrazovkový režim}{\v 20638}. Pøi implicitních hodnotách šíøky a výšky videomódu bude videomód pøizpùsobován zmìnám velikosti {\uldb hlavní plochy}{\v Spoleèné promìnné a funkce} programu. Vypnutí celoobrazovkového režimu je možné pøíkazem {\uldb celoobrazovkový režim}{\v 20638}, který zajistí navrácení bìžného videomódu Windows. Požadované parametry videomódu celoobrazovkového režimu jsou uchovány a navráceny pøi opìtovné aktivaci celoobrazovkového režimu pøíkazem {\uldb celoobrazovkový režim}{\v 20638}. Šíøku a výšku videomódu je možné zadávat též v mìøítku Petra (vèetnì desetinného vyjádøení). Napø. parametr "20x15" nastaví celoobrazovkový režim 640*480 bodù (ekvivalent parametru "640x480"). Není-li požadovaný videomód nalezen, použije se nejbližší videomód. Zadaný poèet bitù videomódu má pøi vyhledávání videomódu pøednost pøed rozmìry videomódu.\par
+\page
+
+#{\footnote 20789}
+#{\footnote 20790}
+#{\footnote 20791}
+#{\footnote 20792}
+#{\footnote 20793}
+${\footnote Okno 3D grafiky}
++{\footnote 1}
+K{\footnote okno 3D grafiky;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20789.bmp\} Okno 3D grafiky\par
+\pard \plain \cf0 \fs20
+{\uldb 3D grafika}{\v 20788}\par
+\par
+\{bmc IDF20789.bmp\} \b \i okno 3D grafiky \i0 \b0 \par
+\tab \{bmc IDF20790.bmp\} \b \i souøadnice X okna 3D grafiky \i0 \b0 \par
+\tab \{bmc IDF20791.bmp\} \b \i souøadnice Y okna 3D grafiky \i0 \b0 \par
+\tab \{bmc IDF20792.bmp\} \b \i šíøka okna 3D grafiky \i0 \b0 \par
+\tab \{bmc IDF20793.bmp\} \b \i výška okna 3D grafiky \i0 \b0 \par
+\par
+Pomocí prvku \b \i okno 3D grafiky \i0 \b0 je aktivován režim 3D grafiky. Zadáním pøíkazu se v hlavním oknì programu zobrazí okno pro 3D grafiku s požadovanými souøadnicemi a rozmìry. Souøadnice a rozmìry okna jsou udávány v souøadnicích Petra. K vytvoøení 3D okna je použito zadané {\uldb rozhraní}{\v 20910} a {\uldb ovladaè}{\v 20881}. Novým zadáním pøíkazu \b \i okno 3D grafiky \i0 \b0 je možné pozici a rozmìry 3D okna dodateènì mìnit. Není-li žádný z parametrù uveden, vytvoøí se 3D okno pøes celou plochu programového okna. Okno 3D grafiky mùže mít i vìtší rozmìry než je plocha programu. Napø. v celoobrazovkovém režimu 800x600 bodù využívá program plochu 25x18 políèek, tj. 800x576 bodù. Okno 3D grafiky pøitom mùže mít rozmìry pøes celou plochu 800x600. Uvedením nuly namísto šíøky nebo výšky 3D okna je 3D režim ukonèen.\par
+\par
+Všechny prvky 3D grafiky je možné využívat nezávisle na aktivitì 3D režimu. Proto je možné 3D okno zapínat a vypínat podle potøeby, stejnì tak mìnit rozhraní nebo ovladaè. Všechny nastavené parametry pøitom zùstávají zachovány, není potøeba po zmìnách provádìt pøenastavení.\par
+\page
+
+#{\footnote 20810}
+${\footnote Aktivní objekt}
++{\footnote 1}
+K{\footnote aktivní objekt;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20810.bmp\} Aktivní objekt\par
+\pard \plain \cf0 \fs20
+{\uldb 3D grafika}{\v 20788}\par
+\par
+Prvek \b \i aktivní objekt \i0 \b0 slouží k výbìru 3D objektu, s kterým bude manipulováno. Každý 3D objekt pøi svém vytvoøení navrátí jedineèné identifikaèní èíslo (zkrácenì ID), pomocí kterého se lze na objekt pozdìji odkazovat. Ètením prvku \b \i aktivní objekt \i0 \b0 lze zjistit právì vybraný aktivní objekt. Prvkem lze vybrat též jeden ze tøí pøeddefinovaných objektù s pevnými identifikaèními èísly 0 až 2.\par
+\par
+Objektem s identifikaèním èíslem \b 0 \b0 je \b \i scéna\i0 \b0 . Scéna je {\uldb prázdná skupina}{\v 20878} neobsahující žádný viditelný objekt, lze k ní pouze pøipojovat jiné objekty. Každý novì vytvoøený objekt je implicitnì pøipojen ke scénì. Scéna je základním vztažným bodem pro transformace ostatních objektù. Samotnou scénu nelze transformovat (posouvat, otáèet èi mìnit mìøítko). Ostatní objekty mohou od scény dìdit definici povrchu èi základní texturu. Objekt scény nelze zrušit ani pøipojit k jinému objektu. Nastavení pøepínaèe scény {\uldb filtrace zvìtšených textur objektu}{\v 20900} urèuje, zda bude filtrována {\uldb textura pozadí scény}{\v 20859}.\par
+\par
+Objektem s identifikaèním èíslem \b 1 \b0 je \b \i kamera\i0 \b0 . Kameru je možné transformovat a spojovat s jinými objekty stejnì jako jakýkoliv jiný objekt, nelze ji však zrušit. Pøi startu programu je kamera implicitnì nasmìrována ve smìru kladné osy \b z \b0 (tj. základní smìr, všechny rotace = 0) a posunuta vzad o 2 jednotky (tj. posun z = -2, ostatní posuny = 0).\par
+\par
+Poslední pøeddefinovaný objekt má èíslo \b 2\b0 . Je to implicitní {\uldb osvìtlení}{\v 20846} scény. Tento objekt je možné zrušit. Implicitní osvìtlení je {\uldb smìrové svìtlo}{\v 20849} bílé barvy s rotacemi X a Y = 45 stupòù a posunem X = -10, Y = 10, Z = -10 (pozn.: smìrové svìtlo posun nepoužívá, posun je pøipraven pro možnost zmìny na jiný typ svìtla). Scéna je tedy nasvícena z levého horního rohu.\par
+\page
+
+#{\footnote 20911}
+${\footnote Uplynulý èas}
++{\footnote 1}
+K{\footnote uplynulý èas;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20911.bmp\} Uplynulý èas\par
+\pard \plain \cf0 \fs20
+{\uldb 3D grafika}{\v 20788}\par
+\par
+Pomocí prvku \b \i uplynulý èas \i0 \b0 je možné èasovat animace a události vykreslované 3D grafiky. Vykreslování 3D grafiky je silnì závislé na rychlosti poèítaèe, videokarty a na použitém ovladaèi. Proto zpravidla 3D programy pracují maximální rychlostí a program je èasován podle skuteènì ubìhlého èasu.\par
+\par
+Prvek \b \i uplynulý èas \i0 \b0 mìøí èas od posledního vykreslení 3D snímku. Snímek 3D grafiky je vyrenderován (tj. vypoèítána jeho 3D podoba a ta následnì vykreslena na obrazovku) pøi každém pøíkazu pro {\uldb èekání}{\v 20122} a pøi pøíkazech pro èekání na stisk klávesy. Žádné jiné pøíkazy vykreslování 3D grafiky nezajišují. Proto je nutné, aby hlavní smyèka obsahovala pøíkaz pro èekání, nejlépe s parametrem 0 (program bude pracovat maximální rychlostí). Mìøení èasu se provádí s rozlišením 1 milisekunda nebo pøesnìji (je-li k dispozici multimediální èasovaè).\par
+\par
+Není-li zadán žádný parametr, navrátí prvek ubìhlý èas v sekundách. Jako parametr prvku je možné uvést požadovanou èasovou zmìnu za 1 sekundu (tedy rychlost). Prvek navrátí ubìhlý èas vynásobený zadaným èíselným parametrem.\par
+\page
+
+#{\footnote 20796}
+${\footnote Nastavení}
++{\footnote 1}
+K{\footnote nastavení;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Nastavení\par
+\pard \plain \cf0 \fs20
+{\uldb 3D grafika}{\v 20788}\par
+\par
+\par
+{\uldb \{bmc IDF20910.bmp\}\tab rozhraní}{\v 20910}\par
+{\uldb \{bmc IDF20881.bmp\}\tab ovladaè}{\v 20881}\par
+{\uldb \{bmc IDF20913.bmp\}\tab volná videopamì}{\v 20913}\par
+{\uldb \{bmc IDF20912.bmp\}\tab rychlost renderování}{\v 20912}\par
+{\uldb \{bmc IDF20797.bmp\}\tab vyplòování ploch}{\v 20797}\par
+{\uldb \{bmc IDF20798.bmp\}\tab osvìtlení}{\v 20798}\par
+{\uldb \{bmc IDF20799.bmp\}\tab plynulé stínování}{\v 20799}\par
+{\uldb \{bmc IDF20894.bmp\}\tab filtrace zvìtšených textur}{\v 20894}\par
+{\uldb \{bmc IDF20872.bmp\}\tab filtrace zmenšených textur}{\v 20872}\par
+{\uldb \{bmc IDF20895.bmp\}\tab filtrace vzdálených textur}{\v 20895}\par
+{\uldb \{bmc IDF20896.bmp\}\tab vyplòování ploch objektu}{\v 20896}\par
+{\uldb \{bmc IDF20897.bmp\}\tab osvìtlení objektu}{\v 20897}\par
+{\uldb \{bmc IDF20898.bmp\}\tab plynulé stínování objektu}{\v 20898}\par
+{\uldb \{bmc IDF20902.bmp\}\tab viditelná strana objektu}{\v 20902}\par
+\page
+
+#{\footnote 20910}
+${\footnote Rozhraní}
++{\footnote 1}
+K{\footnote rozhraní;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20910.bmp\} Rozhraní\par
+\pard \plain \cf0 \fs20
+{\uldb Nastavení}{\v 20796}\par
+\par
+Prvek \b \i rozhraní \i0 \b0 urèuje, jaké rozhraní má být použito k obsluze 3D grafiky. Nastavením na hodnotu \b 1 \b0 až \b 8 \b0 bude použito rozhraní podle tabulky níže. Nastavením na \b 0 \b0 bude použito rozhraní podle automatické detekce. Zvolené rozhraní je použito k inicializaci 3D režimu pøíkazem {\uldb okno 3D grafiky}{\v 20789}. Není-li 3D okno aktivní nebo nebylo-li nalezeno požadované rozhraní, navrací prvek 0. Jinak navrací èíslo aktivního rozhraní. Rozhraní je možné mìnit i po aktivaci 3D okna. Ke zmìnì rozhraní mùže dojít též automaticky pøi pøepnutí celoobrazovkového režimu nebo pøi zmìnì aktivního videomódu Windows.\par
+\par
+\i \b Podporovaná rozhraní: \b0 \i0 \par
+\par
+\b 1 \b0 \tab OpenGL verze 1.0 \par
+\b 2 \b0 \tab OpenGL verze 1.1 \par
+\b 4 \b0 \tab DirectX verze 3 \par
+\b 5 \b0 \tab DirectX verze 5 \par
+\b 6 \b0 \tab DirectX verze 6 \par
+\b 7 \b0 \tab DirectX verze 7 \par
+\b 8 \b0 \tab DirectX verze 8 \par
+\par
+\i \b Porovnání rozhraní: \b0 \i0 \par
+\par
+Rozhraní \b OpenGL \b0 je podporováno všemi verzemi Windows, vèetnì Windows NT (rozhraní OpenGL je souèástí systému). Nepodporuje vícenásobné textury, lze využívat pouze stupeò textur 0 a to pouze nìkteré základní operace (modulace textur). Neumožòuje rozlišovat mezi hardwarovou a softwarovou variantou, nepodporované funkce videokarty jsou simulovány softwarovì. Rychlost grafiky je silnì závislá na ovladaèi videokarty. Je-li ovladaè podporován (napø. videokarty GeForce), mùže být u jednoduchých scén mírnì rychlejší než HAL ovladaè DirectX. Není-li podporován (napø. videokarty ATI), je zpravidla nepatrnì rychlejší než softwarový ovladaè RGB DirectX. Rozhraní OpenGL verze 1.0 používá pomalejší podporu textur, proto jeho rychlost u složitìjších scén oproti verzi 1.1 rychle klesá. OpenGL podporuje videorežim 256 barev.\par
+\par
+Rozhraní \b DirectX \b0 není podporováno pro Windows NT. U Windows 2000 je souèástí systému DirectX verze 7. Souèástí systému Windows 98 je DirectX verze 6. Souèástí Windows 95 2. vydání je DirectX 5, 1. vydání DirectX neobsahuje. Verze DirectX 6 až 8 podporují vícenásobné textury. DirectX nesimuluje chybìjící funkci videokarty, proto mùže být nìkdy vhodnìjší použít softwarový ovladaè. DirectX 8 podporuje ze softwarových ovladaèù pouze referenèní ovladaè, který je pro bìžné použití pomalý. DirectX 4 až 6 podporují videorežim 256 barev (zpravidla pouze se softwarovým ovladaèem RGB). DirectX 5 a 4 podporují Ramp ovladaè bez textur, který lze využít jako nouzový ovladaè pøi problémech s rychlostí grafiky.\par
+\page
+
+#{\footnote 20881}
+${\footnote Ovladaè}
++{\footnote 1}
+K{\footnote ovladaè;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20881.bmp\} Ovladaè\par
+\pard \plain \cf0 \fs20
+{\uldb Nastavení}{\v 20796}\par
+\par
+Prvek \b \i ovladaè \i0 \b0 urèuje, který ovladaè aktivního rozhraní má být použit k obsluze 3D grafiky. Nastavením na hodnotu \b 1 \b0 až \b 6 \b0 bude použit ovladaè podle tabulky níže. Nastavením na \b 0 \b0 bude použit ovladaè podle automatické detekce. Zvolený ovladaè je použit k inicializaci 3D režimu pøíkazem {\uldb okno 3D grafiky}{\v 20789}. Není-li 3D okno aktivní nebo nebyl-li nalezen požadovaný ovladaè, navrací prvek 0. Jinak navrací èíslo aktivního ovladaèe. Ovladaè je možné mìnit i po aktivaci 3D okna. Ke zmìnì ovladaèe mùže dojít též automaticky pøi pøepnutí celoobrazovkového režimu nebo pøi zmìnì aktivního videomódu Windows.\par
+\par
+\i \b Podporované ovladaèe: \b0 \i0 \par
+\par
+\b 1 \b0 \tab HAL (hardwarový)\par
+\b 2 \b0 \tab TnLHal (hardwarový s transformaèním a osvìtlovacím modulem)\par
+\b 3 \b0 \tab REF (referenèní)\par
+\b 4 \b0 \tab RGB (softwarový)\par
+\b 5 \b0 \tab MMX (softwarový s instrukcemi MMX)\par
+\b 6 \b0 \tab Ramp (softwarový s MONO osvìtlením, bez textur)\par
+\par
+\i \b Porovnání ovladaèù: \b0 \i0 \par
+\par
+Ovladaè \b HAL \b0 je ovladaè využívající hardwarovou podporu videokarty. U rozhraní OpenGL je to jediný podporovaný ovladaè. Rozhraní DirectX 7 podporuje další variantu - \b TnLHal \b0 (osvìtlení a transformace vrcholù jsou zpracovány hardwarovì), u vyšších verzí DirectX je tato varianta automaticky slouèena s ovladaèem HAL.\par
+\par
+Ovladaè \b REF \b0 je referenèní ovladaè nevyužívající žádnou podporu hardware. Slouží jako porovnávací ovladaè pøi vývoji hardwarového ovladaèe videokarty. K praktickému využití je nevhodný pro svou pomalost.\par
+\par
+Ovladaèe \b RGB \b0 a \b MMX \b0 jsou softwarové ovladaèe. Nìkteré operace jsou provádìny zjednodušenì nebo èásteènì využívají hardware. Jsou vhodné v pøípadì chybné funkce hardwarového ovladaèe nebo nepodporuje-li videokarta hardwarové urychlování. Výhodou je možnost používání multitextur u videokaret tuto vlastnost nepodporujících. Ovladaè MMX využívá MMX instrukce procesoru, je podporován pouze u DirectX 6 a 7. Ovladaèe RGB a MMX u rozhraní DirectX 3 až 6 podporují videomód 256 barev, rozhraní DirectX 7 a vyšší tento videomód již dále nepodporují.\par
+\par
+Ovladaè \b Ramp \b0 je softwarový ovladaè používající zjednodušenou obsluhu osvìtlení (mono osvìtlení - využita pouze modrá složka). V prostøedí Petra je tento ovladaè používán zjednodušenì - bez textur. Tím je dosaženo velké rychlosti ovladaèe, díky které ovladaè mùže sloužit jako nouzový ovladaè v pøípadì, není-li k dispozici hardwarové urychlování videokarty a jiné softwarové ovladaèe pracují pøíliš pomalu.\par
+\page
+
+#{\footnote 20913}
+${\footnote Volná videopamì}
++{\footnote 1}
+K{\footnote volná videopamì;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20913.bmp\} Volná videopamì\par
+\pard \plain \cf0 \fs20
+{\uldb Nastavení}{\v 20796}\par
+\par
+Prvkem \b \i volná videopamì \i0 \b0 je možné zjistit aktuální volnou videopamì, která je k dispozici pro textury (hodnota udána v bajtech). Tuto informaci je možné využít k rozhodování, jak velké množství textur a v jaké kvalitì bude program používat. Informace není k dispozici pro rozhraní OpenGL. U rozhraní OpenGL proto tato funkce navrací náhradní symbolickou hodnotu 4MB. Textura je z videopamìti odstranìna v pøípadì inicializace jiného rozhraní nebo pøi úplném zrušení obrázku obsahujícího texturu. Mezi jednotlivými scénami hry se proto doporuèuje 3D okno vypnout (nastavit rozmìr na 0) a opìt zapnout (navrátit pùvodní rozmìry). Ke zrušení obrázku dojde v pøípadì zrušení všech odkazù na obrázek, není-li obsažen v žádné promìnné. To je možné dosáhnout vytvoøením jedineèné kopie obrázku, napø. modifikací dvojnásobným pøeklopením obrázku.\par
+\page
+
+#{\footnote 20912}
+${\footnote Rychlost renderování}
++{\footnote 1}
+K{\footnote rychlost renderování;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20912.bmp\} Rychlost renderování\par
+\pard \plain \cf0 \fs20
+{\uldb Nastavení}{\v 20796}\par
+\par
+Prvek \b \i rychlost renderování \i0 \b0 slouží ke zjištìní rychlosti, s jakou probíhá rychlost renderování, tedy vykreslování 3D grafiky. Rychlost renderování je udávána v poètu snímkù za sekundu. Výsledný údaj je zaokrouhlen na celé èíslo. Mìøení pøitom probíhá s vyšší pøesností s využitím filtrace a stabilizace údaje po dobu více snímkù. Údaj je možné využít k automatické korekci kvality renderování, je-li rychlost pøíliš pomalá nebo naopak pøíliš rychlá. Pøi využití údaje je nutno poèítat s tím, že údaj se stabilizuje až po ubìhnutí nìkolika snímkù.\par
+\page
+
+#{\footnote 20797}
+#{\footnote 20896}
+${\footnote Vyplòování ploch}
++{\footnote 1}
+K{\footnote vyplòování ploch;vyplòování ploch objektu;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20797.bmp\} Vyplòování ploch, \{bmc IDF20896.bmp\} vyplòování ploch objektu\par
+\pard \plain \cf0 \fs20
+{\uldb Nastavení}{\v 20796}\par
+\par
+Prvek \b \i vyplòování ploch \i0 \b0 je logický pøepínaè. Je-li zapnut, jsou plošky, z nichž jsou objekty sestaveny, vyplnìny barvou nebo texturou. Je-li pøepínaè vypnut, jsou objekty zobrazeny jen pomocí èárových obrysù (drátový model). Zobrazení obrysù odvrácených plošek je možné øídit pøepínaèem {\uldb viditelná strana objektu}{\v 20902} (u nìkterých videokaret obrysy odvrácených plošek nelze vypnout - napø. STB Velocity).\par
+\par
+Vyplòování ploch je možné vypínat u každého objektu samostatnì pøíkazem \b \i vyplòování ploch objektu \i0 \b0 (pro {\uldb aktivní objekt}{\v 20810}). Je-li pøepínaè \b \i vyplòování ploch \i0 \b0 vypnut, je vyplòování ploch vypnuto u všech objektù, nezávisle na nastavení pøepínaèù pro vyplòování ploch jednotlivých objektù. Implicitnì jsou všechny pøepínaèe zapnuty.\par
+\page
+
+#{\footnote 20798}
+#{\footnote 20897}
+${\footnote Osvìtlení}
++{\footnote 1}
+K{\footnote osvìtlení;osvìtlení objektu;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20798.bmp\} Osvìtlení, \{bmc IDF20897.bmp\} osvìtlení objektu\par
+\pard \plain \cf0 \fs20
+{\uldb Nastavení}{\v 20796}\par
+\par
+Prvek \b \i osvìtlení \i0 \b0 je logický pøepínaè. Je-li zapnut, je objekt nasvícen aktivními svìtly, tj. jsou vytvoøeny stíny na objektu. Osvìtlení je poèítáno pro jednotlivé vrcholy plošek objektu. Pro povrch plošky je použito osvìtlení jednoho z vrcholù (pøepínaè {\uldb plynulé stínování}{\v 20799} je vypnut) nebo osvìtlení plynule pøechází mezi barvami jednotlivých vrcholù (pøepínaè plynulého stínování je zapnut). Je-li pøepínaè \b \i osvìtlení \i0 \b0 vypnut, použije se plná intenzita barvy povrchu nebo textury. Tento mód se používá v pøípadech, kdy není vhodné stínovat objekt dopadajícím svìtlem (obloha, plamen ze zbranì) nebo je-li stínování objektu již provedeno (barvami vrcholù nebo texturou svìtelné mapy).\par
+\par
+Osvìtlení je možné vypínat u každého objektu samostatnì pøíkazem \b \i osvìtlení objektu \i0 \b0 (pro {\uldb aktivní objekt}{\v 20810}). Je-li pøepínaè \b \i osvìtlení \i0 \b0 vypnut, je osvìtlení vypnuto u všech objektù, nezávisle na nastavení pøepínaèù pro osvìtlení jednotlivých objektù. Implicitnì jsou všechny pøepínaèe zapnuty.\par
+\page
+
+#{\footnote 20799}
+#{\footnote 20898}
+${\footnote Plynulé stínování}
++{\footnote 1}
+K{\footnote plynulé stínování;plynulé stínování objektu;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20799.bmp\} Plynulé stínování, \{bmc IDF20898.bmp\} plynulé stínování objektu\par
+\pard \plain \cf0 \fs20
+{\uldb Nastavení}{\v 20796}\par
+\par
+Prvek \b \i plynulé stínování \i0 \b0 je logický pøepínaè. Je-li zapnut, pøechází barva povrchu jednotlivých plošek plynule mezi barvami jednotlivých vrcholù plošek. Je-li vypnut, použije se pro barvu povrchu plošky barva jednoho z vrcholù. Nelze urèit, který z vrcholù bude použit, typicky OpenGL používá jiný vrchol než DirectX.\par
+\par
+U objektù se zaobleným povrchem (koule, rotaèní objekty) obsahují zpravidla styèné vrcholy dvou sousedních plošek stejnou barvu (stejná difuzní barva a stejná normála), díky tomu lze u objektu dosáhnout hladký vzhled povrchu. Naproti tomu u hranatých objektù (krychle) jsou styèné vrcholy sousedních plošek osvíceny rozdílnì (odlišná normála povrchu), na povchu objektu jsou viditelné hrany i pøi zapnutém plynulém stínování. Plynulé stínování se i pøesto u hranatých objektù projeví - plynulá zmìna stínù pøi nerovnomìrném osvìtlení objektu a plynulá zmìna mlhy u rozmìrných objektù.\par
+\par
+Plynulé stínování je možné vypínat u každého objektu samostatnì pøíkazem \b \i plynulé stínování objektu \i0 \b0 (pro {\uldb aktivní objekt}{\v 20810}). Je-li pøepínaè \b \i plynulé stínování \i0 \b0 vypnut, je plynulé stínování vypnuto u všech objektù, nezávisle na nastavení pøepínaèù pro plynulé stínování jednotlivých objektù. Implicitnì jsou všechny pøepínaèe zapnuty.\par
+\page
+
+}

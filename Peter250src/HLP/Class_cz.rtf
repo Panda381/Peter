@@ -1,0 +1,342 @@
+{\rtf1 \ansi \deff0
+
+@{\footnote ------- definice fontù --------- }
+
+{\fonttbl 
+{\f0 \fswiss MS San Serif CE;}
+}
+
+@{\footnote ------- definice barev --------- }
+
+{\colortbl
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red192\green192\blue192;
+\red128\green128\blue128;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+
+@{\footnote Použití barev:
+	0 - èerná
+	1 - tmavì èervená
+	2 - tmavì zelená
+	3 - hnìdá
+	4 - tmavì modrá
+	5 - tmavì fialová
+	6 - tmavì modrozelená
+	7 - šedá
+	8 - tmavì šedá
+	9 - èervená
+	10 - zelená
+	11 - žlutá
+	12 - modrá
+	13 - fialová
+	14 - modrozelená
+	15 - bílá
+}
+
+#{\footnote Spoleèné promìnné a funkce}
+${\footnote Spoleèné promìnné a funkce}
++{\footnote 1}
+K{\footnote spoleèné promìnné a funkce;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Spoleèné promìnné a funkce\par
+\pard \plain \fs20
+{\uldb Témata nápovìdy}{\v Témata nápovìdy}\par
+\par
+Pole spoleèných promìnných a funkcí hlavního okna {\uldb editoru programu}{\v Editace programu} obsahuje deklarace promìnných a funkcí, které jsou spoleèné pro všechny funkce. Kromì spoleèných promìnných a funkcí mùže mít každá funkce {\uldb místní promìnné a funkce}{\v Místní promìnné a funkce}.\par
+\par
+Pøi vytvoøení nového programu obsahuje pole spoleèných promìnných a funkcí skupinu základních promìnných a funkcí. Základní promìnné a funkce jsou základní objekty potøebné k èinnosti programu, nelze je pøesunout ani zrušit.\par
+\par
+\{bmc Main.bmp\}   \b \i hlavní funkce \i0 \b0 \par
+\par
+Hlavní {\uldb funkce}{\v 20047} je funkce, která je vykonána pøi spuštìní programu. Z hlavní funkce jsou volány všechny ostatní funkce, obsahuje samotný program. Ukonèením hlavní funkce se ukonèí celý program. Obrázek ikony hlavní funkce urèuje obrázek, který se zobrazí jako ikona programu (v levém horním rohu okna, pøi zobrazení programu v prohlížeèi a pøi zobrazení programu v seznamu spuštìných aplikací). Text hlavní funkce urèuje text, který se zobrazí v nadpisu hlavního okna, není-li pøedefinován jinak.\par
+\par
+\{bmc IDF20048.bmp\}   \b \i hlavní plocha \i0 \b0 \par
+\par
+Hlavní {\uldb plocha}{\v 20048} je plocha pøedstavující plochu okna programu. Pøedmìty obsažené v hlavní ploše jsou zobrazeny v oknì programu. Do hlavní plochy probíhá pokládání pøedmìtù {\uldb Petøíkem}{\v 20062} a {\uldb Luckou}{\v 20067}. Zmìnou rozmìrù hlavní plochy se zmìní velikost okna programu (v {\uldb celoobrazovkovém módu}{\v 20638} se zmìní použitý videomód).\par
+\par
+\{bmc IDF20044.bmp\}   \b \i prázdné políèko \i0 \b0 \par
+\par
+Prázdné políèko je {\uldb pøedmìt}{\v 20044}, který se použije implicitnì k vyplnìní plochy, napø. pøi zrušení políèka z plochy nebo pøi zvìtšení plochy.\par
+\par
+\{bmc IDF20062.bmp\}   \b \i Petøík \i0 \b0 \par
+\par
+Petøík je {\uldb sprajt}{\v 20049} Petøíka. Pøedefinováním lze zmìnit vzhled {\uldb Petøíka}{\v 20062}, jeho rychlost a jiné vlastnosti. Zvýšením poètu smìrù na 8 se bude provádìt krok a pokládat a testovat pøedmìt i v šikmém smìru. V programu lze sprajt Petøíka pøedefinovávat jiným sprajtem jako u bìžných sprajtù.\par
+\par
+\{bmc IDF20067.bmp\}   \b \i Lucka \i0 \b0 \par
+\par
+Lucka je {\uldb sprajt}{\v 20049} Lucky. Pøedefinováním lze zmìnit vzhled {\uldb Lucky}{\v 20067}, její rychlost a jiné vlastnosti. Zvýšením poètu smìrù na 8 se bude provádìt krok a pokládat a testovat pøedmìt i v šikmém smìru. V programu lze sprajt Lucky pøedefinovávat jiným sprajtem jako u bìžných sprajtù.\par
+\page
+
+#{\footnote Místní promìnné a funkce}
+#{\footnote 20053}
+#{\footnote 20054}
+${\footnote Místní promìnné a funkce}
++{\footnote 1}
+K{\footnote místní promìnné a funkce;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Místní promìnné a funkce\par
+\pard \plain \fs20
+{\uldb Témata nápovìdy}{\v Témata nápovìdy}\par
+\par
+Každá {\uldb funkce}{\v 20047} deklarovaná v poli {\uldb spoleèných promìnných a funkcí}{\v Spoleèné promìnné a funkce} má skupinu vlastních promìnných a funkcí, které jsou pøístupné pouze této funkci a jejím místním funkcím.\par
+\par
+\{bmc IDF20053.bmp\}\tab \b \i vstupní promìnné \i0 \b0 \par
+\par
+V poli místních promìnných a funkcí každé spoleèné funkce je prvek \b \i vstupní promìnné\i0 \b0 , do kterého lze umístit promìnné, pøedstavující vstupní parametry funkce. Tyto promìnné se objevují i pøi použití funkcí v programu. Nastavením hodnot vstupních promìnných lze pøedávat funkci vstupní parametry. Nebude-li hodnota vstupní promìnné nastavena pøi volání funkce, zùstane pøednastavena její implicitní hodnota. Se vstupními promìnnými lze bìhem provádìní funkce pracovat jako s bìžnými lokálními promìnnými.\par
+\par
+\{bmc IDF20054.bmp\}\tab \b \i výstupní promìnná \i0 \b0 \par
+\par
+Dalším prvkem v poli místních promìnných a funkcí je \b \i výstupní promìnná\i0 \b0 . Tento prvek mùže obsahovat jednu promìnnou pøedstavující výstupní hodnotu funkce. Bìhem provádìní funkce lze s výstupní promìnnou pracovat jako s bìžnou lokální promìnnou. Pøi ukonèení funkce bude hodnota výstupní promìnné pøedána jako výstupní hodnota. Pøi volání funkce jako pøíkaz bude výstupní hodnota ignorována.\par
+\page
+
+#{\footnote Knihovna promìnných a funkcí}
+#{\footnote 20000}
+${\footnote Knihovna promìnných a funkcí}
++{\footnote 1}
+K{\footnote knihovna promìnných a funkcí;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Knihovna promìnných a funkcí\par
+\pard \plain \cf0 \fs20
+{\uldb Témata nápovìdy}{\v Témata nápovìdy}\par
+\par
+Knihovna promìnných a funkcí obsahuje vzory promìnných a funkcí, které mohou být použity v polích spoleèných a místních promìnných a funkcí. V základní hladinì knihovny jsou prázdné promìnné a funkce. Promìnné mohou po rozevøení vìtve obsahovat pøeddefinované vzory promìnných z knihovny na disku (pro funkce není umožnìno). Skupina oznaèená \b [vzory] \b0 obsahuje vzorové promìnné umístìné ve složce s nainstalovanou aplikací Petr (tzv. domovská složka). Tyto promìnné nelze z prostøedí Petra bìžnì mìnit. Provádìní zmìn je možné spuštìním ikony "Petr s modifikací vzorové knihovny" v systémovém menu \b \i Start\i0 \b0 . Kopií ven ze skupiny se zkopírují do místní knihovny, ve které lze zmìny provádìt.\par
+\par
+Vedle skupiny bìžných vzorù je k dispozici ještì skupina \b [CD-ROM]\b0 . Ta umožòuje naèítání vzorù pøímo z instalaèního CD-ROM aplikace Petr nebo z jakéhokoliv jiného CD-ROM. Je možné vytváøet vlastní datová CD-ROM s knihovnami prvkù. V ROOT složce datového CD-ROM mùže být umístìn informaèní soubor FOLDERS.INI informující o struktuøe datových složek na CD-ROM, podobnì jako je tomu na instalaèním CD-ROM.\par
+\par
+Promìnné a funkce lze pøetáhnout z pole knihovny do pole promìnných a funkcí a tím vytvoøit tzv. deklaraci promìnné èi funkce. U promìnných lze pøetáhnout celou skupinu, nepøetahují se pøitom vnoøené podskupiny, ale pouze tato jedna úroveò vìtve.\par
+\par
+Editace obsahu promìnné èi funkce je možná dvojklikem na promìnné èi funkci nebo stiskem klávesy Enter. Editace se provádí ve støedním (editaèním) poli.\par
+\par
+Nový vzor v knihovnì lze vytvoøit pøetažením promìnné z okna promìnných (nelze pøetáhnout skupinu). Novou skupinu je možné vytvoøit pøetažením prvku skupiny z pole základních prvkù.\par
+\par
+Promìnné a skupiny lze v knihovnì pøesouvat a pøejmenovávat stejnì jako v jiných polích. Jméno prvku se uchovává vícejazyènì pomocí {\uldb pøezdívek (aliases)}{\v 20751}.\par
+\par
+{\uldb \{bmc IDF20047.bmp\}\tab funkce}{\v 20047}\par
+{\uldb \{bmc IDF20043.bmp\}\tab èíslo}{\v 20043}\par
+{\uldb \{bmc IDF20063.bmp\}\tab pøíznak}{\v 20063}\par
+{\uldb \{bmc IDF20051.bmp\}\tab text}{\v 20051}\par
+{\uldb \{bmc IDF20044.bmp\}\tab pøedmìt}{\v 20044}\par
+{\uldb \{bmc IDF20048.bmp\}\tab plocha}{\v 20048}\par
+{\uldb \{bmc IDF20246.bmp\}\tab obrázek}{\v 20246}\par
+{\uldb \{bmc IDF20045.bmp\}\tab zvuk}{\v 20045}\par
+{\uldb \{bmc IDF20046.bmp\}\tab hudba}{\v 20046}\par
+{\uldb \{bmc IDF20049.bmp\}\tab sprajt}{\v 20049}\par
+\par
+\i \b Poznámky: \b0 \i0 \par
+- Zahájením editace zvuku nebo hudby v poli spoleèných nebo místních promìnných stiskem klávesy \b \i Enter \i0 \b0 se zahájí pøehrávání zvuku nebo hudby. To umožòuje snadné prohlížení vìtšího množství zvukù nebo hudeb posouváním výbìrového kurzoru klávesnicí a stiskem klávesy \b \i Enter\i0 \b0 .\par
+- Posouváním výbìrového kurzoru po položkách zvukù a hudeb v poli knihovny promìnných jsou zvuky a hudby pøehrávány (funkce "Preview"). To umožòuje snadný a rychlý výbìr zvuku nebo hudby bez nutnosti pøetahování do programu. Vyskytuje-li se ve jménu zvuku text "\b (opakování)\b0 " nebo "\b (opakovanì)\b0 ", pøehrává se tento zvuk opakovanì (neplatí u hudeb). Stiskem klávesy \b \i Enter \i0 \b0 je zvuk znovu pøehrán.\par
+- Posouváním výbìrového kurzoru po položkách obrázkù v poli knihovny promìnných se ve støedním (editaèním) poli zobrazuje náhled na obrázek.\par
+\par
+\page
+
+#{\footnote 20047}
+${\footnote Funkce}
++{\footnote 1}
+K{\footnote funkce;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20047.bmp\} Funkce\par
+\pard \plain \cf0 \fs20
+{\uldb Knihovna promìnných a funkcí}{\v Knihovna promìnných a funkcí}\par
+\par
+Funkce je posloupnost pøíkazù urèených k provádìní operací v programu. Funkce mùže být jak spoleèná (veøejná), tak i místní. Spoleèná funkce mùže obsahovat vlastní místní promìnné a vlastní místní funkce. Místní funkce využívá místní promìnné spoleèné funkce, v níž je definovaná, nemá vlastní místní promìnné ani funkce. Spoleèná funkce mùže obsahovat vstupní a výstupní promìnné, místní funkce ne.\par
+\par
+Souèástí každého programu je {\uldb hlavní funkce}{\v Spoleèné promìnné a funkce}. Tato funkce je vykonávána po startu programu, jejím ukonèením se ukonèí i program. Hlavní funkce je po vytvoøení nového programu již vytvoøena ve skupinì základních promìnných a funkcí. Hlavní funkci nelze zrušit ani volat z jiných funkcí. Její jméno je implicitnì použito v titulku okna programu, její ikona je použita jako ikona programu.\par
+\par
+Hlavní funkce obsahuje v {\uldb místních promìnných}{\v Místní promìnné a funkce} pøeddefinovanou jako vstupní promìnnou {\uldb parametry programu}{\v 20244} a jako výstupní promìnnou {\uldb návratový kód programu}{\v 20245}. Vstupní a výstupní promìnné hlavní funkce nelze mìnit.\par
+\par
+Deklarace nové funkce se založí pøetažením prázdné funkce z pole knihovny promìnných a funkcí. Na rozdíl od promìnných funkce neumožòuje uchovávat pøeddefinované vzory v knihovnì. Deklaraci je možné založit buï v poli spoleèných nebo místních promìnných a funkcí. Pro spoleènou funkci se vytvoøí pole pro deklaraci {\uldb místních promìnných a funkcí}{\v Místní promìnné a funkce}.\par
+\par
+\page
+
+#{\footnote 20043}
+${\footnote Èíslo}
++{\footnote 1}
+K{\footnote èíslo;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20043.bmp\} Èíslo\par
+\pard \plain \cf0 \fs20
+{\uldb Knihovna promìnných a funkcí}{\v Knihovna promìnných a funkcí}\par
+\par
+Veškeré èíselné operace v programu se provádìjí pomocí reálných èísel, pøesnost 15 èíslic, exponent -308 až +308 (tzv. dvojnásobná pøesnost 8 bajtù). Pøi {\uldb zadávání èísla}{\v Editace èísla} lze používat vyjádøení s exponentem (napø. 12.34e-45). Text èísla nesmí obsahovat mezeru. Pøi zápisu lze používat desetinnou teèku nebo èárku.\par
+\par
+Pøi zadání èísla je možné uvedením znaku \b $ \b0 (znak dolaru) pøed èíslem zapsat èíslo v hexadecimálním tvaru (šestnáctková soustava). Napø. zápis \b $1F \b0 odpovídá èíslu \b 31\b0 . Podobnì uvedením znaku \b % \b0 (znak procenta) je možné zadat èíslo v binárním tvaru (dvojková soustava). Napø. zápis \b %1001 \b0 odpovídá èíslu \b 9\b0 .\par
+\page
+
+#{\footnote 20063}
+${\footnote Pøíznak}
++{\footnote 1}
+K{\footnote pøíznak;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20063.bmp\} Pøíznak\par
+\pard \plain \cf0 \fs20
+{\uldb Knihovna promìnných a funkcí}{\v Knihovna promìnných a funkcí}\par
+\par
+Pøíznak je dvoustavová logická promìnná. Její logické stavy oznaèujeme napø. ano/ne, platí/neplatí popø. zapnuto/vypnuto - viz {\uldb editace pøíznaku}{\v Editace pøíznaku}.\par
+\page
+
+#{\footnote 20051}
+${\footnote Text}
++{\footnote 1}
+K{\footnote text;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20051.bmp\} Text\par
+\pard \plain \cf0 \fs20
+{\uldb Knihovna promìnných a funkcí}{\v Knihovna promìnných a funkcí}\par
+\par
+Textová promìnná obsahuje text. Text mùže být víceøádkový - viz {\uldb editace textu}{\v Editace textu}.\par
+\par
+Text mùže být v knihovnì uložen ve formátu TEXT (pøípona souboru TXT) nebo RichEdit (pøípona souboru RTF).\par
+\page
+
+#{\footnote 20044}
+${\footnote Pøedmìt}
++{\footnote 1}
+K{\footnote pøedmìt;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20044.bmp\} Pøedmìt\par
+\pard \plain \cf0 \fs20
+{\uldb Knihovna promìnných a funkcí}{\v Knihovna promìnných a funkcí}\par
+\par
+Pøedmìt je obrázek o rozmìrech 32x32 grafických bodù. Je to základní prvek plochy. Na rozdíl od promìnné obrázku se pøedmìt nevykresluje grafickými pøíkazy, ale zobrazuje se položením do plochy. V prostøedí Windows je analogií pøedmìtu ikona. Viz též {\uldb editace pøedmìtu}{\v Editace pøedmìtu a obrázku}.\par
+\par
+V hlavní funkci je pøeddefinován pøedmìt {\uldb prázdné políèko}{\v Spoleèné promìnné a funkce}, tento pøedmìt je implicitnì používán k vyplnìní plochy.\par
+\page
+
+#{\footnote 20048}
+${\footnote Plocha}
++{\footnote 1}
+K{\footnote plocha;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20048.bmp\} Plocha\par
+\pard \plain \cf0 \fs20
+{\uldb Knihovna promìnných a funkcí}{\v Knihovna promìnných a funkcí}\par
+\par
+Plocha pøedstavuje dvourozmìrnou matici políèek, jejíž každé políèko obsahuje {\uldb pøedmìt}{\v 20044} k vizuálnímu zobrazení plochy (políèko 32x32 grafických bodù), pìt logických pøepínaèù a tøi celoèíselné hodnoty (dvì s rozsahem 0 až 1023 a jednu s rozsahem 0 až 127). Viz též {\uldb editace plochy}{\v Editace plochy}.\par
+\par
+V hlavní funkci je pøeddefinována {\uldb hlavní plocha}{\v Spoleèné promìnné a funkce}, která se zobrazuje v oknì programu jako {\uldb vrstva pøedmìtù}{\v Vrstvy}. Hlavní plocha urèuje velikost okna programu. Nastavením pøedmìtu do hlavní plochy se tento pøedmìt zobrazí v oknì.\par
+\par
+Plocha je implicitnì vyplnìna pøedmìtem {\uldb prázdné políèko}{\v Spoleèné promìnné a funkce}.\par
+\page
+
+#{\footnote 20246}
+${\footnote Obrázek}
++{\footnote 1}
+K{\footnote obrázek;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20246.bmp\} Obrázek\par
+\pard \plain \cf0 \fs20
+{\uldb Knihovna promìnných a funkcí}{\v Knihovna promìnných a funkcí}\par
+\par
+Obrázek slouží k zobrazení grafických výjevù, kreseb a fotografií. Šíøka a výška obrázku mohou být v rozmezí 1 až 32768 grafických bodù (tj. max. 1024 krokù). Jeho vykreslení je možné pomocí grafických pøíkazù do {\uldb grafické vrstvy}{\v Vrstvy}. Viz též {\uldb editace obrázku}{\v Editace pøedmìtu a obrázku}.\par
+\par
+Obrázek mùže být v knihovnì uložen ve formátu BMP (pøípona souboru BMP) nebo JPEG (pøípona souboru JPG).\par
+\page
+
+#{\footnote 20045}
+${\footnote Zvuk}
++{\footnote 1}
+K{\footnote zvuk;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20045.bmp\} Zvuk\par
+\pard \plain \cf0 \fs20
+{\uldb Knihovna promìnných a funkcí}{\v Knihovna promìnných a funkcí}\par
+\par
+Zvuk je urèen k pøehrávání zvukových efektù èi mluveného slova. Pro zvuky ve formátu PCM lze pøehrávat více zvukù souèasnì. S podporou ovladaèe pro pøehrávání MPEG Layer-3 je umožnìno pøehrávání i souborù MP3. Viz též {\uldb editace zvuku}{\v Editace zvuku}.\par
+\par
+Zvuk mùže být v knihovnì uložen ve formátu WAV (pøípona souboru WAV) nebo MPEG Layer3 (pøípona souboru MP3).\par
+\page
+
+#{\footnote 20046}
+${\footnote Hudba}
++{\footnote 1}
+K{\footnote hudba;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20046.bmp\} Hudba\par
+\pard \plain \cf0 \fs20
+{\uldb Knihovna promìnných a funkcí}{\v Knihovna promìnných a funkcí}\par
+\par
+Viz též {\uldb editace hudby}{\v Editace hudby}.\par
+\par
+Hudba mùže být v knihovnì uložena ve formátu MID (pøípona souboru MID) nebo RAW-MID (pøípona souboru RMI).\par
+\page
+
+#{\footnote 20049}
+#{\footnote 20250}
+#{\footnote 20251}
+#{\footnote 20252}
+#{\footnote 20253}
+#{\footnote 20254}
+#{\footnote 20636}
+#{\footnote 20637}
+${\footnote Sprajt}
++{\footnote 1}
+K{\footnote sprajt;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20049.bmp\} Sprajt\par
+\pard \plain \cf0 \fs20
+{\uldb Knihovna promìnných a funkcí}{\v Knihovna promìnných a funkcí}\par
+\par
+Sprajt je základní prvek k automatickému provádìní animací pohybujících se objektù. Je {\uldb definován}{\v Editace sprajtu} jako posloupnost obrázkù, které se po èase støídají (tj. provádí se animace) - jednotlivé obrázky oznaèujeme jako fáze animace. Vzhled obrázku mùže být definován rùzný pro rùzné smìry pohybu èi otoèení. Je definována samostatná posloupnost obrázkù pro stav klidu a pro pohyb.\par
+\par
+Deklarací sprajtu v poli promìnných se vytvoøí objekt sprajtu, který mùže být zobrazen v oknì programu. Sprajtem lze v oknì posouvat a zapínat a vypínat jeho viditelnost. Pøiøazením sprajtu jinému sprajtu se pøenese pouze definice vzhledu a animací sprajtu, nikoliv informace o jeho okamžitém stavu. To umožòuje pøedefinovávat vzhled sprajtu se zachováním jeho aktivity. Stejnì tak operace porovnání porovnává pouze objekt vzhledu sprajtu nezávisle na jeho okamžitém stavu.\par
+\par
+Pøi deklaraci sprajtu v poli promìnných se vytvoøí závislé promìnné sprajtu definující jeho okamžitý stav. Nastavení promìnných stavu pøi editaci programu nemá vliv na výchozí stav pøi startu programu - sprajty jsou pøi spuštìní programu vždy neviditelné se souøadnicemi (0,0).\par
+\par
+\{bmc IDF20250.bmp\}\tab \b \i horizontálnì \i0 \b0 \par
+\{bmc IDF20251.bmp\}\tab \b \i vertikálnì \i0 \b0 \par
+\par
+Prvky \b \i horizontálnì \i0 \b0 a \b \i vertikálnì \i0 \b0 jsou èíselné promìnné pøedstavující souøadnice sprajtu. Nastavením promìnných se zahájí pøesun sprajtu na zadanou souøadnici (urèující je levý spodní roh sprajtu). Je-li zapnuta viditelnost, pøesun se provádí v pomalém režimu s animací. Je-li viditelnost vypnuta, pøesun se provede okamžitì. Ètením souøadnic lze zjistit okamžitou pozici sprajtu (i bìhem pøesunu). Nastavením souøadnic na jejich ètené hodnoty lze zajistit okamžité zastavení sprajtu (tj. pøiøazením souøadnic samy sobì).\par
+\par
+\{bmc IDF20252.bmp\}\tab \b \i smìr \i0 \b0 \par
+\par
+Prvek \b \i smìr \i0 \b0 pøedstavuje smìr otoèení sprajtu udaný v radiánech (plný úhel 360 stupòù je pøibližnì 6.28). S prvkem lze pracovat jako s bìžnou èíselnou promìnnou. Použitím v èíselném výrazu lze zjistit souèasný smìr otoèení sprajtu. Použitím prvku jako pøíkaz lze nastavit smìr otoèení sprajtu, hodnota smìru je pøitom upravena na nejbližší povolenou hodnotu podle definice poètu smìrù sprajtu. Pro usnadnìní použití smìru lze využít pøeddefinované {\uldb konstanty úhlu}{\v 20112}, s kterými lze provádìt èíselné operace jako napø. sèítání a dìlení.\par
+\par
+\{bmc IDF20254.bmp\}\tab \b \i viditelný \i0 \b0 \par
+\par
+Prvek \b \i viditelný \i0 \b0 pøedstavuje pøíznak viditelnosti sprajtu. Je-li sprajt viditelný, je jeho pohyb po ploše animovaný podle definice sprajtu. Po vypnutí viditelnosti sprajtu se provádí jeho pøesuny po ploše okamžitì. S prvkem viditelnosti lze pracovat jako s bìžnou logickou promìnnou, tj. lze ji testovat nebo nastavovat.\par
+\par
+\{bmc IDF20253.bmp\}\tab \b \i v pohybu \i0 \b0 \par
+\par
+Prvek \b \i v pohybu \i0 \b0 navrací logický pøíznak udávající, zda je sprajt v pohybu, tj. pøesunuje se na zadanou cílovou pozici. Zastavení pohybu sprajtu je možné nastavením cílových souøadnic na okamžité souøadnice (tj. pøiøadit souøadnice samy sobì).\par
+\par
+\{bmc IDF20636.bmp\}\tab \b \i fáze \i0 \b0 \par
+\par
+Prvek \b \i fáze \i0 \b0 udává pøíští fázi animace sprajtu (tedy ne aktuální fázi). Lze s ním pracovat jako s bìžnou èíselnou promìnnou - èíst nebo nastavovat. Fáze jsou èíslovány od 0 a zahrnují fáze pro klid i pohyb.\par
+\par
+\{bmc IDF20637.bmp\}\tab \b \i stav \i0 \b0 \par
+\par
+Prvek \b \i stav \i0 \b0 slouží jako indikátor stavu objektu pøedstavovaného sprajtem. Prvek lze používat jako èíselnou promìnnou. Nastavením jeho hodnoty na 0 až 1 se zobrazí nad sprajtem indikátor stavu. Barva indikátoru je v rozsahu 0.5 (vèetnì) až 1 zobrazena zelenì, v rozsahu 0.25 (vèetnì) až 0.5 žlutì a v rozsahu 0 až 0.25 èervenì. Nastavením stavu na hodnotu -1 se indikátor stavu vypne.\par
+\par
+\b \i Poznámka: \i0 \b0 Sprajty je možné též {\uldb generovat}{\v Generování sprajtù}.
+\page
+
+#{\footnote Generování sprajtù}
+${\footnote Generování sprajtù}
++{\footnote 1}
+K{\footnote generování sprajtù;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Generování sprajtù\par
+\pard \plain \cf0 \fs20
+{\uldb Sprajt}{\v 20049}\par
+\par
+Sprajty je možné buï {\uldb kreslit}{\v Editace sprajtu} nebo generovat automaticky. Ke generování lze s výhodou využít nìkterý z renderovacích programù. Renderování sprajtù je složitou problematikou, proto je doporuèujeme pouze dostateènì zkušeným uživatelùm.\par
+\par
+V instalaèním adresáøi aplikace Petr jsou v podadresáøi \b \i Source \i0 \b0 zdrojové texty ke generování sprajtù pomocí renderovacího programu PovRay verze 3.0 (lze získat napø. na internetovské adrese \b http://www.compuserve.com \b0 nebo \b http://www.povray.org\b0 ). Po nainstalování programu PovRay (je nutné dodržení verze 3.0) zkopírujte soubor PVENGINE.EXE do adresáøe SOURCE.\par
+\par
+Pro jednotlivé sprajty jsou v podadresáøích pøipravené soubory INI. Otevøením souboru INI programem PovRay lze sprajt generovat jednotlivì. K hromadnému generování je možné využít soubory ALL.BAT. Pøi generování sprajtù vytvoøí PovRay jednotlivé obrázky sprajtu. Programem Pov2Spr.exe (který je umístìn v adresáøi Source) jsou tyto obrázky zkonvertovány na sprajt. Význam parametrù programu Pov2Spr se vypíše spuštìním programu Pov2Spr bez parametrù. Pøi použití programu je nutné zadání všech parametrù.\par
+\page
+
+}

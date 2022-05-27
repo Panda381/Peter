@@ -1,0 +1,303 @@
+{\rtf1 \ansi \deff0
+
+@{\footnote ------- definice fontù --------- }
+
+{\fonttbl 
+{\f0 \fswiss MS San Serif CE;}
+}
+
+@{\footnote ------- definice barev --------- }
+
+{\colortbl
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red192\green192\blue192;
+\red128\green128\blue128;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+
+@{\footnote Pouití barev:
+	0 - èerná
+	1 - tmavì èervená
+	2 - tmavì zelená
+	3 - hnìdá
+	4 - tmavì modrá
+	5 - tmavì fialová
+	6 - tmavì modrozelená
+	7 - šedá
+	8 - tmavì šedá
+	9 - èervená
+	10 - zelená
+	11 - lutá
+	12 - modrá
+	13 - fialová
+	14 - modrozelená
+	15 - bílá
+}
+
+#{\footnote 20894}
+#{\footnote 20900}
+${\footnote Filtrace zvìtšenıch textur}
++{\footnote 1}
+K{\footnote filtrace zvìtšenıch textur;filtrace zvìtšenıch textur objektu;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20894.bmp\} Filtrace zvìtšenıch textur, \{bmc IDF20900.bmp\} filtrace zvìtšenıch textur objektu\par
+\pard \plain \cf0 \fs20
+{\uldb Nastavení}{\v 20796}, {\uldb Textury}{\v 20915}\par
+\par
+Prvek \b \i filtrace zvìtšenıch textur \i0 \b0 je logickı pøepínaè. Je-li zapnut, jsou texely (tj. body textury) pøi zvìtšení textury lineárnì interpolovány - textura je pøi zvìtšení vyhlazena. Je-li vypnut, pouije se k vykreslování zvìtšené textury nejbliší bod - u vykreslované textury jsou patrné ostré pøechody mezi texely. Filtraci textur se doporuèuje vypínat pøi softwarovém ovladaèi, nebo softwarová filtrace znatelnì zpomaluje renderování.\par
+\par
+Filtraci zvìtšenıch textur je moné vypínat u kadého objektu a stupnì textur samostatnì pøíkazem \b \i filtrace zvìtšenıch textur objektu \i0 \b0 (pro {\uldb aktivní objekt}{\v 20810} a {\uldb aktivní stupeò}{\v 20916}). Je-li pøepínaè \b \i filtrace zvìtšenıch textur \i0 \b0 vypnut, je filtrace zvìtšenıch textur vypnuta u všech objektù, nezávisle na nastavení pøepínaèù pro filtraci zvìtšenıch textur jednotlivıch objektù. Implicitnì jsou všechny pøepínaèe zapnuty.\par
+\page
+
+#{\footnote 20872}
+#{\footnote 20899}
+${\footnote Filtrace zmenšenıch textur}
++{\footnote 1}
+K{\footnote filtrace zmenšenıch textur;filtrace zmenšenıch textur objektu;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20872.bmp\} Filtrace zmenšenıch textur, \{bmc IDF20899.bmp\} filtrace zmenšenıch textur objektu\par
+\pard \plain \cf0 \fs20
+{\uldb Nastavení}{\v 20796}, {\uldb Textury}{\v 20915}\par
+\par
+Prvek \b \i filtrace zmenšenıch textur \i0 \b0 je logickı pøepínaè. Je-li zapnut, jsou texely (tj. body textury) pøi zmenšení textury lineárnì interpolovány - textura je pøi zmenšení vyhlazena. Je-li vypnut, pouije se k vykreslování zmenšené textury nejbliší bod - u vykreslované textury jsou patrné ostré pøechody mezi texely. Filtraci textur se doporuèuje vypínat pøi softwarovém ovladaèi, nebo softwarová filtrace znatelnì zpomaluje renderování.\par
+\par
+Je-li zapnut pøepínaè {\uldb filtrace vzdálenıch textur}{\v 20895}, jsou pøi zapnutém pøepínaèi zmenšenıch textur interpolovány jednotlivé stupnì vzdálenıch textur. Pøi vypnutém pøepínaèi zmenšenıch textur je pouit nejbliší stupeò vzdálené textury (pøi zmìnì vzdálenosti se zjemnìní textur mìní skokovì).\par
+\par
+Filtraci zmenšenıch textur je moné vypínat u kadého objektu a stupnì textur samostatnì pøíkazem \b \i filtrace zmenšenıch textur objektu \i0 \b0 (pro {\uldb aktivní objekt}{\v 20810} a {\uldb aktivní stupeò}{\v 20916}). Je-li pøepínaè \b \i filtrace zmenšenıch textur \i0 \b0 vypnut, je filtrace zmenšenıch textur vypnuta u všech objektù, nezávisle na nastavení pøepínaèù pro filtraci zmenšenıch textur jednotlivıch objektù. Implicitnì jsou všechny pøepínaèe zapnuty.\par
+\page
+
+#{\footnote 20895}
+#{\footnote 20901}
+${\footnote Filtrace vzdálenıch textur}
++{\footnote 1}
+K{\footnote filtrace vzdálenıch textur;filtrace vzdálenıch textur objektu;mipmap;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20895.bmp\} Filtrace vzdálenıch textur, \{bmc IDF20901.bmp\} filtrace vzdálenıch textur objektu\par
+\pard \plain \cf0 \fs20
+{\uldb Nastavení}{\v 20796}, {\uldb Textury}{\v 20915}\par
+\par
+Prvek \b \i filtrace vzdálenıch textur \i0 \b0 je logickı pøepínaè. Je-li zapnut, jsou u vzdálenıch objektù pouity zmenšené textury (nazıvané mipmap). Tím je moné u vzdálenıch objektù dosáhnout pøirozenìjšího vzhledu (rozostøení). Je-li pøepínaè vypnut, je pouita základní nezmenšená textura (povrch vzdálenıch objektù "zrní").\par
+\par
+Zpùsob filtrace vzdálenıch textur je ovlivnìn nastavením pøepínaèe {\uldb filtrace zmenšenıch textur}{\v 20872}. Je-li zapnut pøepínaè pro filtraci zmenšenıch textur, pouije se lineární interpolace mezi dvìmi nejblišími zmenšenımi texturami. Je-li pøepínaè filtrace zmenšenıch textur vypnut, pouije se nejbliší zmenšená textura (pøi zmìnì vzdálenosti se zjemnìní vzdálenıch textur mìní skokovì).\par
+\par
+Filtraci vzdálenıch textur je moné vypínat u kadého objektu a stupnì textur samostatnì pøíkazem \b \i filtrace vzdálenıch textur objektu \i0 \b0 (pro {\uldb aktivní objekt}{\v 20810} a {\uldb aktivní stupeò}{\v 20916}). Je-li pøepínaè \b \i filtrace vzdálenıch textur \i0 \b0 vypnut, je filtrace vzdálenıch textur vypnuta u všech objektù, nezávisle na nastavení pøepínaèù pro filtraci vzdálenıch textur jednotlivıch objektù. Implicitnì jsou všechny pøepínaèe zapnuty.\par
+\par
+Zpùsob filtrace vzdálenıch textur je moné ještì dále upøesnit prvky {\uldb poèet úrovní vzdálenıch textur}{\v 20929} a {\uldb zjemnìní vzdálenıch textur}{\v 20925}.\par
+\page
+
+#{\footnote 20902}
+${\footnote Viditelná strana objektu}
++{\footnote 1}
+K{\footnote viditelná strana objektu;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20902.bmp\} Viditelná strana objektu\par
+\pard \plain \cf0 \fs20
+{\uldb Nastavení}{\v 20796}\par
+\par
+Prvek \b \i viditelná strana objektu \i0 \b0 je èíselná promìnná urèující, která strana plošek objektu je viditelná. Pro zrychlení vykreslování 3D grafiky je u objektù vykreslována pouze pøední (vnìjší) strana plošek objektu, zadní (vnitøní) strana zùstává prùhledná. Pro rozlišení, která strana plošek je pøední a která zadní, je urèující poøadí vrcholù plošek. Systém Petr pouívá implicitnì poøadí bodù \b ve smìru \b0 hodinovıch ruèièek. Opaènou stranu plošky (proti smìru hodinovıch ruèièek) povauje za zadní stranu a nevykresluje ji.\par
+\par
+\b 0 \b0 \tab obì strany plošek jsou viditelné\par
+\b 1 \b0 \tab je viditelná pouze pøední strana plošek (ve smìru hodinovıch ruèièek)\par
+\b 2 \b0 \tab je viditelná pouze zadní strana plošek (proti smìru hodinovıch ruèièek)\par
+\par
+Implicitní nastavení je moné zmìnit u jednotlivıch objektù prvkem \b \i viditelná strana objektu\i0 \b0 . Prvek se uplatní pro {\uldb aktivní objekt}{\v 20810}, nastavení nelze mìnit globálnì pro všechny objekty. Implicitní hodnota je \b 1\b0 , tj. je viditelná pøední strana plošek. Nastavením na hodnotu \b 2 \b0 se stane viditelná zadní strana plošek. To je moné vyuít napø. pøi naèítání objektu ze souboru, pouívá-li objekt opaènou orientaci plošek. Nastavením na hodnotu \b 0 \b0 se zviditelní obì strany plošek. Toto nastavení mùe bıt vhodné u drátovıch modelù objektù (pøepínaè {\uldb vyplòování ploch}{\v 20797}) nebo u neprostorovıch objektù (napø. {\uldb zeï}{\v 20802}). Zadní strana plošky pøitom zùstává osvìtlena stejnì, jako byla pøední strana. Z toho dùvodu zùstane stìna tmavá, je-li osvìtlena její zadní strana.\par
+\par
+K osvìtlení objektù se pouívají \b normály\b0 , co jsou vektory kolmé k plošce a smìøující ven z objektu. Normály urèují, jak bude ploška objektu osvìtlena v závislosti na natoèení plošky ke zdroji svìtla. Je-li potøeba vyuít vnitøní prostor objektu, nestaèí pouze zmìnit viditelnou stranu plošek objektu. Normály zùstávají nezmìnìny, plošky objektu jsou osvìtleny z vnìjší strany a povch objektu se jeví, jakoby jeho stìny byly prùsvitné a osvìtlené z vnìjší strany. Pro tento úèel je vhodnìjší pouít pøíkaz {\uldb inverze objektu}{\v 20800}, kterı zajistí jak zmìnu orientace plošek, tak i zmìnu smìru normál.\par
+\page
+
+#{\footnote 20857}
+${\footnote Scéna}
++{\footnote 1}
+K{\footnote scéna;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Scéna\par
+\pard \plain \cf0 \fs20
+{\uldb 3D grafika}{\v 20788}\par
+\par
+\par
+{\uldb \{bmc IDF20858.bmp\}\tab barva pozadí scény}{\v 20858}\par
+{\uldb \{bmc IDF20859.bmp\}\tab textura pozadí scény}{\v 20859}\par
+{\uldb \{bmc IDF20860.bmp\}\tab barva mlhy}{\v 20860}\par
+{\uldb \{bmc IDF20861.bmp\}\tab typ mlhy}{\v 20861}\par
+{\uldb \{bmc IDF20862.bmp\}\tab zaèátek lineární mlhy}{\v 20862}\par
+{\uldb \{bmc IDF20863.bmp\}\tab konec lineární mlhy}{\v 20863}\par
+{\uldb \{bmc IDF20864.bmp\}\tab hustota exponenciální a kvadratické mlhy}{\v 20864}\par
+{\uldb \{bmc IDF20865.bmp\}\tab vzdálenost promítací roviny}{\v 20865}\par
+{\uldb \{bmc IDF20866.bmp\}\tab vzdálenost dohledu}{\v 20866}\par
+{\uldb \{bmc IDF20856.bmp\}\tab typ projekce}{\v 20856}\par
+{\uldb \{bmc IDF20935.bmp\}\tab renderování bez zobrazení}{\v 20935}\par
+\page
+
+#{\footnote 20858}
+${\footnote Barva pozadí scény}
++{\footnote 1}
+K{\footnote barva pozadí scény;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20858.bmp\} Barva pozadí scény\par
+\pard \plain \cf0 \fs20
+{\uldb Scéna}{\v 20857}\par
+\par
+Pøed zahájením renderování (vykreslování) jednoho 3D snímku je plocha okna vymazána zadanou barvou \b \i barva pozadí scény \i0 \b0 nebo {\uldb texturou}{\v 20859}. Barvu je moné zadat jako jiné barvy systému Petr buï prvkem {\uldb barevná konstanta}{\v 20301} nebo prvkem {\uldb slouèení barevnıch sloek do barvy}{\v 20417}. Je-li celá plocha okna pokryta objekty (napø. stìny místnosti), je moné vymazávání pozadí scény vypnout nastavením èíselné hodnoty \b -1 \b0 namísto barvy, tím mùe bıt rychlost renderování mírnì zvıšena. Vypnuté vymazání pozadí scény mùe také slouit k dosaení speciálních efektù (stíny za pohybujícími se objekty - {\uldb vícenásobné renderování}{\v 20935} s odlišnımi souøadnicemi objektù). Nastavením barvy pozadí scény se vypne {\uldb textura pozadí scény}{\v 20859}.\par
+\page
+
+#{\footnote 20859}
+${\footnote Textura pozadí scény}
++{\footnote 1}
+K{\footnote textura pozadí scény;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20859.bmp\} Textura pozadí scény\par
+\pard \plain \cf0 \fs20
+{\uldb Scéna}{\v 20857}\par
+\par
+Pøed zahájením renderování (vykreslování) jednoho 3D snímku je plocha okna vymazána zadanou {\uldb barvou}{\v 20858} nebo \b \i texturou pozadí scény\i0 \b0 . Jako texturu pozadí scény lze nastavit libovolnı obrázek. Pro texturu pozadí scény platí podobná pravidla jako pro jiné {\uldb textury}{\v 20830}: rozmìry by mìly bıt mocninou 2 (jinak budou upraveny), textura bude zjemnìna podle nastaveného {\uldb vyhlazení textur}{\v 20891}. Na rozdíl od bìnıch textur se na texturu pozadí scény neuplatní {\uldb mlha}{\v 20860}, vypnutí {\uldb vyplòování ploch}{\v 20797}, {\uldb stupeò textur}{\v 20916} ani osvìtlení. Texturu nelze modulovat barvou pozadí scény. Nastavením {\uldb barvy pozadí scény}{\v 20858} se textura pozadí scény vypne. Textura pozadí scény bude filtrována (vyhlazena), bude-li zapnut pøepínaè {\uldb scény}{\v 20810} {\uldb filtrace zvìtšenıch textur objektu}{\v 20900}.\par
+\page
+
+#{\footnote 20860}
+${\footnote Barva mlhy}
++{\footnote 1}
+K{\footnote barva mlhy;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20860.bmp\} Barva mlhy\par
+\pard \plain \cf0 \fs20
+{\uldb Scéna}{\v 20857}\par
+\par
+Mlha slouí k pøirozenému omezení dohledu ve scénì. Pomocí prvku \b \i barva mlhy \i0 \b0 je moné urèit barvu mlhy. Je-li mlha vypnuta, dojde k zapnutí mlhy. Barvu je moné zadat jako jiné barvy systému Petr buï prvkem {\uldb barevná konstanta}{\v 20301} nebo prvkem {\uldb slouèení barevnıch sloek do barvy}{\v 20417}. Nastavením hodnoty \b -1 \b0 namísto barvy mlhy lze mlhu vypnout. Je-li mlha zapnuta nìkterım z jinıch prvkù pro øízení mlhy, je barva mlhy implicitnì nastavena podle aktuálního nastavení {\uldb barvy pozadí scény}{\v 20858}.\par
+\page
+
+#{\footnote 20861}
+${\footnote Typ mlhy}
++{\footnote 1}
+K{\footnote typ mlhy;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20861.bmp\} Typ mlhy\par
+\pard \plain \cf0 \fs20
+{\uldb Scéna}{\v 20857}\par
+\par
+Prvek \b \i typ mlhy \i0 \b0 umoòuje zvolit typ mlhy:\par
+\par
+\b 0 \b0 \tab lineární mlha\par
+\b 1 \b0 \tab exponenciální mlha\par
+\b 2 \b0 \tab kvadratická mlha\par
+\b +4 \b0 \tab korekce mlhy (pouije se rozsahová vrcholová mlha, jinak hloubková tabulková mlha)\par
+\par
+\b \i Lineární mlha \i0 \b0 je urèena parametry {\uldb zaèátek}{\v 20862} a {\uldb konec}{\v 20863} mlhy. Hustota mlhy je lineárnì závislá na vzdálenosti od pozorovatele podle vztahu \b mlha = (konec - vzdálenost)/(konec - zaèátek)\b0 . Zámìnou zaèátku a konce lineární mlhy je moné mlhu invertovat - mlha se vzdáleností slábne. Tato vlastnost je u nìkterıch ovladaèù potlaèena (mlha je v takovém pøípadì vypnuta).\par
+\par
+\b \i Exponenciální mlha \i0 \b0 je urèena parametrem {\uldb hustota mlhy}{\v 20864}. Hustota exponenciální mlhy je závislá na vzdálenosti od pozorovatele podle vztahu \b mlha = 1 / (e ^ (vzdálenost * hustota))\b0 .\par
+\par
+\b \i Kvadratická mlha \i0 \b0 je urèena parametrem {\uldb hustota mlhy}{\v 20864}. Hustota kvadratické mlhy je závislá na vzdálenosti od pozorovatele podle vztahu \b mlha = 1 / (e ^ ((vzdálenost * hustota)^2))\b0 .\par
+\par
+Implicitnì je nastaven exponenciální typ mlhy. Je-li mlha vypnuta, je nastavením typu mlhy zapnuta a její barva je implicitnì nastavena podle aktuálního nastavení {\uldb barvy pozadí scény}{\v 20858}.\par
+\par
+Pøiètením hodnoty \b 4 \b0 k typu mlhy je pouita \b \i korigovaná mlha\i0 \b0 . Pøi vıpoètu mlhy je bìnì pouíván tzv. tabulkovı typ mlhy. Tabulkovı typ mlhy se uplatòuje na celou plochu objektù. Pro vıpoèet vzdálenosti objektu je pouita informace o hloubce objektu, tedy vzdálenost od promítací roviny. To zpùsobí, e objekty na okrajích promítací roviny jsou ve skuteènosti vzdálenìjší od pozorovatale ne objekty se stejnou hloubkou ve støedu promítací roviny (hloubka je urèena rovinou). Otáèí-li se pozorovatel, objekty na okrajích obrazu vystupují z mlhy (dostanou se do oblasti s niší hloubkou vzdálenosti od promítací roviny). Tento problém odstraòuje korigovanı typ mlhy - rozsahová mlha. Tento typ mlhy nevyuívá hloubkovou informaci, pro kadı objekt je poèítána jeho skuteèná vzdálenost od pozorovatele (to je èasovì nároèná operace). Není vìtšinou podporován hardwarovì a proto je spojen se softwarovım typem mlhy - vrcholová mlha. Vrcholová mlha urèuje mlhu pouze pro vrcholy zobrazenıch plošek, pro povrch plošky je mlha lineárnì proloena. Vrcholová mlha není správnì zobrazena u velkıch ploch. Stojí-li napø. pozorovatel ve støedu ètvercové plochy, rohy plochy leí v mlze a díky interpolaci je i støed plochy v místì pozorovatele nesprávnì zamlen.\par
+\page
+
+#{\footnote 20862}
+${\footnote Zaèátek lineární mlhy}
++{\footnote 1}
+K{\footnote zaèátek lineární mlhy;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20862.bmp\} Zaèátek lineární mlhy\par
+\pard \plain \cf0 \fs20
+{\uldb Scéna}{\v 20857}\par
+\par
+Prvek \b \i zaèátek lineární mlhy \i0 \b0 urèuje zaèátek {\uldb lineární mlhy}{\v 20861}. Zaèátek mlhy pøedstavuje vzdálenost od pozorovatele, ve které se zaèíná lineární mlha uplatòovat. Implicitní hodnota zaèátku lineární mlhy je \b 0\b0 . Je-li mlha vypnuta, je nastavením zaèátku lineární mlhy zapnuta a její barva je implicitnì nastavena podle aktuálního nastavení {\uldb barvy pozadí scény}{\v 20858}.\par
+\page
+
+#{\footnote 20863}
+${\footnote Konec lineární mlhy}
++{\footnote 1}
+K{\footnote konec lineární mlhy;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20863.bmp\} Konec lineární mlhy\par
+\pard \plain \cf0 \fs20
+{\uldb Scéna}{\v 20857}\par
+\par
+Prvek \b \i konec lineární mlhy \i0 \b0 urèuje konec {\uldb lineární mlhy}{\v 20861}. Konec mlhy pøedstavuje vzdálenost od pozorovatele, ve které dosáhne lineární mlha maximální hustoty. Implicitní hodnota konce lineární mlhy je \b 20\b0 . Je-li mlha vypnuta, je nastavením konce lineární mlhy zapnuta a její barva je implicitnì nastavena podle aktuálního nastavení {\uldb barvy pozadí scény}{\v 20858}.\par
+\page
+
+#{\footnote 20864}
+${\footnote Hustota exponenciální a kvadratické mlhy}
++{\footnote 1}
+K{\footnote hustota exponenciální a kvadratické mlhy;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20864.bmp\} Hustota exponenciální a kvadratické mlhy\par
+\pard \plain \cf0 \fs20
+{\uldb Scéna}{\v 20857}\par
+\par
+Prvek \b \i hustota exponenciální a kvadratické mlhy \i0 \b0 urèuje hustotu {\uldb exponenciální a kvadratické mlhy}{\v 20861}. Hodnota hustoty mlhy mùe leet v rozsahu \b 0 \b0 a \b 1\b0 . Implicitní hodnota hustoty mlhy je \b 0.1\b0 . Je-li mlha vypnuta, je nastavením hustoty exponenciální a kvadratické mlhy zapnuta a její barva je implicitnì nastavena podle aktuálního nastavení {\uldb barvy pozadí scény}{\v 20858}.\par
+\page
+
+#{\footnote 20865}
+${\footnote Vzdálenost promítací roviny}
++{\footnote 1}
+K{\footnote vzdálenost promítací roviny;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20865.bmp\} Vzdálenost promítací roviny\par
+\pard \plain \cf0 \fs20
+{\uldb Scéna}{\v 20857}\par
+\par
+Pomocí prvku \b \i vzdálenost promítací roviny \i0 \b0 je moné urèovat vzdálenost roviny, na kterou probíhá promítání zobrazené scény. Vzdálenost promítací roviny urèuje, jak velká èást scény je zobrazena. Implicitnì je tato vzdálenost = \b 1\b0 . Pøi vzdalování promítací roviny se zmenšuje vıøez zobrazené scény. Tak lze vytvoøit efekt pro zoom scény - funkce dalekohledu. Pøi pøibliování promítací roviny se zvìtšuje zobrazená èást scény - efekt "rybího oka". Promítací rovina nesmí mít vzdálenost <= 0.\par
+\par
+Pro promítací rovinu platí, e objekty se vzdáleností rovnou vzdálenosti promítací roviny se zobrazí v jednotkové velikosti. Jednotková velikost je (šíøka_3D_okna + vıška_3D_okna)/2. Pro ètvercové 3D okno zaplní stìna s rozmìry 1x1 a leící v promítací rovinì pøesnì celou plochu 3D okna.\par
+\par
+V 3D oknì se zobrazí objekty s minimální vzdáleností rovnou 1/4 vzdálenosti promítací roviny. Maximální vzdálenost pro zobrazení objektù je rovna {\uldb vzdálenosti dohledu}{\v 20866}.\par
+\page
+
+#{\footnote 20866}
+${\footnote Vzdálenost dohledu}
++{\footnote 1}
+K{\footnote vzdálenost dohledu;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20866.bmp\} Vzdálenost dohledu\par
+\pard \plain \cf0 \fs20
+{\uldb Scéna}{\v 20857}\par
+\par
+Prvek \b \i vzdálenost dohledu \i0 \b0 urèuje maximální vzdálenost, ve které jsou objekty ještì viditelné. Omezením vzdálenosti dohledu a tím následnì redukováním poètu zobrazenıch objektù je moné zvıšit rychlost renderování (tj. vykreslování 3D grafiky). Souèasnì se zmenšením vzdálenosti dohledu se zvıší i pøesnost prùnikù plošek (vzroste pøesnost hloubkového bufferu). Proto by mìla bıt vzdálenost dohledu redukována na co nejmenší vzdálenost. Èasto je omezení dohledu kombinováno s {\uldb mlhou}{\v 20860} (vzdálené objekty se ztrácí v mlze nebo ve tmì) nebo mùe bıt vıhled omezen stìnami místnosti. Vzdálenost dohledu je implicitnì nastavena na hodnotu 100.\par
+\page
+
+#{\footnote 20856}
+${\footnote Typ projekce}
++{\footnote 1}
+K{\footnote typ projekce;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20856.bmp\} Typ projekce\par
+\pard \plain \cf0 \fs20
+{\uldb Scéna}{\v 20857}\par
+\par
+Prvek \b \i typ projekce \i0 \b0 je èíselná promìnná urèující zpùsob promítání scény do 3D okna:\par
+\par
+\b \i 0 \i0 \b0 \tab perspektivní projekce (implicitnì)\par
+\b \i 1 \i0 \b0 \tab ortografická projekce\par
+\b \i 2 \i0 \b0 \tab perspektivní projekce, pravorukı souøadnı systém\par
+\b \i 3 \i0 \b0 \tab ortografická projekce, pravorukı souøadnı systém\par
+\par
+Typy projekce 0 a 1 jsou projekce {\uldb levorukého souøadného systému}{\v 20815} (implicitní souøadnı systém), typy projekce 2 a 3 jsou projekce pravorukého souøadného systému (osa Z smìøuje opaènım smìrem, rotace mají opaènı smìr). Novì vytváøené objekty jsou pøizpùsobeny pravorukému souøadnému systému (neplatí pro objekty ze souboru a z textu), proto by mìl bıt pravorukı typ projekce aktivován døíve, ne bude nìkterı objekt vytvoøen. Pro pravorukı souøadnı systém je potøeba opravit souøadnici Z implicitní kamery (zmìnit z -2 na +2) a opravit rotaci implicitního osvìtlení (rotaci Y z +45 stupòù na -45 stupòù, rotaci X z +45 stupòù na +135 stupòù).\par
+\par
+Projekce 0 a 2 jsou perspektivní projekce, se zvìtšující se vzdáleností se pøedmìt zmenšuje. Projekce 1 a 3 jsou ortografické projekce, velikost pøedmìtù nezávisí na vzdálenosti. Ortografická projekce se pouívá k technickım úèelùm (strojní vıkresy, programy CAD). Mìøítko zobrazení scény lze u ortografické projekce regulovat zmìnou mìøítka kamery.\par
+\page
+
+#{\footnote 20935}
+${\footnote Renderování bez zobrazení}
++{\footnote 1}
+K{\footnote renderování bez zobrazení;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20935.bmp\} Renderování bez zobrazení\par
+\pard \plain \cf0 \fs20
+{\uldb Scéna}{\v 20857}\par
+\par
+Prvek \b \i renderování bez zobrazení \i0 \b0 je pøíkaz slouící ve speciálních pøípadech k vyrenderování scény bez zobrazení na obrazovku. Hlavní vyuití pøíkazu je vícenásobné renderování napø. pøi vytváøení efektu stínu za pohybujícím se objektem. Zpravidla se provádí první renderování scény s {\uldb vymazáním pozadí}{\v 20858}. Následující renderování probíhají bez vymazání pozadí, objekty pøekrıvají pùvodní obraz. Poslední renderování probìhne pomocí pøíkazu {\uldb èekání}{\v 20122}, tj. s vykreslením na obrazovku.\par
+\page
+
+}

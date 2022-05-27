@@ -1,0 +1,373 @@
+{\rtf1 \ansi \deff0
+
+@{\footnote ------- definice fontù --------- }
+
+{\fonttbl 
+{\f0 \fswiss MS San Serif CE;}
+}
+
+@{\footnote ------- definice barev --------- }
+
+{\colortbl
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red192\green192\blue192;
+\red128\green128\blue128;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+
+@{\footnote Použití barev:
+	0 - èerná
+	1 - tmavì èervená
+	2 - tmavì zelená
+	3 - hnìdá
+	4 - tmavì modrá
+	5 - tmavì fialová
+	6 - tmavì modrozelená
+	7 - šedá
+	8 - tmavì šedá
+	9 - èervená
+	10 - zelená
+	11 - žlutá
+	12 - modrá
+	13 - fialová
+	14 - modrozelená
+	15 - bílá
+}
+
+#{\footnote 20084}
+#{\footnote 20635}
+#{\footnote 20098}
+#{\footnote 20633}
+#{\footnote 20105}
+#{\footnote 20634}
+${\footnote Výpoèty}
++{\footnote 1}
+K{\footnote výpoèty;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Výpoèty\par
+\pard \plain \cf0 \fs20
+{\uldb Stavební prvky programu}{\v Stavební prvky programu}\par
+\par
+{\uldb \{bmc IDF20016.bmp\}\tab èíselná konstanta}{\v 20016} \par
+{\uldb \{bmc IDF20085.bmp\}\tab aritmetické operace}{\v 20085} \par
+{\uldb \{bmc IDF20086.bmp\}\tab funkce}{\v 20086} \par
+{\uldb \{bmc IDF20087.bmp\}\tab porovnání}{\v 20087} \par
+{\uldb \{bmc IDF20088.bmp\}\tab logické operace}{\v 20088} \par
+{\uldb \{bmc IDF20732.bmp\}\tab bitové operace}{\v 20732} \par
+{\uldb \{bmc IDF20112.bmp\}\tab úhel, smìr}{\v 20112} \par
+\{bmc IDF20635.bmp\}\tab \b \i èíselná konstanta -1 \i0 \b0 \par
+\{bmc IDF20098.bmp\}\tab \b \i Ludolfovo èíslo \i0 \b0 \par
+\{bmc IDF20633.bmp\}\tab \b \i 2*Ludolfovo èíslo (= úhel 360 stupòù) \i0 \b0 \par
+\{bmc IDF20105.bmp\}\tab \b \i Eulerova konstanta \i0 \b0 \par
+\{bmc IDF20634.bmp\}\tab \b \i vzdálenost 1 grafického bodu (= 1/32) \i0 \b0 \par
+\page
+
+#{\footnote 20016}
+#{\footnote 20017}
+#{\footnote 20018}
+#{\footnote 20019}
+#{\footnote 20020}
+#{\footnote 20021}
+#{\footnote 20022}
+#{\footnote 20023}
+#{\footnote 20024}
+#{\footnote 20025}
+#{\footnote 20026}
+#{\footnote 20027}
+#{\footnote 20010}
+#{\footnote 20028}
+${\footnote Èíselná konstanta}
++{\footnote 1}
+K{\footnote èíselná konstanta;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20016.bmp\} Èíselná konstanta\par
+\pard \plain \cf0 \fs20
+{\uldb Výpoèty}{\v 20084}\par
+\par
+\{bmc IDF20016.bmp\} \b \i èíselná konstanta \i0 \b0 \par
+\tab \{bmc IDF20017.bmp\} \b \i èíslice 0 \i0 \b0 \par
+\tab \{bmc IDF20018.bmp\} \b \i èíslice 1 \i0 \b0 \par
+\tab \{bmc IDF20019.bmp\} \b \i èíslice 2 \i0 \b0 \par
+\tab \{bmc IDF20020.bmp\} \b \i èíslice 3 \i0 \b0 \par
+\tab \{bmc IDF20021.bmp\} \b \i èíslice 4 \i0 \b0 \par
+\tab \{bmc IDF20022.bmp\} \b \i èíslice 5 \i0 \b0 \par
+\tab \{bmc IDF20023.bmp\} \b \i èíslice 6 \i0 \b0 \par
+\tab \{bmc IDF20024.bmp\} \b \i èíslice 7 \i0 \b0 \par
+\tab \{bmc IDF20025.bmp\} \b \i èíslice 8 \i0 \b0 \par
+\tab \{bmc IDF20026.bmp\} \b \i èíslice 9 \i0 \b0 \par
+\tab \{bmc IDF20027.bmp\} \b \i desetinná teèka \i0 \b0 \par
+\tab \{bmc IDF20010.bmp\} \b \i záporné znaménko \i0 \b0 \par
+\tab \{bmc IDF20028.bmp\} \b \i exponent \i0 \b0 \par
+\par
+Èíselnou konstantu lze použít všude tam, kde je oèekáván èíselný výraz. Èíselnou konstantu lze zadat dvìma zpùsoby. První možností je sestavení èísla z prvkù èíslic 0 až 9, desetinné teèky, znaménka a exponentu. Èíslo se zadává stejnì jako v bìžném textovém zápisu s tím rozdílem, že zápis probíhá skládáním prvkù shora dolù. Mantisová èást èísla mùže mít až 15 èíslic, exponent mùže být v rozsahu -308 až +308.\par
+\par
+Druhou možností zadání je zápis èíselného výrazu pøímo do textu popisu prvku èíselné konstanty. Aby se tento zpùsob zápisu uplatnil, nesmí konstanta obsahovat žádný prvek výše uvedeného zpùsobu zápisu. Za zápisem èísla mùže být uveden jakýkoliv text.\par
+\par
+Pøi zadání èísla jako text popisu prvku je možné uvedením znaku \b $ \b0 (znak dolaru) pøed èíslem zapsat èíslo v hexadecimálním tvaru (šestnáctková soustava). Napø. zápis \b $1F \b0 odpovídá èíslu \b 31\b0 . Podobnì uvedením znaku \b % \b0 (znak procenta) je možné zadat èíslo v binárním tvaru (dvojková soustava). Napø. zápis \b %1001 \b0 odpovídá èíslu \b 9\b0 .\par
+\par
+Prvky èíslic 0 až 9 lze použít v programu samostatnì jako èíselné konstanty.\par
+\page
+
+#{\footnote 20085}
+#{\footnote 20039}
+#{\footnote 20040}
+#{\footnote 20041}
+#{\footnote 20042}
+#{\footnote 20089}
+#{\footnote 20111}
+${\footnote Aritmetické operace}
++{\footnote 1}
+K{\footnote aritmetické operace;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20085.bmp\} Aritmetické operace\par
+\pard \plain \cf0 \fs20
+{\uldb Výpoèty}{\v 20084}\par
+\par
+\{bmc IDF20039.bmp\} \b \i souèet \i0 \b0 \par
+\{bmc IDF20040.bmp\} \b \i rozdíl \i0 \b0 \par
+\{bmc IDF20041.bmp\} \b \i násobek \i0 \b0 \par
+\{bmc IDF20042.bmp\} \b \i podíl \i0 \b0 \par
+\{bmc IDF20089.bmp\} \b \i modulo \i0 \b0 \par
+\{bmc IDF20111.bmp\} \b \i mocnina \i0 \b0 \par
+\par
+Aritmetické operace slouží k provádìní výpoètù èíselných výrazù. Jako parametry operátoru lze uvést jeden nebo více èíselných výrazù. Operace s operandy jsou provádìny postupnì shora dolù, pøièemž výsledek výpoètu dvou operandù se použije jako první operand pro následující výpoèet. Zvláštní význam má zadání pouze jednoho operandu. Operátor rozdílu navrátí pro jeden operand jeho zápornou hodnotu, operátor podílu navrátí pøevrácenou hodnotu operandu.\par
+\par
+Operátor modulo poèítá zbytek po dìlení prvního (kladného) operandu druhým. Napø. výraz \i 8 mod 3 \i0 navrátí jako výsledek výpoètu hodnotu \i 2 \i0 (= 8 - 3 - 3). Pro záporná èísla je použit doplnìk operandu, napø. \i -8 mod 3 \i0 navrátí \i 1 \i0 (= 3 - (8 mod 3) = -8 + 3 + 3 + 3). Operace se projeví jako zarovnání èísla do intervalu 0 až druhý_operand, to lze využít napø. pøi normalizaci úhlù.\par
+\page
+
+#{\footnote 20086}
+#{\footnote 20104}
+#{\footnote 20424}
+#{\footnote 20102}
+#{\footnote 20101}
+#{\footnote 20099}
+#{\footnote 20100}
+#{\footnote 20090}
+#{\footnote 20091}
+#{\footnote 20092}
+#{\footnote 20093}
+#{\footnote 20094}
+#{\footnote 20095}
+#{\footnote 20096}
+#{\footnote 20097}
+#{\footnote 20106}
+#{\footnote 20107}
+#{\footnote 20108}
+#{\footnote 20109}
+#{\footnote 20110}
+#{\footnote 20103}
+#{\footnote 20683}
+#{\footnote 20684}
+#{\footnote 20886}
+#{\footnote 20887}
+#{\footnote 20888}
+#{\footnote 20889}
+${\footnote Funkce}
++{\footnote 1}
+K{\footnote funkce;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20086.bmp\} Funkce\par
+\pard \plain \cf0 \fs20
+{\uldb Výpoèty}{\v 20084}\par
+\par
+\{bmc IDF20104.bmp\} \b \i náhodné èíslo (0 <= x < 1) \i0 \b0 \par
+\par
+Náhodné èíslo navrací hodnotu 0 až zadané èíslo, bez zadání rozsahu navrací hodnotu 0 až 1. Interval možných hodnot náhodného èísla zahrnuje nulu, ale nezahrnuje koncovou hodnotu. Napø. pro implicitní interval 0 až 1 mùže výsledné náhodné èíslo dosáhnout hodnoty 0, ale nikdy nedosáhne hodnoty 1, èíslo bude vždy maximálnì tìsnì pod hodnotou 1.\par
+\par
+\{bmc IDF20424.bmp\} \b \i druhá mocnina \i0 \b0 \par
+\{bmc IDF20102.bmp\} \b \i druhá odmocnina \i0 \b0 \par
+\{bmc IDF20101.bmp\} \b \i absolutní hodnota \i0 \b0 \par
+\{bmc IDF20099.bmp\} \b \i celoèíselná èást \i0 \b0 \par
+\{bmc IDF20100.bmp\} \b \i desetinná èást \i0 \b0 \par
+\{bmc IDF20683.bmp\} \b \i inkrementace \i0 \b0 (pøiète 1)\par
+\{bmc IDF20684.bmp\} \b \i dekrementace \i0 \b0 (odeète 1)\par
+\par
+Funkce rozdìlení èísla na celoèíselnou a desetinnou èást nezávisí na znaménku, int(-x) = -int(x).\par
+\par
+\{bmc IDF20090.bmp\} \b \i sinus \i0 \b0 \par
+\{bmc IDF20091.bmp\} \b \i cosinus \i0 \b0 \par
+\{bmc IDF20092.bmp\} \b \i tangens \i0 \b0 \par
+\{bmc IDF20093.bmp\} \b \i cotangens \i0 \b0 \par
+\{bmc IDF20094.bmp\} \b \i arcus sinus \i0 \b0 \par
+\{bmc IDF20095.bmp\} \b \i arcus cosinus \i0 \b0 \par
+\{bmc IDF20096.bmp\} \b \i arcus tangens \i0 \b0 \par
+\{bmc IDF20097.bmp\} \b \i arcus cotangens \i0 \b0 \par
+\{bmc IDF20106.bmp\} \b \i pøevod stupòù na radiány \i0 \b0 \par
+\{bmc IDF20107.bmp\} \b \i pøevod radiánù na stupnì \i0 \b0 \par
+\par
+Výpoèty goniometrických funkcí se provádìjí v radiánech. Je-li požadován výpoèet ve stupních, je možné použít funkce pro pøevod mezi stupni a radiány.\par
+\par
+\{bmc IDF20108.bmp\} \b \i dekadický logaritmus \i0 \b0 \par
+\{bmc IDF20109.bmp\} \b \i pøirozený logaritmus \i0 \b0 \par
+\{bmc IDF20110.bmp\} \b \i pøirozený exponent \i0 \b0 \par
+\{bmc IDF20103.bmp\} \b \i faktoriál \i0 \b0 \par
+\par
+Výpoèet faktoriálu se provádí pro argument zaokrouhlený na nejbližší celoèíselnou hodnotu. Platné hodnoty argumentu faktoriálu jsou v rozsahu -170 až +170. Pro záporné hodnoty argumentu je výsledek výpoètu pro liché èíslo záporný, pro sudé èíslo kladný (lichý nebo sudý poèet operací násobení).\par
+\par
+\{bmc IDF20886.bmp\} \b \i vzdálenost bodu \i0 \b0 \par
+\tab \{bmc IDF20888.bmp\} \b \i souøadnice X bodu \i0 \b0 \par
+\tab \{bmc IDF20889.bmp\} \b \i souøadnice Y bodu \i0 \b0 \par
+\par
+Funkce \b \i vzdálenost bodu \i0 \b0 slouží k výpoètu vzdálenosti bodu od poèátku souøadného systému nebo vzájemné vzdálenosti dvou bodù. Jako parametry se zadávají souøadnice bodu nebo rozdíly souøadnic dvou bodù.\par
+\par
+\{bmc IDF20887.bmp\} \b \i úhel bodu \i0 \b0 \par
+\tab \{bmc IDF20888.bmp\} \b \i souøadnice X bodu \i0 \b0 \par
+\tab \{bmc IDF20889.bmp\} \b \i souøadnice Y bodu \i0 \b0 \par
+\par
+Funkce \b \i úhel bodu \i0 \b0 slouží k výpoètu úhlu bodu od osy X souøadného systému nebo úhlu smìru z jednoho bodu do druhého. Jako parametry se zadávají souøadnice bodu nebo rozdíly souøadnic dvou bodù.\par
+\page
+
+#{\footnote 20087}
+#{\footnote 20029}
+#{\footnote 20030}
+#{\footnote 20033}
+#{\footnote 20034}
+#{\footnote 20031}
+#{\footnote 20032}
+${\footnote Porovnání}
++{\footnote 1}
+K{\footnote porovnání;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20087.bmp\} Porovnání\par
+\pard \plain \cf0 \fs20
+{\uldb Výpoèty}{\v 20084}\par
+\par
+\{bmc IDF20029.bmp\} \b \i je rovno \i0 \b0 \par
+\{bmc IDF20030.bmp\} \b \i není rovno \i0 \b0 \par
+\{bmc IDF20033.bmp\} \b \i je vìtší než \i0 \b0 \par
+\{bmc IDF20034.bmp\} \b \i je menší než \i0 \b0 \par
+\{bmc IDF20031.bmp\} \b \i je vìtší nebo rovno \i0 \b0 \par
+\{bmc IDF20032.bmp\} \b \i je menší nebo rovno \i0 \b0 \par
+\par
+Operátory porovnání slouží k porovnávání èíselných výrazù. Jako parametry operátoru lze uvést jeden nebo více èíselných výrazù, výstupem operátoru je logická hodnota. Porovnání operandù je provádìno postupnì shora dolù vždy mezi dvìma sousedními operandy. Operace porovnání je splnìna, je-li splnìno porovnání mezi všemi sousedními operandy. Zvláštní význam má uvedení pouze jednoho operandu. V tom pøípadì se operand porovnává s nulou, tj. jakoby byl druhým operandem výraz s hodnotou 0.\par
+\page
+
+#{\footnote 20088}
+#{\footnote 20065}
+#{\footnote 20066}
+#{\footnote 20035}
+#{\footnote 20036}
+#{\footnote 20037}
+#{\footnote 20038}
+${\footnote Logické operace}
++{\footnote 1}
+K{\footnote logické operace;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20088.bmp\} Logické operace\par
+\pard \plain \cf0 \fs20
+{\uldb Výpoèty}{\v 20084}\par
+\par
+\{bmc IDF20065.bmp\} \b \i ano \i0 \b0 \par
+\{bmc IDF20066.bmp\} \b \i ne \i0 \b0 \par
+\par
+Prvky \b \i ano \i0 \b0 a \b \i ne \i0 \b0 jsou logické konstanty a pøedstavují pøíznaky platnosti nebo neplatnosti logického výrazu.\par
+\par
+\{bmc IDF20035.bmp\} \b \i a souèasnì \i0 \b0 \par
+\par
+Logický operátor \b \i a souèasnì \i0 \b0 navrací pøíznak platnosti, jsou-li platné všechny logické výrazy zadané jako parametry (lze zadat 2 a více výrazù). Je-li nìkterý z výrazù neplatný, je i výsledek logické operace neplatný.\par
+\par
+\{bmc IDF20036.bmp\} \b \i nebo \i0 \b0 \par
+\par
+Logický operátor \b \i nebo \i0 \b0 navrací pøíznak platnosti, je-li platný alespoò jeden z logických výrazù zadaný jako parametr (lze zadat 2 a více výrazù). Jsou-li všechny výrazy neplatné, je i výsledek logické operace neplatný.\par
+\par
+\{bmc IDF20037.bmp\} \b \i buï anebo (výhradní nebo) \i0 \b0 \par
+\par
+Logický operátor \b \i buï anebo \i0 \b0 navrací pøíznak platnosti, je-li právì jeden ze dvou logických výrazù platný. Jsou-li oba výrazy neplatné nebo jsou naopak oba platné, je výsledek logické operace neplatný. Jako parametry operátoru lze zadat 2 a více výrazù, výrazy se vyhodnocují postupnì shora dolù, výsledek operace dvou operandù se použije jako operand pro další operaci. Následkem toho bude výsledek logické operace platný, bude-li platný lichý poèet operandù, pro sudý poèet platností operandù bude výsledek neplatný.\par
+\par
+\{bmc IDF20038.bmp\} \b \i neplatí-li, že \i0 \b0 \par
+\par
+Logický operátor \b \i neplatí-li, že \i0 \b0 je logickou negací. Jako parametr je zadán jeden logický výraz, výsledkem logické operace bude negace platnosti logického výrazu.\par
+\par
+\par
+\i \b Poznámka: \b0 Logické operátory "a souèasnì" a "nebo" používají tzv. zrychlené vyhodnocování. Je-li bìhem vyhodnocování logických výrazù výsledek logické operace zøejmý, nejsou již další výrazy vyhodnocovány. To se bìžnì nijak neprojeví vyjma pøípadù, kdy je souèástí logických výrazù funkce navracející logickou hodnotu, nebo se tato funkce nemusí provést. Zkušení programátoøi této skuteènosti naopak využívají k zablokování provedení funkce, pokud nìkterá z pøedešlých funkcí navrátila chybový výsledek operace. \i0 \par
+\page
+
+#{\footnote 20732}
+#{\footnote 20733}
+#{\footnote 20734}
+#{\footnote 20735}
+#{\footnote 20736}
+#{\footnote 20737}
+#{\footnote 20738}
+#{\footnote 20739}
+${\footnote Bitové operace}
++{\footnote 1}
+K{\footnote bitové operace;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20732.bmp\} Bitové operace\par
+\pard \plain \cf0 \fs20
+{\uldb Výpoèty}{\v 20084}\par
+\par
+Bitové operace jsou operace provádìné s èísly o rozsahu dvojslovo bez znaménka (celé èíslo 0 až 4294967295) na úrovni jednotlivých bitù èísla (tj. celkem 32 bitù na èíslo).\par
+\par
+\{bmc IDF20733.bmp\} \b \i bitový souèin AND \i0 \b0 \par
+\par
+Jednotlivé bity výsledku operace AND jsou nastaveny na hodnotu \b 1 \b0 v pøípadì, že pøíslušné bity všech operandù jsou nastaveny na hodnotu \b 1\b0 , jinak je bit vynulován (hodnota \b 0\b0 ).\par
+\par
+\{bmc IDF20734.bmp\} \b \i bitový souèet OR \i0 \b0 \par
+\par
+Jednotlivé bity výsledku operace OR jsou nastaveny na hodnotu \b 1 \b0 v pøípadì, že je nastaven na hodnotu \b 1 \b0 pøíslušný bit alespoò jednoho z operandù, jinak je bit vynulován (hodnota \b 0\b0 ).\par
+\par
+\{bmc IDF20735.bmp\} \b \i bitová inverze XOR \i0 \b0 \par
+\par
+Jednotlivé bity výsledku operace XOR jsou nastaveny na hodnotu \b 1 \b0 v pøípadì, že je nastaven na hodnotu \b 1 \b0 pøíslušný bit lichého poètu operandù, jinak je bit vynulován (hodnota \b 0\b0 ). Jinak øeèeno - bit \b 1 \b0 každého operandu "pøeklopí" bit výsledku operace, bit \b 0 \b0 výsledek operace neovlivní.\par
+\par
+\{bmc IDF20736.bmp\} \b \i bitový doplnìk NOT \i0 \b0 \par
+\par
+Jednotlivé bity výsledku operace NOT jsou nastaveny na hodnotu \b 1 \b0 v pøípadì, že \i \b není \b0 \i0 nastaven na hodnotu \b 1 \b0 pøíslušný bit operandu, jinak je bit vynulován (hodnota \b 0\b0 ). Jinak øeèeno - hodnota každého bitu se "pøeklopí".\par
+\par
+\{bmc IDF20737.bmp\} \b \i maximální bitové èíslo (dvojslovo) \i0 \b0 \par
+\par
+Hodnota maximálního bitového èísla je 4294967295 (hexadecimálnì $FFFFFFFF).\par
+\par
+\{bmc IDF20738.bmp\} \b \i bitová rotace vlevo \i0 \b0 \par
+\par
+Bitová rotace vlevo zajistí posun všech bitù operandu o jednu pozici k vyšším bitùm s pøenosem nejvyššího bitu do nejnižšího. Pro èísla 2147483647 (tj. $7FFFFFFF) a menší odpovídá operace rotace vlevo operaci zdvojnásobení èísla.\par
+\par
+\{bmc IDF20739.bmp\} \b \i bitová rotace vpravo \i0 \b0 \par
+\par
+Bitová rotace vpravo zajistí posun všech bitù operandu o jednu pozici k nižším bitùm s pøenosem nejnižšího bitu do nejvyššího. Pro sudá èísla odpovídá operace rotace vpravo operaci vydìlení èísla na polovinu.\par
+\page
+
+#{\footnote 20112}
+#{\footnote 20113}
+#{\footnote 20114}
+#{\footnote 20115}
+#{\footnote 20116}
+#{\footnote 20117}
+#{\footnote 20118}
+#{\footnote 20119}
+#{\footnote 20120}
+${\footnote Úhel, smìr}
++{\footnote 1}
+K{\footnote úhel, smìr;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20112.bmp\} Úhel, smìr\par
+\pard \plain \cf0 \fs20
+{\uldb Výpoèty}{\v 20084}\par
+\par
+\{bmc IDF20113.bmp\} \b \i vpravo (0 pi, tj. 0 stupòù) \i0 \b0 \par
+\{bmc IDF20114.bmp\} \b \i vpravo nahoru (1/4 pi, tj. 45 stupòù) \i0 \b0 \par
+\{bmc IDF20115.bmp\} \b \i nahoru (1/2 pi, tj. 90 stupòù) \i0 \b0 \par
+\{bmc IDF20116.bmp\} \b \i vlevo nahoru (3/4 pi, tj. 135 stupòù) \i0 \b0 \par
+\{bmc IDF20117.bmp\} \b \i vlevo (1 pi, tj. 180 stupòù) \i0 \b0 \par
+\{bmc IDF20118.bmp\} \b \i vlevo dolù (1 1/4 pi, tj. 225 stupòù) \i0 \b0 \par
+\{bmc IDF20119.bmp\} \b \i dolù (1 1/2 pi, tj. 270 stupòù) \i0 \b0 \par
+\{bmc IDF20120.bmp\} \b \i vpravo dolù (1 3/4 pi, tj. 315 stupòù) \i0 \b0 \par
+\par
+Prvky úhlu jsou èíselné konstanty, pøedstavující úhel (smìr) vyjádøený v radiánech (plný úhel 360 stupòù je 2*pi, tj. pøibližnì 6.28). Prvky úhlu lze používat napø. jako parametr goniometrických funkcí èi jako parametr pro nastavení smìru sprajtu (napø. Petøíka èi Lucky).\par
+\page
+
+}

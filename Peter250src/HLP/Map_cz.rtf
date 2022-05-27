@@ -1,0 +1,410 @@
+{\rtf1 \ansi \deff0
+
+@{\footnote ------- definice fontù --------- }
+
+{\fonttbl 
+{\f0 \fswiss MS San Serif CE;}
+}
+
+@{\footnote ------- definice barev --------- }
+
+{\colortbl
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red192\green192\blue192;
+\red128\green128\blue128;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+
+@{\footnote Použití barev:
+	0 - èerná
+	1 - tmavì èervená
+	2 - tmavì zelená
+	3 - hnìdá
+	4 - tmavì modrá
+	5 - tmavì fialová
+	6 - tmavì modrozelená
+	7 - šedá
+	8 - tmavì šedá
+	9 - èervená
+	10 - zelená
+	11 - žlutá
+	12 - modrá
+	13 - fialová
+	14 - modrozelená
+	15 - bílá
+}
+
+#{\footnote 20548}
+#{\footnote 20549}
+#{\footnote 20550}
+${\footnote Plocha}
++{\footnote 1}
+K{\footnote plocha;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Plocha\par
+\pard \plain \cf0 \fs20
+{\uldb Stavební prvky programu}{\v Stavební prvky programu}\par
+\par
+Plocha je matice pøedmìtù. {\uldb Hlavní plocha}{\v Spoleèné promìnné a funkce} je zobrazena v oknì jako {\uldb vrstva pøedmìtù}{\v Vrstvy}.\par
+\par
+{\uldb \{bmc IDF20249.bmp\}\tab okraj plochy}{\v 20249}\par
+{\uldb \{bmc IDF20240.bmp\}\tab shodnost pøedmìtù}{\v 20240}\par
+\{bmc IDF20549.bmp\}\tab \b \i šíøka plochy \i0 \b0 \par
+\{bmc IDF20550.bmp\}\tab \b \i výška plochy \i0 \b0 \par
+\par
+Prvky \b \i šíøka plochy \i0 \b0 a \b \i výška plochy \i0 \b0 navrací rozmìry plochy zadané jako parametr. Není-li zadána plocha, jsou navráceny rozmìry hlavní plochy.\par
+\par
+{\uldb \{bmc IDF20638.bmp\}\tab celoobrazovkový režim}{\v 20638}\par
+{\uldb \{bmc IDF20055.bmp\}\tab plocha - rozšíøení}{\v 20055}\par
+{\uldb \{bmc IDF20241.bmp\}\tab sprajty - rozšíøení}{\v 20241}\par
+\page
+
+#{\footnote 20249}
+${\footnote Okraj plochy}
++{\footnote 1}
+K{\footnote okraj plochy;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20249.bmp\} Okraj plochy\par
+\pard \plain \cf0 \fs20
+{\uldb Plocha}{\v 20548}\par
+\par
+Prvek \b \i okraj plochy \i0 \b0 je konstanta typu pøedmìt. Používá se k {\uldb testu}{\v 20240} neplatnosti pøedmìtu, napø. zda Petøík {\uldb stojí pøed}{\v 20076} okrajem plochy. Pøedmìt okraje plochy lze uchovávat v promìnné pøedmìtù jako jiné pøedmìty, na rozdíl od bìžných pøedmìtù se neukládá do plochy.\par
+\page
+
+#{\footnote 20240}
+${\footnote Shodnost pøedmìtù}
++{\footnote 1}
+K{\footnote shodnost pøedmìtù;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20240.bmp\} Shodnost pøedmìtù\par
+\pard \plain \cf0 \fs20
+{\uldb Plocha}{\v 20548}\par
+\par
+Prvek \b \i shodnost pøedmìtù \i0 \b0 slouží k porovnání pøedmìtù. Nejsou pøitom porovnávány obsahy obrázkù pøedmìtù, ale pouze to, zda se jedná o shodný datový objekt typu pøedmìt. Lze zadat jeden nebo více pøedmìtù. Porovnání probíhá shora dolù. Prvek navrací logický pøíznak platnosti v pøípadì, že všechny pøedmìty jsou shodné. Zvláštní pøípad je porovnání jednoho pøedmìtu. Pøedmìt je porovnáván s prázdným pøedmìtem napø. pro pøípad testu, zda byl naèten ze souboru platný pøedmìt. Stejný úèinek má porovnání s {\uldb okrajem plochy}{\v 20249}.\par
+\page
+
+#{\footnote 20638}
+${\footnote Celoobrazovkový režim}
++{\footnote 1}
+K{\footnote celoobrazovkový režim;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20638.bmp\} Celoobrazovkový režim\par
+\pard \plain \cf0 \fs20
+{\uldb Plocha}{\v 20548}\par
+\par
+Pøíkaz \b \i celoobrazovkový režim \i0 \b0 slouží k zapnutí nebo vypnutí celoobrazovkového režimu displeje. V tomto módu se program nezobrazí v oknì, ale pøes celou obrazovku. Displej se pøitom pøepne na videomód, který co nejlépe vyhovuje rozmìrùm {\uldb hlavní plochy}{\v Spoleèné promìnné a funkce}. Hlavní pøedností celoobrazovkového režimu je vyšší rychlost obsluhy grafiky mimo jiné díky pøepnutí displeje do módu s nižším rozlišením (namísto zvìtšení okna pøes celou obrazovku).\par
+\par
+Jako parametr pøíkazu se zadává logický pøíznak udávající, zda má být celoobrazovkový režim zapnut nebo vypnut. Bez uvedení parametru zpùsobí pøíkaz pøepnutí do opaèného stavu. Stejný úèinek má pøepnutí pomocí kombinace kláves \b \i Alt+Enter\i0 \b0 . Pomocí tìchto kláves lze program vytvoøený v systému Petr kdykoliv pøepínat mezi celoobrazovkovým a oknovým režimem.\par
+\par
+Podmínkou celoobrazovkového režimu je nainstalovaný ovladaè DirectX. U Windows 98 je tento ovladaè již standardní souèástí systému, takže není nutná jeho instalace. Nebude-li ovladaè DirectX nainstalován, program bude pracovat bìžným zpùsobem v oknovém režimu. Celoobrazovkový režim není podporován pro Windows NT.\par
+\par
+Rozlišení displeje v celoobrazovkovém režimu závisí pøedevším na velikosti hlavní plochy. Z dostupných videomódù poèítaèe je zvolen videomód s rozlišením shodným nebo nejbližším vyšším podle velikosti hlavní plochy. Maximálnì dosažitelné rozlišení displeje závisí na videokartì v poèítaèi a na pøipojeném monitoru.\par
+\par
+\b \cf12 Doporuèené videomódy: \cf0 \b0 \par
+\tab \b 20 x 12 \b0 políèek, tj. \b 640 x 400 \b0 bodù (èasto, ale ne vždy, podporovaný videomód)\par
+\tab \b 20 x 15 \b0 políèek, tj. \b 640 x 480 \b0 bodù (základní videomód u všech videokaret)\par
+\tab \b 25 x 18 \b0 políèek, tj. \b 800 x 600 \b0 bodù (podporován všemi videokartami vèetnì notebookù)\par
+\tab \b 32 x 24 \b0 políèek, tj. \b 1024 x 768 \b0 bodù (maximální videomód pro monitory 14")\par
+\tab \b 36 x 27 \b0 políèek, tj. \b 1152 x 864 \b0 bodù (ménì obvyklý videomód)\par
+\tab \b 40 x 32 \b0 políèek, tj. \b 1280 x 1024 \b0 bodù (maximální videomód pro monitory 15")\par
+\tab \b 50 x 32 \b0 políèek, tj. \b 1600 x 1024 \b0 bodù (nepøíliš bìžný videomód)\par
+\tab \b 50 x 37 \b0 políèek, tj. \b 1600 x 1200 \b0 bodù (maximální videomód pro monitory 17")\par
+\par
+Zobrazení plochy je pøizpùsobeno nastavenému videomódu, takže i pro nevyhovující videomódy program bude pracovat správnì, i když s ponìkud zhoršeným zobrazením. Zda je požadovaný videomód podporován, lze zjistit po zapnutí celoobrazovkového režimu pomocí funkce {\uldb šíøka okna}{\v 20598} pro {\uldb identifikaèní èíslo okna}{\v 20593} = -1.\par
+\par
+V celoobrazovkovém režimu se nezobrazuje horní lišta okna ani stavový øádek. Proto je potøeba pøi vývoji programu pamatovat na obsluhu ukonèení programu (klávesou Esc nebo kliknutím na tlaèítko). V pøípadì potøeby lze ukonèit program pomocí \b \i Alt+F4 \i0 \b0 pøíp. pøepnout do oknového režimu pomocí \b \i Alt+Enter\i0 \b0 .\par
+\page
+
+#{\footnote 20055}
+#{\footnote 20551}
+#{\footnote 20552}
+#{\footnote 20553}
+${\footnote Plocha - rozšíøení}
++{\footnote 1}
+K{\footnote plocha - rozšíøení;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20055.bmp\} Plocha - rozšíøení\par
+\pard \plain \cf0 \fs20
+{\uldb Plocha}{\v 20548}\par
+\par
+{\uldb \{bmc IDF20643.bmp\}\tab shodnost ploch}{\v 20643}\par
+{\uldb \{bmc IDF20746.bmp\}\tab nová plocha}{\v 20746}\par
+{\uldb \{bmc IDF20554.bmp\}\tab pøedmìt}{\v 20554}\par
+{\uldb \{bmc IDF20558.bmp\}\tab pøepínaè 1}{\v 20558}\par
+{\uldb \{bmc IDF20559.bmp\}\tab pøepínaè 2}{\v 20559}\par
+{\uldb \{bmc IDF20560.bmp\}\tab pøepínaè 3}{\v 20560}\par
+{\uldb \{bmc IDF20561.bmp\}\tab pøepínaè 4}{\v 20561}\par
+{\uldb \{bmc IDF20562.bmp\}\tab pøepínaè 5}{\v 20562}\par
+{\uldb \{bmc IDF20555.bmp\}\tab èíselná hodnota 1}{\v 20555}\par
+{\uldb \{bmc IDF20556.bmp\}\tab èíselná hodnota 2}{\v 20556}\par
+{\uldb \{bmc IDF20557.bmp\}\tab èíselná hodnota 3}{\v 20557}\par
+{\uldb \{bmc IDF20563.bmp\}\tab kopie výøezu plochy}{\v 20563}\par
+\page
+
+#{\footnote 20643}
+${\footnote Shodnost ploch}
++{\footnote 1}
+K{\footnote shodnost ploch;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20643.bmp\} Shodnost ploch\par
+\pard \plain \cf0 \fs20
+{\uldb Plocha - rozšíøení}{\v 20055}\par
+\par
+Prvek \b \i shodnost ploch \i0 \b0 slouží k porovnání ploch. Nejsou pøitom porovnávány obsahy ploch, ale pouze to, zda se jedná o shodný datový objekt typu plocha. Lze zadat jednu nebo více ploch. Porovnání probíhá shora dolù. Prvek navrací logický pøíznak platnosti v pøípadì, že všechny plochy jsou shodné. Zvláštní pøípad je porovnání jedné plochy. Plocha je porovnávána s prázdnou plochou napø. pro pøípad testu, zda byla naètena ze souboru platná plocha.\par
+\page
+
+#{\footnote 20746}
+#{\footnote 20747}
+#{\footnote 20748}
+${\footnote Nová plocha}
++{\footnote 1}
+K{\footnote nová plocha;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20746.bmp\} Nová plocha\par
+\pard \plain \cf0 \fs20
+{\uldb Plocha - rozšíøení}{\v 20055}\par
+\par
+\{bmc IDF20746.bmp\} \b \i nová plocha \i0 \b0 \par
+\tab \{bmc IDF20747.bmp\} \b \i šíøka plochy \i0 \b0 \par
+\tab \{bmc IDF20748.bmp\} \b \i výška plochy \i0 \b0 \par
+\par
+Funkce \b \i nová plocha \i0 \b0 slouží k vytvoøení nové plochy se zadanými rozmìry. Nová plocha je vyplnìna {\uldb prázdnými políèky}{\v Spoleèné promìnné a funkce}. Funkce je urèena pøedevším k nastavení libovolné velikosti okna programu zmìnou velikosti {\uldb hlavní plochy}{\v Spoleèné promìnné a funkce}.\par
+\page
+
+#{\footnote 20554}
+${\footnote Pøedmìt z plochy}
++{\footnote 1}
+K{\footnote pøedmìt z plochy;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20554.bmp\} Pøedmìt z plochy\par
+\pard \plain \cf0 \fs20
+{\uldb Plocha - rozšíøení}{\v 20055}\par
+\par
+\{bmc IDF20554.bmp\} \b \i pøedmìt \i0 \b0 \par
+\tab \{bmc IDF20553.bmp\} \b \i plocha \i0 \b0 \par
+\tab \{bmc IDF20551.bmp\} \b \i souøadnice X \i0 \b0 \par
+\tab \{bmc IDF20552.bmp\} \b \i souøadnice Y \i0 \b0 \par
+\par
+Funkce \b \i pøedmìt z plochy \i0 \b0 slouží k naètení pøedmìtu ze zadané plochy. Není-li zadána jako parametr žádná plocha, použije se implicitnì {\uldb hlavní plocha}{\v Spoleèné promìnné a funkce}. Na výstupu funkce je navrácen pøedmìt ze zadaných souøadnic nebo neplatný pøedmìt {\uldb okraj plochy}{\v 20249}, ukazují-li souøadnice mimo plochu.\par
+\page
+
+#{\footnote 20558}
+${\footnote Pøepínaè 1 z plochy}
++{\footnote 1}
+K{\footnote pøepínaè 1 z plochy;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20558.bmp\} Pøepínaè 1 z plochy\par
+\pard \plain \cf0 \fs20
+{\uldb Plocha - rozšíøení}{\v 20055}\par
+\par
+\{bmc IDF20558.bmp\} \b \i pøepínaè 1 \i0 \b0 \par
+\tab \{bmc IDF20553.bmp\} \b \i plocha \i0 \b0 \par
+\tab \{bmc IDF20551.bmp\} \b \i souøadnice X \i0 \b0 \par
+\tab \{bmc IDF20552.bmp\} \b \i souøadnice Y \i0 \b0 \par
+\par
+Funkce \b \i pøepínaè 1 z plochy \i0 \b0 slouží k naètení stavu pøepínaèe 1 ze zadané plochy. Není-li zadána jako parametr žádná plocha, použije se implicitnì {\uldb hlavní plocha}{\v Spoleèné promìnné a funkce}. Na výstupu funkce je navrácen logický pøíznak jako stav pøepínaèe.\par
+\page
+
+#{\footnote 20559}
+${\footnote Pøepínaè 2 z plochy}
++{\footnote 1}
+K{\footnote pøepínaè 2 z plochy;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20559.bmp\} Pøepínaè 2 z plochy\par
+\pard \plain \cf0 \fs20
+{\uldb Plocha - rozšíøení}{\v 20055}\par
+\par
+\{bmc IDF20559.bmp\} \b \i pøepínaè 2 \i0 \b0 \par
+\tab \{bmc IDF20553.bmp\} \b \i plocha \i0 \b0 \par
+\tab \{bmc IDF20551.bmp\} \b \i souøadnice X \i0 \b0 \par
+\tab \{bmc IDF20552.bmp\} \b \i souøadnice Y \i0 \b0 \par
+\par
+Funkce \b \i pøepínaè 2 z plochy \i0 \b0 slouží k naètení stavu pøepínaèe 2 ze zadané plochy. Není-li zadána jako parametr žádná plocha, použije se implicitnì {\uldb hlavní plocha}{\v Spoleèné promìnné a funkce}. Na výstupu funkce je navrácen logický pøíznak jako stav pøepínaèe.\par
+\page
+
+#{\footnote 20560}
+${\footnote Pøepínaè 3 z plochy}
++{\footnote 1}
+K{\footnote pøepínaè 3 z plochy;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20560.bmp\} Pøepínaè 3 z plochy\par
+\pard \plain \cf0 \fs20
+{\uldb Plocha - rozšíøení}{\v 20055}\par
+\par
+\{bmc IDF20560.bmp\} \b \i pøepínaè 3 \i0 \b0 \par
+\tab \{bmc IDF20553.bmp\} \b \i plocha \i0 \b0 \par
+\tab \{bmc IDF20551.bmp\} \b \i souøadnice X \i0 \b0 \par
+\tab \{bmc IDF20552.bmp\} \b \i souøadnice Y \i0 \b0 \par
+\par
+Funkce \b \i pøepínaè 3 z plochy \i0 \b0 slouží k naètení stavu pøepínaèe 3 ze zadané plochy. Není-li zadána jako parametr žádná plocha, použije se implicitnì {\uldb hlavní plocha}{\v Spoleèné promìnné a funkce}. Na výstupu funkce je navrácen logický pøíznak jako stav pøepínaèe.\par
+\page
+
+#{\footnote 20561}
+${\footnote Pøepínaè 4 z plochy}
++{\footnote 1}
+K{\footnote pøepínaè 4 z plochy;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20561.bmp\} Pøepínaè 4 z plochy\par
+\pard \plain \cf0 \fs20
+{\uldb Plocha - rozšíøení}{\v 20055}\par
+\par
+\{bmc IDF20561.bmp\} \b \i pøepínaè 4 \i0 \b0 \par
+\tab \{bmc IDF20553.bmp\} \b \i plocha \i0 \b0 \par
+\tab \{bmc IDF20551.bmp\} \b \i souøadnice X \i0 \b0 \par
+\tab \{bmc IDF20552.bmp\} \b \i souøadnice Y \i0 \b0 \par
+\par
+Funkce \b \i pøepínaè 4 z plochy \i0 \b0 slouží k naètení stavu pøepínaèe 4 ze zadané plochy. Není-li zadána jako parametr žádná plocha, použije se implicitnì {\uldb hlavní plocha}{\v Spoleèné promìnné a funkce}. Na výstupu funkce je navrácen logický pøíznak jako stav pøepínaèe.\par
+\page
+
+#{\footnote 20562}
+${\footnote Pøepínaè 5 z plochy}
++{\footnote 1}
+K{\footnote pøepínaè 5 z plochy;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20562.bmp\} Pøepínaè 5 z plochy\par
+\pard \plain \cf0 \fs20
+{\uldb Plocha - rozšíøení}{\v 20055}\par
+\par
+\{bmc IDF20562.bmp\} \b \i pøepínaè 5 \i0 \b0 \par
+\tab \{bmc IDF20553.bmp\} \b \i plocha \i0 \b0 \par
+\tab \{bmc IDF20551.bmp\} \b \i souøadnice X \i0 \b0 \par
+\tab \{bmc IDF20552.bmp\} \b \i souøadnice Y \i0 \b0 \par
+\par
+Funkce \b \i pøepínaè 5 z plochy \i0 \b0 slouží k naètení stavu pøepínaèe 5 ze zadané plochy. Není-li zadána jako parametr žádná plocha, použije se implicitnì {\uldb hlavní plocha}{\v Spoleèné promìnné a funkce}. Na výstupu funkce je navrácen logický pøíznak jako stav pøepínaèe.\par
+\page
+
+#{\footnote 20555}
+${\footnote Èíselná hodnota 1 z plochy}
++{\footnote 1}
+K{\footnote èíselná hodnota 1 z plochy;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20555.bmp\} Èíselná hodnota 1 z plochy\par
+\pard \plain \cf0 \fs20
+{\uldb Plocha - rozšíøení}{\v 20055}\par
+\par
+\{bmc IDF20555.bmp\} \b \i èíselná hodnota 1 \i0 \b0 (rozsah 0 až 1023) \par
+\tab \{bmc IDF20553.bmp\} \b \i plocha \i0 \b0 \par
+\tab \{bmc IDF20551.bmp\} \b \i souøadnice X \i0 \b0 \par
+\tab \{bmc IDF20552.bmp\} \b \i souøadnice Y \i0 \b0 \par
+\par
+Funkce \b \i èíselná hodnota 1 z plochy \i0 \b0 slouží k naètení stavu èíselné hodnoty 1 ze zadané plochy. Není-li zadána jako parametr žádná plocha, použije se implicitnì {\uldb hlavní plocha}{\v Spoleèné promìnné a funkce}. Na výstupu funkce je navrácena celoèíselná hodnota o rozsahu 0 až 1023 jako stav èíselné promìnné 1.\par
+\page
+
+#{\footnote 20556}
+${\footnote Èíselná hodnota 2 z plochy}
++{\footnote 1}
+K{\footnote èíselná hodnota 2 z plochy;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20556.bmp\} Èíselná hodnota 2 z plochy\par
+\pard \plain \cf0 \fs20
+{\uldb Plocha - rozšíøení}{\v 20055}\par
+\par
+\{bmc IDF20556.bmp\} \b \i èíselná hodnota 2 \i0 \b0 (rozsah 0 až 1023) \par
+\tab \{bmc IDF20553.bmp\} \b \i plocha \i0 \b0 \par
+\tab \{bmc IDF20551.bmp\} \b \i souøadnice X \i0 \b0 \par
+\tab \{bmc IDF20552.bmp\} \b \i souøadnice Y \i0 \b0 \par
+\par
+Funkce \b \i èíselná hodnota 2 z plochy \i0 \b0 slouží k naètení stavu èíselné hodnoty 2 ze zadané plochy. Není-li zadána jako parametr žádná plocha, použije se implicitnì {\uldb hlavní plocha}{\v Spoleèné promìnné a funkce}. Na výstupu funkce je navrácena celoèíselná hodnota o rozsahu 0 až 1023 jako stav èíselné promìnné 2.\par
+\page
+
+#{\footnote 20557}
+${\footnote Èíselná hodnota 3 z plochy}
++{\footnote 1}
+K{\footnote èíselná hodnota 3 z plochy;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20557.bmp\} Èíselná hodnota 3 z plochy\par
+\pard \plain \cf0 \fs20
+{\uldb Plocha - rozšíøení}{\v 20055}\par
+\par
+\{bmc IDF20557.bmp\} \b \i èíselná hodnota 3 \i0 \b0 (rozsah 0 až 127) \par
+\tab \{bmc IDF20553.bmp\} \b \i plocha \i0 \b0 \par
+\tab \{bmc IDF20551.bmp\} \b \i souøadnice X \i0 \b0 \par
+\tab \{bmc IDF20552.bmp\} \b \i souøadnice Y \i0 \b0 \par
+\par
+Funkce \b \i èíselná hodnota 3 z plochy \i0 \b0 slouží k naètení stavu èíselné hodnoty 3 ze zadané plochy. Není-li zadána jako parametr žádná plocha, použije se implicitnì {\uldb hlavní plocha}{\v Spoleèné promìnné a funkce}. Na výstupu funkce je navrácena celoèíselná hodnota o rozsahu 0 až 127 jako stav èíselné promìnné 3.\par
+\page
+
+#{\footnote 20563}
+#{\footnote 20564}
+#{\footnote 20565}
+#{\footnote 20566}
+#{\footnote 20567}
+#{\footnote 20568}
+${\footnote Kopie výøezu plochy}
++{\footnote 1}
+K{\footnote kopie výøezu plochy;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20563.bmp\} Kopie výøezu plochy\par
+\pard \plain \cf0 \fs20
+{\uldb Plocha - rozšíøení}{\v 20055}\par
+\par
+\{bmc IDF20563.bmp\} \b \i kopie výøezu plochy \i0 \b0 \par
+\tab \{bmc IDF20553.bmp\} \b \i cílová plocha \i0 \b0 \par
+\tab \{bmc IDF20551.bmp\} \b \i souøadnice X \i0 \b0 \par
+\tab \{bmc IDF20552.bmp\} \b \i souøadnice Y \i0 \b0 \par
+\tab \{bmc IDF20564.bmp\} \b \i plocha s výøezem \i0 \b0 \par
+\tab \{bmc IDF20565.bmp\} \b \i souøadnice X výøezu \i0 \b0 \par
+\tab \{bmc IDF20566.bmp\} \b \i souøadnice Y výøezu \i0 \b0 \par
+\tab \{bmc IDF20567.bmp\} \b \i šíøka výøezu \i0 \b0 \par
+\tab \{bmc IDF20568.bmp\} \b \i výška výøezu \i0 \b0 \par
+\par
+Funkce \b \i kopie výøezu plochy \i0 \b0 slouží ke kopii èásti z jedné plochy do jiné plochy. První parametr \b \i cílová plocha \i0 \b0 pøedstavuje cílovou plochu, do které má být výøez z plochy uložen. Není-li plocha zadána, použije se implicitnì {\uldb hlavní plocha}{\v Spoleèné promìnné a funkce}. Parametry \b \i souøadnice X \i0 \b0 a \b \i souøadnice Y \i0 \b0 udávají cílovou pozici, kam bude výøez plochy v cílové ploše uložen. \b \i Plocha s výøezem \i0 \b0 je zdrojová plocha, z které bude výøez naèítán. Není-li plocha zadána, použije se implicitnì hlavní plocha. Ostatní parametry definují pozici a rozmìry výøezu ve zdrojové ploše.\par
+\par
+Výstupem z funkce je plocha. Plochy použité jako parametry funkce nejsou funkcí ovlivnìny. Je-li potøeba kopii provést do hlavní plochy, je nutno výstup z této funkce pøiøadit promìnné hlavní plochy.\par
+\page
+
+#{\footnote 20241}
+#{\footnote 20570}
+#{\footnote 20571}
+#{\footnote 20572}
+#{\footnote 20573}
+#{\footnote 20574}
+#{\footnote 20575}
+${\footnote Sprajty - rozšíøení}
++{\footnote 1}
+K{\footnote sprajty - rozšíøení;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20241.bmp\} Sprajty - rozšíøení\par
+\pard \plain \cf0 \fs20
+{\uldb Plocha}{\v 20548}\par
+\par
+{\uldb \{bmc IDF20645.bmp\}\tab shodnost sprajtù}{\v 20645}\par
+\{bmc IDF20570.bmp\}\tab \b \i hromadný posun sprajtù ve smìru X \i0 \b0 \par
+\{bmc IDF20571.bmp\}\tab \b \i hromadný posun sprajtù ve smìru Y \i0 \b0 \par
+\par
+Pøíkazy \b \i hromadný posun sprajtù \i0 \b0 zpùsobí okamžitý pøesun sprajtù o zadaný pøírustek. Pøírustek mùže být jak kladné, tak i záporné èíslo. Pøi hromadném pøesunu se pøenastaví výchozí i cílová pozice pohybu sprajtù nezávisle na definici rychlosti pohybu sprajtù. Pohybující se sprajty po hromadném pøesunu pokraèují v pohybu pùvodním smìrem, pouze jsou posunuty o zadaný pøírustek. Prakticky se tato operace jeví, jakoby se posunulo okno pohledu na sprajty.\par
+\par
+\{bmc IDF20572.bmp\}\tab \b \i levý okraj okna sprajtù \i0 \b0 \par
+\{bmc IDF20573.bmp\}\tab \b \i dolní okraj okna sprajtù \i0 \b0 \par
+\{bmc IDF20574.bmp\}\tab \b \i pravý okraj okna sprajtù \i0 \b0 \par
+\{bmc IDF20575.bmp\}\tab \b \i horní okraj okna sprajtù \i0 \b0 \par
+\par
+Okno sprajtù urèuje èást okna, ve které jsou sprajty viditelné. Implicitnì jsou sprajty viditelné v celém oknì. Pøedefinováním okrajù okna sprajtù lze urèit èást plochy, ve které budou sprajty viditelné. To má význam pøedevším v pøípadì, kdy se v oknì zobrazuje výøez z vìtší plochy a souèástí okna mají být též tlaèítka k ovládání programu.\par
+\par
+\page
+
+#{\footnote 20645}
+${\footnote Shodnost sprajtù}
++{\footnote 1}
+K{\footnote shodnost sprajtù;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20645.bmp\} Shodnost sprajtù\par
+\pard \plain \cf0 \fs20
+{\uldb Sprajty - rozšíøení}{\v 20241}\par
+\par
+Prvek \b \i shodnost sprajtù \i0 \b0 slouží k porovnání sprajtù. Nejsou pøitom porovnávány obsahy sprajtù, ale pouze to, zda se jedná o shodný datový objekt typu sprajt. Lze zadat jeden nebo více sprajtù. Porovnání probíhá shora dolù. Prvek navrací logický pøíznak platnosti v pøípadì, že všechny sprajty jsou shodné. Zvláštní pøípad je porovnání jednoho sprajtu. Sprajt je porovnáván s prázdným sprajtem napø. pro pøípad testu, zda byl naèten ze souboru platný sprajt.\par
+\page
+
+}

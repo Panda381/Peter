@@ -1,0 +1,281 @@
+{\rtf1 \ansi \deff0
+
+@{\footnote ------- definice fontù --------- }
+
+{\fonttbl 
+{\f0 \fswiss MS San Serif CE;}
+}
+
+@{\footnote ------- definice barev --------- }
+
+{\colortbl
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red192\green192\blue192;
+\red128\green128\blue128;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+
+@{\footnote Použití barev:
+	0 - èerná
+	1 - tmavì èervená
+	2 - tmavì zelená
+	3 - hnìdá
+	4 - tmavì modrá
+	5 - tmavì fialová
+	6 - tmavì modrozelená
+	7 - šedá
+	8 - tmavì šedá
+	9 - èervená
+	10 - zelená
+	11 - žlutá
+	12 - modrá
+	13 - fialová
+	14 - modrozelená
+	15 - bílá
+}
+
+#{\footnote 20920}
+${\footnote Alpha Operation}
++{\footnote 1}
+K{\footnote Alpha Operation;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20920.bmp\} Alpha Operation\par
+\pard \plain \cf0 \fs20
+{\uldb Textures}{\v 20915}, {\uldb Color Operation}{\v 20917}\par
+\par
+When covering an object's surface with a texture the operation can be determined that will be executed between the texture and the object surface. The maximum number of operations and textures that can be set is 8. The active operation stage to be set is determined by the {\uldb stage}{\v 20916} element. It will assert itself for an {\uldb active object}{\v 20810}. The stage number permissible can be detected by reading the \b \i stage \i0 \b0 element.\par
+\par
+The \b \i alpha operation \i0 \b0 element defines the operation to be performed with the {\uldb alfa}{\v 20417} component. Similarly the operation with the color can be defined by means of the {\uldb color operation}{\v 20917} element. The alpha operation can assume following values:\par
+\par
+\b \i 1 \i0 \b0 \tab the operation stage and all following stages are switched off\par
+\b \i 2 \i0 \b0 \tab the operation output is the {\uldb first alpha argument}{\v 20921}\par
+\b \i 3 \i0 \b0 \tab the operation output is the {\uldb second alpha argument}{\v 20922}\par
+\b \i 4 \i0 \b0 \tab modulation, \i \b output = arg1 * arg2\i0 \par
+\b \i 5 \i0 \b0 \tab modulation 2x, \i \b output = arg1 * arg2 * 2\b0 \i0 \par
+\b \i 6 \i0 \b0 \tab modulation 4x, \i \b output = arg1 * arg2 * 4\b0 \i0 \par
+\b \i 7 \i0 \b0 \tab add, \i \b output = arg1 + arg2\b0 \i0 \par
+\b \i 8 \i0 \b0 \tab add signed, \i \b output = arg1 + arg2 - 0.5\b0 \i0 \par
+\b \i 9 \i0 \b0 \tab add signed 2x, \i \b output = (arg1 + arg2 - 0.5) * 2\b0 \i0 \par
+\b \i 10 \i0 \b0 \tab subtract, \i \b output = arg1 - arg2\b0 \i0 \par
+\b \i 11 \i0 \b0 \tab add smoothed, \i \b output = arg1+arg2 - arg1*arg2\b0 \i0 \par
+\b \i 12 \i0 \b0 \tab blend, alpha from color, \i \b output = arg1*(alpha) + arg2*(1-alpha)\b0 \i0 \par
+\b \i 13 \i0 \b0 \tab blend, alpha from texture, \i \b output = arg1*(alpha) + arg2*(1-alpha)\b0 \i0 \par
+\b \i 14 \i0 \b0 \tab blend, alpha from {\uldb factor}{\v 20927}, \i \b output = arg1*(alpha) + arg2*(1-alpha)\b0 \i0 \par
+\b \i 15 \i0 \b0 \tab blend, premultiplied alpha from texture, \i \b output = arg1 + arg2*(1-alpha)\b0 \i0 \par
+\b \i 16 \i0 \b0 \tab blend, alpha from result, \i \b output = arg1*(alpha) + arg2*(1-alpha)\b0 \i0 \par
+\b \i 17 \i0 \b0 \tab premodulate, modulate with next texture stage\par
+\par
+For stage 0 the modulation operation (code 4) is set as a default setting, the other stages being switched off (code 1).\par
+\par
+Not all operations are supported by every interface and videocard. The OpenGL interface enables to carry out the argument choice and modulation operations (operations 1 through 4) only, the argument can be the object color or texture. The alpha channel operations are ignored. The DirectX 5 interface supports, besides operations quoted for the OpenGL, the addition (7) operation. Operations 5, 6, 8 and 9 are replaced by operations 4 and 7. A full support of operations exists only for the DirectX 6 through DirectX 8, depending on whether the operations are supported by the videocard. If the desired operation is not supported by the videocard, then a better option can be the use of a software driver that supports most of the operations.\par
+\page
+
+#{\footnote 20921}
+${\footnote First Alpha Argument}
++{\footnote 1}
+K{\footnote First Alpha Argument;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20921.bmp\} First Alpha Argument\par
+\pard \plain \cf0 \fs20
+{\uldb Textures}{\v 20915}, {\uldb Second Alpha Argument}{\v 20922}\par
+\par
+The \i \b first alpha argument \b0 \i0 element defines the first argument for the {\uldb alpha operation}{\v 20920} of the {\uldb active operation stage}{\v 20916} of an {\uldb active object}{\v 20810}. This argument can assume the following values:\par
+\par
+\b \i 0 \i0 \b0 \tab basic (diffuse) {\uldb color}{\v 20826} of object\par
+\b \i 1 \i0 \b0 \tab result of previous operation stage\par
+\b \i 2 \i0 \b0 \tab texture\par
+\b \i 3 \i0 \b0 \tab {\uldb texture factor}{\v 20927}\par
+\b \i 4 \i0 \b0 \tab specular color (only DirectX 7 and 8)\par
+\par
+Modification factors (they are added to the argument code):\par
+\par
+\b \i 16 \i0 \b0 \tab complement, the value (1-arg) will be used\par
+\b \i 32 \i0 \b0 \tab replicate the alpha information to all color channels\par
+\par
+The default value of the first alpha argument is 2 (a texture) in all stages.\par
+\page
+
+#{\footnote 20922}
+${\footnote Second Alpha Argument}
++{\footnote 1}
+K{\footnote Second Alpha Argument;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20922.bmp\} Second Alpha Argument\par
+\pard \plain \cf0 \fs20
+{\uldb Textures}{\v 20915}, {\uldb First Alpha Argument}{\v 20921}\par
+\par
+The \i \b second alpha argument \b0 \i0 element defines the second argument for the {\uldb alpha operation}{\v 20920} of the {\uldb active operation stage}{\v 20916} of an {\uldb active object}{\v 20810}. This argument can assume the following values:\par
+\par
+\b \i 0 \i0 \b0 \tab basic (diffuse) {\uldb color}{\v 20826} of object\par
+\b \i 1 \i0 \b0 \tab result of previous operation stage\par
+\b \i 2 \i0 \b0 \tab texture\par
+\b \i 3 \i0 \b0 \tab {\uldb texture factor}{\v 20927}\par
+\b \i 4 \i0 \b0 \tab specular color (only DirectX 7 and 8)\par
+\par
+Modification factors (they are added to the argument code):\par
+\par
+\b \i 16 \i0 \b0 \tab complement, the value (1-arg) will be used\par
+\b \i 32 \i0 \b0 \tab replicate the alpha information to all color channels\par
+\par
+The default value of the second alpha argument is 1 (result of previous operation stage) in all stages.\par
+\page
+
+#{\footnote 20927}
+${\footnote Color of Texture Factor}
++{\footnote 1}
+K{\footnote Color of Texture Factor;Texture Factor;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20927.bmp\} Color of Texture Factor\par
+\pard \plain \cf0 \fs20
+{\uldb Textures}{\v 20915}\par
+\par
+The {\uldb texture operations}{\v 20917} make it possible to use the texture factor as one of the arguments. The texture factor is a color that can be set, like a usual {\uldb object color}{\v 20826}, by means of the {\uldb color constant}{\v 20301} or {\uldb compound color components to color}{\v 20417} elements. The texture factor is common for all {\uldb active object}{\v 20810} {\uldb stages}{\v 20916}.
+\page
+
+#{\footnote 20846}
+${\footnote Lighting}
++{\footnote 1}
+K{\footnote Lighting;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Lighting\par
+\pard \plain \cf0 \fs20
+{\uldb 3D Graphics}{\v 20788}\par
+\par
+\par
+{\uldb \{bmc IDF20847.bmp\}\tab create new light}{\v 20847}\par
+{\uldb \{bmc IDF20848.bmp\}\tab light color}{\v 20848}\par
+{\uldb \{bmc IDF20849.bmp\}\tab light type}{\v 20849}\par
+{\uldb \{bmc IDF20850.bmp\}\tab angle of light cone}{\v 20850}\par
+{\uldb \{bmc IDF20851.bmp\}\tab penumbra angle}{\v 20851}\par
+{\uldb \{bmc IDF20852.bmp\}\tab light range}{\v 20852}\par
+{\uldb \{bmc IDF20853.bmp\}\tab light intensity}{\v 20853}\par
+{\uldb \{bmc IDF20854.bmp\}\tab linear attenuation}{\v 20854}\par
+{\uldb \{bmc IDF20855.bmp\}\tab quadratic attenuation}{\v 20855}\par
+{\uldb \{bmc IDF20893.bmp\}\tab ambient light}{\v 20893}\par
+\page
+
+#{\footnote 20847}
+${\footnote Create New Light}
++{\footnote 1}
+K{\footnote Create New Light;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20847.bmp\} Create New Light\par
+\pard \plain \cf0 \fs20
+{\uldb Lighting}{\v 20846}\par
+\par
+By means of the \b \i create new light \i0 \b0 element a new light source can be created. The element will return the {\uldb identification number}{\v 20810} of the created light source like the elements devised for {\uldb creating objects}{\v 20903}. Like with other objects, all {\uldb transformations}{\v 20815} of light can be carried out.\par
+\page
+
+#{\footnote 20848}
+${\footnote Light Color}
++{\footnote 1}
+K{\footnote Light Color;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20848.bmp\} Light Color\par
+\pard \plain \cf0 \fs20
+{\uldb Lighting}{\v 20846}\par
+\par
+By means of the \b \i light color \i0 \b0 element it is possible to set the color (and the brightness) of an {\uldb active light}{\v 20810}. A color can be set by means of the {\uldb color constant}{\v 20301} and {\uldb compound color components to color}{\v 20417} elements. The color default setting is white. The light color determines how the {\uldb object's diffuse color}{\v 20826} will be lighted. In addition, the light intensity can be adjusted by the {\uldb light intensity}{\v 20853} element.\par
+\page
+
+#{\footnote 20849}
+${\footnote Light Type}
++{\footnote 1}
+K{\footnote Light Type;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20849.bmp\} Light Type\par
+\pard \plain \cf0 \fs20
+{\uldb Lighting}{\v 20846}\par
+\par
+By means of the \b \i light type \i0 \b0 element the type of {\uldb active light}{\v 20810} can be set. Three different light types can be used:\par
+\par
+\b \i 1 \i0 \b0 \tab point light (default)\par
+\b \i 2 \i0 \b0 \tab spot light\par
+\b \i 3 \i0 \b0 \tab directional light\par
+\par
+The point light (code 1) represents a point located in the space and shining uniformly in all directions. This is the default light type. The point light is dependent on the light coordinates, but it does not depend on its direction. Onto the point light, the {\uldb light range}{\v 20852} and {\uldb light attenuation}{\v 20854} settings may be applied, expressing the dependence on the distance.\par
+\par
+The spot light (code 2) represents a reflector. This is influenced by its position in the space, direction and all parameters used for the light setting. The spot light default direction is the positive Z axis.\par
+\par
+The directional light (code 3) is light having always the same direction independently of its position. The default direction corresponds the positive Z axis direction. The directional light resembles the sunlight or point light having a very distant source. With the directional light no parameters for setting the light may be applied. It is merely possible to change its direction and color. The predefined default light, having an {\uldb identification code}{\v 20810} of 2, is the directional light.\par
+\page
+
+#{\footnote 20850}
+${\footnote Angle of Light Cone}
++{\footnote 1}
+K{\footnote Angle of Light Cone;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20850.bmp\} Angle of Light Cone\par
+\pard \plain \cf0 \fs20
+{\uldb Lighting}{\v 20846}\par
+\par
+The \b \i angle of light cone \i0 \b0 element defines the angle of the {\uldb active light}{\v 20810} cone, if the light in question is the {\uldb spot light}{\v 20849}. The light cone is the inner part of the spot light cone, the outer part is limited by the {\uldb penumbra angle}{\v 20851}. The light cone angle is given in radians, the default setting being 1/4 pi.\par
+\page
+
+#{\footnote 20851}
+${\footnote Penumbra Angle}
++{\footnote 1}
+K{\footnote Penumbra Angle;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20851.bmp\} Penumbra Angle\par
+\pard \plain \cf0 \fs20
+{\uldb Lighting}{\v 20846}\par
+\par
+The \b \i penumbra angle \i0 \b0 element determines the penumbra angle of the {\uldb active light}{\v 20810} cone, if the light in question is the {\uldb spot light}{\v 20849}. The penumbra is the outer spot light cone. The inner part encloses the {\uldb light cone angle}{\v 20850}. If the penumbra angle is smaller than the light cone angle, then a light cone without any penumbra is used. The penumbra angle is expressed in radians, the default setting being 0.\par
+\page
+
+#{\footnote 20852}
+${\footnote Light Range}
++{\footnote 1}
+K{\footnote Light Range;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20852.bmp\} Light Range\par
+\pard \plain \cf0 \fs20
+{\uldb Lighting}{\v 20846}\par
+\par
+With the {\uldb point light and spot light}{\v 20849} the maximum range of the {\uldb active light}{\v 20810} can be set by the \b \i light range \i0 \b0 element. For the OpenGL the light range cannot be limited.\par
+\page
+
+#{\footnote 20853}
+#{\footnote 20854}
+#{\footnote 20855}
+${\footnote Light Attenuation}
++{\footnote 1}
+K{\footnote Light Attenuation;Light Intensity;Linear Attenuation;Quadratic Attenuation;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20853.bmp\} Light Intensity, \{bmc IDF20854.bmp\} Linear Attenuation, \{bmc IDF20855.bmp\} Quadratic Attenuation\par
+\pard \plain \cf0 \fs20
+{\uldb Lighting}{\v 20846}\par
+\par
+The {\uldb point light and spot light}{\v 20849} can be set by the \b \i light intensity\i0 \b0, \b \i linear attenuation \i0 \b0 and \b \i quadratic attenuation \i0 \b0 elements. The directional light can be set only by the \b \i light intensity\i0 \b0 . The resulting light intensity versus distance is given by the formula:\par
+\par
+\b \i brightness = light_intensity / (1 + distance*linear_attenuation + distance^2*quadratic_attenuation)\i0 \b0 \par
+\par
+The light intensity is an additional parameter to set the {\uldb light color}{\v 20848}. By setting the light intensity in the range between \b 0 \b0 and \b 1 \b0 a similar effect of light intensity modification can be reached like that attained by the intensity regulation of individual color components of light. By setting the light intensity above 1, a higher light intensity can be reached than it would be possible by mere light color setting. In this manner it is possible to over-light the scene to reach special effects. By setting the light intensity under 0 the so called \b \i black light \i0 \b0 is created. This is a special effect that works as if the light would be "sucked" out of the scene. This effect is utilized when special effects should be reaches, as inverse scotopic vision.\par
+\page
+
+#{\footnote 20893}
+${\footnote Ambient Light}
++{\footnote 1}
+K{\footnote Ambient Light;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20893.bmp\} Ambient Light\par
+\pard \plain \cf0 \fs20
+{\uldb Lighting}{\v 20846}\par
+\par
+The \b \i ambient light \i0 \b0 is omnipresent light, which is independent of light sources. The ambient light serves to illuminate object parts situated in a shadow. The color (and thereby the intensity, too) of the ambient light can be specified by setting the \b \i ambient light \i0 \b0 element by means of the {\uldb color constant}{\v 20301} or {\uldb compound color components to color}{\v 20417}. For each object the {\uldb ambient light reflection}{\v 20884} can be defined. The default setting of the ambient light is grey light with a brightness of 0.25. The ambient light reflection of individual objects is set to the same value as the {\uldb diffuse color}{\v 20826}. If it is necessary to control the ambient light in each object separately, then it can be done by setting the ambient light to full brightness and by setting the color of the ambient light reflection in each object individually.\par
+\page
+
+}

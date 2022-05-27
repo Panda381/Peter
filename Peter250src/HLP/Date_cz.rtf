@@ -1,0 +1,160 @@
+{\rtf1 \ansi \deff0
+
+@{\footnote ------- definice fontù --------- }
+
+{\fonttbl 
+{\f0 \fswiss MS San Serif CE;}
+}
+
+@{\footnote ------- definice barev --------- }
+
+{\colortbl
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red192\green192\blue192;
+\red128\green128\blue128;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+
+@{\footnote Použití barev:
+	0 - èerná
+	1 - tmavì èervená
+	2 - tmavì zelená
+	3 - hnìdá
+	4 - tmavì modrá
+	5 - tmavì fialová
+	6 - tmavì modrozelená
+	7 - šedá
+	8 - tmavì šedá
+	9 - èervená
+	10 - zelená
+	11 - žlutá
+	12 - modrá
+	13 - fialová
+	14 - modrozelená
+	15 - bílá
+}
+
+#{\footnote 20483}
+#{\footnote 20484}
+#{\footnote 20485}
+#{\footnote 20486}
+#{\footnote 20487}
+#{\footnote 20488}
+#{\footnote 20489}
+#{\footnote 20490}
+#{\footnote 20491}
+#{\footnote 20492}
+#{\footnote 20493}
+#{\footnote 20494}
+#{\footnote 20495}
+#{\footnote 20496}
+#{\footnote 20497}
+#{\footnote 20498}
+#{\footnote 20499}
+#{\footnote 20500}
+#{\footnote 20501}
+#{\footnote 20502}
+#{\footnote 20503}
+#{\footnote 20504}
+#{\footnote 20505}
+#{\footnote 20506}
+#{\footnote 20507}
+${\footnote Datum a èas}
++{\footnote 1}
+K{\footnote datum a èas;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Datum a èas\par
+\pard \plain \cf0 \fs20
+{\uldb Stavební prvky programu}{\v Stavební prvky programu}\par
+\par
+V obsluze funkcí pro datum a èas se používá vyjádøení data a èasu jako èíselná hodnota pøedstavující poèet sekund od 1.1.1601 v 00:00:00 s pøesností rozlišení na milisekundy. To umožòuje snadné provádìní èasových operací, jako je sèítání a odeèítání èasu.\par
+\par
+\{bmc IDF20484.bmp\}\tab \b \i aktuální datum a èas \i0 \b0 \par
+\par
+Prvek \b \i aktuální datum a èas \i0 \b0 je èíselná promìnná pøedstavující místní aktuální datum a èas. Promìnnou lze jak èíst, tak do ní zapisovat a tím zmìnit aktuální datum a èas.\par
+\par
+\{bmc IDF20485.bmp\}\tab \b \i pøevod místního èasu na svìtový \i0 \b0 \par
+\par
+Funkce \b \i pøevod místního èasu na svìtový \i0 \b0 pøevede místní èas na svìtový (UTC, Universal Time Coordinated). Podmínkou pro správný pøevod je nastavení èasového pásma a pøepínaèe letního èasu v nastavení systému Windows (Ovládací panely/Datum a èas/Èasové pásmo).\par
+\par
+\{bmc IDF20486.bmp\}\tab \b \i pøevod svìtového èasu na místní \i0 \b0 \par
+\par
+Funkce \b \i pøevod svìtového èasu na místní \i0 \b0 pøevede svìtový èas (UTC, Universal Time Coordinated) na místní. Podmínkou pro správný pøevod je nastavení èasového pásma a pøepínaèe letního èasu v nastavení systému Windows (Ovládací panely/Datum a èas/Èasové pásmo).\par
+\par
+\{bmc IDF20487.bmp\} \b \i slouèení položek data a èasu \i0 \b0 \par
+\tab \{bmc IDF20488.bmp\} \b \i rok \i0 \b0 (implicitnì 1601) \par
+\tab \{bmc IDF20489.bmp\} \b \i mìsíc \i0 \b0 (implicitnì 1) \par
+\tab \{bmc IDF20490.bmp\} \b \i den \i0 \b0 (implicitnì 1) \par
+\tab \{bmc IDF20491.bmp\} \b \i hodina \i0 \b0 (implicitnì 0) \par
+\tab \{bmc IDF20492.bmp\} \b \i minuta \i0 \b0 (implicitnì 0) \par
+\tab \{bmc IDF20493.bmp\} \b \i sekunda \i0 \b0 (implicitnì 0) \par
+\tab \{bmc IDF20494.bmp\} \b \i milisekunda \i0 \b0 (implicitnì 0) \par
+\par
+Funkce \b \i slouèení položek data a èasu \i0 \b0 umožòuje pøevod data a èasu vyjádøeného pomocí jednotlivých údajù na vyjádøení v poètu sekund. Je možné používat jen èást údaje data a èasu, jako jen datum nebo jen èas. V tom pøípadì je možné ponechat implicitní nastavení nepoužitých položek. Napø. pøi použití pouze èasu bude výsledný údaj pøedstavovat poèet sekund od zaèátku dne. S údajem lze provádìt bìžné operace jako napø. zobrazení pomocí funkce pro pøevod èasu na textový tvar.\par
+\par
+\{bmc IDF20495.bmp\}\tab \b \i rok z data a èasu \i0 \b0 \par
+\par
+Funkce \b \i rok z data a èasu \i0 \b0 vyjme z èasového údaje údaj o roku a navrátí ho jako èíselný údaj.\par
+\par
+\{bmc IDF20496.bmp\}\tab \b \i mìsíc z data a èasu \i0 \b0 \par
+\par
+Funkce \b \i mìsíc z data a èasu \i0 \b0 vyjme z èasového údaje údaj o mìsíci a navrátí ho jako èíselný údaj.\par
+\par
+\{bmc IDF20497.bmp\}\tab \b \i den z data a èasu \i0 \b0 \par
+\par
+Funkce \b \i den z data a èasu \i0 \b0 vyjme z èasového údaje údaj o dni a navrátí ho jako èíselný údaj.\par
+\par
+\{bmc IDF20498.bmp\}\tab \b \i den v týdnu z data a èasu \i0 \b0 (0=nedìle, 1=pondìlí,...)\par
+\par
+Funkce \b \i den v týdnu z data a èasu \i0 \b0 vyjme z èasového údaje údaj o dni v týdnu a navrátí ho jako èíselný údaj. Èíslo 0 pøedstavuje nedìli, 1 pondìlí až 6 je sobota.\par
+\par
+\{bmc IDF20499.bmp\}\tab \b \i hodina z data a èasu \i0 \b0 \par
+\par
+Funkce \b \i hodina z data a èasu \i0 \b0 vyjme z èasového údaje údaj o hodinì a navrátí ho jako èíselný údaj.\par
+\par
+\{bmc IDF20500.bmp\}\tab \b \i minuta z data a èasu \i0 \b0 \par
+\par
+Funkce \b \i minuta z data a èasu \i0 \b0 vyjme z èasového údaje údaj o minutì a navrátí ho jako èíselný údaj.\par
+\par
+\{bmc IDF20501.bmp\}\tab \b \i sekunda z data a èasu \i0 \b0 \par
+\par
+Funkce \b \i sekunda z data a èasu \i0 \b0 vyjme z èasového údaje údaj o sekundì a navrátí ho jako èíselný údaj.\par
+\par
+\{bmc IDF20502.bmp\}\tab \b \i milisekunda z data a èasu \i0 \b0 \par
+\par
+Funkce \b \i milisekunda z data a èasu \i0 \b0 vyjme z èasového údaje údaj o milisekundì a navrátí ho jako èíselný údaj.\par
+\par
+\{bmc IDF20503.bmp\}\tab \b \i pøevod data na text "den.mìsíc.rok" \i0 \b0 \par
+\par
+Funkce \b \i pøevod data na text "den.mìsíc.rok" \i0 \b0 pøevede èasový údaj na text data v evropském formátu "den.mìsíc.rok".\par
+\par
+\{bmc IDF20504.bmp\}\tab \b \i pøevod data na text "mìsíc/den/rok" \i0 \b0 \par
+\par
+Funkce \b \i pøevod data na text "mìsíc/den/rok" \i0 \b0 pøevede èasový údaj na text data v americkém formátu "mìsíc/den/rok".\par
+\par
+\{bmc IDF20505.bmp\}\tab \b \i pøevod data na text "rok-mìsíc-den" \i0 \b0 \par
+\par
+Funkce \b \i pøevod data na text "rok-mìsíc-den" \i0 \b0 pøevede èasový údaj na text data v japonském formátu "rok-mìsíc-den".\par
+\par
+\{bmc IDF20506.bmp\}\tab \b \i pøevod èasu na text "hodina:minuta:sekunda" (24 hodin) \i0 \b0 \par
+\par
+Funkce \b \i pøevod èasu na text "hodina:minuta:sekunda" (24 hodin) \i0 \b0 pøevede èasový údaj na text èasu s 24-hodinovým cyklem.\par
+\par
+\{bmc IDF20507.bmp\}\tab \b \i pøevod èasu na text "hodina:minuta:sekunda x" (12 hodin) \i0 \b0 \par
+\par
+Funkce \b \i pøevod èasu na text "hodina:minuta:sekunda x" (12 hodin) \i0 \b0 pøevede èasový údaj na text èasu s 12-hodinovým cyklem doplnìný indikátorem "a"=dopoledne nebo "p"=odpoledne.\par
+\page
+
+}

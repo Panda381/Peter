@@ -1,0 +1,342 @@
+{\rtf1 \ansi \deff0
+
+@{\footnote ------- definice fontù --------- }
+
+{\fonttbl 
+{\f0 \fswiss MS San Serif;}
+}
+
+@{\footnote ------- definice barev --------- }
+
+{\colortbl
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red192\green192\blue192;
+\red128\green128\blue128;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+
+@{\footnote Použití barev:
+	0 - èerná
+	1 - tmavì èervená
+	2 - tmavì zelená
+	3 - hnìdá
+	4 - tmavì modrá
+	5 - tmavì fialová
+	6 - tmavì modrozelená
+	7 - šedá
+	8 - tmavì šedá
+	9 - èervená
+	10 - zelená
+	11 - žlutá
+	12 - modrá
+	13 - fialová
+	14 - modrozelená
+	15 - bílá
+}
+
+#{\footnote Global Variables and Functions}
+${\footnote Global Variables and Functions}
++{\footnote 1}
+K{\footnote Global Variables and Functions;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Global Variables and Functions\par
+\pard \plain \fs20
+{\uldb Help Topics}{\v Help Topics}\par
+\par
+The field of the global variables and functions of the {\uldb program editor}{\v Program Editor} main window contains a declaration of variables and functions that are common for all functions. In addition to the global variables and functions every function may possess {\uldb local variables and functions}{\v Local Variables and Functions}.\par
+\par
+When creating a new program, the field of global variables and functions contains a group of the basic variables and functions. The basic variables and functions are principal objects necessary for the program to work; they can neither be moved nor deleted.\par
+\par
+\{bmc Main.bmp\}   \b \i main function \i0 \b0 \par
+\par
+The main {\uldb function}{\v 20047} is a function that is executed at the program start. From the main function all other functions are called. It includes the program itself. By ending the main function the whole program will be terminated. The picture of the main function icon determines the picture which will be displayed as the program icon (in the upper left window corner, when displaying the program in the browser and when displaying the program in the list of the running applications). The main function text determines the text that will be displayed in the main window title, if it is not redefined in some other way.\par
+\par
+\{bmc IDF20048.bmp\}   \b \i main sheet \i0 \b0 \par
+\par
+The main {\uldb sheet}{\v 20048} is a sheet representing the program window surface. The items contained in the main sheet are displayed in the program window. It is in the main sheet that the items are positioned by {\uldb Peter}{\v 20062} or {\uldb Lucy}{\v 20067}. By changing the main sheet size the program window size is changed (In the {\uldb fullscreen mode}{\v 20638} the video mode used is changed).\par
+\par
+\{bmc IDF20044.bmp\}   \b \i empty square \i0 \b0 \par
+\par
+An empty square is an {\uldb item}{\v 20044} which will be used as a default filling out the sheet, for example when deleting a square out of the sheet or when extending the sheet.\par
+\par
+\{bmc IDF20062.bmp\}   \b \i Peter \i0 \b0 \par
+\par
+Peter is a {\uldb sprite}{\v 20049} of the Peter rabbit. By redefining it, {\uldb Peter's}{\v 20062} appearance, speed and other features, too, may be modified. By increasing the number of directions to 8 he will be able to step, to position and to test an item in the diagonal direction, too. In the program the Peter sprite may be redefined by another sprite like it may be done in normal sprites.\par
+\par
+\{bmc IDF20067.bmp\}   \b \i Lucy \i0 \b0 \par
+\par
+Lucy is a {\uldb sprite}{\v 20049} of the Lucy rabbit. By redefining it, {\uldb Lucy's}{\v 20067} appearance, speed and other features, too, may be modified. By increasing the number of directions to 8 she will be able to step, to position and to test an item in the diagonal direction, too. In the program the Lucy sprite may be redefined by another sprite like it may be done in normal sprites.\par
+\page
+
+#{\footnote Local Variables and Functions}
+#{\footnote 20053}
+#{\footnote 20054}
+${\footnote Local Variables and Functions}
++{\footnote 1}
+K{\footnote Local Variables and Functions;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Local Variables and Functions\par
+\pard \plain \fs20
+{\uldb Help Topics}{\v Help Topics}\par
+\par
+Each {\uldb function}{\v 20047} declared in the field of {\uldb global variables and functions}{\v Global Variables and Functions} has a group of own variables and functions which are accessible to this function and to its local functions only.\par
+\par
+\{bmc IDF20053.bmp\}\tab \b \i input variables \i0 \b0 \par
+\par
+In the field of local variables and functions of each global function there is an element of the \b \i input variables\i0 \b0 , in which variables representing the function's input parameters may be positioned. These variables appear when using the functions in a program, too. By setting the input variables values input parameters may be passed over to the function. If the input variable value is not set when calling the function, its default value will remain preset. During the function execution the input variables may be treated like normal local variables.\par
+\par
+\{bmc IDF20054.bmp\}\tab \b \i output variable \i0 \b0 \par
+\par
+Another element existing in the field of the local variables and functions is the \b \i output variable\i0 \b0 . This element can include one variable representing the function's output value. During the function execution the output variable may be treated like a normal local variable. After ending the function the value of the output variable will be passed over as an output value. When calling the function as a command the output value will be ignored.\par
+\page
+
+#{\footnote Library of Variables and Functions}
+#{\footnote 20000}
+${\footnote Library of Variables and Functions}
++{\footnote 1}
+K{\footnote Library of Variables and Functions;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Library of Variables and Functions\par
+\pard \plain \cf0 \fs20
+{\uldb Help Topics}{\v Help Topics}\par
+\par
+The library of variables and functions contains templates of variables and functions that can be used in the fields of global and local variables and functions. In the library's basic level there are empty variables and functions. After opening a branch the variables may contain predefined examples of variables from the library on the disk (which is not enabled for functions). The group designated as \b [examples] \b0 is containing example variables located in a folder with the Peter application installed (the so called home folder). Normally these variables cannot be changed out of the Peter environment. Making changes is possible only by starting the "Peter with modification of example library" icon in the \b \i Start \i0 \b0 system menu. By copying them out of the group they are copied into the local library, in which these changes can be carried out.\par
+\par
+Beside the group of normal examples still another group, the \b [CD-ROM] \b0 group, is available. This group makes it possible to load examples straightway from the installation CD-ROM of the Peter application or from any other CD-ROM. It is possible to create own data CD-ROMs with libraries of elements. In the ROOT folder of a data CD-ROM the FOLDERS.INI information file can be localized, informing about the structure of the data folders on the CD-ROM, in a similar way as in the case of the installation CD-ROM.\par
+\par
+Variables and functions can be dragged from the library field to the field of variables and functions, thus creating the so called declaration of a variable or a function. As to the variables, a whole group may be dragged over. It is, however, this only branch level merely that can be dragged over, but not the nested subgroups.\par
+\par
+Editing the variable or function contents is possible by a double click on a variable or a function, or by pressing Enter. Editing is carried out in the central (editing) field.\par
+\par
+A new library template can be created by dragging a variable from the window of variables (a whole group cannot be dragged over). A new group can be created by dragging an element of the group from the field of basic elements.\par
+\par
+Variables and groups can be dragged over and renamed within the library the same way as in other fields. An element name is stored in multilingual form by means of {\uldb nicknames (aliases)}{\v 20751}.\par
+\par
+{\uldb \{bmc IDF20047.bmp\}\tab function}{\v 20047}\par
+{\uldb \{bmc IDF20043.bmp\}\tab number}{\v 20043}\par
+{\uldb \{bmc IDF20063.bmp\}\tab flag}{\v 20063}\par
+{\uldb \{bmc IDF20051.bmp\}\tab text}{\v 20051}\par
+{\uldb \{bmc IDF20044.bmp\}\tab item}{\v 20044}\par
+{\uldb \{bmc IDF20048.bmp\}\tab sheet}{\v 20048}\par
+{\uldb \{bmc IDF20246.bmp\}\tab picture}{\v 20246}\par
+{\uldb \{bmc IDF20045.bmp\}\tab sound}{\v 20045}\par
+{\uldb \{bmc IDF20046.bmp\}\tab music}{\v 20046}\par
+{\uldb \{bmc IDF20049.bmp\}\tab sprite}{\v 20049}\par
+\par
+\i \b Notes: \b0 \i0 \par
+- By starting sound or music editing in the field of the global or local variables by pressing the \b \i Enter \i0 \b0 key the sound or music playback is started. This feature makes it possible to easily examine a great number of sound or music samples by shifting the selection cursor by the keyboard and pressing \b \i Enter\i0 \b0 .\par
+- By shifting the selection cursor across the sound or music entries in the field of library variables the sound and music samples are played ("Preview" function). This feature enables to easily and quickly select sound or music without the necessity of dragging them over into the program. If the "\b (repeat)\b0 " or "\b (repeated)\b0 " texts occur in the sound name, then this sound is played repeatedly (this does not hold for music). By pressing \b \i Enter \i0 \b0 the sound is played anew.\par
+- By shifting the selection cursor across the picture entries in the field of library variables a picture preview is displayed in the central (editing) field.\par
+\par
+\page
+
+#{\footnote 20047}
+${\footnote Function}
++{\footnote 1}
+K{\footnote Function;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20047.bmp\} Function\par
+\pard \plain \cf0 \fs20
+{\uldb Library of Variables and Functions}{\v Library of Variables and Functions}\par
+\par
+A function is a sequence of commands intended for executing operations in the program. A function may be both global (public) and local. A global function may include own local variables and own local functions. A local function makes use of the local variables of the global function in which it is defined; it has no own local variables or functions. A global function can contain input and output variables, a local function can not.\par
+\par
+A constituent of each program is the {\uldb main function}{\v Global Variables and Functions}. This function is executed after the program has been started. By ending it the program is terminated, too. After a new program has been created the main function is already created in the group of basic variables and functions. A main function can neither be deleted nor it can be called from other functions. In the program window title its name is used as a default name, its icon is used as a program icon.\par
+\par
+The main function contains the {\uldb program parameters}{\v 20244} variable in quality of an input variable and the {\uldb program return code}{\v 20245} in quality of an output variable in the {\uldb local variables}{\v Local Variables and Functions}. The main function input and output variables cannot be changed.\par
+\par
+A declaration of a new function is established by dragging an empty function from the field of the library of variables and functions. Unlike the variables, predefined function templates cannot be stored in the library. A declaration can be established in the field of either global or local variables and functions. For a global function a field for the declaration of {\uldb local variables and functions}{\v Local Variables and Functions} will be created.\par
+\par
+\page
+
+#{\footnote 20043}
+${\footnote Number}
++{\footnote 1}
+K{\footnote Number;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20043.bmp\} Number\par
+\pard \plain \cf0 \fs20
+{\uldb Library of Variables and Functions}{\v Library of Variables and Functions}\par
+\par
+All numeric operations in the program are executed by means of real numbers with an accuracy of 15 digits, the exponent ranging between -308 and +308 (the so called double precision of 8 bytes). On {\uldb entering a number}{\v Editing a Number}, the exponent expression (for example 12.34e-45) can be used. The number text must not contain a space. The decimal point or comma may be used during entering.\par
+\par
+When entering a number it is possible to enter the \b $ \b0 (dollar character) in front of it to express a number in the hexadecimal form. Thus, for instance, the entry of \b $1F \b0 corresponds to \b 31\b0 . Similarly, by entering the \b % \b0 (percent character) a number can be entered in the binary form. Thus, for instance, the entry of \b %1001 \b0 corresponds to \b 9\b0 .\par
+\page
+
+#{\footnote 20063}
+${\footnote Flag}
++{\footnote 1}
+K{\footnote Flag;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20063.bmp\} Flag\par
+\pard \plain \cf0 \fs20
+{\uldb Library of Variables and Functions}{\v Library of Variables and Functions}\par
+\par
+The flag is a two-state logic variable. Its logic states are denoted for example as yes/no, true/false, or on/off; see {\uldb flag editing}{\v Editing a Flag}.\par
+\page
+
+#{\footnote 20051}
+${\footnote Text}
++{\footnote 1}
+K{\footnote text;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20051.bmp\} Text\par
+\pard \plain \cf0 \fs20
+{\uldb Library of Variables and Functions}{\v Library of Variables and Functions}\par
+\par
+A text variable includes a text. A text may consist of multiple lines; see {\uldb text editing}{\v Editing a Text}.\par
+\par
+A text may be stored in the library in the TEXT format (file extension TXT) or in the RichEdit format (file extension RTF).\par
+\page
+
+#{\footnote 20044}
+${\footnote Item}
++{\footnote 1}
+K{\footnote Item;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20044.bmp\} Item\par
+\pard \plain \cf0 \fs20
+{\uldb Library of Variables and Functions}{\v Library of Variables and Functions}\par
+\par
+An item is a picture having 32x32 graphic pixels. This is the basic element of the sheet. Unlike a picture variable an item is not drawn by graphics commands, but it is displayed by positioning in the sheet. In the Windows environment it is the icon that is analogous to an item. See also {\uldb item editing}{\v Editing an Item and a Picture}.\par
+\par
+In the main function the {\uldb empty square}{\v Global Variables and Functions} item is predefined. This item is used as a default item for filling out the sheet.\par
+\page
+
+#{\footnote 20048}
+${\footnote Sheet}
++{\footnote 1}
+K{\footnote Sheet;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20048.bmp\} Sheet\par
+\pard \plain \cf0 \fs20
+{\uldb Library of Variables and Functions}{\v Library of Variables and Functions}\par
+\par
+A sheet is represented by a two-dimensional matrix of squares, each square containing an {\uldb item}{\v 20044} to visually display the sheet (a square of 32x32 graphic pixels), five logic switches and three integer values (two having a range from 0 till 1023, one having a range from 0 till 127). See also {\uldb sheet editing}{\v Editing a Sheet}.\par
+\par
+In the main function the {\uldb main sheet}{\v Global Variables and Functions} is predefined, which is displayed in the program window as an {\uldb item layer}{\v Layers}. It is the main sheet that determines the program window size. By setting an item into the main sheet this item is displayed in the window.\par
+\par
+The sheet is filled out with the {\uldb empty square}{\v Global Variables and Functions} item as a default state.\par
+\page
+
+#{\footnote 20246}
+${\footnote Picture}
++{\footnote 1}
+K{\footnote Picture;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20246.bmp\} Picture\par
+\pard \plain \cf0 \fs20
+{\uldb Library of Variables and Functions}{\v Library of Variables and Functions}\par
+\par
+A picture serves to display graphic scenes, drawings and photographs. The picture width and height may range between 1 and 32768 graphic pixels (i.e. maximum 1024 steps). To draw a picture graphic commands carried out into the {\uldb graphic layer}{\v Layers} may be used. See also {\uldb picture editing}{\v Editing an Item and a Picture}.\par
+\par
+A picture may be stored in the library in the BMP format (file extension BMP) or in the JPEG format (file extension JPG).\par
+\page
+
+#{\footnote 20045}
+${\footnote Sound}
++{\footnote 1}
+K{\footnote Sound;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20045.bmp\} Sound\par
+\pard \plain \cf0 \fs20
+{\uldb Library of Variables and Functions}{\v Library of Variables and Functions}\par
+\par
+A sound is used to play back sound effects or spoken word. For sounds being in the PCM format several sounds can be played at a time. With the support by the MPEG Layer-3 playback driver, MP3 files, too, can be played. See also {\uldb sound editing}{\v Editing a Sound}.\par
+\par
+A sound may be stored in the library in the WAV format (file extension WAV) or in the MPEG Layer3 format (file extension MP3).\par
+\page
+
+#{\footnote 20046}
+${\footnote Music}
++{\footnote 1}
+K{\footnote Music;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20046.bmp\} Music\par
+\pard \plain \cf0 \fs20
+{\uldb Library of Variables and Functions}{\v Library of Variables and Functions}\par
+\par
+A music is used to play back music. See also {\uldb music editing}{\v Editing a Music}.\par
+\par
+A music may be stored in the library in the MID format (file extension MID) or in the RAW-MID format (file extension RMI).\par
+\page
+
+#{\footnote 20049}
+#{\footnote 20250}
+#{\footnote 20251}
+#{\footnote 20252}
+#{\footnote 20253}
+#{\footnote 20254}
+#{\footnote 20636}
+#{\footnote 20637}
+${\footnote Sprite}
++{\footnote 1}
+K{\footnote Sprite;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20049.bmp\} Sprite\par
+\pard \plain \cf0 \fs20
+{\uldb Library of Variables and Functions}{\v Library of Variables and Functions}\par
+\par
+The sprite is a basic element intended to automatically carry out animations of moving objects. It is {\uldb defined}{\v Editing a Sprite} as a sequence of pictures that alternate after a certain period (i.e. the animation is effectuated). The individual pictures are called animation phases. The picture appearance may be defined as being different for different movement directions or turning positions. A separate picture sequences are defined for the quiescent condition and for the movement.\par
+\par
+By sprite declaration in the field of variables a sprite object is created that can be displayed in the program window. The sprite can be moved within the window, and its visibility can be switched on and off. By assigning a sprite to another sprite only the sprite appearance and sprite animation definition is transferred, not the information about its present state. It enables to redefine sprite appearance with preservation of its activity. Similarly, the comparison operation compares the sprite appearance object only, regardless of its instantaneous state.\par
+\par
+During the sprite declaration in the field of variables dependent sprite variables are created defining the sprite's instantaneous state. Setting state variables when editing the program does not influence the initial state at the program start, the sprites being always invisible and having (0,0) coordinates, when the program is started.\par
+\par
+\{bmc IDF20250.bmp\}\tab \b \i horizontal \i0 \b0 \par
+\{bmc IDF20251.bmp\}\tab \b \i vertical \i0 \b0 \par
+\par
+The \b \i horizontal \i0 \b0 and \b \i vertical \i0 \b0 elements are numeric variables representing the sprite coordinates. By setting the variables the sprite movement to a specified coordinate is initiated (the lower left sprite corner being decisive). If the visibility is on, the movement will take place in the slow mode with animation. If the visibility is off, the movement will take place immediately. By reading the coordinates the instantaneous sprite position (even during the movement) can be found out. By setting the coordinates to their values found by reading (i.e. by assigning the coordinates to themselves) an immediate stoppage of the sprite will be provided.\par
+\par
+\{bmc IDF20252.bmp\}\tab \b \i direction \i0 \b0 \par
+\par
+The \b \i direction \i0 \b0 element represents the direction of the sprite having been rotated. The direction is indicated in radian (the perigon of 360 degrees corresponding to approximately 6.28). This element can be utilized like a normal numeric variable. By using it in a numeric term the current direction of the sprite can be found. By using this element as a command the direction of the sprite can be set. At the same time the sprite direction is modified to equal the nearest value admissible pursuant to the definition of number of sprite directions. To facilitate the direction usage the predefined {\uldb angle constants}{\v 20112} can be made use of. Using these constants numeric operations (e.g. addition or division) can be carried out.\par
+\par
+\{bmc IDF20254.bmp\}\tab \b \i visible \i0 \b0 \par
+\par
+The \b \i visible \i0 \b0 element represents the flag of the sprite visibility. If the sprite is visible, its movement over the sheet is animated in compliance with the sprite definition. The sprite visibility being switched off, the sprite movements over the sheet take place immediately. The visibility element can be utilized like a normal logic variable, that means it can be tested or adjusted.\par
+\par
+\{bmc IDF20253.bmp\}\tab \b \i moving \i0 \b0 \par
+\par
+The \b \i moving \i0 \b0 element returns a logic flag informing, whether the sprite is moving, i.e. whether it is shifting to its preset target position. The stoppage of the sprite movement may be attained by setting the target coordinates to the instantaneous coordinate value (i.e. by assigning the coordinates to themselves).\par
+\par
+\{bmc IDF20636.bmp\}\tab \b \i phase \i0 \b0 \par
+\par
+The \b \i phase \i0 \b0 element indicates the future (i.e. not the current) phase of the sprite animation. The element can be utilized as a normal numeric variable; it can be read or adjusted. The phases are numbered from 0, and include phases for the quiescent state as well as those for the movement.\par
+\par
+\{bmc IDF20637.bmp\}\tab \b \i state \i0 \b0 \par
+\par
+The \b \i state \i0 \b0 element serves as a state indicator of the object represented by the sprite. This element may be used as a numeric variable. By setting its value to 0 till 1 the state indicator is displayed above the sprite. As to the indicator color, the indicator is represented in green in the range from (including) 0.5 till 1, in yellow in the range from (including) 0.25 till 0.5, in red in the range from 0 till 0.25. By setting the state to -1 the state indicator will be switched off.\par
+\par
+\b \i Note: \i0 \b0 Sprites may also be {\uldb generated}{\v Generating Sprites}.
+\page
+
+#{\footnote Generating Sprites}
+${\footnote Generating Sprites}
++{\footnote 1}
+K{\footnote Generating Sprites;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Generating Sprites\par
+\pard \plain \cf0 \fs20
+{\uldb Sprite}{\v 20049}\par
+\par
+Sprites can be either {\uldb drawn}{\v Editing a Sprite} or generated automatically. To generate them, advantage can be taken of some of the rendering programs. Rendering sprites poses complicated problems, therefore it can be recommended to more experienced users only.\par
+\par
+In the \b \i Source \i0 \b0 subfolder of the Peter application installation folder there are source texts for generating sprites by means of the PovRay rendering program, version 3.0 (to obtain e.g. on the Internet address \b http://www.compuserve.com\b0 , or \b http://www.povray.org\b0 ). Having installed the PovRay program (observing the usage of version 3.0) copy the PVENGINE.EXE file into the SOURCE folder.\par
+\par
+For individual sprites prepared INI files can be found in the subfolders. By opening the INI file by the PovRay program a sprite can be generated individually. To generate sprites en bloc the ALL.BAT file may be utilized. When generating sprites the PovRay will create individual sprite pictures. By the Pov2Spr.exe program (which is situated in the Source folder) these pictures are converted to sprites. The meanings of the Pov2Spr program parameters is written out by starting the Pov2Spr program without any parameters. When using the program it is necessary to specify all parameters.\par
+\page
+
+}

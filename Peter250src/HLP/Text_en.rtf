@@ -1,0 +1,156 @@
+{\rtf1 \ansi \deff0
+
+@{\footnote ------- definice fontù --------- }
+
+{\fonttbl 
+{\f0 \fswiss MS San Serif;}
+}
+
+@{\footnote ------- definice barev --------- }
+
+{\colortbl
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red192\green192\blue192;
+\red128\green128\blue128;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+
+@{\footnote Použití barev:
+	0 - èerná
+	1 - tmavì èervená
+	2 - tmavì zelená
+	3 - hnìdá
+	4 - tmavì modrá
+	5 - tmavì fialová
+	6 - tmavì modrozelená
+	7 - šedá
+	8 - tmavì šedá
+	9 - èervená
+	10 - zelená
+	11 - žlutá
+	12 - modrá
+	13 - fialová
+	14 - modrozelená
+	15 - bílá
+}
+
+#{\footnote 20276}
+#{\footnote 20064}
+#{\footnote 20523}
+#{\footnote 20285}
+#{\footnote 20239}
+#{\footnote 20288}
+#{\footnote 20277}
+#{\footnote 20278}
+#{\footnote 20279}
+#{\footnote 20280}
+#{\footnote 20281}
+#{\footnote 20282}
+#{\footnote 20283}
+#{\footnote 20284}
+#{\footnote 20286}
+#{\footnote 20287}
+#{\footnote 20512}
+#{\footnote 20513}
+#{\footnote 20296}
+#{\footnote 20297}
+#{\footnote 20289}
+#{\footnote 20290}
+#{\footnote 20291}
+#{\footnote 20292}
+#{\footnote 20293}
+#{\footnote 20380}
+#{\footnote 20381}
+#{\footnote 20382}
+#{\footnote 20936}
+#{\footnote 20937}
+#{\footnote 20938}
+#{\footnote 20939}
+#{\footnote 20940}
+${\footnote Texts}
++{\footnote 1}
+K{\footnote texts;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Texts\par
+\pard \plain \cf0 \fs20
+{\uldb Structural Elements of a Program}{\v Structural Elements of a Program}\par
+\par
+\{bmc IDF20064.bmp\} \tab \b \i text constant \i0 \b0 \par
+\par
+The \b \i text constant \i0 \b0 returns the text that has been specified as its descriptive text.\par
+\par
+\{bmc IDF20523.bmp\} \tab \b \i next line \i0 \b0 \par
+\par
+The \b \i next line \i0 \b0 element is a text constant returning the line end text (two characters having a numeric value of 13 and 10, i.e. ASCII codes CR and LF).\par
+\par
+\{bmc IDF20285.bmp\} \tab \b \i merge of texts \i0 \b0 \par
+\par
+The \b \i merge of texts \i0 \b0 element serves to merge two or more texts into one text. The texts are added gradually in the succession from the top downwards.\par
+\par
+\{bmc IDF20239.bmp\} \tab \b \i text identity \i0 \b0 \par
+\par
+The \b \i text identity \i0 \b0 element is used to evaluate the congruency of texts. One or more texts can be entered. The texts are evaluated gradually from the top downwards. The element returns a validity flag in case all the texts are identical. A special case is a comparison of one text only. Here, the text is compared with an empty text, i.e. it is examined, if it is empty.\par
+\par
+\i \b Note: \b0 The texts are compared while distinguishing uppercase and lowercase letters. If the texts are to be compared without distinguishing uppercase and lowercase letters, they must first be converted to either uppercase or lowercase letters.\i0 \par
+\par
+\{bmc IDF20288.bmp\} \tab \b \i alphabetic comparison of texts \i0 \b0 \par
+\par
+The \b \i alphabetic comparison of texts \i0 \b0 element serves to compare alphabetic sequence of texts for the purpose of alphabetic sorting. The comparison does not distinguish between upper case and lower case letters, but it respects the national specific information pursuant to the Windows system setting (i.e. letters with diacritics, or two-letter speech sounds). One or more texts can be entered to be compared. Texts are compared gradually from the top downwards. The element returns a validity flag in case it holds for every neighboring text pairs that the first (upper) text is alphabetically more remote than the other one (not being identical). The functional effect consists in comparing two list texts, and making a text interchange in case the first text lies alphabetically higher. A special case is a comparison of one text only. Here, the text is compared with an empty text, being examined, if it is not empty (contrary to the previous comparison).\par
+\par
+\{bmc IDF20277.bmp\} \b \i left part of text \i0 \b0 \par
+\tab \{bmc IDF20278.bmp\} \b \i length of left part of text \i0 \b0 (number of characters) \par
+\tab \{bmc IDF20292.bmp\} \b \i input text \i0 \b0 \par
+\par
+\{bmc IDF20279.bmp\} \b \i right part of text \i0 \b0 \par
+\tab \{bmc IDF20280.bmp\} \b \i beginning of right part of text \i0 \b0 (position 0...) \par
+\tab \{bmc IDF20292.bmp\} \b \i input text \i0 \b0 \par
+\par
+\{bmc IDF20281.bmp\} \b \i middle part of text \i0 \b0 \par
+\tab \{bmc IDF20282.bmp\} \b \i beginning of middle part of text \i0 \b0 (position 0...) \par
+\tab \{bmc IDF20283.bmp\} \b \i length of middle part of text \i0 \b0 (number of characters) \par
+\tab \{bmc IDF20292.bmp\} \b \i input text \i0 \b0 \par
+\par
+\{bmc IDF20284.bmp\} \tab \b \i length of text \i0 \b0 (returns number of characters) \par
+\{bmc IDF20286.bmp\} \tab \b \i conversion of number from text to numerical form \i0 \b0 \par
+\{bmc IDF20287.bmp\} \tab \b \i conversion of number from numerical to text form \i0 \b0 \par
+\{bmc IDF20512.bmp\} \tab \b \i convert number to text - 2 decimal digits \i0 \b0 \par
+\{bmc IDF20513.bmp\} \tab \b \i convert number to text - 8 hexadecimal digits \i0 \b0 \par
+\{bmc IDF20296.bmp\} \tab \b \i convert character to numeric code \i0 \b0 \par
+\{bmc IDF20297.bmp\} \tab \b \i convert numeric code to character \i0 \b0 \par
+\{bmc IDF20289.bmp\} \tab \b \i convert to lower case \i0 \b0 \par
+\{bmc IDF20290.bmp\} \tab \b \i convert to upper case \i0 \b0 \par
+\par
+\{bmc IDF20291.bmp\} \b \i find text position \i0 \b0 (returns position 0...; -1 = not found) \par
+\tab \{bmc IDF20293.bmp\} \b \i text to be found \i0 \b0 \par
+\tab \{bmc IDF20292.bmp\} \b \i input text \i0 \b0 \par
+\par
+\{bmc IDF20380.bmp\} \tab \b \i number of text lines \i0 \b0 \par
+\par
+\{bmc IDF20381.bmp\} \b \i text line \i0 \b0 \par
+\tab \{bmc IDF20382.bmp\} \b \i text line number \i0 \b0 (line number = 0...) \par
+\tab \{bmc IDF20292.bmp\} \b \i input text \i0 \b0 \par
+\par
+\{bmc IDF20936.bmp\} \b \i text block \i0 \b0 \par
+\tab \{bmc IDF20937.bmp\} \b \i line of the block beginning \i0 \b0 (default 0) \par
+\tab \{bmc IDF20938.bmp\} \b \i position of the block beginning \i0 \b0 (default 0) \par
+\tab \{bmc IDF20939.bmp\} \b \i line of the block end \i0 \b0 (default -1) \par
+\tab \{bmc IDF20940.bmp\} \b \i position of the block end \i0 \b0 (default -1) \par
+\tab \{bmc IDF20292.bmp\} \b \i input text \i0 \b0 \par
+\par
+The \b \i text block \i0 \b0 element returns a selected part of a multiline text. A multiline text must use pair of the CR (code 13) and LF (code 10) characters to terminate text rows. The block line and position are entered as a number zero or more. The \b -1 \b0 number is used as an end of the text or row.\par
+\page
+
+
+}

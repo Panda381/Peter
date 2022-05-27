@@ -1,0 +1,350 @@
+{\rtf1 \ansi \deff0
+
+@{\footnote ------- definice fontù --------- }
+
+{\fonttbl 
+{\f0 \fswiss MS San Serif CE;}
+}
+
+@{\footnote ------- definice barev --------- }
+
+{\colortbl
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red192\green192\blue192;
+\red128\green128\blue128;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+
+@{\footnote Pouití barev:
+	0 - èerná
+	1 - tmavì èervená
+	2 - tmavì zelená
+	3 - hnìdá
+	4 - tmavì modrá
+	5 - tmavì fialová
+	6 - tmavì modrozelená
+	7 - šedá
+	8 - tmavì šedá
+	9 - èervená
+	10 - zelená
+	11 - lutá
+	12 - modrá
+	13 - fialová
+	14 - modrozelená
+	15 - bílá
+}
+
+#{\footnote 20648}
+#{\footnote 20961}
+#{\footnote 20962}
+#{\footnote 20963}
+#{\footnote 20964}
+#{\footnote 20965}
+#{\footnote 20966}
+#{\footnote 20967}
+#{\footnote 20968}
+#{\footnote 20969}
+#{\footnote 20970}
+#{\footnote 20971}
+#{\footnote 20972}
+#{\footnote 20973}
+#{\footnote 20974}
+#{\footnote 20975}
+${\footnote Komunikace}
++{\footnote 1}
+K{\footnote komunikace;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Komunikace\par
+\pard \plain \cf0 \fs20
+{\uldb Stavební prvky programu}{\v Stavební prvky programu}\par
+\par
+{\uldb \{bmc IDF20752.bmp\}\tab komunikaèní port}{\v 20752}\par
+{\uldb \{bmc IDF20649.bmp\}\tab síová podpora DirectPlay}{\v 20649} \par
+{\uldb \{bmc IDF21035.bmp\}\tab UDP pakety}{\v 21035} \par
+\page
+
+#{\footnote 20752}
+#{\footnote 20753}
+#{\footnote 20754}
+#{\footnote 20755}
+#{\footnote 20756}
+#{\footnote 20757}
+#{\footnote 20758}
+#{\footnote 20759}
+#{\footnote 20760}
+#{\footnote 20761}
+#{\footnote 20762}
+#{\footnote 20763}
+#{\footnote 20764}
+${\footnote Komunikaèní port}
++{\footnote 1}
+K{\footnote komunikaèní port;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Komunikaèní port\par
+\pard \plain \cf0 \fs20
+{\uldb Komunikace}{\v 20648}\par
+\par
+\{bmc IDF20753.bmp\}\tab \b \i otevøení portu \i0 \b0 (-1=chyba)\par
+\par
+Prvek \b \i otevøení portu \i0 \b0 otevøe port se zadanım jménem a nastaví port jako aktivní. Jako parametr prvku se zadává jméno portu nebo komunikaèního zaøízení. Pro sériové porty to je jméno COM1, COM2 atd. Prvek navrací identifikaèní èíslo, které slouí k vıbìru aktivního portu. Souèasnì mùe bıt otevøeno nìkolik portù, pomocí identifikaèního èísla lze vybírat aktivní port, s kterım se bude pracovat, ani by byl pøenos pøes ostatní porty pøerušen. Pøi chybì otevøení (chybné jméno portu nebo port je pouíván jinım programem) prvek navrací èíslo -1, jinak navrací èíslo >= 0.\par
+\par
+\{bmc IDF20754.bmp\}\tab \b \i zavøení portu\i0 \b0 \par
+\par
+Pøíkaz \b \i zavøení portu \i0 \b0 uzavírá port, jeho identifikaèní èíslo je zadáno jako parametr prvku. Po zavøení portu mùe bıt port vyuíván jinımi programy. Pøi ukonèení programu jsou všechny porty uzavøeny automaticky.\par
+\par
+\{bmc IDF20755.bmp\}\tab \b \i aktivní port\i0 \b0 \par
+\par
+Prvek \b \i aktivní port \i0 \b0 urèuje aktivní port, s kterım budou provádìny další operace. Jako parametr se zadává identifikaèní èíslo, které bylo navráceno pøi otevøení portu. Identifikaèní èíslo je pouze jakısi vnitøní ukazatel v tabulce otevøenıch portù. Zmìnou aktivního portu není èinnost ádného z portù ovlivnìna.\par
+\par
+\{bmc IDF20758.bmp\}\tab \b \i pøenosová rychlost\i0 \b0 \par
+\par
+Prvek \b \i pøenosová rychlost \i0 \b0 urèuje pøenosovou rychlost sériového portu v Baudech. Pro standardní port COM jsou povoleny následující pøenosové rychlosti:\par
+\par
+\tab 110 Baud \par
+\tab 150 Baud \par
+\tab 300 Baud \par
+\tab 600 Baud \par
+\tab 1200 Baud \par
+\tab 2400 Baud \par
+\tab 4800 Baud \par
+\tab 9600 Baud \par
+\tab 14400 Baud \par
+\tab 19200 Baud \par
+\tab 28800 Baud \par
+\tab 38400 Baud \par
+\tab 56000 Baud (pouze nìkteré typy COM) \par
+\tab 57600 Baud \par
+\tab 115200 Baud \par
+\tab 128000 Baud (pouze nìkteré typy COM) \par
+\tab 256000 Baud (pouze nìkteré typy COM) \par
+\par
+\{bmc IDF20759.bmp\}\tab \b \i 2 stopbity\i0 \b0 \par
+\par
+Prvek \b \i 2 stopbity \i0 \b0 je logickı pøíznak urèující, zda bude pøenosovı protokol pouívat 2 stopbity (resp. 1.5 bitu pro délku znaku 5 bitù ). Pøi vypnutém pøíznaku bude pouit 1 stopbit.\par
+\par
+\{bmc IDF20760.bmp\}\tab \b \i poèet bitù \i0 \b0 (5 a 8) \par
+\par
+Prvek \b \i poèet bitù \i0 \b0 urèuje poèet bitù na znak. Povoleny jsou hodnoty 5, 6, 7 a 8 bitù. Pro délky znakù 5 a 6 bitù jsou pøijaté znaky (pøi pøíjmu jako text, neplatí pro pøíjem jako èíslo) pøevedeny na tisknutelné znaky pøiètením hodnoty 64 (tj. znak 0 se zmìní na "@", znak 1 na "A" atd.). Pøi vysílání se nadbyteèné bity ignorují, napø. znak "A" se pøi poètu bitù 5 zmìní na hodnotu 1.\par
+\par
+\{bmc IDF20761.bmp\}\tab \b \i parita \i0 \b0 (0=není, 1=lichá, 2=sudá, 3=znaèka, 4=mezera)\par
+\par
+Prvek \b \i parita \i0 \b0 urèuje zpùsob kontroly pøenášenıch dat doplòujícím paritním bitem. Pøi chybnì pøeneseném znaku (chybná parita) je znak nahrazen nejvyšším platnım znakem (pro 8 bitù èíslo 255, pro 7 bitù 127, pro 6 bitù 63, pro 5 bitù 31). Povolené jsou následující hodnoty:\par
+\par
+\tab 0 = ádná parita \par
+\tab 1 = lichá parita \par
+\tab 2 = sudá parita \par
+\tab 3 = parita znaèkou \par
+\tab 4 = parita mezerou \par
+\par
+\{bmc IDF20762.bmp\}\tab \b \i byl pøijat znak\i0 \b0 \par
+\par
+Prvek \b \i byl pøijat znak \i0 \b0 je logickı pøíznak indikující, zda je pøipraven pøijatı znak.\par
+\par
+\{bmc IDF20763.bmp\}\tab \b \i vysílání povoleno \i0 \b0 (CTS, RTS) \par
+\par
+Prvek \b \i vysílání povoleno \i0 \b0 je pøíznak urèující hodnotu øídicích signálù pro poadavek o vysílání. Pøenos dat není tímto signálem ovlivnìn, záleí na programu, jak signál vyuije. Zápisem logické hodnoty do prvku se ovlivòuje stav øídicího signálu RTS (bìnì pouíváno jako poadavek, aby protìjšek vysílal). Ètením prvku lze zjistit stav øídicího signálu CTS (pouíváno jako vstup vızvy protìjšku k vysílání).\par
+\par
+\{bmc IDF20764.bmp\}\tab \b \i pøíjem povolen \i0 \b0 (DSR, DTR) \par
+\par
+Prvek \b \i pøíjem povolen \i0 \b0 je pøíznak urèující hodnotu øidicích signálù pro poadavek o pøíjem. Pøenos dat není tímto signálem ovlivnìn, záleí na programu, jak signál vyuije. Zápisem logické hodnoty do prvku se ovlivòuje stav øídicího signálu DTR (bìnì pouíváno jako informace protìjšku o vlastní pøipravenosti nebo jako potvrzení platnosti vysílanıch dat k protìjšku). Ètením prvku lze zjistit stav øídicího signálu DSR (pouíváno jako vstup potvrzení pøipravenosti protìjšku nebo jako potvrzení platnosti dat vysílanıch protìjškem).\par
+\par
+\{bmc IDF20756.bmp\}\tab \b \i èíslo\i0 \b0 \par
+\par
+Prvek \b \i èíslo \i0 \b0 je èíselná promìnná slouící k vysílání a pøíjmu znaku ve formì èíselného kódu. Zápisem èísla do prvku se zajistí odeslání znaku k protìjšku. Program je po dobu odesílání znaku zastaven, maximálnì však 0.1 sekundy. Èíselná hodnota znaku mùe bıt v rozmezí 0 a max. hodnota podle poètu bitù na znak (pro 8 bitù 255, pro 7 bitù 127, pro 6 bitù 63, pro 5 bitù 31), hodnoty mimo tento rozsah se zarovnají do správného intervalu operací modulo. Ètením hodnoty prvku se provede pøíjem znaku. Pøíjem probíhá na pozadí za bìhu programu. Prvkem \b \i byl pøijat znak \i0 \b0 je moné testovat, zda je pøipraven pøijatı znak. Není-li znak pøipraven, èeká prvek na pøijetí znaku, maximálnì však 0.1 sekundy. Nebyl-li ádnı znak pøijat, vrací prvek èíslo 0. Pøi zapnuté kontrole znakù pomocí parity je pøi chybì pøenosu navrácen znak odpovídající poslednímu platnému znaku (pro 8 bitù èíslo 255, pro 7 bitù 127, pro 6 bitù 63, pro 5 bitù 31).\par
+\par
+\{bmc IDF20757.bmp\}\tab \b \i znak (text)\i0 \b0 \par
+\par
+Prvek \b \i znak (text) \i0 \b0 je textová promìnná slouící k vysílání a pøíjmu znaku (popø. textu). Zápisem znaku (nebo i delšího textu) do prvku se zajistí odeslání znaku (textu) k protìjšku. Program je po dobu odesílání znaku zastaven, maximálnì však 0.1 sekundy na kadı znak. Èíselná hodnota znakù mùe bıt v rozmezí 1 a max. hodnota podle poètu bitù na znak (pro 8 bitù 255, pro 7 bitù 127, pro 6 bitù 63, pro 5 bitù 31), hodnoty mimo tento rozsah se zarovnají do správného intervalu operací modulo. Ètením hodnoty prvku se provede pøíjem jednoho znaku (ne textu). Pro 5 a 6 bitù jsou znaky pøevedeny na zobrazitelné znaky pøiètením hodnoty 64 ke kódu znaku (tj. znaky "@", "A" atd). Pøíjem probíhá na pozadí za bìhu programu. Prvkem \b \i byl pøijat znak \i0 \b0 je moné testovat, zda je pøipraven pøijatı znak. Není-li znak pøipraven, èeká prvek na pøijetí znaku, maximálnì však 0.1 sekundy. Nebyl-li ádnı znak pøijat, vrací prvek prázdnı text (stejnì tak pøi pøíjmu znaku s kódem 0 pøi 7 a 8 bitech). Pøi zapnuté kontrole znakù pomocí parity je pøi chybì pøenosu navrácen znak odpovídající poslednímu platnému znaku (pro 8 bitù èíslo 255, pro 7 a 6 bitù 127, pro 5 bitù 63).\par
+\par
+\page
+
+#{\footnote 20649}
+#{\footnote 20650}
+#{\footnote 20651}
+#{\footnote 20652}
+#{\footnote 20653}
+#{\footnote 20654}
+#{\footnote 20655}
+#{\footnote 20656}
+#{\footnote 20657}
+#{\footnote 20658}
+#{\footnote 20659}
+#{\footnote 20660}
+#{\footnote 20661}
+#{\footnote 20662}
+#{\footnote 20663}
+#{\footnote 20664}
+#{\footnote 20665}
+#{\footnote 20666}
+#{\footnote 20667}
+#{\footnote 20668}
+#{\footnote 20669}
+#{\footnote 20670}
+#{\footnote 20671}
+#{\footnote 20672}
+#{\footnote 20673}
+#{\footnote 20674}
+#{\footnote 20675}
+#{\footnote 20676}
+#{\footnote 20677}
+#{\footnote 20678}
+#{\footnote 20679}
+#{\footnote 20680}
+#{\footnote 20681}
+#{\footnote 20682}
+${\footnote Síová podpora DirectPlay}
++{\footnote 1}
+K{\footnote síová podpora DirectPlay;DirectPlay;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Síová podpora DirectPlay\par
+\pard \plain \cf0 \fs20
+{\uldb Komunikace}{\v 20648}\par
+\par
+Síová podpora DirectPlay umoòuje programùm pøenášet informace v reálném èase pomocí síového spojení. Hlavní pouití DirectPlay je pøi provozování her mezi více poèítaèi zapojenımi do lokální nebo veøejnì sítì, jako je napø. Internet.  Kromì her má DirectPlay velkı vıznam i v mnoha jinıch oblastech vyadujících komunikaci programù na rùznıch poèítaèích v reálném èase. Typickım pøíkladem jsou zkoušející a vıukové programy ve školních uèebnách. Nutnou podmínkou pro provoz síové podpory DirectPlay je instalace ovladaèù DirectX verze minimálnì 5.0, u systému Windows 98 jsou tyto ovladaèe ji v základním vybavení systému.\par
+\par
+\i Pouití DirectPlay spoèívá v následujících krocích:\i0 \par
+1. \i \b Vıbìr spojení\b0 \i0 . Spojení urèuje typ propojení poèítaèù po hardwarové stránce (sériovı kabel, modem, místní sí IPX, veøejná sí TCP). U nìkterıch typù spojení je urèující ještì adresa poèítaèe, kterı hru vytváøel a bude øídicím poèítaèem hry.\par
+2. \i \b Vıbìr hry\b0 \i0 . Na vybraném spojení mùe bıt provozováno více nezávislıch her. Je moné se pøipojit k ji spuštìné høe nebo vytvoøit hru novou. Øídicí poèítaè (kterı hru vytvoøil) mùe nastavovat upøesòující parametry hry.\par
+3. \i \b Vytvoøení hráèe\b0 \i0 . Po pøipojení ke høe je nutné vytvoøit hráèe. Po jeho vytvoøení je moné komunikovat s ostatními hráèi ve høe a pøenášet herní data.\par
+4. \i \b Pøenos herních dat\b0 \i0 . Bìhem hry vysílá kadı hráè ostatním hráèùm ve høe herní informace, jako je pohyb hráèe atd.\par
+\par
+\{bmc IDF20650.bmp\}\tab \b \i seznam spojení\i0 \b0 \par
+\par
+Prvek \b \i seznam spojení \i0 \b0 navrací víceøádkovı textovı seznam názvù monıch spojení na poèítaèi. Prázdnı seznam znamená, e není nainstalována obsluha DirectX minimální verze 5.0.\par
+\par
+\{bmc IDF20651.bmp\}\tab \b \i aktivní spojení\i0 \b0 \par
+\par
+Prvek \b \i aktivní spojení \i0 \b0 umoòuje nastavit nebo zjistit aktivní vybrané spojení. Jako parametr pøi nastavení spojení se zadává jeden z øádkù seznamu spojení. Není-li odpovídající spojení v seznamu nalezeno, provádí se zkrácené porovnání hledáním klíèovıch øetìzcù v textech: "\b IPX\b0 ", "\b TCP\b0 ", "\b MODEM\b0 " a "\b SERIAL\b0 ", klíèové øetìzce lze tedy pouít pøi volbì spojení programem jako zkratky. Je-li zadán prázdnı text, aktivní spojení se zruší a s ním se pøeruší i probíhající hra. Navrácení prázdného textu znamená, e zvolené spojení není na poèítaèi podporováno (napø. není nainstalován modem).\par
+\par
+\{bmc IDF20681.bmp\}\tab \b \i IP adresa tohoto poèítaèe\i0 \b0 \par
+\par
+Prvek \b \i IP adresa tohoto poèítaèe \i0 \b0 navrací IP adresu poèítaèe v textovém tvaru napø. "123.56.210.234". Adresa IP je adresa, kterou dostane poèítaè pøidìlenu od øídicího serveru po pøipojení na sí Internet. Typickı postup pøi høe pøes sí Internet je ten, e jeden z hráèù vytvoøí hru (vybrané spojení je TCP/IP), podívá se v oknì hry na IP adresu (pøi kadém pøipojení na Internet mùe bıt jiná), tuto adresu sdìlí telefonem nebo radìji pøes e-mail ostatním hráèùm, ti zvolí pøipojení ke høe a zadají sdìlenou adresu jako adresu øídicího poèítaèe.\par
+\par
+\{bmc IDF20652.bmp\}\tab \b \i seznam her\i0 \b0 \par
+\par
+Prvek \b \i seznam her \i0 \b0 navrací víceøádkovı seznam her, které jsou spuštìné na vybraném spojení. U adresovanıch spojení, jako je Internet TCP, je systémem pøed vyhledáním seznamu her vyádána adresa poèítaèe, na kterém mají bıt spuštìné hry vyhledávány. V místních sítích je moné vynecháním zadání adresy poèítaèe vyhledávat spuštìné hry na všech poèítaèích. Seznam her je prùbìnì aktualizován podle nalezenıch her. Seznam her lze vyprázdnit vypnutím aktivního spojení (nastavením jména spojení na prázdnı text) a opìtovnım otevøením spojení, vyhledávání zaène opìt od zaèátku a s novou zadanou adresou. Je zajištìno, e jednotlivé hry v seznamu mají jedineèná jména. Jsou-li vytvoøeny dvì hry se stejnım jménem, jsou jména her èíslována, aby bylo moné jednoznaèné urèení hry jejím jménem.\par
+\par
+V seznamu her jsou viditelné pouze hry vytvoøené stejnım programem. K rozpoznání stejnıch programù se pouívá identifikace odvozená od jména {\uldb hlavní funkce programu}{\v Spoleèné promìnné a funkce} vytvoøeného v prostøedí nástroje Petr. Nutnou podmínkou pro navázání programù na stejnou hru je tedy nastavení stejného jména ve jménu hlavní funkce programu.\par
+\par
+\{bmc IDF20653.bmp\}\tab \b \i aktivní hra\i0 \b0 \par
+\par
+Prvek \b \i aktivní hra \i0 \b0 je textová promìnná slouící k vytvoøení nové hry nebo k pøipojení k probíhající høe. Vıbìrem jména hry ze seznamu her a nastavením hry jako aktivní se provede pøipojení ke zvolené høe. Zadáním jména hry neexistující v seznamu se vytvoøí nová hra. Pro rozlišení, zda se bude vytváøet nová hra nebo bude pøipojení ke høe je rozhodující, zda se zadaná hra vyskytuje v seznamu her. Zpravidla pøed pøipojením hry je naèítán seznam her a èekáno na objevení se poadované hry v seznamu, pøed vytvoøením hry by naopak seznam nemìl bıt naèítán, aby neobsahoval ádnou hru (seznam lze vynulovat uzavøením a novım otevøením aktivního spojení). Nelze-li hru nastavit jako aktivní (napø. dosaeno maximálního poètu hráèù), navrací prvek prázdnı text. Nastavením prvku na prázdnı text se aktivní hra opustí.\par
+\par
+\{bmc IDF20673.bmp\}\tab \b \i hostitel (øídicí poèítaè)\i0 \b0 \par
+\par
+Prvek \b \i hostitel (øídicí poèítaè) \i0 \b0 je logickı pøíznak udávající, zda je tento poèítaè øídicím poèítaèem, kterı hru vytváøel a na kterém je hra provozována. Opustí-li øídicí poèítaè hru, pøevezme øízení hry jinı poèítaè, pøevzetí øízení hry je indikováno nastavením zmínìného pøíznaku.\par
+\par
+\{bmc IDF20674.bmp\}\tab \b \i maximálnì hráèù \i0 \b0 (0 = neomezeno)\par
+\par
+Prvek \b \i maximálnì hráèù \i0 \b0 je èíselná promìnná udávající maximální poèet hráèù, kteøí se mohou pøipojit ke høe. Hodnota 0 udává neomezenı poèet hráèù (implicitní hodnota). Tento prvek mùe mìnit pouze øídicí poèítaè. S jeho pomocí lze znemonit zapojování dalších hráèù do ji probíhající hry - po zahájení hry nastaví øídicí poèítaè maximální poèet hráèù na skuteènı poèet hráèù ve høe.\par
+\par
+\{bmc IDF20656.bmp\} ... \{bmc IDF20663.bmp\} \tab \b \i èíselnı parametr hry 1 a 8 \i0 \b0 (-16384 a +16383)\par
+\par
+Prvky \b \i èíselnı parametr hry 1 a 8 \i0 \b0 jsou celoèíselné promìnné s rozsahem -16384 a +16383, které lze vyuít k nastavení parametrù hry. Parametry hry mùe mìnit pouze øídicí poèítaè, ostatní poèítaèe mohou promìnné pouze èíst.\par
+\par
+\{bmc IDF20664.bmp\} ... \{bmc IDF20671.bmp\} \tab \b \i pøepínaè hry 1 a 8\i0 \b0 \par
+\par
+Prvky \b \i pøepínaè hry 1 a 8 \i0 \b0 jsou logické promìnné slouící k nastavení parametrù hry. Parametry hry mùe mìnit pouze øídicí poèítaè, ostatní poèítaèe mohou promìnné pouze èíst.\par
+\par
+\{bmc IDF20654.bmp\}\tab \b \i seznam hráèù\i0 \b0 \par
+\par
+Prvek \b \i seznam hráèù \i0 \b0 navrací víceøádkovı seznam hráèù, kteøí jsou zapojeni do vybrané hry. Kadı z hráèù má pøidìleno nemìnné poøadové èíslo v seznamu. Opuštìním hráèe hry zùstane jeho místo v poøadí prázdné (prázdnı øádek v seznamu) a do chvíle pøidìlení místa jinému novému hráèi. Proto mùe bıt poèet hráèù ve høe niší ne je poèet øádkù seznamu hráèù. Jména hráèù ve høe jsou jednoznaèná, pøi vıskytu stejnıch jmen jsou jména èíslována.\par
+\par
+\{bmc IDF20655.bmp\}\tab \b \i aktivní hráè\i0 \b0 \par
+\par
+Prvek \b \i aktivní hráè \i0 \b0 je textová promìnná slouící k vytvoøení hráèe po pøipojení nebo vytvoøení hry. Hráè se vytvoøí zadáním jeho jména. V pøípadì úspìšného vytvoøení hráèe se hráè objeví v seznamu hráèù a tento prvek navrací jméno hráèe, v pøípadì zadání ji existujícího jména bude jméno èíslováno. Navrácením prázdného textu je indikováno neúspìšné vytvoøení hráèe (dosaeno maximálního poètu hráèù). Zadáním jiného jména hráèe po jeho vytvoøení bude hráè pøejmenován. Zadáním prázdného textu je hráè ze hry zrušen (pozor na zadání prázdného textu uivatelem, hráè by mohl bıt zrušen nechtìnì).\par
+\par
+\{bmc IDF20675.bmp\}\tab \b \i èíslo aktivního hráèe \i0 \b0 (-1 = není)\par
+\par
+Prvek \b \i èíslo aktivního hráèe \i0 \b0 navrací èíselnı údaj pøedstavující poøadové èíslo hráèe v seznamu hráèù (èíslováno od 0). Není-li hráè vytvoøen, je navrácena hodnota -1.\par
+\par
+\{bmc IDF20677.bmp\}\tab \b \i odeslání/pøíjem bloku dat \i0 \b0 (-1 = všem/není)\par
+\par
+Prvek \b \i odeslání/pøíjem bloku dat \i0 \b0 slouí k pøenosu herních dat mezi hráèi. Pøíjem dat se provádí ètením èíselné hodnoty tohoto prvku. Nejsou-li pøijata ádná data, je navrácena hodnota -1. Jsou-li data pøijata, je navráceno èíslo hráèe, kterı data vyslal. Od této chvíle jsou v zásobníku pøijatıch dat pøipravena data, která lze èíst pomocí datovıch prvkù (viz dále) a do vyèerpání dat nebo do pøíjmu dalšího bloku dat. Pøed vysláním bloku dat jsou data nejdøíve uloena do zásobníku vıstupních dat pomocí datovıch prvkù. Uvedením prvku pro odeslání bloku dat jako pøíkaz s nastavenım èíslem cílového hráèe jsou data z vıstupního zásobníku vyslána zvolenému hráèi. Zadáním hodnoty -1 jako èísla cílového hráèe jsou data rozeslána všem hráèùm ve høe, stejnì jako není-li zadána ádná hodnota.\par
+\par
+\{bmc IDF20678.bmp\}\tab \b \i èíslo \i0 \b0 \par
+\par
+Prvek \b \i èíslo \i0 \b0 slouí k vyslání a pøíjmu èísla mezi hráèi ve høe. Pøi zadání èísla se èíslo uloí a do odeslání do vıstupního zásobníku, pøi ètení se èíslo naèítá ze vstupního zásobníku. Nejsou-li ve vstupním zásobníku ji ádná data, navrací se hodnota 0.\par
+\par
+\{bmc IDF20682.bmp\}\tab \b \i celé èíslo 0 a 255 (bajt)\i0 \b0 \par
+\par
+Prvek \b \i celé èíslo 0 a 255 (bajt) \i0 \b0 slouí k vyslání a pøíjmu celoèíselné hodnoty s rozsahem 0 a 255 mezi hráèi ve høe. Toto èíslo je vıhodné malou nároèností na kapacitu pøenosu, zabírá pouze 1 bajt (1 znak), naproti tomu bìné èíslo zabírá 8 bajtù. Pøi zadání èísla se èíslo uloí a do odeslání do vıstupního zásobníku, pøi ètení se èíslo naèítá ze vstupního zásobníku. Nejsou-li ve vstupním zásobníku ji ádná data, navrací se hodnota 0.\par
+\par
+\{bmc IDF20679.bmp\}\tab \b \i text\i0 \b0 \par
+\par
+Prvek \b \i text \i0 \b0 slouí k vyslání a pøíjmu textu mezi hráèi ve høe. Pøi zadání textu se text uloí a do odeslání do vıstupního zásobníku, pøi ètení se text naèítá ze vstupního zásobníku. Nejsou-li ve vstupním zásobníku ji ádná data, navrací se prázdnı text.\par
+\par
+\par
+\{bmc IDF20680.bmp\}\tab \b \i pøepínaè\i0 \b0 \par
+\par
+Prvek \b \i pøepínaè \i0 \b0 slouí k vyslání a pøíjmu logického pøíznaku mezi hráèi ve høe. Pøi zadání pøíznaku se pøíznak uloí a do odeslání do vıstupního zásobníku, pøi ètení se pøíznak naèítá ze vstupního zásobníku. Nejsou-li ve vstupním zásobníku ji ádná data, navrací se vypnutı pøíznak (hodnota NE).\par
+\par
+\par
+\i \b Poznámky k organizaci pøenosu dat:\b0 \i0 \par
+Bìhem hry je nutné poèítat se zpodìním pøenášenıch informací. Zpodìní bıvá typicky jednotky a stovky milisekund. Mùe té nastat pøípad, e nìkteré informace nepøijdou ve stejném poøadí jak byly vyslány, èi se dokonce mohou ztratit. To vyaduje od programu jistou odolnost proti chybám pøenosu. Jednou z pouívanıch metod øízení hry je ponechání veškerého øízení na jednom z poèítaèù (zpravidla øídicí poèítaè, kterı hru vytváøel). Tento rozhodovací poèítaè dostává od uivatelù na všech poèítaèích ovládací informace, rozhoduje o provádìnıch akcích ve høe a poté rozesílá ostatním poèítaèùm povely k další èinnosti. Tento mód centrálního øízení má vıhodu v jednoznaèném prùbìhu hry, nevıhodou je niší rychlost hry a vyšší nároènost na pøenos dat mezi poèítaèi a navíc problém s pøedáváním øízení, pokud øídicí poèítaè opustí hru. Jinou moností je ponechání rozhodování na kadém z poèítaèù. Kadı z poèítaèù informuje ostatní poèítaèe o provedenıch akcích a o všech událostech, které se tıkají tohoto poèítaèe. Jedná se napø. o informace o pøesunu vlastních postav ve høe, rozhodnutí o vlastním zásahu od protihráèe a informace o zmìnì vlastního skore èi energie postav. Ostatní poèítaèe provádìjí pouze nezbytné úkony jako je animace pohybu postav. Formát pøenášenıch dat si urèuje programátor sám pøi vytváøení programu. Typické pouití je pøenášet data jako skupinky dat. Na zaèátku kadé skupinky je èíslo s hodnotou 1 a 255 pøedstavující kód povelu. Za povelem následují parametry povelu podle vlastního urèení. Povel s èíslem 0 pøedstavuje konec dat (tato hodnota je pøijata automaticky, nejsou-li ji další data ve vstupním zásobníku).\par
+
+\page
+
+#{\footnote 21035}
+#{\footnote 21036}
+#{\footnote 21037}
+#{\footnote 21038}
+#{\footnote 21039}
+#{\footnote 21040}
+#{\footnote 21041}
+#{\footnote 21042}
+${\footnote UDP pakety}
++{\footnote 1}
+K{\footnote UDP pakety;UDP;}
+\pard \plain \brdrb \cf12 \fs24 \b
+UDP pakety\par
+\pard \plain \cf0 \fs20
+{\uldb Komunikace}{\v 20648}\par
+\par
+Pomocí UDP paketù lze pøenášet data mezi poèítaèi pøes síové pøipojení (lokální sí nebo Internet). UDP protokol je zaloen na pøenosu paketù bez potvrzování spojení. Díky tomu je pøenos dat rychlı, ovšem bez zaruèení bezztrátovosti dat. Vyšlete-li nìjaká data, nelze se spolehnout na to, e data budou pøíjemci opravdu doruèena. UDP protokol je vhodnı napøíklad pro rychlou komunikaci mezi hrami.\par
+\par
+Pøi pøenosu dat pøes UDP protokol nastavuje vysílací strana IP adresu pøíjemce, ke kterému bude probíhat vysílání dat, a port, na kterém bude pøíjemce naslouchat. Port je jakékoliv èíslo v rozsahu 1 a 65535. Data lze rozesílat více pøíjemcùm najednou (broadcast). Odesílaná data (datovı paket) mohou bıt ve formátu textové zprávy nebo binárních dat. Velikost jednoho UDP paketu je omezena. Minimální zaruèená velikost je 512 bajtù, ale obvykle je podporována velikost paketu a 1500 bajtù. Pøíjemce nastavuje pøijímací IP adresu, na které bude naslouchat (v pøípadì, e na PC je nìkolik síovıch karet) a pøijímací port.\par
+\par
+\{bmc IDF21036.bmp\}\tab \b \i vysílací IP adresa\i0 \b0 \par
+\par
+Prvek \b \i vysílací IP adresa \i0 \b0 urèuje IP adresu, na kterou budou pakety odesílány. IP adresa je text ve tvaru napø. 192.168.1.20, tedy 4 skupiny èíslic (kadá v rozsahu 0 a 255) oddìlené teèkami. Kadá skupina mùe bıt v dekadickém formátu (zaèíná-li èíslicí 1 a 9), v oktalovém formátu (zaèíná èíslicí 0) nebo v hexadecimálním formátu (zaèíná znaky 0x). Hodnota 255 pøedstavuje broadcastové vysílání, bez rozlišení dané èásti IP adresy. Napøíklad 255.255.255.255 je vysílání všem pøíjemcùm bez rozlišení, 129.168.1.255 rozešle paket všem poèítaèùm v lokální síti. Pøi ètení prvek navrátí aktuálnì nastavenou vysílací IP adresu. Vysílací adresa má implicitní nastavení 127.0.0.1, co je zpìtná IP adresa poèítaèe, urèená ke komunikaci mezi programy na jednom poèítaèi. Aktuální IP adresu poèítaèe lze zjistit prvkem {\uldb IP adresa tohoto poèítaèe}{\v 20681}.\par
+\par
+\{bmc IDF21037.bmp\}\tab \b \i vysílací port (-1=zavøení vysílání)\i0 \b0 \par
+\par
+Prvek \b \i vysílací port \i0 \b0 nastavuje port, na kterém bude poslouchat pøíjemce paketù (protìjšek). Vysílací port je èíslo v rozsahu 1 a 65535. Implicitní hodnota vysílacího portu je 5000. Zápisem hodnoty -1 se nastavení vysílacího portu nezmìní, ale uzavøe se aktuálnì otevøenı UDP kanál. Ètením prvku je navrácena aktuálnì nastavená hodnota vysílacího portu.\par
+\par
+\{bmc IDF21038.bmp\}\tab \b \i velikost pøijímacího bufferu\i0 \b0 \par
+\par
+Pøi pøíjmu UDP paketu je pøijímána velikost dat do maximální velikosti, kterou urèuje prvek \b \i velikost pøijímacího bufferu\i0 \b0 . Implicitní velikost pøijímacího bufferu je 512 bajtù. Buffer mùe mít rozsah velikosti 1 a 16384 bajtù. Horní hranice je urèena síovım rozhraním a zpravidla je podporována velikost paketu 1500 bajtù. Ètením prvku lze zjistit aktuálnì nastavenou velikost pøijímacího bufferu.\par
+\par
+\{bmc IDF21039.bmp\}\tab \b \i pøijatá/pøijímací IP adresa\i0 \b0 \par
+\par
+Prvek \b \i pøijatá/pøijímací IP adresa \i0 \b0 umoòuje nastavit IP adresu (jako text), na které bude pøijímaè pøijímat UDP pakety. Nastavení IP adresy je nutné v pøípadì, je-li tøeba vybrat jedno z více síovıch rozhraní instalovanıch na PC. V opaèném pøípadì lze ponechat implicitní nastavení, co je adresa 0.0.0.0 znamenající, e pøíjem probíhá z jakéhokoliv síového rozhraní. Ètením prvku je navrácena IP adresa odesílatele naposledy pøijatého UDP paketu. Pøed pøíjmem prvního paketu je navrácena hodnota 255.255.255.255.\par
+\par
+\{bmc IDF21040.bmp\}\tab \b \i pøijatı/pøijímací port (-1=zavøení pøíjmu)\i0 \b0 \par
+\par
+Prvek \b \i pøijímací port \i0 \b0 nastavuje port, na kterém bude pøijímaè pøijímat UDP pakety. Pøijímací port je èíslo v rozsahu 1 a 65535. Implicitní hodnota pøijímacího portu je 5000. Zápisem hodnoty -1 se nastavení pøijímacího portu nezmìní, ale uzavøe se aktuálnì otevøenı UDP kanál. Ètením prvku je navrácen port odesílatele naposledy pøijatého UDP paketu. Pøed pøíjmem prvního paketu je navrácena hodnota 0.\par
+\par
+\{bmc IDF21041.bmp\}\tab \b \i binární paket\i0 \b0 \par
+\par
+Prvek \b \i binární paket \i0 \b0 slouí k pøenosu dat v binárním formátu. Pøed vysláním paketu se v pamìovém bloku pøipraví data k odeslání, nastaví se \b \i ukazatel ètení \i0 \b0 na zaèátek dat. Paket se poté odešle pouitím prvku \b \i binární paket \i0 \b0 se zadanou velikostí dat jako parametr. Ètením prvku probìhne pøíjem paketu, prvek navrátí velikost naètenıch dat (0 není-li nic pøijato). Pøíjem probíhá do pamìového bloku, na nìj je nastaven \b \i ukazatel zápisu\i0 \b0 . Pamìtovı blok musí mít velikost minimálnì stejnou, jaká je nastavena prvkem \b \i velikost pøijímacího bufferu\i0 \b0 .\par
+\par
+\{bmc IDF21042.bmp\}\tab \b \i textovı paket \i0 \b0 \par
+\par
+Prvek \b \i textovı paket \i0 \b0 slouí k pøenosu dat v textovém formátu. Odeslání dat se provede pouitím prvku jako pøíkaz, s uvedením textu k vyslání jako parametr. Ètením prvku je proveden pøíjem paketu, pøijatá data jsou navrácena jako text. Není-li nic pøijato, je navrácen prázdnı text. Velikost pøijatého textu je omezena nastavením prvku \b \i velikost pøijímacího bufferu\i0 \b0 .\par
+\par
+
+\page
+}

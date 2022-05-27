@@ -1,0 +1,155 @@
+{\rtf1 \ansi \deff0
+
+@{\footnote ------- definice fontù --------- }
+
+{\fonttbl 
+{\f0 \fswiss MS San Serif CE;}
+}
+
+@{\footnote ------- definice barev --------- }
+
+{\colortbl
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red192\green192\blue192;
+\red128\green128\blue128;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+
+@{\footnote Použití barev:
+	0 - èerná
+	1 - tmavì èervená
+	2 - tmavì zelená
+	3 - hnìdá
+	4 - tmavì modrá
+	5 - tmavì fialová
+	6 - tmavì modrozelená
+	7 - šedá
+	8 - tmavì šedá
+	9 - èervená
+	10 - zelená
+	11 - žlutá
+	12 - modrá
+	13 - fialová
+	14 - modrozelená
+	15 - bílá
+}
+
+#{\footnote 20276}
+#{\footnote 20064}
+#{\footnote 20523}
+#{\footnote 20285}
+#{\footnote 20239}
+#{\footnote 20288}
+#{\footnote 20277}
+#{\footnote 20278}
+#{\footnote 20279}
+#{\footnote 20280}
+#{\footnote 20281}
+#{\footnote 20282}
+#{\footnote 20283}
+#{\footnote 20284}
+#{\footnote 20286}
+#{\footnote 20287}
+#{\footnote 20512}
+#{\footnote 20513}
+#{\footnote 20296}
+#{\footnote 20297}
+#{\footnote 20289}
+#{\footnote 20290}
+#{\footnote 20291}
+#{\footnote 20292}
+#{\footnote 20293}
+#{\footnote 20380}
+#{\footnote 20381}
+#{\footnote 20382}
+#{\footnote 20936}
+#{\footnote 20937}
+#{\footnote 20938}
+#{\footnote 20939}
+#{\footnote 20940}
+${\footnote Texty}
++{\footnote 1}
+K{\footnote texty;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Texty\par
+\pard \plain \cf0 \fs20
+{\uldb Stavební prvky programu}{\v Stavební prvky programu}\par
+\par
+\{bmc IDF20064.bmp\} \tab \b \i textová konstanta \i0 \b0 \par
+\par
+\b \i Textová konstanta \i0 \b0 navrací text, který je zadán jako její popisný text.\par
+\par
+\{bmc IDF20523.bmp\} \tab \b \i další øádek \i0 \b0 \par
+\par
+Prvek \b \i další øádek \i0 \b0 je textová konstanta navracející text konce øádku (dva znaky s èíselnou hodnotou 13 a 10, tj. ASCII kódy CR a LF).\par
+\par
+\{bmc IDF20285.bmp\} \tab \b \i slouèení textù \i0 \b0 \par
+\par
+Prvek \b \i slouèení textù \i0 \b0 slouží ke slouèení dvou a více textù do jednoho textu. Texty jsou pøidávány postupnì v poøadí shora dolù.\par
+\par
+\{bmc IDF20239.bmp\} \tab \b \i shodnost textù \i0 \b0 \par
+\par
+Prvek \b \i shodnost textù \i0 \b0 slouží k porovnání shodnosti textù. Lze zadat jeden a více textù. Texty jsou porovnávány postupnì shora dolù. Prvek navrací pøíznak platnosti v pøípadì, že všechny texty jsou shodné. Zvláštním pøípadem je porovnání pouze jednoho textu - text je porovnáván s prázdným textem, tj. zda je prázdný.\par
+\par
+\i \b Poznámka: \b0 Texty jsou porovnávány s rozlišením velkých a malých písmen. Je-li potøeba texty porovnávat bez rozlišení velkých a malých písmen, je nutno všechny nejdøíve pøevést na velká nebo malá písmena. \i0 \par
+\par
+\{bmc IDF20288.bmp\} \tab \b \i abecední porovnání textù \i0 \b0 \par
+\par
+Prvek \b \i abecední porovnání textù \i0 \b0 slouží k porovnání abecedního poøadí textù za úèelem abecedního tøídìní. Porovnání nerozlišuje velká a malá písmena a zohledòuje národnostnì specifické informace podle nastavení v systému Windows (tj. písmena s diakritikou popø. dvoupísmenové hlásky). Lze zadat jeden nebo více textù k porovnání. Texty jsou porovnávány postupnì shora dolù. Prvek navrací pøíznak platnosti v pøípadì, že pro všechny sousední dvojice textù platí, že první (horní) z textù je abecednì vzdálenìjší než druhý (tedy ani ne shodný). Praktický význam je ten, že jsou porovnány dva sousední texty v seznamu a je-li první z textù abecednì výše, bude provedena zámìna textù. Zvláštním pøípadem je porovnání pouze jednoho textu - text je porovnán s prázdným textem, tj. zda není prázdný (tedy opaènì než u pøedešlého porovnání).\par
+\par
+\{bmc IDF20277.bmp\} \b \i levá èást textu \i0 \b0 \par
+\tab \{bmc IDF20278.bmp\} \b \i délka levé èásti textu \i0 \b0 (poèet znakù) \par
+\tab \{bmc IDF20292.bmp\} \b \i vstupní text \i0 \b0 \par
+\par
+\{bmc IDF20279.bmp\} \b \i pravá èást textu \i0 \b0 \par
+\tab \{bmc IDF20280.bmp\} \b \i poèátek pravé èásti textu \i0 \b0 (pozice 0...) \par
+\tab \{bmc IDF20292.bmp\} \b \i vstupní text \i0 \b0 \par
+\par
+\{bmc IDF20281.bmp\} \b \i støední èást textu \i0 \b0 \par
+\tab \{bmc IDF20282.bmp\} \b \i poèátek støední èásti textu \i0 \b0 (pozice 0...) \par
+\tab \{bmc IDF20283.bmp\} \b \i délka støední èásti textu \i0 \b0 (poèet znakù) \par
+\tab \{bmc IDF20292.bmp\} \b \i vstupní text \i0 \b0 \par
+\par
+\{bmc IDF20284.bmp\} \tab \b \i délka textu \i0 \b0 (vrací poèet znakù) \par
+\{bmc IDF20286.bmp\} \tab \b \i pøevod èísla z textového tvaru na èíselný \i0 \b0 \par
+\{bmc IDF20287.bmp\} \tab \b \i pøevod èísla z èíselného tvaru na textový \i0 \b0 \par
+\{bmc IDF20512.bmp\} \tab \b \i pøevod èísla na text - 2 dekadické èíslice \i0 \b0 \par
+\{bmc IDF20513.bmp\} \tab \b \i pøevod èísla na text - 8 hexadecimálních èíslic \i0 \b0 \par
+\{bmc IDF20296.bmp\} \tab \b \i pøevod znaku na èíselný kód \i0 \b0 \par
+\{bmc IDF20297.bmp\} \tab \b \i pøevod èíselného kódu na znak \i0 \b0 \par
+\{bmc IDF20289.bmp\} \tab \b \i pøevod na malá písmena \i0 \b0 \par
+\{bmc IDF20290.bmp\} \tab \b \i pøevod na velká písmena \i0 \b0 \par
+\par
+\{bmc IDF20291.bmp\} \b \i nalezení pozice s textem \i0 \b0 (vrací pozici 0... nebo -1=nenalezeno) \par
+\tab \{bmc IDF20293.bmp\} \b \i hledaný text \i0 \b0 \par
+\tab \{bmc IDF20292.bmp\} \b \i vstupní text \i0 \b0 \par
+\par
+\{bmc IDF20380.bmp\} \tab \b \i poèet øádkù textu \i0 \b0 \par
+\par
+\{bmc IDF20381.bmp\} \b \i øádek textu \i0 \b0 \par
+\tab \{bmc IDF20382.bmp\} \b \i èíslo øádku textu \i0 \b0 (èíslo øádku = 0...) \par
+\tab \{bmc IDF20292.bmp\} \b \i vstupní text \i0 \b0 \par
+\par
+\{bmc IDF20936.bmp\} \b \i blok textu \i0 \b0 \par
+\tab \{bmc IDF20937.bmp\} \b \i øádek poèátku bloku \i0 \b0 \par
+\tab \{bmc IDF20938.bmp\} \b \i pozice poèátku bloku \i0 \b0 \par
+\tab \{bmc IDF20939.bmp\} \b \i øádek konce bloku \i0 \b0 \par
+\tab \{bmc IDF20940.bmp\} \b \i pozice konce bloku \i0 \b0 \par
+\tab \{bmc IDF20292.bmp\} \b \i vstupní text \i0 \b0 \par
+\par
+Prvek \b \i blok textu \i0 \b0 navrátí vybranou èást víceøádkového textu. Víceøádkový text musí používat k ukonèení øádkù dvojici znakù CR (kód 13) a LF (kód 10). Øádek a pozice bloku je udávána od èísla \b 0\b0 . Zadáním èísla \b -1 \b0 se použije maximální konec textu nebo øádku. Implicitnì je øádek a pozice poèátku bloku nastaven na hodnotu 0, øádek a pozice konce bloku jsou nastaveny na hodnotu -1, bez zmìny implicitních parametrù bude navrácen celý text.\par
+\page
+
+}

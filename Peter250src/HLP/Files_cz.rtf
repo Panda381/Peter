@@ -1,0 +1,295 @@
+{\rtf1 \ansi \deff0
+
+@{\footnote ------- definice fontù --------- }
+
+{\fonttbl 
+{\f0 \fswiss MS San Serif CE;}
+}
+
+@{\footnote ------- definice barev --------- }
+
+{\colortbl
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red192\green192\blue192;
+\red128\green128\blue128;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+
+@{\footnote Pouití barev:
+	0 - èerná
+	1 - tmavì èervená
+	2 - tmavì zelená
+	3 - hnìdá
+	4 - tmavì modrá
+	5 - tmavì fialová
+	6 - tmavì modrozelená
+	7 - šedá
+	8 - tmavì šedá
+	9 - èervená
+	10 - zelená
+	11 - lutá
+	12 - modrá
+	13 - fialová
+	14 - modrozelená
+	15 - bílá
+}
+
+#{\footnote 20437}
+#{\footnote 20443}
+#{\footnote 20448}
+#{\footnote 20449}
+#{\footnote 20509}
+#{\footnote 20582}
+#{\footnote 20583}
+#{\footnote 20437}
+#{\footnote 20245}
+${\footnote Soubory}
++{\footnote 1}
+K{\footnote soubory;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Soubory\par
+\pard \plain \cf0 \fs20
+{\uldb Stavební prvky programu}{\v Stavební prvky programu}\par
+\par
+Obsluha souborù umoòuje pracovat souèasnì maximálnì se dvìma soubory. Z jednoho souboru lze data jen èíst, do druhého lze data jen zapisovat. Nelze èíst a zapisovat souèasnì do stejného souboru. Pøi pouití souborù se nastaví jména souborù pro ètení a zápis. Pøi prvním pøístupu k datùm souboru se soubor otevøe, uzavøe se automaticky buï není-li pouíván nebo pøi novém nastavení jmen souborù. Vznikne-li pøi souborovıch operacích chyba, je nastaven pøíznak chyby operace.\par
+\par
+\{bmc IDF20443.bmp\}\tab \b \i aktivní disk a sloka \i0 \b0 \par
+\par
+Prvek \b \i aktivní disk a sloka \i0 \b0 je pouíván jako textová promìnná (s moností ètení i zápisu) udávající implicitní disk a sloku (ve tvaru "disk:\\cesta"), kterı se pouije pøi zadání neúplné specifikace souboru nebo sloky. Pøi nastavení neplatného disku èi sloky bude zapnut pøíznak chyby operace.\par
+\par
+\{bmc IDF20448.bmp\}\tab \b \i aktivní soubor (sloka) pro ètení \i0 \b0 \par
+\par
+Prvek \b \i aktivní soubor (sloka) pro ètení \i0 \b0 je textová promìnná (s moností ètení i zápisu) udávající jméno souboru nebo sloky, z kterého bude èteno nebo jeho parametry budou zjišovány. Pøi nastavení jména souboru (sloky) pro ètení bude døíve otevøenı soubor pro ètení èi zápis uzavøen (pøitom mùe bıt nastaven pøíznak chyby operace) a ukazatel v souboru pro ètení bude nastaven na 0. Otevøení souboru (a pøíp. kontrola platnosti jména) bude provedeno a pøi prvním pøístupu k datùm souboru. Nelze souèasnì èíst a zapisovat do jednoho souboru.\par
+\par
+\{bmc IDF20449.bmp\}\tab \b \i aktivní soubor (sloka) pro zápis \i0 \b0 \par
+\par
+Prvek \b \i aktivní soubor (sloka) pro zápis \i0 \b0 je textová promìnná (s moností ètení i zápisu) udávající jméno souboru nebo sloky, do kterého bude zapisováno nebo jeho parametry budou nastavovány. Pøi nastavení jména souboru (sloky) pro zápis bude døíve otevøenı soubor pro ètení èi zápis uzavøen (pøitom mùe bıt nastaven pøíznak chyby operace) a ukazatel v souboru pro zápis bude nastaven na 0. Otevøení souboru (a pøíp. kontrola platnosti jména) bude provedeno a pøi prvním pøístupu k datùm souboru. Nelze souèasnì èíst a zapisovat do jednoho souboru.\par
+\par
+\{bmc IDF20509.bmp\}\tab \b \i pøíznak chyby operace \i0 \b0 \par
+\par
+Prvek \b \i pøíznak chyby operace \i0 \b0 je logickı pøíznak slouící k indikaci chyby bìhem souborové operace. Pøíznak je nastaven, pokud se vyskytne chyba operace. Vypnutí je nutno provést programovì pøed provádìním operací. To umoòuje testovat pøíznak chyby a po provedení více souborovıch operací najednou. Pøíznak je pouze informaèní, na chod programu nemá ádnı vliv.\par
+\par
+\{bmc IDF20582.bmp\}\tab \b \i spuštìní programu \i0 \b0 \par
+\par
+Prvek \b \i spuštìní programu \i0 \b0 slouí k provedení systémového pøíkazu nebo spuštìní programu. Jméno programu je zadáno jako textovı parametr. Za jménem programu lze zadat parametry programu. Obsahuje-li jméno programu mezery, je nutno je uvést mezi uvozovky ("to je program"). Nelze-li pøíkaz provést jako program, pøedá se systému k provedení (napø. pøíkaz "DIR"). Neèeká se na dokonèení spuštìného programu.\par
+\par
+\{bmc IDF20583.bmp\}\tab \b \i spuštìní programu s èekáním \i0 \b0 \par
+\par
+Prvek \b \i spuštìní programu s èekáním \i0 \b0 slouí k provedení systémového pøíkazu nebo spuštìní programu stejnì jako pøedešlı prvek. Liší se tím, e èeká na dokonèení spuštìného programu a navrátí èíselnou hodnotu jako návratovı kód programu.\par
+\par
+\{bmc IDF20245.bmp\}\tab \b \i návratovı kód programu \i0 \b0 \par
+\par
+Prvek \b \i návratovı kód programu \i0 \b0 je umístìn v {\uldb místních promìnnıch}{\v Místní promìnné a funkce} {\uldb hlavní funkce}{\v Spoleèné promìnné a funkce} programu (ne v základních prvcích). Je to kladná celoèíselná promìnná umoòující pøedání èíselného kódu jinım programùm, které tento program volaly. Obvyklé pouití návratového kódu programu je, e hodnota 0 znamená správné provedení programu, hodnoty vìtší ne 0 (pouze celá èísla) udávají kód chyby.\par
+\par
+{\uldb \{bmc IDF20438.bmp\}\tab základní operace}{\v 20438}\par
+{\uldb \{bmc IDF20465.bmp\}\tab data}{\v 20465}\par
+{\uldb \{bmc IDF20453.bmp\}\tab parametry}{\v 20453}\par
+{\uldb \{bmc IDF20452.bmp\}\tab disk}{\v 20452}\par
+\page
+
+#{\footnote 20438}
+#{\footnote 20439}
+#{\footnote 20440}
+#{\footnote 20441}
+#{\footnote 20442}
+#{\footnote 20450}
+#{\footnote 20451}
+#{\footnote 20642}
+${\footnote Základní souborové operace}
++{\footnote 1}
+K{\footnote základní souborové operace;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Základní souborové operace\par
+\pard \plain \cf0 \fs20
+{\uldb Soubory}{\v 20437}\par
+\par
+\{bmc IDF20439.bmp\}\tab \b \i novı soubor \i0 \b0 \par
+\par
+Prvek \b \i novı soubor \i0 \b0 slouí k vytvoøení nového souboru. Jméno souboru je zadáno jako textovı parametr. Neexistuje-li cesta k souboru, je vytvoøena. Pøi úspìšnosti operace vytvoøení nebo pokud soubor ji existuje, je navrácen logickı pøíznak platnosti. Jinak je navrácen pøíznak neplatnosti a souèasnì nastaven {\uldb pøíznak chyby operace}{\v 20509}.\par
+\par
+\{bmc IDF20440.bmp\}\tab \b \i nová sloka \i0 \b0 \par
+\par
+Prvek \b \i nová sloka \i0 \b0 slouí k vytvoøení nové sloky. Jméno sloky je zadáno jako textovı parametr. Neexistuje-li cesta ke sloce, je vytvoøena. Pøi úspìšnosti operace vytvoøení nebo pokud sloka ji existuje, je navrácen logickı pøíznak platnosti. Jinak je navrácen pøíznak neplatnosti a souèasnì nastaven {\uldb pøíznak chyby operace}{\v 20509}.\par
+\par
+\{bmc IDF20441.bmp\}\tab \b \i zrušení souboru nebo sloky \i0 \b0 \par
+\par
+Prvek \b \i zrušení souboru nebo sloky \i0 \b0 slouí ke zrušení souboru nebo sloky. Jméno souboru nebo sloky je zadáno jako textovı parametr. Nelze zrušit soubor s atributem R/O (zákaz modifikace) a nelze zrušit neprázdnou sloku (obsahující soubor nebo jinou sloku). Pøi úspìšnosti operace zrušení je navrácen logickı pøíznak platnosti. Jinak je navrácen pøíznak neplatnosti a souèasnì nastaven {\uldb pøíznak chyby operace}{\v 20509}.\par
+\par
+\{bmc IDF20442.bmp\}\tab \b \i test existence \i0 \b0 \par
+\par
+Prvek \b \i test existence \i0 \b0 slouí ke zjištìní, zda existuje disk, soubor nebo sloka zadaná jako parametr. Pokud existuje, je navrácen logickı pøíznak platnosti. Zadáním specifikace disku ve tvaru "\b disk:\b0 " se testuje pouze existence disku v poèítaèi nezávisle na tom, zda disk obsahuje médium (napø. disketová mechanika). Zadáním specifikace "\b disk:\\\b0 " (tj. ROOT sloka disku) je testována existence disku vèetnì pøítomnosti média. Je-li potøeba testovat povolení pøístupovıch práv k ROOT disku, lze to provést testem "\b disk:\\*.*\b0 ".\par
+\par
+\{bmc IDF20450.bmp\}\tab \b \i kopie souboru \i0 \b0 \par
+\par
+Prvek \b \i kopie souboru \i0 \b0 zkopíruje soubor do nového souboru. Jméno zdrojového souboru udává {\uldb aktivní soubor pro ètení}{\v 20448}, jméno cílového souboru {\uldb aktivní soubor pro zápis}{\v 20449}. Cílovı soubor nesmí existovat (nebude pøepsán). Prvek navrací logickı pøíznak udávající úspìšnost operace. Pøi neúspìchu operace bude navrácen pøíznak neplatnosti a nastaven {\uldb pøíznak chyby operace}{\v 20509}.\par
+\par
+\{bmc IDF20451.bmp\}\tab \b \i pøesun/pøejmenování souboru nebo sloky \i0 \b0 \par
+\par
+Prvek \b \i pøesun/pøejmenování souboru nebo sloky \i0 \b0 umoòuje zmìnu jména souboru nebo sloky nebo pøesun do jiné sloky. Jméno zdrojového souboru/sloky udává {\uldb aktivní soubor (sloka) pro ètení}{\v 20448}, jméno cílového souboru/sloky {\uldb aktivní soubor (sloka) pro zápis}{\v 20449}. Cílovı soubor nesmí existovat (nebude pøepsán). Sloku lze pøesouvat pouze na stejném disku, soubor lze pøesouvat i mezi disky. Prvek navrací logickı pøíznak udávající úspìšnost operace. Pøi neúspìchu operace bude navrácen pøíznak neplatnosti a nastaven {\uldb pøíznak chyby operace}{\v 20509}.\par
+\par
+\{bmc IDF20642.bmp\}\tab \b \i seznam souborù a sloek \i0 \b0 \par
+\par
+Prvek \b \i seznam souborù \i0 \b0 vyhledá všechny soubory a sloky podle specifikace zadané jako textovı parametr a navrátí jejich seznam jako víceøádkovı text, ve kterém kadı øádek pøedstavuje jméno jednoho souboru/sloky (bez cesty). Pøi zadání masky souborù k vyhledání lze pouít hvìzdièkovou konvenci ("\b ?\b0 " nahrazuje libovolnı znak, "\b *\b0 " nahrazuje skupinu znakù). Lze zadat více masek souborù, jednotlivé masky jsou navzájem oddìleny znakem støedníku "\b ;\b0 ". Nebude-li zadána ádná maska souborù, vyhledají se všechny soubory a sloky v aktivní sloce.\par
+\page
+
+#{\footnote 20465}
+#{\footnote 20481}
+#{\footnote 20482}
+#{\footnote 20466}
+#{\footnote 20467}
+#{\footnote 20468}
+#{\footnote 20469}
+#{\footnote 20514}
+#{\footnote 20515}
+#{\footnote 20470}
+#{\footnote 20471}
+#{\footnote 20472}
+#{\footnote 20473}
+#{\footnote 20474}
+#{\footnote 20475}
+#{\footnote 20476}
+#{\footnote 20510}
+#{\footnote 20477}
+#{\footnote 20478}
+#{\footnote 20479}
+#{\footnote 20480}
+#{\footnote 20632}
+#{\footnote 20729}
+#{\footnote 20890}
+${\footnote Data souborù}
++{\footnote 1}
+K{\footnote data souborù;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Data souborù\par
+\pard \plain \cf0 \fs20
+{\uldb Soubory}{\v 20437}\par
+\par
+\{bmc IDF20481.bmp\}\tab \b \i ukazatel ètení \i0 \b0 \par
+\{bmc IDF20482.bmp\}\tab \b \i ukazatel zápisu \i0 \b0 \par
+\par
+Prvky \b \i ukazatel ètení \i0 \b0 a \b \i ukazatel zápisu \i0 \b0 jsou èíselné promìnné pøedstavující offset v souboru pro ètení a v souboru pro zápis. Ukazatele lze nastavovat i èíst. Pøi nastavení jména souboru pro ètení/zápis se pøíslušnı ukazatel nuluje. Ukazatele jsou automaticky posouvány pøi ètení/zápisu dat.\par
+\par
+\{bmc IDF20466.bmp\}\tab \b \i celé èíslo se znaménkem, 1 bajt \i0 \b0 \par
+\{bmc IDF20467.bmp\}\tab \b \i celé èíslo bez znaménka, 1 bajt \i0 \b0 \par
+\{bmc IDF20468.bmp\}\tab \b \i celé èíslo se znaménkem, 2 bajty \i0 \b0 \par
+\{bmc IDF20469.bmp\}\tab \b \i celé èíslo bez znaménka, 2 bajty \i0 \b0 \par
+\{bmc IDF20514.bmp\}\tab \b \i celé èíslo se znaménkem, 3 bajty \i0 \b0 \par
+\{bmc IDF20515.bmp\}\tab \b \i celé èíslo bez znaménka, 3 bajty \i0 \b0 \par
+\{bmc IDF20470.bmp\}\tab \b \i celé èíslo se znaménkem, 4 bajty \i0 \b0 \par
+\{bmc IDF20471.bmp\}\tab \b \i celé èíslo bez znaménka, 4 bajty \i0 \b0 \par
+\{bmc IDF20472.bmp\}\tab \b \i desetinné èíslo, 4 bajty \i0 \b0 \par
+\{bmc IDF20473.bmp\}\tab \b \i desetinné èíslo, 8 bajtù \i0 \b0 \par
+\{bmc IDF20890.bmp\}\tab \b \i logická hodnota \i0 \b0 \par
+\{bmc IDF20474.bmp\}\tab \b \i text zakonèenı binární nulou (ASCIIZ) \i0 \b0 \par
+\{bmc IDF20475.bmp\}\tab \b \i text zakonèenı koncem øádku CR/LF \i0 \b0 \par
+\{bmc IDF20476.bmp\}\tab \b \i text s pevnou délkou \i0 \b0 \par
+\{bmc IDF20510.bmp\}\tab \b \i délka textu s pevnou délkou \i0 \b0 \par
+\{bmc IDF20729.bmp\}\tab \b \i text je ve formátu UNICODE \i0 \b0 (2 bajty) \par
+\{bmc IDF20477.bmp\}\tab \b \i pøedmìt (ICO) \i0 \b0 \par
+\{bmc IDF20478.bmp\}\tab \b \i obrázek (BMP, JPG a nìkteré AVI) \i0 \b0 \par
+\{bmc IDF20479.bmp\}\tab \b \i zvuk (WAV, MP3) \i0 \b0 \par
+\{bmc IDF20480.bmp\}\tab \b \i hudba (MID, RMI) \i0 \b0 \par
+\{bmc IDF20632.bmp\}\tab \b \i sprajt (SPR) \i0 \b0 \par
+\par
+Datové prvky lze pouívat podobnì jako promìnné. Zápisem do prvku se provede zápis do vıstupního souboru, ètením hodnoty prvku se hodnota naète ze vstupního souboru. V pøípadì chyby operace je nastaven {\uldb pøíznak chyby operace}{\v 20509}. Chyba ve formátu pøi ètení prvkù pøedmìtu, obrázku, zvuku, hudby èi sprajtu zpùsobí, e ukazatel operace ètení nebude zmìnìn.\par
+\par
+Prvek \b \i logická hodnota \i0 \b0 pouívá k uloení hodnoty 1 bajt. Logická hodnota "ano" se zapíše jako èíslo 1, logická hodnota "ne" jako èíslo 0. Pøi ètení je za logickou hodnotu "ano" povaováno jakékoliv èíslo rùzné od 0.\par
+\par
+Pøi ètení obrázku je kromì formátù BMP a JPEG podporováno ètení nìkterıch AVI souborù pouívajících nekomprimovaná 16-bitová data (formát zápisu videosekvence televizní kartou). Naètením prvního obrázku ze zaèátku AVI souboru budou zjištìny informace o formátu souboru, tyto informace jsou pouívány i pøi ètení následujících obrázkù z AVI souboru. Zápis obrázkù probíhá vdy ve formátu BMP.\par
+\par
+Pøi ètení zvuku je podporován formát MPEG Layer-3 (MP3). K jeho {\uldb pøehrávání}{\v 20299} mùe bıt potøebná instalace ovladaèe. Zápis zvuku probíhá vdy ve formátu WAV.\par
+\par
+Prvek \b \i délka textu s pevnou délkou \i0 \b0 definuje délku textu s pevnou délkou (nejedná se o data souboru, ale o pomocnou vnitøní promìnnou).\par
+\par
+Prvek \b \i text je ve formátu UNICODE \i0 \b0 je pøepínaè udávající, e texty jsou naèítány a ukládány ve formátu UNICODE. Bìnì jsou texty naèítány a ukládány v implicitním formátu Windows - jeden znak odpovídá jednomu bajtu v souboru, kódování znakù s diakritikou odpovídá kódování Windows 1250 (ISO 8859). Znaky v kódu UNICODE jsou ukládány jako 2 bajty. Text není závislı na národním kódu systému, nevıhodou jsou vyšší nároky na velikost souboru.\par
+\page
+
+#{\footnote 20453}
+#{\footnote 20508}
+#{\footnote 20454}
+#{\footnote 20458}
+#{\footnote 20455}
+#{\footnote 20456}
+#{\footnote 20457}
+#{\footnote 20459}
+#{\footnote 20460}
+#{\footnote 20461}
+#{\footnote 20462}
+#{\footnote 20463}
+#{\footnote 20464}
+#{\footnote 20751}
+${\footnote Parametry souborù a sloek}
++{\footnote 1}
+K{\footnote parametry souborù a sloek;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Parametry souborù a sloek\par
+\pard \plain \cf0 \fs20
+{\uldb Soubory}{\v 20437}\par
+\par
+\{bmc IDF20508.bmp\}\tab \b \i velikost souboru \i0 \b0 \par
+\{bmc IDF20454.bmp\}\tab \b \i atribut R/O \i0 \b0 (pouze pro ètení)\par
+\{bmc IDF20458.bmp\}\tab \b \i atribut ARC \i0 \b0 (archivní)\par
+\{bmc IDF20455.bmp\}\tab \b \i atribut HID \i0 \b0 (skrytı)\par
+\{bmc IDF20456.bmp\}\tab \b \i atribut SYS \i0 \b0 (systémovı)\par
+\{bmc IDF20457.bmp\}\tab \b \i atribut DIR \i0 \b0 (sloka)\par
+\{bmc IDF20459.bmp\}\tab \b \i atribut TEMP \i0 \b0 (pøechodnı)\par
+\{bmc IDF20460.bmp\}\tab \b \i atribut COMP \i0 \b0 (zkomprimovanı)\par
+\{bmc IDF20461.bmp\}\tab \b \i atribut OFF \i0 \b0 (nepøístupnı)\par
+\{bmc IDF20462.bmp\}\tab \b \i datum a èas vytvoøení \i0 \b0 \par
+\{bmc IDF20463.bmp\}\tab \b \i datum a èas posledního ètení \i0 \b0 \par
+\{bmc IDF20464.bmp\}\tab \b \i datum a èas poslední modifikace \i0 \b0 \par
+\{bmc IDF20751.bmp\}\tab \b \i pøezdívka (alias) \i0 \b0 \par
+\par
+Prvky pro obsluhu parametrù souborù pouívají definici jmen souborù pro ètení a zápis. Pøi ètení hodnoty prvku je hodnota zjištìna ze souboru/sloky pro ètení, pøi zápisu hodnoty do prvku je hodnota nastavena do souboru/sloky pro zápis. V pøípadì chyby operace je nastaven {\uldb pøíznak chyby operace}{\v 20509}.\par
+\par
+Z atributù lze nastavovat pouze atributy R/O, ARC, HID a SYS (logická hodnota), atributy DIR, TEMP, COMP a OFF lze pouze èíst.\par
+\par
+Pøezdívky (aliases) jsou náhradní vícejazyèná jména souborù. Kadı soubor mùe mít kromì bìného souborového jména také tzv. pøezdívku, pod kterou se zobrazuje uivateli. Pøezdívka mùe bıt pro kadı jazyk jiná. Soubor pøitom mùe mít krátké jméno (8 znakù), tak lze zajistit pouívání dlouhıch jmen i v systémech nepodporujících dlouhá jména (starší sítì Novell, jiná jazyková verze operaèního systému, CD-ROM). Pøezdívky se uchovávají v souboru \b ALIASES.INI\b0 , kterı je ve stejné sloce jako soubor/sloka. Zápisem textu do prvku \b \i pøezdívka \i0 \b0 se provede zápis náhradního jména souboru/sloky pro zápis podle aktivnì nastaveného {\uldb jazyku}{\v 20397} programu. Ètením textu z prvku lze zjistit pøezdívku souboru/sloky pro ètení buï podle aktivnì nastaveného jazyku nebo podle jiného nejblišího jazyku.\par
+\page
+
+#{\footnote 20452}
+#{\footnote 20511}
+#{\footnote 20444}
+#{\footnote 20445}
+#{\footnote 20446}
+#{\footnote 20447}
+${\footnote Disk}
++{\footnote 1}
+K{\footnote disk;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Disk\par
+\pard \plain \cf0 \fs20
+{\uldb Soubory}{\v 20437}\par
+\par
+Všechny diskové operace se vztahují k disku nastavenému jako {\uldb aktivní disk}{\v 20443}.\par
+\par
+\{bmc IDF20511.bmp\}\tab \b \i typ disku \i0 \b0  (2=FD, 3=HD, 4=NET, 5=CD, 6=RAM)\par
+\par
+Prvek \b \i typ disku \i0 \b0 navrací èíslo typu disku:\par
+\tab \b 2 \b0 = disketová mechanika\par
+\tab \b 3 \b0 = pevnı disk\par
+\tab \b 4 \b0 = síovı disk\par
+\tab \b 5 \b0 = CD-ROM disk\par
+\tab \b 6 \b0 = RAM disk\par
+\par
+\{bmc IDF20444.bmp\}\tab \b \i kapacita disku \i0 \b0 (bajtù) \par
+\{bmc IDF20445.bmp\}\tab \b \i volné místo disku \i0 \b0 (bajtù) \par
+\{bmc IDF20446.bmp\}\tab \b \i jmenovka disku \i0 \b0 \par
+\{bmc IDF20447.bmp\}\tab \b \i sériové èíslo disku \i0 \b0 \par
+\par
+Prvek \b \i jmenovka disku \i0 \b0 navrací text jmenovky disku. Nastavením hodnoty prvku lze jmenovku disku zmìnit.\par
+\page
+
+}

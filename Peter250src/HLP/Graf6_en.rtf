@@ -1,0 +1,389 @@
+{\rtf1 \ansi \deff0
+
+@{\footnote ------- definice fontù --------- }
+
+{\fonttbl 
+{\f0 \fswiss MS San Serif CE;}
+}
+
+@{\footnote ------- definice barev --------- }
+
+{\colortbl
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red192\green192\blue192;
+\red128\green128\blue128;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+
+@{\footnote Použití barev:
+	0 - èerná
+	1 - tmavì èervená
+	2 - tmavì zelená
+	3 - hnìdá
+	4 - tmavì modrá
+	5 - tmavì fialová
+	6 - tmavì modrozelená
+	7 - šedá
+	8 - tmavì šedá
+	9 - èervená
+	10 - zelená
+	11 - žlutá
+	12 - modrá
+	13 - fialová
+	14 - modrozelená
+	15 - bílá
+}
+
+#{\footnote 20809}
+${\footnote Object from File}
++{\footnote 1}
+K{\footnote Object from File;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20809.bmp\} Object from File\par
+\pard \plain \cf0 \fs20
+{\uldb Create}{\v 20903}\par
+\par
+The \b \i object from file \i0 \b0 element will create a 3D object by reading the object definition from a file the name of which is given as the element's parameter. The file is in the DirectX format (the file suffix being *.x). The file can assume a binary or a text form, the file format was described in a simplified way when discussing the {\uldb object from text}{\v 20808} element.\par
+\par
+The element returns the {\uldb identification number}{\v 20810} of the created object.\par
+\par
+With complex objects, if service of individual objects is needed (e.g. to set their textures), then it can be converted to simple object in an editor or the {\uldb searching of children}{\v 21034} function can be used.\par
+\page
+
+#{\footnote 20801}
+${\footnote Objects}
++{\footnote 1}
+K{\footnote Objects;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Objects\par
+\pard \plain \cf0 \fs20
+{\uldb 3D Graphics}{\v 20788}\par
+\par
+\par
+{\uldb \{bmc IDF20812.bmp\}\tab visible}{\v 20812}\par
+{\uldb \{bmc IDF20811.bmp\}\tab delete object}{\v 20811}\par
+{\uldb \{bmc IDF20807.bmp\}\tab clone}{\v 20807}\par
+{\uldb \{bmc IDF20879.bmp\}\tab complexity of object}{\v 20879}\par
+{\uldb \{bmc IDF20867.bmp\}\tab create upper base}{\v 20867}\par
+{\uldb \{bmc IDF20868.bmp\}\tab create lower base}{\v 20868}\par
+{\uldb \{bmc IDF20945.bmp\}\tab shadow range}{\v 20945}\par
+{\uldb \{bmc IDF20813.bmp\}\tab link}{\v 20813}\par
+{\uldb \{bmc IDF21034.bmp\}\tab find child}{\v 21034}\par
+{\uldb \{bmc IDF20800.bmp\}\tab object inversion}{\v 20800}\par
+{\uldb \{bmc IDF20904.bmp\}\tab object normalization}{\v 20904}\par
+{\uldb \{bmc IDF20934.bmp\}\tab calculate normals}{\v 20934}\par
+{\uldb \{bmc IDF20875.bmp\}\tab terrain level}{\v 20875}\par
+{\uldb \{bmc IDF20930.bmp\}\tab render group}{\v 20930}\par
+{\uldb \{bmc IDF20931.bmp\}\tab depth sort render group}{\v 20931}\par
+{\uldb \{bmc IDF20932.bmp\}\tab write depth information}{\v 20932}\par
+{\uldb \{bmc IDF20933.bmp\}\tab depth test}{\v 20933}\par
+{\uldb \{bmc IDF20956.bmp\}\tab object with reduced detail level}{\v 20956}\par
+{\uldb \{bmc IDF20957.bmp\}\tab distance for detail level reduction}{\v 20957}\par
+{\uldb \{bmc IDF20958.bmp\}\tab add pattern for morphing}{\v 20958}\par
+{\uldb \{bmc IDF20959.bmp\}\tab morphing stage}{\v 20959}\par
+\page
+
+#{\footnote 20812}
+${\footnote Visible}
++{\footnote 1}
+K{\footnote Visible;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20812.bmp\} Visible\par
+\pard \plain \cf0 \fs20
+{\uldb Objects}{\v 20801}\par
+\par
+The \b \i visible \i0 \b0 element enables to switch on or off the object's visibility. This is a logical switch. When a new object is created, its visibility is on. Besides with objects, the visibility can also be changed with lights, thus enabling to switch the lights on or off. In complicated scenes the rendering speed may be increased by switching the visibility of hidden objects off. If e.g. the viewer is in one room, it is possible to increase the drawing speed by switching the visibility of objects situated in the next-door rooms off (The 3D system itself cannot recognize that some objects are hidden behind the wall). A suitable method is {\uldb connecting}{\v 20813} objects to the room. Thus, by switching the visibility of the hidden rooms off the visibility of all objects in the rooms, too, can be switched off. If a portion of a room is visible through an open door or window, then a division of the room in sectors visible from various positions may help and switching off the visibility of certain sectors (object groups found in the room) only.\par
+\page
+
+#{\footnote 20811}
+${\footnote Delete Object}
++{\footnote 1}
+K{\footnote Delete Object;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20811.bmp\} Delete Object\par
+\pard \plain \cf0 \fs20
+{\uldb Objects}{\v 20801}\par
+\par
+The \b \i delete object \i0 \b0 element will delete an object the {\uldb identification number}{\v 20810} of which is entered as a parameter. Identification numbers of several objects can also be entered at a time. If an object contains {\uldb children}{\v 20813}, then all object's children are deleted at the same time.\par
+\page
+
+#{\footnote 20807}
+${\footnote Clone}
++{\footnote 1}
+K{\footnote Clone;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20807.bmp\} Clone\par
+\pard \plain \cf0 \fs20
+{\uldb Objects}{\v 20801}\par
+\par
+The \b \i clone \i0 \b0 element will copy the object the {\uldb identification number}{\v 20810} of which is entered as a parameter, into a new object. The newly created object contains the same setting as the original one (transformation, textures, visibility etc.). Unlike the original object it is not connected to any object (i.e. it is connected to the scene). If the original object contained children, then these children are copied, too. The identification numbers of the new children are not accessible. If some manipulations are to be carried out with the children, then the object must be copied piecewise. The element returns the created object's {\uldb identification number}{\v 20810}.\par
+\par
+Cloned objects use common data buffers. These feature can greatly speed up creation and drawing of such objects and can reduce memory consumption, too. Using of common data buffers is terminated in some object modifying operations: morphing, texture mapping, calculate normals, object normalization, object inversion and object color changing. In such cases it is more suitable to clone object after execution of such operations.\par
+\page
+
+#{\footnote 20879}
+${\footnote Complexity of Object}
++{\footnote 1}
+K{\footnote Complexity of Object;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20879.bmp\} Complexity of Object\par
+\pard \plain \cf0 \fs20
+{\uldb Objects}{\v 20801}\par
+\par
+The \b \i complexity of object \i0 \b0 element is an internal numeric value of the 3D graphics service. It defines the complexity with which rotary objects will be created ({\uldb circle}{\v 20905}, {\uldb sphere}{\v 20804}, {\uldb hemisphere}{\v 20909}, {\uldb cylinder}{\v 20805}, {\uldb cone}{\v 20806}, {\uldb truncated cone}{\v 20926}, {\uldb torus}{\v 20907}, {\uldb rotary object}{\v 20882}). The object complexity is an integer ranging between 2 and 100 and specifying the number of segments into which one half of the rotary object's circumference is divided. For instance, a circle with complexity 2 will create a square. Complex objects slow down the 3D graphics drawing. Therefore, the object complexity should be set to the lowest degree possible. The object complexity is to be set \b before \b0 creating the object desired.\par
+\page
+
+#{\footnote 20867}
+${\footnote Create Upper Base}
++{\footnote 1}
+K{\footnote Create Upper Base;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20867.bmp\} Create Upper Base\par
+\pard \plain \cf0 \fs20
+{\uldb Objects}{\v 20801}\par
+\par
+The \b \i create upper base \i0 \b0 element is a logical switch. It decides whether the upper base of the newly created objects {\uldb cube}{\v 20803}, {\uldb cylinder}{\v 20805} or {\uldb truncated cone}{\v 20926} will be created. The switch has to be set \b before \b0 creating the object desired.\par
+\page
+
+#{\footnote 20868}
+${\footnote Create Lower Base}
++{\footnote 1}
+K{\footnote Create Lower Base;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20868.bmp\} Create Lower Base\par
+\pard \plain \cf0 \fs20
+{\uldb Objekty}{\v 20801}\par
+\par
+The \b \i create lower base \i0 \b0 element is a logical switch. It decides whether the lower base of the newly created objects {\uldb cube}{\v 20803}, {\uldb hemisphere}{\v 20909}, {\uldb cylinder}{\v 20805}, {\uldb cone}{\v 20806} or {\uldb truncated cone}{\v 20926} will be created. The switch has to be set \b before \b0 creating the object desired.\par
+\page
+
+#{\footnote 20945}
+${\footnote Shadow Range}
++{\footnote 1}
+K{\footnote Shadow Range;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20945.bmp\} Shadow Range\par
+\pard \plain \cf0 \fs20
+{\uldb Objects}{\v 20801}\par
+\par
+The \b \i shadow range \i0 \b0 element serves to activate dynamic shadow of the {\uldb active object}{\v 20810}. Dynamic shadows are shadows casted by moving objects. Dynamic shadow is created by main light of the scene, that is {\uldb object}{\v 20810} having number 2. Dynamic shadow of an object is created using volume shadow method. At first, an outline curve of the object is created (profile from light view), and then a conic shadow is casted from the outline curve, which has its vertex on the oposite side than the light occurs. A shadow arises in places where conic shadow meets other object. A shadow arises on the object itself, too.\par
+\par
+The shadow range element determines distance of conic shadow vertex from the object center. Dimension of shadow reduces with growing distance from object, shadow totally disappear in conic shadow vertex. Setting shadow range to 0 will switch off a shadow (default value).\par
+\par
+To create dynamic shadow a stencil buffer of the graphics card is used. Stencil buffer is supported by most of graphics cards in 32-bit videomode only. If a videomode not supporting the stencil buffer is used (16-bit videomode usually), an alternative technique of shadow creating will be used, which uses overlapping of lightening and embrowning areas. This alternative technique has secondary effects on a dark background especially - supervening of colored veil stretched from the object to the shadow. For that reason, if shadows are not stringently required, it is recommended to switch them off in other then 32-bit videomodes. The stencil buffer is already supported in all videomodes with newest graphics cards.\par
+\par
+If complexity of outline curve is too high in comparison to bit depth of the stencil buffer then effect of shadow segmentation can occur - light defects appear in a shadow. Therefore it is recommended to simplify the object (casting shadow) at most.\par
+\par
+Another effect, on which it is important to remember when using dynamic shadow, is shadow inversion in a case when an observer occurs in place of shadow casting. Therewore, an observer (camera) should never get to shadow casted by an object.\par
+\page
+
+#{\footnote 20813}
+${\footnote Link}
++{\footnote 1}
+K{\footnote Link;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20813.bmp\} Link\par
+\pard \plain \cf0 \fs20
+{\uldb Objects}{\v 20801}\par
+\par
+The \b \i link \i0 \b0 element serves to connect other objects to an {\uldb active object}{\v 20810}. The identification number of the object to be connected is entered as the element's parameter. Several objects may be entered at a time. By connecting the object it is disconnected from the original object. If an object has to be disconnected, then this is executed by connecting it to a scene object (Its identification number is equal to 0). As a default, each object is connected to the scene after being created.\par
+\par
+After connecting an object this connected object is then called a "child". The object to which it is connected, is its "parent". Each parent can concurrently be a child of another object. For a connected object it holds that the object transformations apply to its parent. This fact makes it possible to manipulate an object with children as a whole. An example for this can be the robot figure. To the robot trunk arms and legs are connected. The trunk is the parent, the arms and legs are the children. The robot can be moved across the scene as a whole. By changing the "rotation" parameter the robot's legs can be moved and thus an impression of robot's pace can be induced. Similarly, one can manipulate the robot's fingers on its hand, independently on the position of its hands or of the robot itself.\par
+\par
+A connected object can inherit the {\uldb surface}{\v 20825} definition and the {\uldb texture}{\v 20830} from his parent, if the object {\uldb color}{\v 20826} is set to \b -2\b0 . This makes it possible to change the object surface as a whole (together with the children).\par
+\page
+
+#{\footnote 21034}
+${\footnote Find Child}
++{\footnote 1}
+K{\footnote Find Child;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF21034.bmp\} Find Child\par
+\pard \plain \cf0 \fs20
+{\uldb Objects}{\v 20801}\par
+\par
+The \b \i find child \i0 \b0 function serves to scan {\uldb link}{\v 20813} structure of objects.\par
+\par
+If \b -1 \b0 number is set as parameter of the function or if parameter omits, then this function returns index of the first child, which is connected to the {\uldb active object}{\v 20810}. If no child is connected, then this function returns \b -1 \b0 value.\par
+\par
+If \b -2 \b0 number is set as parameter of the function, then this function returns index of parent, to which active object is connected. If it is not connected to any object, then \b 0 \b0 value is returned, which presents connecting to scene. For invalid active object \b -1 \b0 value is returned.\par
+\par
+If index of some object is set as parameter of the function, then index of following object connected to the same parent as entered object is returned. If no object follows, then \b -1 \b0 value is returned.\par
+\par
+This function can be useful particularly in case of {\uldb loading object from file}{\v 20809} when structure of linked objects is not known.\par
+\page
+
+#{\footnote 20800}
+${\footnote Object Inversion}
++{\footnote 1}
+K{\footnote Object Inversion;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20800.bmp\} Object Inversion\par
+\pard \plain \cf0 \fs20
+{\uldb Objects}{\v 20801}\par
+\par
+The \b \i object inversion \i0 \b0 command serves to evert the surface of an {\uldb active object}{\v 20810}. The object thus becomes visible from the inner side. This command changes the sequence of the face vertices (the opposite face side will become the front side), and it also inverts the direction of the face normals (The faces will be lighted from the opposite side), the {\uldb visible object side}{\v 20902} parameter remaining unchanged. An example for the command utilization is the firmament making use of the hemisphere inner side.\par
+\page
+
+#{\footnote 20904}
+${\footnote Object Normalization}
++{\footnote 1}
+K{\footnote Object Normalization;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20904.bmp\} Object Normalization\par
+\pard \plain \cf0 \fs20
+{\uldb Objects}{\v 20801}\par
+\par
+The \b \i object normalization \i0 \b0 command provides a size and position change of an {\uldb active object}{\v 20810} for this object to fill out the unity cube in the best way possible. The command functions as follows: For all object vertices the maximum distance of the vertices in the X, Y and Z directions is found. Then the object is centered in all three directions, and the vertex coordinates are divided by the greatest distance. Thus the greatest of the object's dimensions will assume the unity value.\par
+\par
+This command normalizes the object itself, not its children. With the children this command only provides for a change of their scale and translation, without including the children into the object's normalized size. This is the reason why it is not possible to normalize an object consisting of an empty group with children connected.\par
+\page
+
+#{\footnote 20934}
+${\footnote Calculate Normals}
++{\footnote 1}
+K{\footnote Calculate Normals;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20934.bmp\} Calculate Normals\par
+\pard \plain \cf0 \fs20
+{\uldb Objects}{\v 20801}\par
+\par
+The \b \i calculate normals \i0 \b0 command serves to automatically calculate normals of an {\uldb active object}{\v 20810}. The normal is a vector perpendicular to the object face surface. Is is used to calculate face lighting. The normal represents a direction in which must be located a light source for the face to be maximal lighted.\par
+\par
+As a command parameter a maximal angle is entered that normals of different faces may hold in the contact vertex to be applied surface smoothing. The default angle value is equal to \b 0.5\b0 , i.e. 30 degrees approximately. Surface between faces with lower angle will be smoothed, i.e. ligting between faces will change smoothly. For faces with greater angle an unsmoothed normal will be used, a sharp edge will be observable between faces. By setting an angle to zero all smoothing will be switched off, a sharp edge will be observable between all faces. By setting to \b pi \b0 all face edges will be smoothed.\par
+\page
+
+#{\footnote 20875}
+#{\footnote 20876}
+#{\footnote 20877}
+${\footnote Terrain Level}
++{\footnote 1}
+K{\footnote Terrain Level;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20875.bmp\} Terrain Level\par
+\pard \plain \cf0 \fs20
+{\uldb Objects}{\v 20801}\par
+\par
+\{bmc IDF20875.bmp\} \b \i terrain level \i0 \b0 \par
+\tab \{bmc IDF20876.bmp\} \b \i horizontal coordinate \i0 \b0 \par
+\tab \{bmc IDF20877.bmp\} \b \i vertical coordinate \i0 \b0 \par
+\par
+By means of the \b \i terrain level \i0 \b0 function the terrain height in a certain point can easily be found. The function uses the {\uldb terrain from picture}{\v 20874} or the {\uldb terrain from sheet}{\v 20883} that was set as an {\uldb active object}{\v 20810} for the last time. The terrain itself need not be an active object.\par
+\par
+As parameters of this function horizontal and vertical coordinates of the terrain point are specified. If no parameters are specified, then the actual camera position is used, i.e. the „translation in X direction“ and „translation in Z direction“ parameters. Possible camera connection to another object is not envisaged. The function detracts the X and Z terrain translation from the coordinates specified, and divides them by the X and Z terrain scale. Possible terrain connection to another object or terrain rotation are not envisaged. The point coordinates are modified by the modulo operation, as if the terrain were laid repeatedly, the individual terrains being situated next to one another. The terrain height detected is multiplied by the terrain Y scale and the terrain Y translation is added.\par
+\page
+
+#{\footnote 20930}
+${\footnote Render Group}
++{\footnote 1}
+K{\footnote Render Group;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20930.bmp\} Render Group\par
+\pard \plain \cf0 \fs20
+{\uldb Objects}{\v 20801}\par
+\par
+The \b \i render group \i0 \b0 element is an {\uldb active object's}{\v 20810} numeric parameter enabling to specify the succession in which individual objects are rendered (drawn). The render group value may range between \b 0 \b0 and \b 15\b0 . The rendering takes place in objects belonging to render group 0 up to objects of render group 15. Using render groups may be arbitrary. The default distribution of the render groups is as follows:\par
+\par
+\b \i 0 to 7      \i0 \b0 \tab usual objects (default 4)\par
+\b \i 8 to 11   \i0 \b0 \tab transparent objects (default 10, depth sorting)\par
+\b \i 12 to 15 \i0 \b0 \tab 2D pictures (default 14)\par
+\par
+Groups 8 through 11 are default set to be used for a {\uldb transparent objects}{\v 20839}. They are {\uldb depth sorted}{\v 20931}. The other groups are not sorted. When {\uldb creating an object}{\v 20903} or setting the {\uldb transparency}{\v 20839} parameter, the object's default group is set : usual objects (opaque, resulting color not depending on the destination color) have default group \b 4\b0 , the transparent objects have group \b 10\b0 , and {\uldb 2D pictures}{\v 20914} have group \b 14\b0 . For this reason the group must be set \b after \b0 the transparency has been set.\par
+\page
+
+#{\footnote 20931}
+${\footnote Depth Sort Render Group}
++{\footnote 1}
+K{\footnote Depth Sort Render Group;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20931.bmp\} Depth Sort Render Group\par
+\pard \plain \cf0 \fs20
+{\uldb Objects}{\v 20801}\par
+\par
+The \b \i depth sort render group \i0 \b0 element is a logical switch defining, if the group that an {\uldb object belongs to}{\v 20930}, should be depth sorted. The switch must be set only after the {\uldb active object's}{\v 20810} {\uldb render group}{\v 20930} has been selected. The depth sorting is done by the distance of the object from the camera. When a group is depth sorted, then the objects in the group are rendered from the most distant objects to the nearest ones. As a default value, the depth sorting is switched on for render groups 8 through 11 only, which are intended for transparent objects. The depth sorting is a time consuming operation, therefore it should be carried out in inevitable cases only.\par
+\page
+
+#{\footnote 20932}
+${\footnote Write Depth Information}
++{\footnote 1}
+K{\footnote Write Depth Information;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20932.bmp\} Write Depth Information\par
+\pard \plain \cf0 \fs20
+{\uldb Objects}{\v 20801}\par
+\par
+When rendering (drawing) objects each point being rendered is stored together with its depth information, i.e. with its distance from the camera. When rendering a further object each point being rendered is depth tested. A new point will be drawn only if it is situated nearer to the camera than the foregoing point.\par
+\par
+The \b \i write depth information \i0 \b0 element is a logic switch defining whether the depth information of an {\uldb active object's}{\v 20810} point will be stored. This switch being off may be utilized to reach special effects. If the {\uldb depth test}{\v 20933} is switched off at the same time, the rendering speed can be raised slightly (especially when using a software driver).\par
+\page
+
+#{\footnote 20933}
+${\footnote Depth Test}
++{\footnote 1}
+K{\footnote Depth Test;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20933.bmp\} Depth Test\par
+\pard \plain \cf0 \fs20
+{\uldb Objects}{\v 20801}\par
+\par
+When rendering (drawing) objects each point being rendered is stored together with its depth information, i.e. with its distance from the camera. When rendering a further object each point being rendered is depth tested. A new point will be drawn only if it is situated nearer to the camera than the foregoing point.\par
+\par
+The \b \i depth test \i0 \b0 element is a numeric parameter of an {\uldb active object}{\v 20810} defining the precondition for rendering a point. The depth (distance) of the point is compared with the depth of the point being overwritten. The point will be drawn only if the test precondition is met.\par
+\par
+\b 1 \b0 \tab never (pixel will never be drawn)\par
+\b 2 \b0 \tab < (distance must be less)\par
+\b 3 \b0 \tab = (distance must be equal)\par
+\b 4 \b0 \tab <= (distance must be less or equal; default)\par
+\b 5 \b0 \tab > (distance must be greater)\par
+\b 6 \b0 \tab <> (distance must not be equal)\par
+\b 7 \b0 \tab >= (distance must be greater or equal)\par
+\b 8 \b0 \tab always (pixel will always be drawn)\par
+\par
+The default value is 4; the point will be drawn if its distance from the camera is smaller or identical. After setting the depth test to 8 and switching the {\uldb write depth information}{\v 20932} switch off the function of the depth buffer will be switched off. The rendering speed can be thus raised slightly, especially when using a software driver.\par
+\page
+
+#{\footnote 20956}
+#{\footnote 20957}
+${\footnote Object With Reduced Detail Level}
++{\footnote 1}
+K{\footnote Object With Reduced Detail Level;Distance For Detail Level Reduction}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20956.bmp\} Object With Reduced Detail Level, \{bmc IDF20957.bmp\} Distance For Detail Level Reduction\par
+\pard \plain \cf0 \fs20
+{\uldb Objects}{\v 20801}\par
+\par
+One another object with reduced complexity can be joined to every 3D object. This object will be used in place of original object in case of specific distance from observer. By this considerable increase of speed of 3D graphics drawing can be achieved without noticeable loss of object complexity.\par
+\par
+With the \b \i object with reduced detail level \i0 \b0 element can be one object with reduced level of detail joined to {\uldb active object}{\v 20810}. The \b \i distance for detail level reduction \i0 \b0 element determines a distance from observer in which an object with reduced level of detail will be used instead of original object. Similarly, another object with reduced complexity can be joined to this object with reduced complexity and by this way multistage reduction of object complexity in dependence of distance can be assured. By setting the object with reduced detail level element to -1 value an original object will be detached and deleted. If no object with reduced level of detail is joined, it is possible to determine distance in which the object fully disappears by setting the distance for detail level reduction element.\par
+\par
+Some operations come in useful for joined object with reduced complexity identically as for active object. Objects are linked automatically to the same parent, they are deleted all by deleting one of them, and moving transformation asserts for all equally. Other manipulations with objects - rotation, scaling, and other - assert only for individual objects independently.\par
+\page
+
+#{\footnote 20958}
+#{\footnote 20959}
+${\footnote Morphing}
++{\footnote 1}
+K{\footnote Add Pattern For Morphing;Morphing Stage}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20958.bmp\} Add Pattern For Morphing, \{bmc IDF20959.bmp\} Morphing Stage\par
+\pard \plain \cf0 \fs20
+{\uldb Objects}{\v 20801}\par
+\par
+Morphing operation is a smooth changeover of shape of 3D object between two or more object patterns. Morphing pursues changing coordinates of individual vertices of object. With help of the \b \i add pattern for morphing \i0 \b0 element next pattern for morphing is added to the {\uldb active object}{\v 20810}. Identification number of object used as a pattern is passed on as an element parameter. Only present appearance of object is kept from the pattern object, object itself is no more needed and can be deleted. Another morphed object or active object itself can be used as a pattern object, too. Number of pattern objects can be arbitrary. Setting -1 value as an element parameter will cause deleting all morphing patterns. The object becomes usual object, its appearance remains preserved according to its last morphing state.\par
+\par
+The \b \i morphing stage \i0 \b0 element serves to control morphing operation. Its parameter can be arbitrary value in the range of 0 to number of morphing patterns+1. Zero value corresponds to original appearance of the object, 1 value corresponds to object pattern 1, and N value corresponds to object pattern N. When changing value from N to N+1, the object will be morphed back to original appearance of object, that means to zero value.\par
+\page
+
+}

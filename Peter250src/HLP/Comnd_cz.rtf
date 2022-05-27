@@ -1,0 +1,410 @@
+{\rtf1 \ansi \deff0
+
+@{\footnote ------- definice fontù --------- }
+
+{\fonttbl 
+{\f0 \fswiss MS San Serif CE;}
+}
+
+@{\footnote ------- definice barev --------- }
+
+{\colortbl
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red192\green192\blue192;
+\red128\green128\blue128;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+
+@{\footnote Použití barev:
+	0 - èerná
+	1 - tmavì èervená
+	2 - tmavì zelená
+	3 - hnìdá
+	4 - tmavì modrá
+	5 - tmavì fialová
+	6 - tmavì modrozelená
+	7 - šedá
+	8 - tmavì šedá
+	9 - èervená
+	10 - zelená
+	11 - žlutá
+	12 - modrá
+	13 - fialová
+	14 - modrozelená
+	15 - bílá
+}
+
+#{\footnote 20057}
+${\footnote Øízení programu}
++{\footnote 1}
+K{\footnote øízení programu;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Øízení programu\par
+\pard \plain \cf0 \fs20
+{\uldb Stavební prvky programu}{\v Stavební prvky programu}\par
+\par
+{\uldb \{bmc IDF20002.bmp\}\tab podmínìné provedení pøíkazù}{\v 20002} \par
+{\uldb \{bmc IDF20006.bmp\}\tab podmínìné opakování pøíkazù}{\v 20006} \par
+{\uldb \{bmc IDF20247.bmp\}\tab opakování pøíkazù s poètem}{\v 20247} \par
+{\uldb \{bmc IDF20009.bmp\}\tab pøerušení opakování}{\v 20009} \par
+{\uldb \{bmc IDF20011.bmp\}\tab vícestupòové vìtvení pøíkazù}{\v 20011} \par
+{\uldb \{bmc IDF20122.bmp\}\tab èekání}{\v 20122} \par
+{\uldb \{bmc IDF20001.bmp\}\tab skupina}{\v 20001} \par
+{\uldb \{bmc IDF20056.bmp\}\tab seznam}{\v 20056} \par
+{\uldb \{bmc IDF20073.bmp\}\tab konec funkce}{\v 20073} \par
+{\uldb \{bmc IDF20402.bmp\}\tab komentáø}{\v 20402} \par
+{\uldb \{bmc IDF20050.bmp\}\tab øízení programu - rozšíøení}{\v 20050} \par
+{\uldb \{bmc IDF20976.bmp\}\tab knihovny DLL}{\v 20976} \par
+{\uldb \{bmc IDF21013.bmp\}\tab konfigurace}{\v 21013} \par
+\page
+
+#{\footnote 20002}
+#{\footnote 20003}
+#{\footnote 20004}
+#{\footnote 20005}
+${\footnote Podmínìné provedení pøíkazù}
++{\footnote 1}
+K{\footnote podmínìné provedení pøíkazù;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20002.bmp\} Podmínìné provedení pøíkazù\par
+\pard \plain \cf0 \fs20
+{\uldb Øízení programu}{\v 20057}\par
+\par
+\{bmc IDF20002.bmp\} \b \i záhlaví podmínky \i0 \b0 \par
+\tab \{bmc IDF20003.bmp\} \b \i test podmínky \i0 \b0 \par
+\tab \{bmc IDF20004.bmp\} \b \i pøíkazy pøi splnìní podmínky \i0 \b0 \par
+\tab \{bmc IDF20005.bmp\} \b \i pøíkazy pøi nesplnìní podmínky \i0 \b0 \par
+\par
+Podmínìné provedení pøíkazù slouží k vìtvení programu v závislosti na platnosti podmínky. V testu podmínky lze uvést logický výraz, který je vyhodnocen pøi provádìní programu. Bude-li logický výraz splnìn, provede se skupina pøíkazù ve vìtvi pro splnìní podmínky. Jinak se provede skupina pøíkazù ve vìtvi pro nesplnìní podmínky.\par
+\par
+\b \i Pøíklad použití:\i0 \b0 \par
+\par
+\{bmc Vybarv20.bmp\}\par
+\page
+
+#{\footnote 20006}
+#{\footnote 20007}
+#{\footnote 20008}
+#{\footnote 20009}
+#{\footnote 20247}
+#{\footnote 20248}
+${\footnote Opakování pøíkazù}
++{\footnote 1}
+K{\footnote opakování pøíkazù;podmínìné opakování pøíkazù;opakování pøíkazù s poètem;pøerušení opakování;cyklus;smyèka;}
+\pard \plain \cf12 \brdrb \fs24 \b
+\{bmc IDF20006.bmp\} \{bmc IDF20247.bmp\} Opakování pøíkazù\par
+\pard \plain \cf0 \fs20
+{\uldb Øízení programu}{\v 20057}\par
+\par
+\{bmc IDF20006.bmp\} \b \i záhlaví podmínìného opakování \i0 \b0 \par
+\tab \{bmc IDF20007.bmp\} \b \i test podmínky podmínìného opakování \i0 \b0 \par
+\tab \{bmc IDF20008.bmp\} \b \i pøíkazy podmínìného opakování \i0 \b0 \par
+\par
+Opakování pøíkazù slouží k opakovanému provádìní skupiny pøíkazù. Prvním typem opakování je podmínìné opakování. V testu podmínky opakování je pøed každým prùchodem opakovacího cyklu testován uvedený logický výraz. Je-li výraz splnìn, budou pøíkazy cyklu provedeny. V opaèném pøípadì program pokraèuje dalšími pøíkazy následujícími za cyklem. To znamená, že v pøípadì nesplnìní podmínky nemusí být pøíkazy provedeny ani jednou.\par
+\par
+\{bmc IDF20247.bmp\} \b \i záhlaví opakování s poètem \i0 \b0 \par
+\tab \{bmc IDF20248.bmp\} \b \i poèet opakování \i0 \b0 \par
+\tab \{bmc IDF20008.bmp\} \b \i pøíkazy opakování s poètem \i0 \b0 \par
+\par
+Druhým typem opakování je opakování s poètem. V tomto typu opakování udává èíselný výraz v poètu opakování poèet, kolikrát budou pøíkazy provedeny. Hodnota výrazu poètu opakování je pøitom zaokrouhlena na nejbližší celé èíslo a je pøevedena na absolutní hodnotu. To znamená, že pro hodnotu výrazu -0.5 < n < 0.5 nebudou pøíkazy v cyklu provedeny ani jednou.\par
+\par
+\{bmc IDF20009.bmp\} \b \i pøerušení opakování \i0 \b0 \par
+\par
+Pøíkaz pro pøerušení opakování slouží k pøedèasnému ukonèení opakování. Je to pøíkaz, který lze uvést kdekoliv mezi pøíkazy podmínìného opakování nebo opakování s poètem. Pøi jeho provedení se pøeruší nejvyšší probíhající cyklus. Není-li ve funkci nadøazen žádný probíhající cyklus, ukonèí se provádìní pøíkazù stejnì jako pøíkaz pro ukonèení funkce. Ven z funkce se pøíznak pøerušení opakování nepøenáší.\par
+\par
+\b \i Pøíklady použití:\i0 \b0 \par
+\par
+\{bmc Pokus4.bmp\}\tab \{bmc Pokus6.bmp\}\par
+\page
+
+#{\footnote 20011}
+#{\footnote 20012}
+#{\footnote 20013}
+#{\footnote 20014}
+#{\footnote 20015}
+${\footnote Vícestupòové vìtvení pøíkazù}
++{\footnote 1}
+K{\footnote vícestupòové vìtvení pøíkazù;case;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20011.bmp\} Vícestupòové vìtvení pøíkazù\par
+\pard \plain \cf0 \fs20
+{\uldb Øízení programu}{\v 20057}\par
+\par
+\{bmc IDF20011.bmp\} \b \i záhlaví vícestupòového vìtvení \i0 \b0 \par
+\tab \{bmc IDF20012.bmp\} \b \i vìtvící výraz \i0 \b0 \par
+\tab \{bmc IDF20013.bmp\} \b \i jedna vìtev pøíkazù \i0 \b0 (lze použít vícekrát) \par
+\tab \tab \{bmc IDF20014.bmp\} \b \i jeden testovací výraz \i0 \b0 (lze použít vícekrát) \par
+\tab \{bmc IDF20015.bmp\} \b \i pøíkazy pro nenalezené vìtve \i0 \b0 \par
+\par
+Vícestupòové vìtvení pøíkazù slouží k rozvìtvení programu do více èástí podle hodnoty výrazu. Jako vìtvící výraz lze uvést výraz jakéhokoliv typu - èíslo, pøíznak, text atd. Podle vìtvícího výrazu se program rozhoduje, kterou vìtev pøíkazù použije. V tìle vìtvící kontrukce mùže být uvedena jedna nebo více vìtví pøíkazù. Vìtve jsou prohledávány shora dolù. V každé vìtvi mùže být uveden jeden nebo více testovacích výrazù (stejného typu jako vìtvící výraz). Výrazy jsou postupnì vyhodnocovány shora dolù. Je-li nalezen výraz shodný s vìtvícím výrazem, provedou se pøíkazy ve vìtvi a program pokraèuje za koncem konstrukce vícestupòového vìtvení dál. Neodpovídá-li žádný z výrazù vìtvícímu výrazu, pokraèuje se následující vìtví pøíkazù. Není-li nalezena žádná vìtev s odpovídajícím výrazem, provedou se pøíkazy pro nenalezené vìtve.\par
+\par
+\b \i Pøíklad použití:\i0 \b0 \par
+\par
+\{bmc Klavesy.bmp\}\par
+\page
+
+#{\footnote 20122}
+${\footnote Èekání}
++{\footnote 1}
+K{\footnote èekání;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20122.bmp\} Èekání\par
+\pard \plain \cf0 \fs20
+{\uldb Øízení programu}{\v 20057}\par
+\par
+Pøíkaz \b \i èekání \i0 \b0 zpùsobí pozastavení provádìní programu po zadanou dobu. Doba se udává v sekundách. Není-li žádný údaj zadán, èeká se po dobu 0.055 sekundy.\par
+\par
+Skuteèná doba èekání nemusí pøesnì odpovídat požadované dobì. Èasování programu závisí na typu poèítaèe a na operaèním systému. Napøíklad pro poèítaèe PC je rozlišení èasového kroku jmenovitì 0.055 sekundy, pøesnost kolísá zhruba mezi 0.4 až 0.6 sekundy (podle použitého operaèního systému a spuštìných jiných programù). Je-li potøeba pøesné èasování, je nutno použít funkce pro práci s {\uldb èasem}{\v 20483}.\par
+\par
+Pøíkaz pro èekání neslouží pouze k pozastavení programu na danou dobu. Prostøedí systému Windows je víceúlohové, tzn. že lze spustit více programù souèasnì. Pro zajištìní spolupráce spuštìných programù je nutno, aby program nevyžadující obsluhu pøedal øízení jiným programùm a ty tak mohly vykonávat svou èinnost. K tomuto úèelu slouží pøíkaz èekání. Není-li nutnì požadována další obsluha programu (tj. všechny operace jsou provedeny a èeká se na další krok), je vhodné namísto èekání ve smyèce vkládat pøíkaz pro èekání alespoò po minimální èasový úsek 0.05 sekundy. Pøestože provádìný program prostøedí \b Petr \b0 pøedává systému øízení automaticky, mùže nevhodnì napsaný program zbyteènì pøetìžovat systém.\par
+\par
+Je nìkolik pøípadù, kdy není nutno vkládat pøíkazy èekání - je to pøi použití pøíkazù pro krok {\uldb Petøíka}{\v 20062} a {\uldb Lucky}{\v 20067} (vèetnì èekání na dokonèení pøedešlého pøesunu) a pøíkazy pro vstup znaku èi klávesy z {\uldb klávesnice}{\v 20123} s èekáním.\par
+\par
+Další funkcí pøíkazu èekání (vèetnì implicitního èekání podle pøedešlého odstavce) je provádìní vnitøních obsluh programu. Jedná se o obsluhu pohybu a animací sprajtù, pøehrávání zvukù a hudby, obsluha myši a obsluha pøekreslování displeje. Bìhem pøíkazu èekání je provádìno èasování a pøípadná obsluha tìchto funkcí. Není-li pøíkaz èekání vykonáván, je provádìna automatická synchronizace vnitøních obsluh, která však buï nemusí být dostateènì rychlá (pøekreslování displeje je trhavé) nebo nemusí být provádìna ve vhodný èas (pøekreslí se mezi dvìma grafickými pøíkazy a zobrazení proto bliká).\par
+\par
+Pro èasovì nároèné programy je k dispozici zvláštní varianta pøíkazu pro èekání - doba èekání je nastavena na nulu. V tomto pøípadì se žádné èekání neprovádí, systému je pøedáno øízení jen na nejnutnìjší dobu, èasování vnitøních obsluh je pøitom provádìno plnì. Program s touto variantou èekání pracuje témìr maximální rychlostí, pøitom však pøekreslování a jiné vnitøní obsluhy pracují správnì a spolupráce se systémem a jinými programy je také zajištìna.\par
+\page
+
+#{\footnote 20001}
+#{\footnote 20750}
+${\footnote Skupina}
++{\footnote 1}
+K{\footnote skupina;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20001.bmp\} Skupina\par
+\pard \plain \cf0 \fs20
+{\uldb Øízení programu}{\v 20057}\par
+\par
+Prvek \b \i skupina \i0 \b0 slouží k uzavøení nìkolika pøíkazù, promìnných èi funkcí do jedné skupiny za úèelem zpøehlednìní programu. V editaèním poli obsahu funkce lze do skupiny umístit pøíkazy, v poli spoleèných a místních promìnných a funkcí je urèena skupina pro promìnné a funkce. Na provádìní programu nemá skupina žádný vliv, je pouze zpøehledòujícím prvkem.\par
+\page
+
+#{\footnote 20056}
+#{\footnote 20255}
+#{\footnote 20256}
+#{\footnote 20257}
+${\footnote Seznam}
++{\footnote 1}
+K{\footnote seznam;datový seznam;index}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20056.bmp\} Seznam\par
+\pard \plain \cf0 \fs20
+{\uldb Øízení programu}{\v 20057}\par
+\par
+\{bmc IDF20056.bmp\} \b \i záhlaví seznamu \i0 \b0 \par
+\tab \{bmc IDF20255.bmp\} \b \i poèet datových záznamù v seznamu \i0 \b0 \par
+\tab \{bmc IDF20256.bmp\} \b \i index datového záznamu seznamu \i0 \b0 \par
+\tab \{bmc IDF20257.bmp\} \b \i automatická inkrementace indexu \i0 \b0 \par
+\par
+Seznam slouží k vytváøení datových polí. Pøi vytváøení definice seznamu je nutno nastavit položku poètu datových záznamù v seznamu a doplnit do seznamu promìnné. Jako promìnné v seznamu lze použít promìnné libovolného typu. Uvnitø seznamu nelze uvést jiný seznam. Skupinì promìnných v seznamu øíkáme datový záznam. Na promìnné v záznamu se odkazujeme nastavením indexu záznamu a jednoduchým použitím promìnné seznamu.\par
+\par
+Vícerozmìrný seznam lze snadno vytvoøit výpoètem indexu z vícerozmìrných indexù. Napø. prvky v matici o rozmìrech \i 20(x) * 30(y) \i0 lze indexovat výrazem \i index = x + 20*y\i0 .\par
+\par
+Velikost seznamu urèuje prvek \b \i poètu datových záznamù v seznamu\i0 \b0 . Poèet datových záznamù v seznamu je èíselná konstanta. Její velikost je nutno zadat pøi vytváøení programu, pøi bìhu programu již nelze mìnit. Zadání se provádí jako u {\uldb èíselných konstant}{\v 20016} buï dosazením prvkù èíslic nebo zadáním textu èísla do popisného textu prvku (použije se, není-li dosazen žádný prvek èíslice, za textem èísla mùže být uveden libovolný text). Prvek poètu datových záznamù lze používat v programu jako èíselnou konstantu. Tím je zajištìno, že po zmìnì velikosti seznamu se tato zmìna odrazí i v programu bez nutnosti zásahu do programu.\par
+\par
+Záznamy v seznamu se adresují pomocí \b \i indexu záznamu\i0 \b0 . Je to bìžná èíselná promìnná po jejímž nastavení budou pøístupné promìnné zvoleného záznamu. Pøi nastavení indexu záznamu je zadaný èíselný výraz zaokrouhlen na nejbližší celé èíslo a je operací modulo zarovnán do platných mezí seznamu. Tím je zajištìno, že index ukazuje vždy na platný záznam seznamu. Nelze testovat dosažení konce seznamu porovnáním indexu s velikostí seznamu, nebo index nemùže nikdy dosáhnout hodnoty prvku poètu datových záznamù v seznamu. Lze tak snadno realizovat posuny indexu v seznamu i o vìtší úseky, nebo index pøetéká pøes hranice seznamu opìt na jeho opaèný konec.\par
+\par
+Pro usnadnìní manipulace s položkami seznamu je k dispozici prvek pro \b \i automatickou inkrementaci indexu seznamu\i0 \b0 . Tento prvek umožòuje, že po každém pøístupu k nìkteré promìnné seznamu je index seznamu automaticky posunut o poèet položek udaný prvkem automatické inkrementace. To je výhodné napø. pøi inicializaèním naplnìní seznamu. Jednoduchým pøiøazováním promìnných položkám seznamu se index seznamu automaticky posouvá na další položky. Pøi více promìnných v jednom záznamu je proto výhodnìjší naplnit vždy jednu promìnnou pro všechny indexy a poté pokraèovat další promìnnou.\par
+\par
+\b \i Pøíklad použití:\i0 \b0 \par
+\par
+\{bmc Vybarv11.bmp\}\par
+\page
+
+#{\footnote 20073}
+${\footnote Konec funkce}
++{\footnote 1}
+K{\footnote konec funkce;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20073.bmp\} Konec funkce\par
+\pard \plain \cf0 \fs20
+{\uldb Øízení programu}{\v 20057}\par
+\par
+Prvek \b \i konec funkce \i0 \b0 slouží k pøedèasnému ukonèení provádìné {\uldb funkce}{\v 20047}. Bìžnì je funkce ukonèena po provedení posledního pøíkazu. Zadáním pøíkazu pro ukonèení funkce lze funkci ukonèit v kterémkoliv jejím místì. To platí i pro {\uldb hlavní funkci programu}{\v Spoleèné promìnné a funkce}, jejím ukonèením bude ukonèen celý program.\par
+\page
+
+#{\footnote 20402}
+${\footnote Komentáø}
++{\footnote 1}
+K{\footnote komentáø;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20402.bmp\} Komentáø\par
+\pard \plain \cf0 \fs20
+{\uldb Øízení programu}{\v 20057}\par
+\par
+Prvek \b \i komentáø \i0 \b0 slouží k psaní vlastních poznámek do programu. Na chod programu nemá tento prvek žádný vliv. Další vlastností prvku komentáøe je, že v editaèním poli obsahu funkce lze do komentáøe odkládat jakékoliv jiné prvky, tyto prvky budou pøi provádìní programu ignorovány. To lze využít napøíklad v pøípadì, kdy je nutno do vìtve programu vložit prvek - nejdøíve se do komentáøe odloží zbytek vìtve, vloží se potøebný prvek a vìtev se vrátí zpìt na vložený prvek.\par
+\page
+
+#{\footnote 20050}
+${\footnote Øízení programu - rozšíøení}
++{\footnote 1}
+K{\footnote øízení programu - rozšíøení;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Øízení programu - rozšíøení\par
+\pard \plain \cf0 \fs20
+{\uldb Øízení programu}{\v 20057}\par
+\par
+{\uldb \{bmc IDF20885.bmp\}\tab program je aktivní aplikací}{\v 20885} \par
+{\uldb \{bmc IDF20892.bmp\}\tab pøesný èítaè èasu}{\v 20892} \par
+{\uldb \{bmc IDF20397.bmp\}\tab jazyk}{\v 20397} (0=auto, 5=CZ, 7=D, 9=USA, 27=SK)\par
+{\uldb \{bmc IDF20744.bmp\}\tab uživatelské písmo}{\v 20744} \par
+{\uldb \{bmc IDF20745.bmp\}\tab seznam písem}{\v 20745} \par
+{\uldb \{bmc IDF20743.bmp\}\tab znaková sada}{\v 20743} (1250=støedoevropská, 1251=ruská, 1252=západní)\par
+{\uldb \{bmc IDF20580.bmp\}\tab parametr programu}{\v 20580} (0=jméno programu)\par
+{\uldb \{bmc IDF20581.bmp\}\tab jméno programu s plnou cestou}{\v 20581} \par
+\page
+
+#{\footnote 20885}
+${\footnote Program je aktivní aplikací}
++{\footnote 1}
+K{\footnote program je aktivní aplikací;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20885.bmp\} Program je aktivní aplikací\par
+\pard \plain \cf0 \fs20
+{\uldb Øízení programu - rozšíøení}{\v 20050}\par
+\par
+Prvek \b \i program je aktivní aplikací \i0 \b0 je logický pøíznak indikující, že je tento spuštìný program aktivní aplikací. Aktivní aplikace je aplikace, do které probíhá vstup kláves od uživatele. Zapnutím pøíznaku lze program aktivovat, vypnutím pøíznaku se aktivuje naposledy aktivní aplikace. Prvek je urèen pøedevším pro hry pracující v {\uldb celoobrazovkovém módu}{\v 20638}. Zjistí-li program (hra), že pøestal být aktivní aplikací (tj. uživatel se pøepnul na jinou aplikaci), mìl by se zastavit, dokud nebude opìt uživatelem aktivován.\par
+\page
+
+#{\footnote 20892}
+${\footnote Pøesný èítaè èasu}
++{\footnote 1}
+K{\footnote pøesný èítaè èasu;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20892.bmp\} Pøesný èítaè èasu\par
+\pard \plain \cf0 \fs20
+{\uldb Øízení programu - rozšíøení}{\v 20050}\par
+\par
+Prvek \b \i pøesný èítaè èasu \i0 \b0 slouží k pøesnému mìøení èasových úsekù. Prvek navrací jako èíselnou hodnotu èas ubìhlý od spuštìní Windows v sekundách. Rozlišení èasového údaje je v nejhorším pøípadì 5 ms, ale ve vìtšinì pøípadù je o nìkolik øádù pøesnìjší.\par
+\page
+
+#{\footnote 20397}
+${\footnote Jazyk}
++{\footnote 1}
+K{\footnote jazyk;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20397.bmp\} Jazyk\par
+\pard \plain \cf0 \fs20
+{\uldb Øízení programu - rozšíøení}{\v 20050}\par
+\par
+Prvek \b \i jazyk \i0 \b0 slouží ke zjištìní a pøípadnì nastavení jazyku, se kterým spuštìný program pracuje. Aplikace Petr umožòuje vytváøení vícejazyèných programù. Pøi zadávání textù (popisy u prvkù nebo obsahy textových promìnných) jsou texty platné pro jazyk, na který je aplikace Petr pøepnuta. Pøi pøepnutí jazyku se pøepnou i texty na pøíslušný jazyk. Pøi spuštìní programu se program pøepne na jazyk podle aktuálního nastavení systému Windows ("\i místní nastavení\i0 ") nebo podle aktuálního jazyku aplikace Petr, je-li program spuštìn z prostøedí aplikace Petr. Texty vypisované programem se použijí podle jazyku, na který je program pøepnut. Nejsou-li texty k dispozici pro aktuálnì nastavený jazyk, použijí se texty pro nejbližší jazyk.\par
+\par
+Jazyk je udáván v èíselném kódu LANGID (používaném v systému Windows):\par
+\par
+2 \tab bulharsky\par
+5 \tab èesky\par
+6 \tab dánsky\par
+7 \tab nìmecky\par
+8 \tab øecky\par
+9 \tab anglicky\par
+10 \tab španìlsky\par
+11 \tab finsky\par
+12 \tab francouzsky\par
+14 \tab maïarsky\par
+15 \tab islandsky\par
+16 \tab italsky\par
+19 \tab holandsky\par
+20 \tab norsky\par
+21 \tab polsky\par
+22 \tab portugalsky\par
+24 \tab rumunsky\par
+25 \tab rusky\par
+26 \tab srbochorvatsky\par
+27 \tab slovensky\par
+28 \tab albánsky\par
+29 \tab švédsky\par
+31 \tab turecky\par
+\par
+Nastavením na hodnotu 0 se použije implicitní jazyk (navracen je skuteèný kód jazyku).\par
+\par
+Nastavením jazyku se zmìní i {\uldb znaková sada}{\v 20743} zobrazovaných textù.\par
+\page
+
+#{\footnote 20744}
+${\footnote Uživatelské písmo}
++{\footnote 1}
+K{\footnote uživatelské písmo;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20744.bmp\} Uživatelské písmo\par
+\pard \plain \cf0 \fs20
+{\uldb Øízení programu - rozšíøení}{\v 20050}\par
+\par
+Prvek \b \i uživatelské písmo \i0 \b0 urèuje vzhled písma textù vypisovaných pøíkazem {\uldb výpis textu}{\v 20367} nebo textù v {\uldb dialogových prvcích}{\v 20712} oken, jsou-li souèasnì zapnuty pøepínaèe "\b patièky\b0 " a "\b psací stroj\b0 " (písmo s pevnou rozteèí). Písmo je zadáváno v textovém tvaru jako název písma, zjištìný funkcí {\uldb seznam písem}{\v 20745}. Po startu programu je pøednastaven typ písma \b Impact\b0 .\par
+\page
+
+#{\footnote 20745}
+${\footnote Seznam písem}
++{\footnote 1}
+K{\footnote seznam písem;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20745.bmp\} Seznam písem\par
+\pard \plain \cf0 \fs20
+{\uldb Øízení programu - rozšíøení}{\v 20050}\par
+\par
+Prvek \b \i seznam písem \i0 \b0 slouží ke zjištìní seznamu písem, která jsou nainstalovaná v systému. Prvek navrací seznam ve formì víceøádkového textu, každý øádek odpovídá názvu jednoho typu písma. Název vybraného písma lze pøedat funkci {\uldb uživatelské písmo}{\v 20744} a zobrazovat tak texty volitelným písmem.\par
+\page
+
+#{\footnote 20743}
+${\footnote Znaková sada}
++{\footnote 1}
+K{\footnote znaková sada;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20743.bmp\} Znaková sada\par
+\pard \plain \cf0 \fs20
+{\uldb Øízení programu - rozšíøení}{\v 20050}\par
+\par
+Prvek \b \i znaková sada \i0 \b0 slouží k volbì znakové sady textù vypisovaných pøíkazem {\uldb výpis textu}{\v 20367} nebo textù v {\uldb dialogových prvcích}{\v 20712} oken. Poèet zobrazitelných znakù na obrazovce je omezen a proto jsou národnostnì závislé znaky (s diakritikou) dìleny do znakových sad. Napø. státy støední Evropy používají jinou znakovou sadu než státy západní Evropy èi Ameriky.\par
+\par
+Znaková sada je èíselný kód odpovídající kódové stránce používané v systému Windows:\par
+\par
+1250\tab støedoevropská znaková sada\par
+1251\tab ruská znaková sada (cyrilice, azbuka)\par
+1252\tab západní znaková sada\par
+1253\tab øecká znaková sada\par
+1254\tab turecká znaková sada\par
+1257\tab baltická znaková sada\par
+\par
+Pøi zmìnì {\uldb jazyku}{\v 20397} (stejnì jako pøi startu programu) se znaková sada automaticky nastaví podle zvoleného jazyku.\par
+\par
+Nìkteré typy písma nainstalované v systému nemusí obsahovat všechny znakové sady, v tom pøípadì se použije nejbližší znaková sada.\par
+\page
+
+#{\footnote 20244}
+#{\footnote 20580}
+${\footnote Parametry programu}
++{\footnote 1}
+K{\footnote parametry programu;parametr programu;pøíkazový øádek;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20244.bmp\} Parametry programu, \{bmc IDF20580.bmp\} Parametr programu\par
+\pard \plain \cf0 \fs20
+{\uldb Øízení programu - rozšíøení}{\v 20050}\par
+\par
+Pøi spouštìní programù v systému Windows lze spouštìnému programu pøedat pomocí pøíkazového øádku parametry. Prvek \b \i parametry programu \i0 \b0 je textová konstanta navracející text pøíkazového øádku tak, jak byl programu zadán pøi jeho spuštìní. Obsahuje jméno spouštìného programu následovaného pøípadnými parametry. Prvek není obsažen v poli základních stavebních prvkù programu, naleznete jej v lokální definici vstupních parametrù hlavní funkce programu.\par
+\par
+Pomocí dalšího prvku \b \i parametr programu \i0 \b0 je možné pøistupovat k jednotlivým parametrùm z pøíkazového øádku samostatnì. Jako parametr prvku se zadává èíselná hodnota pøedstavující index požadovaného parametru. Je navrácen text pouze parametru zadaného indexu, prázdný text znamená konec parametrù. Index 0 pøedstavuje jméno programu. Jméno programu je navráceno tak, jak bylo zadáno z pøíkazového øádku. Je-li potøeba zjistit úplné jméno programu vèetnì cesty, použijte {\uldb jméno programu s plnou cestou}{\v 20581}.\par
+\page
+
+#{\footnote 20581}
+${\footnote Jméno programu s plnou cestou}
++{\footnote 1}
+K{\footnote jméno programu s plnou cestou;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20581.bmp\} Jméno programu s plnou cestou\par
+\pard \plain \cf0 \fs20
+{\uldb Øízení programu - rozšíøení}{\v 20050}\par
+\par
+Prvek \b \i jméno programu s plnou cestou \i0 \b0 slouží ke zjištìní úplného jména spuštìného programu. Má charakter textové konstanty. Jméno programu obsahuje plnou cestu k programu na rozdíl od parametru 0 {\uldb pøíkazového øádku}{\v 20244}, který navrací tvar zadaný z pøíkazového øádku pøi spuštìní programu.\par
+\page
+
+}

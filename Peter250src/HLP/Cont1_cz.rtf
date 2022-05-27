@@ -1,0 +1,417 @@
+{\rtf1 \ansi \deff0
+
+@{\footnote ------- definice fontù --------- }
+
+{\fonttbl 
+{\f0 \fswiss MS San Serif CE;}
+}
+
+@{\footnote ------- definice barev --------- }
+
+{\colortbl
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red192\green192\blue192;
+\red128\green128\blue128;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+
+@{\footnote Pouití barev:
+	0 - èerná
+	1 - tmavì èervená
+	2 - tmavì zelená
+	3 - hnìdá
+	4 - tmavì modrá
+	5 - tmavì fialová
+	6 - tmavì modrozelená
+	7 - šedá
+	8 - tmavì šedá
+	9 - èervená
+	10 - zelená
+	11 - lutá
+	12 - modrá
+	13 - fialová
+	14 - modrozelená
+	15 - bílá
+}
+
+#{\footnote 20121}
+${\footnote Ovládání}
++{\footnote 1}
+K{\footnote ovládání;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Ovládání\par
+\pard \plain \cf0 \fs20
+{\uldb Stavební prvky programu}{\v Stavební prvky programu}\par
+\par
+{\uldb \{bmc IDF20123.bmp\}\tab klávesnice}{\v 20123} \par
+{\uldb \{bmc IDF20234.bmp\}\tab myš}{\v 20234} \par
+{\uldb \{bmc IDF20584.bmp\}\tab pákovı ovladaè (joystick)}{\v 20584} \par
+{\uldb \{bmc IDF20516.bmp\}\tab dialogy}{\v 20516} \par
+\page
+
+#{\footnote 20123}
+#{\footnote 20348}
+#{\footnote 20126}
+#{\footnote 20347}
+#{\footnote 20125}
+#{\footnote 20124}
+#{\footnote 20639}
+#{\footnote 20354}
+#{\footnote 20355}
+#{\footnote 20356}
+#{\footnote 20357}
+${\footnote Klávesnice}
++{\footnote 1}
+K{\footnote klávesnice;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20123.bmp\} Klávesnice\par
+\pard \plain \cf0 \fs20
+{\uldb Ovládání}{\v 20121}\par
+\par
+{\uldb \{bmc IDF20127.bmp\}\tab klávesy}{\v 20127} \par
+\{bmc IDF20348.bmp\} \tab \b \i vstup znaku (èeká na stisk) \i0 \b0 \par
+\{bmc IDF20126.bmp\} \tab \b \i vstup znaku (neèeká na stisk) \i0 \b0 \par
+\par
+Prvek \b \i vstup znaku \i0 \b0 navrací text obsahující jeden znak z klávesnice. Znak generují pouze znakové klávesy, nìkteré øidicí klávesy generují øídicí ASCII znaky, jiné øídicí klávesy negenerují ádnı znak. Generovanı znak je závislı na nastavené národní kódové stránce a na ovladaèi klávesnice (znaky s diakritikou). Varianta bez èekání vrací prázdnı text v pøípadì, e není pøipraven ádnı znak. Variantu s èekáním lze pouít jako samostatnı pøíkaz (s ignorováním navráceného znaku) a tím zajistit pozastavení programu a do stisku znakové klávesy.\par
+\par
+\{bmc IDF20347.bmp\} \tab \b \i vstup klávesy (èeká na stisk) \i0 \b0 \par
+\{bmc IDF20125.bmp\} \tab \b \i vstup klávesy (neèeká na stisk) \i0 \b0 \par
+\par
+Prvek \b \i vstup klávesy \i0 \b0 navrací èíslo pøedstavující èíselnı {\uldb kód}{\v 20127} stisknuté klávesy. Na rozdíl od vstupu znaku generují kód všechny klávesy a tento kód nezávisí na národní kódové stránce ani na ovladaèi klávesnice. Varianta bez èekání vrací 0 v pøípadì, e není pøipravena ádná klávesa. Variantu s èekáním lze pouít jako samostatnı pøíkaz (s ignorováním navrácené klávesy) a tím zajistit pozastavení programu a do stisku libovolné klávesy.\par
+\par
+\{bmc IDF20124.bmp\} \tab \b \i je stisknuta klávesa \i0 \b0 \par
+\par
+Prvek \b \i je stisknuta klávesa \i0 \b0 slouí k testu, zda je nìkterá z kláves stisknuta. Pøedešlé funkce pro vstup znaku a vstup klávesy generují znak pøi stisku a po chvíli opakovanì pøi drení. Na rozdíl tato funkce umoòuje testovat, zda je pøíslušná klávesa stisknuta a drena nezávisle na generování znakù pøi drení klávesy. Jako parametr je nutno zadat kód klávesy, která má bıt testována. Vıstupem funkce je logická hodnota udávající, zda je klávesa stisknuta a drena. Zvláštním pøípadem je kód 0 (= ádná klávesa) udávající, e není stisknuta ádná z kláves.\par
+\par
+\{bmc IDF20639.bmp\} \tab \b \i vyprázdnìní zásobníku kláves \i0 \b0 \par
+\par
+Aby program nepøišel o ádnou zadanou klávesu, jsou kódy kláves uchovávány v zásobníku kláves a do okamiku jejich vybrání. Pøíkaz \b \i vyprázdnìní zásobníku kláves \i0 \b0 zpùsobí vyprázdnìní zásobníku kláves v pøípadì, e chceme èekat na stisk klávesy a døíve stisknuté klávesy nás nezajímají. Pøíkaz vyprázdní zásobník jak kláves tak i znakù (pouívají samostatné zásobníky).\par
+\par
+\{bmc IDF20354.bmp\} \tab \b \i stav Num Lock \i0 \b0 \par
+\{bmc IDF20355.bmp\} \tab \b \i stav Caps Lock \i0 \b0 \par
+\{bmc IDF20356.bmp\} \tab \b \i stav Scroll Lock \i0 \b0 \par
+\{bmc IDF20357.bmp\} \tab \b \i stav Insert \i0 \b0 \par
+\par
+Prvky pøesmykaèù klávesnice jsou logické promìnné navracející pøíznak, e pøíslušnı pøesmykaè je zapnut. Prvky lze pouít té jako pøíkazy, tj. stav pøesmykaèe nastavit na poadovanou logickou hodnotu. To se však doporuèuje pouít pouze v nutném pøípadì, nebo operace se u nìkterıch typù poèítaèù nemusí provést správnì (napø. nemusí souhlasit stav indikátoru na klávesnici se stavem pøesmykaèe). \par
+\page
+
+#{\footnote 20127}
+#{\footnote 20349}
+#{\footnote 20128}
+#{\footnote 20129}
+#{\footnote 20130}
+#{\footnote 20131}
+#{\footnote 20132}
+
+#{\footnote 20134}
+#{\footnote 20135}
+#{\footnote 20136}
+#{\footnote 20137}
+#{\footnote 20138}
+#{\footnote 20139}
+#{\footnote 20140}
+#{\footnote 20141}
+#{\footnote 20142}
+#{\footnote 20143}
+#{\footnote 20144}
+#{\footnote 20145}
+
+#{\footnote 20146}
+#{\footnote 20147}
+#{\footnote 20148}
+#{\footnote 20149}
+#{\footnote 20150}
+#{\footnote 20151}
+#{\footnote 20152}
+#{\footnote 20153}
+#{\footnote 20154}
+#{\footnote 20155}
+#{\footnote 20156}
+#{\footnote 20157}
+#{\footnote 20158}
+#{\footnote 20159}
+#{\footnote 20160}
+#{\footnote 20161}
+#{\footnote 20162}
+#{\footnote 20163}
+#{\footnote 20164}
+#{\footnote 20165}
+#{\footnote 20166}
+#{\footnote 20167}
+#{\footnote 20168}
+#{\footnote 20169}
+#{\footnote 20170}
+#{\footnote 20171}
+
+#{\footnote 20172}
+#{\footnote 20173}
+#{\footnote 20174}
+#{\footnote 20175}
+#{\footnote 20176}
+#{\footnote 20177}
+#{\footnote 20178}
+#{\footnote 20179}
+#{\footnote 20180}
+#{\footnote 20181}
+#{\footnote 20182}
+#{\footnote 20183}
+#{\footnote 20184}
+#{\footnote 20185}
+#{\footnote 20186}
+#{\footnote 20187}
+#{\footnote 20188}
+#{\footnote 20189}
+#{\footnote 20190}
+#{\footnote 20191}
+#{\footnote 20192}
+#{\footnote 20193}
+#{\footnote 20194}
+#{\footnote 20195}
+#{\footnote 20196}
+#{\footnote 20197}
+#{\footnote 20198}
+#{\footnote 20199}
+#{\footnote 20200}
+#{\footnote 20201}
+#{\footnote 20202}
+#{\footnote 20203}
+#{\footnote 20204}
+#{\footnote 20205}
+#{\footnote 20206}
+#{\footnote 20207}
+#{\footnote 20208}
+#{\footnote 20209}
+#{\footnote 20210}
+#{\footnote 20211}
+#{\footnote 20212}
+#{\footnote 20213}
+#{\footnote 20214}
+#{\footnote 20215}
+#{\footnote 20216}
+#{\footnote 20217}
+#{\footnote 20218}
+#{\footnote 20219}
+#{\footnote 20220}
+#{\footnote 20221}
+#{\footnote 20222}
+#{\footnote 20223}
+#{\footnote 20224}
+#{\footnote 20225}
+#{\footnote 20226}
+#{\footnote 20227}
+#{\footnote 20228}
+#{\footnote 20229}
+#{\footnote 20230}
+#{\footnote 20231}
+#{\footnote 20232}
+#{\footnote 20233}
+#{\footnote 20350}
+#{\footnote 20351}
+#{\footnote 20352}
+#{\footnote 20353}
+
+${\footnote Klávesy}
++{\footnote 1}
+K{\footnote klávesy;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20127.bmp\} Klávesy\par
+\pard \plain \cf0 \fs20
+{\uldb Klávesnice}{\v 20123}\par
+\tx500 \tx3500 \tx6500 \par
+\{bmc IDF20349.bmp\} \b \i ádná klávesa nestisknuta (kód 0) \i0 \b0 \par
+\b \fs20 \par
+\{bmc IDF20128.bmp\} \cf12 Funkèní klávesy \cf0 \i \par
+\tab \{bmc IDF20134.bmp\} F1 (kód 112) \tab \{bmc IDF20138.bmp\} F5 (kód 116) \tab \{bmc IDF20142.bmp\} F9 (kód 120) \par
+\tab \{bmc IDF20135.bmp\} F2 (kód 113) \tab \{bmc IDF20139.bmp\} F6 (kód 117) \tab \{bmc IDF20143.bmp\} F10 (kód 121) \par
+\tab \{bmc IDF20136.bmp\} F3 (kód 114) \tab \{bmc IDF20140.bmp\} F7 (kód 118) \tab \{bmc IDF20144.bmp\} F11 (kód 122) \par
+\tab \{bmc IDF20137.bmp\} F4 (kód 115) \tab \{bmc IDF20141.bmp\} F8 (kód 119) \tab \{bmc IDF20145.bmp\} F12 (kód 123) \par
+\i0 \par
+\{bmc IDF20129.bmp\} \cf12 Písmena \cf0 \i \par
+\tab \{bmc IDF20146.bmp\} A (kód 65) \tab \{bmc IDF20155.bmp\} J (kód 74) \tab \{bmc IDF20164.bmp\} S (kód 83) \par
+\tab \{bmc IDF20147.bmp\} B (kód 66) \tab \{bmc IDF20156.bmp\} K (kód 75) \tab \{bmc IDF20165.bmp\} T (kód 84) \par
+\tab \{bmc IDF20148.bmp\} C (kód 67) \tab \{bmc IDF20157.bmp\} L (kód 76) \tab \{bmc IDF20166.bmp\} U (kód 85) \par
+\tab \{bmc IDF20149.bmp\} D (kód 68) \tab \{bmc IDF20158.bmp\} M (kód 77) \tab \{bmc IDF20167.bmp\} V (kód 86) \par
+\tab \{bmc IDF20150.bmp\} E (kód 69) \tab \{bmc IDF20159.bmp\} N (kód 78) \tab \{bmc IDF20168.bmp\} W (kód 87) \par
+\tab \{bmc IDF20151.bmp\} F (kód 70) \tab \{bmc IDF20160.bmp\} O (kód 79) \tab \{bmc IDF20169.bmp\} X (kód 88) \par
+\tab \{bmc IDF20152.bmp\} G (kód 71) \tab \{bmc IDF20161.bmp\} P (kód 80) \tab \{bmc IDF20170.bmp\} Y (kód 89) \par
+\tab \{bmc IDF20153.bmp\} H (kód 72) \tab \{bmc IDF20162.bmp\} Q (kód 81) \tab \{bmc IDF20171.bmp\} Z (kód 90) \par
+\tab \{bmc IDF20154.bmp\} I (kód 73) \tab \{bmc IDF20163.bmp\} R (kód 82) \par
+\i0 \par
+\{bmc IDF20130.bmp\} \cf12 Numerická klávesnice \cf0 \i \par
+\tab \{bmc IDF20172.bmp\} 0 Ins (kód 96) \tab \{bmc IDF20178.bmp\} 6 vpravo (kód 102) \tab \{bmc IDF20183.bmp\} + (kód 107) \par
+\tab \{bmc IDF20173.bmp\} 1 End (kód 97) \tab \{bmc IDF20179.bmp\} 7 Home (kód 103) \tab \{bmc IDF20184.bmp\} - (kód 109) \par
+\tab \{bmc IDF20174.bmp\} 2 dolù (kód 98) \tab \{bmc IDF20180.bmp\} 8 nahoru (kód 104) \tab \{bmc IDF20185.bmp\} * (kód 106) \par
+\tab \{bmc IDF20175.bmp\} 3 PgDn (kód 99) \tab \{bmc IDF20181.bmp\} 9 PgUp (kód 105) \tab \{bmc IDF20186.bmp\} / (kód 111) \par
+\tab \{bmc IDF20176.bmp\} 4 vlevo (kód 100) \tab \{bmc IDF20182.bmp\} . Del (kód 110) \tab \{bmc IDF20187.bmp\} Enter (kód 173) \par
+\tab \{bmc IDF20177.bmp\} 5 (kód 101) \tab \tab \{bmc IDF20188.bmp\} Num Lock (kód 144) \par
+\i0 \par
+\{bmc IDF20131.bmp\} \cf12 Znakové klávesy \cf0 \i \par
+\tab \{bmc IDF20233.bmp\} mezera (kód 32) \tab \{bmc IDF20196.bmp\} 8 * (kód 56) \tab \{bmc IDF20204.bmp\} ] \} (kód 221) \par
+\tab \{bmc IDF20189.bmp\} 1 ! (kód 49) \tab \{bmc IDF20197.bmp\} 9 ( (kód 57) \tab \{bmc IDF20205.bmp\} ; : (kód 186) \par
+\tab \{bmc IDF20190.bmp\} 2 @ (kód 50) \tab \{bmc IDF20198.bmp\} 0 ) (kód 48) \tab \{bmc IDF20206.bmp\} ' " (kód 222) \par
+\tab \{bmc IDF20191.bmp\} 3 # (kód 51) \tab \{bmc IDF20199.bmp\} ` ~ (kód 192) \tab \{bmc IDF20207.bmp\} , < (kód 188) \par
+\tab \{bmc IDF20192.bmp\} 4 $ (kód 52) \tab \{bmc IDF20200.bmp\} - _ (kód 189) \tab \{bmc IDF20208.bmp\} . > (kód 190) \par
+\tab \{bmc IDF20193.bmp\} 5 % (kód 53) \tab \{bmc IDF20201.bmp\} = + (kód 187) \tab \{bmc IDF20209.bmp\} / ? (kód 191) \par
+\tab \{bmc IDF20194.bmp\} 6 ^ (kód 54) \tab \{bmc IDF20202.bmp\} \\ | (kód 220) \par
+\tab \{bmc IDF20195.bmp\} 7 & (kód 55) \tab \{bmc IDF20203.bmp\} [ \{ (kód 219) \par
+\i0 \par
+\{bmc IDF20132.bmp\} \cf12 Øídicí klávesy \cf0 \i \par
+\tab \{bmc IDF20210.bmp\} Esc (kód 27) \tab \{bmc IDF20218.bmp\} vpravo (kód 39) \tab \{bmc IDF20227.bmp\} Print Screen (kód 42) \par
+\tab \{bmc IDF20211.bmp\} Tab (kód 9) \tab \{bmc IDF20219.bmp\} nahoru (kód 38) \tab \{bmc IDF20228.bmp\} Scroll Lock (kód 145) \par
+\tab \{bmc IDF20212.bmp\} Caps Lock (kód 20) \tab \{bmc IDF20220.bmp\} dolù (kód 40) \tab \{bmc IDF20229.bmp\} Pause (kód 19) \par
+\tab \{bmc IDF20213.bmp\} menu vlevo (kód 91) \tab \{bmc IDF20221.bmp\} Insert (kód 45) \tab \{bmc IDF20230.bmp\} Shift vlevo (kód 16) \par
+\tab \{bmc IDF20350.bmp\} menu vpravo (kód 92) \tab \{bmc IDF20222.bmp\} Delete (kód 46) \tab \{bmc IDF20351.bmp\} Shift vpravo (kód 161) \par
+\tab \{bmc IDF20214.bmp\} Back Space (kód 8) \tab \{bmc IDF20223.bmp\} Home (kód 36) \tab \{bmc IDF20231.bmp\} Ctrl vlevo (kód 17) \par
+\tab \{bmc IDF20215.bmp\} Enter (kód 13) \tab \{bmc IDF20224.bmp\} End (kód 35) \tab \{bmc IDF20352.bmp\} Ctrl vpravo (kód 163) \par
+\tab \{bmc IDF20216.bmp\} lokální menu (kód 93) \tab \{bmc IDF20225.bmp\} Page Up (kód 33) \tab \{bmc IDF20232.bmp\} Alt vlevo (kód 18) \par
+\tab \{bmc IDF20217.bmp\} vlevo (kód 37) \tab \{bmc IDF20226.bmp\} Page Down (kód 34) \tab \{bmc IDF20353.bmp\} Alt vpravo (kód 165) \par
+\page
+
+#{\footnote 20234}
+#{\footnote 20237}
+#{\footnote 20238}
+#{\footnote 20235}
+#{\footnote 20236}
+#{\footnote 20358}
+#{\footnote 20359}
+#{\footnote 20360}
+#{\footnote 20361}
+${\footnote Myš}
++{\footnote 1}
+K{\footnote myš;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20234.bmp\} Myš\par
+\pard \plain \cf0 \fs20
+{\uldb Ovládání}{\v 20121}\par
+\par
+\{bmc IDF20237.bmp\} \tab \b \i pozice myši v horizontálním smìru \i0 \b0 \par
+\{bmc IDF20238.bmp\} \tab \b \i pozice myši ve vertikálním smìru \i0 \b0 \par
+\par
+Prvky \b \i pozice myši \i0 \b0 slouí ke zjištìní souèasné pozice kurzoru myši. Navrací èíselnı údaj vztaenı k levému dolnímu rohu plochy, souøadnice pøitom mohou leet i mimo hranice plochy. Pouitím prvkù jako pøíkazy lze nastavit pozici kurzoru myši.\par
+\par
+\{bmc IDF20235.bmp\} \tab \b \i levé tlaèítko myši dreno \i0 \b0 \par
+\{bmc IDF20236.bmp\} \tab \b \i pravé tlaèítko myši dreno \i0 \b0 \par
+\par
+Prvky \b \i tlaèítko myši dreno \i0 \b0 navrací logickı pøíznak, e pøíslušné tlaèítko myši je stisknuto a dreno.\par
+\par
+\{bmc IDF20358.bmp\} \tab \b \i klik levım tlaèítkem myši \i0 \b0 \par
+\{bmc IDF20359.bmp\} \tab \b \i klik pravım tlaèítkem myši \i0 \b0 \par
+\{bmc IDF20360.bmp\} \tab \b \i dvojklik levım tlaèítkem myši \i0 \b0 \par
+\{bmc IDF20361.bmp\} \tab \b \i dvojklik pravım tlaèítkem myši \i0 \b0 \par
+\par
+Prvky \b \i klik \i0 \b0 a \b \i dvojklik tlaèítka myši \i0 \b0 slouí k testování, zda od posledního testu bylo stisknuto pøíslušné tlaèítko myši. Pøíznak kliknutí nezávisí na tom, zda bylo tlaèítko mezitím ji uvolnìno. Pøíznak se po kadém provedení testu vynuluje. Pøi prvním kliknutí tlaèítkem myši se nastaví pouze pøíznak kliknutí. Je-li následující kliknutí provedeno v dostateènì krátkém èasovém intervalu (interval závisí na nastavení vlastností myši v nastavení systému Windows), je nastaven kromì pøíznaku kliknutí i pøíznak dvojkliku myši.\par
+\par
+{\uldb \{bmc IDF20362.bmp\}\tab test myš v oblasti}{\v 20362} \par
+{\uldb \{bmc IDF20404.bmp\}\tab nastavení vzhledu kurzoru myši}{\v 20404} \par
+\par
+\i \b Poznámka: \b0 Bìhem provádìní programu je zajištìna nemìnnost údajù o myši a do pøíštího okamiku obsluhy {\uldb èekání}{\v 20122}. Jedná se pøedevším o pozici kurzory myši a stisk tlaèítek. \i0 \par
+\par
+\page
+
+#{\footnote 20362}
+#{\footnote 20363}
+#{\footnote 20364}
+#{\footnote 20365}
+#{\footnote 20366}
+${\footnote Test myši v oblasti}
++{\footnote 1}
+K{\footnote test myši v oblasti;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20362.bmp\} Test myši v oblasti\par
+\pard \plain \cf0 \fs20
+{\uldb Myš}{\v 20234}\par
+\par
+\{bmc IDF20362.bmp\} \b \i test myši v oblasti \i0 \b0  \par
+\tab \{bmc IDF20363.bmp\} \b \i horizontální souøadnice X poèátku oblasti \i0 \b0 \par
+\tab \{bmc IDF20364.bmp\} \b \i vertikální souøadnice Y poèátku oblasti \i0 \b0 \par
+\tab \{bmc IDF20365.bmp\} \b \i šíøka oblasti \i0 \b0 \par
+\tab \{bmc IDF20366.bmp\} \b \i vıška oblasti \i0 \b0 \par
+\par
+Prvek \b \i test myši v oblasti \i0 \b0 slouí k testování, zda se kurzor myši nachází v urèité oblasti. Tento test je vhodnı napø. po kliknutí tlaèítkem myši k rozlišení, do kterého místa v oknì bylo kliknuto. Jako parametry je nutno zadat souøadnice poèátku oblasti a její rozmìry. Nachází-li se kurzor myši v testované oblasti, je navrácen logickı pøíznak platnosti.\par
+\par
+\i \b Poznámka: \b0 Bìhem provádìní programu je zajištìna nemìnnost údajù o myši a do pøíštího okamiku obsluhy {\uldb èekání}{\v 20122}. Proto je moné po kliknutí tlaèítkem myši provést rozlišení místa kliknutí testem pozice myši a pøitom pøedpokládat, e i pøi vícenásobném pouití souøadnic myši budou údaje nemìnné.\i0 \par
+\page
+
+#{\footnote 20404}
+#{\footnote 20405}
+#{\footnote 20406}
+#{\footnote 20407}
+#{\footnote 20408}
+#{\footnote 20409}
+${\footnote Nastavení vzhledu kurzoru myši}
++{\footnote 1}
+K{\footnote nastavení vzhledu kurzoru myši;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20404.bmp\} Nastavení vzhledu kurzoru myši\par
+\pard \plain \cf0 \fs20
+{\uldb Myš}{\v 20234}\par
+\par
+\{bmc IDF20404.bmp\} \b \i nastavení vzhledu kurzoru myši \i0 \b0  \par
+\tab \{bmc IDF20405.bmp\} \b \i obrázek kurzoru myši (bez zadání = standardní) \i0 \b0 \par
+\tab \{bmc IDF20406.bmp\} \b \i horizontální souøadnice X poèátku oblasti \i0 \b0 \par
+\tab \{bmc IDF20407.bmp\} \b \i vertikální souøadnice Y poèátku oblasti \i0 \b0 \par
+\tab \{bmc IDF20408.bmp\} \b \i šíøka oblasti \i0 \b0 \par
+\tab \{bmc IDF20409.bmp\} \b \i vıška oblasti \i0 \b0 \par
+\par
+Prvek \b \i nastavení vzhledu kurzoru myši \i0 \b0 slouí k pøedefinování vzhledu kurzoru myši v závislosti na rùznıch místech v oknì programu. Jako parametry lze zadat promìnnou typu pøedmìt s definicí obrázku kurzoru myši, souøadnice poèátku oblasti a rozmìry oblasti. V definici obrázku budou barvy interpretovány následujícím zpùsobem:\par
+\par
+\b \cf13 XXX \cf0 prùhledná barva \b0 \tab - prùhledná \par
+\b \cf15 XXX \cf0 bílá barva \b0 \tab - bílá \par
+\b \cf0 XXX \cf0 èerná barva \b0 \tab - èerná \par
+\b \cf9 XXX \cf0 èervená barva \b0 \tab - inverze \par
+\b \cf11 XXX \cf0 lutá barva \b0 \tab - inverze + horkı bod \par
+\b \cf2 XXX \cf0 tmavì zelená \b0 \tab - èerná + horkı bod \par
+\b \cf10 XXX \cf0 svìtle zelená \b0 \tab - bílá + horkı bod \par
+\b \cf12 XXX \cf0 modrá barva \b0 \tab - prùhledná + horkı bod \par
+\par
+Horkı bod udává aktivní místo kurzoru myši - tj. bod, ke kterému se vztahují souøadnice kurzoru myši. Bez pøedefinování horkého bodu je horkı bod implicitnì ve støedu obrázku kurzoru myši. Inverze znamená inverzi barvy pod kurzorem myši.\par
+\par
+Bez zadání obrázku kurzoru myši nebo zadáním prvku {\uldb okraje plochy}{\v 20249} bude v zadané oblasti pouit standardní kurzor myši (zpravidla šipka). Bez zadání souøadnic poèátku oblasti jsou pouity souøadnice 0, bez zadání rozmìrù oblasti jsou pouity neomezené rozmìry oblasti. Standardní nastavení kurzoru myši lze tedy dosáhnout uvedením pøíkazu pro nastavení vzhledu kurzoru myši bez jakéhokoliv parametru.\par
+\par
+Definic oblastí nastavení vzhledu kurzor myši mùe bıt libovolnı poèet. Staré oblasti lze pøedefinovat pøekrytím novou oblastí.\par
+\page
+
+#{\footnote 20584}
+#{\footnote 20585}
+#{\footnote 20586}
+#{\footnote 20587}
+#{\footnote 20588}
+#{\footnote 20589}
+#{\footnote 20590}
+#{\footnote 20591}
+${\footnote Pákovı ovladaè}
++{\footnote 1}
+K{\footnote pákovı ovladaè;joystick;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20584.bmp\} Pákovı ovladaè (joystick)\par
+\pard \plain \cf0 \fs20
+{\uldb Ovládání}{\v 20121}\par
+\par
+\{bmc IDF20585.bmp\} \tab \b \i souøadnice X pákového ovladaèe \i0 \b0 \par
+\{bmc IDF20586.bmp\} \tab \b \i souøadnice Y pákového ovladaèe \i0 \b0 \par
+\{bmc IDF20587.bmp\} \tab \b \i souøadnice Z pákového ovladaèe \i0 \b0 \par
+\{bmc IDF20588.bmp\} \tab \b \i tlaèítko 1 pákového ovladaèe \i0 \b0 \par
+\{bmc IDF20589.bmp\} \tab \b \i tlaèítko 2 pákového ovladaèe \i0 \b0 \par
+\{bmc IDF20590.bmp\} \tab \b \i tlaèítko 3 pákového ovladaèe \i0 \b0 \par
+\{bmc IDF20591.bmp\} \tab \b \i tlaèítko 4 pákového ovladaèe \i0 \b0 \par
+\par
+Jako parametr prvkù lze zadat èíslo pákového ovladaèe v rozsahu 0 a 3. Bez zadání bude pouit implicitní pákovı ovladaè èíslo 0.\par
+\par
+Prvky \b \i souøadnice pákového ovladaèe \i0 \b0 udávají aktuální polohu pákového ovladaèe v rozsahu -1 a +1, 0 je støedová poloha. Prvky \b \i tlaèítko pákového ovladaèe \i0 \b0 udávají stav stisku tlaèítka pákového ovladaèe, pøi stisknutém stavu navrací logickı pøíznak platnosti.\par
+\par
+\i \b Poznámka: \b0 Bìhem provádìní programu je zajištìna nemìnnost údajù o pákovém ovladaèi a do pøíštího okamiku obsluhy {\uldb èekání}{\v 20122}.\i0 \par
+\page
+
+}

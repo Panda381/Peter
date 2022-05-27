@@ -1,0 +1,295 @@
+{\rtf1 \ansi \deff0
+
+@{\footnote ------- definice fontù --------- }
+
+{\fonttbl 
+{\f0 \fswiss MS San Serif;}
+}
+
+@{\footnote ------- definice barev --------- }
+
+{\colortbl
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red192\green192\blue192;
+\red128\green128\blue128;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+
+@{\footnote Použití barev:
+	0 - èerná
+	1 - tmavì èervená
+	2 - tmavì zelená
+	3 - hnìdá
+	4 - tmavì modrá
+	5 - tmavì fialová
+	6 - tmavì modrozelená
+	7 - šedá
+	8 - tmavì šedá
+	9 - èervená
+	10 - zelená
+	11 - žlutá
+	12 - modrá
+	13 - fialová
+	14 - modrozelená
+	15 - bílá
+}
+
+#{\footnote 20437}
+#{\footnote 20443}
+#{\footnote 20448}
+#{\footnote 20449}
+#{\footnote 20509}
+#{\footnote 20582}
+#{\footnote 20583}
+#{\footnote 20437}
+#{\footnote 20245}
+${\footnote Files}
++{\footnote 1}
+K{\footnote Files;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Files\par
+\pard \plain \cf0 \fs20
+{\uldb Structural Elements of a Program}{\v Structural Elements of a Program}\par
+\par
+The file servicing makes it possible to work with maximum two files at a time. From one file the data can only be read, and to the other one the data can only be written. The data cannot be read from and written into the same file at a time. When using the files, the name of the file which the data are to be read from and that of the file into which the data is be written into has to be set. During the first file data access the file will be opened. The file will be closed automatically, if not used, or when setting the file name anew. If an error arises during some file operations, the operation error flag will be set.\par
+\par
+\{bmc IDF20443.bmp\}\tab \b \i active disk and folder \i0 \b0 \par
+\par
+The \b \i active disc and folder \i0 \b0 element is used as a text variable (enabling reading and writing), indicating the default disk and folder (in form of "disk:\\path"), which will be used to enter an incomplete specification of a file or a folder. When an invalid disk or folder is set, the operation error flag will be set.\par
+\par
+\{bmc IDF20448.bmp\}\tab \b \i active file/folder for reading \i0 \b0 \par
+\par
+The \b \i active file/folder for reading \i0 \b0 element is a text variable (with the possibility of reading and writing) indicating the name of a file or of a folder, from which it will be read or the parameters of which will be found out. When setting the name of the file (or folder) for reading into it the previously opened file for reading or writing will be closed (the operation error flag may be set at the same time), and the pointer of the file for reading will be set to 0. The file will be opened (and the name validity will possibly be checked) only during the first access to the file data. The data cannot be read from and written into the same file at a time.\par
+\par
+\{bmc IDF20449.bmp\}\tab \b \i active file/folder for writing \i0 \b0 \par
+\par
+The \b \i active file/folder for writing \i0 \b0 element is a text variable (with the possibility of reading and writing) designating the name for the file or folder to which data will be written into, or the parameters of which will be set. When setting the name of the file (or folder) for writing into it the previously opened file for reading or writing will be closed (the operation error flag may be set at the same time), and the pointer in the file for writing will be set to 0. The file will be opened (and the name validity will possibly be checked) only during the first access to the file data. The data cannot be read from and written into the same file at a time.\par
+\par
+\{bmc IDF20509.bmp\}\tab \b \i operation error flag \i0 \b0 \par
+\par
+The \b \i operation error flag \i0 \b0 element is a logic flag serving to indicate an error turning up during a file operation. The flag is set when an operation error appears. It must be switched off by the program before running any operations. This feature makes it possible to test the operation flag till after running several file operations at a time. The flag is only informatory, exerting no influence on the program functioning.\par
+\par
+\{bmc IDF20582.bmp\}\tab \b \i program execution \i0 \b0 \par
+\par
+The \b \i program execution \i0 \b0 element serves to carry out a system command or to start a program. The program name is entered as a text parameter. Following the program name program parameters may be entered. If the program name contains spaces, then the name must be entered between quotes ("This is a program"). If a command cannot be carried out as a program, the command is passed on to the system for carrying it out (e.g. the "DIR" command). It is not waited to finish a running program.\par
+\par
+\{bmc IDF20583.bmp\}\tab \b \i program execution with waiting \i0 \b0 \par
+\par
+The \b \i program execution with waiting \i0 \b0 element serves to carry out a system command or to start a program in a similar way as it is done by the previous element. A difference consists in the fact that this element will wait till a running program is finished, and will return a numeric value as the program's return code.\par
+\par
+\{bmc IDF20245.bmp\}\tab \b \i return code of the program \i0 \b0 \par
+\par
+The \b \i return code of the program \i0 \b0 element is located in the {\uldb local variables}{\v Local Variables and Functions} of the program {\uldb main function}{\v Global Variables and Functions} (not in the basic elements). This is a positive integral variable enabling to pass on a numeric code to other programs that have called this program. It is a common usage of the return code that the 0 value represents a proper program execution, whereas values greater than 0 (integral numbers only) indicate an error code.\par
+\par
+{\uldb \{bmc IDF20438.bmp\}\tab basic operations}{\v 20438}\par
+{\uldb \{bmc IDF20465.bmp\}\tab data}{\v 20465}\par
+{\uldb \{bmc IDF20453.bmp\}\tab attributes}{\v 20453}\par
+{\uldb \{bmc IDF20452.bmp\}\tab disk}{\v 20452}\par
+\page
+
+#{\footnote 20438}
+#{\footnote 20439}
+#{\footnote 20440}
+#{\footnote 20441}
+#{\footnote 20442}
+#{\footnote 20450}
+#{\footnote 20451}
+#{\footnote 20642}
+${\footnote Basic File Operations}
++{\footnote 1}
+K{\footnote Basic File Operations;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Basic File Operations\par
+\pard \plain \cf0 \fs20
+{\uldb Files}{\v 20437}\par
+\par
+\{bmc IDF20439.bmp\}\tab \b \i new file \i0 \b0 \par
+\par
+The \b \i new file \i0 \b0 element serves to create a new file. The file name is entered as a text parameter. When no path to the file exists, it will be created. When the creation operation is successful or if the file already exists, the logical validity flag will be returned. Otherwise the invalidity flag is returned, and, at the same time, the {\uldb operation error flag}{\v 20509} is set.\par
+\par
+\{bmc IDF20440.bmp\}\tab \b \i new folder \i0 \b0 \par
+\par
+The \b \i new folder \i0 \b0 element serves to create a new folder. The folder name is entered as a text parameter. When no path to the folder exists, it will be created. When the creation operation is successful or if the folder already exists, the logical validity flag will be returned. Otherwise the invalidity flag is returned, and, at the same time, the {\uldb operation error flag}{\v 20509} is set.\par
+\par
+\{bmc IDF20441.bmp\}\tab \b \i delete file or folder \i0 \b0 \par
+\par
+The \b \i delete file or folder \i0 \b0 element serves to delete a file or a folder. The file or folder name is entered as a text parameter. A file having the R/O attribute (modification prohibition), and a non-empty folder (containing a file or another folder) cannot be deleted. When the deletion operation is successful the logical validity flag will be returned. Otherwise the invalidity flag is returned, and, at the same time, the {\uldb operation error flag}{\v 20509} is set.\par
+\par
+\{bmc IDF20442.bmp\}\tab \b \i test of existence \i0 \b0 \par
+\par
+The \b \i test of existence \i0 \b0 element serves to find out, whether a disk, a file or a folder exists that has been entered as a parameter. If it exists, the logic validity flag will be returned. By entering a disk specification in form of "\b disk:\b0 " only the disk existence in the computer is tested independently on whether the disk contains a medium (e.g. the floppy disk drive). Following the "\b disk:\\\b0 " specification entry (i.e. the disk's ROOT folder) the disk existence including medium presence will be tested. If the access permission to the ROOT of disk is to be tested, then this can be done by the "\b disk:\\*.*\b0 " test.\par
+\par
+\{bmc IDF20450.bmp\}\tab \b \i file copy \i0 \b0 \par
+\par
+The \b \i file copy \i0 \b0 element copies a file into a new file. The name of the source file is specified by the {\uldb active file for reading}{\v 20448}, that of the target file by {\uldb active file for writing}{\v 20449}. The target file must not exist (it will not be overwritten). The element returns a logic flag stating the operation success. If the operation is not successful, an invalidity flag will be returned and an {\uldb operation error flag}{\v 20509} will be set.\par
+\par
+\{bmc IDF20451.bmp\}\tab \b \i file (folder) move/rename \i0 \b0 \par
+\par
+The \b \i file (folder) move/rename \i0 \b0 element enables to change the name of a file or a folder, or to move them in another folder. The name of the source file/folder is specified by the {\uldb active file/folder for reading}{\v 20448}, that of the target file/folder by the {\uldb active file/folder for writing}{\v 20449}. The target file must not exist (it will not be overwritten). A folder can be moved within the same disk only, a file can be moved between different disks. This element returns a logic flag indicating the operation success. If the operation is not successful, an invalidity flag will be returned and an {\uldb operation error flag}{\v 20509} will be set.\par
+\par
+\{bmc IDF20642.bmp\}\tab \b \i file list \i0 \b0 (list of files and folders) \par
+\par
+The \b \i file list \i0 \b0 element finds all files and folders according to a specification entered as a text parameter, and returns their list as a multiline text, in which each line represents the name of one file/folder (without a path). When entering the file searching mask the asterisk convention can be utilized ("\b ?\b0 " denoting an arbitrary character, "\b *\b0 " replacing a character group). Several file masks may be entered, too, individual masks being separated from one another by the semicolon "\b ;\b0 ". If no file mask is specified, all files and folders of an active folder will be searched for.\par
+\page
+
+#{\footnote 20465}
+#{\footnote 20481}
+#{\footnote 20482}
+#{\footnote 20466}
+#{\footnote 20467}
+#{\footnote 20468}
+#{\footnote 20469}
+#{\footnote 20514}
+#{\footnote 20515}
+#{\footnote 20470}
+#{\footnote 20471}
+#{\footnote 20472}
+#{\footnote 20473}
+#{\footnote 20474}
+#{\footnote 20475}
+#{\footnote 20476}
+#{\footnote 20510}
+#{\footnote 20477}
+#{\footnote 20478}
+#{\footnote 20479}
+#{\footnote 20480}
+#{\footnote 20632}
+#{\footnote 20729}
+#{\footnote 20890}
+${\footnote File Data}
++{\footnote 1}
+K{\footnote File Data;}
+\pard \plain \brdrb \cf12 \fs24 \b
+File Data\par
+\pard \plain \cf0 \fs20
+{\uldb Files}{\v 20437}\par
+\par
+\{bmc IDF20481.bmp\}\tab \b \i read pointer \i0 \b0 \par
+\{bmc IDF20482.bmp\}\tab \b \i write pointer \i0 \b0 \par
+\par
+The \b \i read pointer \i0 \b0 and \b \i write pointer \i0 \b0 elements are numeric variables representing an offset in the file for reading and in the file for writing. The pointers can be both set and read. On setting a name of the file for reading/writing the relevant pointer will be reset. When reading/writing the data the pointers are shifted automatically.\par
+\par
+\{bmc IDF20466.bmp\}\tab \b \i integer number with sign, 1 byte \i0 \b0 \par
+\{bmc IDF20467.bmp\}\tab \b \i integer number without sign, 1 byte \i0 \b0 \par
+\{bmc IDF20468.bmp\}\tab \b \i integer number with sign, 2 bytes \i0 \b0 \par
+\{bmc IDF20469.bmp\}\tab \b \i integer number without sign, 2 bytes \i0 \b0 \par
+\{bmc IDF20514.bmp\}\tab \b \i integer number with sign, 3 bytes \i0 \b0 \par
+\{bmc IDF20515.bmp\}\tab \b \i integer number without sign, 3 bytes \i0 \b0 \par
+\{bmc IDF20470.bmp\}\tab \b \i integer number with sign, 4 bytes \i0 \b0 \par
+\{bmc IDF20471.bmp\}\tab \b \i integer number without sign, 4 bytes \i0 \b0 \par
+\{bmc IDF20472.bmp\}\tab \b \i decimal number, 4 bytes \i0 \b0 \par
+\{bmc IDF20473.bmp\}\tab \b \i decimal number, 8 bytes \i0 \b0 \par
+\{bmc IDF20890.bmp\}\tab \b \i logical value \i0 \b0 \par
+\{bmc IDF20474.bmp\}\tab \b \i text terminated by binar null (ASCIIZ) \i0 \b0 \par
+\{bmc IDF20475.bmp\}\tab \b \i text terminated by end of line (CR and LF) \i0 \b0 \par
+\{bmc IDF20476.bmp\}\tab \b \i text with fixed length \i0 \b0 \par
+\{bmc IDF20510.bmp\}\tab \b \i length of text with fixed length \i0 \b0 \par
+\{bmc IDF20729.bmp\}\tab \b \i text is in UNICODE format \i0 \b0 (2 bytes) \par
+\{bmc IDF20477.bmp\}\tab \b \i item (ICO) \i0 \b0 \par
+\{bmc IDF20478.bmp\}\tab \b \i picture (BMP, JPG and some AVI) \i0 \b0 \par
+\{bmc IDF20479.bmp\}\tab \b \i sound (WAV, MP3) \i0 \b0 \par
+\{bmc IDF20480.bmp\}\tab \b \i music (MID, RMI) \i0 \b0 \par
+\{bmc IDF20632.bmp\}\tab \b \i sprite (SPR) \i0 \b0 \par
+\par
+The data elements can be used in a similar manner like the variables. By writing into an element a write is performed to the output file, by reading an element's value this value is readed from the input file. If an operation error occurs, the {\uldb operation error flag}{\v 20509} is set. A format error during reading item, picture, sound, music or sprite elements will not cause a change in the state of the read operation pointer.\par
+\par
+The \b \i logical value \i0 \b0 element uses 1 byte to store a value. The logical value "Yes" is written as number 1, the logical value "No" is written as number 0. During the reading any number that is not equal 0 is considered to be the logical value "Yes".\par
+\par
+When reading a picture, the reading of some AVI files using non-compressed 16 bit data (format of the video sequence saved by some TV cards) is supported in addition to the reading of the BMP and JPEG formats. By reading the first picture from the beginning of the AVI file information about the file format is determined, which is used also on reading the subsequent pictures from the AVI file. The picture writing always takes place in the BMP format.\par
+\par
+When reading a sound, the MPEG Layer-3 (MP3) format is supported. To {\uldb play it back}{\v 20299}, an installation of a driver may be necessary. The sound writing always takes place in the WAW format.\par
+\par
+The \b \i length of text with fixed length \i0 \b0 element defines the length of a fixed length text (not the file data, but an auxiliary internal variable being concerned).\par
+\par
+The \b \i text is in UNICODE format \i0 \b0 element is a switch indicating that the texts are loaded and stored in the UNICODE format. Normally, the texts are loaded and stored in the Windows default format, one character corresponding to one file byte. In the UNICODE code characters are stored into 2 bytes. The text is not dependent on the national code system; its disadvantage are higher demands on the file size.\par
+\page
+
+#{\footnote 20453}
+#{\footnote 20508}
+#{\footnote 20454}
+#{\footnote 20458}
+#{\footnote 20455}
+#{\footnote 20456}
+#{\footnote 20457}
+#{\footnote 20459}
+#{\footnote 20460}
+#{\footnote 20461}
+#{\footnote 20462}
+#{\footnote 20463}
+#{\footnote 20464}
+#{\footnote 20751}
+${\footnote Parameters of Files and Folders}
++{\footnote 1}
+K{\footnote Parameters of Files and Folders;Attributes;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Parameters of Files and Folders\par
+\pard \plain \cf0 \fs20
+{\uldb Files}{\v 20437}\par
+\par
+\{bmc IDF20508.bmp\}\tab \b \i size of file \i0 \b0 \par
+\{bmc IDF20454.bmp\}\tab \b \i attribute R/O \i0 \b0 (read-only)\par
+\{bmc IDF20458.bmp\}\tab \b \i attribute ARC \i0 \b0 (archive)\par
+\{bmc IDF20455.bmp\}\tab \b \i attribute HID \i0 \b0 (hidden)\par
+\{bmc IDF20456.bmp\}\tab \b \i attribute SYS \i0 \b0 (system)\par
+\{bmc IDF20457.bmp\}\tab \b \i attribute DIR \i0 \b0 (folder, directory)\par
+\{bmc IDF20459.bmp\}\tab \b \i attribute TEMP \i0 \b0 (temporary)\par
+\{bmc IDF20460.bmp\}\tab \b \i attribute COMP \i0 \b0 (compressed)\par
+\{bmc IDF20461.bmp\}\tab \b \i attribute OFF \i0 \b0 (offline)\par
+\{bmc IDF20462.bmp\}\tab \b \i date and time creation \i0 \b0 \par
+\{bmc IDF20463.bmp\}\tab \b \i last access date and time \i0 \b0 \par
+\{bmc IDF20464.bmp\}\tab \b \i last write date and time \i0 \b0 \par
+\{bmc IDF20751.bmp\}\tab \b \i nickname (alias) \i0 \b0 \par
+\par
+The elements intended for servicing the file parameters use the name definitions of files for reading and writing. When reading an element value this value is retrieved from the file/folder for reading; when writing a value into an element this value is set in the file/folder for writing. If an operation error occurs, the {\uldb operation error flag}{\v 20509} will be set.\par
+\par
+From among the attributes following attributes only may be set: R/O, ARC, HID and SYS (logic value), whereas following attributes may be read only: DIR, TEMP, COMP and OFF.\par
+\par
+The "nicknames" (aliases) are alternative multi-lingual file names. Each file can possess beside its normal file name a nickname, too, under which it is presented to the user. This nickname may be different for every language. A file can possess a short name (8 characters), thus making possible to use long names even in systems not supporting long names (older Novell networks, another language version of the operational system, CD-ROM). The nicknames are stored in the \b ALIASES.INI \b0 file, which is located in the same folder as the file/folder. By writing the text into the \b \i nickname \i0 \b0 element the alternative name of the file/folder for writing is recorded according to the program {\uldb language}{\v 20397} active setting. By reading the text out of the element the nickname of the file/folder for reading may be found out corresponding to the active language or corresponding to another nearest language.\par
+\page
+
+#{\footnote 20452}
+#{\footnote 20511}
+#{\footnote 20444}
+#{\footnote 20445}
+#{\footnote 20446}
+#{\footnote 20447}
+${\footnote Disk}
++{\footnote 1}
+K{\footnote Disk;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Disk\par
+\pard \plain \cf0 \fs20
+{\uldb Files}{\v 20437}\par
+\par
+All disk operations are related to the {\uldb active disk}{\v 20443} (default disk).\par
+\par
+\{bmc IDF20511.bmp\}\tab \b \i disk type \i0 \b0  (2=FD, 3=HD, 4=NET, 5=CD, 6=RAM)\par
+\par
+The \b \i disk type \i0 \b0 element returns the number of disk type:\par
+\tab \b 2 \b0 = floppy disk\par
+\tab \b 3 \b0 = hard disk\par
+\tab \b 4 \b0 = net disk (remote disk)\par
+\tab \b 5 \b0 = CD-ROM disk\par
+\tab \b 6 \b0 = RAM disk\par
+\par
+\{bmc IDF20444.bmp\}\tab \b \i disk capacity \i0 \b0 (bytes) \par
+\{bmc IDF20445.bmp\}\tab \b \i free disk space \i0 \b0 (bytes) \par
+\{bmc IDF20446.bmp\}\tab \b \i disk volume label \i0 \b0 \par
+\{bmc IDF20447.bmp\}\tab \b \i disk serial number \i0 \b0 \par
+\par
+The \b \i disk volume label \i0 \b0 element returns the disk volume label text. The disk volume label may be changed by setting this element value.\par
+\page
+
+}

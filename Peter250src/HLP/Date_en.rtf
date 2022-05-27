@@ -1,0 +1,160 @@
+{\rtf1 \ansi \deff0
+
+@{\footnote ------- definice fontù --------- }
+
+{\fonttbl 
+{\f0 \fswiss MS San Serif;}
+}
+
+@{\footnote ------- definice barev --------- }
+
+{\colortbl
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red192\green192\blue192;
+\red128\green128\blue128;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+
+@{\footnote Použití barev:
+	0 - èerná
+	1 - tmavì èervená
+	2 - tmavì zelená
+	3 - hnìdá
+	4 - tmavì modrá
+	5 - tmavì fialová
+	6 - tmavì modrozelená
+	7 - šedá
+	8 - tmavì šedá
+	9 - èervená
+	10 - zelená
+	11 - žlutá
+	12 - modrá
+	13 - fialová
+	14 - modrozelená
+	15 - bílá
+}
+
+#{\footnote 20483}
+#{\footnote 20484}
+#{\footnote 20485}
+#{\footnote 20486}
+#{\footnote 20487}
+#{\footnote 20488}
+#{\footnote 20489}
+#{\footnote 20490}
+#{\footnote 20491}
+#{\footnote 20492}
+#{\footnote 20493}
+#{\footnote 20494}
+#{\footnote 20495}
+#{\footnote 20496}
+#{\footnote 20497}
+#{\footnote 20498}
+#{\footnote 20499}
+#{\footnote 20500}
+#{\footnote 20501}
+#{\footnote 20502}
+#{\footnote 20503}
+#{\footnote 20504}
+#{\footnote 20505}
+#{\footnote 20506}
+#{\footnote 20507}
+${\footnote Date and Time}
++{\footnote 1}
+K{\footnote Date and Time;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Date and Time\par
+\pard \plain \cf0 \fs20
+{\uldb Structural Elements of a Program}{\v Structural Elements of a Program}\par
+\par
+In the service of the date and time functions the date and time are expressed as a numeric value representing the number of seconds from January 1, 1601 in 00:00:00, with a resolution accuracy given in milliseconds. This provides for easy executing the time operations, such as time addition and subtraction.\par
+\par
+\{bmc IDF20484.bmp\}\tab \b \i actual date and time \i0 \b0 \par
+\par
+The \b \i actual date and time \i0 \b0 element is a numeric variable representing the local actual date and time. The variable can be read and data can be recorded in it, thus changing the actual date and time.\par
+\par
+\{bmc IDF20485.bmp\}\tab \b \i convert local time to world time \i0 \b0 \par
+\par
+The \b \i convert local time to world time \i0 \b0 function converts the local time to the world time (UTC, Universal Time Coordinated). A precondition for a correct conversion is the setting of the time zone and the summer time switch in the Windows system (Control Panels / Date and Time / Time Zone).\par
+\par
+\{bmc IDF20486.bmp\}\tab \b \i convert world time to local time \i0 \b0 \par
+\par
+The \b \i convert world time to local time \i0 \b0 function converts the world time (UTC, Universal Time Coordinated) to the local time. A precondition for a correct conversion is the setting of the time zone and the summer time switch in the Windows system (Control Panels / Date and Time / Time Zone).\par
+\par
+\{bmc IDF20487.bmp\} \b \i merge components of date and time \i0 \b0 \par
+\tab \{bmc IDF20488.bmp\} \b \i year \i0 \b0 (default 1601) \par
+\tab \{bmc IDF20489.bmp\} \b \i month \i0 \b0 (default 1) \par
+\tab \{bmc IDF20490.bmp\} \b \i day \i0 \b0 (default 1) \par
+\tab \{bmc IDF20491.bmp\} \b \i hour \i0 \b0 (default 0) \par
+\tab \{bmc IDF20492.bmp\} \b \i minute \i0 \b0 (default 0) \par
+\tab \{bmc IDF20493.bmp\} \b \i second \i0 \b0 (default 0) \par
+\tab \{bmc IDF20494.bmp\} \b \i millisecond \i0 \b0 (default 0) \par
+\par
+The \b \i merge components of date and time \i0 \b0 function enables to convert the date and time represented by corresponding data to a representation in a certain number of seconds. It is possible to use only a part of the date and time indication as a date entry or as a time entry only. In this case it is possible to leave the default setting of the positions not used. Thus, for example, when using the time only the resulting reading will represent the number of seconds from the beginning of the day. The data may be processed by common operations, as, for instance the representation by means of a function for the time conversion to a text form.\par
+\par
+\{bmc IDF20495.bmp\}\tab \b \i year from date and time \i0 \b0 \par
+\par
+The \b \i year from date and time \i0 \b0 function takes the year entry from the date and time and returns it as a numeric data.\par
+\par
+\{bmc IDF20496.bmp\}\tab \b \i month from date and time \i0 \b0 \par
+\par
+The \b \i month from date and time \i0 \b0 function takes the month entry from the date and time and returns it as a numeric data.\par
+\par
+\{bmc IDF20497.bmp\}\tab \b \i day from date and time \i0 \b0 \par
+\par
+The \b \i day from date and time \i0 \b0 function takes the day entry from the date and time and returns it as a numeric data.\par
+\par
+\{bmc IDF20498.bmp\}\tab \b \i day of week from date and time \i0 \b0 (0=sunday, 1=monday, ...)\par
+\par
+The \b \i day of week from day and time \i0 \b0 function takes the day-of-the-week entry from the date and time and returns it as a numeric data. Number 0 represents Sunday, number 1 Monday through number 6 representing Saturday.\par
+\par
+\{bmc IDF20499.bmp\}\tab \b \i hour from date and time \i0 \b0 \par
+\par
+The \b \i hour from date and time \i0 \b0 function takes the hour entry from the date and time and returns it as a numeric data.\par
+\par
+\{bmc IDF20500.bmp\}\tab \b \i minute from date and time \i0 \b0 \par
+\par
+The \b \i minute from date and time \i0 \b0 function takes the minute entry from the date and time and returns it as a numeric data.\par
+\par
+\{bmc IDF20501.bmp\}\tab \b \i second from date and time \i0 \b0 \par
+\par
+The \b \i second from date and time \i0 \b0 function takes the second entry from the date and time and returns it as a numeric data.\par
+\par
+\{bmc IDF20502.bmp\}\tab \b \i millisecond from date and time \i0 \b0 \par
+\par
+The \b \i millisecond from date and time \i0 \b0 function takes the millisecond entry from the date and time and returns it as a numeric data.\par
+\par
+\{bmc IDF20503.bmp\}\tab \b \i convert date to text "day.month.year" \i0 \b0 \par
+\par
+The \b \i convert date to text "day.month.year" \i0 \b0 function converts the date data to a date text in the European format "day.month.year".\par
+\par
+\{bmc IDF20504.bmp\}\tab \b \i convert date to text "month/day/year" \i0 \b0 \par
+\par
+The \b \i convert date to text "month/day/year" \i0 \b0 function converts the date data to a date text in the American format "month/day/year".\par
+\par
+\{bmc IDF20505.bmp\}\tab \b \i convert date to text "year-month-day" \i0 \b0 \par
+\par
+The \b \i convert date to text "year-month-day" \i0 \b0 function converts the date data to a date text in the Japanese format "year-month-day".\par
+\par
+\{bmc IDF20506.bmp\}\tab \b \i convert time to text "hour:minute:second" (24 hours) \i0 \b0 \par
+\par
+The \b \i convert time to text "hour:minute:second" (24 hours) \i0 \b0 function converts the time data to a time text with a 24-hour cycle.\par
+\par
+\{bmc IDF20507.bmp\}\tab \b \i convert time to text "hour:minute:second x" (12 hours) \i0 \b0 \par
+\par
+The \b \i convert time to text "hour:minute:second x" (12 hours) \i0 \b0 function converts the time data to a time text with a 12-hour cycle, supplemented by the "a" (=morning) or "p" (=afternoon) indicator.\par
+\page
+
+}

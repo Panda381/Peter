@@ -1,0 +1,417 @@
+{\rtf1 \ansi \deff0
+
+@{\footnote ------- definice fontù --------- }
+
+{\fonttbl 
+{\f0 \fswiss MS San Serif CE;}
+}
+
+@{\footnote ------- definice barev --------- }
+
+{\colortbl
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red192\green192\blue192;
+\red128\green128\blue128;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+
+@{\footnote Pouití barev:
+	0 - èerná
+	1 - tmavì èervená
+	2 - tmavì zelená
+	3 - hnìdá
+	4 - tmavì modrá
+	5 - tmavì fialová
+	6 - tmavì modrozelená
+	7 - šedá
+	8 - tmavì šedá
+	9 - èervená
+	10 - zelená
+	11 - lutá
+	12 - modrá
+	13 - fialová
+	14 - modrozelená
+	15 - bílá
+}
+
+#{\footnote 20075}
+${\footnote Zvuk a hudba}
++{\footnote 1}
+K{\footnote zvuk a hudba;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Zvuk a hudba\par
+\pard \plain \cf0 \fs20
+{\uldb Stavební prvky programu}{\v Stavební prvky programu}\par
+\par
+{\uldb \{bmc IDF20298.bmp\}\tab zvuk}{\v 20298}\par
+{\uldb \{bmc IDF20425.bmp\}\tab hudba}{\v 20425}\par
+{\uldb \{bmc IDF20426.bmp\}\tab audio CD}{\v 20426}\par
+{\uldb \{bmc IDF20778.bmp\}\tab smìšovací zaøízení}{\v 20778}\par
+\page
+
+#{\footnote 20298}
+${\footnote Zvuk}
++{\footnote 1}
+K{\footnote zvuk;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Zvuk\par
+\pard \plain \cf0 \fs20
+{\uldb Zvuk a hudba}{\v 20075}\par
+\par
+{\uldb \{bmc IDF20299.bmp\}\tab pøehrátí zvuku}{\v 20299}\par
+{\uldb \{bmc IDF20383.bmp\}\tab test zvuku}{\v 20383}\par
+{\uldb \{bmc IDF20300.bmp\}\tab vypnutí zvuku}{\v 20300}\par
+{\uldb \{bmc IDF20640.bmp\}\tab pozice v pøehrávání zvuku}{\v 20640}\par
+{\uldb \{bmc IDF20641.bmp\}\tab pozastavit/pokraèovat v pøehrávání zvuku}{\v 20641}\par
+{\uldb \{bmc IDF20541.bmp\}\tab slouèení zvukù}{\v 20541}\par
+{\uldb \{bmc IDF20646.bmp\}\tab shodnost zvukù}{\v 20646}\par
+{\uldb \{bmc IDF20714.bmp\}\tab rozlišovací kód}{\v 20714}\par
+{\uldb \{bmc IDF20403.bmp\}\tab zvukové funkce}{\v 20403}\par
+\page
+
+#{\footnote 20299}
+#{\footnote 20398}
+#{\footnote 20399}
+#{\footnote 20400}
+#{\footnote 20384}
+#{\footnote 20401}
+#{\footnote 20713}
+${\footnote Pøehrátí zvuku}
++{\footnote 1}
+K{\footnote pøehrátí zvuku;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20299.bmp\} Pøehrátí zvuku\par
+\pard \plain \cf0 \fs20
+{\uldb Zvuk}{\v 20298}\par
+\par
+\{bmc IDF20299.bmp\} \b \i pøehrátí zvuku \i0 \b0 \par
+\tab \{bmc IDF20398.bmp\} \b \i zvuk k pøehrátí \i0 \b0 \par
+\tab \{bmc IDF20399.bmp\} \b \i hlasitost zvuku \i0 \b0 (0 a 1)\par
+\tab \{bmc IDF20400.bmp\} \b \i stereofonní vyváení \i0 \b0 (-1=vlevo a +1=vpravo, 0=støed)\par
+\tab \{bmc IDF20713.bmp\} \b \i rychlost pøehrávání \i0 \b0 (1=bìná)\par
+\tab \{bmc IDF20384.bmp\} \b \i poèet opakování \i0 \b0 (0=trvale)\par
+\tab \{bmc IDF20401.bmp\} \b \i pøerušit hrající zvuk \i0 \b0 \par
+\par
+Obsluha pøehrávání zvuku závisí na formátu zvuku. Nejbìnìjší formát zvuku je nekomprimovanı formát PCM, vzorkovací kmitoèet 11025, 22050 nebo 44100 Hz, stereo nebo mono, 8 nebo 16 bitù. Tento formát je pouit i pøi nahrávání zvuku v prostøedí editoru. Jako jedinı umoòuje vícekanálové pøehrávání zvukù a obsluhu hlasitosti a stereofonního vyváení. Pøehrátí zvuku v jiném formátu zpùsobí vypnutí ostatních zvukù, parametry pro nastavení hlasitosti a stereofonního vyváení nemají na pøehrávání zvuku vliv.\par
+\par
+Parametr \b \i hlasitost zvuku \i0 \b0 je èíselnı parametr slouící k nastavení hlasitosti pøehrávaného zvuku. Hlasitost zvuku nelze nastavovat u jiného formátu zvuku ne nekomprimovanı PCM. Rozsah hodnot je 0 (=ticho) a 1 (=bìná hlasitost). Implicitní hodnota je 1.\par
+\par
+Parametr \b \i stereofonní vyváení \i0 \b0 je èíselnı parametr slouící k nastavení pozice zvuku ve stereofonní bázi. Stereofonní vyváení zvuku nelze nastavovat u jiného formátu zvuku ne nekomprimovanı PCM. Rozsah hodnot je -1 (=vlevo) a +1 (=vpravo), 0 je støed. Implicitní hodnota je 0 (=støed).\par
+\par
+Parametr \b \i rychlost pøehrávání \i0 \b0 je èíselnı parametr urèující, jakou rychlostí bude zvuk pøehráván. Urèuje relativní vıšku tónu. Bez zadání je jeho hodnota 1 znamenající, e rychlost není mìnìna. Se zvyšujícím se èíslem roste i rychlost pøehrávání a obrácenì. Napø. zadáním èísla 2 bude zvuk pøehráván s dvojnásobnou rychlostí, zadáním èísla 0.5 s polovièní rychlostí.\par
+\par
+Parametr \b \i poèet opakování \i0 \b0 je èíselnı parametr urèující poèet pøehrátí zvuku. Nastavení na 0 zajistí trvalé pøehrávání zvuku. Implicitní hodnota je 1.\par
+\par
+Parametr \b \i pøerušit hrající zvuk \i0 \b0 je logickı pøíznak zajišující pøerušení pøehrávání pøedešlého stejného zvuku. Pøíznak je implicitnì zapnut. Kadı zvuk mùe bıt souèasnì pøehráván pouze jednou. Není-li zapnut pøíznak pøerušení a je-li tento zvuk ji pøehráván, jsou pouze nastaveny nové parametry zvuku. Tímto zpùsobem lze mìnit hlasitost, stereofonní vyváení a poèet opakování u ji pøehrávaného zvuku. Je-li pøíznak pøerušení zapnut, pøeruší se pøedešlé pøehrávání tohoto zvuku a zvuk se zaène pøehrávat od zaèátku s novımi parametry. Je-li zapotøebí souèasnì pøehrávat jeden zvuk vícekrát, je nutno pouít doplòkovı {\uldb rozlišovací kód}{\v 20714} zvuku.\par
+\par
+Z jinıch formátù zvuku ne je PCM lze doporuèit pøedevším \b Microsoft ADPCM \b0 komprimující zvuk s pomìrem 1:4. Kvalita pøehrávání zvuku je pomìrnì vysoká a je podporován všemi verzemi Windows. Dalším podporovanım a doporuèovanım formátem je MPEG Layer-3 (MP3), kterı i pøi vysoké kvalitì zvuku dosahuje vysoké komprese (kolem 1:10). Nevıhodou je nutnost instalace ovladaèe pro pøehrávání u nìkterıch verzí Windows - viz napø. \b http://www.iis.fhg.de/audio, (c) FraunHofer IIS\b0 , popø. mùete ovladaè nainstalovat pøímo z distribuèního CD-ROM aplikace Petr ze sloky \b MP3CODEC\b0 .\par
+\par
+Zda je pøehrávání zvuku podporováno lze zjistit ihned po zahájení pøehrávání testem zvuku, zda je pøehráván. Není-li zvuk pøehráván, mohou bıt pro to následující dùvody: poèítaè neobsahuje zvukovou kartu nebo její ovladaè, zvukovı kanál je obsazen jinım programem nebo pro formát zvuku není nainstalován ovladaè k pøehrávání. Poslední dùvod se tıká pøedevším pøehrávání formátu MP3, kterı u nìkterıch verzí Windows není bez instalace ovladaèe podporován. V nìkterıch pøípadech mùe jít o vypnutou volbu "zvukové kodeky" ve volbì nainstalovanıch souèástí systému Windows.\par
+\par
+Pro zajištìní spojitosti pøehrávání zvukù probíhá pøehrávání zvukù ve formátu PCM pomocí vyrovnávacího zásobníku. To mùe v pøípadì ji probíhajícího pøehrávání zvukù zpùsobit opodìní odezvy na zahájení pøehrávání dalšího zvuku nebo zmìnu parametrù zvuku a o asi 0.3 sekundy. Je-li v poèítaèi nainstalovaná obsluha DirectX, je vyuita podpora zvukù DirectSound a tato prodleva je znaènì kratší, typicky 0.05 sekundy.\par
+\page
+
+#{\footnote 20383}
+${\footnote Test zvuku}
++{\footnote 1}
+K{\footnote test zvuku;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20383.bmp\} Test zvuku\par
+\pard \plain \cf0 \fs20
+{\uldb Zvuk}{\v 20298}\par
+\par
+Prvek \b \i test zvuku \i0 \b0 slouí k testu, zda probíhá pøehrávání zvuku. Jako parametr lze zadat zvuk, kterı má bıt testován. Prvek navrátí logickı pøíznak platnosti udávající, zda probíhá pøehrávání poadovaného zvuku. Pøehrávání zvuku pøitom znamená, e jsou pøipravena další data zvuku k pøehrátí. Test nezjišuje, zda je zvuk ještì v zásobníku pro pøehrávání. V pøípadì ukonèení programu po dohrátí zvuku pomocí tohoto testu by byl zvuk proto zkrácen asi o 0.3 sekundy.\par
+\par
+Bez zadání parametru zvuku se testuje pøehrávání všech zvukù. Tato varianta pouití prvku se liší od pøedešlé tím, e je testováno jakékoliv pøehrávání vèetnì vyrovnávacího zásobníku zvuku. Ukonèení programu pomocí této varianty testu zajistí správné ukonèení pøehrávání všech zvukù, k ádnému zkrácení zvuku nedojde.\par
+\page
+
+#{\footnote 20300}
+${\footnote Vypnutí zvuku}
++{\footnote 1}
+K{\footnote vypnutí zvuku;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20300.bmp\} Vypnutí zvuku\par
+\pard \plain \cf0 \fs20
+{\uldb Zvuk}{\v 20298}\par
+\par
+Pøíkaz \b \i vypnutí zvuku \i0 \b0 zpùsobí vypnutí pøehrávání zvuku zadaného jako parametr pøíkazu. Bez zadání zvuku bude okamitì ukonèeno pøehrávání všech zvukù vèetnì zrušení vyrovnávacího zásobníku zvuku.\par
+\page
+
+#{\footnote 20640}
+${\footnote Pozice v pøehrávání zvuku}
++{\footnote 1}
+K{\footnote pozice v pøehrávání zvuku;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20640.bmp\} Pozice v pøehrávání zvuku\par
+\pard \plain \cf0 \fs20
+{\uldb Zvuk}{\v 20298}\par
+\par
+Prvek \b \i pozice v pøehrávání zvuku \i0 \b0 umoòuje zjišìní a nastavení pozice (v sekundách) v pøehrávání zvuku. Prvek lze pouít jako èíselnou promìnnou. Pozice se vdy vztahuje ke zvuku, kterı byl naposledy pøehráván. Nastavení pozice pøehrávání zvuku je moné pouze pro formáty zvuku PCM, Microsoft ADPCM a MPEG Layer-3 (MP3).\par
+\page
+
+#{\footnote 20641}
+${\footnote Pozastavit/pokraèovat v pøehrávání zvuku}
++{\footnote 1}
+K{\footnote pozastavit/pokraèovat v pøehrávání zvuku;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20641.bmp\} Pozastavit/pokraèovat v pøehrávání zvuku\par
+\pard \plain \cf0 \fs20
+{\uldb Zvuk}{\v 20298}\par
+\par
+Pomocí prvku \b \i pozastavit/pokraèovat v pøehrávání zvuku \i0 \b0 lze pozastavit nebo pokraèovat v pøehrávání všech zvukù. Prvek lze pouít jako logickou promìnnou, kterou lze èíst i nastavovat. Pøíznak zapnutí udává, e pøehrávání zvukù je pozastaveno. Pouití prvku jako pøíkaz bez uvedení parametrù zpùsobí pøepnutí stavu.\par
+\page
+
+#{\footnote 20541}
+${\footnote Slouèení zvukù}
++{\footnote 1}
+K{\footnote slouèení zvukù;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20541.bmp\} Slouèení zvukù\par
+\pard \plain \cf0 \fs20
+{\uldb Zvuk}{\v 20298}\par
+\par
+Prvek \b \i slouèení zvukù \i0 \b0 umoòuje slouèení více zvukù za sebou do jednoho zvuku. Jako parametr se zadává jeden nebo více zvukù. Prvek navrací novı zvuk vzniklı slouèením zvukù navázáním za sebou (v poøadí shora dolù). Slouèit lze pouze zvuky s formátem PCM, jiné formáty se na PCM automaticky zkonvertují. V pøípadì odlišnıch parametrù zvukù jsou zvuky konvertovány na shodnı tvar.\par
+\page
+
+#{\footnote 20646}
+${\footnote Shodnost zvukù}
++{\footnote 1}
+K{\footnote shodnost zvukù;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20646.bmp\} Shodnost zvukù\par
+\pard \plain \cf0 \fs20
+{\uldb Zvuk}{\v 20298}\par
+\par
+Prvek \b \i shodnost zvukù \i0 \b0 slouí k porovnání zvukù. Nejsou pøitom porovnávány obsahy zvukù, ale pouze to, zda se jedná o shodnı datovı objekt typu zvuk. Lze zadat jeden nebo více zvukù. Porovnání probíhá shora dolù. Prvek navrací logickı pøíznak platnosti v pøípadì, e všechny zvuky jsou shodné. Zvláštní pøípad je porovnání jednoho zvuku. Zvuk je porovnáván s prázdnım zvukem napø. pro pøípad testu, zda byl naèten ze souboru platnı zvuk.\par
+\page
+
+#{\footnote 20714}
+${\footnote Rozlišovací kód}
++{\footnote 1}
+K{\footnote rozlišovací kód;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20714.bmp\} Rozlišovací kód\par
+\pard \plain \cf0 \fs20
+{\uldb Zvuk}{\v 20298}\par
+\par
+Pøi manipulaci se zvukem (pøehrávání, vypnutí, zmìna hlasitosti atd.) jsou prohledávány právì pøehrávané zvuky a v pøípadì nalezení ji pøehrávaného shodného zvuku je operace provedena s tímto pøehrávanım zvukem. Prvek \b \i rozlišovací kód \i0 \b0 slouí k doplòkovému rozlišení shodnıch pøehrávanıch zvukù. Je to celé èíslo s hodnotou v rozsahu 0 a 65535 (jeho implicitní hodnota je 0). Je-li pøi zadání operace se zvukem nalezen stejnı zvuk kterı je ji pøehráván, je doplòkovì porovnáván i jeho rozlišovací kód a operace je provedena jen pokud se tento kód shoduje. Pokud se neshoduje, je v pøípadì pøíkazu pro pøehrátí zvuku zahájeno pøehrávání zvuku a uchován pro tento zvuk i aktuálnì nastavenı rozlišovací kód zvuku.\par
+\page
+
+#{\footnote 20403}
+#{\footnote 20530}
+#{\footnote 20531}
+#{\footnote 20532}
+#{\footnote 20533}
+#{\footnote 20534}
+#{\footnote 20535}
+#{\footnote 20536}
+#{\footnote 20537}
+#{\footnote 20538}
+#{\footnote 20539}
+#{\footnote 20540}
+#{\footnote 20542}
+#{\footnote 20543}
+#{\footnote 20544}
+#{\footnote 20545}
+#{\footnote 20546}
+#{\footnote 20547}
+#{\footnote 20728}
+${\footnote Zvukové funkce}
++{\footnote 1}
+K{\footnote zvukové funkce;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Zvukové funkce\par
+\pard \plain \cf0 \fs20
+{\uldb Zvuk}{\v 20298}\par
+\par
+\{bmc IDF20530.bmp\} \tab \b \i poèet bitù na vzorek \i0 \b0 (8 nebo 16) \par
+\par
+Prvek \b \i poèet bitù na vzorek \i0 \b0 navrací poèet bitù na vzorek pro zvuk zadanı jako parametr. Pro formát zvuku PCM je navrácen údaj 8 nebo 16, pro Microsoft ADPCM údaj 4, pro jiné formáty nejèastìji 0.\par
+\par
+\{bmc IDF20531.bmp\} \tab \b \i vzorkovací kmitoèet \i0 \b0 (Hz) \par
+\par
+Prvek \b \i vzorkovací kmitoèet \i0 \b0 navrací vzorkovací kmitoèet pro zvuk zadanı jako parametr. Pro formát zvuku PCM je navrácen údaj 11025, 22050 nebo 44100.\par
+\par
+\{bmc IDF20532.bmp\} \tab \b \i je zvuk stereofonní? \i0 \b0 \par
+\par
+Prvek \b \i je zvuk stereofonní? \i0 \b0 navrací logickı pøíznak pro zvuk zadanı jako parametr, kterı udává, zda je zvuk stereofonní (2 kanály) nebo monofonní (1 kanál).\par
+\par
+\{bmc IDF20533.bmp\} \tab \b \i délka zvuku \i0 \b0 (sekund) \par
+\par
+Prvek \b \i délka zvuku \i0 \b0 navrací délku zvuku v sekundách pro zvuk zadanı jako parametr.\par
+\par
+\{bmc IDF20534.bmp\} \tab \b \i konverze na 8 bitù \i0 \b0 \par
+\par
+Prvek \b \i konverze na 8 bitù \i0 \b0 zkonvertuje zvuk zadanı jako vstupní parametr na formát s 8 bity na vzorek a pøedá jej na vıstupu jako novı zvuk. Konvertovat lze pouze zvuky s formátem PCM, jiné formáty se na PCM automaticky zkonvertují.\par
+\par
+\{bmc IDF20535.bmp\} \tab \b \i konverze na 16 bitù \i0 \b0 \par
+\par
+Prvek \b \i konverze na 16 bitù \i0 \b0 zkonvertuje zvuk zadanı jako vstupní parametr na formát s 16 bity na vzorek a pøedá jej na vıstupu jako novı zvuk. Konvertovat lze pouze zvuky s formátem PCM, jiné formáty se na PCM automaticky zkonvertují.\par
+\par
+\{bmc IDF20536.bmp\} \tab \b \i konverze na stereo \i0 \b0 \par
+\par
+Prvek \b \i konverze na stereo \i0 \b0 zkonvertuje zvuk zadanı jako vstupní parametr na stereofonní formát (2 kanály) a pøedá jej na vıstupu jako novı zvuk. Konvertovat lze pouze zvuky s formátem PCM, jiné formáty se na PCM automaticky zkonvertují.\par
+\par
+\{bmc IDF20537.bmp\} \tab \b \i konverze na mono \i0 \b0 \par
+\par
+Prvek \b \i konverze na mono \i0 \b0 zkonvertuje zvuk zadanı jako vstupní parametr na monofonní formát (1 kanál) a pøedá jej na vıstupu jako novı zvuk. Konvertovat lze pouze zvuky s formátem PCM, jiné formáty se na PCM automaticky zkonvertují.\par
+\par
+\{bmc IDF20538.bmp\} \tab \b \i konverze na 11 kHz \i0 \b0 \par
+\par
+Prvek \b \i konverze na 11 kHz \i0 \b0 zkonvertuje zvuk zadanı jako vstupní parametr na vzorkovací kmitoèet 11025 Hz a pøedá jej na vıstupu jako novı zvuk. Konvertovat lze pouze zvuky s formátem PCM, jiné formáty se na PCM automaticky zkonvertují.\par
+\par
+\{bmc IDF20539.bmp\} \tab \b \i konverze na 22 kHz \i0 \b0 \par
+\par
+Prvek \b \i konverze na 22 kHz \i0 \b0 zkonvertuje zvuk zadanı jako vstupní parametr na vzorkovací kmitoèet 22050 Hz a pøedá jej na vıstupu jako novı zvuk. Konvertovat lze pouze zvuky s formátem PCM, jiné formáty se na PCM automaticky zkonvertují.\par
+\par
+\{bmc IDF20540.bmp\} \tab \b \i konverze na 44 kHz \i0 \b0 \par
+\par
+Prvek \b \i konverze na 44 kHz \i0 \b0 zkonvertuje zvuk zadanı jako vstupní parametr na vzorkovací kmitoèet 44100 Hz a pøedá jej na vıstupu jako novı zvuk. Konvertovat lze pouze zvuky s formátem PCM, jiné formáty se na PCM automaticky zkonvertují.\par
+\par
+\{bmc IDF20728.bmp\} \tab \b \i dekomprese zvuku \i0 \b0 \par
+\par
+Prvek \b \i dekomprese zvuku \i0 \b0 zkonvertuje zvuk z komprimovaného formátu (jako je ADPCM èi MP3) na formát PCM, kterı je ji moné pøehrávat mixovanì s jinımi zvuky nebo konvertovat. Konverzní funkce dekomprimují zvuk v pøípadì potøeby automaticky. Dekomprimovat lze jen formáty, pro které je v systému Windows nainstalován dekodér (kodek) - jedná se o všechny formáty, které lze v systému Windows pøehrávat.\par
+\par
+\{bmc IDF20542.bmp\} \b \i zmìna rychlosti zvuku \i0 \b0 \par
+\tab \{bmc IDF20543.bmp\} \b \i zvuk ke konverzi \i0 \b0 \par
+\tab \{bmc IDF20544.bmp\} \b \i relativní zmìna rychlosti \i0 \b0 (1=beze zmìny)\par
+\par
+Prvek \b \i zmìna rychlosti zvuku \i0 \b0 zkonvertuje rychlost pøehrávání zvuku zadaného na vstupu a pøedá jej na vıstupu jako novı zvuk. Koeficient pro relativní zmìnu rychlosti mùe mít i zápornou hodnotu, tím dojde k inverzi zvuku (zvuk je pøehráván pozpátku). Hodnota 1 znamená bez zmìny rychlosti. Konvertovat lze pouze zvuky s formátem PCM, jiné formáty se na PCM automaticky zkonvertují.\par
+\par
+\{bmc IDF20545.bmp\} \b \i tónovı generátor \i0 \b0 \par
+\tab \{bmc IDF20546.bmp\} \b \i frekvence tónu \i0 \b0 (1 a 11025 Hz) \par
+\tab \{bmc IDF20547.bmp\} \b \i délka tónu \i0 \b0 (sekund)\par
+\par
+Prvek \b \i tónovı generátor \i0 \b0 vytvoøí tón se sinusovım prùbìhem o zadané frekvenci a zadané délce a pøedá jej na vıstupu jako novı zvuk. Vıstupní zvuk má formát PCM, 16 bitù na vzorek, 22050 Hz, mono. Frekvence má povolenı rozsah 1 Hz a 11025 Hz. Délka tónu je zkorigována tak, aby byly vygenerovány celistvé vlny tónu a tím bylo moné èisté navázání rùznıch tónù za sebou (bez vzniku rušivıch rázù).\par
+\page
+
+#{\footnote 20425}
+#{\footnote 20410}
+#{\footnote 20411}
+#{\footnote 20412}
+#{\footnote 20413}
+#{\footnote 20414}
+#{\footnote 20415}
+#{\footnote 20416}
+#{\footnote 20647}
+${\footnote Hudba}
++{\footnote 1}
+K{\footnote hudba;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Hudba\par
+\pard \plain \cf0 \fs20
+{\uldb Zvuk a hudba}{\v 20075}\par
+\par
+\{bmc IDF20410.bmp\} \b \i pøehrátí hudby \i0 \b0 \par
+\par
+Pøíkaz \b \i pøehrátí hudby \i0 \b0 zahájí pøehrávání hudby zadané jako parametr. Pøípadné ji probíhající pøehrávání hudby bude pøerušeno.\par
+\par
+\{bmc IDF20411.bmp\} \b \i opakované pøehrávání hudby \i0 \b0 \par
+\par
+Pøíkaz \b \i opakované pøehrávání hudby \i0 \b0 zahájí opakované pøehrávání hudby zadané jako parametr. Pøípadné ji probíhající pøehrávání hudby bude pøerušeno.\par
+\par
+\{bmc IDF20412.bmp\} \b \i zastavit pøehrávání hudby \i0 \b0 \par
+\par
+Pøíkaz \b \i zastavit pøehrávání hudby \i0 \b0 zastaví pøehrávání hudby.\par
+\par
+\{bmc IDF20413.bmp\} \b \i pozastavit/pokraèovat v pøehrávání hudby \i0 \b0 \par
+\par
+Prvek \b \i pozastavit/pokraèovat v pøehrávání hudby \i0 \b0 umoní pozastavit nebo pokraèovat v pøehrávání hudby. Lze pouít jako logickou promìnnou, tj. lze nastavovat nebo èíst. Pøíznak platnosti znamená, e hudba je pozastavena. Pouitím jako pøíkaz bez uvedení parametru se stav pøepne.\par
+\par
+\{bmc IDF20414.bmp\} \b \i test pøehrávání hudby \i0 \b0 \par
+\par
+Prvek \b \i test pøehrávání hudby \i0 \b0 navrací logickı pøíznak indikující, zda probíhá pøehrávání hudby.\par
+\par
+\{bmc IDF20415.bmp\} \b \i pozice v pøehrávání hudby \i0 \b0 \par
+\par
+Prvek \b \i pozice v pøehrávání hudby \i0 \b0 umoòuje zjistit nebo nastavit pozici pøehrávání hudby v sekundách. Prvek lze pouívat jako èíselnou promìnnou, tj. lze jej nastavovat nebo èíst.\par
+\par
+\{bmc IDF20416.bmp\} \b \i délka pøehrávané hudby \i0 \b0 \par
+\par
+Prvek \b \i délka pøehrávané hudby \i0 \b0 navrací délku pøehrávané hudby v sekundách.\par
+\par
+\{bmc IDF20647.bmp\} \b \i shodnost hudby \i0 \b0 \par
+\par
+Prvek \b \i shodnost hudby \i0 \b0 slouí k porovnání hudeb. Nejsou pøitom porovnávány obsahy hudeb, ale pouze to, zda se jedná o shodnı datovı objekt typu hudba. Lze zadat jednu nebo více hudeb. Porovnání probíhá shora dolù. Prvek navrací logickı pøíznak platnosti v pøípadì, e všechny hudby jsou shodné. Zvláštní pøípad je porovnání jedné hudby. Hudba je porovnávána s prázdnou hudbou napø. pro pøípad testu, zda byla naètena ze souboru platná hudba.\par
+\page
+
+#{\footnote 20426}
+#{\footnote 20427}
+#{\footnote 20428}
+#{\footnote 20429}
+#{\footnote 20430}
+#{\footnote 20529}
+#{\footnote 20431}
+#{\footnote 20432}
+#{\footnote 20433}
+#{\footnote 20434}
+#{\footnote 20435}
+#{\footnote 20436}
+${\footnote Audio CD}
++{\footnote 1}
+K{\footnote audio CD;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Audio CD\par
+\pard \plain \cf0 \fs20
+{\uldb Zvuk a hudba}{\v 20075}\par
+\par
+\i \b Poznámka: \b0 Bìhem provádìní programu je zajištìna nemìnnost údajù o CD a do pøíštího okamiku obsluhy {\uldb èekání}{\v 20122} nebo do zmìny provedené programovì.\i0 \par
+\par
+\{bmc IDF20427.bmp\} \b \i pøehrátí CD od zadané stopy \i0 \b0 (bez zadání = 1) \par
+\par
+Pøíkaz \b \i pøehrátí CD od zadané stopy \i0 \b0 zahájí pøehrávání audio CD od stopy zadané jako èíselnı parametr. Bez zadání èísla stopy je zahájeno pøehrávání od zaèátku CD (tj. od stopy 1).\par
+\par
+\{bmc IDF20428.bmp\} \b \i zastavení pøehrávání CD \i0 \b0 \par
+\par
+Pøíkaz \b \i zastavení pøehrávání CD \i0 \b0 zastaví pøehrávání CD.\par
+\par
+\{bmc IDF20429.bmp\} \b \i pozastavení/pokraèování pøehrávání CD \i0 \b0 \par
+\par
+Prvek \b \i pozastavení/pokraèování v pøehrávání CD \i0 \b0 umoní pozastavit nebo pokraèovat v pøehrávání audio CD. Prvek lze pouít jako logickou promìnnou, tj. lze nastavovat nebo èíst. Pøíznak platnosti znamená, e pøehrávání CD je pozastaveno. Pouitím jako pøíkaz bez uvedení parametru se stav pøepne.\par
+\par
+\{bmc IDF20430.bmp\} \b \i test pøehrávání CD \i0 \b0 \par
+\par
+Prvek \b \i test pøehrávání CD \i0 \b0 navrací logickı pøíznak indikující, zda probíhá pøehrávání audio CD.\par
+\par
+\{bmc IDF20529.bmp\} \b \i vysunutí CD \i0 \b0 \par
+\par
+Prvek \b \i vysunutí CD \i0 \b0 slouí k vysunutí nebo zasunutí dvíøek s CD a ke zjištìní stavu CD. Pouívá se podobnì jako logická promìnná. Nastavení na pøíznak platnosti zpùsobí vysunutí dvíøek, pøíznak neplatnosti zasunutí dvíøek. Pouití jako pøíkaz bez parametrù zpùsobí zmìnu stavu za pøedpokladu, e je vloeno audio CD (bez vloeného audio CD jsou dvíøka vdy povaována za otevøená). Pouití v logickém vırazu slouí jako test nepøipravenosti audio CD (tj. pøíznak, e dvíøka jsou otevøena nebo není vloeno audio CD).\par
+\par
+\{bmc IDF20431.bmp\} \b \i celková délka CD \i0 \b0 (sekund) \par
+\par
+Prvek \b \i celková délka CD \i0 \b0 navrací celkovou délku vloeného audio CD v sekundách.\par
+\par
+\{bmc IDF20432.bmp\} \b \i poèet stop CD \i0 \b0 \par
+\par
+Prvek \b \i poèet stop CD \i0 \b0 navrací poèet stop vloeného audio CD.\par
+\par
+\{bmc IDF20433.bmp\} \b \i pozice od zaèátku CD \i0 \b0 (sekund) \par
+\par
+Prvek \b \i pozice od zaèátku CD \i0 \b0 navrací pøehrávanou pozici od zaèátku CD v sekundách. Prvek lze pouívat jako èíselnou promìnnou, nastavením èíselné hodnoty lze nastavovat pozici pøehrávání (stav pozastavení pøitom zùstává zachován).\par
+\par
+\{bmc IDF20434.bmp\} \b \i pøehrávaná stopa \i0 \b0 \par
+\par
+Prvek \b \i pøehrávaná stopa \i0 \b0 navrací èíslo pøehrávané stopy (èíslováno od 1). Lze pouít jako èíselnou promìnnou, nastavením èíselné hodnoty bude zahájeno pøehrávání od zadané stopy (stav pozastavení pøitom zùstává zachován).\par
+\par
+\{bmc IDF20435.bmp\} \b \i délka pøehrávané stopy \i0 \b0 (sekund) \par
+\par
+Prvek \b \i délka pøehrávané stopy \i0 \b0 navrací délku pøehrávané stopy v sekundách.\par
+\par
+\{bmc IDF20436.bmp\} \b \i pozice od zaèátku stopy \i0 \b0 (sekund) \par
+\par
+Prvek \b \i pozice od zaèátku stopy \i0 \b0 navrací pøehrávanou pozici od zaèátku pøehrávané stopy v sekundách. Prvek lze pouívat jako èíselnou promìnnou, nastavením èíselné hodnoty lze nastavovat pozici pøehrávání (stav pozastavení pøitom zùstává zachován).\par
+\page
+
+}

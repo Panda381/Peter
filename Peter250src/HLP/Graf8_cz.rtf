@@ -1,0 +1,441 @@
+{\rtf1 \ansi \deff0
+
+@{\footnote ------- definice fontù --------- }
+
+{\fonttbl 
+{\f0 \fswiss MS San Serif CE;}
+}
+
+@{\footnote ------- definice barev --------- }
+
+{\colortbl
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red192\green192\blue192;
+\red128\green128\blue128;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+
+@{\footnote Použití barev:
+	0 - èerná
+	1 - tmavì èervená
+	2 - tmavì zelená
+	3 - hnìdá
+	4 - tmavì modrá
+	5 - tmavì fialová
+	6 - tmavì modrozelená
+	7 - šedá
+	8 - tmavì šedá
+	9 - èervená
+	10 - zelená
+	11 - žlutá
+	12 - modrá
+	13 - fialová
+	14 - modrozelená
+	15 - bílá
+}
+
+#{\footnote 20915}
+${\footnote Textury}
++{\footnote 1}
+K{\footnote textury;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Textury\par
+\pard \plain \cf0 \fs20
+{\uldb 3D grafika}{\v 20788}\par
+\par
+\par
+{\uldb \{bmc IDF20916.bmp\}\tab stupeò}{\v 20916}\par
+{\uldb \{bmc IDF20830.bmp\}\tab textura}{\v 20830}\par
+{\uldb \{bmc IDF20891.bmp\}\tab vyhlazení textur}{\v 20891}\par
+{\uldb \{bmc IDF21032.bmp\}\tab textura ze souboru}{\v 21032}\par
+{\uldb \{bmc IDF20900.bmp\}\tab filtrace zvìtšených textur objektu}{\v 20900}\par
+{\uldb \{bmc IDF20899.bmp\}\tab filtrace zmenšených textur objektu}{\v 20899}\par
+{\uldb \{bmc IDF20901.bmp\}\tab filtrace vzdálených textur objektu}{\v 20901}\par
+{\uldb \{bmc IDF20929.bmp\}\tab poèet úrovní vzdálených textur}{\v 20929}\par
+{\uldb \{bmc IDF20925.bmp\}\tab zjemnìní vzdálených textur}{\v 20925}\par
+{\uldb \{bmc IDF20831.bmp\}\tab mapování textury}{\v 20831}\par
+{\uldb \{bmc IDF20923.bmp\}\tab horizontální adresování}{\v 20923}\par
+{\uldb \{bmc IDF20924.bmp\}\tab vertikální adresování}{\v 20924}\par
+{\uldb \{bmc IDF20917.bmp\}\tab operace barvy}{\v 20917}\par
+{\uldb \{bmc IDF20918.bmp\}\tab argument 1 barvy}{\v 20918}\par
+{\uldb \{bmc IDF20919.bmp\}\tab argument 2 barvy}{\v 20919}\par
+{\uldb \{bmc IDF20920.bmp\}\tab operace alfa kanálu}{\v 20920}\par
+{\uldb \{bmc IDF20921.bmp\}\tab argument 1 alfa kanálu}{\v 20921}\par
+{\uldb \{bmc IDF20922.bmp\}\tab argument 2 alfa kanálu}{\v 20922}\par
+{\uldb \{bmc IDF20927.bmp\}\tab barva faktoru textur}{\v 20927}\par
+\page
+
+#{\footnote 20916}
+${\footnote Stupeò}
++{\footnote 1}
+K{\footnote stupeò;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20916.bmp\} Stupeò\par
+\pard \plain \cf0 \fs20
+{\uldb Textury}{\v 20915}\par
+\par
+Pøi pokrývání povrchu objektu texturou je možné urèit operaci, která bude provedena mezi texturou a povrchem objektu. Operací i textur mùže být nastaveno více. Aktivní stupeò operace, který bude nastavován, se urèuje prvkem \b \i stupeò\i0 \b0 . Stupeò mùže mít èíslo 0 až 7. Ètením prvku \b \i stupeò \i0 \b0 lze zjistit maximální poèet stupòù, který je ovladaèem podporován. Ovladaèe OpenGL a DirectX 3 a 5 podporují pouze 1 stupeò operace a pouze operaci modulace nebo výbìr nemodulované barvy/textury. Poèet stupòù u ostatních ovladaèù závisí na možnostech videokarty, u mnoha videokaret jsou k dispozici pouze 2 stupnì operací.\par
+\page
+
+#{\footnote 20830}
+${\footnote Textura}
++{\footnote 1}
+K{\footnote textura;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20830.bmp\} Textura\par
+\pard \plain \cf0 \fs20
+{\uldb Textury}{\v 20915}\par
+{\uldb Textura ze souboru}{\v 21032}\par
+\par
+Povrch objektu mùže být pokryt {\uldb barvou}{\v 20826} nebo texturou. Textura je v podstatì bìžný {\udlb obrázek}{\v 20246}, který lze vytvoøit v {\uldb grafickém editoru}{\v Editace pøedmìtu a obrázku} aplikace Petr. Texturu pro {\uldb aktivní stupeò operací}{\v 20916} {\uldb aktivního objektu}{\v 20810} lze nastavit prvkem \b \i textura\i0 \b0 . Pro implicitní stupeò operací 0 je implicitnì pøednastavena {\uldb operace}{\v 20917} modulace (textura je modulována základní barvou objektu). K zobrazení textury proto postaèí nastavit texturu objektu, další úkony není nutné provádìt.\par
+\par
+U vìtšiny videokaret je vyžadováno (typicky jsou-li videokartou podporovány {\uldb vzdálené textury}{\v 20895}), aby rozmìry textury byly mocninou èísla 2 - to znamená 1, 2, 4, 8, 16, ... Ve výjimeèných pøípadech jsou požadovány ètvercové rozmìry textury. Maximální rozmìry textury mohou být videokartou omezeny. Zpravidla se doporuèuje používat texturu s rozmìry maximálnì 256x256 bodù (tj. 8x8 krokù). Všechna uvedená pravidla platí pro texturu po provedení {\uldb vyhlazení textur}{\v 20891} (tedy po zmenšení rozmìrù). Nevyhovuje-li textura uvedeným pravidlùm, je automaticky upravena. Konverze rozmìrù mùže být zdlouhavá operace, proto se doporuèuje používat textury nevyžadující úpravu.\par
+\par
+Textura je upravena a naètena do videopamìti pøi jejím prvním použití. Pøi použití vìtšího množství textur, než lze naèíst do videopamìti, se textury z videopamìti uvolòují a naèítají se opìt až v pøípadì potøeby. Operace opìtovného naèítání znaènì snižuje rychlost grafických operací. Proto se doporuèuje používat textury s co nejmenší velikostí, sledovat {\uldb velikost videopamìti}{\v 20913} a pøi malé velikosti videopamìti použít radìji textury s nižším rozlišením než textury pøi každém snímku uvolòovat a opìt naèítat do videopamìti. Pøi rozsáhlejších zmìnách textur (zmìna scény ve høe) je možné uvolnit textury z videopamìti vypnutím (nastavením rozmìrù na 0) a opìtovným zapnutím {\uldb 3D okna}{\v 20789}.\par
+\page
+
+#{\footnote 20891}
+${\footnote Vyhlazení textur}
++{\footnote 1}
+K{\footnote vyhlazení textur;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20891.bmp\} Vyhlazení textur\par
+\pard \plain \cf0 \fs20
+{\uldb Textury}{\v 20915}\par
+\par
+{\uldb Textura}{\v 20830} objektu je obrázek vytvoøený v {\uldb grafickém editoru}{\v Editace pøedmìtu a obrázku} aplikace Petr nebo importovaný do editoru z {\uldb knihovny obrázkù}{\v 20246}. Obrázky aplikace Petr využívají omezené množství barev, k dosažení vìtšího barevného rozsahu používají {\uldb dithering}{\v Dithering}. Dithering mùže u textur pùsobit rušivì, proto je možné textury pro 3D objekty vyhladit prvkem \b \i vyhlazení textur\i0 \b0 . Stupeò vyhlazení textur je nutno nastavit pøed prvním použitím obrázku jako textury (nastavení je spoleèné pro všechny textury využívající stejný obrázek). Jeho hodnota mùže být v rozsahu 1 a více. Pro hodnotu 1 (implicitnì) se žádné vyhlazení neprovádí.\par
+\par
+Stupeò vyhlazení pøedstavuje stupeò zmenšení obrázku (s konverzí na TrueColor). Hodnota 2 znamená zmenšení na polovinu a je to zpravidla plnì postaèující vyhlazení pro dithering. Stupeò vyhlazení nemusí být jen celé èíslo. Pravidla pro rozmìry textury (mocnina 2) se uplatní až po vyhlazení. Proto napø. pro vyhlazení 1.5 by mìly být rozmìry 1.5 násobkem koncového rozmìru, který bude mocninou 2. Pøed naètením obrázku z knihovny se doporuèuje pøipravit obrázek pøedem v dvojnásobném zvìtšení. Naètením do aplikace Petr se obrázek importuje s ditheringem. Nastavením stupnì vyhlazení 2 se pøi použití jako textura zmenší obrázek na pùvodní velikost a s pùvodní kvalitou barev.\par
+\page
+
+#{\footnote 21032}
+${\footnote Textura ze souboru}
++{\footnote 1}
+K{\footnote textura ze souboru;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF21032.bmp\} Textura ze souboru\par
+\pard \plain \cf0 \fs20
+{\uldb Textury}{\v 20915}\par
+\par
+Pøíkaz \b \i textura ze souboru \i0 \b0 slouží k naètení {\uldb textury}{\v 20830} {\uldb aktivního stupnì operací}{\v 20916} {\uldb aktivního objektu}{\v 20810} ze {\uldb souboru pro ètení}{\v 20448} od {\uldb ukazatele pro ètení}{\v 20481}. Je-li textura v souboru ve formátu 24 nebo 32 bitù, je pro úèely 3D grafiky použita v plnì barevném režimu bez aplikace {\uldb vyhlazení textur}{\v 20891}.
+\page
+
+#{\footnote 20929}
+${\footnote Poèet úrovní vzdálených textur}
++{\footnote 1}
+K{\footnote poèet úrovní vzdálených textur;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20929.bmp\} Poèet úrovní vzdálených textur\par
+\pard \plain \cf0 \fs20
+{\uldb Textury}{\v 20915}\par
+\par
+Textury vzdálených objektù jsou {\uldb filtrovány}{\v 20901} s využitím techniky zvané \b mipmap\b0 . Mipmap jsou textury vytvoøené postupným zmenšováním pùvodní textury. Každý stupeò zmenšené textury má polovièní rozmìry oproti stupni pøedešlému až na nejnižší stupeò s rozmìry 1x1. V pøípadech, kdy jsou z textury využívány jednotlivé èásti samostatnì (napø. obsahuje èásti pro oblièej, tìlo, ruku a nohu postavy), mùže být na závadu splývání jednotlivých èástí textury do sebe pøi velkém stupni zmenšení. V takovém pøípadì je možné maximální poèet stupòù zmenšení textury omezit prvkem \b \i poèet úrovní vzdálených textur\i0 \b0 . Prvek se uplatní pro texturu {\uldb aktivního stupnì operací}{\v 20916} {\uldb aktivního objektu}{\v 20810}. Je nutné nejdøíve nastavit texturu pro aktivní stupeò aktivního objektu a až potom urèit maximální poèet stupòù zmenšení textur. Nastavení je spoleèné pro všechna použití této konkrétní textury.\par
+\par
+Implicitní hodnota prvku je \b 0\b0 , která znamená, že poèet úrovní textury nebude omezen. Nastavením hodnoty \b 1 \b0 a více bude poèet úrovní omezen na zadanou hodnotu (vèetnì základního stupnì nezmenšené textury). U objektu {\uldb terén z plochy}{\v 20883} je poèet úrovní textury implicitnì omezen na 4. Poèet úrovní nelze urèovat pro rozhraní OpenGL.\par
+\page
+
+#{\footnote 20925}
+${\footnote Zjemnìní vzdálených textur}
++{\footnote 1}
+K{\footnote zjemnìní vzdálených textur;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20925.bmp\} Zjemnìní vzdálených textur\par
+\pard \plain \cf0 \fs20
+{\uldb Textury}{\v 20915}\par
+\par
+Prvkem \b \i zjemnìní vzdálených textur \i0 \b0 je možné upøesnit zpùsob {\uldb filtrace vzdálených textur}{\v 20901}. Prvek je èíselná promìnná, uplatòuje se pro {\uldb aktivní stupeò operací}{\v 20916} {\uldb aktivního objektu}{\v 20810}. Prvek øídí rozhodovací úroveò, kdy je který stupeò zmenšených textur ({\uldb mipmap}{\v 20929}) použit.\par
+\par
+Implicitní hodnota je \b 0\b0 . Nastavením èísla vìtšího než 0 (vèetnì desetinných èísel) se použijí menší textury, výsledkem je vìtší zjemnìní vzdálených textur. Nastavením èísla menšího než 0 (záporné èíslo) se použijí vìtší textury, výsledkem je vìtší ostrost vzdálených textur. Zjemnìní vzdálených textur je možné nastavovat pouze pro rozhraní DirectX 5 až DirectX 8.\par
+\page
+
+#{\footnote 20831}
+#{\footnote 20841}
+#{\footnote 20832}
+#{\footnote 20833}
+#{\footnote 20834}
+#{\footnote 20835}
+#{\footnote 20836}
+#{\footnote 20837}
+#{\footnote 20838}
+#{\footnote 20842}
+#{\footnote 20843}
+#{\footnote 20844}
+#{\footnote 20845}
+${\footnote Mapování textury}
++{\footnote 1}
+K{\footnote mapování textury;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20831.bmp\} Mapování textury\par
+\pard \plain \cf0 \fs20
+{\uldb Textury}{\v 20915}\par
+\par
+\{bmc IDF20831.bmp\} \b \i mapování textury \i0 \b0 \par
+\tab \{bmc IDF20841.bmp\} \b \i metoda \i0 \b0 (0=adresy, 1=vrcholy, 2=plošky)\par
+\tab \{bmc IDF20832.bmp\} \b \i typ projekce \i0 \b0 (0=plocha, 1=válec, 2=koule, 3=chrom, 4=èoèka)\par
+\tab \{bmc IDF20833.bmp\} \b \i souøadnice X støedu projekce \i0 \b0 \par
+\tab \{bmc IDF20834.bmp\} \b \i souøadnice Y støedu projekce \i0 \b0 \par
+\tab \{bmc IDF20835.bmp\} \b \i souøadnice Z støedu projekce \i0 \b0 \par
+\tab \{bmc IDF20838.bmp\} \b \i rotace projekce podle osy Z \i0 \b0 \par
+\tab \{bmc IDF20836.bmp\} \b \i rotace projekce podle osy X \i0 \b0 \par
+\tab \{bmc IDF20837.bmp\} \b \i rotace projekce podle osy Y \i0 \b0 \par
+\tab \{bmc IDF20842.bmp\} \b \i poèátek textury vodorovnì \i0 \b0 \par
+\tab \{bmc IDF20843.bmp\} \b \i poèátek textury svisle \i0 \b0 \par
+\tab \{bmc IDF20844.bmp\} \b \i stupeò zmenšení textury vodorovnì \i0 \b0 \par
+\tab \{bmc IDF20845.bmp\} \b \i stupeò zmenšení textury svisle \i0 \b0 \par
+\par
+Pomocí pøíkazu \b \i mapování textury \i0 \b0 je možné urèit, jak je na objekt položena textura. Pøíkaz nenahradí pøesné ruèní položení textury, v mnoha pøípadech ale mùže být postaèujícím prostøedkem k rychlému automatickému namapování textury. Pøíkaz se uplatòuje pro {\uldb aktivní stupeò operací}{\v 20916} {\uldb aktivního objektu}{\v 20810}.\par
+\par
+Parametr \b \i metoda \i0 \b0 urèuje, jakou metodou bude textura na objekt namapována. Implicitní hodnotou je \b 0 \b0 - mapování adres textury. Pøi mapování adres obdrží každý vrchol objektu horizontální a vertikální souøadnici (typicky v rozsahu 0 až 1) urèitého místa v textuøe. U této metody není nutná pøítomnost textury v objektu bìhem operace mapování. Každý stupeò operací mùže mít vlastní mapování adres. Neobsahuje-li nìkterý stupeò mapování adres textury, použije se mapování z pøedešlého stupnì. Každý {\uldb novì vytvoøený objekt}{\v 20903} obsahuje implicitní mapování textury pro stupeò 0.\par
+\par
+Další dvì metody mapování jsou: \b 1 \b0 - mapování vrcholù a \b 2 \b0 - mapování plošek objektu. Tyto dvì metody nastaví každý vrchol nebo plošku objektu na barvu, kterou naleznou v pøíslušném místì textury. Ve chvíli mapování proto musí být pro aktivní stupeò objektu nastavena textura, jejíž obraz bude použit k mapování barev. Pøi mapování vrcholù je k jednotlivým vrcholùm objektu pøiøazena barva. Barva plynule pøechází mezi vrcholy (pøedpokladem je zapnuté {\uldb plynulé stínování objektu}{\v 20898}). Pøi mapování plošek jsou všechny vrcholy jednotlivých plošek nastaveny na stejnou barvu. Mezi jednotlivými ploškami jsou ostré pøechody barev. Po namapování vrcholù nebo plošek objektu je automaticky uvolnìna použitá textura objektu a je nastaven mód {\uldb vnitøních barev}{\v 20826} objektu. Mapování vrcholù a plošek objektu mùže být vyhovující náhražkou používání více textur a svìtelných map, po namapování barev mùže objekt používat jinou texturu bìžným zpùsobem. Pro rozhraní DirectX 3 až DirectX 6 jsou použity barvy vrcholù a plošek pouze v pøípadì, že je vypnuto {\uldb osvìtlení objektu}{\v 20897}.\par
+\par
+Pøi mapování textury jsou souøadnice textury poèítány podobnì, jakoby byla textura na vrcholy objektu promítána. Zpùsob promítání urèujeme parametrem \b \i typ projekce\i0 \b0 . Implicitním typem projekce je \b 0 \b0 - plošná projekce. Pøi plošné projekci je textura promítána jako rovná plocha. Implicitnì je textura promítána ve smìru osy Z - horizontální a vertikální souøadnice bodu v textuøe je souèasnì souøadnicí X a Y, na souøadnici Z promítání nezávisí. Druhým typem projekce je \b 1 \b0 - válcová projekce. Pøi této projekci je objekt obalen válcovou plochou, osa Y je implicitnì osou promítacího válce. Vertikální souøadnice textury je souèasnì souøadnicí Y, horizontální souøadnice je lineárnì závislá na horizontálním úhlu promítacího paprsku. Promítání je nezávislé na vzdálenosti od osy projekce (implicitnì osa Y). Tøetím typem projekce je \b 2 \b0 - sférická projekce. Pøi této projekci je objekt obalen plochou ve tvaru koule. Støed souøadného systému je implicitnì støedem projekce. Promítání je nezávislé na vzdálenosti od støedu projekce. Zvláštními pøípady jsou projekce \b 3 \b0 a \b 4\b0 , chromová a èoèková projekce. Tyto projekce jsou automaticky generované projekce a simulují odlesk okolí na objektu.\par
+\par
+Parametry \b \i souøadnice X-Y-Z støedu projekce \i0 \b0 umožòují zmìnit støed projekce. Implicitnì støed projekce odpovídá støedu souøadného systému.\par
+\par
+Parametry \b \i rotace projekce podle osy Z-X-Y \i0 \b0 umožòují otoèit smìr projekce. Poøadí rotací projekce odpovídá poøadí parametrù - podle osy Z, X a nakonec podle Y. Napø. pøi plošné projekci je textura promítána ve smìru Z (implicitní pohled kamery). Pøi mapování {\uldb terénu}{\v 20874} musí být projekce natoèena jako pohled "shora", proto musí být nastavena rotace podle X na hodnotu {\uldb 1/2 pi}{\v 20115} (tj. 90 stupòù).\par
+\par
+Parametry \b \i poèátek textury \i0 \b0 umožòují posouvat texturou ve vodorovném a svislém smìru. Parametry urèují, který bod textury má být považován za poèátek (souøadnice textury jsou 0 až 1). Implicitní hodnoty jsou 0.5, pøi mapování na {\uldb stìnu}{\v 20802} bude zaèátek a konec stìny souhlasit se zaèátkem a koncem textury.\par
+\par
+Parametry \b \i stupeò zmenšení textury \i0 \b0 urèují, kolikrát bude textura zmenšena ve vodorovném a svislém smìru, implicitní nastavení je 1. Napø. pro stupeò zmenšení 2 bude textura promítnuta na stìnu s jednotkovým rozmìrem v horizontálním i vertikálním smìru dvakrát.\par
+\par
+\b \i Poznámka: \i0 \b0 Pøi metodì mapování "adresy" je automaticky zapnut mód {\uldb opakování textury}{\v 20923}, je-li nastaven mód oøezaní rextury.\par
+\page
+
+#{\footnote 20923}
+${\footnote Horizontální adresování}
++{\footnote 1}
+K{\footnote horizontální adresování;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20923.bmp\} Horizontální adresování\par
+\pard \plain \cf0 \fs20
+{\uldb Textury}{\v 20915}, {\uldb Vertikální adresování}{\v 20924}\par
+\par
+Prvek \b \i horizontální adresování \i0 \b0 slouží k urèení, jakým zpùsobem bude horizontálnì opakována textura {\uldb aktivního stupnì operací}{\v 20916} {\uldb aktivního objektu}{\v 20810}, nepokryje-li celý povrch objektu. Platné jsou následující hodnoty:\par
+\par
+\b \i 1 \i0 \b0 \tab opakování textury (implicitní nastavení)\par
+\b \i 2 \i0 \b0 \tab opakování textury se zrcadlovým pøevrácením\par
+\b \i 3 \i0 \b0 \tab oøezání textury\par
+\par
+Pøi opakování textury je ignorována celoèíselná èást adresy textury. Napø. adresy 1.2 - 1.5 zobrazí stejný úsek textury jako adresy 0.2 - 0.5.\par
+\par
+Pøi opakování textury se zrcadlovým pøevrácením je ignorována celoèíselná èást textury podobnì jako u bìžného opakování textury s tím rozdílem, že každá lichá textura (s lichou celoèíselnou èástí) je zrcadlovì pøevrácena.\par
+\par
+V módu oøezání textur jsou souøadnice textury mimo rozsah 0 až 1 omezeny na hranice 0 až 1. Adresy mimo platný rozsah používají barvu hranièních bodù textury.\par
+\par
+Rozhraní OpenGL nepodporuje opakování textury se zrcadlovým pøevrácením, použije se bìžné opakování textury. Rozhraní DirectX 3 neumožòuje nastavit adresování textur oddìlenì pro horizontální a vertikální smìr, horizontální adresování se použije pro oba smìry.\par
+\page
+
+#{\footnote 20924}
+${\footnote Vertikální adresování}
++{\footnote 1}
+K{\footnote vertikální adresování;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20924.bmp\} Vertikální adresování\par
+\pard \plain \cf0 \fs20
+{\uldb Textury}{\v 20915}, {\uldb Horizontální adresování}{\v 20923}\par
+\par
+Prvek \b \i vertikální adresování \i0 \b0 slouží k urèení, jakým zpùsobem bude vertikálnì opakována textura {\uldb aktivního stupnì operací}{\v 20916} {\uldb aktivního objektu}{\v 20810}, nepokryje-li celý povrch objektu. Platné jsou následující hodnoty:\par
+\par
+\b \i 1 \i0 \b0 \tab opakování textury (implicitní nastavení)\par
+\b \i 2 \i0 \b0 \tab opakování textury se zrcadlovým pøevrácením\par
+\b \i 3 \i0 \b0 \tab oøezání textury\par
+\par
+Pøi opakování textury je ignorována celoèíselná èást adresy textury. Napø. adresy 1.2 - 1.5 zobrazí stejný úsek textury jako adresy 0.2 - 0.5.\par
+\par
+Pøi opakování textury se zrcadlovým pøevrácením je ignorována celoèíselná èást textury podobnì jako u bìžného opakování textury s tím rozdílem, že každá lichá textura (s lichou celoèíselnou èástí) je zrcadlovì pøevrácena.\par
+\par
+V módu oøezání textur jsou souøadnice textury mimo rozsah 0 až 1 omezeny na hranice 0 až 1. Adresy mimo platný rozsah používají barvu hranièních bodù textury.\par
+\par
+Rozhraní OpenGL nepodporuje opakování textury se zrcadlovým pøevrácením, použije se bìžné opakování textury. Rozhraní DirectX 3 neumožòuje nastavit adresování textur oddìlenì pro horizontální a vertikální smìr, horizontální adresování se použije pro oba smìry.\par
+\page
+
+#{\footnote 20917}
+${\footnote Operace barvy}
++{\footnote 1}
+K{\footnote operace barvy;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20917.bmp\} Operace barvy\par
+\pard \plain \cf0 \fs20
+{\uldb Textury}{\v 20915}, {\uldb Operace alfa kanálu}{\v 20920}\par
+\par
+Pøi pokrývání povrchu objektu texturou je možné urèit operaci, která bude provedena mezi texturou a povrchem objektu. Operací i textur mùže být nastaveno až 8. Aktivní stupeò operace, který bude nastavován, se urèuje prvkem {\uldb stupeò}{\v 20916}, uplatòuje se pro {\uldb aktivní objekt}{\v 20810}. Povolený poèet stupòù lze zjistit ètením prvku \b \i stupeò\i0 \b0 .\par
+\par
+Prvek \b \i operace barvy \i0 \b0 definuje operaci, která se bude provádìt se složkami barvy. Podobnì lze definovat operace s alfa kanálem pomocí prvku {\uldb operace alfa kanálu}{\v 20920}. Operace barvy mùže mít následující hodnotu:\par
+\par
+\b \i 1 \i0 \b0 \tab stupeò operace je vypnut, stejnì tak všechny následující stupnì\par
+\b \i 2 \i0 \b0 \tab výstupem operace je {\uldb argument 1 barvy}{\v 20918}\par
+\b \i 3 \i0 \b0 \tab výstupem operace je {\uldb argument 2 barvy}{\v 20919}\par
+\b \i 4 \i0 \b0 \tab modulace, \i \b výstup = arg1 * arg2\i0 \par
+\b \i 5 \i0 \b0 \tab modulace 2x, \i \b výstup = arg1 * arg2 * 2\b0 \i0 \par
+\b \i 6 \i0 \b0 \tab modulace 4x, \i \b výstup = arg1 * arg2 * 4\b0 \i0 \par
+\b \i 7 \i0 \b0 \tab souèet, \i \b výstup = arg1 + arg2\b0 \i0 \par
+\b \i 8 \i0 \b0 \tab souèet se znaménkem, \i \b výstup = arg1 + arg2 - 0.5\b0 \i0 \par
+\b \i 9 \i0 \b0 \tab souèet se znaménkem 2x, \i \b výstup = (arg1 + arg2 - 0.5) * 2\b0 \i0 \par
+\b \i 10 \i0 \b0 \tab rozdíl, \i \b výstup = arg1 - arg2\b0 \i0 \par
+\b \i 11 \i0 \b0 \tab souèet zjemnìný, \i \b výstup = arg1+arg2 - arg1*arg2\b0 \i0 \par
+\b \i 12 \i0 \b0 \tab prùhlednost, alfa z barvy, \i \b výstup = arg1*(alfa) + arg2*(1-alfa)\b0 \i0 \par
+\b \i 13 \i0 \b0 \tab prùhlednost, alfa z textury, \i \b výstup = arg1*(alfa) + arg2*(1-alfa)\b0 \i0 \par
+\b \i 14 \i0 \b0 \tab prùhlednost, alfa z {\uldb faktoru}{\v 20927}, \i \b výstup = arg1*(alfa) + arg2*(1-alfa)\b0 \i0 \par
+\b \i 15 \i0 \b0 \tab prùhlednost, pøednásobené alfa z textury, \i \b výstup = arg1 + arg2*(1-alfa)\b0 \i0 \par
+\b \i 16 \i0 \b0 \tab prùhlednost, alfa z výsledku, \i \b výstup = arg1*(alfa) + arg2*(1-alfa)\b0 \i0 \par
+\b \i 17 \i0 \b0 \tab pøedmodulace - modulace následujícím stupnìm textury\par
+\b \i 18 \i0 \b0 \tab modulace alfa z arg1, \i \b výstup = arg1 + alfa1*arg2\b0 \i0 \par
+\b \i 19 \i0 \b0 \tab modulace s pøiètením alfa z arg1, \i \b výstup = arg1*arg2 + alfa1\b0 \i0 \par
+\b \i 20 \i0 \b0 \tab inverzní modulace alfa z arg1, \i \b výstup = arg1 + (1-alfa1)*arg2\b0 \i0 \par
+\b \i 21 \i0 \b0 \tab inverzní modulace s pøiètením alfa z arg1, \i \b výstup = (1-arg1)*arg2 + alfa1\b0 \i0 \par
+\par
+Implicitnì je pro stupeò 0 nastavena operace modulace (kód 4), ostatní stupnì jsou vypnuty (kód 1).\par
+\par
+Ne všechny operace jsou podporovány všemi rozhraními a videokartami. Rozhraní OpenGL umožòuje pouze operace výbìr argumentu a modulaci (tj. operace 1 až 4), argumentem mùže být barva objektu nebo textura. Operace alfa kanálu jsou ignorovány. Rozhraní DirectX 5 podporuje kromì operací uvedených pro OpenGL navíc operaci souètu (7), operace 5, 6, 8 a 9 nahrazuje jinými variantami operací 4 a 7. Plná podpora operací je pouze pro DirectX 6 až 8 v závislosti na tom, zda jsou operace podporovány videokartou. Není-li požadovaná operace videokartou podporována, mùže být lepší variantou použití softwarového ovladaèe, který vìtšinu operací podporuje.\par
+\page
+
+#{\footnote 20918}
+${\footnote Argument 1 barvy}
++{\footnote 1}
+K{\footnote argument 1 barvy;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20918.bmp\} Argument 1 barvy\par
+\pard \plain \cf0 \fs20
+{\uldb Textury}{\v 20915}, {\uldb Argument 2 barvy}{\v 20919}\par
+\par
+Prvek \i \b argument 1 barvy \b0 \i0 definuje první argument pro {\uldb operaci barvy}{\v 20917} {\uldb aktivního stupnì operací}{\v 20916} {\uldb aktivního objektu}{\v 20810}. Argument mùže mít následující hodnoty:\par
+\par
+\b \i 0 \i0 \b0 \tab základní (difuzní) {\uldb barva}{\v 20826} objektu\par
+\b \i 1 \i0 \b0 \tab výsledek pøedešlého stupnì operací\par
+\b \i 2 \i0 \b0 \tab textura\par
+\b \i 3 \i0 \b0 \tab {\uldb faktor textury}{\v 20927}\par
+\b \i 4 \i0 \b0 \tab barva odlesku (pouze DirectX 7 a 8)\par
+\par
+Modifikaèní faktory (pøiètou se ke kódu argumentu):\par
+\par
+\b \i 16 \i0 \b0 \tab doplnìk, použije se hodnota (1-arg)\par
+\b \i 32 \i0 \b0 \tab rozmnoží alfa informaci do všech barevných kanálù\par
+\par
+Implicitní hodnotou argumentu 1 barvy ve všech stupních je 2 (textura).\par
+\page
+
+#{\footnote 20919}
+${\footnote Argument 2 barvy}
++{\footnote 1}
+K{\footnote argument 2 barvy;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20919.bmp\} Argument 2 barvy\par
+\pard \plain \cf0 \fs20
+{\uldb Textury}{\v 20915}, {\uldb Argument 1 barvy}{\v 20918}\par
+\par
+Prvek \i \b argument 2 barvy \b0 \i0 definuje druhý argument pro {\uldb operaci barvy}{\v 20917} {\uldb aktivního stupnì operací}{\v 20916} {\uldb aktivního objektu}{\v 20810}. Argument mùže mít následující hodnoty:\par
+\par
+\b \i 0 \i0 \b0 \tab základní (difuzní) {\uldb barva}{\v 20826} objektu\par
+\b \i 1 \i0 \b0 \tab výsledek pøedešlého stupnì operací\par
+\b \i 2 \i0 \b0 \tab textura\par
+\b \i 3 \i0 \b0 \tab {\uldb faktor textury}{\v 20927}\par
+\b \i 4 \i0 \b0 \tab barva odlesku (pouze DirectX 7 a 8)\par
+\par
+Modifikaèní faktory (pøiètou se ke kódu argumentu):\par
+\par
+\b \i 16 \i0 \b0 \tab doplnìk, použije se hodnota (1-arg)\par
+\b \i 32 \i0 \b0 \tab rozmnoží alfa informaci do všech barevných kanálù\par
+\par
+Implicitní hodnotou argumentu 2 barvy ve všech stupních je 1 (výsledek pøedešlého stupnì operací).\par
+\page
+
+#{\footnote 20920}
+${\footnote Operace alfa kanálu}
++{\footnote 1}
+K{\footnote operace alfa kanálu;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20920.bmp\} Operace alfa kanálu\par
+\pard \plain \cf0 \fs20
+{\uldb Textury}{\v 20915}, {\uldb Operace barvy}{\v 20917}\par
+\par
+Pøi pokrývání povrchu objektu texturou je možné urèit operaci, ktrá bude provedena mezi texturou a povrchem objektu. Operací i textur mùže být nastaveno až 8. Aktivní stupeò operace, který bude nastavován, se urèuje prvkem {\uldb stupeò}{\v 20916}, uplatòuje se pro {\uldb aktivní objekt}{\v 20810}. Povolený poèet stupòù lze zjistit ètením prvku \b \i stupeò\i0 \b0 .\par
+\par
+Prvek \b \i operace alfa kanálu \i0 \b0 definuje operaci, která se bude provádìt se složkou {\uldb alfa}{\v 20417}. Podobnì lze definovat operace s barvou pomocí prvku {\uldb operace barvy}{\v 20917}. Operace alfa kanálu mùže mít následující hodnotu:\par
+\par
+\b \i 1 \i0 \b0 \tab stupeò operace je vypnut, stejnì tak všechny následující stupnì\par
+\b \i 2 \i0 \b0 \tab výstupem operace je {\uldb argument 1 alfa kanálu}{\v 20921}\par
+\b \i 3 \i0 \b0 \tab výstupem operace je {\uldb argument 2 alfa kanálu}{\v 20922}\par
+\b \i 4 \i0 \b0 \tab modulace, \i \b výstup = arg1 * arg2\i0 \par
+\b \i 5 \i0 \b0 \tab modulace 2x, \i \b výstup = arg1 * arg2 * 2\b0 \i0 \par
+\b \i 6 \i0 \b0 \tab modulace 4x, \i \b výstup = arg1 * arg2 * 4\b0 \i0 \par
+\b \i 7 \i0 \b0 \tab souèet, \i \b výstup = arg1 + arg2\b0 \i0 \par
+\b \i 8 \i0 \b0 \tab souèet se znaménkem, \i \b výstup = arg1 + arg2 - 0.5\b0 \i0 \par
+\b \i 9 \i0 \b0 \tab souèet se znaménkem 2x, \i \b výstup = (arg1 + arg2 - 0.5) * 2\b0 \i0 \par
+\b \i 10 \i0 \b0 \tab rozdíl, \i \b výstup = arg1 - arg2\b0 \i0 \par
+\b \i 11 \i0 \b0 \tab souèet zjemnìný, \i \b výstup = arg1+arg2 - arg1*arg2\b0 \i0 \par
+\b \i 12 \i0 \b0 \tab prùhlednost, alfa z barvy, \i \b výstup = arg1*(alfa) + arg2*(1-alfa)\b0 \i0 \par
+\b \i 13 \i0 \b0 \tab prùhlednost, alfa z textury, \i \b výstup = arg1*(alfa) + arg2*(1-alfa)\b0 \i0 \par
+\b \i 14 \i0 \b0 \tab prùhlednost, alfa z {\uldb faktoru}{\v 20927}, \i \b výstup = arg1*(alfa) + arg2*(1-alfa)\b0 \i0 \par
+\b \i 15 \i0 \b0 \tab prùhlednost, pøednásobené alfa z textury, \i \b výstup = arg1 + arg2*(1-alfa)\b0 \i0 \par
+\b \i 16 \i0 \b0 \tab prùhlednost, alfa z výsledku, \i \b výstup = arg1*(alfa) + arg2*(1-alfa)\b0 \i0 \par
+\b \i 17 \i0 \b0 \tab pøedmodulace - modulace následujícím stupnìm textury\par
+\par
+Implicitnì je pro stupeò 0 nastavena operace modulace (kód 4), ostatní stupnì jsou vypnuty (kód 1).\par
+\par
+Ne všechny operace jsou podporovány všemi rozhraními a videokartami. Rozhraní OpenGL umožòuje pouze operace výbìr argumentu a modulaci (tj. operace 1 až 4), argumentem mùže být barva objektu nebo textura. Operace alfa kanálu jsou ignorovány. Rozhraní DirectX 5 podporuje kromì operací uvedených pro OpenGL navíc operaci souètu (7), operace 5, 6, 8 a 9 nahrazuje jinými variantami operací 4 a 7. Plná podpora operací je pouze pro DirectX 6 až 8 v závislosti na tom, zda jsou operace podporovány videokartou. Není-li požadovaná operace videokartou podporována, mùže být lepší variantou použití softwarového ovladaèe, který vìtšinu operací podporuje.\par
+\page
+
+#{\footnote 20921}
+${\footnote Argument 1 alfa kanálu}
++{\footnote 1}
+K{\footnote argument 1 alfa kanálu;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20921.bmp\} Argument 1 alfa kanálu\par
+\pard \plain \cf0 \fs20
+{\uldb Textury}{\v 20915}, {\uldb Argument 2 alfa kanálu}{\v 20922}\par
+\par
+Prvek \i \b argument 1 alfa kanálu \b0 \i0 definuje první argument pro {\uldb operaci alfa kanálu}{\v 20920} {\uldb aktivního stupnì operací}{\v 20916} {\uldb aktivního objektu}{\v 20810}. Argument mùže mít následující hodnoty:\par
+\par
+\b \i 0 \i0 \b0 \tab základní (difuzní) {\uldb barva}{\v 20826} objektu\par
+\b \i 1 \i0 \b0 \tab výsledek pøedešlého stupnì operací\par
+\b \i 2 \i0 \b0 \tab textura\par
+\b \i 3 \i0 \b0 \tab {\uldb faktor textury}{\v 20927}\par
+\b \i 4 \i0 \b0 \tab barva odlesku (pouze DirectX 7 a 8)\par
+\par
+Modifikaèní faktory (pøiètou se ke kódu argumentu):\par
+\par
+\b \i 16 \i0 \b0 \tab doplnìk, použije se hodnota (1-arg)\par
+\b \i 32 \i0 \b0 \tab rozmnoží alfa informaci do všech barevných kanálù\par
+\par
+Implicitní hodnotou argumentu 1 alfa kanálu ve všech stupních je 2 (textura).\par
+\page
+
+#{\footnote 20922}
+${\footnote Argument 2 alfa kanálu}
++{\footnote 1}
+K{\footnote argument 2 alfa kanálu;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20922.bmp\} Argument 2 alfa kanálu\par
+\pard \plain \cf0 \fs20
+{\uldb Textury}{\v 20915}, {\uldb Argument 1 alfa kanálu}{\v 20921}\par
+\par
+Prvek \i \b argument 2 alfa kanálu \b0 \i0 definuje druhý argument pro {\uldb operaci alfa kanálu}{\v 20920} {\uldb aktivního stupnì operací}{\v 20916} {\uldb aktivního objektu}{\v 20810}. Argument mùže mít následující hodnoty:\par
+\par
+\b \i 0 \i0 \b0 \tab základní (difuzní) {\uldb barva}{\v 20826} objektu\par
+\b \i 1 \i0 \b0 \tab výsledek pøedešlého stupnì operací\par
+\b \i 2 \i0 \b0 \tab textura\par
+\b \i 3 \i0 \b0 \tab {\uldb faktor textury}{\v 20927}\par
+\b \i 4 \i0 \b0 \tab barva odlesku (pouze DirectX 7 a 8)\par
+\par
+Modifikaèní faktory (pøiètou se ke kódu argumentu):\par
+\par
+\b \i 16 \i0 \b0 \tab doplnìk, použije se hodnota (1-arg)\par
+\b \i 32 \i0 \b0 \tab rozmnoží alfa informaci do všech barevných kanálù\par
+\par
+Implicitní hodnotou argumentu 2 alfa kanálu ve všech stupních je 1 (výsledek pøedešlého stupnì operací).\par
+\page
+
+}

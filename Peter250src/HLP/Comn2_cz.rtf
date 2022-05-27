@@ -1,0 +1,291 @@
+{\rtf1 \ansi \deff0
+
+@{\footnote ------- definice fontù --------- }
+
+{\fonttbl 
+{\f0 \fswiss MS San Serif CE;}
+}
+
+@{\footnote ------- definice barev --------- }
+
+{\colortbl
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red192\green192\blue192;
+\red128\green128\blue128;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+
+@{\footnote Pouití barev:
+	0 - èerná
+	1 - tmavì èervená
+	2 - tmavì zelená
+	3 - hnìdá
+	4 - tmavì modrá
+	5 - tmavì fialová
+	6 - tmavì modrozelená
+	7 - šedá
+	8 - tmavì šedá
+	9 - èervená
+	10 - zelená
+	11 - lutá
+	12 - modrá
+	13 - fialová
+	14 - modrozelená
+	15 - bílá
+}
+
+#{\footnote 20976}
+#{\footnote 20977}
+#{\footnote 20978}
+#{\footnote 20979}
+#{\footnote 20980}
+#{\footnote 20981}
+#{\footnote 20982}
+#{\footnote 20983}
+#{\footnote 20984}
+#{\footnote 20985}
+#{\footnote 20986}
+#{\footnote 20987}
+#{\footnote 20988}
+#{\footnote 20989}
+#{\footnote 20990}
+#{\footnote 20991}
+#{\footnote 20992}
+#{\footnote 20993}
+#{\footnote 20994}
+#{\footnote 20995}
+#{\footnote 20996}
+#{\footnote 20997}
+#{\footnote 20998}
+#{\footnote 20999}
+#{\footnote 21000}
+#{\footnote 21001}
+#{\footnote 21002}
+#{\footnote 21003}
+#{\footnote 21004}
+#{\footnote 21005}
+#{\footnote 21006}
+#{\footnote 21007}
+#{\footnote 21008}
+#{\footnote 21009}
+#{\footnote 21010}
+#{\footnote 21011}
+#{\footnote 21024}
+#{\footnote 21025}
+#{\footnote 21026}
+#{\footnote 21027}
+#{\footnote 21028}
+#{\footnote 21029}
+#{\footnote 21030}
+#{\footnote 21031}
+#{\footnote 21033}
+${\footnote Knihovny DLL}
++{\footnote 1}
+K{\footnote knihovny DLL;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Knihovny DLL\par
+\pard \plain \cf0 \fs20
+{\uldb Øízení programu}{\v 20057}\par
+\par
+Tato skupina funkcí je urèena pouze pro programátory dobøe znalé problematiky Windows API. Umoòuje doplòování funkcí a vlastností, které programovací systém Petr pøímo sám nepodporuje. Pomocí funkcí pro pøístup k DLL je moné vyuívat všechny funkce operaèního systému Windows a stejnì tak i funkce doplòkovıch knihoven DLL. Funkce nejsou nijak systémem Petr kontrolovány (jako napø. platnost ukazatele v pamìti) a mùe proto nesprávnım pouitím funkcí dojít ke zhroucení programu, pøípadnì a k vánému poškození dat. Podrobné popisy k systémovım funkcím \b Windows API SDK \b0 je moné získat z internetovıch stránek Microsoft (www.microsoft.com) v oddìlení pro vıvojáøe.\par
+\par
+\{bmc IDF20977.bmp\} \b \i naètení knihovny \i0 \b0 \par
+\par
+Parametrem funkce je jméno souboru knihovny DLL (vèetnì pøípony). Funkce zajistí naètení knihovny do pamìti a navrátí èíselnı identifikátor knihovny. Není-li knihovna nalezena, je navráceno èíslo 0. K naètení knihovny je vyuita systémová funkce \b LoadLibrary\b0 , navrácené èíslo odpovídá handle naèteného modulu.\par
+\par
+\{bmc IDF20978.bmp\} \b \i uvolnìní knihovny \i0 \b0 \par
+\par
+Funkce uvolní z pamìti knihovnu, její identifikaèní èíslo je zadáno jako parametr funkce. Je povoleno zadání neplatného èísla 0. K uvolnìní knihovny je pouita systémová funkce \b FreeLibrary\b0 , zadané èíslo odpovídá handle modulu.\par
+\par
+\{bmc IDF20979.bmp\} \b \i importování funkce \i0 \b0 \par
+\tab \{bmc IDF20980.bmp\} \b \i identifikátor knihovny \i0 \b0 \par
+\tab \{bmc IDF20981.bmp\} \b \i jméno funkce \i0 \b0 \par
+\tab \{bmc IDF20982.bmp\} \b \i poèet parametrù \i0 \b0 \par
+\tab \{bmc IDF21011.bmp\} \b \i volací konvence C \i0 \b0 \par
+\par
+Funkce \b \i importování funkce \i0 \b0 slouí k vyhledání funkce v knihovnì. Je vyuita systémová funkce \b GetProcAddress\b0 . Jako první parametr se zadává identifikaèní èíslo knihovny naètené v pamìti (je povoleno zadání neplatného èísla 0). Druhım parametrem je jméno funkce (text). Není-li zadaná funkce nalezena, je proveden druhı pokus - ke jménu funkce je pøidáno písmeno "A" (varianta pro 8-bitové textové parametry). Tøetím parametrem je poèet parametrù funkce (je kontrolován poèet parametrù v rozsahu 0 a 65k). Bez zadání se uvauje poèet parametrù \b 0\b0 . Jedním parametrem se pøitom rozumí jedna poloka v zásobníku o velikosti 4 bajty (tj. dvouslovo). Poslední parametr je logickı pøíznak udávající, e funkce je volána podle konvence C, tj. po návratu z funkce jsou zrušeny parametry ze zásobníku. Tato volací konvence je vyuívána napø. u funkce \b printf \b0 a u dalších funkcí s promìnlivım poètem parametrù. Všechny ostatní funkce pouívají volací konvenci Pascal, tj. o zrušení parametrù ze zásobníku se stará volaná funkce (implicitní nastavení). Je-li funkce nalezena, je navrácen pamìovı blok se strukturou popsanou dále. Pøi ukonèení programu je nutno tento blok zrušit funkcí pro uvolnìní pamìového bloku. Není-li funkce nalezena, je navráceno èíslo 0. Všechny parametry funkce jsou pøi vytvoøení pamìového bloku automaticky vynulovány.\par
+\par
+\{bmc IDF20983.bmp\} \b \i provedení funkce \i0 \b0 \par
+\par
+Prvek \b \i provedení funkce \i0 \b0 zajistí vyvolání a provedení funkce knihovny DLL. Jako parametr prvku se zadává adresa pamìového bloku navráceného pøedešlou funkcí pro importování funkce. Jedná se o bìnı pamìovı blok, kterı lze vytváøet, modifikovat èi rušit operacemi pro obsluhu pamìovıch blokù. Lze si napø. pøipravit nìkolik pamìovıch blokù pro rùzné zpùsoby volání jedné funkce. Pamìovı blok pro volání funkce má následující strukturu:\par
+\par
+(4 bajty) adresa volané funkce\par
+(2 bajty) N poèet parametrù funkce (1 parametr je 4 bajtová poloka v zásobníku)\par
+(2 bajty) pomocné pøíznaky: je-li nastaven \b bit 0\b0 , je pouita volací konvence C (po návratu z funkce jsou zrušeny parametry ze zásobníku) jinak se pouije volací konvence Pascal (o zrušení parametrù ze zásobníku se stará volaná funkce)\par
+(N * 4 bajtù) N parametrù funkce, první parametr je pøi volání funkce uloen na nejniší adrese zásobníku\par
+\par
+Pøed voláním funkce je nutno nastavit parametry funkce. Implicitnì jsou všechny parametry pøi importování funkce inicializovány na nulu. Nastavení parametrù se provádí pomocí následujících operací pro manipulaci s pamìovımi bloky. První parametr je umístìn na offsetu 8 od zaèátku pamìového bloku. Kadı parametr je 4-bajtové èíslo (dvouslovo). Pozor na pøedávání textového parametru - parametrem u pøeváné vìtšiny funkcí je ukazatel na ASCIIZ text, ne pøímo text samotnı. Prvek pro provedení funkce mùe bıt pouit buï jako pøíkaz nebo jako funkce navracející èíselnı parametr.\par
+\par
+\{bmc IDF20984.bmp\} \b \i vytvoøení pamìového bloku \i0 \b0 \par
+\par
+Jako parametr prvku se zadává poadovaná velikost pamìového bloku. Prvek navrací adresu pamìového bloku. Pøi ukonèení programu je nutno pamìovı blok zrušit následující funkcí pro uvolnìní pamìového bloku. Pamìové bloky do velikosti 4 KB jsou obsluhovány vnitøní efektivní obsluhou systému Petr, která zajišuje rychlé vytváøení blokù, modifikaci velikosti i rušení. Pro pamìové bloky o velikosti nad 4 KB je vyuita systémová funkce \b HeapAlloc \b0 se zarovnáváním blokù na hranici 256 bajtù. \par
+\par
+\{bmc IDF20985.bmp\} \b \i uvolnìní pamìového bloku \i0 \b0 \par
+\par
+Prvek zajistí zrušení pamìového bloku, jeho adresa je zadána jako parametr. Je povoleno zadání neplatné adresy 0.\par
+\par
+\{bmc IDF20986.bmp\} \b \i zmìna velikosti pamìového bloku \i0 \b0 \par
+\tab \{bmc IDF20987.bmp\} \b \i adresa pamìového bloku \i0 \b0 \par
+\tab \{bmc IDF20988.bmp\} \b \i nová velikost \i0 \b0 \par
+\par
+Funkce zajistí zmìnu velikosti pamìtového bloku. Prvním parametrem je adresa pamìového bloku, jeho velikost má bıt zmìnìna. Zadáním nuly dojde k vytvoøení nového pamìového bloku. Druhım parametrem je nová velikost pamìového bloku. Zadáním nuly dojde ke zrušení pamìového bloku. Funkce navrací adresu nového pamìového bloku. Díky vnitøní optimalizaci mùe bıt pamìovı blok nezmìnìn (je navrácena stejná adresa bloku). Nevyhovuje-li velikost pamìového bloku, vytvoøí funkce novı blok s poadovanou velikostí a obsah starého bloku do nìj pøekopíruje.\par
+\par
+\{bmc IDF20989.bmp\} \b \i ukazatel ètení \i0 \b0 \par
+\{bmc IDF20990.bmp\} \b \i ukazatel zápisu \i0 \b0 \par
+\par
+Prvky \b \i ukazatel ètení \i0 \b0 a \b \i ukazatel zápisu \i0 \b0 slouí k nastavení adresy v pamìti, odkud nebo kam se budou ukládat data následujícími prvky pro ètení/zápis dat. Ètením hodnoty nìkterého z následujících prvkù dojde k posunu ukazatele ètení, zápisem hodnoty do prvku dojde k posunu ukazatele zápisu. Ukazatele ètení a zápisu nejsou nijak kontrolovány na platnost. Nesprávnou manipulací mùe dojít k neádoucí modifikaci pamìti systému nebo programu.\par
+\par
+\{bmc IDF20991.bmp\} \b \i kopie dat \i0 \b0 \par
+\par
+Prvek \b \i kopie dat \i0 \b0 zajistí kopírování bloku dat z adresy nastavené ukazatelem ètení na adresu udanou ukazatelem zápisu. Velikost dat je zadána jako parametr prvku. Ukazatele ètení i zápisu se operací posunou o zadanou velikost dat.\par
+\par
+\{bmc IDF20992.bmp\} \b \i porovnání dat \i0 \b0 \par
+\par
+Prvek \b \i porovnání dat \i0 \b0 zajistí porovnání bloku dat mezi adresou nastavenou ukazatelem ètení a adresou udanou ukazatelem zápisu. Velikost dat je zadána jako parametr prvku. Je-li nalezen rozdíl mezi daty, navrací prvek velikost zbıvajících dat a ukazatele ètení a zápisu zùstanou nastavené na odlišnıch datech. Jsou-li data shodná, navrátí prvek nulu a ukazatele ètení a zápisu jsou nastaveny za koncem dat.\par
+\par
+\{bmc IDF20993.bmp\} \b \i bajt se znaménkem (char) \i0 \b0 (posun ukazatele o 1)\par
+\{bmc IDF20994.bmp\} \b \i bajt bez znaménka (BYTE) \i0 \b0 (posun ukazatele o 1)\par
+\{bmc IDF20995.bmp\} \b \i slovo se znaménkem (short) \i0 \b0 (posun ukazatele o 2)\par
+\{bmc IDF20996.bmp\} \b \i slovo bez znaménka (WORD) \i0 \b0 (posun ukazatele o 2)\par
+\{bmc IDF20997.bmp\} \b \i 3-bajt se znaménkem \i0 \b0 (posun ukazatele o 3)\par
+\{bmc IDF20998.bmp\} \b \i 3-bajt bez znaménka \i0 \b0 (posun ukazatele o 3)\par
+\{bmc IDF20999.bmp\} \b \i dvouslovo se znaménkem (long) \i0 \b0 (posun ukazatele o 4)\par
+\{bmc IDF21000.bmp\} \b \i dvouslovo bez znaménka (DWORD) \i0 \b0 (posun ukazatele o 4)\par
+\{bmc IDF21001.bmp\} \b \i reálné èíslo 4 bajty (float) \i0 \b0 (posun ukazatele o 4)\par
+\{bmc IDF21002.bmp\} \b \i reálné èíslo 8 bajtù (double) \i0 \b0 (posun ukazatele o 8)\par
+\{bmc IDF21003.bmp\} \b \i logická hodnota (BOOL) \i0 \b0 (posun ukazatele o 4)\par
+\{bmc IDF21004.bmp\} \b \i text zakonèenı nulou ASCIIZ \i0 \b0 (posun ukazatele o N+1)\par
+\{bmc IDF21005.bmp\} \b \i ukazatel na text zakonèenı nulou ASCIIZ \i0 \b0 (posun ukazatele o 4)\par
+\{bmc IDF21006.bmp\} \b \i text s pevnou délkou \i0 \b0 (posun ukazatele o N, kratší text doplnìn mezerami)\par
+\{bmc IDF21007.bmp\} \b \i délka textu s pevnou délkou N \i0 \b0 (nutno nastavit pøed pouitím pøedešlého prvku)\par
+\par
+Pomocí prvkù pro pøístup k datùm lze èíst nebo zapisovat do pamìti. Ètením prvku je naètena hodnota z pamìti, její adresa je udána pomocí ukazatele ètení. Ukazatel ètení se posune o velikost prvku. Nastavením hodnoty prvku se hodnota uloí do pamìti na adresu udanou ukazatelem zápisu. Ukazatel zápisu se posune o velikost prvku. U textovıch prvkù jsou pouity 8-bitové znaky. Je-li vyadován text v kódu UNICODE, je nutná konverze textu pomocí systémovıch funkcí \b MultiByteToWideChar \b0 a \b WideCharToMultiByte\b0 . U pøeváné vìtšiny funkcí Windows se pøedává jako parametr ukazatel na text zakonèenı nulou (typ parametru \b LPCTSTR\b0 ) namísto textu samotného. Je-li prvek pro nastavení ukazatele na text zakonèenı nulou pouit, nesmí bıt obsah pouité textové promìnné a do chvíle vyvolání funkce DLL modifikován, jinak se mùe ukazatel stát neplatnım (je pøedán pouze ukazatel na obsah textové promìnné).\par
+\par
+\{bmc IDF21008.bmp\} \b \i ètení dat ze souboru \i0 \b0 \par
+\{bmc IDF21009.bmp\} \b \i zápis dat do souboru \i0 \b0 \par
+\par
+Prvky \b \i ètení dat ze souboru \i0 \b0 a \b \i zápis dat do souboru \i0 \b0 slouí ke ètení/zápisu bloku dat z/do souboru. Jako parametr prvku se zadává velikost dat ke ètení/zápisu. Pamìové ukazatele ètení a zápisu ukazují na data v pamìti, {\uldb souborové ukazatele}{\v 20465} ukazují na data v souboru.\par
+\par
+\{bmc IDF21010.bmp\} \b \i identifikátor okenního prvku \i0 \b0 \par
+\par
+Prvek pøekonvertovává {\uldb identifikaèní èíslo}{\v 20593} okenního prvku systému Petr na identifikaèní èíslo Windows (HWND). Pro neplatnı prvek je navrácena nula.\par
+\par
+\{bmc IDF21024.bmp\} \b \i vytvoøení 3D objektu z pamìovıch blokù \i0 \b0 \par
+\tab \{bmc IDF21025.bmp\} \b \i poèet vrcholù \i0 \b0 \par
+\tab \{bmc IDF21026.bmp\} \b \i vrcholy \i0 \b0 \par
+\tab \{bmc IDF21027.bmp\} \b \i normály (0=auto) \i0 \b0 \par
+\tab \{bmc IDF21028.bmp\} \b \i mapování textur (0=není) \i0 \b0 \par
+\tab \{bmc IDF21029.bmp\} \b \i barvy (0=nejsou) \i0 \b0 \par
+\tab \{bmc IDF21030.bmp\} \b \i poèet plošek \i0 \b0 \par
+\tab \{bmc IDF21031.bmp\} \b \i plošky \i0 \b0 \par
+\par
+Prvek slouí k rychlému a efektivnímu vytvoøení 3D objektu {\uldb 3D grafiky}{\v 20788} napø. pomocí vıpoètu. Prvek navrací {\uldb identifikaèní èíslo}{\v 20810} vytvoøeného objektu.\par
+\par
+Jako první parametr je uveden poèet vrcholù objektu. Druhım parametrem je adresa pamìového bloku, obsahujícího souøadnice jednotlivıch vrcholù. Kadı vrchol je urèen pomocí 3 reálnıch 4-bajtovıch èísel pøedstavujících souøadnice X, Y a Z vrcholu.\par
+\par
+Tøetím parametrem je adresa pamìového bloku obsahujícího normály. Tento parametr mùe bıt buï neuveden nebo uvedena 0, v tom pøípadì budou normály objektu vygenerovány automaticky s {\uldb úhlem pro zjemnìní}{\v 20934} 0.5. Jsou-li normály pouity, musí jejich poèet odpovídat poètu vrcholù. Normály jsou zadány stejnım zpùsobem jako vrcholy (3 reálná 4-bajtová èísla).\par
+\par
+Ètvrtım parametrem je adresa pamìového bloku obsahujícího definice mapování textur. Pro kadı vrchol objektu je zadána dvojice reálnıch 4-bajtovıch èísel pøedstavujících horizontální a vertikální souøadnici bodu v textuøe. Levı horní roh textury má souøadnici (0,0), pravı dolní roh souøadnici (1,1). Není-li potøeba mapování textury pouívat, lze parametr vynechat nebo uvést 0.\par
+\par
+Pátım parametrem je adresa pamìového bloku obsahujícího definice barev jednotlivıch vrcholù objektu. Barva pro kadı vrchol je zadána jako 4 reálná 4-bajtová èísla pøedstavující barevné sloky RGBA v poøadí èervená, zelená, modrá a alfa sloka. Kadá ze sloek má rozsah 0 (=èerná) a 1 (=plnı jas), hodnota 0 pro alfa sloku pøedstavuje prùhlednost a 1 plnou viditelnost. Poèet barev musí souhlasit s poètem vrcholù objektu. Nejsou-li definice barev poadovány, lze namísto adresy zadat 0 nebo parametr vynechat, pouije se jednotná barva pro celı objekt.\par
+\par
+Šestı parametr udává poèet trojúhelníkovıch plošek, ze kterıch je objekt sestaven. Sedmım parametrem je adresa pamìového bloku obsahujícího definice jednotlivıch plošek objektu. Kadá z plošek je trojúhelník o 3 vrcholech. Jedna ploška je urèena 3 celoèíselnımi 4-bajtovımi èísly bez znaménka pøedstavujícími indexy vrcholù. Jeden vrchol mùe bıt sdílen více ploškami.\par
+\par
+\{bmc IDF21033.bmp\} \b \i pamìovı blok z 3D objektu \i0 \b0 \par
+\par
+Prvek umoòuje zpøístupnìní definice 3D objektu {\uldb 3D grafiky}{\v 20788} pro úèely exportování objektu nebo vytvoøení modifikované verze objektu. Parametrem prvku je {\uldb identifikaèní èíslo}{\v 20810} objektu.\par
+\par
+Prvek navrací adresu pamìového bloku obsahujícího definici objektu. Tento pamìovı blok má velikost 32 bajtù a obsahuje osum 4-bajtovıch celoèíselnıch poloek bez znaménka. Vıznam jednotlivıch poloek odpovídá popisu pøedešlého prvku \b \i vytvoøení 3D objektu z pamìovıch blokù\i0 \b0 .\par
+\par
+\i offset 0: \i0 \tab parametry, nyní rezervováno a nastaveno na 0\par
+\i offset 4: \i0 \tab poèet vrcholù objektu\par
+\i offset 8: \i0 \tab adresa pamìového bloku obsahujícího souøadnice vrcholù\par
+\i offset 12: \i0 \tab adresa pamìového bloku obsahujícího normály\par
+\i offset 16: \i0 \tab adresa pamìového bloku obsahujícího mapování textur (0=není)\par
+\i offset 20: \i0 \tab adresa pamìového bloku obsahujícího barvy vrcholù (0=není)\par
+\i offset 24: \i0 \tab poèet plošek objektu\par
+\i offset 28: \i0 \tab adresa pamìového bloku obsahujícího definice plošek\par
+\par
+\b Dùleité: \b0 Navrácenı pamìovı blok s definicí objektu stejnì jako jednotlivé pamìové bloky s daty jsou novì vytvoøené a musí bıt proto po ukonèení práce s daty zrušeny.\par
+\par
+\page
+
+#{\footnote 21013}
+#{\footnote 21014}
+#{\footnote 21015}
+#{\footnote 21016}
+#{\footnote 21017}
+#{\footnote 21018}
+#{\footnote 21019}
+#{\footnote 21020}
+#{\footnote 21021}
+#{\footnote 21022}
+#{\footnote 21023}
+${\footnote Konfigurace}
++{\footnote 1}
+K{\footnote konfigurace;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Konfigurace\par
+\pard \plain \cf0 \fs20
+{\uldb Øízení programu}{\v 20057}\par
+\par
+Tato skupina prvkù slouí k uchovávání konfigurace programu v konfiguraèním souboru INI nebo v registrech Windows. Konfiguraèní INI soubor umoòuje uchovávat nastavení programu v samostatném konfiguraèním souboru (typická pøípona souboru je INI). Takovıch souborù mùe bıt více, lze tak snadno spouštìt jeden program ve více variantách, napø. pro více uivatelù (pouitı konfiguraèní soubor urèí vıchozí sloka pøi spuštìní programu). Naopak registry Windows umoòují uchovávání parametrù programu nezávisle na místì, odkud je spouštìn, bez nutnosti vytváøení samostatného konfiguraèního souboru.\par
+\par
+\{bmc IDF21014.bmp\} \b \i konfiguraèní soubor \i0 \b0 \par
+\par
+Prvek \b \i konfiguraèní soubor \i0 \b0 urèuje jméno INI souboru pouitého k uloení konfigurace programu. Implicitnì je pøednastaveno jméno souboru odvozené od jména programu, k nìmu je doplnìna pøípona INI a jeho cesta vede do vıchozí sloky pøi spuštìní programu. Není-li pøi zadání jména konfiguraèního souboru uvedena cesta k souboru, je tento soubor pøednostnì uloen ve sloce Windows (tedy ne v aktuální sloce).\par
+\par
+\{bmc IDF21015.bmp\} \b \i sekce parametrù \i0 \b0 \par
+\par
+Jednotlivé parametry jsou v konfiguraèním souboru rozdìleny do pojmenovanıch sekcí. Implicitnì je pøednastaveno jméno sekce \b Main\b0 . Je-li jméno sekce parametrù nastaveno na prázdnı text, navrátí prvek pro ètení textového parametru víceøádkovı seznam všech sekcí v konfiguraèním souboru.\par
+\par
+\{bmc IDF21016.bmp\} \b \i název parametru \i0 \b0 \par
+\par
+Prvek \b \i název parametru \i0 \b0 urèuje název jednoho parametru, kterı bude èten nebo do nìj bude zapisováno. Implicitnì je pøednastaveno jméno parametru \b Config\b0 . Je-li název parametru nastaven na prázdnı text, navrátí prvek pro ètení textového parametru víceøádkovı seznam jmen všech parametrù v sekci urèené pøedešlım prvkem názvu sekce. Je-li nastaveno prázdné jméno parametru pøi zápisu do textového nebo èíselného prvku, dojde ke zrušení celé sekce parametrù.\par
+\par
+\{bmc IDF21017.bmp\} \b \i ètení/zápis textového parametru \i0 \b0 \par
+\{bmc IDF21018.bmp\} \b \i ètení/zápis celoèíselného parametru \i0 \b0 \par
+\par
+Prvky umoòují èíst nebo zapisovat do parametru zadaného jména v zadané sekci. Pøi ètení prvkù je moné doplnit jako parametr prvku pøednastavenı údaj, kterı bude navrácen v pøípadì, e poadovanı parametr nebyl nalezen. Jsou-li prvky pouity jako pøíkazy bez parametrù, dojde ke zrušení pøíslušného parametru. Je-li pøi ètení textového parametru nastaven prázdnı text jako název parametru, je navrácen víceøádkovı seznam jmen všech parametrù v dané sekci. Je-li pøi ètení textového parametru nastaven prázdnı text jako jméno sekce parametrù, je navrácen víceøádkovı seznam jmen všech sekcí parametrù. Je-li pøi zápisu do textového nebo èíselného parametru nastaveno prázdné jméno parametru, dojde ke zrušení celé sekce parametrù.\par
+\par
+\{bmc IDF21019.bmp\} \b \i skupina klíèù \i0 \b0 \par
+\par
+Prvek \b \i skupina klíèù \i0 \b0 urèuje skupinu klíèù v registrech Windows, ve které budou provádìny následující operace s registry. Jsou povolena následující èísla skupin klíèù registrù:\par
+\par
+0 = HKEY_CLASSES_ROOT\par
+1 = HKEY_CURRENT_USER\par
+2 = HKEY_LOCAL_MACHINE\par
+3 = HKEY_USERS\par
+4 = HKEY_PERFORMANCE_DATA\par
+5 = HKEY_CURRENT_CONFIG\par
+6 = HKEY_DYN_DATA\par
+\par
+Implicitnì je pøednastavena skupina klíèù \b 1 \b0 = HKEY_CURRENT_USER, která je urèena k uchovávání konfigurace parametrù pro aktivního uivatele. Druhou bìnì pouívanou skupinou klíèù je \b 2 \b0 = HKEY_LOCAL_MACHINE, která slouí k uchovávání konfigurace parametrù nezávislé na aktivním uivateli. Ostatní skupiny klíèù by nemìly bıt bìnì programem pouívány.\par
+\par
+\{bmc IDF21020.bmp\} \b \i název klíèe \i0 \b0 \par
+\par
+Prvek \b \i název klíèe \i0 \b0 urèuje pøístupovou cestu k pouitému klíèi, tj. skupinì parametrù programu. Tato cesta má tvar jako bìná cesta ke sloce na disku bez úvodního a koncového znaku zpìtného lomítka \b \\\b0 . Implicitnì je pøednastavena cesta \b Software\\ \b0 doplnìná o jméno programu (bez pøípony). K zobrazení struktury registrù Windows je moné pouít systémovı program \b RegEdit \b0 (nachází se ve sloce Windows).\par
+\par
+\{bmc IDF21021.bmp\} \b \i název poloky \i0 \b0 \par
+\par
+Kadı klíè mùe obsahovat jednu nebo více datovıch poloek (nebo té další klíèe). Implicitnì je název poloky pøednastaven na \b Config\b0 .\par
+\par
+\{bmc IDF21022.bmp\} \b \i ètení/zápis textové poloky \i0 \b0 \par
+\{bmc IDF21023.bmp\} \b \i ètení/zápis celoèíselné poloky \i0 \b0 \par
+\par
+Prvky umoòují èíst nebo zapisovat do poloky zadaného jména v zadaném klíèi. Pøi ètení prvkù je moné doplnit jako parametr prvku pøednastavenı údaj, kterı bude navrácen v pøípadì, e poadovaná poloka nebyla nalezena. Jsou-li prvky pouity jako pøíkazy bez parametrù, dojde ke zrušení pøíslušné poloky.\par
+\page
+
+}

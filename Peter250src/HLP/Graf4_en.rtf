@@ -1,0 +1,304 @@
+{\rtf1 \ansi \deff0
+
+@{\footnote ------- definice fontù --------- }
+
+{\fonttbl 
+{\f0 \fswiss MS San Serif CE;}
+}
+
+@{\footnote ------- definice barev --------- }
+
+{\colortbl
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red192\green192\blue192;
+\red128\green128\blue128;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+
+@{\footnote Použití barev:
+	0 - èerná
+	1 - tmavì èervená
+	2 - tmavì zelená
+	3 - hnìdá
+	4 - tmavì modrá
+	5 - tmavì fialová
+	6 - tmavì modrozelená
+	7 - šedá
+	8 - tmavì šedá
+	9 - èervená
+	10 - zelená
+	11 - žlutá
+	12 - modrá
+	13 - fialová
+	14 - modrozelená
+	15 - bílá
+}
+
+#{\footnote 20894}
+#{\footnote 20900}
+${\footnote Texture Magnification Filter}
++{\footnote 1}
+K{\footnote Texture Magnification Filter;Object Texture Magnification Filter;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20894.bmp\} Texture Magnification Filter, \{bmc IDF20900.bmp\} Object Texture Magnification Filter\par
+\pard \plain \cf0 \fs20
+{\uldb Settings}{\v 20796}, {\uldb Textures}{\v 20915}\par
+\par
+The \b \i texture magnification filter \i0 \b0 element is a logic switch. If it is on, then the texels (i.e. texture pixels) are interpolated in a linear way, when the texture gets magnified. Thus the texture is smoothed during the magnification. If the switch is off, then the nearest pixel is used when drawing the magnified texture. Thus sharp transitions between texels are visible on the texture being drawn. It is recommended to switch off the texture filtration when using a software driver, because the software filtration slows down the rendering process considerably.\par
+\par
+The texture magnification filter can be switched off in any object and texture stage separately by the \b \i object texture magnification filter \i0 \b0 command (for an {\uldb active object}{\v 20810} and an {\uldb active stage}{\v 20916}). If the \b \i texture magnification filter \i0 \b0 switch is off, then the texture magnification filter is off in all objects, independently of the position of the switches for texture magnification filter of the individual objects. The default setting of all switches is ON.\par
+\page
+
+#{\footnote 20872}
+#{\footnote 20899}
+${\footnote Texture Minification Filter}
++{\footnote 1}
+K{\footnote Texture Minification Filter;Object Texture Minification Filter;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20872.bmp\} Texture Minification Filter, \{bmc IDF20899.bmp\} Object Texture Minification Filter\par
+\pard \plain \cf0 \fs20
+{\uldb Settings}{\v 20796}, {\uldb Textures}{\v 20915}\par
+\par
+The \b \i texture minification filter \i0 \b0 element is a logic switch. If it is on, then the texels (i.e. texture pixels) are interpolated in a linear way, when the texture gets minified. Thus the texture is smoothed during the minification. If the switch is off, then the nearest pixel is used when drawing the minified texture. Thus sharp transitions between texels are visible on the texture being drawn. It is recommended to switch off the texture filtration when using a software driver, because the software filtration slows down the rendering process considerably.\par
+\par
+If the {\uldb faraway texture filter}{\v 20895} switch is on, then the individual stages of the faraway textures are interpolated when the minified texture switch is on. When the minified texture switch is off the nearest stage of the faraway texture is used (the texture refining changes abruptly when the distance is changed).\par
+\par
+The texture minification filter can be switched off in any object and texture stage separately by the \b \i object texture minification filter \i0 \b0 command (for an {\uldb active object}{\v 20810} and an {\uldb active stage}{\v 20916}). If the \b \i texture minification filter \i0 \b0 switch is off, then the texture minification filter is off in all objects, independently on the position of the switches for texture minification filter of the individual objects. The default setting of all switches is ON.\par
+\page
+
+#{\footnote 20895}
+#{\footnote 20901}
+${\footnote Faraway Texture Filter}
++{\footnote 1}
+K{\footnote Faraway Texture Filter;Object Faraway Texture Filter;Mipmap;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20895.bmp\} Faraway Texture Filter, \{bmc IDF20901.bmp\} Object Faraway Texture Filter\par
+\pard \plain \cf0 \fs20
+{\uldb Settings}{\v 20796}, {\uldb Textures}{\v 20915}\par
+\par
+The \b \i faraway texture filter \i0 \b0 is a logic switch. If it is on, minified textures (called mipmaps) are used in faraway objects. Thus it is possible to attain a more natural appearance in faraway objects (defocusing). If the switch is off, the basic non-minified texture is used (The faraway objects' surface "granulates").\par
+\par
+The manner of the faraway texture filter is influenced by the position of the {\uldb texture minification filter}{\v 20872} switch. If the texture minification switch is on, linear interpolation between two nearest minified textures made use of. If the texture minification switch is off, then the nearest minified texture is brought to bear (When changing the distance, the blurring of the faraway textures changes abruptly).\par
+\par
+The faraway texture filter can be switched in any object and texture stage separately by the \b \i object faraway texture filter \i0 \b0 command (for an {\uldb active object}{\v 20810} and an {\uldb active stage}{\v 20916}). If the \b \i faraway texture filter \i0 \b0 switch is off, the faraway texture filter is off in any object, independently of the position of the object faraway texture filter switches of the individual objects. The default setting of all switches is ON.\par
+\par
+The manner of the faraway texture filter can be further specified by means of the {\uldb number of faraway textures}{\v 20929} and {\uldb blurring of faraway textures}{\v 20925} elements.\par
+\page
+
+#{\footnote 20902}
+${\footnote Visible Object Side}
++{\footnote 1}
+K{\footnote Visible Object Side;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20902.bmp\} Visible Object Side\par
+\pard \plain \cf0 \fs20
+{\uldb Settings}{\v 20796}\par
+\par
+The \b \i visible object side \i0 \b0 element is a numeric variable deciding, which object face side is supposed to be visible. To accelerate the 3D graphics painting only the front (outer) object face side is painted, the back (inner) side remaining transparent. To distinguish, which face side is the front and which the back the order of the face vertices is determining. The Peter system uses as a default value the vertices' clockwise succession. The other side of the face (counter-clockwise) is deemed to be the back one, and consequently is not painted.\par
+\par
+\b 0 \b0 \tab both face sides are visible\par
+\b 1 \b0 \tab only front side of face is visible (clockwise)\par
+\b 2 \b0 \tab only back side of face is visible (counter-clockwise)\par
+\par
+The default setting of the individual objects can be changed by the \b \i visible object side \i0 \b0 
+element. This element is exercisable for an {\uldb active object}{\v 20810}. The setting cannot be changed globally for all objects. The default value is \b 1\b0 , which means that the face front side is visible. By setting this value to \b 2 \b0 the face back side becomes visible. This feature can be utilized e.g. when reading objects from a file, if an object uses the opposed face orientation. By setting the value equal \b 0 \b0 both face sides will become visible. This setting may be useful in objects' wire models (the {\uldb filling surfaces}{\v 20797} switch) or in non-spatial objects (as e.g. a {\uldb wall}{\v 20802}). The face back side remains lighted the same way as the face front side was lighted. For this reason the wall remains dark, if its back side is lighted.\par
+\par
+To light objects, \b normals \b0 are used. They are vectors that are perpendicular to the face and pointing out of the object. The normals determine how an object face will be lighted depending on the face orientation toward the light source. If the inner space of an object must be used, it is not sufficient to change only the object faces visible side. The normals remain unchanged, the object faces are lighted from the outer side and the object surface appears as if its faces were transparent, being lighted from the outer side. For this purpose it is more convenient to use the {\uldb object inversion}{\v 20800} command, which provides both the face orientation change and the normal direction change.\par
+\page
+
+#{\footnote 20857}
+${\footnote Scene}
++{\footnote 1}
+K{\footnote Scene;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Scene\par
+\pard \plain \cf0 \fs20
+{\uldb 3D Graphics}{\v 20788}\par
+\par
+\par
+{\uldb \{bmc IDF20858.bmp\}\tab scene background color}{\v 20858}\par
+{\uldb \{bmc IDF20859.bmp\}\tab scene background texture}{\v 20859}\par
+{\uldb \{bmc IDF20860.bmp\}\tab fog color}{\v 20860}\par
+{\uldb \{bmc IDF20861.bmp\}\tab fog type}{\v 20861}\par
+{\uldb \{bmc IDF20862.bmp\}\tab start of linear fog}{\v 20862}\par
+{\uldb \{bmc IDF20863.bmp\}\tab end of linear fog}{\v 20863}\par
+{\uldb \{bmc IDF20864.bmp\}\tab density of exponential and quadratic fog}{\v 20864}\par
+{\uldb \{bmc IDF20865.bmp\}\tab distance of projection plane}{\v 20865}\par
+{\uldb \{bmc IDF20866.bmp\}\tab visual range distance}{\v 20866}\par
+{\uldb \{bmc IDF20856.bmp\}\tab projection type}{\v 20856}\par
+{\uldb \{bmc IDF20935.bmp\}\tab render without displaying}{\v 20935}\par
+\page
+
+#{\footnote 20858}
+${\footnote Scene Background Color}
++{\footnote 1}
+K{\footnote Scene Background Color;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20858.bmp\} Scene Background Color\par
+\pard \plain \cf0 \fs20
+{\uldb Scene}{\v 20857}\par
+\par
+Before starting to render (draw) a 3D frame, the window surface is filled out by the specified color \b \i scene background color \i0 \b0 or by a {\uldb texture}{\v 20859}. The color can be specified like other colors of the Peter system either by the {\uldb color constant}{\v 20301} element or by the {\uldb compound color components to color}{\v 20417} element. If the entire surface of a window is covered with objects (e.g. the walls of a room), then the filling out of the scene background can be switched off by setting the numeric value to \b -1 \b0 instead of setting a color. Thus the rendering speed can be increased slightly. The state of the switched off filling out of the scene background can also serve to reach special effects (shadows behind moving objects, {\uldb multiple rendering}{\v 20935} using different object coordinates). By setting the scene background color the {\uldb scene background texture}{\v 20859} is switched off.\par
+\page
+
+#{\footnote 20859}
+${\footnote Scene Background Texture}
++{\footnote 1}
+K{\footnote Scene Background Texture;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20859.bmp\} Scene Background Texture\par
+\pard \plain \cf0 \fs20
+{\uldb Scene}{\v 20857}\par
+\par
+Before starting to render (draw) a 3D frame, the window surface is filled out by the specified {\uldb color}{\v 20858} or by a \b \i scene background texture\i0 \b0 . As a scene background texture any picture can be used. For the scene background texture similar rules are valid as for other {\uldb textures}{\v 20830}: The dimensions should be power of 2 (otherwise they will be adjusted), the texture will be smoothed according to the preset {\uldb smoothing of textures}{\v 20891}. Unlike with usual textures, {\uldb fog}{\v 20860}, {\uldb filling surfaces}{\v 20797}, {\uldb texture stage}{\v 20916} or lighting cannot be applied for the scene background texture. A texture cannot be modulated by the scene background color. By setting a {\uldb scene background color}{\v 20858} the scene background texture will get switched off. A scene background texture will be filtered (smoothed), if the {\uldb scene}{\v 20810} switch of the {\uldb object texture magnification filter}{\v 20900} is switched on.\par
+\page
+
+#{\footnote 20860}
+${\footnote Fog Color}
++{\footnote 1}
+K{\footnote Fog Color;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20860.bmp\} Fog Color\par
+\pard \plain \cf0 \fs20
+{\uldb Scene}{\v 20857}\par
+\par
+The fog serves to naturally limit the scene visual range. By means of the \b \i fog color \i0 \b0 element the fog color may be defined. If the fog is in the switched off state, it will be switched on. A color can be specified like Peter system’s other colors either by the {\uldb color constant}{\v 20301} element, or by the {\uldb compound color components to color}{\v 20417} element. By setting the value equal \b -1 \b0 instead of setting a fog color the fog can be switched off. If the fog is switched on by some other fog commanding elements, then the fog color is default set according to the current setting of the {\uldb scene background color}{\v 20858}.\par
+\page
+
+#{\footnote 20861}
+${\footnote Fog Type}
++{\footnote 1}
+K{\footnote Fog Type;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20861.bmp\} Fog Type\par
+\pard \plain \cf0 \fs20
+{\uldb Scene}{\v 20857}\par
+\par
+The \b \i fog type \i0 \b0 element enables to choose the following fog type:\par
+\par
+\b 0 \b0 \tab linear fog\par
+\b 1 \b0 \tab exponential fog\par
+\b 2 \b0 \tab quadratic fog\par
+\b +4 \b0 \tab fog correction (range vertex fog will be used, otherwise depth table fog is used)\par
+\par
+The \b \i linear fog \i0 \b0 is determined by the {\uldb start of linear fog}{\v 20862} and the {\uldb end of linear fog}{\v 20863} parameters. The fog density is linear dependent on the distance from the viewer according to the term \b fog = (end - distance)/(end - start)\b0 . By interchanging the start and end of linear fog the fog can be inverted, the fog will be getting thin with increasing distance. This feature is suppressed in some drivers. In such case the fog is switched off.\par
+\par
+The \b \i exponential fog \i0 \b0 is defined by the {\uldb density of fog}{\v 20864} parameter. The exponential fog density is dependent on the distance from the viewer according to the following relationship: \b fog = 1 / (e ^ (distance * density))\b0 .\par
+\par
+The \b \i quadratic fog \i0 \b0 is defined by the {\uldb density of fog}{\v 20864} parameter. The quadratic fog density is dependent on the distance from the viewer according to the following relationship: \b fog = 1 / (e ^ ((distance * density)^2))\b0 .\par
+\par
+The exponential fog type is set as the default setting. If the fog is in the switched off state, it is switched on by setting the fog type. The default setting of its color will take place according to the actual {\uldb scene background color}{\v 20858} setting.\par
+\par
+By adding \b 4 \b0 to a fog type the \b \i corrected fog \i0 \b0 will be used. In calculating a fog, the so called table fog is normally utilized. The table fog is applied to the entire object surface. To calculate the object distance the object depth information is used, which is the distance from the projection plane. This will cause the objects lying on the projection plane periphery to be, as a matter of fact, more distant from the viewer than objects having the same depth and lying in the projection plane center (The depth is given by the plane). If the viewer rotates, the objects located on the picture periphery will be coming out of the fog (They will get into an area having a smaller distance from the projection plane). This problem can be eliminated by the corrected fog type, called "range-based fog". This fog type does not use the depth information. Here, each object's real distance from the viewer is calculated (which is a very time consuming operation). This fog type is mostly not hardware supported, it is therefore connected with a software type fog, called "vertex fog". By the vertex fog, a certain fog is determined for the vertices of the faces being displayed. For the face surface the fog is linearly interpolated. With large surfaces the vertex fog is not displayed properly. For example, if the viewer is standing in the center of a square surface, so the surface vertices are lying in the fog. Due to the interpolation, the surface center in which the viewer is standing is also fogged in an improper manner.\par
+\page
+
+#{\footnote 20862}
+${\footnote Start of Linear Fog}
++{\footnote 1}
+K{\footnote Start of Linear Fog;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20862.bmp\} Start of Linear Fog\par
+\pard \plain \cf0 \fs20
+{\uldb Scene}{\v 20857}\par
+\par
+The \b \i start of linear fog \i0 \b0 element defines the start of the {\uldb linear fog}{\v 20861}. The start of fog represents the distance from the viewer where the linear fog starts to assert itself. The default setting of the linear fog start is \b 0\b0 . If the fog is in the switched off state, it will get switched on by setting the start of linear fog. The default setting of its color will take place according to the current {\uldb scene background color}{\v 20858} setting.\par
+\page
+
+#{\footnote 20863}
+${\footnote End of Linear Fog}
++{\footnote 1}
+K{\footnote End of Linear Fog;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20863.bmp\} End of Linear Fog\par
+\pard \plain \cf0 \fs20
+{\uldb Scene}{\v 20857}\par
+\par
+The \b \i end of linear fog \i0 \b0 element defines the end of the {\uldb linear fog}{\v 20861}. The end of fog represents the distance from the viewer where the linear fog reaches its maximum density. The default setting of the linear fog end is \b 20\b0 . If the fog is in the switched off state, it will get switched on by setting the end of linear fog. The default setting of its color will take place according to the current {\uldb scene background color}{\v 20858} setting.\par
+\page
+
+#{\footnote 20864}
+${\footnote Density of Exponential And Quadratic Fog}
++{\footnote 1}
+K{\footnote Density of Exponential And Quadratic Fog;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20864.bmp\} Density of Exponential And Quadratic Fog\par
+\pard \plain \cf0 \fs20
+{\uldb Scene}{\v 20857}\par
+\par
+The \b \i density of exponential and quadratic fog \i0 \b0 element defines the density of the {\uldb exponential or quadratic fog}{\v 20861}. The value of the fog density may range between \b 0 \b0 and \b 1\b0 . The default value of the fog density is \b 0.1\b0 . If the fog is in the switched off state, it will get switched on by setting the density of exponential and quadratic fog. The default setting of its color will take place according to the current {\uldb scene background color}{\v 20858} setting.\par
+\page
+
+#{\footnote 20865}
+${\footnote Distance of Projection Plane}
++{\footnote 1}
+K{\footnote Distance of Projection Plane;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20865.bmp\} Distance of Projection Plane\par
+\pard \plain \cf0 \fs20
+{\uldb Scene}{\v 20857}\par
+\par
+By means of the \b \i distance of projection plane \i0 \b0 element the distance of the plane can be determined on which the scene being displayed is projected. The projection plane distance specifies how large portion of the scene is supposed to be displayed. The default setting of this distance is \b 1\b0 . When the projection plane gets more distant, the cut-out of the scene displayed gets smaller. Thus a zoom scene effect (a telescope function) may be created. When the projection plane gets nearer, the cut-out of the scene displayed gets larger. Thus the fish-eye effect may be created. The projection plane distance may not be <= 0.\par
+\par
+For the projection plane it holds that objects the distance of which equals that of the projection plane are displayed in the unity magnitude. The unity magnitude is (3D_window_width + 3D_window_height)/2. For a square 3D window a wall sized 1x1 and lying in the projection plane will fill out exactly the entire 3D window area.\par
+\par
+In the 3D window objects having their minimum distance equal to 1/4 of the projection plane distance will be displayed. The maximum distance for displaying objects equals the {\uldb visual range distance}{\v 20866}.\par
+\page
+
+#{\footnote 20866}
+${\footnote Visual Range Distance}
++{\footnote 1}
+K{\footnote Visual Range Distance;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20866.bmp\} Visual Range Distance\par
+\pard \plain \cf0 \fs20
+{\uldb Scene}{\v 20857}\par
+\par
+The \b \i visual range distance \i0 \b0 element defines the maximum distance in which objects are still visible. By limiting the visual range distance, thus subsequently reducing the number of objects displayed, the rendering speed (i.e. the 3D graphics painting speed) can be increased. At the same time, by diminishing the visual range distance the accuracy of the face intersection will be increased (the accuracy of the depth buffer will be increased). As a consequence, the visual range distance should be minimized. The visual range minimization is frequently combined with the {\uldb fog}{\v 20860} (distant objects vanishing in the fog or darkness), or the outlook may be restricted by the room walls. The default setting of the visual range is 100.\par
+\page
+
+#{\footnote 20856}
+${\footnote Projection Type}
++{\footnote 1}
+K{\footnote Projection Type;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20856.bmp\} Projection Type\par
+\pard \plain \cf0 \fs20
+{\uldb Scene}{\v 20857}\par
+\par
+The \b \i projection type \i0 \b0 element is a numeric variable determining the mode of the scene projection onto a 3D window:\par
+\par
+\b \i 0 \i0 \b0 \tab perspective projection (default)\par
+\b \i 1 \i0 \b0 \tab ortographic projection\par
+\b \i 2 \i0 \b0 \tab perspective projection, right-handed coordinate system\par
+\b \i 3 \i0 \b0 \tab ortographic projection, right-handed coordinate system\par
+\par
+The 0 and 1 projection types are projections of the {\uldb left-handed coordinate system}{\v 20815} (default coordinate system), the 2 and 3 projection types are projections of the right-handed coordinate system (the Z-axis pointing in the opposite direction, and the rotations having the opposite directions). The newly created objects are accommodated to the right-handed coordinate system (this does not hold for objects read from a file or a text), therefore the right-handed coordinate system should be activated before some object is created. For the right-handed coordinate system it is necessary to correct the Z coordinate of the default camera (to change it from -2 to 2), as well as to change the default lighting rotation (the Y rotation from +45 degrees to -45 degrees, the X rotation from +45 degrees to +135 degrees).\par
+\par
+The 0 and 2 projections are perspective projections. The object gets diminished with increasing distance. The 1 and 3 projections are orthographic projections. The object size does not depend on distance. The orthographic projection is used for engineering purposes (machine drawings, CAD programs). In the orthographic projection the scale of the scene display can be controlled by the camera scale adjustment.\par
+\page
+
+#{\footnote 20935}
+${\footnote Render without Displaying}
++{\footnote 1}
+K{\footnote Render without Displaying;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20935.bmp\} Render without Displaying\par
+\pard \plain \cf0 \fs20
+{\uldb Scene}{\v 20857}\par
+\par
+The \b \i render without displaying \i0 \b0 element is a command used in special cases to render the scene without displaying on the screen. Main utilization of the command is multiple rendering e.g. when creating shadow effects behind moving objects. First rendering of the scene is usually realized with {\uldb clearing of the background}{\v 20858}. Following rendering proceeds without background clearing, objects overlap original image. Last rendering will proceed with the {\uldb wait}{\v 20122} command, with drawing on the sceen.\par
+\page
+
+}

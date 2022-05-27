@@ -1,0 +1,410 @@
+{\rtf1 \ansi \deff0
+
+@{\footnote ------- definice fontù --------- }
+
+{\fonttbl 
+{\f0 \fswiss MS San Serif;}
+}
+
+@{\footnote ------- definice barev --------- }
+
+{\colortbl
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red192\green192\blue192;
+\red128\green128\blue128;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+
+@{\footnote Použití barev:
+	0 - èerná
+	1 - tmavì èervená
+	2 - tmavì zelená
+	3 - hnìdá
+	4 - tmavì modrá
+	5 - tmavì fialová
+	6 - tmavì modrozelená
+	7 - šedá
+	8 - tmavì šedá
+	9 - èervená
+	10 - zelená
+	11 - žlutá
+	12 - modrá
+	13 - fialová
+	14 - modrozelená
+	15 - bílá
+}
+
+#{\footnote 20548}
+#{\footnote 20549}
+#{\footnote 20550}
+${\footnote Sheet}
++{\footnote 1}
+K{\footnote Sheet;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Sheet\par
+\pard \plain \cf0 \fs20
+{\uldb Structural Elements of a Program}{\v Structural Elements of a Program}\par
+\par
+A sheet is a matrix of items. The {\uldb main sheet}{\v Global Variables and Functions} is displayed in a window as a {\uldb item layer}{\v Layers}.\par
+\par
+{\uldb \{bmc IDF20249.bmp\}\tab sheet border}{\v 20249}\par
+{\uldb \{bmc IDF20240.bmp\}\tab item identity}{\v 20240}\par
+\{bmc IDF20549.bmp\}\tab \b \i width of sheet \i0 \b0 \par
+\{bmc IDF20550.bmp\}\tab \b \i height of sheet \i0 \b0 \par
+\par
+The \b \i width of sheet \i0 \b0 and \b \i height of sheet \i0 \b0 elements return the dimensions of a sheet specified as a parameter. If no sheet is specified, then the main sheet dimensions are returned.\par
+\par
+{\uldb \{bmc IDF20638.bmp\}\tab full screen mode}{\v 20638}\par
+{\uldb \{bmc IDF20055.bmp\}\tab sheet - extension}{\v 20055}\par
+{\uldb \{bmc IDF20241.bmp\}\tab sprites - extension}{\v 20241}\par
+\page
+
+#{\footnote 20249}
+${\footnote Sheet Border}
++{\footnote 1}
+K{\footnote Sheet Border;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20249.bmp\} Sheet Border\par
+\pard \plain \cf0 \fs20
+{\uldb Sheet}{\v 20548}\par
+\par
+The \b \i sheet border \i0 \b0 element is a constant of the item type. It is used to {\uldb test}{\v 20240} the invalidity of an item, i.e. the fact whether Peter is {\uldb standing in front}{\v 20076} of the sheet border. The item of the sheet border can be stored in the item variable like other items; unlike normal items it is not stored in a sheet.\par
+\page
+
+#{\footnote 20240}
+${\footnote Item Identity}
++{\footnote 1}
+K{\footnote Item Identity;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20240.bmp\} Item Identity\par
+\pard \plain \cf0 \fs20
+{\uldb Sheet}{\v 20548}\par
+\par
+The \b \i item identity \i0 \b0 element serves to compare items. When doing this, it is only judged if the matter in question is an identical data object of the item type, the contents of the item pictures being not compared. One or more items can be specified. The comparison takes place from the top downwards. The element returns a logic validity flag in case all items are identical. A special case is comparing one item. The item is compared with an empty item, e.g. to test, whether a valid item has been readed from a file. The same effect is attained by comparing with the {\uldb sheet border}{\v 20249}.\par
+\page
+
+#{\footnote 20638}
+${\footnote Full Screen Mode}
++{\footnote 1}
+K{\footnote Full Screen Mode;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20638.bmp\} Full Screen Mode\par
+\pard \plain \cf0 \fs20
+{\uldb Sheet}{\v 20548}\par
+\par
+The \b \i full screen mode \i0 \b0 command serves to switch the full screen mode on or off. Using this mode, the program is not displayed in a window, but over the entire screen. At the same time the display is switched over to the video mode, which suits the {\uldb main sheet}{\v Global Variables and Functions} size best. The main advantage of the full screen mode is a higher graphic service speed, thank, among others, to switching the display to a mode possessing a lower resolution (instead of extending the window over the entire screen).\par
+\par
+As a command parameter a logic flag is entered deciding whether the full screen mode should be on or off. Without stating the parameter the command will cause a switching over to the opposite state. The same effect is accomplished by pressing the key combination \b \i Alt+Enter\i0 \b0 . By means of these keys a program created in the Peter system can any time be switched between the full screen and window mode.\par
+\par
+A condition for running the full screen mode is the installation of the DirectX driver. In Windows 98 this driver makes the system's standard constituent, its installation thus not being necessary. If the DirectX driver is not installed, the program will work in a normal way in the window mode. In Windows NT the full screen mode is not supported.\par
+\par
+The display resolution in the full screen mode depends above all on the main sheet size. Pursuant to the main sheet size a video mode having the same or the next higher resolution should be selected among the computer video modes available. The maximum attainable display resolution depends on the video card present in the computer as well as on the monitor connected to it.\par
+\par
+\b \cf12 Recommended video modes: \cf0 \b0 \par
+\tab \b 20 x 12 \b0 squares, i.e. \b 640 x 400 \b0 pixels (often, but not always supported video mode)\par
+\tab \b 20 x 15 \b0 squares, i.e. \b 640 x 480 \b0 pixels (basic video mode in all video cards)\par
+\tab \b 25 x 18 \b0 squares, i.e. \b 800 x 600 \b0 pixels (supported by all video cards including notebooks)\par
+\tab \b 32 x 24 \b0 squares, i.e. \b 1024 x 768 \b0 pixels (maximum video mode for 14" monitors)\par
+\tab \b 36 x 27 \b0 squares, i.e. \b 1152 x 864 \b0 pixels (less usual video mode)\par
+\tab \b 40 x 32 \b0 squares, i.e. \b 1280 x 1024 \b0 pixels (maximum video mode for 15" monitors)\par
+\tab \b 50 x 32 \b0 squares, i.e. \b 1600 x 1024 \b0 pixels (not very usual video mode)\par
+\tab \b 50 x 37 \b0 squares, i.e. \b 1600 x 1200 \b0 pixels (maximum video mode for 17" monitors)\par
+\par
+The sheet display is adapted to the preset video mode, thus the program will work properly even for not convenient video modes, though showing a slightly deteriorated display quality. Whether a required video mode is supported can be found after switching on the full screen mode by means of the {\uldb window width}{\v 20598} function for the {\uldb window identification number}{\v 20593} = -1.\par
+\par
+In the full screen mode neither the upper window bar, nor the status line are displayed. Therefore, when developing a program, it is necessary to remember the program end servicing (by the Esc key or by clicking on the button). If necessary, the program can be finished by pressing \b \i Alt+F4\i0 \b0 , or by switching over to the window mode by pressing \b \i Alt+Enter\i0 \b0 .\par
+\page
+
+#{\footnote 20055}
+#{\footnote 20551}
+#{\footnote 20552}
+#{\footnote 20553}
+${\footnote Sheet - Extension}
++{\footnote 1}
+K{\footnote Sheet - Extension;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20055.bmp\} Sheet - Extension\par
+\pard \plain \cf0 \fs20
+{\uldb Sheet}{\v 20548}\par
+\par
+{\uldb \{bmc IDF20643.bmp\}\tab sheet identity}{\v 20643}\par
+{\uldb \{bmc IDF20746.bmp\}\tab new sheet}{\v 20746}\par
+{\uldb \{bmc IDF20554.bmp\}\tab item}{\v 20554}\par
+{\uldb \{bmc IDF20558.bmp\}\tab flag 1}{\v 20558}\par
+{\uldb \{bmc IDF20559.bmp\}\tab flag 2}{\v 20559}\par
+{\uldb \{bmc IDF20560.bmp\}\tab flag 3}{\v 20560}\par
+{\uldb \{bmc IDF20561.bmp\}\tab flag 4}{\v 20561}\par
+{\uldb \{bmc IDF20562.bmp\}\tab flag 5}{\v 20562}\par
+{\uldb \{bmc IDF20555.bmp\}\tab numeric value 1}{\v 20555}\par
+{\uldb \{bmc IDF20556.bmp\}\tab numeric value 2}{\v 20556}\par
+{\uldb \{bmc IDF20557.bmp\}\tab numeric value 3}{\v 20557}\par
+{\uldb \{bmc IDF20563.bmp\}\tab copy cutout from the sheet}{\v 20563}\par
+\page
+
+#{\footnote 20643}
+${\footnote Sheet Identity}
++{\footnote 1}
+K{\footnote Sheet Identity;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20643.bmp\} Sheet Identity\par
+\pard \plain \cf0 \fs20
+{\uldb Sheet - Extension}{\v 20055}\par
+\par
+The \b \i sheet identity \i0 \b0 element serves to compare sheets. By doing this, not the sheet areas are compared, but the fact is investigated, if an identical data object of the sheet type is concerned. One or more sheets can be entered. The comparing process takes place from the top downwards. The element returns a logic validity flag in case all sheets are identical. A special case is comparing one sheet. Here, the sheet is compared with an empty sheet, e.g. to test, if a valid sheet has been readed from a file.\par
+\page
+
+#{\footnote 20746}
+#{\footnote 20747}
+#{\footnote 20748}
+${\footnote New Sheet}
++{\footnote 1}
+K{\footnote New Sheet;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20746.bmp\} New Sheet\par
+\pard \plain \cf0 \fs20
+{\uldb Sheet - Extension}{\v 20055}\par
+\par
+\{bmc IDF20746.bmp\} \b \i new sheet \i0 \b0 \par
+\tab \{bmc IDF20747.bmp\} \b \i width of sheet \i0 \b0 \par
+\tab \{bmc IDF20748.bmp\} \b \i height of sheet \i0 \b0 \par
+\par
+The \b \i new sheet \i0 \b0 function serves to create a new sheet having specified dimensions. The new sheet is filled out by {\uldb empty squares}{\v Global Variables and Functions}. The function is intended above all to set an arbitrary program window size by changing the {\uldb main sheet}{\v Global Variables and Functions} size.\par
+\page
+
+#{\footnote 20554}
+${\footnote Item from Sheet}
++{\footnote 1}
+K{\footnote Item from Sheet;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20554.bmp\} Item from Sheet\par
+\pard \plain \cf0 \fs20
+{\uldb Sheet - Extension}{\v 20055}\par
+\par
+\{bmc IDF20554.bmp\} \b \i item \i0 \b0 \par
+\tab \{bmc IDF20553.bmp\} \b \i sheet \i0 \b0 \par
+\tab \{bmc IDF20551.bmp\} \b \i X coordinate \i0 \b0 \par
+\tab \{bmc IDF20552.bmp\} \b \i Y coordinate \i0 \b0 \par
+\par
+The \b \i item from sheet \i0 \b0 function serves to download an item from the sheet specified. If no sheet is specified as a parameter, the {\uldb main sheet}{\v Global Variables and Functions} is used as a default. On the function output an item from the coordinates specified or the invalid item ({\uldb sheet border}{\v 20249}) is returned, if the coordinates are outside the sheet.\par
+\page
+
+#{\footnote 20558}
+${\footnote Flag 1 from Sheet}
++{\footnote 1}
+K{\footnote Flag 1 from Sheet;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20558.bmp\} Flag 1 from Sheet\par
+\pard \plain \cf0 \fs20
+{\uldb Sheet - Extension}{\v 20055}\par
+\par
+\{bmc IDF20558.bmp\} \b \i flag 1 \i0 \b0 \par
+\tab \{bmc IDF20553.bmp\} \b \i sheet \i0 \b0 \par
+\tab \{bmc IDF20551.bmp\} \b \i X coordinate \i0 \b0 \par
+\tab \{bmc IDF20552.bmp\} \b \i Y coordinate \i0 \b0 \par
+\par
+The \b \i flag 1 from sheet \i0 \b0 function serves to download the switch 1 state from the sheet specified. If no sheet is specified as a parameter, the {\uldb main sheet}{\v Global Variables and Functions} will be used as a default. On the function output the logic flag is returned as the switch state.\par
+\page
+
+#{\footnote 20559}
+${\footnote Flag 2 from Sheet}
++{\footnote 1}
+K{\footnote Flag 2 from Sheet;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20559.bmp\} Flag 2 from Sheet\par
+\pard \plain \cf0 \fs20
+{\uldb Sheet - Extension}{\v 20055}\par
+\par
+\{bmc IDF20559.bmp\} \b \i flag 2 \i0 \b0 \par
+\tab \{bmc IDF20553.bmp\} \b \i sheet \i0 \b0 \par
+\tab \{bmc IDF20551.bmp\} \b \i X coordinate \i0 \b0 \par
+\tab \{bmc IDF20552.bmp\} \b \i Y coordinate \i0 \b0 \par
+\par
+The \b \i flag 2 from sheet \i0 \b0 function serves to download the switch 2 state from the sheet specified. If no sheet is specified as a parameter, the {\uldb main sheet}{\v Global Variables and Functions} will be used as a default. On the function output the logic flag is returned as the switch state.\par
+\page
+
+#{\footnote 20560}
+${\footnote Flag 3 from Sheet}
++{\footnote 1}
+K{\footnote Flag 3 from Sheet;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20560.bmp\} Flag 3 from Sheet\par
+\pard \plain \cf0 \fs20
+{\uldb Sheet - Extension}{\v 20055}\par
+\par
+\{bmc IDF20560.bmp\} \b \i flag 3 \i0 \b0 \par
+\tab \{bmc IDF20553.bmp\} \b \i sheet \i0 \b0 \par
+\tab \{bmc IDF20551.bmp\} \b \i X coordinate \i0 \b0 \par
+\tab \{bmc IDF20552.bmp\} \b \i Y coordinate \i0 \b0 \par
+\par
+The \b \i flag 3 from sheet \i0 \b0 function serves to download the switch 3 state from the sheet specified. If no sheet is specified as a parameter, the {\uldb main sheet}{\v Global Variables and Functions} will be used as a default. On the function output the logic flag is returned as the switch state.\par
+\page
+
+#{\footnote 20561}
+${\footnote Flag 4 from Sheet}
++{\footnote 1}
+K{\footnote Flag 4 from Sheet;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20561.bmp\} Flag 4 from Sheet\par
+\pard \plain \cf0 \fs20
+{\uldb Sheet - Extension}{\v 20055}\par
+\par
+\{bmc IDF20561.bmp\} \b \i flag 4 \i0 \b0 \par
+\tab \{bmc IDF20553.bmp\} \b \i sheet \i0 \b0 \par
+\tab \{bmc IDF20551.bmp\} \b \i X coordinate \i0 \b0 \par
+\tab \{bmc IDF20552.bmp\} \b \i Y coordinate \i0 \b0 \par
+\par
+The \b \i flag 4 from sheet \i0 \b0 function serves to download the switch 4 state from the sheet specified. If no sheet is specified as a parameter, the {\uldb main sheet}{\v Global Variables and Functions} will be used as a default. On the function output the logic flag is returned as the switch state.\par
+\page
+
+#{\footnote 20562}
+${\footnote Flag 5 from Sheet}
++{\footnote 1}
+K{\footnote Flag 5 from Sheet;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20562.bmp\} Flag 5 from Sheet\par
+\pard \plain \cf0 \fs20
+{\uldb Sheet - Extension}{\v 20055}\par
+\par
+\{bmc IDF20562.bmp\} \b \i flag 5 \i0 \b0 \par
+\tab \{bmc IDF20553.bmp\} \b \i sheet \i0 \b0 \par
+\tab \{bmc IDF20551.bmp\} \b \i X coordinate \i0 \b0 \par
+\tab \{bmc IDF20552.bmp\} \b \i Y coordinate \i0 \b0 \par
+\par
+The \b \i flag 5 from sheet \i0 \b0 function serves to download the switch 5 state from the sheet specified. If no sheet is specified as a parameter, the {\uldb main sheet}{\v Global Variables and Functions} will be used as a default. On the function output the logic flag is returned as the switch state.\par
+\page
+
+#{\footnote 20555}
+${\footnote Numeric Value 1 from Sheet}
++{\footnote 1}
+K{\footnote Numeric Value 1 from Sheet;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20555.bmp\} Numeric Value 1 from Sheet\par
+\pard \plain \cf0 \fs20
+{\uldb Sheet - Extension}{\v 20055}\par
+\par
+\{bmc IDF20555.bmp\} \b \i numeric value 1 \i0 \b0 (range 0 to 1023) \par
+\tab \{bmc IDF20553.bmp\} \b \i sheet \i0 \b0 \par
+\tab \{bmc IDF20551.bmp\} \b \i X coordinate \i0 \b0 \par
+\tab \{bmc IDF20552.bmp\} \b \i Y coordinate \i0 \b0 \par
+\par
+The \b \i numeric value 1 from sheet \i0 \b0 function serves to download the numeric value 1 state from the sheet specified. If no sheet is specified as a parameter, the {\uldb main sheet}{\v Global Variables and Functions} will be used as a default. On the function output the integer value ranging between 0 and 1023 will be returned as the numeric value 1 state.\par
+\page
+
+#{\footnote 20556}
+${\footnote Numeric Value 2 from Sheet}
++{\footnote 1}
+K{\footnote Numeric Value 2 from Sheet;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20556.bmp\} Numeric Value 2 from Sheet\par
+\pard \plain \cf0 \fs20
+{\uldb Sheet - Extension}{\v 20055}\par
+\par
+\{bmc IDF20556.bmp\} \b \i numeric value 2 \i0 \b0 (range 0 to 1023) \par
+\tab \{bmc IDF20553.bmp\} \b \i sheet \i0 \b0 \par
+\tab \{bmc IDF20551.bmp\} \b \i X coordinate \i0 \b0 \par
+\tab \{bmc IDF20552.bmp\} \b \i Y coordinate \i0 \b0 \par
+\par
+The \b \i numeric value 2 from sheet \i0 \b0 function serves to download the numeric value 2 state from the sheet specified. If no sheet is specified as a parameter, the {\uldb main sheet}{\v Global Variables and Functions} will be used as a default. On the function output the integer value ranging between 0 and 1023 will be returned as the numeric value 2 state.\par
+\page
+
+#{\footnote 20557}
+${\footnote Numeric Value 3 from Sheet}
++{\footnote 1}
+K{\footnote Numeric Value 3 from Sheet;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20557.bmp\} Numeric Value 3 from Sheet\par
+\pard \plain \cf0 \fs20
+{\uldb Sheet - Extension}{\v 20055}\par
+\par
+\{bmc IDF20557.bmp\} \b \i numeric value 3 \i0 \b0 (range 0 to 127) \par
+\tab \{bmc IDF20553.bmp\} \b \i sheet \i0 \b0 \par
+\tab \{bmc IDF20551.bmp\} \b \i X coordinate \i0 \b0 \par
+\tab \{bmc IDF20552.bmp\} \b \i Y coordinate \i0 \b0 \par
+\par
+The \b \i numeric value 3 from sheet \i0 \b0 function serves to download the numeric value 3 state from the sheet specified. If no sheet is specified as a parameter, the {\uldb main sheet}{\v Global Variables and Functions} will be used as a default. On the function output the integer value ranging between 0 and 127 will be returned as the numeric value 3 state.\par
+\page
+
+#{\footnote 20563}
+#{\footnote 20564}
+#{\footnote 20565}
+#{\footnote 20566}
+#{\footnote 20567}
+#{\footnote 20568}
+${\footnote Copy Cutout from the Sheet}
++{\footnote 1}
+K{\footnote Copy Cutout from the Sheet;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20563.bmp\} Copy Cutout from the Sheet\par
+\pard \plain \cf0 \fs20
+{\uldb Sheet - Extension}{\v 20055}\par
+\par
+\{bmc IDF20563.bmp\} \b \i copy cutout from the sheet \i0 \b0 \par
+\tab \{bmc IDF20553.bmp\} \b \i destination sheet \i0 \b0 \par
+\tab \{bmc IDF20551.bmp\} \b \i X coordinate \i0 \b0 \par
+\tab \{bmc IDF20552.bmp\} \b \i Y coordinate \i0 \b0 \par
+\tab \{bmc IDF20564.bmp\} \b \i sheet with cutout \i0 \b0 \par
+\tab \{bmc IDF20565.bmp\} \b \i X coordinate of cutout \i0 \b0 \par
+\tab \{bmc IDF20566.bmp\} \b \i Y coordinate of cutout \i0 \b0 \par
+\tab \{bmc IDF20567.bmp\} \b \i cutout width \i0 \b0 \par
+\tab \{bmc IDF20568.bmp\} \b \i cutout height \i0 \b0 \par
+\par
+The \b \i copy cutout from sheet \i0 \b0 function serves to copy a part of one sheet to another sheet. The first parameter, the \b \i destination sheet \i0 \b0 represents the destination sheet, in which the copy cutout should be placed. If no sheet is specified, the {\uldb main sheet}{\v Global Variables and Functions} will be used as a default. The \b \i X coordinate \i0 \b0 and \b \i Y coordinate \i0 \b0 parameters determine the target position in which the copy cutout should be placed in the destination sheet. The \b \i sheet with cutout \i0 \b0 is the source sheet, from which the cutout will be loaded. If no sheet is specified, the main sheet will be used as a default. The other parameters define the position and the size of the cutout in the source sheet.\par
+\par
+The function output is a sheet. The sheets used as the function parameters are not influenced by the function. If a copy has to be carried out into the main sheet, the output of this function has to be assigned to the main sheet variable.\par
+\page
+
+#{\footnote 20241}
+#{\footnote 20570}
+#{\footnote 20571}
+#{\footnote 20572}
+#{\footnote 20573}
+#{\footnote 20574}
+#{\footnote 20575}
+${\footnote Sprites - Extension}
++{\footnote 1}
+K{\footnote Sprites - Extension;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20241.bmp\} Sprites - Extension\par
+\pard \plain \cf0 \fs20
+{\uldb Sheet}{\v 20548}\par
+\par
+{\uldb \{bmc IDF20645.bmp\}\tab sprite identity}{\v 20645}\par
+\{bmc IDF20570.bmp\}\tab \b \i move of all sprites in X direction \i0 \b0 \par
+\{bmc IDF20571.bmp\}\tab \b \i move of all sprites in Y direction \i0 \b0 \par
+\par
+The \b \i move of all sprites \i0 \b0 commands induce an immediate move of the sprites by a specified increment. This increment may be both a positive and a negative number. During the move of all sprites the starting position and destination position of the sprite motion are readjusted independently on the sprite motion speed. During the move of all sprites the sprites keep on moving in the original direction, being shifted only by the increment specified. In practice, the result of this operation appears as if the window for viewing the sprites would be shifted.\par
+\par
+\{bmc IDF20572.bmp\}\tab \b \i left edge of sprites window \i0 \b0 \par
+\{bmc IDF20573.bmp\}\tab \b \i lower edge of sprites window \i0 \b0 \par
+\{bmc IDF20574.bmp\}\tab \b \i right edge of sprites window \i0 \b0 \par
+\{bmc IDF20575.bmp\}\tab \b \i upper edge of sprites window \i0 \b0 \par
+\par
+The "sprites window" defines that portion of the window, in which the sprites are visible. As a default the sprites are visible in the entire window. By redefining the sprites window borders that sheet portion can be determined, in which the sprites are supposed to be visible. This feature is important above all in the case, when a cutout of a rather large sheet is displayed in the window, and if program commanding buttons, too, should be included in the window.\par
+\par
+\page
+
+#{\footnote 20645}
+${\footnote Sprite Identity}
++{\footnote 1}
+K{\footnote Sprite Identity;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20645.bmp\} Sprite Identity\par
+\pard \plain \cf0 \fs20
+{\uldb Sheet - Extension}{\v 20241}\par
+\par
+The \b \i sprite identity \i0 \b0 element serves to compare sprites. When doing this, it is only judged if the matter in question is an identical data object of the sprite type, the contents of the sprites being not compared. One or more sprites can be specified. The comparison takes place from the top downwards. The element returns a logic validity flag in case all sprites are identical. A special case is comparing one sprite. The sprite is compared with an empty sprite, e.g. to test, whether a valid sprite has been readed from a file.\par
+\page
+
+}

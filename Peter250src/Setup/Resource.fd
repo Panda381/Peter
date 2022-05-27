@@ -1,0 +1,5 @@
+!MS$FREEFORM
+! Microsoft Developer Studio generated include file.
+! Used by Resource.rc
+!
+      integer, parameter :: IDN_MAINFRAME                   = 1

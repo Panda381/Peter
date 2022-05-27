@@ -1,0 +1,418 @@
+{\rtf1 \ansi \deff0
+
+@{\footnote ------- definice fontù --------- }
+
+{\fonttbl 
+{\f0 \fswiss MS San Serif;}
+}
+
+@{\footnote ------- definice barev --------- }
+
+{\colortbl
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red192\green192\blue192;
+\red128\green128\blue128;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+
+@{\footnote Použití barev:
+	0 - èerná
+	1 - tmavì èervená
+	2 - tmavì zelená
+	3 - hnìdá
+	4 - tmavì modrá
+	5 - tmavì fialová
+	6 - tmavì modrozelená
+	7 - šedá
+	8 - tmavì šedá
+	9 - èervená
+	10 - zelená
+	11 - žlutá
+	12 - modrá
+	13 - fialová
+	14 - modrozelená
+	15 - bílá
+}
+
+#{\footnote 20075}
+${\footnote Sound and Music}
++{\footnote 1}
+K{\footnote Sound and Music;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Sound and Music\par
+\pard \plain \cf0 \fs20
+{\uldb Structural Elements of a Program}{\v Structural Elements of a Program}\par
+\par
+{\uldb \{bmc IDF20298.bmp\}\tab sound}{\v 20298}\par
+{\uldb \{bmc IDF20425.bmp\}\tab music}{\v 20425}\par
+{\uldb \{bmc IDF20426.bmp\}\tab audio CD}{\v 20426}\par
+{\uldb \{bmc IDF20778.bmp\}\tab mixer device}{\v 20778}\par
+\page
+
+#{\footnote 20298}
+${\footnote Sound}
++{\footnote 1}
+K{\footnote Sound;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Sound\par
+\pard \plain \cf0 \fs20
+{\uldb Sound and Music}{\v 20075}\par
+\par
+{\uldb \{bmc IDF20299.bmp\}\tab play sound}{\v 20299}\par
+{\uldb \{bmc IDF20383.bmp\}\tab sound test}{\v 20383}\par
+{\uldb \{bmc IDF20300.bmp\}\tab stop sound}{\v 20300}\par
+{\uldb \{bmc IDF20640.bmp\}\tab position in playing sound}{\v 20640}\par
+{\uldb \{bmc IDF20641.bmp\}\tab pause/continue playing sound}{\v 20641}\par
+{\uldb \{bmc IDF20541.bmp\}\tab merge of sounds}{\v 20541}\par
+{\uldb \{bmc IDF20646.bmp\}\tab sound identity}{\v 20646}\par
+{\uldb \{bmc IDF20714.bmp\}\tab distinguish code}{\v 20714}\par
+{\uldb \{bmc IDF20403.bmp\}\tab sound functions}{\v 20403}\par
+\page
+
+#{\footnote 20299}
+#{\footnote 20398}
+#{\footnote 20399}
+#{\footnote 20400}
+#{\footnote 20384}
+#{\footnote 20401}
+#{\footnote 20713}
+${\footnote Play Sound}
++{\footnote 1}
+K{\footnote Play Sound;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20299.bmp\} Play Sound\par
+\pard \plain \cf0 \fs20
+{\uldb Sound}{\v 20298}\par
+\par
+\{bmc IDF20299.bmp\} \b \i play sound \i0 \b0 \par
+\tab \{bmc IDF20398.bmp\} \b \i sound to be played \i0 \b0 \par
+\tab \{bmc IDF20399.bmp\} \b \i sound volume \i0 \b0 (0 to 1)\par
+\tab \{bmc IDF20400.bmp\} \b \i stereophonic balance \i0 \b0  (-1=left to +1=right; 0=middle)\par
+\tab \{bmc IDF20713.bmp\} \b \i speed of playing \i0 \b0 (1 = usual)\par
+\tab \{bmc IDF20384.bmp\} \b \i repetition number \i0 \b0 (0 = permanently)\par
+\tab \{bmc IDF20401.bmp\} \b \i break playing sound \i0 \b0 \par
+\par
+The service of the sound playback depends on the sound format. The most common sound format is the non-compressed PCM format, sample rate of 11025, 22050, or 44100 Hz, stereo or mono, 8 or 16 bits. This format is also used for sound recording in the editor environment. As the only format it enables a multi-channel playback of sound as well as the volume and stereophonic balance service. A sound playback run in another format causes switching off the other sounds; the parameters for volume and stereophonic balance setting exert no influence on the sound playback.\par
+\par
+The \b \i sound volume \i0 \b0 parameter is a numeric parameter serving to adjust the played sound volume. The sound volume can be adjusted in the non-compressed PCM sound format only. The value range is 0 (=silence) till 1 (=normal volume). The default value is 1.\par
+\par
+The \b \i stereophonic balance \i0 \b0 parameter is a numeric parameter serving to adjust the sound position in the stereophonic base. The stereophonic balance of a sound cannot be adjusted unless the non-compressed PCM sound format is used. The value range is -1 (left) to +1 (=right), 0 being the center. The default value is 0 (=center).\par
+\par
+The \b \i speed of playing \i0 \b0 parameter is a numeric parameter determining at which speed the sound will be played back. It governs the relative sound pitch. Without entering it its value is set to 1, indicating, that the speed is not changed. Increasing the number increases the playback speed and vice versa. For example, by entering 2 the sound will be played at double the speed, by entering 0.5 at half the speed.\par
+\par
+The \b \i repetition number \i0 \b0 parameter is a numeric parameter defining the number of sound playbacks. Setting it to 0 causes a permanent sound playback. The default value is 1.\par
+\par
+The \b \i break playing sound \i0 \b0 parameter is a logic flag ensuring a playback interruption of the previous identical sound. The flag default setting is "on". Each sound can be played only once at a time. If the interruption flag is not switched on and the sound is already being played, the new sound parameters only will be set. In this manner the volume, stereophonic balance and repetition number of a sound being already played back may be changed. If the interruption flag is on, the previous playback of this sound is interrupted, and the sound will be played from the beginning with the new parameters. If one sound needs to be played several times at a time, additional {\uldb distinguish code}{\v 20714} can be used.\par
+\par
+From among sound formats other than PCM especially the \b Microsoft ADPCM\b0 , compressing the sound with a 1:4 ratio, can be recommended. The sound playback quality is relatively high, the format being supported by all Windows versions. Another supported and recommended format is the MPEG Layer-3 (MP3), which reaches a high compression ratio (1:10 about), at the same time maintaining its high sound quality. A disadvantage is the necessity of installing a driver for the playback in some Windows versions, see e.g. \b http://www.iis.fhg.de/audio, (c) FraunHofer IIS\b0 . If need be, you can install the driver directly from the distribution CD-ROM of the Peter application's folder \b MP3CODEC\b0 .\par
+\par
+Whether the sound playback is supported or not can be found out immediately after starting the playback by testing, whether the sound is being played back. There are following reasons for the sound not being played back: the computer does not contain a sound card or its driver, the sound channel is occupied by another program, or no driver is installed to play back the sound format. The last reason concerns especially playing back the MP3 format, which is not supported in some Windows versions, if appropriate driver is not installed. In some cases it can be an option "sound codecs" of installed Windows components, which must be switched on.\par
+\par
+To provide for the continuity of playing back sounds in the PCM format a buffer is made use of. In case of an already running sound playback this may cause a delay in response to starting to play back another sound, or a delay in response to a sound parameter change of up to 0.3 seconds. If a DirectX support is installed on the computer, then DirectSound support is used to play sounds and this delay can be considerably shorter, 0.05 seconds typically.\par
+\page
+
+#{\footnote 20383}
+${\footnote Sound Test}
++{\footnote 1}
+K{\footnote Sound Test;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20383.bmp\} Sound Test\par
+\pard \plain \cf0 \fs20
+{\uldb Sound}{\v 20298}\par
+\par
+The \b \i sound test \i0 \b0 element serves to test, whether the sound playback is running. As a parameter the sound to be tested may be entered. The element will return a logic validity flag informing, whether the playback of the desired sound is running. The term "playback of the sound" meaning that further data of the sound to be played are ready. This test does not trace whether the sound is still present in the buffer for the playback. Therefore, should the program be concluded by means of this test after finishing the sound playback, the sound would be shortened by about 0.3 seconds.\par
+\par
+If no sound parameter is entered, then the playback of all sounds is tested. This option differs from the previous one by the fact that any sound playback is tested, including the sound from the buffer. Closing program by means of this test option will ensure a proper termination of all sounds playback, there will be no sound time shortening.\par
+\page
+
+#{\footnote 20300}
+${\footnote Stop Sound}
++{\footnote 1}
+K{\footnote Stop Sound;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20300.bmp\} Stop Sound\par
+\pard \plain \cf0 \fs20
+{\uldb Sound}{\v 20298}\par
+\par
+The \b \i stop sound \i0 \b0 command will cause the playback a sound entered as an command parameter to switch off. Without entering any sound the playback of all sounds will be terminated immediately, accompanied by deleting the sound buffer.\par
+\page
+
+#{\footnote 20640}
+${\footnote Position in Playing Sound}
++{\footnote 1}
+K{\footnote Position in Playing Sound;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20640.bmp\} Position in Playing Sound\par
+\pard \plain \cf0 \fs20
+{\uldb Sound}{\v 20298}\par
+\par
+The \b \i position in playing sound \i0 \b0 element enables to find out and to adjust the sound playback location (in seconds). This element can be used as a numeric variable. The position is related to the sound that was played back as the last sound. Adjusting the sound playback position is possible only for the PCM sound formats, the Microsoft ADPCM and the MPEG Layer-3 (MP3).\par
+\page
+
+#{\footnote 20641}
+${\footnote Pause/Continue Playing Sound}
++{\footnote 1}
+K{\footnote Pause/Continue Playing Sound;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20641.bmp\} Pause/Continue Playing Sound\par
+\pard \plain \cf0 \fs20
+{\uldb Sound}{\v 20298}\par
+\par
+By means of the \b \i pause/continue playing sound \i0 \b0 element the playback of all sounds may either be paused or continued. This element can be used as a logic variable, which can be both read and adjusted. The flag of the switched on state indicates that the sound playing is paused. Using this element as a command without entering any parameter causes the state to be switched over.\par
+\page
+
+#{\footnote 20541}
+${\footnote Merge of Sounds}
++{\footnote 1}
+K{\footnote Merge of Sounds;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20541.bmp\} Merge of Sounds\par
+\pard \plain \cf0 \fs20
+{\uldb Sound}{\v 20298}\par
+\par
+The \b \i merge of sound \i0 \b0 element makes it possible to merge several sounds following one after another to one sound. One or more sounds can be entered as parameter. This element returns a new sound which has come into being by linking the sounds one after another (in a succession from the top downwards). Only sounds having the PCM format can be merged, other format will be converted automatically to the PCM format. In case of diverse sound parameters the sounds are converted to an identical form.\par
+\page
+
+#{\footnote 20646}
+${\footnote Sound Identity}
++{\footnote 1}
+K{\footnote Sound Identity;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20646.bmp\} Sound Identity\par
+\pard \plain \cf0 \fs20
+{\uldb Sound}{\v 20298}\par
+\par
+The \b \i sound identity \i0 \b0 element serves to compare sounds. When doing this, it is only judged if the matter in question is an identical data object of the sound type, the contents of the sounds being not compared. One or more sounds can be specified. The comparison takes place from the top downwards. The element returns a logic validity flag in case all sounds are identical. A special case is comparing one sound. The sound is compared with an empty sound, e.g. to test, if a valid sound has been readed from a file.\par
+\page
+
+#{\footnote 20714}
+${\footnote Distinguish Code}
++{\footnote 1}
+K{\footnote Distinguish Code;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20714.bmp\} Distinguish Code\par
+\pard \plain \cf0 \fs20
+{\uldb Sound}{\v 20298}\par
+\par
+When manipulating with a sound (playing, closing, changing volume), all played sounds are scanned and in case of finding identical sound the required operation is performed with this just played sound. The \b \i distinguish code \i0 \b0 element is used to additional distinguishing of the identical played sounds. It is integer with range of 0 to 65535 (its default value is 0). If the same sound is found when executing a sound operation, then additionaly its distinguish code is compared and in case of equality of it the operation is performed. If it is not equal, then in case of playing sound command new sound is starting to play and current used distinguish code is saved for this sound.\par
+\page
+
+#{\footnote 20403}
+#{\footnote 20530}
+#{\footnote 20531}
+#{\footnote 20532}
+#{\footnote 20533}
+#{\footnote 20534}
+#{\footnote 20535}
+#{\footnote 20536}
+#{\footnote 20537}
+#{\footnote 20538}
+#{\footnote 20539}
+#{\footnote 20540}
+#{\footnote 20542}
+#{\footnote 20543}
+#{\footnote 20544}
+#{\footnote 20545}
+#{\footnote 20546}
+#{\footnote 20547}
+#{\footnote 20728}
+${\footnote Sound Functions}
++{\footnote 1}
+K{\footnote Sound Functions;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Sound Functions\par
+\pard \plain \cf0 \fs20
+{\uldb Sound}{\v 20298}\par
+\par
+\{bmc IDF20530.bmp\} \tab \b \i number of bits per sample \i0 \b0 (8 or 16) \par
+\par
+The \b \i number of bits per sample \i0 \b0 element returns the number of bits per sample for a sound entered as a parameter. For the PCM sound format a value of 8 or 16, for the Microsoft ADPCM a value of 4, for other formats mostly 0 will be returned.\par
+\par
+\{bmc IDF20531.bmp\} \tab \b \i sample frequency \i0 \b0 (Hz) \par
+\par
+The \b \i sample frequency \i0 \b0 element returns the sample frequency for a sound entered as a parameter. For the PCM sound format value of 11025, 22050 or 44100 will be returned.\par
+\par
+\{bmc IDF20532.bmp\} \tab \b \i is sound stereophonic? \i0 \b0 \par
+\par
+The \b \i is sound stereophonic? \i0 \b0 element returns a logic flag for a sound entered as a parameter, indicating, whether the sound is stereophonic (2 channels) or monophonic (1 channel).\par
+\par
+\{bmc IDF20533.bmp\} \tab \b \i length of sound \i0 \b0 (seconds) \par
+\par
+The \b \i length of sound \i0 \b0 element returns the sound length in seconds for a sound entered as a parameter.\par
+\par
+\{bmc IDF20534.bmp\} \tab \b \i convert to 8 bits \i0 \b0 \par
+\par
+The \b \i convert to 8 bits \i0 \b0 element converts a sound entered as an input parameter to an 8 bits per sample format and presents it as a new sound on the output. PCM format sounds only can be converted; other formats will be converted to PCM automatically.\par
+\par
+\{bmc IDF20535.bmp\} \tab \b \i convert to 16 bits \i0 \b0 \par
+\par
+The \b \i convert to 16 bits \i0 \b0 element converts a sound entered as an input parameter to a 16 bits per sample format and presents it as a new sound on the output. PCM format sounds only can be converted; other formats will be converted to PCM automatically.\par
+\par
+\{bmc IDF20536.bmp\} \tab \b \i convert to stereo \i0 \b0 \par
+\par
+The \b \i convert to stereo \i0 \b0 element converts a sound entered as an input parameter to a stereophonic format (2 channels) and presents it as a new sound on the output. PCM format sounds only can be converted; other formats will be converted to PCM automatically.\par
+\par
+\{bmc IDF20537.bmp\} \tab \b \i convert to mono \i0 \b0 \par
+\par
+The \b \i convert to mono \i0 \b0 element converts a sound entered as an input parameter to a monophonic format (1 channel) and presents it as a new sound on the output. PCM format sounds only can be converted; other formats will be converted to PCM automatically.\par
+\par
+\{bmc IDF20538.bmp\} \tab \b \i convert to 11 kHz \i0 \b0 \par
+\par
+The \b \i convert to 11 kHz \i0 \b0 element converts a sound entered as an input parameter to the sample frequency of 11025 Hz and presents it as a new sound on the output. PCM format sounds only can be converted; other formats will be converted to PCM automatically.\par
+\par
+\{bmc IDF20539.bmp\} \tab \b \i convert to 22 kHz \i0 \b0 \par
+\par
+The \b \i convert to 22 kHz \i0 \b0 element converts a sound entered as an input parameter to the sample frequency of 22050 Hz and presents it as a new sound on the output. PCM format sounds only can be converted; other formats will be converted to PCM automatically.\par
+\par
+\{bmc IDF20540.bmp\} \tab \b \i convert to 44 kHz \i0 \b0 \par
+\par
+The \b \i convert to 44 kHz \i0 \b0 element converts a sound entered as an input parameter to the sample frequency of 44100 Hz and presents it as a new sound on the output. PCM format sounds only can be converted; other formats will be converted to PCM automatically.\par
+\par
+\{bmc IDF20728.bmp\} \tab \b \i sound decompression \i0 \b0 \par
+\par
+The \b \i sound decompression \i0 \b0 element converts a compressed format (as ADPCM or MP3) sound to the PCM format, which can be played mixed with other sounds or can be converted. If necessary, the conversion functions will decompress the sound automatically. Only those formats can be decompressed for which a decoder (codec) is installed in the Windows system. These are all formats that can be played in the Windows system.\par
+\par
+\{bmc IDF20542.bmp\} \b \i change speed of sound \i0 \b0 \par
+\tab \{bmc IDF20543.bmp\} \b \i sound to conversion \i0 \b0 \par
+\tab \{bmc IDF20544.bmp\} \b \i relative change of speed \i0 \b0 (1=unchanging)\par
+\par
+The \b \i change speed of sound \i0 \b0 element converts the playback speed of a sound entered on the input, and presents it as a new sound on the output. The coefficient of the relative change of speed can have negative value as well, in this case the sound is played in the reverse direction. The value of 1 meaning no speed change. PCM format sounds only can be converted; other formats will be converted to PCM automatically.
+\par
+\par
+\{bmc IDF20545.bmp\} \b \i tone generator \i0 \b0 \par
+\tab \{bmc IDF20546.bmp\} \b \i frequency of tone \i0 \b0 (1 to 11025 Hz) \par
+\tab \{bmc IDF20547.bmp\} \b \i length of tone \i0 \b0 (seconds)\par
+\par
+The \b \i tone generator \i0 \b0 element creates a sine wave tone having an entered frequency and an entered length, and presents it as a new sound on the output. The output sound has a PCM format, 16 bits per sample, 22050 Hz, mono. The admissible frequency range is 1 Hz till 11025 Hz. The tone length is corrected to generate an integral number of tone waves, thus enabling a smooth link-up of different tones (without formation of disturbing beats).\par
+\page
+
+#{\footnote 20425}
+#{\footnote 20410}
+#{\footnote 20411}
+#{\footnote 20412}
+#{\footnote 20413}
+#{\footnote 20414}
+#{\footnote 20415}
+#{\footnote 20416}
+#{\footnote 20647}
+${\footnote Music}
++{\footnote 1}
+K{\footnote Music;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Music\par
+\pard \plain \cf0 \fs20
+{\uldb Sound and Music}{\v 20075}\par
+\par
+\{bmc IDF20410.bmp\} \b \i play music \i0 \b0 \par
+\par
+The \b \i play music \i0 \b0 command starts playback of music entered as a parameter. A possible, already running music playback will be interrupted.\par
+\par
+\{bmc IDF20411.bmp\} \b \i play music repeated \i0 \b0 \par
+\par
+The \b \i play music repeated \i0 \b0 command starts a repeated playback of music entered as a parameter. A possible, already running music playback will be interrupted.\par
+\par
+\{bmc IDF20412.bmp\} \b \i stop playing music \i0 \b0 \par
+\par
+The \b \i stop playing music \i0 \b0 command stops the music playback.\par
+\par
+\{bmc IDF20413.bmp\} \b \i pause/continue playing music \i0 \b0 \par
+\par
+The \b \i pause/continue playing music \i0 \b0 element enables to pause or continue the music playback. It can be used as a logic variable, i.e. it can be entered or read. A validity flag means that the music is paused. By using it as a command without entering a parameter the state will be switched over.\par
+\par
+\{bmc IDF20414.bmp\} \b \i test playing music \i0 \b0 \par
+\par
+The \b \i test playing music \i0 \b0 element returns a logic flag indicating whether the music playback is running.\par
+\par
+\{bmc IDF20415.bmp\} \b \i position in music being played \i0 \b0 \par
+\par
+The \b \i position in music being played \i0 \b0 element enables to find out or to adjust the music playback position in seconds. This element can be used as a logic variable, i.e. it can be entered or read.\par
+\par
+\{bmc IDF20416.bmp\} \b \i length of music being played \i0 \b0 \par
+\par
+The \b \i length of music being played \i0 \b0 element returns the length of the music being played, the length being expressed in seconds.\par
+\par
+\{bmc IDF20647.bmp\} \b \i music identity \i0 \b0 \par
+\par
+The \b \i music identity \i0 \b0 element serves to compare sorts of music. When doing this, it is only judged whether the matter in question is an identical data object of the music type, the contents of the music sorts being not compared. One or more music sorts can be specified. The comparison takes place from the top downwards. The element returns a logic validity flag in case all music sorts are identical. A special case is comparing one music. The music is compared with an empty music, e.g. to test, whether a valid music has been readed from a file.\par
+\page
+
+#{\footnote 20426}
+#{\footnote 20427}
+#{\footnote 20428}
+#{\footnote 20429}
+#{\footnote 20430}
+#{\footnote 20529}
+#{\footnote 20431}
+#{\footnote 20432}
+#{\footnote 20433}
+#{\footnote 20434}
+#{\footnote 20435}
+#{\footnote 20436}
+${\footnote Audio CD}
++{\footnote 1}
+K{\footnote Audio CD;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Audio CD\par
+\pard \plain \cf0 \fs20
+{\uldb Sound and Music}{\v 20075}\par
+\par
+\i \b Note: \b0 During running the program a CD data constancy is ensured till the next instant of the {\uldb waiting service}{\v 20122} or till a change made by means of the program.\i0 \par
+\par
+\{bmc IDF20427.bmp\} \b \i play CD from requested track \i0 \b0 (default = 1) \par
+\par
+The \b \i play CD from requested track \i0 \b0 command starts playing an audio CD from a track specified as a numeric parameter. Without the track number being specified the playback starts from the CD beginning (i.e. from track 1).\par
+\par
+\{bmc IDF20428.bmp\} \b \i stop playing CD \i0 \b0 \par
+\par
+The \b \i stop playing CD \i0 \b0 command stops the CD playback.\par
+\par
+\{bmc IDF20429.bmp\} \b \i pause/continue playing CD \i0 \b0 \par
+\par
+The \b \i pause/continue playing CD \i0 \b0 element enables to pause or to continue the audio CD playback. This element can be used as a logic variable, i.e. it can be entered or read. A validity flag means that the CD playback is paused. By using the command without entering a parameter the state will be switched over.\par
+\par
+\{bmc IDF20430.bmp\} \b \i test playing CD \i0 \b0 \par
+\par
+The \b \i test playing CD \i0 \b0 element returns a logic flag indicating whether the CD playback is running.\par
+\par
+\{bmc IDF20529.bmp\} \b \i eject CD \i0 \b0 \par
+\par
+The \b \i eject CD \i0 \b0 element serves to eject or retract the CD door, and to detect the CD state. This element is used in a similar way as a logic variable. Setting to the validity flag causes the door to be ejected, setting to the invalidity flag causes the door to be retracted. Using the element as a command without any parameters causes the state to turn over provided that an audio CD is inserted (If no audio CD is inserted, the door is always considered to be open). Using the element in a logic term serves to test the audio CD not being ready (i.e. to test, whether the door is open or whether an audio CD is not inserted).\par
+\par
+\{bmc IDF20431.bmp\} \b \i total length of CD \i0 \b0 (seconds) \par
+\par
+The \b \i total length of CD \i0 \b0 element returns the total length, expressed in seconds, of the inserted audio CD's records.\par
+\par
+\{bmc IDF20432.bmp\} \b \i number of tracks of CD \i0 \b0 \par
+\par
+The \b \i number of tracks \i0 \b0 element returns the number of tracks of the inserted audio CD.\par
+\par
+\{bmc IDF20433.bmp\} \b \i position from the CD beginning \i0 \b0 (seconds) \par
+\par
+The \b \i position from the CD beginning \i0 \b0 element returns the position being played from the CD beginning. The position is given in seconds. The element may be used as a numeric variable; by setting the numeric value the playing position can be determined (the pause state remaining retained).\par
+\par
+\{bmc IDF20434.bmp\} \b \i track being played \i0 \b0 \par
+\par
+The \b \i track being played \i0 \b0 element returns the number of the track being played (numbered starting from 1). This element can be used as a numeric variable. By setting the numeric value the playback will be started from the track entered (the pause state remaining retained).\par
+\par
+\{bmc IDF20435.bmp\} \b \i length of track being played \i0 \b0 (seconds) \par
+\par
+The \b \i length of track being played \i0 \b0 element returns the length of the track being played in seconds.\par
+\par
+\{bmc IDF20436.bmp\} \b \i position from the track beginning \i0 \b0 (seconds) \par
+\par
+The \b \i position from the track beginning \i0 \b0 element returns the position being played from the beginning of the track being played. This position is given in seconds. This element can be used as a numeric variable; by setting the numeric value the position being played will be set (the pause state remaining retained).\par
+\page
+
+}

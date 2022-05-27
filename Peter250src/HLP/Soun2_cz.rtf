@@ -1,0 +1,194 @@
+{\rtf1 \ansi \deff0
+
+@{\footnote ------- definice fontù --------- }
+
+{\fonttbl 
+{\f0 \fswiss MS San Serif CE;}
+}
+
+@{\footnote ------- definice barev --------- }
+
+{\colortbl
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red192\green192\blue192;
+\red128\green128\blue128;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+
+@{\footnote Použití barev:
+	0 - èerná
+	1 - tmavì èervená
+	2 - tmavì zelená
+	3 - hnìdá
+	4 - tmavì modrá
+	5 - tmavì fialová
+	6 - tmavì modrozelená
+	7 - šedá
+	8 - tmavì šedá
+	9 - èervená
+	10 - zelená
+	11 - žlutá
+	12 - modrá
+	13 - fialová
+	14 - modrozelená
+	15 - bílá
+}
+
+#{\footnote 20778}
+#{\footnote 20779}
+#{\footnote 20780}
+#{\footnote 20781}
+#{\footnote 20782}
+#{\footnote 20783}
+#{\footnote 20784}
+#{\footnote 20785}
+#{\footnote 20786}
+#{\footnote 20787}
+${\footnote Smìšovací zaøízení}
++{\footnote 1}
+K{\footnote smìšovací zaøízení;mixer;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Smìšovací zaøízení\par
+\pard \plain \cf0 \fs20
+{\uldb Zvuk a hudba}{\v 20075}\par
+\par
+Smìšovací zaøízení (zkrácenì mixer) øídí smíchávání zvukù z rùzných zvukových zdrojù. Smìšovací zaøízení je souèástí zvukové karty a mùže se u rùzných zvukových karet lišit.\par
+\par
+\{bmc IDF20779.bmp\} \b \i smìšovací zaøízení \i0 \b0 \par
+\par
+Prvek \b \i smìšovací zaøízení \i0 \b0 je textová promìnná. Pøi ètení navrátí víceøádkový seznam jmen smìšovacích zaøízení v systému. Nastavením jména jednoho ze zaøízení do prvku se provede výbìr zaøízení, které bude ovládáno. Bez nastavení zaøízení bude implicitnì použito první nalezené smìšovací zaøízení.\par
+\par
+\{bmc IDF20780.bmp\} \b \i cílový signál \i0 \b0 \par
+\par
+Smìšovací zaøízení mùže obsluhovat nìkolik výstupních (cílových) signálù. Nejèastìjším pøípadem je jeden signál pro výstup na reproduktory (reprodukce) a jeden signál pro výstup na A/D pøevodník (nahrávání). Prvek \b \i cílový signál \i0 \b0 umožòuje vybrat, který výstupní signál zvoleného smìšovacího zaøízení bude ovládán. Pøi ètení prvek navrátí víceøádkový textový seznam jmen výstupních signálù. Nastavením jména jednoho ze signálù do prvku se provede výbìr výstupního signálu. Bez nastavení cílového signálu bude implicitnì použit první nalezený výstupní signál (zpravidla to bývá výstup na reproduktory).\par
+\par
+\{bmc IDF20781.bmp\} \b \i zdrojový signál \i0 \b0 (nic=pouze cílový signál)\par
+\par
+Každý výstupní signál mùže být míchán z nìkolika vstupních (zdrojových) signálù. Vstupní signály lze samostatnì ovládat (úroveò hlasitosti jednotlivých vstupních signálù) a zpravidla lze ovládat i výstupní signál (celková hlasitost). Prvek \b \i zdrojový signál \i0 \b0 navrací víceøádkový textový seznam jmen vstupních signálù pro zvolený výstupní signál. Nastavením jména jednoho ze signálù do prvku se provede výbìr vstupního signálu, který bude ovládán. Nastavením prázdného textu bude jako ovládaný signál zvolen výstupní signál (to je implicitní nastavení po provedení volby cílového signálu).\par
+\par
+\{bmc IDF20782.bmp\} \b \i typ signálu \i0 \b0 \par
+\par
+Prvek \b \i typ signálu \i0 \b0 je èíselná promìnná navracející kód typu vybraného zdrojového signálu (pøíp. cílového, je-li zadáno prázdné jméno zdrojového signálu). Nastavením kódu typu signálu do prvku bude vyhledán signál odpovídající zadané hodnotì (a nastaven jako aktivní). Vyhledávání probíhá pro všechny signály smìšovacího zaøízení, nezávisle na zvoleném cílovém signálu. Zde jsou uvedeny typické hodnoty:\par
+\par 
+\b \u Výstupní (cílové) signály: \u0 \b0 \par
+\b 0 \b0 \tab nedefinovaný\par
+\b 1 \b0 \tab digitální\par
+\b 2 \b0 \tab linkový\par
+\b 3 \b0 \tab monitor\par
+\b 4 \b0 \tab reproduktory\par
+\b 5 \b0 \tab sluchátka\par
+\b 6 \b0 \tab telefon\par
+\b 7 \b0 \tab audio (Wave In)\par
+\b 8 \b0 \tab hlasový vstup\par
+\par
+\b \u Vstupní signály: \u0 \b0 \par
+\b $1000 \b0 \tab nedefinovaný\par
+\b $1001 \b0 \tab digitální (SPDIF-In)\par
+\b $1002 \b0 \tab linkový\par
+\b $1003 \b0 \tab mikrofon\par
+\b $1004 \b0 \tab hudba (MIDI)\par
+\b $1005 \b0 \tab CD\par
+\b $1006 \b0 \tab telefon (TAD-In)\par
+\b $1007 \b0 \tab PC reproduktor\par
+\b $1008 \b0 \tab audio (Wave Out)\par
+\b $1009 \b0 \tab AUX\par
+\b $100A \b0 \tab analogový vstup\par
+\par
+\{bmc IDF20783.bmp\} \b \i ovládací prvek \i0 \b0 \par
+\par
+Každý vstupní nebo výstupní signál mùže mít jeden nebo více ovládacích prvkù. Prvek \b \i ovládací prvek \i0 \b0 navrací víceøádkový seznam jmen ovládacích prvkù pro vybraný vstupní nebo výstupní signál. Nastavením jména ovládacího prvku do prvku lze vybrat ovládací prvek, s kterým bude manipulováno.\par
+\par
+\{bmc IDF20784.bmp\} \b \i typ prvku \i0 \b0 \par
+\par
+Prvek \b \i typ prvku \i0 \b0 je èíselná promìnná navracející kód typu vybraného ovládacího prvku. Nastavením kódu typu ovládacího prvku bude vyhledán odpovídající ovládací prvek (a nastaven jako aktivní). Vyhledávání probíhá pouze mezi prvky vybraného signálu. Kód typu prvku je složen z následujících hodnot:\par
+\par
+\b \u Tøída prvku (maska $F0000000): \u0 \b0 \par
+\b $00000000 \b0 \tab nedefinovaná tøída\par
+\b $10000000 \b0 \tab indikátor\par
+\b $20000000 \b0 \tab pøepínaè\par
+\b $30000000 \b0 \tab èíslo\par
+\b $40000000 \b0 \tab posuvník (napø. vyvážení)\par
+\b $50000000 \b0 \tab regulátor (napø. hlasitost)\par
+\b $60000000 \b0 \tab èas\par
+\b $70000000 \b0 \tab seznam\par
+\par
+\b \u Podtøída prvku (maska $0F000000): \u0 \b0 \par
+\b $00000000 \b0 \tab pøepínaè - logický (s aretací)\par
+\b $01000000 \b0 \tab pøepínaè - tlaèítko\par
+\b $00000000 \b0 \tab èas - mikrosekundy\par
+\b $01000000 \b0 \tab èas - milisekundy\par
+\b $00000000 \b0 \tab seznam - jednoduchý (1 volba)\par
+\b $01000000 \b0 \tab seznam - vícenásobný (více voleb)\par
+\par
+\b \u Jednotky hodnoty (maska $00FF0000): \u0 \b0 \par
+\b $00000000 \b0 \tab nedefinované \par
+\b $00010000 \b0 \tab logická hodnota \par
+\b $00020000 \b0 \tab èíslo se znaménkem \par
+\b $00030000 \b0 \tab èíslo bez znaménka \par
+\b $00040000 \b0 \tab decibely (v 1/10) \par
+\b $00050000 \b0 \tab procenta (v 1/10) \par
+\par
+\b \u Typické hodnoty typu ovládacího prvku: \u0 \b0 \par
+\b $10010000 \b0 \tab logický indikátor \par
+\b $10020000 \b0 \tab indikátor se znaménkem\par
+\b $10020001 \b0 \tab indikátor špièek \par
+\b $10030000 \b0 \tab indikátor bez znaménka\par
+\b $20010001 \b0 \tab pøepínaè "zap/vyp"\par
+\b $20010002 \b0 \tab pøepínaè "utlumit"\par
+\b $20010003 \b0 \tab pøepínaè "mono"\par
+\b $20010004 \b0 \tab pøepínaè "loudness" (zdùraznìní basù)\par
+\b $20010005 \b0 \tab pøepínaè "rozšíøené stereo"\par
+\b $21010004 \b0 \tab tlaèítko\par
+\b $30020000 \b0 \tab èíslo se znaménkem\par
+\b $30030000 \b0 \tab èíslo bez znaménka\par
+\b $30040000 \b0 \tab èíslo v decibelech\par
+\b $30050000 \b0 \tab èíslo v procentech\par
+\b $40020000 \b0 \tab posuvník "balance"\par
+\b $40020001 \b0 \tab posuvník "Pan"\par
+\b $40020002 \b0 \tab posuvník "QSound Pan"\par
+\b $50030001 \b0 \tab regulátor "hlasitost"\par
+\b $50030002 \b0 \tab regulátor "basy"\par
+\b $50030003 \b0 \tab regulátor "výšky"\par
+\b $50030004 \b0 \tab regulátor "equalizer"\par
+\b $60030000 \b0 \tab èas v mikrosekundách\par
+\b $61030000 \b0 \tab èas v milisekundách\par
+\b $70010000 \b0 \tab seznam - jednoduchý výbìr\par
+\b $70010001 \b0 \tab seznam - multiplexer\par
+\b $71010000 \b0 \tab seznam - vícenásobný výbìr\par
+\b $71010001 \b0 \tab seznam - mixer\par
+\par
+\{bmc IDF20787.bmp\} \b \i ovládaný kanál \i0 \b0 (-1=všechny)\par
+\par
+Nìkteré ovládací prvky umožòují ovládat více kanálù signálu (2 kanály pro stereo). Èíslo ovládaného kanálu pro vybraný ovládací prvek lze zvolit nastavením prvku \b \i ovládaný kanál \i0 \b0 (hodnota 0, 1, ...). Nastavením hodnoty \b -1 \b0 budou ovládány všechny kanály signálu. Ètením hodnoty prvku lze zjistit poèet kanálù, které mùže prvek øídit.\par
+\par
+\{bmc IDF20786.bmp\} \b \i výbìr hodnoty prvku \i0 \b0 \par
+\par
+Prvek \b \i výbìr hodnoty prvku \i0 \b0 umožòuje vybrat ovládanou hodnotu prvku pro seznamy a vícenásobné prvky (ekvalizéry). Ètením prvku je navrácen víceøádkový textový seznam jmen hodnot aktivního ovládacího prvku. Nastavením jednoho ze jmen do prvku lze zvolit hodnotu prvku, která bude nastavovaná. U prvkù s jednou hodnotou není potøeba ovládanou hodnotu vybírat (tlaèítka, regulátory).\par
+\par
+\{bmc IDF20785.bmp\} \b \i hodnota prvku \i0 \b0 (0 až 1)\par
+\par
+Èíselný prvek \b \i hodnota prvku \i0 \b0 umožòuje zjištìní a nastavení hodnoty ovládacího prvku. Hodnota je v rozsahu 0 až 1. Pro prvky se znaménkem odpovídá støední hodnota èíslu 0.5. Pro pøepínaèe odpovídá zapnutý stav hodnotì 1, vypnutý stav hodnotì 0. Pro seznamy jsou jednotlivé hodnoty seznamu nastavovány jako pøepínaèe. Pro seznam s jednoduchým výbìrem postaèí zapnout pouze novì zvolený prvek, ostatní prky budou automaticky vypnuty.\par
+\par
+\i \b Poznámka: \b0 V programech a hrách lze mixer ovládat zjednodušenì. V pøevážné vìtšinì pøípadù postaèí zvolit ovládací prvek nastavením prvku \b typ signálu \b0 na kód signálu a prvku \b typ prvku \b0 na kód prvku a poté ovládat \b hodnotu prvku \b0 (výbìr mixeru je proveden automaticky). Napø.:\i0 \par
+hlasitost: \tab signál=\b 4\b0 , \tab prvek=\b $50030001\b0 \par
+basy: \tab \tab signál=\b 4\b0 , \tab prvek=\b $50030002\b0 \par
+výšky: \tab \tab signál=\b 4\b0 , \tab prvek=\b $50030003\b0 \par
+hudba: \tab \tab signál=\b $1004\b0 , \tab prvek=\b $50030001\b0 \par
+zvuky: \tab \tab signál=\b $1008\b0 , \tab prvek=\b $50030001\b0 \par
+CD: \tab \tab signál=\b $1005\b0 , \tab prvek=\b $50030001\b0 \par
+\page
+
+
+}

@@ -1,0 +1,396 @@
+{\rtf1 \ansi \deff0
+
+@{\footnote ------- definice fontù --------- }
+
+{\fonttbl 
+{\f0 \fswiss MS San Serif CE;}
+}
+
+@{\footnote ------- definice barev --------- }
+
+{\colortbl
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red192\green192\blue192;
+\red128\green128\blue128;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+
+@{\footnote Použití barev:
+	0 - èerná
+	1 - tmavì èervená
+	2 - tmavì zelená
+	3 - hnìdá
+	4 - tmavì modrá
+	5 - tmavì fialová
+	6 - tmavì modrozelená
+	7 - šedá
+	8 - tmavì šedá
+	9 - èervená
+	10 - zelená
+	11 - žlutá
+	12 - modrá
+	13 - fialová
+	14 - modrozelená
+	15 - bílá
+}
+
+#{\footnote 20903}
+${\footnote Create}
++{\footnote 1}
+K{\footnote Create;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Create\par
+\pard \plain \cf0 \fs20
+{\uldb 3D Graphics}{\v 20788}\par
+{\uldb DLL Libraries}{\v 20976}\par
+\par
+\par
+{\uldb \{bmc IDF20878.bmp\}\tab group}{\v 20878}\par
+{\uldb \{bmc IDF20802.bmp\}\tab wall}{\v 20802}\par
+{\uldb \{bmc IDF20905.bmp\}\tab circle}{\v 20905}\par
+{\uldb \{bmc IDF20906.bmp\}\tab triangle}{\v 20906}\par
+{\uldb \{bmc IDF20803.bmp\}\tab cube}{\v 20803}\par
+{\uldb \{bmc IDF20804.bmp\}\tab sphere}{\v 20804}\par
+{\uldb \{bmc IDF20909.bmp\}\tab hemisphere}{\v 20909}\par
+{\uldb \{bmc IDF20805.bmp\}\tab cylinder}{\v 20805}\par
+{\uldb \{bmc IDF20806.bmp\}\tab cone}{\v 20806}\par
+{\uldb \{bmc IDF20926.bmp\}\tab truncated cone}{\v 20926}\par
+{\uldb \{bmc IDF20907.bmp\}\tab torus}{\v 20907}\par
+{\uldb \{bmc IDF20882.bmp\}\tab rotary object}{\v 20882}\par
+{\uldb \{bmc IDF20873.bmp\}\tab 2D object}{\v 20873}\par
+{\uldb \{bmc IDF20908.bmp\}\tab static 2D object}{\v 20908}\par
+{\uldb \{bmc IDF20914.bmp\}\tab 2D picture}{\v 20914}\par
+{\uldb \{bmc IDF20960.bmp\}\tab lens flare}{\v 20960}\par
+{\uldb \{bmc IDF20874.bmp\}\tab terrain from picture}{\v 20874}\par
+{\uldb \{bmc IDF20883.bmp\}\tab terrain from sheet}{\v 20883}\par
+{\uldb \{bmc IDF20808.bmp\}\tab object from text}{\v 20808}\par
+{\uldb \{bmc IDF20809.bmp\}\tab object from file}{\v 20809}\par
+\par
+Objects of the 3D graphics can be created using {\uldb memory blocks}{\v 20976}, too.\par
+\page
+
+#{\footnote 20878}
+${\footnote Group}
++{\footnote 1}
+K{\footnote Group;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20878.bmp\} Group\par
+\pard \plain \cf0 \fs20
+{\uldb Create}{\v 20903}\par
+\par
+The \b \i group \i0 \b0 element creates an empty group for 3D objects. The group does not contain any visible object and serves only to {\uldb interconnect}{\v 20813} several objects into one complex. {\uldb Transformations}{\v 20815} may be applied to the group as to any other object. The element returns the {\uldb identification number}{\v 20810} of the created group.\par
+\page
+
+#{\footnote 20802}
+${\footnote Wall}
++{\footnote 1}
+K{\footnote Wall;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20802.bmp\} Wall\par
+\pard \plain \cf0 \fs20
+{\uldb Create}{\v 20903}\par
+\par
+The \b \i wall \i0 \b0 element originates a square surface sized 1x1, lying in the X-Y plane and balanced around the coordinate system origin. The coordinates of the wall vertices are (-0.5, 0.5, 0), (0.5, 0.5, 0), (-0.5, -0.5, 0), and (0.5, -0.5, 0). A wall is composed of 2 triangles, their vertices being 0-1-2 and 2-1-3. The normals located in the vertices are (0, 0, -1). The texture coordinates in the vertices are (0, 0), (1, 0), (0, 1), and (1,1). The wall is oriented in the negative Z axis direction, i.e. facing the default {\uldb camera}{\v 20810}. The element returns the {\uldb identification number}{\v 20810} of the created wall.\par
+\par
+As a default, the wall is visible from the front side only. Its visibility is changeable by the {\uldb visible object side}{\v 20902} element.\par
+\page
+
+#{\footnote 20905}
+${\footnote Circle}
++{\footnote 1}
+K{\footnote Circle;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20905.bmp\} Circle\par
+\pard \plain \cf0 \fs20
+{\uldb Create}{\v 20903}\par
+\par
+The \b \i circle \i0 \b0 element generates a circular surface with a diameter of 1, lying in the X-Y plane and balanced around the coordinate system origin. The complexity (i.e. the number of the circle divisions) is determined by the {\uldb complexity of object}{\v 20879} element. For every 16 object complexity degrees 1 supplementary stripe is added (interstage). The normals located in the circle vertices are (0, 0, -1). The texture coordinates in the vertices correspond the area texture location on the circle surface. The circle is oriented in the negative Z axis direction, i.e. facing the default {\uldb camera}{\v 20810}. The element returns the {\uldb identification number}{\v 20810} of the created circle.\par
+\par
+As a default, the circle is visible from the front side only. Its visibility is changeable by the {\uldb visible object side}{\v 20902} element.\par
+\page
+
+#{\footnote 20906}
+${\footnote Triangle}
++{\footnote 1}
+K{\footnote Triangle;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20906.bmp\} Triangle\par
+\pard \plain \cf0 \fs20
+{\uldb Create}{\v 20903}\par
+\par
+The \b \i triangle \i0 \b0 element forms a surface of an isosceles triangle sized 1x1, lying in the X-Y plane and balanced around the coordinate system origin. The coordinates of the triangle vertices are (-0.5, -0.5, 0), (0, 0.5, 0), and (0.5, -0.5, 0). The normals located in the vertices are (0, 0, -1). The texture coordinates in the vertices are (0, 1), (0.5, 0), and (1, 1). The triangle is oriented in the negative Z axis direction, i.e. facing the default {\uldb camera}{\v 20810}. The element returns the {\uldb identification number}{\v 20810} of the created triangle.\par
+\par
+As a default, the triangle is visible from the front side only. Its visibility is changeable by the {\uldb visible object side}{\v 20902} element.\par
+\page
+
+#{\footnote 20803}
+${\footnote Cube}
++{\footnote 1}
+K{\footnote Cube;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20803.bmp\} Cube\par
+\pard \plain \cf0 \fs20
+{\uldb Create}{\v 20903}\par
+\par
+The \b \i cube \i0 \b0 element generates a cube sized 1x1x1 that is balanced around the coordinate system origin. By setting the {\uldb create upper base}{\v 20867} and {\uldb create lower base}{\v 20868} switches can be decided, whether the upper and the lower cube base is supposed to be generated. The element returns the {\uldb identification number}{\v 20810} of the created cube.\par
+\par
+The texture is mapped on the cube surface to cover all 6 cube faces. The texture is divided in 2 lines each containing 3 columns. (The texture is governed by usual requirements, the texture height and width should be a power of 2). Each column contains a definition for 2 opposite faces. The first column determines the front and the rear face, the intermediate column determines the left and the right faces, and the last column determines the upper and lower face.\par
+\page
+
+#{\footnote 20804}
+${\footnote Sphere}
++{\footnote 1}
+K{\footnote Sphere;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20804.bmp\} Sphere\par
+\pard \plain \cf0 \fs20
+{\uldb Create}{\v 20903}\par
+\par
+The \b \i sphere \i0 \b0 element creates a sphere with a diameter of 1 that is balanced around the coordinate system origin. The complexity (i.e. the number of the sphere circumference divisions) is determined by the {\uldb complexity of object}{\v 20879} element. The element returns the {\uldb identification number}{\v 20810} of the created sphere.\par
+\page
+
+#{\footnote 20909}
+${\footnote Hemisphere}
++{\footnote 1}
+K{\footnote Hemisphere;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20909.bmp\} Hemisphere\par
+\pard \plain \cf0 \fs20
+{\uldb Create}{\v 20903}\par
+\par
+The \b \i hemisphere \i0 \b0 element forms the upper half of the sphere having a diameter of 1 and balanced around the coordinate system origin. The complexity (i.e. the number of the sphere circumference divisions) is determined by the {\uldb complexity of object}{\v 20879} element. By setting the {\uldb create lower base}{\v 20868} switch can be decided, whether the hemisphere's lower base is supposed to be created. The element returns the {\uldb identification number}{\v 20810} of the created hemisphere.\par
+\page
+
+#{\footnote 20805}
+${\footnote Cylinder}
++{\footnote 1}
+K{\footnote Cylinder;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20805.bmp\} Cylinder\par
+\pard \plain \cf0 \fs20
+{\uldb Create}{\v 20903}\par
+\par
+The \b \i cylinder \i0 \b0 element creates a cylinder having a diameter of 1 and a height of 1 and balanced around the coordinate system origin (the upper base intersecting the Y axis in point 0.5, the lower base intersecting the Y axis in point -0.5). The complexity (i.e. the number of the cylinder circumference divisions) is determined by the {\uldb complexity of object}{\v 20879} element. For every 8 object complexity degrees 1 additional circumference stripe (a row of points) is added. For every 20 object complexity degrees 1 additional upper base and lower base stripe (interstage) is added. By setting the {\uldb create upper base}{\v 20867} and {\uldb create lower base}{\v 20868} switches can be decided, whether the cylinder's upper or lower base is supposed to be created. The element returns the {\uldb identification number}{\v 20810} of the created cylinder.\par
+\page
+
+#{\footnote 20806}
+${\footnote Cone}
++{\footnote 1}
+K{\footnote Cone;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20806.bmp\} Cone\par
+\pard \plain \cf0 \fs20
+{\uldb Create}{\v 20903}\par
+\par
+The \b \i cone \i0 \b0 element creates a cone having a diameter of 1 and a height of 1 that is balanced around the coordinate system origin (the cone vertex lying on the Y axis in point 0.5, the lower base intersecting the Y axis in point -0.5). The complexity (i.e. the number of the cone circumference divisions) is determined by the {\uldb complexity of object}{\v 20879} element. For every 8 object complexity degrees 1 additional circumference stripe (a row of points) is added. For every 20 object complexity degrees 1 additional lower base stripe (interstage) is added. By setting the {\uldb create lower base}{\v 20868} switch can be decided, whether the cone's lower base is supposed to be created. The element returns the {\uldb identification number}{\v 20810} of the created cone.\par
+\page
+
+#{\footnote 20926}
+${\footnote Truncated Cone}
++{\footnote 1}
+K{\footnote Truncated Cone;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20926.bmp\} Truncated Cone\par
+\pard \plain \cf0 \fs20
+{\uldb Create}{\v 20903}\par
+\par
+The \b \i truncated cone \i0 \b0 element creates a truncated cone having a diameter of 1 and a height of 1 and balanced around the coordinate system origin (the upper base intersecting the Y axis in point 0.5, the lower base intersecting the Y axis in point -0.5). As the element parameter a numeric value is specified representing the truncated cone's upper base diameter. The complexity (i.e. the number of the truncated cone's circumference divisions) is determined by the {\uldb complexity of object}{\v 20879} element. For every 8 object complexity degrees 1 additional circumference stripe (a row of points) is added. For every 20 object complexity degrees 1 additional upper base and lower base stripe (interstage) is added. By setting the {\uldb create upper base}{\v 20867} and {\uldb create lower base}{\v 20868} switches can be decided, whether the truncated cone's upper or lower base is supposed to be created. The element returns the {\uldb identification number}{\v 20810} of the created truncated cone.\par
+\page
+
+#{\footnote 20907}
+${\footnote Torus}
++{\footnote 1}
+K{\footnote torus;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20907.bmp\} Torus\par
+\pard \plain \cf0 \fs20
+{\uldb Create}{\v 20903}\par
+\par
+The \b \i torus \i0 \b0 element creates a torus (ring, toroid) having a diameter of 1 and lying in the X-Z plane (the central axis is oriented in the Y axis direction), its center being located in the coordinate system origin. As the element parameter a numeric value is specified representing the torus's core diameter. The complexity (i.e. the number of the torus's circumference divisions) is determined by the {\uldb complexity of object}{\v 20879} element. The element returns the {\uldb identification number}{\v 20810} of the created torus.\par
+\page
+
+#{\footnote 20882}
+${\footnote Rotary Object}
++{\footnote 1}
+K{\footnote Rotary Object;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20882.bmp\} Rotary Object\par
+\pard \plain \cf0 \fs20
+{\uldb Create}{\v 20903}\par
+\par
+The \b \i rotary object \i0 \b0 element generates a general rotary object according to a specified profile. The central axis of a rotary object is oriented in the Y axis direction. As the element's parameter the text containing the definition of the object profile is entered. The profile definition is a multiline text list. Each line of the list defines 1 point of the contour curve, and contains 2 numeric values separated from each other by a space, by the tabulator or by a semicolon (";"). The first of the numeric data represents the Y coordinate of the curve point (i.e. the point height), the second data is the radius (i.e. the point distance from the central axis). The contour points are entered in the direction from above downwards (i.e. the Y value is diminishing). The rising Y value (i.e. from below upwards) defines the rotary object's inner side (visible from the object's center). The beginning and the end of the contour curve need not lie on the Y axis; in this case the rotary object will not be closed. The complexity (i.e. the number of the rotary object circumference divisions) is determined by the {\uldb complexity of object}{\v 20879} element. The element returns the {\uldb identification number}{\v 20810} of the created rotary object.\par
+\par
+To create a model of a rotary object the \b Modeller \b0 program can be utilized, which can be found among the sample programs of the Peter application. With the aid of the F5 key the model can be exported into the form of a rotary object. By means of the Modeler program the model can be displayed in the 3D window or viewed from different sides. The model's color can be selected by the random color generator. The color's {\uldb numeric code}{\v 20826} can be used when creating the program.\par
+\par
+In the following text a simple example of a truncated cone definition is given. By omitting the first and last line a cone without the upper and lower base will be created.\par
+\par
+0.5;0\par
+0.5;0.2\par
+-0.5;0.5\par
+-0.5;0\par
+\page
+
+#{\footnote 20873}
+${\footnote 2D Object}
++{\footnote 1}
+K{\footnote 2D Object;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20873.bmp\} 2D Object\par
+\pard \plain \cf0 \fs20
+{\uldb Create}{\v 20903}\par
+\par
+The \b \i 2D object \i0 \b0 element will create a two-dimensional object. A two-dimensional object is an object consisting of a picture that can be put into the scene like a usual three-dimensional object. The object picture is entered as the element's parameter. The picture is utilized as a texture, therefore common rules similar to those that are valid for the texture, are also valid for the picture (Size is a power of 2, texture smoothing can assert itself). The two-dimensional object can typically be used for trees, bushes and similar landscape objects, as well as for enemy figures and projectile pictures. A two-dimensional object is a surface (similar to the {\uldb wall}{\v 20802} object) possessing a special feature: It is continually being rotated in the viewer’s direction. Thus, as a consequence, it is deemed by the viewer to be a three-dimensional object. The object rotation is implemented by additional rotation around the Y axis; that is why it is not recommended to change the object rotations sequence of the value of rotation around the Y axis (the correction being added to the entered Y rotation). For the object surface the {\uldb contours}{\v 20840} parameter is automatically set to a value of 0.5. The element returns the {\uldb identification number}{\v 20810} of the created 2D object.\par
+\page
+
+#{\footnote 20908}
+${\footnote Static 2D Object}
++{\footnote 1}
+K{\footnote Static 2D Object;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20908.bmp\} Static 2D Object\par
+\pard \plain \cf0 \fs20
+{\uldb Create}{\v 20903}\par
+\par
+The \b \i static 2D object \i0 \b0 element will, like the {\uldb 2D object}{\v 20873}, create a two-dimensional object. The difference consists in the fact that the static 2D object is created by 2 crossed surfaces. It is not tilted towards the viewer, and it can be treated like any other 3D object. It is a more suitable option for representing trees and bushes, because it evokes the impression of the object's  better spatial properties. The object picture is entered as the element's parameter. The picture is utilized as a texture, therefore common rules similar to those that are valid for the texture, are also valid for the picture (Its size is a power of 2, texture smoothing can assert itself). For the object surface the {\uldb contours}{\v 20840} parameter is automatically set to a value of 0.5. The element returns the {\uldb identification number}{\v 20810} of the created static 2D object.\par
+\page
+
+#{\footnote 20914}
+${\footnote 2D Picture}
++{\footnote 1}
+K{\footnote 2D Picture;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20914.bmp\} 2D Picture\par
+\pard \plain \cf0 \fs20
+{\uldb Create}{\v 20903}\par
+\par
+The \b \i 2D picture \i0 \b0 element will create a picture object on the 3D window surface. The picture to be created is entered as the element's parameter. The picture is used as a common texture. Its size, therefore, should be a power of 2. The actual {\uldb texture smoothing}{\v 20891} will assert itself.\par
+\par
+For the picture object other rules are valid than for usual 3D objects. The picture's Y coordinate (vertical) ranges between -0,5 (below) and 0.5 (above), the X coordinate (horizontal) ranges between -0,5 (left) and 0.5 (right). The Z coordinate is not operative. Its value can be utilized in {\uldb depth sorting}{\v 20931} of objects. When picture overlapping must be specified, it is more suitable to do so by setting the object's {\uldb render group}{\v 20930}. The new picture object is assigned to render group 14. Pictures having a lower render group are drawn under this picture, pictures having a higher group overlap this picture. The {\uldb depth writing}{\v 20932} and {\uldb depth test}{\v 20933} operations of a picture are normally switched off.\par
+\par
+The default scale of the picture object is determined by the picture dimensions. The default of the scale is set for the picture to be displayed undistorted. The picture object horizontal scale is set to \b object_X_scale = picture_real_width / 3D_window_real_width\b0 , vertical scale is set to \b object_Y_scale = picture_real_height / 3D_window_real_height\b0 . When changing the 3D window size the picture scale will remain unchanged. The picture will not be adapted to the new 3D window size.\par
+\par
+The last transformation parameter asserting itself in a picture object, is the rotation around the Z axis. Thus it is made possible to rotate the picture object around its center.\par
+\par
+For the picture object the {\uldb contours}{\v 20840} parameter is automatically set to 0.5. The element returns the {\uldb identification number}{\v 20810} of the created 2D picture.\par
+\par
+The object of a 2D picture can also serve to display a usual 2D graphics from the graphics surface. Onto the graphics surface of the Peter application usual graphics outputs can be effectuated (the graphics surface need not be displayed). A picture can be {\uldb picked up}{\v 20395} from the graphics surface and then it can be used as a new texture for the 2D picture object. Thus, for example, a  text can be displayed. It is recommended to minimize the change frequency of the 2D graphics; a frequent generating new textures reduces the 3D graphics speed considerably.\par
+\page
+
+#{\footnote 20960}
+${\footnote Lens Flare}
++{\footnote 1}
+K{\footnote Lens Flare;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20960.bmp\} Lens Flare\par
+\pard \plain \cf0 \fs20
+{\uldb Create}{\v 20903}\par
+\par
+The \b \i lens flare \i0 \b0 element will create a picture object on the 3D window surface, which simulates light reflection in camera objective. The picture to be created is entered as the element's parameter. The picture is used as a common texture. Its size, therefore, should be a power of 2. The actual {\uldb texture smoothing}{\v 20891} will assert itself.\par
+\par
+For the lens flare object other rules are valid than for usual 3D objects. X, Y and Z coordinates determine coordinates of light source (it need not be existing object). The new lens flare object is assigned to render group 14. The {\uldb depth writing}{\v 20932} and {\uldb depth test}{\v 20933} operations of a lens flare object are normally switched off.\par
+\par
+The default scale of the lens flare object is determined by the lens flare picture dimensions. The default of the scale is set for the picture to be displayed undistorted. The lens flare object horizontal scale is set to \b object_X_scale = picture_real_width / 3D_window_real_width\b0 , vertical scale is set to \b object_Y_scale = picture_real_height / 3D_window_real_height\b0 . When changing the 3D window size the lens flare scale will remain unchanged. The picture will not be adapted to the new 3D window size.\par
+\par
+The Z scale of the object determines relative distance of the lens flare picture from the screen center to the light source. Zero value of the Z scale means display lens flare in the screen center. When 1 value is used, lens flare will be displayed on coordinates of light source.\par
+\par
+The last transformation parameter asserting itself in a lens flare object, is the rotation around the Z axis. Thus it is made possible to rotate the lens flare picture around its center.\par
+\par
+For the lens flare object the {\uldb transparency}{\v 20839} parameter is automatically set to 11. The element returns the {\uldb identification number}{\v 20810} of the created lens flare object.\par
+\page
+
+#{\footnote 20874}
+${\footnote Terrain from Picture}
++{\footnote 1}
+K{\footnote Terrain from Picture;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20874.bmp\} Terrain from Picture\par
+\pard \plain \cf0 \fs20
+{\uldb Create}{\v 20903}\par
+\par
+By means of the \b \i terrain from picture \i0 \b0 element a terrain is created from a height map. The height map is a picture entered as an element's parameter. The brightness of the individual pixels determines the height of the terrain surface in the range from 0 to 1 (in the Y axis direction). The black color represents the 0 height, the white color is height 1. The terrain thus created has dimension 1 in the X, Y, and Z directions, the coordinates lying in the range between -0.5 and +0.5 in the X and Z directions, and in the range between 0 and 1 in the Y direction. The terrain surface has been smoothed according to current setting of the {\uldb smoothing of textures}{\v 20891} element. Thus this element must be set before terrain creation. The texture is mapped onto the terrain surface by repeating after every 4 terrain fields. Therefore the size of the terrain picture should be a multiple of 4. The terrain thus created is formed so that the terrain beginnings and ends may be connected (both by height and by normal). Several terrains can be assembled next to one another without the boundary being distinguishable. If it is necessary to connect different terrains to each other, it is recommended to use congruent terrain rims (having a width of at least 4 pixels). The element returns the {\uldb identification number}{\v 20810} of the created terrain.\par
+\page
+
+#{\footnote 20883}
+${\footnote Terrain from Sheet}
++{\footnote 1}
+K{\footnote Terrain from Sheet;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20883.bmp\} Terrain from Sheet\par
+\pard \plain \cf0 \fs20
+{\uldb Create}{\v 20903}\par
+\par
+By means of the \b \i terrain from sheet \i0 \b0 element a terrain is created from a {\uldb sheet}{\v 20048} entered as the element's parameter. The terrain thus created has the same number of fields as the sheet. The terrain's dimensions in the X, Y and Z directions are 1, the X and Z coordinates ranging between -0.5 and +0.5, and the Y coordinate ranging between 0 and 1.\par
+\par
+The terrain height is determined on the basis of {\uldb numeric value 1}{\v Editing a Sheet} of the individual squares. Value 0 through 1000 is transformed to height 0 till 1 (in the Y axis direction). It is the upper left corner of the terrain square (as seen from above) that is set up. The last row and the last column of the terrain field vertices are set up in the same way as the first row and the first column (including the normals' accommodation), making it possible to connect several terrains to each other. If different terrains are to be connected to each other, it is recommended to use congruent terrain rims (having a width of 2 squares). Thus their smooth connection will be secured automatically.\par
+\par
+Beside the height definition icon pictures are taken over from the sheet and used as the texture of individual squares. The icon pictures are put together to one resulting texture. For each icon the most frequent neighboring icons are found and stored into the texture together with the icon. For each icon the border of neighboring icons is used having a width of 1/2 of the square. Therefore, the definition of one icon occupies a space sized 2*2 squares (64*64 pixels) in the texture. In this way it is secured that, provided the texture filter is on, the square borders will be tied together properly. To secure a smooth connection of different icons, all neighboring icons should use a congruent border (having a width of at least 1 pixel). To prevent the mutual icon diffusion at a big distance (when the {\uldb faraway texture filter}{\v 20901} is on), the {\uldb number of faraway textures}{\v 20929} is set to 4 automatically. If the square texture is smoothed (by setting the {\uldb smoothing of textures}{\v 20891} to 2), then the texture number is to be limited to 3.\par
+\par
+The element returns the {\uldb identification number}{\v 20810} of the created terrain.\par
+\page
+
+#{\footnote 20808}
+${\footnote Object from Text}
++{\footnote 1}
+K{\footnote Object from Text;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20808.bmp\} Object from Text\par
+\pard \plain \cf0 \fs20
+{\uldb Create}{\v 20903}\par
+\par
+The \b \i object from text \i0 \b0 element will form a 3D object according to the definition entered as a text parameter. The object definition complies with the format of DirectX files (file suffix *.x).\par
+\par
+A simplified example of a DirectX object definition (a rectangular triangle):\par
+\par
+Mesh \{ \tab \tab // start of object definition\par
+3; \tab \tab \tab // number of following vertices\par
+1;0;0;, \tab \tab // coordinates of vertex 0\par
+0;0;0;, \tab \tab // coordinates of vertex 1\par
+0;1;0;; \tab \tab // coordinates of vertex 2\par
+\par
+1; \tab \tab \tab // number of following faces\par
+3;0,1,2;; \tab \tab // face 0\par
+\par
+MeshNormals \{ \tab // start of definition of normals in vertices\par
+3; \tab \tab \tab // number of following normals\par
+0;0;-1;, \tab \tab // normal of vertex 0\par
+0;0;-1;, \tab \tab // normal of vertex 1\par
+0;0;-1;; \tab \tab // normal of vertex 2\par
+\par
+1; \tab \tab \tab // number of following faces\par
+3;0,1,2;; \tab \tab // face 0\par
+\} \tab \tab \tab // end of definition of normals\par
+\par
+MeshTextureCoords \{ \tab // start of definition of texture coordinates\par
+3; \tab \tab \tab // number of following texture coordinates\par
+1;1; \tab \tab \tab // texture coordinate for vertex 0\par
+0;1; \tab \tab \tab // texture coordinate for vertex 1\par
+0;0;; \tab \tab // texture coordinate for vertex 2\par
+\} \tab \tab \tab // end of definition of texture coordinates\par
+\} \tab \tab \tab // end of object definition\par
+\par
+The example given above is a recommended format to form an object in the Peter application. As the first item, the definition contains a list of the vertices' coordinates. At the list beginning the number of vertices is quoted. The number of vertices is followed by the vectors of the vertices' coordinates. Individual vector numbers are terminated by a semicolon, each vector (i.e. each group of 3 numbers) is terminated by a comma, only the last one is terminated by a semicolon.\par
+\par
+The list of vertices is followed by the list of faces. At the list beginning the number of faces is quoted. Hereafter individual faces follow. First, each face contains a data about the number of the following vertex indices. After a separating semicolon follow  the face's vertex indices (starting with index 0), separated by a comma from one another. The last index is followed by a semicolon character. The definition of each face is terminated by a comma, the last face is terminated by a semicolon.\par
+\par
+The face definition is followed (but still inside the object definition) by the definition of normals. The definition of normals has the same architecture as the object definition (it contains a list of normals and a list of faces with indices of normals). The number of normals and the number of normal faces should correspond to the number of vertices and to the number of object faces.\par
+\par
+The definition of normals is followed by the texture coordinates definition. At the definition beginning the number of texture coordinate pairs is given, followed by a list of coordinates, each containing 2 items. The first item is the texture horizontal coordinate (ranging between 0=left and 1=right), the second item is the texture vertical coordinate (ranging between 0=up and 1=down). Individual items are terminated by a semicolon, the entire list is terminated by a terminator semicolon.\par
+\par
+Depending on the DirectX file format definition the object definition may contain more data. If frames are utilized, several objects are created according the frames' definitions. The identification code of the connected objects is not accessible in the program. Therefore, in such objects the surface, the texture or alike cannot be determined. If the object definition contains the object's texture, then the texture is read out of the file specified. The precondition is the texture being in the BMP or JPG format (Formats PPM and TGA are not supported). If an object contains several material definitions, the object material is set pursuant the first of the definitions. From the other materials only the diffuse color definition is used.\par
+\par
+The element returns the {\uldb identification number}{\v 20810} of the created object. After object creation is, in some cases, needed to use the {\uldb object normalization}{\v 20904} (different 3D editors use different object scales) and {\uldb calculate normals}{\v 20934}. To create objects you can use the \b MilkShape \b0 editor, which you can find on the distribution CD-ROM of the Peter application.\par
+\page
+
+}

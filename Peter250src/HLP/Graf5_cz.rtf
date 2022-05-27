@@ -1,0 +1,412 @@
+{\rtf1 \ansi \deff0
+
+@{\footnote ------- definice fontù --------- }
+
+{\fonttbl 
+{\f0 \fswiss MS San Serif CE;}
+}
+
+@{\footnote ------- definice barev --------- }
+
+{\colortbl
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red192\green192\blue192;
+\red128\green128\blue128;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+
+@{\footnote Pouití barev:
+	0 - èerná
+	1 - tmavì èervená
+	2 - tmavì zelená
+	3 - hnìdá
+	4 - tmavì modrá
+	5 - tmavì fialová
+	6 - tmavì modrozelená
+	7 - šedá
+	8 - tmavì šedá
+	9 - èervená
+	10 - zelená
+	11 - lutá
+	12 - modrá
+	13 - fialová
+	14 - modrozelená
+	15 - bílá
+}
+
+#{\footnote 20903}
+${\footnote Vytvoøit}
++{\footnote 1}
+K{\footnote vytvoøit;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Vytvoøit\par
+\pard \plain \cf0 \fs20
+{\uldb 3D grafika}{\v 20788}\par
+{\uldb knihovny DLL}{\v 20976}\par
+\par
+\par
+{\uldb \{bmc IDF20878.bmp\}\tab skupina}{\v 20878}\par
+{\uldb \{bmc IDF20802.bmp\}\tab stìna}{\v 20802}\par
+{\uldb \{bmc IDF20905.bmp\}\tab kruh}{\v 20905}\par
+{\uldb \{bmc IDF20906.bmp\}\tab trojúhelník}{\v 20906}\par
+{\uldb \{bmc IDF20803.bmp\}\tab krychle}{\v 20803}\par
+{\uldb \{bmc IDF20804.bmp\}\tab koule}{\v 20804}\par
+{\uldb \{bmc IDF20909.bmp\}\tab polokoule}{\v 20909}\par
+{\uldb \{bmc IDF20805.bmp\}\tab válec}{\v 20805}\par
+{\uldb \{bmc IDF20806.bmp\}\tab kuel}{\v 20806}\par
+{\uldb \{bmc IDF20926.bmp\}\tab komolı kuel}{\v 20926}\par
+{\uldb \{bmc IDF20907.bmp\}\tab torus}{\v 20907}\par
+{\uldb \{bmc IDF20882.bmp\}\tab rotaèní objekt}{\v 20882}\par
+{\uldb \{bmc IDF20873.bmp\}\tab 2D objekt}{\v 20873}\par
+{\uldb \{bmc IDF20908.bmp\}\tab statickı 2D objekt}{\v 20908}\par
+{\uldb \{bmc IDF20914.bmp\}\tab 2D obrázek}{\v 20914}\par
+{\uldb \{bmc IDF20960.bmp\}\tab èoèkovı odlesk}{\v 20960}\par
+{\uldb \{bmc IDF20874.bmp\}\tab terén z obrázku}{\v 20874}\par
+{\uldb \{bmc IDF20883.bmp\}\tab terén z plochy}{\v 20883}\par
+{\uldb \{bmc IDF20808.bmp\}\tab objekt z textu}{\v 20808}\par
+{\uldb \{bmc IDF20809.bmp\}\tab objekt ze souboru}{\v 20809}\par
+\par
+Objekty 3D grafiky je moné tvoøit také pomocí {\uldb pamìovıch blokù}{\v 20976}.\par
+\page
+
+#{\footnote 20878}
+${\footnote Skupina}
++{\footnote 1}
+K{\footnote skupina;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20878.bmp\} Skupina\par
+\pard \plain \cf0 \fs20
+{\uldb Vytvoøit}{\v 20903}\par
+\par
+Prvek \b \i skupina \i0 \b0 vytvoøí prázdnou skupinu pro 3D objekty. Skupina neobsahuje ádnı viditelnı element a slouí pouze ke {\uldb spojení}{\v 20813} více objektù do jednoho celku. Na skupinu je moné aplikovat {\uldb transformace}{\v 20815} jako na jakıkoliv jinı objekt. Prvek navrací {\uldb identifikaèní èíslo}{\v 20810} vytvoøené skupiny.\par
+\page
+
+#{\footnote 20802}
+${\footnote Stìna}
++{\footnote 1}
+K{\footnote stìna;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20802.bmp\} Stìna\par
+\pard \plain \cf0 \fs20
+{\uldb Vytvoøit}{\v 20903}\par
+\par
+Prvek \b \i stìna \i0 \b0 vytvoøí ètvercovou plochu s rozmìry 1x1 leící v rovinì X-Y symetricky kolem poèátku souøadného systému. Souøadnice vrcholù stìny jsou (-0.5, 0.5, 0), (0.5, 0.5, 0), (-0.5, -0.5, 0) a (0.5, -0.5, 0). Stìna je tvoøena ze 2 trojúhelníkù s vrcholy 0-1-2 a 2-1-3. Normály ve vrcholech jsou (0, 0, -1). Souøadnice textury ve vrcholech jsou (0, 0), (1, 0), (0, 1) a (1,1). Stìna je orientována smìrem záporné osy z, tedy èelnì k implicitní {\uldb kameøe}{\v 20810}. Prvek navrací {\uldb identifikaèní èíslo}{\v 20810} vytvoøené stìny.\par
+\par
+Stìna je implicitnì viditelná pouze z pøední strany. Viditelnost je moné zmìnit prvkem {\uldb viditelná strana objektu}{\v 20902}.\par
+\page
+
+#{\footnote 20905}
+${\footnote Kruh}
++{\footnote 1}
+K{\footnote kruh;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20905.bmp\} Kruh\par
+\pard \plain \cf0 \fs20
+{\uldb Vytvoøit}{\v 20903}\par
+\par
+Prvek \b \i kruh \i0 \b0 vytvoøí kruhovou plochu s prùmìrem 1 leící v rovinì X-Y symetricky kolem poèátku souøadného systému. Sloitost (tj. poèet dìlení kruhu) je urèena prvkem {\uldb sloitost objektu}{\v 20879}. Na kadıch 16 stupòù sloitosti objektu je pøidán 1 pøídavnı pás (mezistupeò). Normály ve vrcholech kruhu jsou (0, 0, -1). Souøadnice textury ve vrcholech odpovídají plošnému poloení textury na povrch kruhu. Kruh je orientován smìrem záporné osy z, tedy èelnì k implicitní {\uldb kameøe}{\v 20810}. Prvek navrací {\uldb identifikaèní èíslo}{\v 20810} vytvoøeného kruhu.\par
+\par
+Kruh je implicitnì viditelnı pouze z pøední strany. Viditelnost je moné zmìnit prvkem {\uldb viditelná strana objektu}{\v 20902}.\par
+\page
+
+#{\footnote 20906}
+${\footnote Trojúhelník}
++{\footnote 1}
+K{\footnote trojúhelník;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20906.bmp\} Trojúhelník\par
+\pard \plain \cf0 \fs20
+{\uldb Vytvoøit}{\v 20903}\par
+\par
+Prvek \b \i trojúhelník \i0 \b0 vytvoøí plochu rovnoramenného trojúhelníku s rozmìry 1x1 leící v rovinì X-Y symetricky kolem poèátku souøadného systému. Souøadnice vrcholù trojúhelníku jsou (-0.5, -0.5, 0), (0, 0.5, 0) a (0.5, -0.5, 0). Normály ve vrcholech jsou (0, 0, -1). Souøadnice textury ve vrcholech jsou (0, 1), (0.5, 0) a (1, 1). Trojúhelník je orientován smìrem záporné osy z, tedy èelnì k implicitní {\uldb kameøe}{\v 20810}. Prvek navrací {\uldb identifikaèní èíslo}{\v 20810} vytvoøeného trojúhelníku.\par
+\par
+Trojúhelník je implicitnì viditelnı pouze z pøední strany. Viditelnost je moné zmìnit prvkem {\uldb viditelná strana objektu}{\v 20902}.\par
+\page
+
+#{\footnote 20803}
+${\footnote Krychle}
++{\footnote 1}
+K{\footnote krychle;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20803.bmp\} Krychle\par
+\pard \plain \cf0 \fs20
+{\uldb Vytvoøit}{\v 20903}\par
+\par
+Prvek \b \i krychle \i0 \b0 vytvoøí krychli s rozmìry 1x1x1 symetricky kolem poèátku souøadného systému. Nastavením pøepínaèù {\uldb vytváøet horní podstavu}{\v 20867} a {\uldb vytváøet dolní podstavu}{\v 20868} lze urèovat, zda bude vytvoøena horní a dolní stìna krychle. Prvek navrací {\uldb identifikaèní èíslo}{\v 20810} vytvoøené krychle.\par
+\par
+Textura je na povrch krychle namapována tak, aby pokryla všech 6 stran krychle. Textura je rozdìlena na 2 øádky po 3 sloupcích (pro texturu platí obvyklé poadavky, vıška i šíøka textury by mìly bıt mocninou 2). Kadı sloupec obsahuje definici pro 2 protìjší stìny. První sloupec urèuje pøední a zadní stìnu, prostøední sloupec levou a pravou stìnu a poslední sloupec horní a dolní stìnu.\par
+\page
+
+#{\footnote 20804}
+${\footnote Koule}
++{\footnote 1}
+K{\footnote koule;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20804.bmp\} Koule\par
+\pard \plain \cf0 \fs20
+{\uldb Vytvoøit}{\v 20903}\par
+\par
+Prvek \b \i koule \i0 \b0 vytvoøí kouli o prùmìru 1 symetricky kolem poèátku souøadného systému. Sloitost (tj. poèet dìlení obvodu koule) je urèena prvkem {\uldb sloitost objektu}{\v 20879}. Prvek navrací {\uldb identifikaèní èíslo}{\v 20810} vytvoøené koule.\par
+\page
+
+#{\footnote 20909}
+${\footnote Polokoule}
++{\footnote 1}
+K{\footnote polokoule;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20909.bmp\} Polokoule\par
+\pard \plain \cf0 \fs20
+{\uldb Vytvoøit}{\v 20903}\par
+\par
+Prvek \b \i polokoule \i0 \b0 vytvoøí horní polovinu koule o prùmìru 1, symetrické kolem poèátku souøadného systému. Sloitost (tj. poèet dìlení obvodu polokoule) je urèena prvkem {\uldb sloitost objektu}{\v 20879}. Nastavením pøepínaèe {\uldb vytváøet dolní podstavu}{\v 20868} lze urèovat, zda bude vytvoøena dolní podstava polokoule. Prvek navrací {\uldb identifikaèní èíslo}{\v 20810} vytvoøené polokoule.\par
+\page
+
+#{\footnote 20805}
+${\footnote Válec}
++{\footnote 1}
+K{\footnote válec;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20805.bmp\} Válec\par
+\pard \plain \cf0 \fs20
+{\uldb Vytvoøit}{\v 20903}\par
+\par
+Prvek \b \i válec \i0 \b0 vytvoøí válec o prùmìru 1 a vıšce 1 symetricky kolem poèátku souøadného systému (horní podstava protíná osu Y v bodì 0.5, dolní podstava v bodì -0.5). Sloitost (tj. poèet dìlení obvodu válce) je urèena prvkem {\uldb sloitost objektu}{\v 20879}. Na kadıch 8 stupòù sloitosti objektu je pøidán 1 pøídavnı pás obvodu (øada bodù). Na kadıch 20 stupòù sloitosti objektu je pøidán 1 pøídavnı pás horní a dolní podstavy (mezistupeò). Nastavením pøepínaèù {\uldb vytváøet horní podstavu}{\v 20867} a {\uldb vytváøet dolní podstavu}{\v 20868} lze urèovat, zda bude vytvoøena horní a dolní podstava válce. Prvek navrací {\uldb identifikaèní èíslo}{\v 20810} vytvoøeného válce.\par
+\page
+
+#{\footnote 20806}
+${\footnote Kuel}
++{\footnote 1}
+K{\footnote kuel;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20806.bmp\} Kuel\par
+\pard \plain \cf0 \fs20
+{\uldb Vytvoøit}{\v 20903}\par
+\par
+Prvek \b \i kuel \i0 \b0 vytvoøí kuel o prùmìru 1 a vıšce 1 symetricky kolem poèátku souøadného systému (vrchol kuele leí na ose Y v bodì 0.5, dolní podstava protíná osu Y v bodì -0.5). Sloitost (tj. poèet dìlení obvodu kuele) je urèena prvkem {\uldb sloitost objektu}{\v 20879}. Na kadıch 8 stupòù sloitosti objektu je pøidán 1 pøídavnı pás obvodu (øada bodù). Na kadıch 20 stupòù sloitosti objektu je pøidán 1 pøídavnı pás dolní podstavy (mezistupeò). Nastavením pøepínaèe {\uldb vytváøet dolní podstavu}{\v 20868} lze urèovat, zda bude vytvoøena dolní podstava kuele. Prvek navrací {\uldb identifikaèní èíslo}{\v 20810} vytvoøeného kuele.\par
+\page
+
+#{\footnote 20926}
+${\footnote Komolı kuel}
++{\footnote 1}
+K{\footnote komolı kuel;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20926.bmp\} Komolı kuel\par
+\pard \plain \cf0 \fs20
+{\uldb Vytvoøit}{\v 20903}\par
+\par
+Prvek \b \i komolı kuel \i0 \b0 vytvoøí komolı kuel o prùmìru 1 a vıšce 1 symetricky kolem poèátku souøadného systému (horní podstava komolého kuele protíná osu Y v bodì 0.5, dolní podstava protíná osu Y v bodì -0.5). Jako parametr prvku se zadává èíselná hodnota pøedstavující prùmìr horní podstavy komolého kuele. Sloitost (tj. poèet dìlení obvodu komolého kuele) je urèena prvkem {\uldb sloitost objektu}{\v 20879}. Na kadıch 8 stupòù sloitosti objektu je pøidán 1 pøídavnı pás obvodu (øada bodù). Na kadıch 20 stupòù sloitosti objektu je pøidán 1 pøídavnı pás horní a dolní podstavy (mezistupeò). Nastavením pøepínaèù {\uldb vytváøet horní podstavu}{\v 20867} a {\uldb vytváøet dolní podstavu}{\v 20868} lze urèovat, zda bude vytvoøena horní a dolní podstava komolého kuele. Prvek navrací {\uldb identifikaèní èíslo}{\v 20810} vytvoøeného komolého kuele.\par
+\page
+
+#{\footnote 20907}
+${\footnote Torus}
++{\footnote 1}
+K{\footnote torus;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20907.bmp\} Torus\par
+\pard \plain \cf0 \fs20
+{\uldb Vytvoøit}{\v 20903}\par
+\par
+Prvek \b \i torus \i0 \b0 vytvoøí torus (anuloid, prstenec) o prùmìru 1, leící v rovinì X-Z (støedová osa je orientována ve smìru osy Y) a se støedem v poèátku souøadného systému. Jako parametr prvku se zadává èíselná hodnota pøedstavující prùmìr jádra torusu. Sloitost (tj. poèet dìlení obvodu torusu) je urèena prvkem {\uldb sloitost objektu}{\v 20879}. Prvek navrací {\uldb identifikaèní èíslo}{\v 20810} vytvoøeného torusu.\par
+\page
+
+#{\footnote 20882}
+${\footnote Rotaèní objekt}
++{\footnote 1}
+K{\footnote rotaèní objekt;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20882.bmp\} Rotaèní objekt\par
+\pard \plain \cf0 \fs20
+{\uldb Vytvoøit}{\v 20903}\par
+\par
+Prvek \b \i rotaèní objekt \i0 \b0 vytvoøí obecnı rotaèní objekt podle zadaného profilu. Støedová osa rotaèního objektu je orientována ve smìru osu Y. Jako parametr prvku se zadává text obsahující definici profilu objektu. Definice profilu objektu je víceøádkovı textovı seznam. Kadı øádek seznamu definuje 1 bod obrysové køivky a obsahuje 2 èíselné údaje navzájem oddìlené mezerou, tabulátorem nebo støedníkem ";". První èíselnı údaj pøedstavuje souøadnici Y bodu køivky (tj. vıška bodu), druhı údaj je polomìr (tj. vzdálenost bodu od støedové osy). Body obrysové køivky jsou pøitom zadávány smìrem shora dolù (tj. klesající hodnota Y). Stoupající hodnota Y (tj. smìr zdola nahoru) definuje vnitøní stìnu rotaèního objektu (viditelnou ze støedu objektu). Zaèátek a konec obrysové køivky nemusí leet na ose Y, rotaèní objekt nebude uzavøen. Sloitost (tj. poèet dìlení obvodu rotaèního objektu) je urèena prvkem {\uldb sloitost objektu}{\v 20879}. Prvek navrací {\uldb identifikaèní èíslo}{\v 20810} vytvoøeného rotaèního objektu.\par
+\par
+K vytvoøení modelu rotaèního objektu je moné vyuít program \b Modeláø\b0 , kterı se nachází v ukázkovıch programech aplikace Petr. Pomocí klávesy F5 lze model exportovat do tvaru rotaèního objektu. Model je moné programem Modeláø zobrazit v 3D oknì, prohlíet z rùznıch smìrù, generátorem náhodné barvy vybrat barvu modelu a její {\uldb èíselnı kód}{\v 20826} pouít pøi vytváøení programu.\par
+\par
+Následuje jednoduchı pøíklad definice komolého kuele. Vynecháním prvního a posledního øádku se kuel vytvoøí bez horní a dolní podstavy.\par
+\par
+0.5;0\par
+0.5;0.2\par
+-0.5;0.5\par
+-0.5;0\par
+\page
+
+#{\footnote 20873}
+${\footnote 2D objekt}
++{\footnote 1}
+K{\footnote 2D objekt;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20873.bmp\} 2D objekt\par
+\pard \plain \cf0 \fs20
+{\uldb Vytvoøit}{\v 20903}\par
+\par
+Prvek \b \i 2D objekt \i0 \b0 vytvoøí dvourozmìrnı objekt. Dvourozmìrnı objekt je objekt tvoøenı obrázkem, kterı mùe bıt do scény vloen jako bìnı trojrozmìrnı objekt. Obrázek objektu se zadává jako parametr prvku. Obrázek je vyuit jako textura, proto pro nìj platí bìná pravidla jako pro textury (rozmìry mocnina 2, uplatní se vyhlazení textur). Typické vyuití je pro stromy, keøe a jiné objekty krajiny, ale také postavy nepøátel a obrázky støel. Dvourozmìrnı objekt je plocha (podobná objektu {\uldb stìna}{\v 20802}) s tou zvláštní vlastností, e je neustále natáèena smìrem k pozorovateli, take ji pozorovatel povauje za bìnı trojrozmìrnı objekt. Natáèení objektu se realizuje pøídavnou rotací podle osy Y, proto se nedoporuèuje mìnit poøadí rotací objektu ani hodnotu rotace podle osy Y (korekce je pøièítána k zadané rotaci Y). Pro povrch objektu je automaticky nastaven parametr {\uldb obrysy}{\v 20840} na hodnotu 0.5. Prvek navrací {\uldb identifikaèní èíslo}{\v 20810} vytvoøeného 2D objektu.\par
+\page
+
+#{\footnote 20908}
+${\footnote Statickı 2D objekt}
++{\footnote 1}
+K{\footnote statickı 2D objekt;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20908.bmp\} statickı 2D objekt\par
+\pard \plain \cf0 \fs20
+{\uldb Vytvoøit}{\v 20903}\par
+\par
+Prvek \b \i statickı 2D objekt \i0 \b0 vytvoøí dvourozmìrnı objekt podobnì jako prvek {\uldb 2D objekt}{\v 20873} s tím rozdílem, e je tvoøen 2 navzájem pøekøíenımi plochami. K pozorovateli se nenatáèí, lze s ním pracovat jako s jakımkoliv jinım 3D objektem. Je vhodnìjší variantou pro stromy a keøe, protoe vytváøí dojem vìtší prostorovosti objektu. Jako parametr prvku se zadává obrázek objektu. Obrázek je vyuit jako textura, proto pro nìj platí bìná pravidla jako pro textury (rozmìry mocnina 2, uplatní se vyhlazení textur). Pro povrch objektu je automaticky nastaven parametr {\uldb obrysy}{\v 20840} na hodnotu 0.5. Prvek navrací {\uldb identifikaèní èíslo}{\v 20810} vytvoøeného statického 2D objektu.\par
+\page
+
+#{\footnote 20914}
+${\footnote 2D obrázek}
++{\footnote 1}
+K{\footnote 2D obrázek;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20914.bmp\} 2D obrázek\par
+\pard \plain \cf0 \fs20
+{\uldb Vytvoøit}{\v 20903}\par
+\par
+Prvek \b \i 2D obrázek \i0 \b0 vytvoøí objekt obrázku na ploše 3D okna. Jako parametr prvku se zadává obrázek k vytvoøení. Obrázek je pouit jako bìná textura, proto by jeho rozmìry mìly bıt mocninou 2, uplatní se aktuální {\uldb vyhlazení textur}{\v 20891}.\par
+\par
+Pro objekt obrázku platí jiná pravidla ne pro bìné 3D objekty. Souøadnice Y (vertikálnì) obrázku má rozsah -0.5 (dole) a 0.5 (nahoøe), souøadnice X (horizontálnì) má rozsah -0.5 (vlevo) a 0.5 (vpravo). Souøadnice Z se neuplatní, její hodnota mùe bıt vyuita pøi {\uldb hloubkovém tøídìní objektù}{\v 20931}. Je-li potøeba urèovat pøekrıvání obrázkù, je to vıhodnìjší provést nastavením {\uldb renderovací skupiny}{\v 20930} objektu. Novı objekt obrázku je pøidìlen k renderovací skupinì 14. Obrázky s niší renderovací skupinou jsou vykresleny pod obrázkem, obrázky s vyšší skupinou obrázek pøekrıvají. Obrázek má bìnì vypnuté operace {\uldb hloubkového zápisu}{\v 20932} i {\uldb hloubkového testu}{\v 20933}.\par
+\par
+Rozmìry obrázku urèují implicitní mìøítko objektu obrázku. Mìøítko je implicitnì nastaveno tak, aby obrázek byl zobrazen nezkreslenì. Horizontální mìøítko objektu obrázku je nastaveno na hodnotu \b mìøítko_objektu_X = skuteèná_šíøka_obrázku / skuteèná_šíøka_3D_okna\b0 , vertikální mìøítko na hodnotu \b mìøítko_objektu_Y = skuteèná_vıška_obrázku / skuteèná_vıška_3D_okna\b0 . Pøi zmìnì velikosti 3D okna zùstává mìøítko obrázku zachováno, obrázek není pøizpùsoben novım rozmìrùm 3D okna.\par
+\par
+Posledním transformaèním parametrem, kterı se uplatní pro objekt obrázku, je rotace podle osy Z. Tak je moné objektem obrázku otáèet kolem jeho støedu.\par
+\par
+Pro objekt obrázku je automaticky nastaven parametr {\uldb obrysy}{\v 20840} na hodnotu 0.5. Prvek navrací {\uldb identifikaèní èíslo}{\v 20810} vytvoøeného 2D obrázku.\par
+\par
+Objekt 2D obrázku mùe slouit i k zobrazení bìné 2D grafiky z grafické plochy. Na grafickou plochu aplikace Petr je moné provádìt bìné grafické vıstupy (grafická plocha pøitom nemusí bıt zobrazena). Obraz z grafické plochy je moné {\uldb sejmout}{\v 20395} a poté vyuít jako novou texturu pro objekt 2D obrázku. Tak lze napø. zobrazit text. Doporuèuje se minimalizovat èetnost zmìn 2D grafiky, èasté generování novıch textur znaènì zatìuje rychlost 3D grafiky.\par
+\page
+
+#{\footnote 20960}
+${\footnote Èoèkovı odlesk}
++{\footnote 1}
+K{\footnote èoèkovı odlesk;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20960.bmp\} Èoèkovı odlesk\par
+\pard \plain \cf0 \fs20
+{\uldb Vytvoøit}{\v 20903}\par
+\par
+Prvek \b \i èoèkovı odlesk \i0 \b0 vytvoøí objekt obrázku na ploše 3D okna simulující odlesk svìtla v èoèce objektivu kamery. Jako parametr prvku se zadává obrázek k vytvoøení. Obrázek je pouit jako bìná textura, proto by jeho rozmìry mìly bıt mocninou 2, uplatní se aktuální {\uldb vyhlazení textur}{\v 20891}.\par
+\par
+Pro objekt èoèkového odlesku platí jiná pravidla ne pro bìné 3D objekty. Souøadnice X, Y a Z udávají souøadnici zdroje svìtla (nemusí se jednat o existující objekt). Novı objekt èoèkového odlesku je pøidìlen k renderovací skupinì 14. Èoèkovı odlesk má bìnì vypnuté operace {\uldb hloubkového zápisu}{\v 20932} i {\uldb hloubkového testu}{\v 20933}.\par
+\par
+Rozmìry obrázku èoèkového odlesku urèují implicitní mìøítko objektu èoèkového odlesku. Mìøítko je implicitnì nastaveno tak, aby obrázek byl zobrazen nezkreslenì. Horizontální mìøítko objektu èoèkového odlesku je nastaveno na hodnotu \b mìøítko_objektu_X = skuteèná_šíøka_obrázku / skuteèná_šíøka_3D_okna\b0 , vertikální mìøítko na hodnotu \b mìøítko_objektu_Y = skuteèná_vıška_obrázku / skuteèná_vıška_3D_okna\b0 . Pøi zmìnì velikosti 3D okna zùstává mìøítko èoèkového odlesku zachováno, obrázek není pøizpùsoben novım rozmìrùm 3D okna.\par
+\par
+Mìøítko objektu ve smìru Z slouí k urèení pomìrné vzdálenosti obrázku èoèkového odlesku od støedu obrazovky ke zdroji svìtla. Nulová hodnota mìøítka Z znamená zobrazení èoèkového odlesku ve støedu obrazovky, pøi hodnotì 1 se èoèkovı odlesk zobrazí na místì zdroje svìtla.\par
+\par
+Posledním transformaèním parametrem, kterı se uplatní pro objekt èoèkového odlesku, je rotace podle osy Z. Tak je moné obrázkem èoèkového odlesku otáèet kolem jeho støedu.\par
+\par
+Pro objekt èoèkového odlesku je automaticky nastaven parametr {\uldb prùhlednost}{\v 20839} na hodnotu 11. Prvek navrací {\uldb identifikaèní èíslo}{\v 20810} vytvoøeného objektu èoèkového odlesku.\par
+\page
+
+#{\footnote 20874}
+${\footnote Terén z obrázku}
++{\footnote 1}
+K{\footnote terén z obrázku;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20874.bmp\} Terén z obrázku\par
+\pard \plain \cf0 \fs20
+{\uldb Vytvoøit}{\v 20903}\par
+\par
+Pomocí prvku \b \i terén z obrázku \i0 \b0 se vytvoøí terén z vıškové mapy. Vıšková mapa je obrázek zadanı jako parametr prvku. Jas jednotlivıch bodù urèuje vıšku povrchu terénu v rozsahu 0 a 1 (ve smìru osy Y). Èerná barva pøedstavuje vıšku 0, bílá barva je vıška 1. Vytvoøenı terén má rozmìry 1 ve smìrech X, Y i Z se souøadnicemi -0.5 a +0.5 ve smìrech X a Z a se souøadnicemi 0 a 1 ve smìru Y. Povch terénu je vyhlazen podle aktuálního nastavení prvku {\uldb vyhlazení textur}{\v 20891}, prvek je nutno nastavit pøed vytvoøením terénu. Textura je na povrch terénu mapována tak, e se opakuje po 4 políèkách terénu, rozmìry obrázku terénu by proto mìly bıt násobkem 4. Vytvoøenı terén je pøipraven tak, aby zaèátky a konce terénu na sebe navazovaly (jak vıškovì, tak normálovì). Je moné skládat více terénù vedle sebe bez znatelnıch hranic. Je-li potøeba navázat na sebe odlišné terény, doporuèuje se pouívat shodné okraje terénù (o šíøce alespoò 4 body). Prvek navrací {\uldb identifikaèní èíslo}{\v 20810} vytvoøeného terénu.\par
+\page
+
+#{\footnote 20883}
+${\footnote Terén z plochy}
++{\footnote 1}
+K{\footnote terén z plochy;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20883.bmp\} Terén z plochy\par
+\pard \plain \cf0 \fs20
+{\uldb Vytvoøit}{\v 20903}\par
+\par
+Pomocí prvku \b \i terén z plochy \i0 \b0 se vytvoøí terén z {\uldb plochy}{\v 20048} zadané jako parametr prvku. Vytvoøenı terén má stejnı poèet políèek jako plocha. Terén má rozmìry 1 ve smìrech X, Y i Z se souøadnicemi -0.5 a +0.5 ve smìrech X a Z a se souøadnicemi 0 a 1 ve smìru Y.\par
+\par
+Z {\uldb èíselné hodnoty 1}{\v Editace plochy} jednotlivıch políèek je nastavena vıška terénu. Hodnota 0 a 1000 je pøevedena na vıšku 0 a 1 (ve smìru osy Y). Je nastavován levı horní roh políèka terénu (pøi pohledu shora). Poslední øada a poslední sloupec vrcholù políèek terénu jsou nastaveny stejnì jako první øada a první sloupec (vèetnì pøizpùsobení normál), tak je moné terény na sebe navazovat. Je-li potøeba na sebe navázat odlišné terény, doporuèuje se pouít shodné okraje terénù (o šíøce 2 políèek), tak bude automaticky zajištìno jejich navázání.\par
+\par
+Kromì definice vıšek jsou z plochy pøevzaty obrázky ikon a pouity jako textura jednotlivıch políèek. Obrázky ikon jsou sestaveny do jedné vısledné textury. Pro kadou ikonu jsou zjištìny nejèastìjší sousední ikony a uloeny do textury spolu s ikonou. Pro kadou ikonu je pouit lem sousedních ikon o šíøce 1/2 políèka. Definice jedné ikony proto v textuøe zabere prostor o velikosti 2*2 políèka (64*64 bodù). Tak je zajištìno, e pøi zapnuté filtraci textur budou okraje políèek na sebe správnì navazovat. Pro zajištìní hladkého navázání odlišnıch ikon by mìly všechny sousední ikony pouívat shodnı okraj (o šíøce alespoò 1 bod). Aby se zabránilo vzájemnému prolínání ikon pøi velké vzdálenosti (je-li zapnuta {\uldb filtrace vzdálenıch textur}{\v 20901}), je automaticky nastaven {\uldb poèet úrovní vzdálenıch textur}{\v 20929} na hodnotu 4. Je-li textura políèek vyhlazena (nastavením {\uldb vyhlazení textur}{\v 20891} na hodnotu 2), je potøeba omezit poèet úrovní textur na 3.\par
+\par
+Prvek navrací {\uldb identifikaèní èíslo}{\v 20810} vytvoøeného terénu.\par
+\page
+
+#{\footnote 20808}
+${\footnote Objekt z textu}
++{\footnote 1}
+K{\footnote objekt z textu;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20808.bmp\} Objekt z textu\par
+\pard \plain \cf0 \fs20
+{\uldb Vytvoøit}{\v 20903}\par
+\par
+Prvek \b \i objekt z textu \i0 \b0 vytvoøí 3D objekt podle definice zadané jako textovı parametr. Definice objektu odpovídá formátu souborù DirectX (pøípona souborù *.x).\par
+\par
+Zjednodušenı pøíklad definice objektu DirectX (pravoúhlı trojúhelník):\par
+\par
+Mesh \{ \tab \tab // zaèátek definice objektu\par
+3; \tab \tab \tab // poèet následujících vrcholù\par
+1;0;0;, \tab \tab // souøadnice vrcholu 0\par
+0;0;0;, \tab \tab // souøadnice vrcholu 1\par
+0;1;0;; \tab \tab // souøadnice vrcholu 2\par
+\par
+1; \tab \tab \tab // poèet následujících plošek\par
+3;0,1,2;; \tab // ploška 0\par
+\par
+MeshNormals \{ \tab // zaèátek definice normál ve vrcholech\par
+3; \tab \tab \tab // poèet následujících normál\par
+0;0;-1;, \tab \tab // normála vrcholu 0\par
+0;0;-1;, \tab \tab // normála vrcholu 1\par
+0;0;-1;; \tab \tab // normála vrcholu 2\par
+\par
+1; \tab \tab \tab // poèet následujících plošek\par
+3;0,1,2;; \tab // ploška 0\par
+\} \tab \tab \tab // konec definice normál\par
+\par
+MeshTextureCoords \{ \tab // zaèátek definice souøadnic textury\par
+3; \tab \tab \tab // poèet následujících souøadnic textur\par
+1;1; \tab \tab // souøadnice textury pro vrchol 0\par
+0;1; \tab \tab // souøadnice textury pro vrchol 1\par
+0;0;; \tab \tab // souøadnice textury pro vrchol 2\par
+\} \tab \tab \tab // konec definice souøadnic textury\par
+\} \tab \tab \tab // konec definice objektu\par
+\par
+Uvedenı pøíklad je doporuèenı formát pro vytvoøení objektu v aplikaci Petr. Definice obsahuje jako první seznam souøadnic vrcholù. Na zaèátku seznamu je uveden poèet vrcholù. Za poètem vrcholù následují vektory souøadnic vrcholù. Jednotlivé èleny vektoru jsou zakonèeny støedníkem, kadı vektor je zakonèen èárkou (tj. kadá skupinka 3 èísel), pouze poslední je zakonèen støedníkem.\par
+\par
+Za seznamem vrcholù následuje seznam plošek. Na zaèátku seznamu plošek je uveden poèet plošek. Následují jednotlivé plošky. Kadá ploška obsahuje nejdøíve údaj o poètu následujících indexù vrcholù. Za oddìlovacím støedníkem jsou uvedeny indexy vrcholù plošky (poèínaje indexem 0) navzájem oddìlené èárkou, za posledním indexem je znak støedníku. Definice kadé plošky je ukonèena èárkou, poslední ploška je zakonèena støedníkem.\par
+\par
+Za definicí plošek (ale ještì uvnitø definice objektu) následuje definice normál. Definice normál má stejnou strukturu jako definice objektu (obsahuje seznam normál a seznam plošek s indexy normál). Poèet normál a poèet plošek normál by mìly odpovídat poètu vrcholù a poètu plošek objektu.\par
+\par
+Za definicí normál následuje definice souøadnic textury. Na zaèátku definice je uveden poèet párù souøadnic textury. Následuje seznam souøadnic, vdy po 2 údajích. První údaj je horizontální souøadnice textury (v rozsahu 0=vlevo a 1=vpravo), druhı údaj je vertikální souøadnice textury (v rozsahu 0=nahoøe a 1=dole). Jednotlivé údaje jsou ukonèeny støedníkem, za celım seznamem je koncovı støedník.\par
+\par
+Definice objektu mùe obsahovat další údaje podle definice formátu souboru DirectX. Pouijí-li se rámy (FRAME), je vytvoøeno nìkolik objektù podle definice rámù. V programu není pøístupnı identifikaèní kód pøipojenıch objektù, proto nelze u takovıch objektù urèovat povrch, texturu apod. Obsahuje-li definice objektu texturu, je textura naètena ze zadaného souboru. Podmínkou je, aby textura byla ve formátu BMP nebo JPG (není podporován formát PPM ani TGA). Obsahuje-li objekt více definic materiálù, je materiál objektu nastaven podle první z definic, z ostatních materiálù jsou pouity pouze definice difuzní barvy.\par
+\par
+Prvek navrací {\uldb identifikaèní èíslo}{\v 20810} vytvoøeného objektu. Po vytvoøení objektu je v nìkterıch pøípadech vhodné pouít pøíkazy {\uldb normalizace objektu}{\v 20904} (rùzné 3D editory pouívají rùzná mìøítka objektù) a {\uldb vıpoèet normál}{\v 20934}. K vytvoøení modelu objektu je moné pouít editor \b MilkShape\b0 , kterı naleznete na distribuèním CD-ROM aplikace Petr.\par
+\page
+
+#{\footnote 20809}
+${\footnote Objekt ze souboru}
++{\footnote 1}
+K{\footnote objekt ze souboru;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20809.bmp\} Objekt ze souboru\par
+\pard \plain \cf0 \fs20
+{\uldb Vytvoøit}{\v 20903}\par
+\par
+Prvek \b \i objekt ze souboru \i0 \b0 vytvoøí 3D objekt naètením definice objektu ze souboru, jeho jméno je zadáno jako parametr prvku. Soubor je ve formátu DirectX (pøípona souborù *.x), soubor mùe mít binární i textovı tvar. Formát souboru byl zjednodušenì popsán u prvku {\uldb objekt z textu}{\v 20808}.\par
+\par
+Prvek navrací {\uldb identifikaèní èíslo}{\v 20810} vytvoøeného objektu.\par
+\par
+U sloenıch objektù, je-li potøeba pracovat s jednotlivımi èástmi samostatnì (napø. nastavovat jejich textury), je nutno buï v editoru zkonvertovat sloenı objekt na jednoduchı objekt nebo pouít funkci pro {\uldb vyhledávání potomkù}{\v 21034}.\par
+\page
+
+}

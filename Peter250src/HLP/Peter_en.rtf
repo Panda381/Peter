@@ -1,0 +1,304 @@
+{\rtf1 \ansi \deff0
+
+@{\footnote ------- definice fontù --------- }
+
+{\fonttbl 
+{\f0 \fswiss MS San Serif;}
+}
+
+@{\footnote ------- definice barev --------- }
+
+{\colortbl
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red192\green192\blue192;
+\red128\green128\blue128;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+
+@{\footnote Použití barev:
+	0 - èerná
+	1 - tmavì èervená
+	2 - tmavì zelená
+	3 - hnìdá
+	4 - tmavì modrá
+	5 - tmavì fialová
+	6 - tmavì modrozelená
+	7 - šedá
+	8 - tmavì šedá
+	9 - èervená
+	10 - zelená
+	11 - žlutá
+	12 - modrá
+	13 - fialová
+	14 - modrozelená
+	15 - bílá
+}
+
+@{\footnote ------- Peter --------- }
+
+#{\footnote 20062}
+#{\footnote 20258}
+${\footnote Peter}
++{\footnote 1}
+K{\footnote Peter;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Peter\par
+\pard \plain \cf0 \fs20
+{\uldb Structural Elements of a Program}{\v Structural Elements of a Program}\par
+\par
+{\uldb \{bmc IDF20058.bmp\}\tab step}{\v 20058} \par
+{\uldb \{bmc IDF20059.bmp\}\tab left}{\v 20059} \par
+{\uldb \{bmc IDF20060.bmp\}\tab right}{\v 20060} \par
+{\uldb \{bmc IDF20061.bmp\}\tab turn about}{\v 20061} \par
+{\uldb \{bmc IDF20072.bmp\}\tab visible}{\v 20072} \par
+{\uldb \{bmc IDF20076.bmp\}\tab item in front of Peter}{\v 20076} \par
+\par
+{\uldb \{bmc IDF20078.bmp\}\tab horizontal position}{\v 20078} \par
+{\uldb \{bmc IDF20079.bmp\}\tab vertical position}{\v 20079} \par
+{\uldb \{bmc IDF20077.bmp\}\tab direction}{\v 20077} \par
+{\uldb \{bmc IDF20385.bmp\}\tab item on Peter's position}{\v 20385} \par
+{\uldb \{bmc IDF20260.bmp\}\tab numeric value 1 (range 0 to 1023)}{\v 20260} \par
+{\uldb \{bmc IDF20262.bmp\}\tab numeric value 2 (range 0 to 1023)}{\v 20262} \par
+{\uldb \{bmc IDF20264.bmp\}\tab numeric value 3 (range 0 to 127)}{\v 20264} \par
+{\uldb \{bmc IDF20266.bmp\}\tab flag 1}{\v 20266} \par
+{\uldb \{bmc IDF20268.bmp\}\tab flag 2}{\v 20268} \par
+{\uldb \{bmc IDF20270.bmp\}\tab flag 3}{\v 20270} \par
+{\uldb \{bmc IDF20272.bmp\}\tab flag 4}{\v 20272} \par
+{\uldb \{bmc IDF20274.bmp\}\tab flag 5}{\v 20274} \par
+\page
+
+#{\footnote 20058}
+${\footnote Peter - Step}
++{\footnote 1}
+K{\footnote Peter - Step;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20058.bmp\} Peter - Step\par
+\pard \plain \cf0 \fs20
+{\uldb Peter}{\v 20062}\par
+\par
+By entering the \b \i Peter - step \i0 \b0 command Peter will carry out a step forwards in the direction of his position after rotation. No step will be executed outside the sheet boundaries. The length of one step corresponds to the distance of two neighboring squares (i.e. 32 graphic pixels). The final position for the step destination is rounded to units of squares. Normally Peter can be rotated in 4 directions (right, up, left, down). By redefining the {\uldb sprite}{\v 20049} of Peter the number of possible directions can be augmented to 8, Peter being able to step diagonally, too. During Peter's step execution of the program is held up, unlike during Lucy's step execution. Here the program keeps on running after the initiation of the stepping activity. In the case of a previous command to pass to the entered coordinate it will be waited until the shift is completed before the step can be performed.\par
+\page
+
+#{\footnote 20059}
+${\footnote Peter - Left}
++{\footnote 1}
+K{\footnote Peter - Left;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20059.bmp\} Peter - Left\par
+\pard \plain \cf0 \fs20
+{\uldb Peter}{\v 20062}\par
+\par
+On entering the \b \i Peter - left \i0 \b0 command Peter will turn to the left by 90 degrees. The new orientation is rounded up to the next valid orientation value (according to the number of Peter sprite's orientation values). In case a preceding command to shift to a specified coordinate has been given he will first finish the shift before starting to turn.\par
+\page
+
+#{\footnote 20060}
+${\footnote Peter - Right}
++{\footnote 1}
+K{\footnote Peter - Right;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20060.bmp\} Peter - Right\par
+\pard \plain \cf0 \fs20
+{\uldb Peter}{\v 20062}\par
+\par
+On entering the \b \i Peter - right \i0 \b0 command Peter will turn to the right by 90 degrees. The new orientation is rounded up to the next valid orientation value (according to the number of Peter sprite's orientation values). In case a preceding command to shift to a specified coordinate has been given he will first finish the shift before starting to turn.\par
+\page
+
+#{\footnote 20061}
+${\footnote Peter - Turn About}
++{\footnote 1}
+K{\footnote Peter - Turn About;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20061.bmp\} Peter - Turn About\par
+\pard \plain \cf0 \fs20
+{\uldb Peter}{\v 20062}\par
+\par
+On entering the \b \i Peter - turn about \i0 \b0 command Peter will turn about by 180 degrees. The new orientation is rounded up to the next valid orientation value (according to the number of Peter sprite's orientation values). In case a preceding command to shift to a specified coordinate has been given he will first finish the shift before starting to turn.\par
+\page
+
+#{\footnote 20072}
+${\footnote Peter - Visible}
++{\footnote 1}
+K{\footnote Peter - Visible;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20072.bmp\} Peter - Visible\par
+\pard \plain \cf0 \fs20
+{\uldb Peter}{\v 20062}\par
+\par
+The \b \i Peter - visible \i0 \b0 element represents the flag of Peter's visibility. If Peter is visible, his motion over the sheet is animated according to the definition of the Peter {\uldb sprite's}{\v 20049} definition. Peter's visibility being switched off, Peter's motions over the sheet are executed immediately.\par
+\par
+The element of Peter's visibility can be treated as a normal logic variable. By using it in a logic term it can be tested, if Peter is visible. Under "visibility" is understood the possibility of doing animations of the Peter sprite independently on whether Peter is present in the sheet visible portion. By using the visibility element as a command its value may be set by means of a logic term, thus switching Peter's visibility on or off.  In case a preceding command to shift to a specified coordinate has been given he will first finish the shift before the visibility can be switched on or off.\par
+\page
+
+#{\footnote 20076}
+${\footnote Item in front of Peter}
++{\footnote 1}
+K{\footnote Item in front of Peter;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20076.bmp\} Item in front of Peter\par
+\pard \plain \cf0 \fs20
+{\uldb Peter}{\v 20062}\par
+\par
+The \b \i item in front of Peter \i0 \b0 element represents an item on a square in front of Peter. As a square in front of Peter a square is considered that is located at a distance of one step from Peter in the direction of his orientation. By redefining the Peter sprite the number of orientations can be raised to 8, thus making the squares in the diagonal direction accessible, too.\par
+\par
+The element of the item in front of Peter can be treated as a normal logic variable of an item. By using it in a term containing items the contents of the square in front of Peter can be tested. If the square in front of Peter is situated outside the sheet, the item of the {\uldb sheet border}{\v 20249} is returned. By using it as a command the item on the square in front of Peter can be adjusted. In case a preceding command to shift to a specified coordinate has been given Peter will first finish the shift before the item change can be achieved.\par
+\page
+
+#{\footnote 20078}
+${\footnote Horizontal position of Peter}
++{\footnote 1}
+K{\footnote Horizontal position of Peter;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20078.bmp\} Horizontal position of Peter\par
+\pard \plain \cf0 \fs20
+{\uldb Peter}{\v 20062}\par
+\par
+The \b \i horizontal position of Peter \i0 \b0 element represents Peter's coordinate in the horizontal direction on the sheet. The element can be treated as a normal numeric variable. By using it in a numeric term Peter's present coordinate (changing during the shift to a new position) can be found out. By using the element as a command a new horizontal coordinate of Peter can be set. If Peter is not visible, he will shift to the new position immediately. If he is visible, he will start shifting in an animated condition according to the Peter sprite definition. By doing this, he will not wait for completing the former shift; the shift will start immediately. The commands to change the horizontal and the vertical coordinates may be entered immediately one after another, thus accomplishing the shift to the destination position in the diagonal direction. If Peter needs to be stopped, it may be done so by setting a new position to his current position (i.e. to assign the coordinates to themselves). Unlike in case of the command for executing a step it is now possible to shift Peter even outside the sheet or to accomplish the shift without the necessity of waiting for the movement completion.\par
+\page
+
+#{\footnote 20079}
+${\footnote Vertical position of Peter}
++{\footnote 1}
+K{\footnote Vertical position of Peter;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20079.bmp\} Vertical position of Peter\par
+\pard \plain \cf0 \fs20
+{\uldb Peter}{\v 20062}\par
+\par
+The \b \i vertical position of Peter \i0 \b0 element represents Peter's coordinate in the vertical direction on the sheet. The element can be treated as a normal numeric variable. By using it in a numeric term Peter's current coordinate (changing during the shift to a new position) can be found out. By using the element as a command a new vertical coordinate of Peter can be set. If Peter is not visible, he will shift to the new position immediately. If he is visible, he will start shifting in an animated condition according to the Peter sprite definition. By doing this, he will not wait for completing the former shift; the shift will start immediately. The commands to change the horizontal and the vertical coordinates may be entered immediately one after another, thus accomplishing the shift to the destination position in the diagonal direction. If Peter needs to be stopped, it may be done so by setting a new position to his current position (i.e. to assign the coordinates to themselves). Unlike in case of the command for executing a step it is now possible to shift Peter even outside the sheet or to accomplish the shift without the necessity of waiting for the movement completion.\par
+\page
+
+#{\footnote 20077}
+${\footnote Direction of Peter}
++{\footnote 1}
+K{\footnote Direction of Peter;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20077.bmp\} Direction of Peter\par
+\pard \plain \cf0 \fs20
+{\uldb Peter}{\v 20062}\par
+\par
+The \b \i direction of Peter \i0 \b0 element represents the direction of Peter after being rotated, expressed in radian (The perigon, 360 degrees, corresponding approximately to 6.28). The element can be treated as a normal numeric variable. By using it in a numeric term Peter's current direction can be found out. By using the element as a command the direction of Peter can be set. In case a preceding command to shift to a specified coordinate has been given Peter will first finish the shift before being rotated.\par
+\par
+To facilitate the use of directions predefined {\uldb angle constants}{\v 20112} can be utilized enabling execution of numeric operations, e.g. addition and division.\par
+\page
+
+#{\footnote 20385}
+${\footnote Item on Peter's position}
++{\footnote 1}
+K{\footnote Item on Peter's position;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20385.bmp\} Item on Peter's position\par
+\pard \plain \cf0 \fs20
+{\uldb Peter}{\v 20062}\par
+\par
+The \b \i item on Peter's position \i0 \b0 element represents an item on a square on which Peter is standing. The element can be treated as a normal item variable. By using it in a term containing items the contents of the square of Peter's position can be tested. If the square is situated outside the sheet, the item of the {\uldb sheet border}{\v 20249} will be returned. By using the element as a command the item on Peter's square can be set. In case a preceding command to shift to a specified coordinate has been given Peter will first finish the shift before the item is changed.\par
+\page
+
+#{\footnote 20260}
+${\footnote Numeric value 1 on Peter's position}
++{\footnote 1}
+K{\footnote Numeric value 1 on Peter's position;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20260.bmp\} Numeric value 1 on Peter's position\par
+\pard \plain \cf0 \fs20
+{\uldb Peter}{\v 20062}\par
+\par
+The \b \i numeric value 1 on Peter's position \i0 \b0 element represents the numeric value 1 of the square, on which Peter is standing. The numeric value 1 is an integer ranging between 0 and 1023. The element can be treated as a normal numeric variable, that means it can be set or used in numeric terms.\par
+\page
+
+#{\footnote 20262}
+${\footnote Numeric value 2 on Peter's position}
++{\footnote 1}
+K{\footnote Numeric value 2 on Peter's position;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20262.bmp\} Numeric value 2 on Peter's position\par
+\pard \plain \cf0 \fs20
+{\uldb Peter}{\v 20062}\par
+\par
+The \b \i numeric value 2 on Peter's position \i0 \b0 element represents the numeric value 2 of the square, on which Peter is standing. The numeric value 2 is an integer ranging between 0 and 1023. The element can be treated as a normal numeric variable, that means it can be set or used in numeric terms.\par
+\page
+
+#{\footnote 20264}
+${\footnote Numeric value 3 on Peter's position}
++{\footnote 1}
+K{\footnote Numeric value 3 on Peter's position;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20264.bmp\} Numeric value 3 on Peter's position\par
+\pard \plain \cf0 \fs20
+{\uldb Peter}{\v 20062}\par
+\par
+The \b \i numeric value 3 on Peter's position \i0 \b0 element represents the numeric value 3 of the square, on which Peter is standing. The numeric value 3 is an integer ranging between 0 and 127. The element can be treated as a normal numeric variable, that means it can be set or used in numeric terms.\par
+\page
+
+#{\footnote 20266}
+${\footnote Flag 1 on Peter's position}
++{\footnote 1}
+K{\footnote Flag 1 on Peter's position;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20266.bmp\} Flag 1 on Peter's position\par
+\pard \plain \cf0 \fs20
+{\uldb Peter}{\v 20062}\par
+\par
+The \b \i flag 1 on Peter's position \i0 \b0 element represents the condition of the logic switch (flag) 1 of the square, on which Peter is standing. The element can be treated as a normal logic variable, i.e. it can be set or used in logic terms.\par
+\page
+
+#{\footnote 20268}
+${\footnote Flag 2 on Peter's position}
++{\footnote 1}
+K{\footnote Flag 2 on Peter's position;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20268.bmp\} Flag 2 on Peter's position\par
+\pard \plain \cf0 \fs20
+{\uldb Peter}{\v 20062}\par
+\par
+The \b \i flag 2 on Peter's position \i0 \b0 element represents the condition of the logic switch (flag) 2 of the square, on which Peter is standing. The element can be treated as a normal logic variable, i.e. it can be set or used in logic terms.\par
+\page
+
+#{\footnote 20270}
+${\footnote Flag 3 on Peter's position}
++{\footnote 1}
+K{\footnote Flag 3 on Peter's position;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20270.bmp\} Flag 3 on Peter's position\par
+\pard \plain \cf0 \fs20
+{\uldb Peter}{\v 20062}\par
+\par
+The \b \i flag 3 on Peter's position \i0 \b0 element represents the condition of the logic switch (flag) 3 of the square, on which Peter is standing. The element can be treated as a normal logic variable, i.e. it can be set or used in logic terms.\par
+\page
+
+#{\footnote 20272}
+${\footnote Flag 4 on Peter's position}
++{\footnote 1}
+K{\footnote Flag 4 on Peter's position;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20272.bmp\} Flag 4 on Peter's position\par
+\pard \plain \cf0 \fs20
+{\uldb Peter}{\v 20062}\par
+\par
+The \b \i flag 4 on Peter's position \i0 \b0 element represents the condition of the logic switch (flag) 4 of the square, on which Peter is standing. The element can be treated as a normal logic variable, i.e. it can be set or used in logic terms.\par
+\page
+
+#{\footnote 20274}
+${\footnote Flag 5 on Peter's position}
++{\footnote 1}
+K{\footnote Flag 5 on Peter's position;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20274.bmp\} Flag 5 on Peter's position\par
+\pard \plain \cf0 \fs20
+{\uldb Peter}{\v 20062}\par
+\par
+The \b \i flag 5 on Peter's position \i0 \b0 element represents the condition of the logic switch (flag) 5 of the square, on which Peter is standing. The element can be treated as a normal logic variable, i.e. it can be set or used in logic terms.\par
+\page
+
+}

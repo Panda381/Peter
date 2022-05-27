@@ -1,0 +1,410 @@
+{\rtf1 \ansi \deff0
+
+@{\footnote ------- definice fontù --------- }
+
+{\fonttbl 
+{\f0 \fswiss MS San Serif;}
+}
+
+@{\footnote ------- definice barev --------- }
+
+{\colortbl
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red192\green192\blue192;
+\red128\green128\blue128;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+
+@{\footnote Použití barev:
+	0 - èerná
+	1 - tmavì èervená
+	2 - tmavì zelená
+	3 - hnìdá
+	4 - tmavì modrá
+	5 - tmavì fialová
+	6 - tmavì modrozelená
+	7 - šedá
+	8 - tmavì šedá
+	9 - èervená
+	10 - zelená
+	11 - žlutá
+	12 - modrá
+	13 - fialová
+	14 - modrozelená
+	15 - bílá
+}
+
+#{\footnote 20057}
+${\footnote Program Control}
++{\footnote 1}
+K{\footnote Program Control;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Program Control\par
+\pard \plain \cf0 \fs20
+{\uldb Structural Elements of a Program}{\v Structural Elements of a Program}\par
+\par
+{\uldb \{bmc IDF20002.bmp\}\tab conditional executing of commands}{\v 20002} \par
+{\uldb \{bmc IDF20006.bmp\}\tab conditional repeating of commands}{\v 20006} \par
+{\uldb \{bmc IDF20247.bmp\}\tab command repeating with specified run number}{\v 20247} \par
+{\uldb \{bmc IDF20009.bmp\}\tab break executing}{\v 20009} \par
+{\uldb \{bmc IDF20011.bmp\}\tab multibranch control structure}{\v 20011} \par
+{\uldb \{bmc IDF20122.bmp\}\tab wait}{\v 20122} \par
+{\uldb \{bmc IDF20001.bmp\}\tab group}{\v 20001} \par
+{\uldb \{bmc IDF20056.bmp\}\tab list}{\v 20056} \par
+{\uldb \{bmc IDF20073.bmp\}\tab function termination}{\v 20073} \par
+{\uldb \{bmc IDF20402.bmp\}\tab comment}{\v 20402} \par
+{\uldb \{bmc IDF20050.bmp\}\tab program control - extension}{\v 20050} \par
+{\uldb \{bmc IDF20976.bmp\}\tab DLL libraries}{\v 20976} \par
+{\uldb \{bmc IDF21013.bmp\}\tab configuration}{\v 21013} \par
+\page
+
+#{\footnote 20002}
+#{\footnote 20003}
+#{\footnote 20004}
+#{\footnote 20005}
+${\footnote Conditional Executing of Commands}
++{\footnote 1}
+K{\footnote Conditional Executing of Commands;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20002.bmp\} Conditional Executing of Commands\par
+\pard \plain \cf0 \fs20
+{\uldb Program Control}{\v 20057}\par
+\par
+\{bmc IDF20002.bmp\} \b \i condition heading \i0 \b0 \par
+\tab \{bmc IDF20003.bmp\} \b \i condition test \i0 \b0 \par
+\tab \{bmc IDF20004.bmp\} \b \i commands at condition fulfillment \i0 \b0 \par
+\tab \{bmc IDF20005.bmp\} \b \i commands at condition non-fulfillment \i0 \b0 \par
+\par
+The conditional executing of commands serves to branch the program depending on a condition validity. In the condition test a logical term can be quoted, which will be evaluated during program execution. If the logic term holds, a group of commands situated in the branch will be executed to fulfill the condition. Otherwise a group of commands situated in the branch for condition non-fulfillment will be executed.\par
+\par
+\b \i Example of using:\i0 \b0 \par
+\par
+\{bmc Vyb20_en.bmp\}\par
+\page
+
+#{\footnote 20006}
+#{\footnote 20007}
+#{\footnote 20008}
+#{\footnote 20009}
+#{\footnote 20247}
+#{\footnote 20248}
+${\footnote Repeating of Commands}
++{\footnote 1}
+K{\footnote Repeating of Commands;Conditional Repeating of Commands;Command Repeating with Specified Run Number;Break Executing;Cycle;Loop;}
+\pard \plain \cf12 \brdrb \fs24 \b
+\{bmc IDF20006.bmp\} \{bmc IDF20247.bmp\} Repeating of Commands\par
+\pard \plain \cf0 \fs20
+{\uldb Program Control}{\v 20057}\par
+\par
+\{bmc IDF20006.bmp\} \b \i heading of conditional repetition \i0 \b0 \par
+\tab \{bmc IDF20007.bmp\} \b \i condition test of conditional repetition \i0 \b0 \par
+\tab \{bmc IDF20008.bmp\} \b \i commands of conditional repetition \i0 \b0 \par
+\par
+The repeating of commands serves a repeated execution of a command group. The first type of repetition is the conditional repetition. In the repetition condition test the logic term quoted there is tested before each pass of the repetition cycle. If the term is fulfilled, the cycle commands will be executed. In the opposite case the program keeps on running, carrying out further commands following the cycle. This means that if the condition is not satisfied, the commands may not be carried out even a single time.\par
+\par
+\{bmc IDF20247.bmp\} \b \i heading of an iterative repetition \i0 \b0 \par
+\tab \{bmc IDF20248.bmp\} \b \i repetition count \i0 \b0 \par
+\tab \{bmc IDF20008.bmp\} \b \i commands of an iterative repetition \i0 \b0 \par
+\par
+The second repetition type is repetition with specified run number (iterative repetition). In this type a numeric term in the repetition count specifies the number saying how many times the commands should be carried out. The value of the term specifying the repetition count is rounded up to the nearest integer number and transferred to the absolute value. This means that for the term value ranging between -0.5 < n < 0.5  the cycle commands will not be carried out even a single time.\par
+\par
+\{bmc IDF20009.bmp\} \b \i repetition interrupt (break executing) \i0 \b0 \par
+\par
+The repetition interrupt command serves to finish the repetition prematurely. It is a command, which can be entered anywhere among the commands of the conditional repetition or the iterative repetition. During the execution of this command the highest running cycle is interrupted. If there is no running super-ordinate cycle in the function, the command execution is concluded like the command for concluding the function (function termination). No flag of the repetition interrupt will be transferred out of the function.\par
+\par
+\b \i Examples of using:\i0 \b0 \par
+\par
+\{bmc Pok4_en.bmp\}\tab \{bmc Pok6_en.bmp\}\par
+\page
+
+#{\footnote 20011}
+#{\footnote 20012}
+#{\footnote 20013}
+#{\footnote 20014}
+#{\footnote 20015}
+${\footnote Multibranch Control Structure}
++{\footnote 1}
+K{\footnote Multibranch Control Structure;Case;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20011.bmp\} Multibranch Control Structure\par
+\pard \plain \cf0 \fs20
+{\uldb Program Control}{\v 20057}\par
+\par
+\{bmc IDF20011.bmp\} \b \i heading of the multibranch structure \i0 \b0 \par
+\tab \{bmc IDF20012.bmp\} \b \i branching term \i0 \b0 \par
+\tab \{bmc IDF20013.bmp\} \b \i one branch for commands \i0 \b0 (can be used several times) \par
+\tab \tab \{bmc IDF20014.bmp\} \b \i one testing term \i0 \b0 (can be used several times) \par
+\tab \{bmc IDF20015.bmp\} \b \i commands for branches not found \i0 \b0 \par
+\par
+The multibranch control structure is used for branching a program into several parts depending on the term value. As a branching term any type of term can be utilized: a number, a flag, a text etc. Based on the branching term the program decides which command branch will be used. In the body of the branching structure one or more branches of commands may be used. The branches are searched from the top to the bottom. In each branch one or more testing term may be quoted (of the same type as the branching term). The terms are evaluated gradually from the top to the bottom. If a term is found which is identical with the branching term, the commands contained in the branch are executed, and the program continues running behind the end of the multibranch structure. If none of the terms corresponds to the branching term, the program continues in the following command branch. If no branch with a corresponding term is found, the commands for branches not found are executed.\par
+\par
+\b \i Example of using:\i0 \b0 \par
+\par
+\{bmc Klav_en.bmp\}\par
+\page
+
+#{\footnote 20122}
+${\footnote Wait}
++{\footnote 1}
+K{\footnote Wait;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20122.bmp\} Wait\par
+\pard \plain \cf0 \fs20
+{\uldb Program Control}{\v 20057}\par
+\par
+The \b \i wait \i0 \b0 command causes to pause the program execution for a preset time. This time is specified in seconds. If no value is entered, the program will wait for 0.055 seconds.\par
+\par
+The real waiting time need not correspond to the desired time exactly. The program timing depends on the computer type and on the operational system. For example, for the PC computers the nominal time resolution is 0.055 seconds, the accuracy fluctuating roughly between 0.4 and 0.6 seconds (depending on the operational system utilized and the number of other running programs). If an exact timing is necessary, a function for {\uldb time operation}{\v 20483} must be used.\par
+\par
+The wait command is not only helpful for program stopping for a given period. The Windows environment is a multitask one, which means that several programs may be performed at a time. To coordinate the cooperation of the running programs it is necessary that the program not requiring any service passes the control to other programs so that those programs may perform their function. For this purpose the wait command is intended. If no further program service is urgently needed (i.e. all operations are executed and the program is waiting for another step), it is useful to insert the wait command at least for the minimum time period of 0.05 seconds instead of waiting in the loop. Albeit a program from the \b Peter \b0 environment passes the control to the system automatically, a program that is not written properly can overload the system unnecessarily.\par
+\par
+There are several cases, when it is not necessary to insert the wait commands: when using the step commands for {\uldb Peter}{\v 20062} and {\uldb Lucy}{\v 20067} (including waiting for completion of the previous moving) and commands for input a character or key from the {\uldb keyboard}{\v 20123} with waiting.\par
+\par
+Another function of the wait command (including the default waiting according to the previous paragraph) is the execution of the program internal services. The services in question concern the sprites' motion and animation, sound and music playback, mouse service and the service of the display repainting. During the wait command timing and possible services of these functions are done. If the wait command is not executed, only automatic synchronization of the internal services is carried out, which, however, may not either be quick enough (the display repaint is jerky) or it may not be carried out at suitable time (the display repaint is done between two graphic commands and therefore the display is blinking).\par
+\par
+For time consuming programs a special modification of the wait command is available: the waiting time is set to zero. In this case no waiting takes place, the control is passed over to the system only for the shortest time necessary, the timing of the internal services being done fully. A program having this waiting modification works with almost maximal speed, the repainting and other internal services working properly, and the cooperation with the system and other programs being at the same time ensured, too.\par
+\page
+
+#{\footnote 20001}
+#{\footnote 20750}
+${\footnote Group}
++{\footnote 1}
+K{\footnote Group;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20001.bmp\} Group\par
+\pard \plain \cf0 \fs20
+{\uldb Program Control}{\v 20057}\par
+\par
+The \b \i group \i0 \b0 element is instrumental for closing several commands, variables or functions into one group for the purpose of program lucidity. In the function contents editing field commands may be located in the group. In the field of global and local variables and functions these group is designated for variables and functions. The group, being a lucid making element only, exerts no influence on the program execution.\par
+\page
+
+#{\footnote 20056}
+#{\footnote 20255}
+#{\footnote 20256}
+#{\footnote 20257}
+${\footnote List}
++{\footnote 1}
+K{\footnote List;Data List;Index}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20056.bmp\} List\par
+\pard \plain \cf0 \fs20
+{\uldb Program Control}{\v 20057}\par
+\par
+\{bmc IDF20056.bmp\} \b \i list heading \i0 \b0 \par
+\tab \{bmc IDF20255.bmp\} \b \i number of data entries in the list \i0 \b0 \par
+\tab \{bmc IDF20256.bmp\} \b \i index of the list data entry \i0 \b0 \par
+\tab \{bmc IDF20257.bmp\} \b \i automatic index incrementing \i0 \b0 \par
+\par
+The list is helpful for creating data fields. On compiling a list definition the number of data entries in the list must be set and variables must be added to the list. Variables of arbitrary type can be used as list variables. No internal list can be used in the list. The group of variables in the list is called data entry. The entry variables are referred to by setting the entry index and by a simple usage of the list variables.\par
+\par
+A multidimensional list can readily be created by index computation from multidimensional indexes. For example, the elements of a matrix having dimensions of \i 20(x) * 30(y) \i0 can be indexed by the term \i index = x + 20*y\i0 .\par
+\par
+The list size is determined by the \b \i number of data entries in the list \i0 \b0 element. Number of data entries in the list is a numeric constant. Its value has to be entered when creating the program; it cannot be changed when the program is running. Entering the value is done like in the case of {\uldb numeric constants}{\v 20016}, either by adding number elements or by entering the number text into the element's descriptive text (This is used, if no number element is added; following the number arbitrary text may be quoted). In the program the number of data entries in the list element can be used as a numeric constant. Thus it is guaranteed that after a list size change this change will be reflected also in the program without the necessity to interfere with it.\par
+\par
+The list entries are addressed by means of the \b \i entry index\i0 \b0 . This is a normal numeric variable, which, having been set, makes the selected entry variables accessible. When setting the entry index the entered numeric term is rounded up to the nearest whole number, and adapted to the valid list limits by the modulo operation. In this way it is secured that the index always points to the valid list entry. Testing the condition of reaching the list end cannot be done by comparing the index with the list size, because the index can never reach the element value of the number of data entries in the list. Thus some index shifts even by rather large sections can easily be implemented in the list, as the index overflows the list boundary to the list's opposite end.\par
+\par
+To facilitate the manipulation with the list positions an element for \b \i automatic list index incrementing \i0 \b0 is available. This element makes it possible to automatically increment the list index by a number of entries given by the element of the automatic incrementing after each access to some list variable. This is suitable e.g. when the list is filled up during initialization. By simple assigning the variables to the list entries the list index is automatically shifted to further entries. If there are several variables in one entry, it is therefore more suitable to fill up always one variable for all indexes, and then to proceed to a further variable.\par
+\par
+\b \i Example of using:\i0 \b0 \par
+\par
+\{bmc Vyb11_en.bmp\}\par
+\page
+
+#{\footnote 20073}
+${\footnote Function Termination}
++{\footnote 1}
+K{\footnote Function Termination;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20073.bmp\} Function Termination\par
+\pard \plain \cf0 \fs20
+{\uldb Program Control}{\v 20057}\par
+\par
+The \b \i function termination \i0 \b0 element is used to prematurely terminate the {\uldb function}{\v 20047} which is being executed. Normally a function is completed after executing the last command. By entering the command of function termination it can be terminated at any of its stages. This holds also for the {\uldb program main function}{\v Global Variables and Functions}. By terminating it the whole program will be terminated.\par
+\page
+
+#{\footnote 20402}
+${\footnote Comment}
++{\footnote 1}
+K{\footnote Comment;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20402.bmp\} Comment\par
+\pard \plain \cf0 \fs20
+{\uldb Program Control}{\v 20057}\par
+\par
+The \b \i comment \i0 \b0 element serves to write own comments into the program, without interfering with the program performance. One of the features of the comment element is that any other elements can be stored in the comment in the function contents editing field. During the program execution these elements will be ignored. This feature can be used when it is necessary to insert an element into a program branch. First the branch end is laid aside into the comment, then the element needed is inserted, and the branch end is then put back to the element inserted.\par
+\page
+
+#{\footnote 20050}
+${\footnote Program Control - Extension}
++{\footnote 1}
+K{\footnote Program Control - Extension;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Program Control - Extension\par
+\pard \plain \cf0 \fs20
+{\uldb Program Control}{\v 20057}\par
+\par
+{\uldb \{bmc IDF20885.bmp\}\tab program is active application}{\v 20885} \par
+{\uldb \{bmc IDF20892.bmp\}\tab precise time counter}{\v 20892} \par
+{\uldb \{bmc IDF20397.bmp\}\tab language}{\v 20397} (0=auto, 5=CZ, 7=D, 9=USA, 27=SK)\par
+{\uldb \{bmc IDF20744.bmp\}\tab user font}{\v 20744} \par
+{\uldb \{bmc IDF20745.bmp\}\tab font list}{\v 20745} \par
+{\uldb \{bmc IDF20743.bmp\}\tab character set}{\v 20743} (1250=easteurope, 1251=russian, 1252=west)\par
+{\uldb \{bmc IDF20580.bmp\}\tab program parameter}{\v 20580} (0=program name)\par
+{\uldb \{bmc IDF20581.bmp\}\tab program name with full path}{\v 20581} \par
+\page
+
+#{\footnote 20885}
+${\footnote Program Is Active Application}
++{\footnote 1}
+K{\footnote Program Is Active Application;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20885.bmp\} Program Is Active Application\par
+\pard \plain \cf0 \fs20
+{\uldb Program Control - Extension}{\v 20050}\par
+\par
+The \b \i program is active application \i0 \b0 element is a logic flag indicating that this running program is an active application. Active application is an application in which the user’s key input is in progress. The program is activated by setting the flag; by resetting the flag that application is activated which was active last. This element is intended above all for games running in the {\uldb full screen mode}{\v 20638}. If a program (game) finds that it has ceased to be an active application (i.e. the user has switched over to another application) it should stop and remain stopped till it is activated by the user again.\par
+\page
+
+#{\footnote 20892}
+${\footnote Precise Time Counter}
++{\footnote 1}
+K{\footnote Precise Time Counter;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20892.bmp\} Precise Time Counter\par
+\pard \plain \cf0 \fs20
+{\uldb Program Control - Extension}{\v 20050}\par
+\par
+The \b \i precise time counter \i0 \b0 element serves to exactly measure time intervals. The element returns the time (in seconds) elapsed from the start of the Windows as a numeric value. The worst case resolution is 5 ms, but in most cases it is several orders of magnitude better.\par
+\page
+
+#{\footnote 20397}
+${\footnote Language}
++{\footnote 1}
+K{\footnote Language;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20397.bmp\} Language\par
+\pard \plain \cf0 \fs20
+{\uldb Program Control - Extension}{\v 20050}\par
+\par
+The \b \i language \i0 \b0 element is instrumental for finding or setting the language the running program is working with. The Peter application enables to generate multilingual programs. When entering texts (element descriptions or text variable services) these text are valid for the language to which the Peter application is switched. By switching over the language, the texts, too are switched to the relevant language. When starting a program that language is switched on that corresponds to the current Windows system setting ("\i local setting\i0 ") or that corresponds to the language currently used by the Peter application, if the program has been started from the Peter application environment. The texts written by the program are used according to the language to which the program is switched. If there are no texts available for the currently set language, texts for the nearest language are used.\par
+\par
+A language is specified in the numeric LANGID code (used in the Windows system):\par
+\par
+2 \tab Bulgarian\par
+5 \tab Czech\par
+6 \tab Danish\par
+7 \tab German\par
+8 \tab Greek\par
+9 \tab English\par
+10 \tab Spanish\par
+11 \tab Finnish\par
+12 \tab French\par
+14 \tab Hungarian\par
+15 \tab Icelandic\par
+16 \tab Italian\par
+19 \tab Dutch\par
+20 \tab Norwegian\par
+21 \tab Polish\par
+22 \tab Portuguese\par
+24 \tab Romanian\par
+25 \tab Russian\par
+26 \tab Serbo-Croat\par
+27 \tab Slovak\par
+28 \tab Albanian\par
+29 \tab Swedish\par
+31 \tab Turkish\par
+\par
+By setting to 0 the default language is selected (the real language code being returned).\par
+\par
+By setting an language the {\uldb character set}{\v 20743} of the texts displayed is changed, too.\par
+\page
+
+#{\footnote 20744}
+${\footnote User Font}
++{\footnote 1}
+K{\footnote User Font;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20744.bmp\} User Font\par
+\pard \plain \cf0 \fs20
+{\uldb Program Control - Extension}{\v 20050}\par
+\par
+The \b \i user font \i0 \b0 element defines the font type of texts written by the {\uldb test display}{\v 20367} command or of texts in the window {\uldb dialog elements}{\v 20712}, if the "\b serifs\b0 " and "\b typewriter\b0 " (fixed pitch font) switches are switched on at the same time. The font is entered in a text form as the font name, found by the {\uldb font list}{\v 20745} function. After program start the \b Impact \b0 font type is pre-selected.\par
+\page
+
+#{\footnote 20745}
+${\footnote Font List}
++{\footnote 1}
+K{\footnote Font List;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20745.bmp\} Font List\par
+\pard \plain \cf0 \fs20
+{\uldb Program Control - Extension}{\v 20050}\par
+\par
+The \b \i font list \i0 \b0 element serves to find out the list of fonts installed in the system. The element returns the list in form of a multi-line text, each line corresponding the name of one font type. The name of the font selected can be passed over to the {\uldb user font}{\v 20744} function to display texts by means of a selectable font type.\par
+\page
+
+#{\footnote 20743}
+${\footnote Character Set}
++{\footnote 1}
+K{\footnote Character Set;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20743.bmp\} Character Set\par
+\pard \plain \cf0 \fs20
+{\uldb Program Control - Extension}{\v 20050}\par
+\par
+The \b \i character set \i0 \b0 element is used to select the character set of text written out by the {\uldb text display}{\v 20367} command or of texts in the window {\uldb dialog elements}{\v 20712}. The number of the characters displayable on the screen is limited. Therefore the national dependent characters (containing diacritics) are divided into character sets. As an example, the Central European countries use character sets which are different from those used by the West European or American countries.\par
+\par
+The character set is a numeric code corresponding the code page used in the Windows system:\par
+\par
+1250\tab Central Europe (Eastern Europe) character set\par
+1251\tab Russian character set (cyrillic)\par
+1252\tab West character set\par
+1253\tab Greek character set\par
+1254\tab Turkish character set\par
+1257\tab Baltic character set\par
+\par
+When changing the {\uldb language}{\v 20397} (similarly as on program start) the character set is automatically set in accordance with the language selected.\par
+\par
+Some font types installed in the system may not include all character sets; in such case the nearest character set is used.\par
+\page
+
+#{\footnote 20244}
+#{\footnote 20580}
+${\footnote Program Parameters}
++{\footnote 1}
+K{\footnote Program Parameters;Program Parameter;Command Line;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20244.bmp\} Program Parameters, \{bmc IDF20580.bmp\} Program Parameter\par
+\pard \plain \cf0 \fs20
+{\uldb Program Control - Extension}{\v 20050}\par
+\par
+When starting programs in the Windows system the program to be started can be given parameters by means of the command line. The element \b \i program parameters \i0 \b0 is a text constant returning the command line text the same way as it had been entered the program on its start. The element includes the name of the running program, followed by possible parameters. This element is not included in the field of the program's basic structural elements; you can find it in the local input parameter definition of the program main function.\par
+\par
+By means of another element, called \b \i program parameter \i0 \b0 the individual command line parameters may be approached individually. In quality of the element parameter the numeric value representing the index of the required parameter is entered. Only the entered-index parameter text is returned, an empty text signifies the parameter end. The zero index denotes the program name. The program name is returned in the same form as it had been entered from the command line. Use the {\uldb program name with full path}{\v 20581}, if you need to find out the program full name including the path.\par
+\page
+
+#{\footnote 20581}
+${\footnote Program Name with Full Path}
++{\footnote 1}
+K{\footnote Program Name with Full Path;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20581.bmp\} Program Name with Full Path\par
+\pard \plain \cf0 \fs20
+{\uldb Program Control - Extension}{\v 20050}\par
+\par
+The \b \i program name with full path \i0 \b0 element is utilized for finding out the full name of a running program. It possesses the nature of a text constant. The program name contains the full path to the program unlike the {\uldb command line}{\v 20244} 0 parameter, which returns the form entered from the command line on starting the program.\par
+\page
+
+}

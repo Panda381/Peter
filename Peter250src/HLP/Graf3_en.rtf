@@ -1,0 +1,306 @@
+{\rtf1 \ansi \deff0
+
+@{\footnote ------- definice fontù --------- }
+
+{\fonttbl 
+{\f0 \fswiss MS San Serif CE;}
+}
+
+@{\footnote ------- definice barev --------- }
+
+{\colortbl
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red192\green192\blue192;
+\red128\green128\blue128;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+
+@{\footnote Použití barev:
+	0 - èerná
+	1 - tmavì èervená
+	2 - tmavì zelená
+	3 - hnìdá
+	4 - tmavì modrá
+	5 - tmavì fialová
+	6 - tmavì modrozelená
+	7 - šedá
+	8 - tmavì šedá
+	9 - èervená
+	10 - zelená
+	11 - žlutá
+	12 - modrá
+	13 - fialová
+	14 - modrozelená
+	15 - bílá
+}
+
+#{\footnote 20814}
+#{\footnote 20869}
+#{\footnote 20870}
+#{\footnote 20871}
+
+#{\footnote 20788}
+${\footnote 3D Graphics}
++{\footnote 1}
+K{\footnote 3D Graphics;}
+\pard \plain \brdrb \cf12 \fs24 \b
+3D Graphics\par
+\pard \plain \cf0 \fs20
+{\uldb Graphic}{\v 20302}\par
+\par
+\par
+{\uldb \{bmc IDF20794.bmp\}\tab videomode}{\v 20794}\par
+{\uldb \{bmc IDF20789.bmp\}\tab 3D graphics window}{\v 20789}\par
+{\uldb \{bmc IDF20810.bmp\}\tab active object}{\v 20810}\par
+{\uldb \{bmc IDF20911.bmp\}\tab elapsed time}{\v 20911}\par
+{\uldb \{bmc IDF20796.bmp\}\tab settings}{\v 20796}\par
+{\uldb \{bmc IDF20857.bmp\}\tab scene}{\v 20857}\par
+{\uldb \{bmc IDF20903.bmp\}\tab create}{\v 20903}\par
+{\uldb \{bmc IDF20801.bmp\}\tab objects}{\v 20801}\par
+{\uldb \{bmc IDF20815.bmp\}\tab transformations}{\v 20815}\par
+{\uldb \{bmc IDF20825.bmp\}\tab surface}{\v 20825}\par
+{\uldb \{bmc IDF20915.bmp\}\tab textures}{\v 20915}\par
+{\uldb \{bmc IDF20846.bmp\}\tab lighting}{\v 20846}\par
+\page
+
+#{\footnote 20794}
+${\footnote Videomode}
++{\footnote 1}
+K{\footnote Videomode;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20794.bmp\} Videomode\par
+\pard \plain \cf0 \fs20
+{\uldb 3D Graphics}{\v 20788}\par
+\par
+The \b \i videomode \i0 \b0 element serves to find out and to set the videomode for the {\uldb full screen mode}{\v 20638} of the program. When read, this element will return a multiple-line text list of the videomodes. Each list line contains one videomode in the form: width*height/bits. The numeric parameters "width" and "height" represent the horizontal and vertical display resolution, expressed in pixels. The videomode size data can be converted in dimensions used by the Peter application by dividing by the numeric value \b 32\b0 . The "bits" parameter is the number of bits for one graphic pixel. The parameter value may be 8, 16, 24 or 32. Example: 640*480/8 is the minimum videomode supported by the Windows system (in Peter’s dimensions this corresponds to 20 squares horizontally and 15 squares vertically). Bit number \b 8 \b0 indicates that the videomode uses 256 colors (2^8=256). The videomode list is sorted according to the horizontal resolution, according to the vertical resolution and, finally, according to the bit number. One of the list lines is supplemented by the "<" character at its end. This character denotes the currently set videomode.\par
+\par
+By entering one of the lines into the element the desired videomode is set and the full screen mode is activated. The videomode required is set by entering the text in the same form that is applicable for the individual lines of the videomode list: width*height/bits. Instead of the separating character "\b *\b0 " the "\b x\b0 " character (lower case x letter) may be used. Instead of the "\b /\b0 " character the "\b \\\b0 " character may be used. Any numeric parameter can be omitted or replaced by 0; in this case the default value will be used. The videomode setting containing parameters "0*0/0" has the same meaning as using the {\uldb full screen mode}{\v 20638} command. With default values of the videomode width and height the videomode will be accommodated to the changes of the program {\uldb main sheet}{\v Global Variables and Functions}. The full screen mode can be switched off by the {\uldb full screen mode}{\v 20638} command, which causes the normal Windows videomode to be returned. The required parameters of the full screen mode videomode are stored. They will be returned when the full screen mode is activated again by the {\uldb full screen mode}{\v 20638} command. The videomode width and height can also be entered in Peter's scale (including its decimal representation). For instance, the "20x15" program will set the full screen mode having 640*480 pixels (equivalent to the "640x480" parameter). When the required videomode cannot be found, then the nearest videomode will be used. When searching for a videomode the specified videomode bit number has priority to the videomode dimensions.\par
+\page
+
+#{\footnote 20789}
+#{\footnote 20790}
+#{\footnote 20791}
+#{\footnote 20792}
+#{\footnote 20793}
+${\footnote 3D Graphics Window}
++{\footnote 1}
+K{\footnote 3D Graphics Window;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20789.bmp\} 3D Graphics Window\par
+\pard \plain \cf0 \fs20
+{\uldb 3D Graphics}{\v 20788}\par
+\par
+\{bmc IDF20789.bmp\} \b \i 3D graphics window \i0 \b0 \par
+\tab \{bmc IDF20790.bmp\} \b \i X coordinate of 3D graphics window \i0 \b0 \par
+\tab \{bmc IDF20791.bmp\} \b \i Y coordinate of 3D graphics window \i0 \b0 \par
+\tab \{bmc IDF20792.bmp\} \b \i width of 3D graphics window \i0 \b0 \par
+\tab \{bmc IDF20793.bmp\} \b \i height of 3D graphics window \i0 \b0 \par
+\par
+By means of the \b \i 3D graphics window \i0 \b0 element the 3D graphics mode is activated. By entering this command a 3D graphics window with required coordinates and dimensions is displayed in the program main window. The window coordinates and dimensions are specified in Peter’s coordinates. To create a 3D window the prescribed {\uldb interface}{\v 20910} and {\uldb driver}{\v 20881} will be used. By entering the \b \i 3D graphics window \i0 \b0 command repeatedly the 3D window position and size can be adjusted additionally. When none of the parameters is specified, the 3D window will be formed over the program window's entire area. The 3D graphics window may assume even a larger size than the program area. For instance, in the full screen mode of 800x600 pixels the program utilizes an area of 25x18 squares, i.e. 800x576 pixels. At the same time a 3D graphics window may assume a size over the entire area of 800x600 pixels. By specifying a zero instead of the width or height of the 3D graphics window the 3D mode will be terminated.\par
+\par
+All elements of the 3D graphics can be utilized independently on the 3D mode activity. Thanks to this possibility the 3D graphics window can be switched on and off at discretion. In the same manner the interface or the driver may be changed. At the same time all preset parameters remain unchanged, no new adjustment being necessary after changes have been made.\par
+\page
+
+#{\footnote 20810}
+${\footnote Active Object}
++{\footnote 1}
+K{\footnote Active Object;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20810.bmp\} Active Object\par
+\pard \plain \cf0 \fs20
+{\uldb 3D Graphics}{\v 20788}\par
+\par
+The \b \i active object \i0 \b0 element serves to select the 3D object that is supposed to be manipulated. When created, each 3D object will return a unique identification number (abbreviated as ID), by means of which the object may be referred to later. By reading the \b \i active object \i0 \b0 element the currently selected active object can be found. Also by this element one of three predefined objects having fix identification numbers 0 through 2 may be selected.\par
+\par
+An object having the identification number of \b 0 \b0 is the \b \i scene\i0 \b0 . The scene is an {\uldb empty group}{\v 20878} containing no visible object. It is only other objects that can be linked to it. Each newly created object is linked to the scene as the default status. The scene is the basic reference point for the other objects' transformations. The scene itself cannot be transformed (translated, rotated or scaled). From the scene other objects can inherit the surface definition or the basic texture. The scene object can neither be deleted nor it can be linked to another object. The setting of the scene switch {\uldb object texture magnification filter}{\v 20900} determines whether the {\uldb background texture for scene}{\v 20859} will be filtered.\par
+\par
+An object having the identification number of \b 1 \b0 is the \b \i camera\i0 \b0 . The camera may be transformed and linked to other objects in the same manner as any other object, but it cannot be deleted. When starting the program the camera is oriented in the positive \b z \b0 axis direction as a default setting (i.e. the basic direction, any rotation being equal to 0) and translated back by 2 units (i.e. the z translation = -2, the other translations = 0).\par
+\par
+The last predefined object carries number \b 2\b0 . This is the default scene {\uldb lighting}{\v 20846}. This object can be deleted. The default lighting is the {\uldb directional light}{\v 20849} of the white color having the X and Y rotation values of 45 degrees and the following translation values: X = -10, Y = 10, Z = -10 (Note: The directional light does not use any translation, the translation is prepared for the possibility of transition to another light type). Thus, the scene is lighted from the upper left corner.\par
+\page
+
+#{\footnote 20911}
+${\footnote Elapsed Time}
++{\footnote 1}
+K{\footnote Elapsed Time;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20911.bmp\} Elapsed Time\par
+\pard \plain \cf0 \fs20
+{\uldb 3D Graphics}{\v 20788}\par
+\par
+By means of the \b \i elapsed time \i0 \b0 element animation and events of the 3D graphics to be drawn can be timed. The drawing of the 3D graphics is strongly dependent on the computer and the videocard speed and the driver being used. That is why the 3D programs work, as a rule, with the maximum speed, and the program is timed according to the really elapsed time.\par
+\par
+The \b \i elapsed time \i0 \b0 element measures the time from the last drawing of the 3D frame. The frame of the 3D graphics is rendered (which means that its 3D appearance is calculated and subsequently painted on the screen) on each {\uldb wait}{\v 20122} command as well as on commands for waiting for a keystroke. The painting of the 3D graphics is not operated by any other commands. Therefore it is necessary that the main loop contains a wait command, its parameter preferably being 0 (the program will run with its maximum speed of operation). The time is measured with a resolution of 1 millisecond or more exactly (if a multimedia timer is available).\par
+\par
+When no parameter is specified, then the element will return the elapsed time in seconds. As the element's parameter the required change to set in 1 second (i.e. the rate) can be specified. The element will return the elapsed time multiplied by the entered numeric parameter.\par
+\page
+
+#{\footnote 20796}
+${\footnote Settings}
++{\footnote 1}
+K{\footnote Settings;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Settings\par
+\pard \plain \cf0 \fs20
+{\uldb 3D Graphics}{\v 20788}\par
+\par
+\par
+{\uldb \{bmc IDF20910.bmp\}\tab interface}{\v 20910}\par
+{\uldb \{bmc IDF20881.bmp\}\tab driver}{\v 20881}\par
+{\uldb \{bmc IDF20913.bmp\}\tab free videomemory}{\v 20913}\par
+{\uldb \{bmc IDF20912.bmp\}\tab rendering speed}{\v 20912}\par
+{\uldb \{bmc IDF20797.bmp\}\tab filling surfaces}{\v 20797}\par
+{\uldb \{bmc IDF20798.bmp\}\tab lighting}{\v 20798}\par
+{\uldb \{bmc IDF20799.bmp\}\tab smooth shading}{\v 20799}\par
+{\uldb \{bmc IDF20894.bmp\}\tab texture magnification filter}{\v 20894}\par
+{\uldb \{bmc IDF20872.bmp\}\tab texture minification filter}{\v 20872}\par
+{\uldb \{bmc IDF20895.bmp\}\tab faraway texture filter}{\v 20895}\par
+{\uldb \{bmc IDF20896.bmp\}\tab filling object surfaces}{\v 20896}\par
+{\uldb \{bmc IDF20897.bmp\}\tab object lighting}{\v 20897}\par
+{\uldb \{bmc IDF20898.bmp\}\tab object smooth shading}{\v 20898}\par
+{\uldb \{bmc IDF20902.bmp\}\tab visible object side}{\v 20902}\par
+\page
+
+#{\footnote 20910}
+${\footnote Interface}
++{\footnote 1}
+K{\footnote Interface;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20910.bmp\} Interface\par
+\pard \plain \cf0 \fs20
+{\uldb Settings}{\v 20796}\par
+\par
+The \b \i interface \i0 \b0 element decides, which interface is supposed to be used for operating the 3D graphics. By setting its value to \b 1 \b0 through \b 8 \b0 the interface selected is given in the table below. After setting the value to \b 0 \b0 an automatically detected interface will be used. The interface selected is used to initialize the 3D mode by the {\uldb 3D graphics window}{\v 20789} command. If the 3D window is not active, or if the interface required has not been found, then the element will return 0. In the other cases the number of the active interface will be returned. The interface can be changed even after the 3D window has been activated. The interface can also be changed automatically after switching over the full screen mode or after changing the active Windows videomode.\par
+\par
+\i \b Supported interfaces: \b0 \i0 \par
+\par
+\b 1 \b0 \tab OpenGL version 1.0 \par
+\b 2 \b0 \tab OpenGL version 1.1 \par
+\b 4 \b0 \tab DirectX version 3 \par
+\b 5 \b0 \tab DirectX version 5 \par
+\b 6 \b0 \tab DirectX version 6 \par
+\b 7 \b0 \tab DirectX version 7 \par
+\b 8 \b0 \tab DirectX version 8 \par
+\par
+\i \b Interface comparison: \b0 \i0 \par
+\par
+The \b OpenGL \b0 interface is supported by all Windows version including the Windows NT (the OpenGL interface is a component of the system). The OpenGL interface does not support the multitexturing, only the texture stage 0 can be utilized, this being possible for several basic operations only (texture modulation). It does not enable to distinguish between a hardware and software variant; the non-supported videocard features are simulated by means of the software. The graphics speed is strongly dependent on the videocard driver. When the driver is supported (e.g. in the case of GeForce videocards), it can be slightly faster than the HAL DirectX driver in simple scenes. When the driver is not supported (e.g. in the case of ATI videocards), it is generally slightly faster than the RGB DirectX software driver. The OpenGL interface, version 1.0, uses a slower texture support. Therefore its speed gets lower rather quickly in more complex scene as compared with version 1.1. The OpenGL interface supports the videomode of 256 colors.\par
+\par
+The \b DirectX \b0 interface is not supported in the Windows NT. In the Windows 2000 the DirectX, version 7, is a component of the system. A component of the Windows 98 system is the DirectX interface, version 6. A component of the Windows 95, 2nd edition, is the DirectX 5. The 1st edition does not contain the DirectX. The DirectX interface, version 6 through 8, support the multitexturing. The DirectX does not simulate the missing videocard function, therefore it can sometimes be more suitable to use a software driver. From among the software drivers only the reference driver is supported by the DirectX 8. The reference driver is, however, rather slow for normal use. The DirectX interface 4 through 6 support the videomode of 256 colors (generally only in connection with the RGB software driver). The Direct 5 and 4 support the Ramp driver without textures, which can be used as an lack driver when graphics speed problems occur.\par
+\page
+
+#{\footnote 20881}
+${\footnote Driver}
++{\footnote 1}
+K{\footnote Driver;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20881.bmp\} Driver\par
+\pard \plain \cf0 \fs20
+{\uldb Settings}{\v 20796}\par
+\par
+The \b \i driver \i0 \b0 element decides, which driver of an active interface should be used to operate the 3D graphics. By setting its value to \b 1 \b0 through \b 6 \b0 the driver will be used according to the table below. By setting its value to \b 0 \b0 an automatically detected driver will be used. The driver selected is used to initialize the 3D mode by the {\uldb 3D graphics window}{\v 20789} command. If the 3D window is not active or if the desired driver has not been found, the element will return the 0. Otherwise the number of the active driver is returned. The driver can be changed even after the 3D window has been activated. A driver can by changed automatically, too, after switching over the full screen mode or after changing the active Windows videomode.\par
+\par
+\i \b Supported drivers: \b0 \i0 \par
+\par
+\b 1 \b0 \tab HAL (hardware)\par
+\b 2 \b0 \tab TnLHal (hardware with transformation and lighting module)\par
+\b 3 \b0 \tab REF (reference)\par
+\b 4 \b0 \tab RGB (software)\par
+\b 5 \b0 \tab MMX (software with the MMX instructions)\par
+\b 6 \b0 \tab Ramp (software with MONO lighting, without textures)\par
+\par
+\i \b Driver comparison: \b0 \i0 \par
+\par
+The \b HAL \b0 driver is a driver utilizing the hardware support of the videocard. It is the only driver supported in the OpenGL interface. The DirectX 7 interface supports another variation, the \b TnLHal \b0 (The lighting and the transformations of the vertices are implemented by the hardware). In higher DirectX versions this variation is automatically integrated with the HAL driver.\par
+\par
+The \b REF \b0 driver is a reference driver using no hardware support. It serves as a comparing driver when developing the hardware driver of the videocard. Because of his low speed it is not suitable for practical use.\par
+\par
+The \b RGB \b0 and \b MMX \b0 drivers are software drivers. Some operations are carried out in a simplified manner or they partly use the hardware. They are of use in case of incorrect functionality of the hardware driver, or when the videocard does not support the hardware acceleration. An advantage is the possibility of using multitextures in videocards that do not support this feature. The MMX driver uses the processor’s MMX instructions; it is supported in the DirectX 6 and 7 only. The RGB and MMX drivers in the DirectX 3 through 6 support the videomode of 256 colors. This videomode is no more supported by the DirectX 7 interface and its higher versions.\par
+\par
+The \b Ramp \b0 driver is a software driver using a simplified lighting operation (This is a mono lighting, only the blue component being used.). In Peter’s environment this driver is utilized in a simplified manner, without textures. Thus a high driver speed can be reached, owing to which the driver can serve as an lack driver if no hardware acceleration of the videocard is available, and other software drivers operate too slowly.\par
+\page
+
+#{\footnote 20913}
+${\footnote Free Videomemory}
++{\footnote 1}
+K{\footnote Free Videomemory;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20913.bmp\} Free Videomemory\par
+\pard \plain \cf0 \fs20
+{\uldb Settings}{\v 20796}\par
+\par
+By means of the \b \i free videomemory \i0 \b0 element the current free videomemory can be detected that is available for textures (the value is expressed in bytes). This information can be used to decide, how many textures the program will use and what their quality will be like. For the OpenGL interface this information is not available. Therefore this function returns the substitution symbolic value of 4MB in the OpenGL interface. The texture is removed from the videomemory in case of initializing another interface or when deleting a picture containing the texture. It is therefore recommended to switch off the 3D window between the individual scenes (to set the size to 0) and to switch it on again (to restore the original size). A picture will be deleted, if all references to the picture are deleted, i.e. if the picture is not included in any variable. This can be reached by creating a unique picture copy, e.g. by modifying it by a double flipping over.\par
+\page
+
+#{\footnote 20912}
+${\footnote Rendering Speed}
++{\footnote 1}
+K{\footnote Rendering Speed;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20912.bmp\} Rendering Speed\par
+\pard \plain \cf0 \fs20
+{\uldb Settings}{\v 20796}\par
+\par
+The \b \i rendering speed \i0 \b0 element serves to find out the value of the rendering speed, i.e. the speed of the 3D graphics painting. The rendering speed is expressed as the number of frames per second. The resulting data is rounded to an integer. Withal the measurement runs at a higher accuracy using data filtration and stabilization during the time period of several frames. The data can be used to automatically correct the rendering quality, when the speed is too low, or, on the other side, too high. When using this data one must take into consideration that the data will get stabilized only after several frames have run off.\par
+\page
+
+#{\footnote 20797}
+#{\footnote 20896}
+${\footnote Filling Surfaces}
++{\footnote 1}
+K{\footnote Filling Surfaces;Filling Object Surfaces;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20797.bmp\} Filling Surfaces, \{bmc IDF20896.bmp\} Filling Object Surfaces\par
+\pard \plain \cf0 \fs20
+{\uldb Settings}{\v 20796}\par
+\par
+The \b \i filling surfaces \i0 \b0 element is a logic switch. If it is on, then the faces that the objects consist of, are filled with color or texture. If the switch is off, the objects are displayed only by means of line contours (wireframe). The display of the back face contours can be controlled by the {\uldb visible object side}{\v 20902} switch. (In some videocards the back face contours cannot be switched off, e.g. in the STB Velocity).\par
+\par
+The filling of surfaces can be switched off in an object separately by the \b \i filling object surfaces \i0 \b0 command (for an {\uldb active object}{\v 20810}). If the \b \i filling surfaces \i0 \b0 switch is switched off, then the filling of surfaces is switched off in any object, independently on the settings of switches for filling the surfaces of individual objects. The default setting of all switches is ON.\par
+\page
+
+#{\footnote 20798}
+#{\footnote 20897}
+${\footnote Lighting}
++{\footnote 1}
+K{\footnote Lighting;Object Lighting;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20798.bmp\} Lighting, \{bmc IDF20897.bmp\} Object Lighting\par
+\pard \plain \cf0 \fs20
+{\uldb Settings}{\v 20796}\par
+\par
+The \b \i lighting \i0 \b0 element is a logic switch. If it is set, the object is lighted by active lights, i.e. shadows are created on the object. The lighting is calculated for the individual vertices of the object faces. For the face surface the lighting of one of the vertices is used (the {\uldb smooth shading}{\v 20799} switch is off), or the lighting grades smoothly between colors of the individual vertices (the smooth shading switch is on). If the \b \i lighting \i0 \b0 switch is reset, then the surface or texture full color intensity is applied. This mode will be used in cases where it is not suitable to shade the object by the incident light (firmament, flame coming out of a weapon), or in cases where the object has already been shaded (by the vertex colors or by a light map texture).\par
+\par
+In each object the lighting can be switched off separately by the \b \i object lighting \i0 \b0 command (for an {\uldb active object}{\v 20810}). If the \b \i lighting \i0 \b0 switch is switched off, the lighting is switched off in all objects independently on the position of switches for lighting the individual objects. The default setting of all switches is ON.\par
+\page
+
+#{\footnote 20799}
+#{\footnote 20898}
+${\footnote Smooth Shading}
++{\footnote 1}
+K{\footnote Smooth Shading;Object Smooth Shading;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20799.bmp\} Smooth Shading, \{bmc IDF20898.bmp\} Object Smooth Shading\par
+\pard \plain \cf0 \fs20
+{\uldb Settings}{\v 20796}\par
+\par
+The \b \i smooth shading \i0 \b0 element is a logic switch. If it is on, then the surface color of the individual faces changes gradually between the colors of the faces' individual vertices. If it is off, then the color of one of the vertices will be used as the face color. It cannot be determined which vertex will be used. The OpenGL typically uses different vertex than the DirectX.\par
+\par
+In objects having rounded surface (sphere, rotational objects) the points of concurrence of two neighboring faces contain, as a rule, the same color (the same diffuse color and the same normal). Thanks to this fact a smooth object surface appearance can be reached, as opposed to the situation with angular objects (cube) where the points of concurrence of the neighboring faces are lighted in a different way (different surface normal). In such case the edges are visible on the object surface even when the smooth shading is on. Nevertheless, in angular objects the smooth shading will manifest itself, too, as a smooth shade change at an uneven object lighting and as a smooth fog change in large objects.\par
+\par
+The smooth shading can be switched off in each object separately by the \b \i object smooth shading \i0 \b0 command (for an {\uldb active object}{\v 20810}). If the \b \i smooth shading \i0 \b0 switch is off, then the smooth shading switch is off in all objects, independently of the position of switches for smooth shading of the individual objects. The default setting of all switches is ON.\par
+\page
+
+}

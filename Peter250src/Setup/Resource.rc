@@ -1,0 +1,192 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Czech resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CSY)
+#ifdef _WIN32
+LANGUAGE LANG_CZECH, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDN_MAINFRAME           ICON    DISCARDABLE     "RES\\Setup.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDN_CHECKBOX            BITMAP  DISCARDABLE     "res\\checkbox.bmp"
+IDN_INSOK               BITMAP  DISCARDABLE     "Res\\Insok.bmp"
+IDN_DINOK               BITMAP  DISCARDABLE     "Res\\DInok.bmp"
+IDN_DINST               BITMAP  DISCARDABLE     "Res\\Dinst.bmp"
+IDN_FLAGCZ              BITMAP  DISCARDABLE     "Res\\Flag_cz.bmp"
+IDN_FLAGENG             BITMAP  DISCARDABLE     "Res\\Flag_en.bmp"
+IDN_DIGIT               BITMAP  DISCARDABLE     "Res\\Digit.BMP"
+IDN_PETR                BITMAP  DISCARDABLE     "Res\\Petr.BMP"
+IDN_TITLE_CZ            BITMAP  DISCARDABLE     "Res\\Title_CZ.BMP"
+IDN_LINKA               BITMAP  DISCARDABLE     "Res\\Linka.BMP"
+IDN_GEMTREE             BITMAP  DISCARDABLE     "Res\\Gemtre.BMP"
+IDN_ADR_CZ              BITMAP  DISCARDABLE     "Res\\Adr_CZ.BMP"
+IDN_PHONE_CZ            BITMAP  DISCARDABLE     "Res\\Phone_CZ.BMP"
+IDN_SWCOFF              BITMAP  DISCARDABLE     "Res\\SwcOff.BMP"
+IDN_SWCON               BITMAP  DISCARDABLE     "Res\\SwcOn.BMP"
+IDN_INST3_CZ            BITMAP  DISCARDABLE     "Res\\Inst3_cz.bmp"
+IDN_ADD1_CZ             BITMAP  DISCARDABLE     "Res\\Add1_cz.bmp"
+IDN_ADD2_CZ             BITMAP  DISCARDABLE     "Res\\Add2_cz.bmp"
+IDN_ADD3_CZ             BITMAP  DISCARDABLE     "Res\\Add3_cz.bmp"
+IDN_END0_CZ             BITMAP  DISCARDABLE     "Res\\End0_cz.bmp"
+IDN_END1_CZ             BITMAP  DISCARDABLE     "Res\\End1_cz.bmp"
+IDN_INST0_CZ            BITMAP  DISCARDABLE     "Res\\Inst0_cz.bmp"
+IDN_INST1_CZ            BITMAP  DISCARDABLE     "Res\\Inst1_cz.bmp"
+IDN_INST2_CZ            BITMAP  DISCARDABLE     "Res\\Inst2_cz.bmp"
+IDN_ADD0_CZ             BITMAP  DISCARDABLE     "Res\\Add0_cz.bmp"
+IDN_UINS3_CZ            BITMAP  DISCARDABLE     "Res\\UIns3_CZ.BMP"
+IDN_UINS1_CZ            BITMAP  DISCARDABLE     "Res\\UIns1_CZ.BMP"
+IDN_UINS2_CZ            BITMAP  DISCARDABLE     "Res\\UIns2_CZ.BMP"
+IDN_UINS0_CZ            BITMAP  DISCARDABLE     "Res\\UIns0_CZ.BMP"
+IDN_GEMLOGO5            BITMAP  DISCARDABLE     "Res\\Gemlogo5.bmp"
+IDN_GEMLOGO2            BITMAP  DISCARDABLE     "Res\\Gemlogo2.bmp"
+IDN_GEMLOGO3            BITMAP  DISCARDABLE     "Res\\Gemlogo3.bmp"
+IDN_GEMLOGO4            BITMAP  DISCARDABLE     "Res\\Gemlogo4.bmp"
+IDN_GEMLOGO1            BITMAP  DISCARDABLE     "Res\\Gemlogo1.bmp"
+IDN_SELECT              BITMAP  DISCARDABLE     "Res\\Select.BMP"
+IDN_SEL4_CZ             BITMAP  DISCARDABLE     "Res\\Sel4_CZ.BMP"
+IDN_SEL2_CZ             BITMAP  DISCARDABLE     "Res\\Sel2_CZ.BMP"
+IDN_SEL3_CZ             BITMAP  DISCARDABLE     "Res\\Sel3_CZ.BMP"
+IDN_SEL1_CZ             BITMAP  DISCARDABLE     "Res\\Sel1_CZ.BMP"
+IDN_UINS3_EN            BITMAP  DISCARDABLE     "Res\\Uins3_en.bmp"
+IDN_ADD1_EN             BITMAP  DISCARDABLE     "Res\\Add1_en.bmp"
+IDN_ADD2_EN             BITMAP  DISCARDABLE     "Res\\Add2_en.bmp"
+IDN_ADD3_EN             BITMAP  DISCARDABLE     "Res\\Add3_en.bmp"
+IDN_ADR_EN              BITMAP  DISCARDABLE     "Res\\Adr_en.bmp"
+IDN_END0_EN             BITMAP  DISCARDABLE     "Res\\End0_en.bmp"
+IDN_END1_EN             BITMAP  DISCARDABLE     "Res\\End1_en.bmp"
+IDN_INST0_EN            BITMAP  DISCARDABLE     "Res\\Inst0_en.bmp"
+IDN_INST1_EN            BITMAP  DISCARDABLE     "Res\\Inst1_en.bmp"
+IDN_INST2_EN            BITMAP  DISCARDABLE     "Res\\Inst2_en.bmp"
+IDN_INST3_EN            BITMAP  DISCARDABLE     "Res\\Inst3_en.bmp"
+IDN_SEL1_EN             BITMAP  DISCARDABLE     "Res\\Sel1_en.bmp"
+IDN_SEL2_EN             BITMAP  DISCARDABLE     "Res\\Sel2_en.bmp"
+IDN_SEL3_EN             BITMAP  DISCARDABLE     "Res\\Sel3_en.bmp"
+IDN_SEL4_EN             BITMAP  DISCARDABLE     "Res\\Sel4_en.bmp"
+IDN_TITLE_EN            BITMAP  DISCARDABLE     "Res\\Title_en.bmp"
+IDN_UINS0_EN            BITMAP  DISCARDABLE     "Res\\Uins0_en.bmp"
+IDN_UINS1_EN            BITMAP  DISCARDABLE     "Res\\Uins1_en.bmp"
+IDN_PHONE_EN            BITMAP  DISCARDABLE     "Res\\Phone_en.bmp"
+IDN_UINS2_EN            BITMAP  DISCARDABLE     "Res\\Uins2_en.bmp"
+IDN_ADD0_EN             BITMAP  DISCARDABLE     "Res\\Add0_en.bmp"
+IDN_INSOK_EN            BITMAP  DISCARDABLE     "Res\\Insok_en.bmp"
+IDN_DINOK_EN            BITMAP  DISCARDABLE     "Res\\Dinok_en.bmp"
+IDN_DINST_CZ            BITMAP  DISCARDABLE     "Res\\Dinst_cz.bmp"
+IDN_DINST_EN            BITMAP  DISCARDABLE     "Res\\Dinst_en.bmp"
+IDN_INSOK_CZ            BITMAP  DISCARDABLE     "Res\\Insok_cz.bmp"
+IDN_DINOK_CZ            BITMAP  DISCARDABLE     "Res\\Dinok_cz.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_PETER               CURSOR  DISCARDABLE     "res\\peter.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// EXE
+//
+
+IDN_DELEXE              EXE     DISCARDABLE     "Res\\DelExe.exe"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 186, 92
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 85
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Czech resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

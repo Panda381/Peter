@@ -1,0 +1,41 @@
+
+Verze:
+------
+15.2.2011, 2.32: nová LITE verze s mnoha uvolnìnými funkcemi
+13.3.2011, 2.40: UDP komunikace, programové ikony 3/4 velikosti
+2.7.2011, 2.41: oprava UDP komunikace (pøíjímací port v odesílaném paketu)
+29.8.2012,, 2.50:: freeware
+
+
+Cheaty od Petra 1.12:
+---------------------
+Vsechny cheaty se zadavaji jako vzorovy text v okne
+pro nastaveni fontu. Po zadani slova stisknout OK.
+Opetovnym zadanim se cheatova funkce vypne. Nastaveni
+prepinace se uchovava v INI souboru.
+
+multi ....... vicejazycne menu
+licence ..... zobrazeni licence nacteneho programu
+              v okne "O aplikaci Petr" (program musi
+              byt ulozen verzi 1.10 a vyssi)
+
+
+Poznámky pro pøeklad:
+---------------------
+- needitovat obrázky pøi displeji v TRUECOLOR - nièí barvy!!!!
+- needitovat obrázky ve WINDOWS NT - neumí uložit komprimovanì
+- k pøekladu je nutné VS VC++ 6.00 a DirectX SDK 8.1, zøejmì nutné W98
+- pokud nelze nainstalovat VC 6.00 pod XP spustit instalátor v kompatibilním módu W98
+
+Pøi zmìnì èísla verze opravit verzi v Main.h, Setup\Main.h, HLP\Main_cz.rtf, HLP\Main_en.rtf, HLP\Peter_cz.hpj a HLP\Peter_en.hpj.
+
+Kdyby nìkdy došlo ke zmìnì definice palet Petra, je nutné nové vygenerování konverzní tabulky: zrušit soubory PALIMP.DAT a PALETY.BMP a spustit Petra verzi Debug Optim (potom opìt provést pøeklady), potom (ASI?) zkonvertovat pomocí ALCHEMY PALETY.BMP na PALETY.PAL
+
+Pokud jsou pøidány další funkce (ikony) - odkomentovat èást kódu v Prog.cpp s nadpisem "vygenerování ikon pro HELP" a spustit (staèí s breakpointem za kódem) - dojde k vygenerování icon pro HELP. Po vygenerování spustit HLP\IDF\!Konv.bat.
+
+Po zmìnì grafiky (napø. zmìna verze v Setup) je nutné spustit soubory !Konv.bat (v HLP\IDF, HLP\Source a Setup\Res\Source), které zkonvertují grafiku na palety Petra. Používá se DOS verze Alchemy, musí se proto spouštìt s dostatkem volné DOS pamìti.
+
+Pøed archivací odstranit pøechodné soubory spuštìním !UKLIT.BAT.
+
+
+Poøadí pøekladu projektù - ze všeho nejdøíve DelExe a pak lze dál podle abecedy (Loader musí být pøed Peter), pøibližnì: DelExe, DataInst, Gener, Loader, Loader0, Peter, Pov2Spr. Setup. Nutno vždy všechny Release varianty pøekladù.

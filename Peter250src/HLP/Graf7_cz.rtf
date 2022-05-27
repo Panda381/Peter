@@ -1,0 +1,332 @@
+{\rtf1 \ansi \deff0
+
+@{\footnote ------- definice fontù --------- }
+
+{\fonttbl 
+{\f0 \fswiss MS San Serif CE;}
+}
+
+@{\footnote ------- definice barev --------- }
+
+{\colortbl
+\red0\green0\blue0;
+\red128\green0\blue0;
+\red0\green128\blue0;
+\red128\green128\blue0;
+\red0\green0\blue128;
+\red128\green0\blue128;
+\red0\green128\blue128;
+\red192\green192\blue192;
+\red128\green128\blue128;
+\red255\green0\blue0;
+\red0\green255\blue0;
+\red255\green255\blue0;
+\red0\green0\blue255;
+\red255\green0\blue255;
+\red0\green255\blue255;
+\red255\green255\blue255;
+}
+
+@{\footnote Pouití barev:
+	0 - èerná
+	1 - tmavì èervená
+	2 - tmavì zelená
+	3 - hnìdá
+	4 - tmavì modrá
+	5 - tmavì fialová
+	6 - tmavì modrozelená
+	7 - šedá
+	8 - tmavì šedá
+	9 - èervená
+	10 - zelená
+	11 - lutá
+	12 - modrá
+	13 - fialová
+	14 - modrozelená
+	15 - bílá
+}
+
+#{\footnote 20815}
+${\footnote Transformace}
++{\footnote 1}
+K{\footnote transformace;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Transformace\par
+\pard \plain \cf0 \fs20
+{\uldb 3D grafika}{\v 20788}\par
+\par
+Souøadnı systém 3D pouívá následující orientaci souøadnıch os: Osa X smìøuje doprava, osa Y nahoru a osa Z od pozorovatele (vpøed). Tento souøadnı systém se nazıvá levorukı. Natoète levou ruku tak, aby prsty levé ruky ukazovaly smìr osy X (doprava) a pokrèené koneèky prstù aby ukazovaly smìr osy Y (nahoru); potom palec ukazuje smìr osy Z (od pozorovatele). Podobnì lze pouít pravidlo levé ruky pro smìr rotací kolem os: palec levé ruky ukazuje smìr osy, pokrèené prsty ukazují kladnı smìr rotace.\par
+\par
+Transformace se uplatní pro {\uldb aktivní objekt}{\v 20810} a vztahují se k {\uldb rodièi}{\v 20813} objektu. Není-li objekt pøipojen k jinému objektu, vztahují se transformace ke scénì. Transformace vychází z nulové vıchozí pozice objektu. Nejedná se proto o zmìnu oproti pøedchozí poloze, ale spíše o aktuální souøadnice objektu. Transformace se provádí v poøadí: zmìna mìøítka - rotace - posun. U rotací je moné urèovat poøadí. Implicitnì se rotace provádí v poøadí X - Y - Z.\par
+\par
+{\uldb \{bmc IDF20816.bmp\}\tab mìøítko ve smìru X}{\v 20816}\par
+{\uldb \{bmc IDF20817.bmp\}\tab mìøítko ve smìru Y}{\v 20817}\par
+{\uldb \{bmc IDF20818.bmp\}\tab mìøítko ve smìru Z}{\v 20818}\par
+{\uldb \{bmc IDF20819.bmp\}\tab rotace podle osy X}{\v 20819}\par
+{\uldb \{bmc IDF20820.bmp\}\tab rotace podle osy Y}{\v 20820}\par
+{\uldb \{bmc IDF20821.bmp\}\tab rotace podle osy Z}{\v 20821}\par
+{\uldb \{bmc IDF20822.bmp\}\tab posun ve smìru X}{\v 20822}\par
+{\uldb \{bmc IDF20823.bmp\}\tab posun ve smìru Y}{\v 20823}\par
+{\uldb \{bmc IDF20824.bmp\}\tab posun ve smìru Z}{\v 20824}\par
+{\uldb \{bmc IDF20880.bmp\}\tab poøadí rotací}{\v 20880}\par
+\page
+
+#{\footnote 20816}
+${\footnote Mìøítko ve smìru X}
++{\footnote 1}
+K{\footnote mìøítko ve smìru X;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20816.bmp\} Mìøítko ve smìru X\par
+\pard \plain \cf0 \fs20
+{\uldb Transformace}{\v 20815}\par
+\par
+Prvek \b \i mìøítko ve smìru X \i0 \b0 je èíselná promìnná urèující mìøítko zvìtšení {\uldb aktivního objektu}{\v 20810} ve smìru osy X (smìr vlevo-vpravo). Po vytvoøení objektu je vıchozí hodnota mìøítka X = 1. Nastavením èísla vìtšího ne 1 je objekt ve smìru osy X zvìtšen, nastavením èísla menšího ne 1 je zmenšen. Nula vytvoøí "plochı" objekt. Zadáním záporného mìøítka bude objekt "pøevrácen" (vèetnì obrácení orientace plošek). Zmìna mìøítka se provádí pøed transformacemi rotace a posunu.\par
+\page
+
+#{\footnote 20817}
+${\footnote Mìøítko ve smìru Y}
++{\footnote 1}
+K{\footnote mìøítko ve smìru Y;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20817.bmp\} Mìøítko ve smìru Y\par
+\pard \plain \cf0 \fs20
+{\uldb Transformace}{\v 20815}\par
+\par
+Prvek \b \i mìøítko ve smìru Y \i0 \b0 je èíselná promìnná urèující mìøítko zvìtšení {\uldb aktivního objektu}{\v 20810} ve smìru osy Y (smìr nahoru-dolù). Po vytvoøení objektu je vıchozí hodnota mìøítka Y = 1. Nastavením èísla vìtšího ne 1 je objekt ve smìru osy Y zvìtšen, nastavením èísla menšího ne 1 je zmenšen. Nula vytvoøí "plochı" objekt. Zadáním záporného mìøítka bude objekt "pøevrácen" (vèetnì obrácení orientace plošek). Zmìna mìøítka se provádí pøed transformacemi rotace a posunu.\par
+\page
+
+#{\footnote 20818}
+${\footnote Mìøítko ve smìru Z}
++{\footnote 1}
+K{\footnote mìøítko ve smìru Z;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20818.bmp\} Mìøítko ve smìru Z\par
+\pard \plain \cf0 \fs20
+{\uldb Transformace}{\v 20815}\par
+\par
+Prvek \b \i mìøítko ve smìru Z \i0 \b0 je èíselná promìnná urèující mìøítko zvìtšení {\uldb aktivního objektu}{\v 20810} ve smìru osy Z (smìr vpøed-vzad). Po vytvoøení objektu je vıchozí hodnota mìøítka Z = 1. Nastavením èísla vìtšího ne 1 je objekt ve smìru osy Z zvìtšen, nastavením èísla menšího ne 1 je zmenšen. Nula vytvoøí "plochı" objekt. Zadáním záporného mìøítka bude objekt "pøevrácen" (vèetnì obrácení orientace plošek). Zmìna mìøítka se provádí pøed transformacemi rotace a posunu.\par
+\page
+
+#{\footnote 20819}
+${\footnote Rotace podle osy X}
++{\footnote 1}
+K{\footnote rotace podle osy X;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20819.bmp\} Rotace podle osy X\par
+\pard \plain \cf0 \fs20
+{\uldb Transformace}{\v 20815}\par
+\par
+Prvek \b \i rotace podle osy X \i0 \b0 je èíselná promìnná urèující rotaci {\uldb aktivního objektu}{\v 20810} podle osy X. Osa X je osa smìøující ze støedu souøadného systému smìrem doprava. Smìr rotace kolem osy X je urèen pravidlem levé ruky: palec levé ruky ukazuje smìr osy X (tj. zleva doprava), pokrèené prsty ukazují smìr kladné rotace. To znamená, e kladná hodnota rotace podle osy X zpùsobí pohyb horní strany objektu smìrem od nás a dolní strany smìrem k nám. To je naznaèeno i v obrázku ikony rotace podle osy X. Hodnota rotace je upravena do intervalu 0 a 2*pi. Ètením promìnné obdríme vdy hodnotu z tohoto intervalu. Rotace se provádí po transformaci mìøítka a pøed transformací posunu. Poøadí rotací podle jednotlivıch os je moné urèit prvkem {\uldb poøadí rotací}{\v 20880}.\par
+\page
+
+#{\footnote 20820}
+${\footnote Rotace podle osy Y}
++{\footnote 1}
+K{\footnote rotace podle osy Y;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20820.bmp\} Rotace podle osy Y\par
+\pard \plain \cf0 \fs20
+{\uldb Transformace}{\v 20815}\par
+\par
+Prvek \b \i rotace podle osy Y \i0 \b0 je èíselná promìnná urèující rotaci {\uldb aktivního objektu}{\v 20810} podle osy Y. Osa Y je osa smìøující ze støedu souøadného systému smìrem nahoru. Smìr rotace kolem osy Y je urèen pravidlem levé ruky: palec levé ruky ukazuje smìr osy Y (tj. zdola nahoru), pokrèené prsty ukazují smìr kladné rotace. To znamená, e kladná hodnota rotace podle osy Y zpùsobí pohyb levé strany objektu smìrem od nás a pravé strany smìrem k nám. To je naznaèeno i v obrázku ikony rotace podle osy Y. Hodnota rotace je upravena do intervalu 0 a 2*pi. Ètením promìnné obdríme vdy hodnotu z tohoto intervalu. Rotace se provádí po transformaci mìøítka a pøed transformací posunu. Poøadí rotací podle jednotlivıch os je moné urèit prvkem {\uldb poøadí rotací}{\v 20880}.\par
+\page
+
+#{\footnote 20821}
+${\footnote Rotace podle osy Z}
++{\footnote 1}
+K{\footnote rotace podle osy Z;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20821.bmp\} Rotace podle osy Z\par
+\pard \plain \cf0 \fs20
+{\uldb Transformace}{\v 20815}\par
+\par
+Prvek \b \i rotace podle osy Z \i0 \b0 je èíselná promìnná urèující rotaci {\uldb aktivního objektu}{\v 20810} podle osy Z. Osa Z je osa smìøující ze støedu souøadného systému smìrem vpøed (od nás). Smìr rotace kolem osy Z je urèen pravidlem levé ruky: palec levé ruky ukazuje smìr osy Z (tj. vpøed od nás), pokrèené prsty ukazují smìr kladné rotace. To znamená, e kladná hodnota rotace podle osy Z zpùsobí pohyb horní strany objektu smìrem vlevo a dolní strany smìrem vpravo. To je naznaèeno i v obrázku ikony rotace podle osy Z. Hodnota rotace je upravena do intervalu 0 a 2*pi. Ètením promìnné obdríme vdy hodnotu z tohoto intervalu. Rotace se provádí po transformaci mìøítka a pøed transformací posunu. Poøadí rotací podle jednotlivıch os je moné urèit prvkem {\uldb poøadí rotací}{\v 20880}.\par
+\page
+
+#{\footnote 20822}
+${\footnote Posun ve smìru X}
++{\footnote 1}
+K{\footnote posun ve smìru X;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20822.bmp\} Posun ve smìru X\par
+\pard \plain \cf0 \fs20
+{\uldb Transformace}{\v 20815}\par
+\par
+Prvek \b \i posun ve smìru X \i0 \b0 je èíselná promìnná urèující vzdálenost {\uldb aktivního objektu}{\v 20810} od poèátku souøadného systému ve smìru osy X (smìr vlevo-vpravo). Kladná hodnota zpùsobí posun objektu smìrem vpravo, záporná hodnota smìrem vlevo od poèátku souøadnic. Posun objektu se provádí po transformacích mìøítka a rotace objektu.\par
+\page
+
+#{\footnote 20823}
+${\footnote Posun ve smìru Y}
++{\footnote 1}
+K{\footnote posun ve smìru Y;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20823.bmp\} Posun ve smìru Y\par
+\pard \plain \cf0 \fs20
+{\uldb Transformace}{\v 20815}\par
+\par
+Prvek \b \i posun ve smìru Y \i0 \b0 je èíselná promìnná urèující vzdálenost {\uldb aktivního objektu}{\v 20810} od poèátku souøadného systému ve smìru osy Y (smìr dolù-nahoru). Kladná hodnota zpùsobí posun objektu smìrem nahoru, záporná hodnota smìrem dolù od poèátku souøadnic. Posun objektu se provádí po transformacích mìøítka a rotace objektu.\par
+\page
+
+#{\footnote 20824}
+${\footnote Posun ve smìru Z}
++{\footnote 1}
+K{\footnote posun ve smìru Z;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20824.bmp\} Posun ve smìru Z\par
+\pard \plain \cf0 \fs20
+{\uldb Transformace}{\v 20815}\par
+\par
+Prvek \b \i posun ve smìru Z \i0 \b0 je èíselná promìnná urèující vzdálenost {\uldb aktivního objektu}{\v 20810} od poèátku souøadného systému ve smìru osy Z (smìr vpøed-vzad). Kladná hodnota zpùsobí posun objektu smìrem vpøed (od nás), záporná hodnota smìrem vzad (k nám) od poèátku souøadnic. Posun objektu se provádí po transformacích mìøítka a rotace objektu.\par
+\page
+
+#{\footnote 20880}
+${\footnote Poøadí rotací}
++{\footnote 1}
+K{\footnote poøadí rotací;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20880.bmp\} Poøadí rotací\par
+\pard \plain \cf0 \fs20
+{\uldb Transformace}{\v 20815}\par
+\par
+Pro monost snazší manipulace s objektem je pro {\uldb aktivní objekt}{\v 20810} moné urèit, v jakém poøadí se budou provádìt rotace kolem jednotlivıch os {\uldb X}{\v 20819}, {\uldb Y}{\v 20820} a {\uldb Z}{\v 20821}. Poøadí rotací se urèí èíslem podle tabulky:\par
+\par
+\b 0 \b0 \tab X-Y-Z (implicitní nastavení)\par
+\b 1 \b0 \tab X-Z-Y\par
+\b 2 \b0 \tab Y-X-Z\par
+\b 3 \b0 \tab Y-Z-X\par
+\b 4 \b0 \tab Z-X-Y\par
+\b 5 \b0 \tab Z-Y-X\par
+\par
+\page
+
+#{\footnote 20825}
+${\footnote Povrch}
++{\footnote 1}
+K{\footnote povrch;}
+\pard \plain \brdrb \cf12 \fs24 \b
+Povrch\par
+\pard \plain \cf0 \fs20
+{\uldb 3D grafika}{\v 20788}\par
+\par
+\par
+{\uldb \{bmc IDF20826.bmp\}\tab barva}{\v 20826}\par
+{\uldb \{bmc IDF20884.bmp\}\tab odraz rozptıleného svìtla}{\v 20884}\par
+{\uldb \{bmc IDF20827.bmp\}\tab barva svítivosti}{\v 20827}\par
+{\uldb \{bmc IDF20828.bmp\}\tab matnost}{\v 20828}\par
+{\uldb \{bmc IDF20829.bmp\}\tab barva odlesku}{\v 20829}\par
+{\uldb \{bmc IDF20840.bmp\}\tab obrysy}{\v 20840}\par
+{\uldb \{bmc IDF20839.bmp\}\tab prùhlednost}{\v 20839}\par
+\page
+
+#{\footnote 20826}
+${\footnote Barva}
++{\footnote 1}
+K{\footnote barva;difuzní barva;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20826.bmp\} Barva\par
+\pard \plain \cf0 \fs20
+{\uldb Povrch}{\v 20825}\par
+\par
+Prvek \b \i barva \i0 \b0 slouí k nastavení barvy {\uldb aktivního objektu}{\v 20810}. Jedná se o difuzní barvu, tedy barvu odraenou od povrchu objektu, ostatní èást svìtelného spektra je objektem pohlcena. Prvek barvy je èíselná promìnná. Barva je ve stejném formátu jako barvy pouívané v grafickıch funkcích aplikace Petr: \b \i barva = èervená + zelená*256 + modrá*256*256 + (255-alfa)*256*256*256 \i0 \b0 (jednotlivé sloky barvy jsou celá èísla s hodnotu 0 a 255, alfa kanál má hodnotu 0=prùhlednost a 255=bìná barva), proto je moné k nastavení barvy pouívat prvky {\uldb barevná konstanta}{\v 20301} a {\uldb slouèení barevnıch sloek do barvy}{\v 20417}. Prvek pro slouèení barevnıch sloek má vıhodu v tom, e umoòuje plnı rozsah nastavení barev (není vázán na barvy aplikace Petr) a navíc umoòuje snadné nastavení hodnoty alfa kanálu. Alfa kanál umoòuje provádìt speciální operace s {\uldb prùhledností}{\v 20839}, jako napø. plynule mìnitelná prùhlednost objektu (kód prùhlednosti 54).\par
+\par
+Nastavením barvy objektu na hodnotu \b -1 \b0 se namísto urèené barvy pouijí vnitøní barvy objektu. Objekt mùe mít vnitønì definovány barvy pro jednotlivé vrcholy èi plošky - buï pøíkazem {\uldb mapování textury}{\v 20831} nebo {\uldb naètením objektu ze souboru}{\v 20809}. Pro rozhraní DirectX 3 a DirectX 6 jsou pouity barvy vrcholù a plošek pouze v pøípadì, e je vypnuto {\uldb osvìtlení objektu}{\v 20897}.\par
+\par
+Nastavením barvy objektu na hodnotu \b -2 \b0 se namísto urèeného materiálu (a barvy) objektu pouije materiál zdìdìnı od rodièe, tedy od objektu, ke kterému je tento objekt {\uldb pøipojen}{\v 20813}. Nemá-li navíc objekt vlastní texturu, pouije se i textura zdìdìná od rodièe. Materiál i textura mohou bıt zdìdìny od scény (index objektu 0). Implicitnì je to bílá barva bez textury.\par
+\page
+
+#{\footnote 20884}
+${\footnote Odraz rozptıleného svìtla}
++{\footnote 1}
+K{\footnote odraz rozptıleného svìtla;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20884.bmp\} Odraz rozptıleného svìtla\par
+\pard \plain \cf0 \fs20
+{\uldb Povrch}{\v 20825}\par
+\par
+Prvek \b \i odraz rozptıleného svìtla \i0 \b0 slouí k nastavení barvy urèující, jak je {\uldb aktivním objektem}{\v 20810} odráeno {\uldb rozptılené svìtlo}{\v 20893}. Nastavením prvku na hodnotu \b -1 \b0 bude nastavena barva odrazu rozptıleného svìtla stejnì jako {\uldb difuzní barva}{\v 20826} objektu. To je implicitní nastavení pøedpokládající, e rozptılené svìtlo je nastaveno na bílé svìtlo s malım jasem (implicitnì $404040). Je-li potøeba rozptılené svìtlo regulovat u kadého objektu zvláš, je to moné provést nastavením rozptıleného svìtla na plnı jas a nastavením barvy odrazu rozptıleného svìtla u kadého objektu samostatnì. K nastavení barvy odrazu rozptıleného svìtla je moné pouít prvky {\uldb barevná konstanta}{\v 20301} nebo {\uldb slouèení barevnıch sloek do barvy}{\v 20417}. Jinou alternativou regulace základního osvìtlení objektu je nastavení {\uldb barvy svítivosti}{\v 20827} objektu.\par
+\page
+
+#{\footnote 20827}
+${\footnote Barva svítivosti}
++{\footnote 1}
+K{\footnote barva svítivosti;svítivost;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20827.bmp\} Barva svítivosti\par
+\pard \plain \cf0 \fs20
+{\uldb Povrch}{\v 20825}\par
+\par
+Prvek \b \i barva svítivosti \i0 \b0 slouí k nastavení vlastní svítivosti {\uldb aktivního objektu}{\v 20810}. Svítivost je pøídavná sloka barvy objektu, která se pøièítá k vısledné celkové barvì objektu. Není závislá na okolním osvìtlení. Barvu svítivosti objektu je moné nastavit prvky {\uldb barevná konstanta}{\v 20301} nebo {\uldb slouèení barevnıch sloek do barvy}{\v 20417}. Svítivost objektu nevytváøí ádné osvìtlení okolních objektù, jedná se pouze o pøídavnou sloku barvy objektu. Jinou alternativou základního osvìtlení objektu je {\uldb rozptılené svìtlo}{\v 20893}.\par
+\page
+
+#{\footnote 20828}
+${\footnote Matnost}
++{\footnote 1}
+K{\footnote matnost;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20828.bmp\} Matnost\par
+\pard \plain \cf0 \fs20
+{\uldb Povrch}{\v 20825}\par
+\par
+Pro zvıšení realistiènosti vzhledu objektù je moné vytváøet na povrchu objektù odlesky od okolního osvìtlení. Prvek \b \i matnost \i0 \b0 slouí k nastavení velikosti odleskù {\uldb aktivního objektu}{\v 20810}. Matnost mùe mít hodnoty od 0 do 128. Nastavením matnosti na 0 a nastavením {\uldb barvy odlesku}{\v 20829} na èernou barvu se odlesk vypne. Matnost s hodnotou 5 se pouívá pro kovovı povrch. S rostoucím stupnìm matnosti se zmenšuje velikost odlesku. Matnost s hodnotou kolem 50 se pouívá pro plastovı povrch.\par
+\page
+
+#{\footnote 20829}
+${\footnote Barva odlesku}
++{\footnote 1}
+K{\footnote barva odlesku;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20829.bmp\} Barva odlesku\par
+\pard \plain \cf0 \fs20
+{\uldb Povrch}{\v 20825}\par
+\par
+Pro zvıšení realistiènosti vzhledu objektù je moné vytváøet na povrchu objektù odlesky od okolního osvìtlení. Prvek \b \i barva odlesku \i0 \b0 slouí k nastavení barvy a intenzity odleskù {\uldb aktivního objektu}{\v 20810}. Odlesky závisí na okolních svìtlech a na úhlu pozorovatele. Barvu odlesku je moné nastavit prvkem {\uldb barevná konstanta}{\v 20301} nebo {\uldb slouèení barevnıch sloek do barvy}{\v 20417}. Velikost odlesku je urèena prvkem {\uldb matnost}{\v 20828}. Nastavením matnosti na 0 a nastavením barvy odlesku na èernou barvu se odlesk vypne.\par
+\page
+
+#{\footnote 20840}
+${\footnote Obrysy}
++{\footnote 1}
+K{\footnote obrysy;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20840.bmp\} Obrysy\par
+\pard \plain \cf0 \fs20
+{\uldb Povrch}{\v 20825}\par
+\par
+Prvkem \b \i obrysy \i0 \b0 lze øídit u {\uldb aktivního objektu}{\v 20810} zobrazení povrchu objektu v závislosti na {\uldb alfa sloce}{\v 20417}. Jako parametr prvku se zadává èíselnı parametr v rozsahu \b 0 \b0 a \b 1\b0 . Jsou zobrazeny jen ty èásti povrchu objektu, jejich alfa sloka má vyšší hodnotu, ne je zadanı parametr. Implicitní hodnota obrysù je \b 0 \b0 - zobrazí se celı objekt. Nastavením na hodnotu \b 1 \b0 nebude zobrazena ádná èást objektu. Zpravidla je prvek obrysù nastavován na hodnotu pøiblinì \b 0.5\b0 . Obrysy mají vıznam pøedevším ve spojení s {\uldb texturami}{\v 20830}. Nejèastìji se vyuívají u {\uldb 2D objektù}{\v 20873} a u {\uldb statickıch 2D objektù}{\v 20908}. Pøi kreslení textury se okolí objektu vyplní {\uldb prùhlednou barvou}{\v Editace pøedmìtu a obrázku}. Prùhledná barva je èerná barva s alfa slokou 0. Ostatní barvy mají alfa sloku 1. Tak je zajištìno, e èást textury s prùhlednou barvou bude potlaèena (má niší afla sloku ne prahová úroveò zadaná prvkem obrysù), bude zobrazena jen èást obrázku s bìnımi barvami. Textura mùe bıt vyhlazena prvkem {\uldb vyhlazení textur}{\v 20891}. Taková textura obsahuje i jiné hodnoty alfa sloky ne 0 a 1 (na pøechodech obrysù nebo na místech se støídajícími se body barvy a prùhlednosti).\par
+\page
+
+#{\footnote 20839}
+${\footnote Prùhlednost}
++{\footnote 1}
+K{\footnote prùhlednost;}
+\pard \plain \brdrb \cf12 \fs24 \b
+\{bmc IDF20839.bmp\} Prùhlednost\par
+\pard \plain \cf0 \fs20
+{\uldb Povrch}{\v 20825}\par
+\par
+Prvek \b \i prùhlednost \i0 \b0 øídí u {\uldb aktivního objektu}{\v 20810} zpùsob, jakım je kombinována barva povrchu objektu s barvou pozadí. Pøi vykreslování objektu se vypoèítávají sloky vısledné barvy (vèetnì alfa) kadého vykreslovaného bodu objektu podle vztahu: \b vısledná_sloka = zdrojová_sloka*zdrojovı_koeficient + cílová_sloka*cílovı_koeficient\b0 . Prùhlednost je 2-místnı èíselnı kód. Èíslice na pozici jednotek urèuje kód operace pro zdrojovou barvu, èíslice na pozici desítek urèuje kód operace pro cílovou barvu. Nejèastìji pouité kombinace jsou:\par
+\par
+\b 1 \b0 \tab bìnı (implicitní) mód, objekt plnì pøekrıvá pozadí\par
+\b 11 \b0 \tab mód pro oheò a støely, barva objektu se seèítá s barvou pozadí\par
+\b 20 \b0 \tab mód pro sklo, barva objektu se vynásobí barvou pozadí (modulace)\par
+\b 54 \b0 \tab mód pro prùhlednı pøekryv, alfa slokou objektu lze plynule øídit prùhlednost\par
+\par
+\b \i Kódy operací (vıslednı_kód = zdrojovı_kód + cílovı_kód*10): \i0 \b0 \par
+\par
+\b 0 \b0 \tab koeficient = 0 (sloka se neuplatní)\par
+\b 1 \b0 \tab koeficient = 1 (sloka se uplatní v plném rozsahu)\par
+\b 2 \b0 \tab koeficient = zdrojová_sloka (sloka modulována zdrojovou barvou)\par
+\b 3 \b0 \tab koeficient = (1-zdrojová_sloka) (sloka modulována doplòkem zdrojové barvy)\par
+\b 4 \b0 \tab koeficient = zdrojová_alfa (sloka modulována zdrojovou alfa slokou)\par
+\b 5 \b0 \tab koeficient = (1-zdrojová_alfa) (sloka modulována doplòkem zdrojové alfa sloky)\par
+\b 6 \b0 \tab koeficient = cílová_sloka (sloka modulována cílovou barvou)\par
+\b 7 \b0 \tab koeficient = (1-cílová_sloka) (sloka modulována doplòkem cílové barvy)\par
+\b 8 \b0 \tab koeficient = cílová_alfa (sloka modulována cílovou alfa slokou)\par
+\b 9 \b0 \tab koeficient = (1-cílová_alfa) (sloka modulována doplòkem cílové alfa sloky)\par
+\par
+Nastavením prvku \b \i prùhlednost \i0 \b0 bude nastaven parametr objektu {\uldb renderovací skupina}{\v 20930} na implicitní hodnotu: neprùhledné objekty (vısledná sloka nezávisí na cílové sloce) na hodnotu 4, prùhledné objekty na hodnotu 10, {\uldb 2D obrázky}{\v 20914} na hodnotu 14.\par
+\par
+\i Poznámky: \i0 Cílová alfa sloka (8 a 9) nemusí bıt vdy podporována (závisí na aktuálním videomódu a na typu videokarty). U rozhraní OpenGL a starších verzí DirectX není podporován koeficient zdrojové sloky (2 a 3) pro operaci se zdrojovou slokou a koeficient cílové sloky (6 a 7) pro operaci s cílovou slokou.\par
+\page
+
+
+}
