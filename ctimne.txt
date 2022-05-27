@@ -1,217 +1,217 @@
-Gemtree Petr 2.50 (pro Windows 95 a vyšší)
+Gemtree Petr 2.50 (pro Windows 95 a vyÅ¡Å¡Ã­)
 FREEWARE / PUBLIC DOMAIN
 
-Autor: (c) 1997-2022 Miroslav Nìmeèek
-domovská stránka autora: http://panda38.sweb.cz
+Autor: (c) 1997-2022 Miroslav NÄ›meÄek
+domovskÃ¡ strÃ¡nka autora: http://panda38.sweb.cz
 email autora: Panda38@seznam.cz
-alternativní email: hardyplotter2@gmail.com
+alternativnÃ­ email: hardyplotter2@gmail.com
 
 
-Oficiální stránky Petra (dnes ji neudrované): http://www.gemtree.com a http://www.gemtree.cz
-Autorská domovská stránka programu Petr: https://www.breatharian.eu/Petr
-Programy a hry vytvoøené v Petrovi: https://www.breatharian.eu/Petr/program
-komunitní server: https://www.itnetwork.cz/pro-deti/petr
+AutorskÃ¡ domovskÃ¡ strÃ¡nka programu Petr: https://www.breatharian.eu/Petr
+OficiÃ¡lnÃ­ strÃ¡nky Petra (dnes jiÅ¾ neudrÅ¾ovanÃ©): http://www.gemtree.com a http://www.gemtree.cz
+Programy a hry vytvoÅ™enÃ© v Petrovi: https://www.breatharian.eu/Petr/program
+komunitnÃ­ server: https://www.itnetwork.cz/pro-deti/petr
 GitHub: https://github.com/Panda381/Peter
 
 
 LICENCE
 -------
-Program Petr lze pouívat volnì pro nekomerèní i komerèní úèely.
-Podobnì volnì lze pouívat a modifikovat zdrojové kódy programu Petr.
-Ovšem nedoporuèuji zdrojové kódy pouívat, protoe na Petrovi jsem se
-teprve uèil programovat v C++ ;-) a mnoho vìcí bych dnes u øešil
+Program Petr lze pouÅ¾Ã­vat volnÄ› pro nekomerÄnÃ­ i komerÄnÃ­ ÃºÄely.
+PodobnÄ› volnÄ› lze pouÅ¾Ã­vat a modifikovat zdrojovÃ© kÃ³dy programu Petr.
+OvÅ¡em nedoporuÄuji zdrojovÃ© kÃ³dy pouÅ¾Ã­vat, protoÅ¾e na Petrovi jsem se
+teprve uÄil programovat v C++ ;-) a mnoho vÄ›cÃ­ bych dnes uÅ¾ Å™eÅ¡il
 jinak.
 
-Petr je nabízen k pouití v takové formì, v jaké je, bez jakékoliv
-další podpory a bez dalšího vıvoje a oprav.
+Petr je nabÃ­zen k pouÅ¾itÃ­ v takovÃ© formÄ›, v jakÃ© je, bez jakÃ©koliv
+dalÅ¡Ã­ podpory a bez dalÅ¡Ã­ho vÃ½voje a oprav.
 
 
-Doporuèení
+DoporuÄenÃ­
 ----------
-Instalaci spustíte spuštìním Peter250.exe (nejlépe jako
-Administrátor) nebo rozbalením ZIP bez instalátoru.
-Pod Windows 10 doplòte ze sloky Help ještì soubory:
+Instalaci spustÃ­te spuÅ¡tÄ›nÃ­m Peter250.exe (nejlÃ©pe jako
+AdministrÃ¡tor) nebo rozbalenÃ­m ZIP bez instalÃ¡toru.
+Pod Windows 10 doplÅˆte ze sloÅ¾ky Help jeÅ¡tÄ› soubory:
 Peter.exe, PETER_CZ.CHM a PETER_EN.CHM.
 
 
-Poznámky
+PoznÃ¡mky
 --------
-- Pod nìkterımi systémy mùe bıt nefunkèní instalace a odinstalace,
-  v tom pøípadì mùe bıt nutné pouít verzi bez instalace.
-  Pøíp. odinstalovat opìtovnım spuštìním instalátoru.
-  Instalátor zpravidla funguje spuštìním pod Administrátorem.
+- Pod nÄ›kterÃ½mi systÃ©my mÅ¯Å¾e bÃ½t nefunkÄnÃ­ instalace a odinstalace,
+  v tom pÅ™Ã­padÄ› mÅ¯Å¾e bÃ½t nutnÃ© pouÅ¾Ã­t verzi bez instalace.
+  PÅ™Ã­p. odinstalovat opÄ›tovnÃ½m spuÅ¡tÄ›nÃ­m instalÃ¡toru.
+  InstalÃ¡tor zpravidla funguje spuÅ¡tÄ›nÃ­m pod AdministrÃ¡torem.
 
-- Nìkteré antivirové programy mohou oznaèovat mylnì programy vytvoøené
-  v Petrovi jako obsahující virus (mallware). Dùvodem je to, e Petr
-  ukládá editovanı program pøímo do EXE souboru. EXE soubor obsahuje
-  interpreter a pøipojenı program v binárním tvaru. Nìkteré antiviry
-  povaují èinnost interpreteru za projevy viru. Typicky se jedná
-  o programy uloené v nespustitelném tvaru (bez interpreteru).
+- NÄ›kterÃ© antivirovÃ© programy mohou oznaÄovat mylnÄ› programy vytvoÅ™enÃ©
+  v Petrovi jako obsahujÃ­cÃ­ virus (mallware). DÅ¯vodem je to, Å¾e Petr
+  uklÃ¡dÃ¡ editovanÃ½ program pÅ™Ã­mo do EXE souboru. EXE soubor obsahuje
+  interpreter a pÅ™ipojenÃ½ program v binÃ¡rnÃ­m tvaru. NÄ›kterÃ© antiviry
+  povaÅ¾ujÃ­ Äinnost interpreteru za projevy viru. Typicky se jednÃ¡
+  o programy uloÅ¾enÃ© v nespustitelnÃ©m tvaru (bez interpreteru).
 
-- Pod vyššími systémy nelze zobrazit nápovìdu. Je nutné buï nainstalovat
-  ze stránek Microsoft program WinHlp32.exe nebo pøikopírovat do sloky
-  Petra z adresáøe Help soubory Peter.exe, PETER_CZ.CHM a PETER_EN.CHM
-  (jedná se o modifikaci Petra od uivatele Jiøí Peroutka). Help v HTML
-  formátu si mùete zobrazit té pomocí Help\HELP_CZ\index.html.
+- Pod vyÅ¡Å¡Ã­mi systÃ©my nelze zobrazit nÃ¡povÄ›du. Je nutnÃ© buÄ nainstalovat
+  ze strÃ¡nek Microsoft program WinHlp32.exe nebo pÅ™ikopÃ­rovat do sloÅ¾ky
+  Petra z adresÃ¡Å™e Help soubory Peter.exe, PETER_CZ.CHM a PETER_EN.CHM
+  (jednÃ¡ se o modifikaci Petra od uÅ¾ivatele JiÅ™Ã­ Peroutka). Help v HTML
+  formÃ¡tu si mÅ¯Å¾ete zobrazit tÃ©Å¾ pomocÃ­ Help\HELP_CZ\index.html.
 
-- Nìkteré programy pouívají zvuky ve formátu MP3 (napø. hlasy duchù
-  ve høe "Tøináct duchù"). Pokud zvuky nefungují, mùe bıt nutné
+- NÄ›kterÃ© programy pouÅ¾Ã­vajÃ­ zvuky ve formÃ¡tu MP3 (napÅ™. hlasy duchÅ¯
+  ve hÅ™e "TÅ™inÃ¡ct duchÅ¯"). Pokud zvuky nefungujÃ­, mÅ¯Å¾e bÃ½t nutnÃ©
   nainstalovat MP3 kodek (program Misc\L3CODECX.EXE).
 
 
-Verze s instalátorem
+Verze s instalÃ¡torem
 --------------------
-Problémy s instalací: Pøi pokusu o odinstalování standardní cestou mùe systém
-Windows XP (nebo vyšší) hlásit neplatnou aplikaci. V tom pøípadì pouijte
-k odinstalování opìt instalátor aplikace Petr (staèí mini verze a smazat
-ruènì instalaèní sloku) nebo jen smate ruènì instalaèní sloku Petra a
-pøíslušné zástupce. K instalaci do systému Vista a vyšší bude moná nutné
-pouit verzi bez instalátoru (jen rozbalit) nebo alternativní instalátor
-z komunitního serveru https://www.itnetwork.cz/pro-deti/petr .
-Nebo zpravidla staèí spustit instalátor jako Administrátor.
+ProblÃ©my s instalacÃ­: PÅ™i pokusu o odinstalovÃ¡nÃ­ standardnÃ­ cestou mÅ¯Å¾e systÃ©m
+Windows XP (nebo vyÅ¡Å¡Ã­) hlÃ¡sit neplatnou aplikaci. V tom pÅ™Ã­padÄ› pouÅ¾ijte
+k odinstalovÃ¡nÃ­ opÄ›t instalÃ¡tor aplikace Petr (staÄÃ­ mini verze a smazat
+ruÄnÄ› instalaÄnÃ­ sloÅ¾ku) nebo jen smaÅ¾te ruÄnÄ› instalaÄnÃ­ sloÅ¾ku Petra a
+pÅ™Ã­sluÅ¡nÃ© zÃ¡stupce. K instalaci do systÃ©mu Vista a vyÅ¡Å¡Ã­ bude moÅ¾nÃ¡ nutnÃ©
+pouÅ¾it verzi bez instalÃ¡toru (jen rozbalit) nebo alternativnÃ­ instalÃ¡tor
+z komunitnÃ­ho serveru https://www.itnetwork.cz/pro-deti/petr .
+Nebo zpravidla staÄÃ­ spustit instalÃ¡tor jako AdministrÃ¡tor.
 
-Peter250.exe - Petr 2.50 plná instalace (400 MB)
-http://www.breatharian.eu/Petr/download/Peter250.exe
-Obsahuje: aplikaci Petr, helpy (èeskı a anglickı), asi 160 ukázkovıch
-programù, 2400 obrázkù, 1000 ikon (pøedmìtù), 1500 zvukù, 560 hudeb,
-400 sprajtù, zdroje pro generování sprajtù.
+Peter250.exe - Petr 2.50 plnÃ¡ instalace (400 MB)
+https://www.breatharian.eu/Petr/download/Peter250.exe
+Obsahuje: aplikaci Petr, helpy (ÄeskÃ½ a anglickÃ½), asi 160 ukÃ¡zkovÃ½ch
+programÅ¯, 2400 obrÃ¡zkÅ¯, 1000 ikon (pÅ™edmÄ›tÅ¯), 1500 zvukÅ¯, 560 hudeb,
+400 sprajtÅ¯, zdroje pro generovÃ¡nÃ­ sprajtÅ¯.
 
 Peter250mini.exe - Petr 2.50 mini instalace (5 MB)
-http://www.breatharian.eu/Petr/download/Peter250mini.exe
-Obsahuje: aplikaci Petr, helpy (èeskı a anglickı), ukázkové programy
-Bludištì a Tutorial, ukázkové knihovní soubory.
+https://www.breatharian.eu/Petr/download/Peter250mini.exe
+Obsahuje: aplikaci Petr, helpy (ÄeskÃ½ a anglickÃ½), ukÃ¡zkovÃ© programy
+BludiÅ¡tÄ› a Tutorial, ukÃ¡zkovÃ© knihovnÃ­ soubory.
 
 Peter241Lite.exe - Petr 2.41 Lite instalace (5 MB)
-http://www.breatharian.eu/Petr/download/Peter241Lite.exe
-Starší verze s omezenımi funkcemi. Mùe bıt uiteèná pro mladší nebo zaèínající
-uivatele, protoe neobsahuje ádné nebezpeèné funkce (jako jsou napø. souborové
-a pamìové operace). Lze instalovat a pouívat spolu s verzí 2.50, protoe
-se instaluje do jiné sloky.
+https://www.breatharian.eu/Petr/download/Peter241Lite.exe
+StarÅ¡Ã­ verze s omezenÃ½mi funkcemi. MÅ¯Å¾e bÃ½t uÅ¾iteÄnÃ¡ pro mladÅ¡Ã­ nebo zaÄÃ­najÃ­cÃ­
+uÅ¾ivatele, protoÅ¾e neobsahuje Å¾Ã¡dnÃ© nebezpeÄnÃ© funkce (jako jsou napÅ™. souborovÃ©
+a pamÄ›Å¥ovÃ© operace). Lze instalovat a pouÅ¾Ã­vat spolu s verzÃ­ 2.50, protoÅ¾e
+se instaluje do jinÃ© sloÅ¾ky.
 
 Peter223LiteCZ.exe - Petr 2.23 Lite instalace (2,5 MB)
-http://www.breatharian.eu/Petr/download/Peter223LiteCZ.exe
-Ještì starší verze s ještì omezenìjšími funkcemi. Help je pouze v èeštinì.
+https://www.breatharian.eu/Petr/download/Peter223LiteCZ.exe
+JeÅ¡tÄ› starÅ¡Ã­ verze s jeÅ¡tÄ› omezenÄ›jÅ¡Ã­mi funkcemi. Help je pouze v ÄeÅ¡tinÄ›.
 
-Popisky souborù (aliases) jsou v èeštinì, angliètinì a nìmèinì - v závislosti
-na zvoleném jazyku. Jazyk pøi spuštìní ukázkovıch programù závisí na jazyku
-zvoleném v prostøedí Petr (je-li spuštìnı) nebo na jazyku systému.
+Popisky souborÅ¯ (aliases) jsou v ÄeÅ¡tinÄ›, angliÄtinÄ› a nÄ›mÄinÄ› - v zÃ¡vislosti
+na zvolenÃ©m jazyku. Jazyk pÅ™i spuÅ¡tÄ›nÃ­ ukÃ¡zkovÃ½ch programÅ¯ zÃ¡visÃ­ na jazyku
+zvolenÃ©m v prostÅ™edÃ­ Petr (je-li spuÅ¡tÄ›nÃ½) nebo na jazyku systÃ©mu.
 
 
-Verze bez instalátoru
+Verze bez instalÃ¡toru
 ---------------------
-Petr ke svému provozu nevyaduje instalaci, postaèí archivní soubor ZIP rozbalit
-do instalaèní sloky (k rozbalení pouijte program WinZip nebo ještì lépe WinRar).
-Není tak automaticky podporováno víceuivatelské prostøedí, tj. pøi modifikaci
-vzorového programu se program zmìní v instalaèní sloce, ale to lze napravit
-vytvoøením zástupce, a nastavit "Spustit v" na pracovní sloku uivatele a
-"Cíl" na instalaèní sloku Petra.
+Petr ke svÃ©mu provozu nevyÅ¾aduje instalaci, postaÄÃ­ archivnÃ­ soubor ZIP rozbalit
+do instalaÄnÃ­ sloÅ¾ky (k rozbalenÃ­ pouÅ¾ijte program WinZip nebo jeÅ¡tÄ› lÃ©pe WinRar).
+NenÃ­ tak automaticky podporovÃ¡no vÃ­ceuÅ¾ivatelskÃ© prostÅ™edÃ­, tj. pÅ™i modifikaci
+vzorovÃ©ho programu se program zmÄ›nÃ­ v instalaÄnÃ­ sloÅ¾ce, ale to lze napravit
+vytvoÅ™enÃ­m zÃ¡stupce, a nastavit "Spustit v" na pracovnÃ­ sloÅ¾ku uÅ¾ivatele a
+"CÃ­l" na instalaÄnÃ­ sloÅ¾ku Petra.
 
-Peter250.zip - Petr 2.50 plnı, ZIP bez instalace (370 MB)
-http://www.breatharian.eu/Petr/download/Peter250.zip
+Peter250.zip - Petr 2.50 plnÃ½, ZIP bez instalace (370 MB)
+https://www.breatharian.eu/Petr/download/Peter250.zip
 
 Peter250mini.zip - Petr 2.50 mini, ZIP bez instalace (4 MB)
-http://www.breatharian.eu/Petr/download/Peter250mini.zip
+https://www.breatharian.eu/Petr/download/Peter250mini.zip
 
 Peter241Lite.zip - Petr 2.41 Lite, ZIP bez instalace (4 MB)
-http://www.breatharian.eu/Petr/download/Peter241Lite.zip
+https://www.breatharian.eu/Petr/download/Peter241Lite.zip
 
-Peter223LiteCZ.zip - Petr 2.23 Lite, ZIP bez instalace, èeskı help (1,8 MB)
-http://www.breatharian.eu/Petr/download/Peter223LiteCZ.zip
+Peter223LiteCZ.zip - Petr 2.23 Lite, ZIP bez instalace, ÄeskÃ½ help (1,8 MB)
+https://www.breatharian.eu/Petr/download/Peter223LiteCZ.zip
 
 Peter251_help.zip - Petr 2.51 help, ZIP bez instalace (6 MB)
 https://www.breatharian.eu/Petr/download/Peter251help.zip
-Modifikace programu Petr od uivatele Jiøího Peroutky, s helpem pøedìlanım
-do formátu CHM, pro systém Windows 10. Pùvodní verze Petra pouívá help ve
-formátu HLP, kterı byl staršími systémy podporován. Novìjší systémy Windows
-formát HLP pøestaly podporovat a je nutná doinstalace podpory HLP ze stránek
-Microsoftu - program WinHlp32.exe. Namísto toho lze pouít tuto nápovìdu
-ve formátu CHM. Lze ji spouštìt buï pøímo, nebo z prostøedí Petra pouitím
-zmodifikované verze Petra 2.51.
+Modifikace programu Petr od uÅ¾ivatele JiÅ™Ã­ho Peroutky, s helpem pÅ™edÄ›lanÃ½m
+do formÃ¡tu CHM, pro systÃ©m Windows 10. PÅ¯vodnÃ­ verze Petra pouÅ¾Ã­vÃ¡ help ve
+formÃ¡tu HLP, kterÃ½ byl starÅ¡Ã­mi systÃ©my podporovÃ¡n. NovÄ›jÅ¡Ã­ systÃ©my Windows
+formÃ¡t HLP pÅ™estaly podporovat a je nutnÃ¡ doinstalace podpory HLP ze strÃ¡nek
+Microsoftu - program WinHlp32.exe. NamÃ­sto toho lze pouÅ¾Ã­t tuto nÃ¡povÄ›du
+ve formÃ¡tu CHM. Lze ji spouÅ¡tÄ›t buÄ pÅ™Ã­mo, nebo z prostÅ™edÃ­ Petra pouÅ¾itÃ­m
+zmodifikovanÃ© verze Petra 2.51.
 
 
-Pøeklad
+PÅ™eklad
 -------
-Program Gemtree Petr jsem psal pøed 25 lety, kdy byl standardem operaèní systém
-Windows 95 a displej s 256 paletovımi barvami. Z toho vychází i funkènost Petra.
-Podporuje pouze grafiku 256 paletovıch barev (pøíp. v 3D grafice i omezenì
-True-Color), nìkteré funkce jsou u zastaralé a v novém prostøedí problematické.
-A teprve jsem se na Petrovi uèil programovat v C++ a tak i vypadá kód. :-)
-Mnohé vìci bych dnes u udìlal jinak.
+Program Gemtree Petr jsem psal pÅ™ed 25 lety, kdy byl standardem operaÄnÃ­ systÃ©m
+Windows 95 a displej s 256 paletovÃ½mi barvami. Z toho vychÃ¡zÃ­ i funkÄnost Petra.
+Podporuje pouze grafiku 256 paletovÃ½ch barev (pÅ™Ã­p. v 3D grafice i omezenÄ›
+True-Color), nÄ›kterÃ© funkce jsou uÅ¾ zastaralÃ© a v novÃ©m prostÅ™edÃ­ problematickÃ©.
+A teprve jsem se na Petrovi uÄil programovat v C++ a tak i vypadÃ¡ kÃ³d. :-)
+MnohÃ© vÄ›ci bych dnes uÅ¾ udÄ›lal jinak.
 
-Zdrojovı kód Petra je ponìkud problematické pøeloit. (mimochodem, omlouvám se
-cizincùm - komentáøe v kódu jsou pouze v èeském jazyce) Vyaduje k pøekladu
-pøekladaè Microsoft VC 6.0 a prostøedí Windows 95 nebo Windows 98. Dùvody:
+ZdrojovÃ½ kÃ³d Petra je ponÄ›kud problematickÃ© pÅ™eloÅ¾it. (mimochodem, omlouvÃ¡m se
+cizincÅ¯m - komentÃ¡Å™e v kÃ³du jsou pouze v ÄeskÃ©m jazyce) VyÅ¾aduje k pÅ™ekladu
+pÅ™ekladaÄ Microsoft VC 6.0 a prostÅ™edÃ­ Windows 95 nebo Windows 98. DÅ¯vody:
 
-1) Z pøekladu jsou vylouèeny standardní C knihovny, Petr si øeší vše sám
-   (jako napø. správce pro alokaci pamìti). To ovšem vyaduje, e kód pouívá
-   urèité obcházky aby se pøizpùsobil pøekladaèi. Je proto velmi obtíné pøeklad
-   pøizpùsobit jinému pøekladaèi.
+1) Z pÅ™ekladu jsou vylouÄeny standardnÃ­ C knihovny, Petr si Å™eÅ¡Ã­ vÅ¡e sÃ¡m
+   (jako napÅ™. sprÃ¡vce pro alokaci pamÄ›ti). To ovÅ¡em vyÅ¾aduje, Å¾e kÃ³d pouÅ¾Ã­vÃ¡
+   urÄitÃ© obchÃ¡zky aby se pÅ™izpÅ¯sobil pÅ™ekladaÄi. Je proto velmi obtÃ­Å¾nÃ© pÅ™eklad
+   pÅ™izpÅ¯sobit jinÃ©mu pÅ™ekladaÄi.
 
-2) Obrázky v Petrovi jsou ve formátu komprimovanı BMP 256 barev s paletami.
-   Displej musí bıt v módu 16-bitovıch barev. Obrázky jsou editované interním
-   editorem MS VC++ 6.0. Pokud byl displej ve více barvách, obsah obrázkù
-   se nièil. A pokud se pouil jinı systém ne Windows 95-98, obrázky se
-   neukládaly komprimovanì.
+2) ObrÃ¡zky v Petrovi jsou ve formÃ¡tu komprimovanÃ½ BMP 256 barev s paletami.
+   Displej musÃ­ bÃ½t v mÃ³du 16-bitovÃ½ch barev. ObrÃ¡zky jsou editovanÃ© internÃ­m
+   editorem MS VC++ 6.0. Pokud byl displej ve vÃ­ce barvÃ¡ch, obsah obrÃ¡zkÅ¯
+   se niÄil. A pokud se pouÅ¾il jinÃ½ systÃ©m neÅ¾ Windows 95-98, obrÃ¡zky se
+   neuklÃ¡daly komprimovanÄ›.
 
-Zkoušel jsem program pøeloit v aktuálním systému s aktuálním MS VC++, zøejmì by to
-bylo moné, ale vyadovalo by to zmìny:
+ZkouÅ¡el jsem program pÅ™eloÅ¾it v aktuÃ¡lnÃ­m systÃ©mu s aktuÃ¡lnÃ­m MS VC++, zÅ™ejmÄ› by to
+bylo moÅ¾nÃ©, ale vyÅ¾adovalo by to zmÄ›ny:
 
-- povolit linkování standardních C knihoven
-- namísto vlastního správce pouívat standardní C knihovny (malloc)
-- obrázky editovat externím editorem
-- nepouívat pøepínání módu zaokrouhlování matematického koprocesoru (øešit jinak)
-- zrušit inicializaci globálních objektù
+- povolit linkovÃ¡nÃ­ standardnÃ­ch C knihoven
+- namÃ­sto vlastnÃ­ho sprÃ¡vce pouÅ¾Ã­vat standardnÃ­ C knihovny (malloc)
+- obrÃ¡zky editovat externÃ­m editorem
+- nepouÅ¾Ã­vat pÅ™epÃ­nÃ¡nÃ­ mÃ³du zaokrouhlovÃ¡nÃ­ matematickÃ©ho koprocesoru (Å™eÅ¡it jinak)
+- zruÅ¡it inicializaci globÃ¡lnÃ­ch objektÅ¯
 
-Pøeloit mi to sice nakonec šlo, ale nefungovalo - vyadovalo by to ještì pøepracování
-modifikace EXE souborù. :-)
+PÅ™eloÅ¾it mi to sice nakonec Å¡lo, ale nefungovalo - vyÅ¾adovalo by to jeÅ¡tÄ› pÅ™epracovÃ¡nÃ­
+modifikace EXE souborÅ¯. :-)
 
-Jak pøekládat:
+Jak pÅ™eklÃ¡dat:
 
-Pøed pøekladem spustit poveláky "Setup\Res\Source\!Konv.bat", kterı pøipraví obrázky
-pro instalátor, a "HLP\Source\!Konv.bat", kterı pøipraví obrázky pro help. Pouívá se
-DOS utilita alchemy.exe, proto je nutné mít dostatek DOS pamìti, a je nutnı systém Windows
-max. XP, novìjší systémy u nepodporují DOS programy. Systém Windows 98 je moné u novìjších
-systémù provozovat pod emulátorem VirtualPC. Není-li u VirtualPC v systému podporován,
-lze nejdøíve emulovat ve VirtualBox systém Windows XP a v nìm emulovat Windows 98 ve
+PÅ™ed pÅ™ekladem spustit povelÃ¡ky "Setup\Res\Source\!Konv.bat", kterÃ½ pÅ™ipravÃ­ obrÃ¡zky
+pro instalÃ¡tor, a "HLP\Source\!Konv.bat", kterÃ½ pÅ™ipravÃ­ obrÃ¡zky pro help. PouÅ¾Ã­vÃ¡ se
+DOS utilita alchemy.exe, proto je nutnÃ© mÃ­t dostatek DOS pamÄ›ti, a je nutnÃ½ systÃ©m Windows
+max. XP, novÄ›jÅ¡Ã­ systÃ©my uÅ¾ nepodporujÃ­ DOS programy. SystÃ©m Windows 98 je moÅ¾nÃ© u novÄ›jÅ¡Ã­ch
+systÃ©mÅ¯ provozovat pod emulÃ¡torem VirtualPC. NenÃ­-li uÅ¾ VirtualPC v systÃ©mu podporovÃ¡n,
+lze nejdÅ™Ã­ve emulovat ve VirtualBox systÃ©m Windows XP a v nÄ›m emulovat Windows 98 ve
 VirtualPC.
 
-Po konverzi obrázkù se projekt otevøe v MS VC 6.0. U všech projektù je nutné pøeloit
-všechny varianty Release. Jako první je nutné pøeloit projekt DelExe, dále pak u lze
-podle abecedy shora dolù (Loader musí bıt pøed Peter). Prostøedí by mìlo bıt Windows 98.
-Pøi pøípadnıch snahách rozbìhnout pøeklad napø. pod Windows XP bude nutné spouštìt VC
-v kompatibilním módu W98. Interní obrázky Petra se upravují interním editorem VC, Petr
-je na jejich naèítání pøipravenı (ve formátu BMP 8 bitù s RLE). Pøi úpravì obrázku nesmí
-bıt nastavenı displej na true-color, musí bıt zvolenı reim 16-bitovıch barev, jinak editor
-poškodí barvy obrázku. Obrázky je nutné editovat pod W98 a ne pod NT a vyšší, protoe ve
-vyšších systémech se obrázky neukládají komprimovanì a programy jsou pak mnohem vìtší.
-Upravíte-li obrázky jinım editorem, je nutné smazat soubory *.aps, aby pøekladaè naèetl
-novı obrázek. Pøi zmìnì èísla verze se verze opravuje v souborech: Main.h, Setup\Main.h,
+Po konverzi obrÃ¡zkÅ¯ se projekt otevÅ™e v MS VC 6.0. U vÅ¡ech projektÅ¯ je nutnÃ© pÅ™eloÅ¾it
+vÅ¡echny varianty Release. Jako prvnÃ­ je nutnÃ© pÅ™eloÅ¾it projekt DelExe, dÃ¡le pak uÅ¾ lze
+podle abecedy shora dolÅ¯ (Loader musÃ­ bÃ½t pÅ™ed Peter). ProstÅ™edÃ­ by mÄ›lo bÃ½t Windows 98.
+PÅ™i pÅ™Ã­padnÃ½ch snahÃ¡ch rozbÄ›hnout pÅ™eklad napÅ™. pod Windows XP bude nutnÃ© spouÅ¡tÄ›t VC
+v kompatibilnÃ­m mÃ³du W98. InternÃ­ obrÃ¡zky Petra se upravujÃ­ internÃ­m editorem VC, Petr
+je na jejich naÄÃ­tÃ¡nÃ­ pÅ™ipravenÃ½ (ve formÃ¡tu BMP 8 bitÅ¯ s RLE). PÅ™i ÃºpravÄ› obrÃ¡zku nesmÃ­
+bÃ½t nastavenÃ½ displej na true-color, musÃ­ bÃ½t zvolenÃ½ reÅ¾im 16-bitovÃ½ch barev, jinak editor
+poÅ¡kodÃ­ barvy obrÃ¡zku. ObrÃ¡zky je nutnÃ© editovat pod W98 a ne pod NT a vyÅ¡Å¡Ã­, protoÅ¾e ve
+vyÅ¡Å¡Ã­ch systÃ©mech se obrÃ¡zky neuklÃ¡dajÃ­ komprimovanÄ› a programy jsou pak mnohem vÄ›tÅ¡Ã­.
+UpravÃ­te-li obrÃ¡zky jinÃ½m editorem, je nutnÃ© smazat soubory *.aps, aby pÅ™ekladaÄ naÄetl
+novÃ½ obrÃ¡zek. PÅ™i zmÄ›nÄ› ÄÃ­sla verze se verze opravuje v souborech: Main.h, Setup\Main.h,
 HLP\Main_cz.rtf, HLP\Main_en.rtf, HLP\Peter_cz.hpj a HLP\Peter_en.hpj.
 
-Sloky v projektu:
+SloÅ¾ky v projektu:
 
-DataInst je instalátor datovıch souborù (napø. instalátor ukázkovıch programù), dnes
-  se ji nepouívá.
+DataInst je instalÃ¡tor datovÃ½ch souborÅ¯ (napÅ™. instalÃ¡tor ukÃ¡zkovÃ½ch programÅ¯), dnes
+  se jiÅ¾ nepouÅ¾Ã­vÃ¡.
 
-DelExe je utilitka pro smazání instalátoru po odinstalování Petra.
+DelExe je utilitka pro smazÃ¡nÃ­ instalÃ¡toru po odinstalovÃ¡nÃ­ Petra.
 
-Gener je utilitka pro zkompletování instalátoru Petra. Sestaví do balíku obsahy
-  podadresáøù (instalaèních skupin): "0"=hlavní program s helpy, "1"=aplikace v Petrovi,
-  "2"=knihovna pøedmìtù, "3"=knihovna obrázkù, "4"=knihovna sprajtù, "5"=knihovna zvukù,
-  "6"=knihovna hudeb, "7"=ostatní knihovny, "8"=zdroje pro generování sprajtù. Soubor
-  Peter.exe urèuje datum a èas instalovanıch souborù.
+Gener je utilitka pro zkompletovÃ¡nÃ­ instalÃ¡toru Petra. SestavÃ­ do balÃ­ku obsahy
+  podadresÃ¡Å™Å¯ (instalaÄnÃ­ch skupin): "0"=hlavnÃ­ program s helpy, "1"=aplikace v Petrovi,
+  "2"=knihovna pÅ™edmÄ›tÅ¯, "3"=knihovna obrÃ¡zkÅ¯, "4"=knihovna sprajtÅ¯, "5"=knihovna zvukÅ¯,
+  "6"=knihovna hudeb, "7"=ostatnÃ­ knihovny, "8"=zdroje pro generovÃ¡nÃ­ sprajtÅ¯. Soubor
+  Peter.exe urÄuje datum a Äas instalovanÃ½ch souborÅ¯.
 
-HLP je nápovìda (pøekládá se z RTF souborù do HLP pomocí pøekladaèe HCW).
+HLP je nÃ¡povÄ›da (pÅ™eklÃ¡dÃ¡ se z RTF souborÅ¯ do HLP pomocÃ­ pÅ™ekladaÄe HCW).
 
-Loader je interpreter programu vytvoøeného v Petrovi. Petr k nìmu (do záhlaví EXE)
-  pøidá sekci ".petprg", která obsahuje editovanı a provádìnı program. Interpreter
-  pøi startu program pøedpøeloí do pseudokódu, kterı se pak provádí - vytvoøí
-  struktury EXECITEM, jejich souèástí je adresa funkce, která se má pro pøíslušnı
+Loader je interpreter programu vytvoÅ™enÃ©ho v Petrovi. Petr k nÄ›mu (do zÃ¡hlavÃ­ EXE)
+  pÅ™idÃ¡ sekci ".petprg", kterÃ¡ obsahuje editovanÃ½ a provÃ¡dÄ›nÃ½ program. Interpreter
+  pÅ™i startu program pÅ™edpÅ™eloÅ¾Ã­ do pseudokÃ³du, kterÃ½ se pak provÃ¡dÃ­ - vytvoÅ™Ã­
+  struktury EXECITEM, jejichÅ¾ souÄÃ¡stÃ­ je adresa funkce, kterÃ¡ se mÃ¡ pro pÅ™Ã­sluÅ¡nÃ½
   prvek zavolat.
 
-Loader0 je zjednodušenı zavadìè, program neprovádí, slouí jen jako záhlaví programu
-  pro monost distribuce v nespustitelném tvaru (aby byl program menší).
+Loader0 je zjednoduÅ¡enÃ½ zavadÄ›Ä, program neprovÃ¡dÃ­, slouÅ¾Ã­ jen jako zÃ¡hlavÃ­ programu
+  pro moÅ¾nost distribuce v nespustitelnÃ©m tvaru (aby byl program menÅ¡Ã­).
 
-Pov2Spr je konvertor obrázkù na sprajty.
+Pov2Spr je konvertor obrÃ¡zkÅ¯ na sprajty.
 
-Setup je instalátor Petra.
+Setup je instalÃ¡tor Petra.
