@@ -1,7 +1,7 @@
 Gemtree Peter 2.50 (for Windows 95 and later)
 FREEWARE / PUBLIC DOMAIN
 
-Autor: (c) 1997-2022 Miroslav Nemecek
+Author: (c) 1997-2022 Miroslav Nemecek
 author's homepage: http://panda38.sweb.cz
 author's email: Panda38@seznam.cz
 alternative email: hardyplotter2@gmail.com
@@ -71,25 +71,25 @@ https://www.itnetwork.cz/pro-deti/petr . Or usually just run the installer
 as Administrator.
 
 Peter250.exe - Peter 2.50 full installation (400 MB)
-http://www.breatharian.eu/Petr/download/Peter250.exe
+https://www.breatharian.eu/Petr/download/Peter250.exe
 Contains: application Petr, helps (Czech and English), about 160 sample
 2400 pictures, 1000 icons (objects), 1500 sounds, 560 music,
 400 sprites, resources for generating sprites.
 
 Peter250mini.exe - Peter 2.50 mini installation (5 MB)
-http://www.breatharian.eu/Petr/download/Peter250mini.exe
+https://www.breatharian.eu/Petr/download/Peter250mini.exe
 Contains: application Petr, helpy (Czech and English), sample programs
 Maze and Tutorial, sample library files.
 
 Peter241Lite.exe - Petr 2.41 Lite installation (5 MB)
-http://www.breatharian.eu/Petr/download/Peter241Lite.exe
+https://www.breatharian.eu/Petr/download/Peter241Lite.exe
 Older version with limited features. May be useful for younger or beginner
 users because it does not contain any dangerous features (such as file
 and memory operations). Can be installed and used together with version 2.50
 because it installs in a different folder.
 
 Peter223LiteCZ.exe - Petr 2.23 Lite installation (2,5 MB)
-http://www.breatharian.eu/Petr/download/Peter223LiteCZ.exe
+https://www.breatharian.eu/Petr/download/Peter223LiteCZ.exe
 An even older version with even more limited features. Help is only in Czech.
 
 File descriptions (aliases) are in Czech, English and German - depending
@@ -109,16 +109,16 @@ and setting "Run In" to the user's working folder and "Destination" to Peter's
 installation folder.
 
 Peter250.zip - Peter 2.50 full, ZIP without installation (370 MB)
-http://www.breatharian.eu/Petr/download/Peter250.zip
+https://www.breatharian.eu/Petr/download/Peter250.zip
 
 Peter250mini.zip - Peter 2.50 mini, ZIP without installation (4 MB)
-http://www.breatharian.eu/Petr/download/Peter250mini.zip
+https://www.breatharian.eu/Petr/download/Peter250mini.zip
 
 Peter241Lite.zip - Peter 2.41 Lite, ZIP without installation (4 MB)
-http://www.breatharian.eu/Petr/download/Peter241Lite.zip
+https://www.breatharian.eu/Petr/download/Peter241Lite.zip
 
 Peter223LiteCZ.zip - Peter 2.23 Lite, ZIP without installation, Czech help (1,8 MB)
-http://www.breatharian.eu/Petr/download/Peter223LiteCZ.zip
+https://www.breatharian.eu/Petr/download/Peter223LiteCZ.zip
 
 Peter251_help.zip - Peter 2.51 help, ZIP without installation (6 MB)
 https://www.breatharian.eu/Petr/download/Peter251help.zip
